@@ -107,11 +107,11 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
     return const AudioReviewState();
   }
 
-  late final FsrsService _fsrsService;
-  late final ProgressRepository _progressRepo;
-  late final SessionRepository _sessionRepo;
-  late final WordRepository _wordRepo;
-  late final TtsService _ttsService;
+  late FsrsService _fsrsService;
+  late ProgressRepository _progressRepo;
+  late SessionRepository _sessionRepo;
+  late WordRepository _wordRepo;
+  late TtsService _ttsService;
 
   /// Start an audio review session
   Future<void> startSession(AudioReviewSettings settings) async {

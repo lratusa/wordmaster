@@ -136,10 +136,10 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     return const StudySessionState();
   }
 
-  late final FsrsService _fsrsService;
-  late final ProgressRepository _progressRepo;
-  late final SessionRepository _sessionRepo;
-  late final WordRepository _wordRepo;
+  late FsrsService _fsrsService;
+  late ProgressRepository _progressRepo;
+  late SessionRepository _sessionRepo;
+  late WordRepository _wordRepo;
 
   /// Initialize and start a study session
   Future<void> startSession(StudySettings settings) async {

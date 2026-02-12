@@ -4,13 +4,24 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
 /// Text-to-speech service supporting English and Japanese.
+/// Note: TTS is currently disabled on Windows due to stability issues.
 class TtsService {
   FlutterTts? _tts;
   bool _isInitialized = false;
   bool _initFailed = false;
   String _currentLanguage = 'en-US';
 
+  /// Check if TTS is supported on current platform
+  bool get isSupported => !Platform.isWindows;
+
   Future<FlutterTts?> _getTts() async {
+    // Disable TTS on Windows due to crash issues
+    if (Platform.isWindows) {
+      debugPrint('TTS disabled on Windows');
+      _initFailed = true;
+      return null;
+    }
+
     if (_initFailed) return null;
     if (_tts != null) return _tts;
 
@@ -27,11 +38,17 @@ class TtsService {
   Future<void> _ensureInitialized() async {
     if (_isInitialized || _initFailed) return;
 
+    // Skip on Windows
+    if (Platform.isWindows) {
+      _initFailed = true;
+      return;
+    }
+
     try {
       final tts = await _getTts();
       if (tts == null) return;
 
-      if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      if (Platform.isLinux || Platform.isMacOS) {
         await tts.awaitSpeakCompletion(true);
       }
 
