@@ -5,22 +5,39 @@ import 'package:flutter_tts/flutter_tts.dart';
 
 /// Text-to-speech service supporting English and Japanese.
 class TtsService {
-  final FlutterTts _tts = FlutterTts();
+  FlutterTts? _tts;
   bool _isInitialized = false;
   bool _initFailed = false;
   String _currentLanguage = 'en-US';
+
+  Future<FlutterTts?> _getTts() async {
+    if (_initFailed) return null;
+    if (_tts != null) return _tts;
+
+    try {
+      _tts = FlutterTts();
+      return _tts;
+    } catch (e) {
+      debugPrint('TTS creation failed: $e');
+      _initFailed = true;
+      return null;
+    }
+  }
 
   Future<void> _ensureInitialized() async {
     if (_isInitialized || _initFailed) return;
 
     try {
+      final tts = await _getTts();
+      if (tts == null) return;
+
       if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-        await _tts.awaitSpeakCompletion(true);
+        await tts.awaitSpeakCompletion(true);
       }
 
-      await _tts.setSpeechRate(0.5);
-      await _tts.setVolume(1.0);
-      await _tts.setPitch(1.0);
+      await tts.setSpeechRate(0.5);
+      await tts.setVolume(1.0);
+      await tts.setPitch(1.0);
 
       _isInitialized = true;
     } catch (e) {
@@ -34,16 +51,17 @@ class TtsService {
   Future<void> speak(String text, {String language = 'en'}) async {
     try {
       await _ensureInitialized();
-      if (_initFailed) return;
+      final tts = _tts;
+      if (tts == null || _initFailed) return;
 
       final lang = language == 'ja' ? 'ja-JP' : 'en-US';
       if (lang != _currentLanguage) {
-        await _tts.setLanguage(lang);
+        await tts.setLanguage(lang);
         _currentLanguage = lang;
       }
 
-      await _tts.stop();
-      await _tts.speak(text);
+      await tts.stop();
+      await tts.speak(text);
     } catch (e) {
       debugPrint('TTS speak failed: $e');
     }
@@ -52,7 +70,9 @@ class TtsService {
   /// Stop any ongoing speech.
   Future<void> stop() async {
     try {
-      await _tts.stop();
+      final tts = _tts;
+      if (tts == null) return;
+      await tts.stop();
     } catch (e) {
       debugPrint('TTS stop failed: $e');
     }
@@ -62,8 +82,9 @@ class TtsService {
   Future<void> setSpeechRate(double rate) async {
     try {
       await _ensureInitialized();
-      if (_initFailed) return;
-      await _tts.setSpeechRate(rate);
+      final tts = _tts;
+      if (tts == null || _initFailed) return;
+      await tts.setSpeechRate(rate);
     } catch (e) {
       debugPrint('TTS setSpeechRate failed: $e');
     }
@@ -73,9 +94,10 @@ class TtsService {
   Future<bool> isLanguageAvailable(String language) async {
     try {
       await _ensureInitialized();
-      if (_initFailed) return false;
+      final tts = _tts;
+      if (tts == null || _initFailed) return false;
       final lang = language == 'ja' ? 'ja-JP' : 'en-US';
-      final result = await _tts.isLanguageAvailable(lang);
+      final result = await tts.isLanguageAvailable(lang);
       return result == true || result == 1;
     } catch (e) {
       debugPrint('TTS isLanguageAvailable failed: $e');
@@ -85,7 +107,7 @@ class TtsService {
 
   void dispose() {
     try {
-      _tts.stop();
+      _tts?.stop();
     } catch (e) {
       debugPrint('TTS dispose failed: $e');
     }
