@@ -20,12 +20,14 @@
 ### Features
 
 - **Smart Spaced Repetition**: Uses the FSRS (Free Spaced Repetition Scheduler) algorithm for optimal memory retention
+- **AI-Generated Reading Passages**: LLM creates contextual short articles using your vocabulary words, reinforcing memory through meaningful context
 - **Multi-language Support**: Learn English and Japanese vocabulary
 - **Offline TTS**: Text-to-speech using sherpa-onnx (no internet required)
 - **Audio Review Mode**: Listen-based vocabulary practice
 - **Daily Check-in System**: Track your learning streaks and achievements
 - **Statistics Dashboard**: Visualize your learning progress with charts
 - **Cross-platform**: Works on Windows, Android, iOS, macOS, and Linux
+- **Flexible AI Backend**: Supports OpenAI, DeepSeek, Ollama (local), or manual mode
 
 ### Installation
 
@@ -112,12 +114,14 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ### 功能特点
 
 - **智能间隔重复**: 采用 FSRS（自由间隔重复调度器）算法，优化记忆效果
+- **AI 生成阅读短文**: 大语言模型根据你的生词自动生成情境短文，在上下文中加深记忆
 - **多语言支持**: 学习英语和日语词汇
 - **离线语音**: 使用 sherpa-onnx 实现文字转语音（无需联网）
 - **听力训练模式**: 基于听力的词汇练习
 - **每日打卡系统**: 追踪学习连续天数和成就
 - **统计仪表盘**: 通过图表可视化学习进度
 - **跨平台**: 支持 Windows、Android、iOS、macOS 和 Linux
+- **灵活的 AI 后端**: 支持 OpenAI、DeepSeek、Ollama（本地）或手动模式
 
 ### 安装说明
 
@@ -186,12 +190,14 @@ flutter build linux      # Linux
 ### 機能
 
 - **スマート間隔反復**: FSRS（自由間隔反復スケジューラ）アルゴリズムによる最適な記憶定着
+- **AI生成リーディング**: LLMが学習中の単語を使って短い文章を自動生成、文脈の中で記憶を強化
 - **多言語対応**: 英語と日本語の語彙学習
 - **オフラインTTS**: sherpa-onnxを使用した音声読み上げ（インターネット不要）
 - **リスニング練習モード**: 聴覚ベースの語彙練習
 - **毎日チェックインシステム**: 学習連続日数と実績の追跡
 - **統計ダッシュボード**: グラフで学習進捗を可視化
 - **クロスプラットフォーム**: Windows、Android、iOS、macOS、Linuxに対応
+- **柔軟なAIバックエンド**: OpenAI、DeepSeek、Ollama（ローカル）、または手動モードに対応
 
 ### インストール
 
