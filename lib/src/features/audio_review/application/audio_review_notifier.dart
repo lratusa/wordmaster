@@ -29,7 +29,7 @@ class AudioReviewState {
   final int sessionId;
   final int correctCount;
   final int incorrectCount;
-  final DateTime startedAt;
+  final DateTime? startedAt;
   final bool isPlaying;
 
   const AudioReviewState({
@@ -42,9 +42,9 @@ class AudioReviewState {
     this.sessionId = 0,
     this.correctCount = 0,
     this.incorrectCount = 0,
-    DateTime? startedAt,
+    this.startedAt,
     this.isPlaying = false,
-  }) : startedAt = startedAt ?? const _DefaultDateTime();
+  });
 
   AudioReviewState copyWith({
     bool? isLoading,
@@ -82,16 +82,7 @@ class AudioReviewState {
   double get correctRate =>
       totalReviewed > 0 ? correctCount / totalReviewed : 0;
   int get durationSeconds =>
-      DateTime.now().difference(startedAt).inSeconds;
-}
-
-class _DefaultDateTime implements DateTime {
-  const _DefaultDateTime();
-
-  @override
-  dynamic noSuchMethod(Invocation invocation) {
-    return DateTime.now().noSuchMethod(invocation);
-  }
+      startedAt != null ? DateTime.now().difference(startedAt!).inSeconds : 0;
 }
 
 /// Audio review settings

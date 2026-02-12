@@ -21,7 +21,7 @@ class StudySessionState {
   final int correctCount;
   final int incorrectCount;
   final int starredCount;
-  final DateTime startedAt;
+  final DateTime? startedAt;
 
   const StudySessionState({
     this.isLoading = true,
@@ -35,8 +35,8 @@ class StudySessionState {
     this.correctCount = 0,
     this.incorrectCount = 0,
     this.starredCount = 0,
-    DateTime? startedAt,
-  }) : startedAt = startedAt ?? const _DefaultDateTime();
+    this.startedAt,
+  });
 
   StudySessionState copyWith({
     bool? isLoading,
@@ -76,18 +76,7 @@ class StudySessionState {
   double get correctRate =>
       totalReviewed > 0 ? correctCount / totalReviewed : 0;
   int get durationSeconds =>
-      DateTime.now().difference(startedAt).inSeconds;
-}
-
-// Placeholder for const DateTime
-class _DefaultDateTime implements DateTime {
-  const _DefaultDateTime();
-
-  @override
-  dynamic noSuchMethod(Invocation invocation) {
-    // Delegate to DateTime.now() for any method calls
-    return DateTime.now().noSuchMethod(invocation);
-  }
+      startedAt != null ? DateTime.now().difference(startedAt!).inSeconds : 0;
 }
 
 // A study item = word + its progress
