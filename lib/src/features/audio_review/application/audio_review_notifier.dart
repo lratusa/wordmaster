@@ -136,38 +136,51 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
       startedAt: DateTime.now(),
     );
 
-    // Get due review words
-    final dueWordIds = await _progressRepo.getDueWordIds(settings.wordListId);
-    final wordIds = dueWordIds.take(settings.wordLimit).toList();
+    try {
+      // First try to get due review words
+      var wordIds = await _progressRepo.getDueWordIds(settings.wordListId);
 
-    final queue = <StudyItem>[];
-    for (final wordId in wordIds) {
-      final word = await _wordRepo.getWordById(wordId);
-      if (word != null) {
-        final progress = await _progressRepo.getOrCreateProgress(word.id!);
-        queue.add(StudyItem(word: word, progress: progress, isNewWord: false));
+      // If no due words, get any learned words
+      if (wordIds.isEmpty) {
+        wordIds = await _progressRepo.getLearnedWordIds(
+          settings.wordListId,
+          limit: settings.wordLimit,
+        );
       }
-    }
 
-    if (queue.isEmpty) {
+      wordIds = wordIds.take(settings.wordLimit).toList();
+
+      final queue = <StudyItem>[];
+      for (final wordId in wordIds) {
+        final word = await _wordRepo.getWordById(wordId);
+        if (word != null) {
+          final progress = await _progressRepo.getOrCreateProgress(word.id!);
+          queue.add(StudyItem(word: word, progress: progress, isNewWord: false));
+        }
+      }
+
+      if (queue.isEmpty) {
+        state = state.copyWith(isLoading: false, isCompleted: true);
+        return;
+      }
+
+      final sessionId = await _sessionRepo.createSession(
+        sessionType: 'audio',
+        wordListId: settings.wordListId,
+      );
+
+      state = state.copyWith(
+        isLoading: false,
+        queue: queue,
+        currentIndex: 0,
+        sessionId: sessionId,
+      );
+
+      // Play the first word
+      _playCurrentWord();
+    } catch (e) {
       state = state.copyWith(isLoading: false, isCompleted: true);
-      return;
     }
-
-    final sessionId = await _sessionRepo.createSession(
-      sessionType: 'audio',
-      wordListId: settings.wordListId,
-    );
-
-    state = state.copyWith(
-      isLoading: false,
-      queue: queue,
-      currentIndex: 0,
-      sessionId: sessionId,
-    );
-
-    // Play the first word
-    _playCurrentWord();
   }
 
   /// Play the current word via TTS

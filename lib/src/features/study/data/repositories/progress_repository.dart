@@ -98,6 +98,20 @@ class ProgressRepository {
     );
   }
 
+  /// Get all learned word IDs from a word list (for audio review)
+  Future<List<int>> getLearnedWordIds(int wordListId, {int limit = 50}) async {
+    final db = await _db;
+    final results = await db.rawQuery('''
+      SELECT up.word_id FROM ${DbConstants.tableUserProgress} up
+      INNER JOIN ${DbConstants.tableWords} w ON up.word_id = w.id
+      WHERE w.word_list_id = ? AND up.is_new = 0
+      ORDER BY up.last_reviewed_at DESC
+      LIMIT ?
+    ''', [wordListId, limit]);
+
+    return results.map((r) => r['word_id'] as int).toList();
+  }
+
   /// Get starred word IDs
   Future<List<int>> getStarredWordIds() async {
     final db = await _db;
