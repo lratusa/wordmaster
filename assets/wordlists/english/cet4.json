@@ -1,0 +1,547 @@
+{
+  "name": "CET-4 大学英语四级",
+  "language": "en",
+  "description": "大学英语四级核心词汇（示例50词）",
+  "icon_name": "school",
+  "words": [
+    {
+      "word": "abandon",
+      "translation_cn": "放弃；抛弃",
+      "part_of_speech": "vt.",
+      "phonetic": "/əˈbændən/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "He abandoned his car in the snowstorm.", "translation_cn": "他在暴风雪中弃车了。"},
+        {"sentence": "Don't abandon your dreams.", "translation_cn": "不要放弃你的梦想。"}
+      ]
+    },
+    {
+      "word": "absolute",
+      "translation_cn": "绝对的；完全的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈæbsəluːt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I have absolute confidence in you.", "translation_cn": "我对你有绝对的信心。"},
+        {"sentence": "That's the absolute truth.", "translation_cn": "那是绝对的事实。"}
+      ]
+    },
+    {
+      "word": "absorb",
+      "translation_cn": "吸收；吸引…的注意",
+      "part_of_speech": "vt.",
+      "phonetic": "/əbˈzɔːrb/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Plants absorb water through their roots.", "translation_cn": "植物通过根部吸收水分。"},
+        {"sentence": "She was completely absorbed in her book.", "translation_cn": "她完全沉浸在书中。"}
+      ]
+    },
+    {
+      "word": "access",
+      "translation_cn": "进入；通道；访问",
+      "part_of_speech": "n./vt.",
+      "phonetic": "/ˈækses/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Students have access to the library 24 hours a day.", "translation_cn": "学生可以全天24小时使用图书馆。"},
+        {"sentence": "You can access your account online.", "translation_cn": "你可以在线访问你的账户。"}
+      ]
+    },
+    {
+      "word": "achieve",
+      "translation_cn": "达到；取得；实现",
+      "part_of_speech": "vt.",
+      "phonetic": "/əˈtʃiːv/",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "She achieved her goal of becoming a doctor.", "translation_cn": "她实现了成为医生的目标。"},
+        {"sentence": "Hard work helps you achieve success.", "translation_cn": "努力工作帮助你取得成功。"}
+      ]
+    },
+    {
+      "word": "adapt",
+      "translation_cn": "适应；改编",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈdæpt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It took him a while to adapt to the new environment.", "translation_cn": "他花了一段时间才适应新环境。"},
+        {"sentence": "The novel was adapted into a movie.", "translation_cn": "这部小说被改编成了电影。"}
+      ]
+    },
+    {
+      "word": "adequate",
+      "translation_cn": "足够的；适当的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈædɪkwət/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "The room is adequate for our needs.", "translation_cn": "这个房间足够满足我们的需求。"},
+        {"sentence": "Make sure you get adequate sleep.", "translation_cn": "确保你有充足的睡眠。"}
+      ]
+    },
+    {
+      "word": "adjust",
+      "translation_cn": "调整；适应",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈdʒʌst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "You can adjust the volume with this button.", "translation_cn": "你可以用这个按钮调节音量。"},
+        {"sentence": "It takes time to adjust to a new job.", "translation_cn": "适应新工作需要时间。"}
+      ]
+    },
+    {
+      "word": "admire",
+      "translation_cn": "钦佩；赞赏",
+      "part_of_speech": "vt.",
+      "phonetic": "/ədˈmaɪər/",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "I admire her courage and determination.", "translation_cn": "我钦佩她的勇气和决心。"},
+        {"sentence": "We stopped to admire the beautiful view.", "translation_cn": "我们停下来欣赏美丽的景色。"}
+      ]
+    },
+    {
+      "word": "advance",
+      "translation_cn": "前进；进步；预先的",
+      "part_of_speech": "v./n./adj.",
+      "phonetic": "/ədˈvæns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Technology continues to advance rapidly.", "translation_cn": "技术继续快速进步。"},
+        {"sentence": "Please book tickets in advance.", "translation_cn": "请提前预订票。"}
+      ]
+    },
+    {
+      "word": "advantage",
+      "translation_cn": "优势；有利条件",
+      "part_of_speech": "n.",
+      "phonetic": "/ədˈvæntɪdʒ/",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "Speaking two languages is a great advantage.", "translation_cn": "会说两种语言是一个很大的优势。"},
+        {"sentence": "Take advantage of this opportunity.", "translation_cn": "利用好这个机会。"}
+      ]
+    },
+    {
+      "word": "apparent",
+      "translation_cn": "明显的；表面上的",
+      "part_of_speech": "adj.",
+      "phonetic": "/əˈpærənt/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "It was apparent that she was unhappy.", "translation_cn": "很明显她不高兴。"},
+        {"sentence": "The apparent cause of the fire was an electrical fault.", "translation_cn": "火灾的表面原因是电气故障。"}
+      ]
+    },
+    {
+      "word": "approach",
+      "translation_cn": "接近；方法；途径",
+      "part_of_speech": "v./n.",
+      "phonetic": "/əˈproʊtʃ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We need a new approach to this problem.", "translation_cn": "我们需要用新方法来解决这个问题。"},
+        {"sentence": "Winter is approaching.", "translation_cn": "冬天就要来了。"}
+      ]
+    },
+    {
+      "word": "appropriate",
+      "translation_cn": "适当的；恰当的",
+      "part_of_speech": "adj.",
+      "phonetic": "/əˈproʊpriət/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Is this dress appropriate for the occasion?", "translation_cn": "这条裙子适合这个场合吗？"},
+        {"sentence": "Please take appropriate action.", "translation_cn": "请采取适当的行动。"}
+      ]
+    },
+    {
+      "word": "assume",
+      "translation_cn": "假定；承担",
+      "part_of_speech": "vt.",
+      "phonetic": "/əˈsuːm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I assume you've heard the news.", "translation_cn": "我想你已经听到这个消息了。"},
+        {"sentence": "She assumed responsibility for the project.", "translation_cn": "她承担了这个项目的责任。"}
+      ]
+    },
+    {
+      "word": "budget",
+      "translation_cn": "预算",
+      "part_of_speech": "n./v.",
+      "phonetic": "/ˈbʌdʒɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We need to stay within our budget.", "translation_cn": "我们需要控制在预算之内。"},
+        {"sentence": "The government budgeted $5 million for education.", "translation_cn": "政府为教育拨款500万美元。"}
+      ]
+    },
+    {
+      "word": "candidate",
+      "translation_cn": "候选人；应试者",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkændɪdeɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "There are five candidates for the position.", "translation_cn": "有五位候选人竞争这个职位。"},
+        {"sentence": "She is a strong candidate for the scholarship.", "translation_cn": "她是奖学金的有力竞争者。"}
+      ]
+    },
+    {
+      "word": "capacity",
+      "translation_cn": "容量；能力；身份",
+      "part_of_speech": "n.",
+      "phonetic": "/kəˈpæsəti/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "The stadium has a capacity of 50,000.", "translation_cn": "这个体育场可容纳5万人。"},
+        {"sentence": "She has a great capacity for learning.", "translation_cn": "她有很强的学习能力。"}
+      ]
+    },
+    {
+      "word": "challenge",
+      "translation_cn": "挑战；质疑",
+      "part_of_speech": "n./vt.",
+      "phonetic": "/ˈtʃælɪndʒ/",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "Learning a new language is a big challenge.", "translation_cn": "学习一门新语言是一个很大的挑战。"},
+        {"sentence": "She challenged him to a game of chess.", "translation_cn": "她向他挑战下棋。"}
+      ]
+    },
+    {
+      "word": "circumstance",
+      "translation_cn": "环境；情况",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈsɜːrkəmstæns/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "Under no circumstances should you open that door.", "translation_cn": "无论如何你都不应该打开那扇门。"},
+        {"sentence": "The circumstances forced him to resign.", "translation_cn": "形势迫使他辞职。"}
+      ]
+    },
+    {
+      "word": "community",
+      "translation_cn": "社区；团体",
+      "part_of_speech": "n.",
+      "phonetic": "/kəˈmjuːnəti/",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "We should all contribute to our community.", "translation_cn": "我们都应该为社区做贡献。"},
+        {"sentence": "The local community organized a fundraiser.", "translation_cn": "当地社区组织了一次募捐活动。"}
+      ]
+    },
+    {
+      "word": "consequence",
+      "translation_cn": "后果；结果",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkɒnsɪkwəns/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "You must accept the consequences of your actions.", "translation_cn": "你必须接受你行为的后果。"},
+        {"sentence": "As a consequence, the project was delayed.", "translation_cn": "结果，项目被延迟了。"}
+      ]
+    },
+    {
+      "word": "contribute",
+      "translation_cn": "贡献；捐献；投稿",
+      "part_of_speech": "v.",
+      "phonetic": "/kənˈtrɪbjuːt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Everyone should contribute to the team effort.", "translation_cn": "每个人都应该为团队努力做贡献。"},
+        {"sentence": "She contributed an article to the magazine.", "translation_cn": "她为杂志投了一篇文章。"}
+      ]
+    },
+    {
+      "word": "convince",
+      "translation_cn": "使确信；说服",
+      "part_of_speech": "vt.",
+      "phonetic": "/kənˈvɪns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I'm convinced that he is telling the truth.", "translation_cn": "我确信他说的是实话。"},
+        {"sentence": "She tried to convince me to change my mind.", "translation_cn": "她试图说服我改变主意。"}
+      ]
+    },
+    {
+      "word": "crucial",
+      "translation_cn": "至关重要的；决定性的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈkruːʃəl/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "Education is crucial for personal development.", "translation_cn": "教育对个人发展至关重要。"},
+        {"sentence": "This is a crucial moment in the negotiation.", "translation_cn": "这是谈判中的关键时刻。"}
+      ]
+    },
+    {
+      "word": "demonstrate",
+      "translation_cn": "证明；演示；示威",
+      "part_of_speech": "v.",
+      "phonetic": "/ˈdemənstreɪt/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "The experiment demonstrates the effects of gravity.", "translation_cn": "这个实验演示了重力的效果。"},
+        {"sentence": "She demonstrated how to use the software.", "translation_cn": "她演示了如何使用这个软件。"}
+      ]
+    },
+    {
+      "word": "deserve",
+      "translation_cn": "值得；应受",
+      "part_of_speech": "vt.",
+      "phonetic": "/dɪˈzɜːrv/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "You deserve a reward for your hard work.", "translation_cn": "你的辛勤工作值得奖励。"},
+        {"sentence": "Everyone deserves a second chance.", "translation_cn": "每个人都值得再有一次机会。"}
+      ]
+    },
+    {
+      "word": "determine",
+      "translation_cn": "决定；确定；测定",
+      "part_of_speech": "vt.",
+      "phonetic": "/dɪˈtɜːrmɪn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We need to determine the cause of the problem.", "translation_cn": "我们需要确定问题的原因。"},
+        {"sentence": "She is determined to succeed.", "translation_cn": "她决心要成功。"}
+      ]
+    },
+    {
+      "word": "distinguish",
+      "translation_cn": "区分；辨别；使杰出",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈstɪŋɡwɪʃ/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "Can you distinguish between the two sounds?", "translation_cn": "你能区分这两个声音吗？"},
+        {"sentence": "She distinguished herself as an excellent scientist.", "translation_cn": "她作为一位杰出的科学家而著名。"}
+      ]
+    },
+    {
+      "word": "efficient",
+      "translation_cn": "高效的；有效率的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ɪˈfɪʃənt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We need a more efficient way to handle this.", "translation_cn": "我们需要一种更高效的方式来处理这件事。"},
+        {"sentence": "She is a very efficient worker.", "translation_cn": "她是一个非常高效的工作者。"}
+      ]
+    },
+    {
+      "word": "emerge",
+      "translation_cn": "出现；浮现；暴露",
+      "part_of_speech": "vi.",
+      "phonetic": "/ɪˈmɜːrdʒ/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "New evidence has emerged in the case.", "translation_cn": "案件中出现了新的证据。"},
+        {"sentence": "The sun emerged from behind the clouds.", "translation_cn": "太阳从云层后面出现了。"}
+      ]
+    },
+    {
+      "word": "emphasis",
+      "translation_cn": "强调；重点",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈemfəsɪs/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "The school places great emphasis on reading.", "translation_cn": "学校非常重视阅读。"},
+        {"sentence": "She spoke with emphasis on every word.", "translation_cn": "她每个字都说得很有力。"}
+      ]
+    },
+    {
+      "word": "estimate",
+      "translation_cn": "估计；评估",
+      "part_of_speech": "v./n.",
+      "phonetic": "/ˈestɪmeɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We estimate the cost to be around $1,000.", "translation_cn": "我们估计费用大约1000美元。"},
+        {"sentence": "Can you give me a rough estimate?", "translation_cn": "你能给我一个大概的估计吗？"}
+      ]
+    },
+    {
+      "word": "evidence",
+      "translation_cn": "证据；迹象",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈevɪdəns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "There is no evidence to support this claim.", "translation_cn": "没有证据支持这一说法。"},
+        {"sentence": "The evidence clearly shows that he is innocent.", "translation_cn": "证据清楚地表明他是无辜的。"}
+      ]
+    },
+    {
+      "word": "expand",
+      "translation_cn": "扩大；展开；膨胀",
+      "part_of_speech": "v.",
+      "phonetic": "/ɪkˈspænd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The company plans to expand its operations overseas.", "translation_cn": "公司计划将业务扩展到海外。"},
+        {"sentence": "Metal expands when heated.", "translation_cn": "金属受热时会膨胀。"}
+      ]
+    },
+    {
+      "word": "explore",
+      "translation_cn": "探索；探险；调查",
+      "part_of_speech": "v.",
+      "phonetic": "/ɪkˈsplɔːr/",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "We spent the day exploring the old city.", "translation_cn": "我们花了一天时间探索这座古城。"},
+        {"sentence": "Scientists are exploring new ways to treat cancer.", "translation_cn": "科学家们正在探索治疗癌症的新方法。"}
+      ]
+    },
+    {
+      "word": "fundamental",
+      "translation_cn": "基本的；根本的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˌfʌndəˈmentl/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "Freedom of speech is a fundamental right.", "translation_cn": "言论自由是一项基本权利。"},
+        {"sentence": "There is a fundamental difference between the two theories.", "translation_cn": "这两个理论之间有根本区别。"}
+      ]
+    },
+    {
+      "word": "guarantee",
+      "translation_cn": "保证；担保",
+      "part_of_speech": "n./vt.",
+      "phonetic": "/ˌɡærənˈtiː/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The product comes with a two-year guarantee.", "translation_cn": "这个产品附有两年保修。"},
+        {"sentence": "I can guarantee that it will be finished on time.", "translation_cn": "我可以保证它会按时完成。"}
+      ]
+    },
+    {
+      "word": "identify",
+      "translation_cn": "识别；鉴定；认同",
+      "part_of_speech": "vt.",
+      "phonetic": "/aɪˈdentɪfaɪ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Can you identify the man in this photo?", "translation_cn": "你能认出照片中的这个人吗？"},
+        {"sentence": "Scientists identified a new species of bird.", "translation_cn": "科学家们发现了一种新的鸟类。"}
+      ]
+    },
+    {
+      "word": "impact",
+      "translation_cn": "影响；冲击",
+      "part_of_speech": "n./v.",
+      "phonetic": "/ˈɪmpækt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Social media has a huge impact on young people.", "translation_cn": "社交媒体对年轻人有巨大的影响。"},
+        {"sentence": "The new policy will impact millions of people.", "translation_cn": "新政策将影响数百万人。"}
+      ]
+    },
+    {
+      "word": "indicate",
+      "translation_cn": "表明；指出",
+      "part_of_speech": "vt.",
+      "phonetic": "/ˈɪndɪkeɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Research indicates that exercise improves mental health.", "translation_cn": "研究表明锻炼能改善心理健康。"},
+        {"sentence": "The arrow indicates the direction.", "translation_cn": "箭头指示方向。"}
+      ]
+    },
+    {
+      "word": "investigate",
+      "translation_cn": "调查；研究",
+      "part_of_speech": "v.",
+      "phonetic": "/ɪnˈvestɪɡeɪt/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "Police are investigating the robbery.", "translation_cn": "警方正在调查这起抢劫案。"},
+        {"sentence": "We need to investigate the matter further.", "translation_cn": "我们需要进一步调查此事。"}
+      ]
+    },
+    {
+      "word": "maintain",
+      "translation_cn": "维持；保养；主张",
+      "part_of_speech": "vt.",
+      "phonetic": "/meɪnˈteɪn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's important to maintain a healthy lifestyle.", "translation_cn": "保持健康的生活方式很重要。"},
+        {"sentence": "He maintained that he was innocent.", "translation_cn": "他坚称自己是无辜的。"}
+      ]
+    },
+    {
+      "word": "obvious",
+      "translation_cn": "明显的；显而易见的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈɒbviəs/",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "It's obvious that she doesn't like him.", "translation_cn": "很明显她不喜欢他。"},
+        {"sentence": "The answer is obvious.", "translation_cn": "答案是显而易见的。"}
+      ]
+    },
+    {
+      "word": "participate",
+      "translation_cn": "参加；参与",
+      "part_of_speech": "vi.",
+      "phonetic": "/pɑːrˈtɪsɪpeɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Everyone is encouraged to participate in the discussion.", "translation_cn": "鼓励每个人参与讨论。"},
+        {"sentence": "She participated in the marathon.", "translation_cn": "她参加了马拉松比赛。"}
+      ]
+    },
+    {
+      "word": "perspective",
+      "translation_cn": "观点；看法；透视",
+      "part_of_speech": "n.",
+      "phonetic": "/pərˈspektɪv/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "Try to see things from a different perspective.", "translation_cn": "试着从不同的角度看问题。"},
+        {"sentence": "This book offers a fresh perspective on history.", "translation_cn": "这本书提供了对历史的全新视角。"}
+      ]
+    },
+    {
+      "word": "potential",
+      "translation_cn": "潜力；潜在的",
+      "part_of_speech": "n./adj.",
+      "phonetic": "/pəˈtenʃəl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "She has great potential as a singer.", "translation_cn": "她有很大的歌唱潜力。"},
+        {"sentence": "We should be aware of the potential risks.", "translation_cn": "我们应该意识到潜在的风险。"}
+      ]
+    },
+    {
+      "word": "relevant",
+      "translation_cn": "相关的；有意义的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈreləvənt/",
+      "difficulty_level": 3,
+      "examples": [
+        {"sentence": "Please provide all relevant information.", "translation_cn": "请提供所有相关信息。"},
+        {"sentence": "His experience is relevant to this job.", "translation_cn": "他的经验与这份工作相关。"}
+      ]
+    },
+    {
+      "word": "strategy",
+      "translation_cn": "策略；战略",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈstrætədʒi/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We need a new marketing strategy.", "translation_cn": "我们需要一个新的营销策略。"},
+        {"sentence": "What's your strategy for the exam?", "translation_cn": "你的考试策略是什么？"}
+      ]
+    }
+  ]
+}

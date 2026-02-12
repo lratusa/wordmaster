@@ -1,0 +1,157 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main, master]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  # ============================================
+  # Job 1: Test & Analyze
+  # ============================================
+  test:
+    name: Test & Analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.9'
+          channel: 'stable'
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Analyze code
+        run: flutter analyze --no-fatal-infos
+
+      - name: Run tests
+        run: flutter test --coverage
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v4
+        if: success()
+        with:
+          files: coverage/lcov.info
+          fail_ci_if_error: false
+
+  # ============================================
+  # Job 2: Build Android APK
+  # ============================================
+  build-android:
+    name: Build Android
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.9'
+          channel: 'stable'
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
+
+  # ============================================
+  # Job 3: Build Windows EXE
+  # ============================================
+  build-windows:
+    name: Build Windows
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.9'
+          channel: 'stable'
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Windows
+        run: flutter build windows --release
+
+      - name: Create ZIP archive
+        run: Compress-Archive -Path build\windows\x64\runner\Release\* -DestinationPath wordmaster-windows.zip
+
+      - name: Upload Windows build
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-exe
+          path: wordmaster-windows.zip
+          retention-days: 14
+
+  # ============================================
+  # Job 4: Create Release (on tag push)
+  # ============================================
+  release:
+    name: Create Release
+    needs: [build-android, build-windows]
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    permissions:
+      contents: write
+    steps:
+      - name: Download Android APK
+        uses: actions/download-artifact@v4
+        with:
+          name: android-apk
+          path: artifacts
+
+      - name: Download Windows build
+        uses: actions/download-artifact@v4
+        with:
+          name: windows-exe
+          path: artifacts
+
+      - name: Rename artifacts
+        run: |
+          mv artifacts/app-release.apk artifacts/wordmaster-${{ github.ref_name }}-android.apk
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: WordMaster ${{ github.ref_name }}
+          body: |
+            ## WordMaster ${{ github.ref_name }}
+
+            ### Downloads
+            - **Android**: `wordmaster-${{ github.ref_name }}-android.apk`
+            - **Windows**: `wordmaster-windows.zip`
+
+            ### What's New
+            See [CHANGELOG](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
+          files: |
+            artifacts/wordmaster-${{ github.ref_name }}-android.apk
+            artifacts/wordmaster-windows.zip
+          draft: false
+          prerelease: false

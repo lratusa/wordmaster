@@ -1,0 +1,76 @@
+name: wordmaster
+description: "WordMaster - 智能背单词应用，支持英语和日语"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_riverpod: any
+  riverpod_annotation: any
+
+  # Database
+  sqflite: any
+  sqflite_common_ffi: any
+  path: any
+
+  # Navigation
+  go_router: any
+
+  # Text-to-Speech
+  flutter_tts: any
+
+  # HTTP Client
+  dio: any
+
+  # JSON Serialization
+  json_annotation: any
+  freezed_annotation: any
+
+  # UI
+  fl_chart: any
+  google_fonts: any
+
+  # Screenshot & Share
+  screenshot: any
+  share_plus: any
+
+  # File Picking (CSV import)
+  file_picker: any
+  csv: any
+
+  # Shared Preferences
+  shared_preferences: any
+
+  # Intl
+  intl: any
+
+  # Window management for desktop
+  window_manager: any
+  fsrs: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: any
+  build_runner: any
+  json_serializable: any
+  freezed: any
+  riverpod_generator: any
+  mockito: any
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/wordlists/english/
+    - assets/wordlists/japanese/
+    - assets/images/

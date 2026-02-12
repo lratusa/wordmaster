@@ -1,0 +1,608 @@
+{
+  "name": "JLPT N5 基础日语",
+  "language": "ja",
+  "description": "日本语能力测试 N5 级别基础词汇（示例50词）",
+  "icon_name": "language",
+  "words": [
+    {
+      "word": "食べる",
+      "translation_cn": "吃",
+      "part_of_speech": "动2",
+      "reading": "たべる",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "朝ごはんを食べます。", "translation_cn": "吃早饭。"},
+        {"sentence": "何を食べたいですか。", "translation_cn": "你想吃什么？"}
+      ]
+    },
+    {
+      "word": "飲む",
+      "translation_cn": "喝",
+      "part_of_speech": "动1",
+      "reading": "のむ",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "水を飲みます。", "translation_cn": "喝水。"},
+        {"sentence": "コーヒーを飲みませんか。", "translation_cn": "要不要喝咖啡？"}
+      ]
+    },
+    {
+      "word": "行く",
+      "translation_cn": "去",
+      "part_of_speech": "动1",
+      "reading": "いく",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "学校に行きます。", "translation_cn": "去学校。"},
+        {"sentence": "どこに行きますか。", "translation_cn": "去哪里？"}
+      ]
+    },
+    {
+      "word": "来る",
+      "translation_cn": "来",
+      "part_of_speech": "动3",
+      "reading": "くる",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "友達が来ます。", "translation_cn": "朋友要来。"},
+        {"sentence": "日本に来てから一年です。", "translation_cn": "来日本已经一年了。"}
+      ]
+    },
+    {
+      "word": "見る",
+      "translation_cn": "看",
+      "part_of_speech": "动2",
+      "reading": "みる",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "テレビを見ます。", "translation_cn": "看电视。"},
+        {"sentence": "映画を見に行きましょう。", "translation_cn": "去看电影吧。"}
+      ]
+    },
+    {
+      "word": "聞く",
+      "translation_cn": "听；问",
+      "part_of_speech": "动1",
+      "reading": "きく",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "音楽を聞きます。", "translation_cn": "听音乐。"},
+        {"sentence": "先生に聞いてください。", "translation_cn": "请问老师。"}
+      ]
+    },
+    {
+      "word": "読む",
+      "translation_cn": "读",
+      "part_of_speech": "动1",
+      "reading": "よむ",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "本を読みます。", "translation_cn": "读书。"},
+        {"sentence": "新聞を読んでいます。", "translation_cn": "正在读报纸。"}
+      ]
+    },
+    {
+      "word": "書く",
+      "translation_cn": "写",
+      "part_of_speech": "动1",
+      "reading": "かく",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "手紙を書きます。", "translation_cn": "写信。"},
+        {"sentence": "名前を書いてください。", "translation_cn": "请写名字。"}
+      ]
+    },
+    {
+      "word": "話す",
+      "translation_cn": "说；谈话",
+      "part_of_speech": "动1",
+      "reading": "はなす",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "日本語を話します。", "translation_cn": "说日语。"},
+        {"sentence": "友達と話しました。", "translation_cn": "和朋友聊了。"}
+      ]
+    },
+    {
+      "word": "買う",
+      "translation_cn": "买",
+      "part_of_speech": "动1",
+      "reading": "かう",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "本を買います。", "translation_cn": "买书。"},
+        {"sentence": "何を買いましたか。", "translation_cn": "买了什么？"}
+      ]
+    },
+    {
+      "word": "する",
+      "translation_cn": "做",
+      "part_of_speech": "动3",
+      "reading": "する",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "勉強をします。", "translation_cn": "学习。"},
+        {"sentence": "サッカーをしますか。", "translation_cn": "踢足球吗？"}
+      ]
+    },
+    {
+      "word": "ある",
+      "translation_cn": "有（物）；在",
+      "part_of_speech": "动1",
+      "reading": "ある",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "机の上に本があります。", "translation_cn": "桌子上有书。"},
+        {"sentence": "時間がありますか。", "translation_cn": "有时间吗？"}
+      ]
+    },
+    {
+      "word": "いる",
+      "translation_cn": "有（人/动物）；在",
+      "part_of_speech": "动2",
+      "reading": "いる",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "教室に学生がいます。", "translation_cn": "教室里有学生。"},
+        {"sentence": "猫がいますか。", "translation_cn": "有猫吗？"}
+      ]
+    },
+    {
+      "word": "大きい",
+      "translation_cn": "大的",
+      "part_of_speech": "形",
+      "reading": "おおきい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "大きい犬がいます。", "translation_cn": "有一只大狗。"},
+        {"sentence": "この部屋は大きいです。", "translation_cn": "这个房间很大。"}
+      ]
+    },
+    {
+      "word": "小さい",
+      "translation_cn": "小的",
+      "part_of_speech": "形",
+      "reading": "ちいさい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "小さい花が咲いています。", "translation_cn": "小花开了。"},
+        {"sentence": "この靴は小さいです。", "translation_cn": "这双鞋小了。"}
+      ]
+    },
+    {
+      "word": "新しい",
+      "translation_cn": "新的",
+      "part_of_speech": "形",
+      "reading": "あたらしい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "新しい車を買いました。", "translation_cn": "买了新车。"},
+        {"sentence": "新しい友達ができました。", "translation_cn": "交了新朋友。"}
+      ]
+    },
+    {
+      "word": "古い",
+      "translation_cn": "旧的；老的",
+      "part_of_speech": "形",
+      "reading": "ふるい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "これは古い建物です。", "translation_cn": "这是旧建筑。"},
+        {"sentence": "古い写真を見ました。", "translation_cn": "看了老照片。"}
+      ]
+    },
+    {
+      "word": "高い",
+      "translation_cn": "高的；贵的",
+      "part_of_speech": "形",
+      "reading": "たかい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "あの山は高いです。", "translation_cn": "那座山很高。"},
+        {"sentence": "このバッグは高いです。", "translation_cn": "这个包很贵。"}
+      ]
+    },
+    {
+      "word": "安い",
+      "translation_cn": "便宜的",
+      "part_of_speech": "形",
+      "reading": "やすい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "この店は安いです。", "translation_cn": "这家店很便宜。"},
+        {"sentence": "もっと安いのはありますか。", "translation_cn": "有更便宜的吗？"}
+      ]
+    },
+    {
+      "word": "良い",
+      "translation_cn": "好的",
+      "part_of_speech": "形",
+      "reading": "よい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "天気が良いですね。", "translation_cn": "天气真好啊。"},
+        {"sentence": "良い一日を。", "translation_cn": "祝你度过美好的一天。"}
+      ]
+    },
+    {
+      "word": "悪い",
+      "translation_cn": "坏的；不好的",
+      "part_of_speech": "形",
+      "reading": "わるい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "天気が悪いです。", "translation_cn": "天气不好。"},
+        {"sentence": "悪いことをしてはいけません。", "translation_cn": "不可以做坏事。"}
+      ]
+    },
+    {
+      "word": "学校",
+      "translation_cn": "学校",
+      "part_of_speech": "名",
+      "reading": "がっこう",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "学校に行きます。", "translation_cn": "去学校。"},
+        {"sentence": "学校は八時に始まります。", "translation_cn": "学校八点开始。"}
+      ]
+    },
+    {
+      "word": "先生",
+      "translation_cn": "老师",
+      "part_of_speech": "名",
+      "reading": "せんせい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "先生に質問があります。", "translation_cn": "有问题要问老师。"},
+        {"sentence": "日本語の先生は優しいです。", "translation_cn": "日语老师很温柔。"}
+      ]
+    },
+    {
+      "word": "学生",
+      "translation_cn": "学生",
+      "part_of_speech": "名",
+      "reading": "がくせい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "私は学生です。", "translation_cn": "我是学生。"},
+        {"sentence": "学生が三十人います。", "translation_cn": "有三十个学生。"}
+      ]
+    },
+    {
+      "word": "友達",
+      "translation_cn": "朋友",
+      "part_of_speech": "名",
+      "reading": "ともだち",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "友達と映画を見ました。", "translation_cn": "和朋友看了电影。"},
+        {"sentence": "新しい友達ができました。", "translation_cn": "交了新朋友。"}
+      ]
+    },
+    {
+      "word": "家",
+      "translation_cn": "家；房子",
+      "part_of_speech": "名",
+      "reading": "いえ",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "家に帰ります。", "translation_cn": "回家。"},
+        {"sentence": "この家は大きいです。", "translation_cn": "这个房子很大。"}
+      ]
+    },
+    {
+      "word": "電車",
+      "translation_cn": "电车",
+      "part_of_speech": "名",
+      "reading": "でんしゃ",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "電車で会社に行きます。", "translation_cn": "坐电车去公司。"},
+        {"sentence": "電車が来ました。", "translation_cn": "电车来了。"}
+      ]
+    },
+    {
+      "word": "天気",
+      "translation_cn": "天气",
+      "part_of_speech": "名",
+      "reading": "てんき",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "今日は天気がいいです。", "translation_cn": "今天天气很好。"},
+        {"sentence": "明日の天気はどうですか。", "translation_cn": "明天天气怎么样？"}
+      ]
+    },
+    {
+      "word": "時間",
+      "translation_cn": "时间",
+      "part_of_speech": "名",
+      "reading": "じかん",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "時間がありません。", "translation_cn": "没有时间。"},
+        {"sentence": "何時間かかりますか。", "translation_cn": "需要几个小时？"}
+      ]
+    },
+    {
+      "word": "毎日",
+      "translation_cn": "每天",
+      "part_of_speech": "名",
+      "reading": "まいにち",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "毎日日本語を勉強します。", "translation_cn": "每天学日语。"},
+        {"sentence": "毎日運動していますか。", "translation_cn": "每天运动吗？"}
+      ]
+    },
+    {
+      "word": "今日",
+      "translation_cn": "今天",
+      "part_of_speech": "名",
+      "reading": "きょう",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "今日は月曜日です。", "translation_cn": "今天是星期一。"},
+        {"sentence": "今日は何をしますか。", "translation_cn": "今天做什么？"}
+      ]
+    },
+    {
+      "word": "明日",
+      "translation_cn": "明天",
+      "part_of_speech": "名",
+      "reading": "あした",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "明日は休みです。", "translation_cn": "明天休息。"},
+        {"sentence": "明日また来てください。", "translation_cn": "明天请再来。"}
+      ]
+    },
+    {
+      "word": "昨日",
+      "translation_cn": "昨天",
+      "part_of_speech": "名",
+      "reading": "きのう",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "昨日は忙しかったです。", "translation_cn": "昨天很忙。"},
+        {"sentence": "昨日映画を見ました。", "translation_cn": "昨天看了电影。"}
+      ]
+    },
+    {
+      "word": "水",
+      "translation_cn": "水",
+      "part_of_speech": "名",
+      "reading": "みず",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "水をください。", "translation_cn": "请给我水。"},
+        {"sentence": "水を飲みたいです。", "translation_cn": "想喝水。"}
+      ]
+    },
+    {
+      "word": "花",
+      "translation_cn": "花",
+      "part_of_speech": "名",
+      "reading": "はな",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "きれいな花ですね。", "translation_cn": "好漂亮的花啊。"},
+        {"sentence": "花を買いました。", "translation_cn": "买了花。"}
+      ]
+    },
+    {
+      "word": "山",
+      "translation_cn": "山",
+      "part_of_speech": "名",
+      "reading": "やま",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "富士山は高いです。", "translation_cn": "富士山很高。"},
+        {"sentence": "山に登りました。", "translation_cn": "爬了山。"}
+      ]
+    },
+    {
+      "word": "分かる",
+      "translation_cn": "明白；懂",
+      "part_of_speech": "动1",
+      "reading": "わかる",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "日本語が分かりますか。", "translation_cn": "你懂日语吗？"},
+        {"sentence": "よく分かりました。", "translation_cn": "我明白了。"}
+      ]
+    },
+    {
+      "word": "教える",
+      "translation_cn": "教；告诉",
+      "part_of_speech": "动2",
+      "reading": "おしえる",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "英語を教えています。", "translation_cn": "在教英语。"},
+        {"sentence": "道を教えてください。", "translation_cn": "请告诉我路怎么走。"}
+      ]
+    },
+    {
+      "word": "勉強",
+      "translation_cn": "学习",
+      "part_of_speech": "名/动3",
+      "reading": "べんきょう",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "毎日日本語を勉強しています。", "translation_cn": "每天都在学日语。"},
+        {"sentence": "一緒に勉強しましょう。", "translation_cn": "一起学习吧。"}
+      ]
+    },
+    {
+      "word": "仕事",
+      "translation_cn": "工作",
+      "part_of_speech": "名/动3",
+      "reading": "しごと",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "仕事は何ですか。", "translation_cn": "你做什么工作？"},
+        {"sentence": "仕事が忙しいです。", "translation_cn": "工作很忙。"}
+      ]
+    },
+    {
+      "word": "元気",
+      "translation_cn": "精神；健康",
+      "part_of_speech": "形动",
+      "reading": "げんき",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "お元気ですか。", "translation_cn": "你好吗？"},
+        {"sentence": "元気になりました。", "translation_cn": "恢复精神了。"}
+      ]
+    },
+    {
+      "word": "きれい",
+      "translation_cn": "漂亮的；干净的",
+      "part_of_speech": "形动",
+      "reading": "きれい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "この花はきれいです。", "translation_cn": "这朵花很漂亮。"},
+        {"sentence": "部屋をきれいにしてください。", "translation_cn": "请把房间打扫干净。"}
+      ]
+    },
+    {
+      "word": "好き",
+      "translation_cn": "喜欢",
+      "part_of_speech": "形动",
+      "reading": "すき",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "日本料理が好きです。", "translation_cn": "喜欢日本料理。"},
+        {"sentence": "何が好きですか。", "translation_cn": "你喜欢什么？"}
+      ]
+    },
+    {
+      "word": "嫌い",
+      "translation_cn": "讨厌",
+      "part_of_speech": "形动",
+      "reading": "きらい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "野菜が嫌いです。", "translation_cn": "讨厌蔬菜。"},
+        {"sentence": "嫌いな食べ物はありますか。", "translation_cn": "有讨厌的食物吗？"}
+      ]
+    },
+    {
+      "word": "上手",
+      "translation_cn": "擅长",
+      "part_of_speech": "形动",
+      "reading": "じょうず",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "日本語が上手ですね。", "translation_cn": "日语说得真好啊。"},
+        {"sentence": "料理が上手です。", "translation_cn": "很擅长做饭。"}
+      ]
+    },
+    {
+      "word": "下手",
+      "translation_cn": "不擅长",
+      "part_of_speech": "形动",
+      "reading": "へた",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "歌が下手です。", "translation_cn": "唱歌不行。"},
+        {"sentence": "字が下手ですみません。", "translation_cn": "字写得不好，抱歉。"}
+      ]
+    },
+    {
+      "word": "暑い",
+      "translation_cn": "热的（天气）",
+      "part_of_speech": "形",
+      "reading": "あつい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "今日は暑いですね。", "translation_cn": "今天好热啊。"},
+        {"sentence": "夏は暑いです。", "translation_cn": "夏天很热。"}
+      ]
+    },
+    {
+      "word": "寒い",
+      "translation_cn": "冷的（天气）",
+      "part_of_speech": "形",
+      "reading": "さむい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "冬は寒いです。", "translation_cn": "冬天很冷。"},
+        {"sentence": "今日は寒いですね。", "translation_cn": "今天好冷啊。"}
+      ]
+    },
+    {
+      "word": "忙しい",
+      "translation_cn": "忙的",
+      "part_of_speech": "形",
+      "reading": "いそがしい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "今週は忙しいです。", "translation_cn": "这周很忙。"},
+        {"sentence": "忙しくて行けません。", "translation_cn": "太忙去不了。"}
+      ]
+    },
+    {
+      "word": "楽しい",
+      "translation_cn": "快乐的；开心的",
+      "part_of_speech": "形",
+      "reading": "たのしい",
+      "jlpt_level": "N5",
+      "difficulty_level": 1,
+      "examples": [
+        {"sentence": "旅行は楽しかったです。", "translation_cn": "旅行很开心。"},
+        {"sentence": "楽しい時間を過ごしました。", "translation_cn": "度过了快乐的时光。"}
+      ]
+    }
+  ]
+}
