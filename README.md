@@ -56,14 +56,17 @@ flutter build linux      # Linux
 
 #### Download TTS Models (Optional)
 
-For offline text-to-speech functionality:
+For offline text-to-speech functionality, download voice packs directly in the app:
 
-```bash
-cd tts_server
-python download_models.py en-us    # English (US)
-python download_models.py ja       # Japanese
-python download_models.py zh       # Chinese
-```
+1. Open the app
+2. Go to **Settings** > **TTS Voice Models**
+3. Click the download button for your preferred language:
+   - English (US) - ~75 MB
+   - English (UK) - ~65 MB
+   - Japanese - ~55 MB
+   - Chinese + English - ~150 MB
+
+No Python or command line required!
 
 ### Architecture
 
@@ -145,14 +148,17 @@ flutter build linux      # Linux
 
 #### 下载语音模型（可选）
 
-如需离线语音功能：
+如需离线语音功能，直接在应用内下载语音包：
 
-```bash
-cd tts_server
-python download_models.py en-us    # 英语（美式）
-python download_models.py ja       # 日语
-python download_models.py zh       # 中文
-```
+1. 打开应用
+2. 进入 **设置** > **TTS 语音模型**
+3. 点击下载按钮选择语言：
+   - 英语（美式）- 约 75 MB
+   - 英语（英式）- 约 65 MB
+   - 日语 - 约 55 MB
+   - 中英双语 - 约 150 MB
+
+无需 Python，一键下载！
 
 ### 技术栈
 
@@ -216,14 +222,17 @@ flutter build linux      # Linux
 
 #### 音声モデルのダウンロード（オプション）
 
-オフライン音声機能を使用する場合：
+オフライン音声機能を使用する場合、アプリ内で直接ダウンロードできます：
 
-```bash
-cd tts_server
-python download_models.py en-us    # 英語（アメリカ）
-python download_models.py ja       # 日本語
-python download_models.py zh       # 中国語
-```
+1. アプリを開く
+2. **設定** > **TTS 音声モデル** に移動
+3. お好みの言語のダウンロードボタンをクリック：
+   - 英語（アメリカ）- 約 75 MB
+   - 英語（イギリス）- 約 65 MB
+   - 日本語 - 約 55 MB
+   - 中国語 + 英語 - 約 150 MB
+
+Pythonは不要、ワンクリックでダウンロード！
 
 ### 技術スタック
 
