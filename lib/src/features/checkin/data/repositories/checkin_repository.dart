@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+
 import '../../../../core/constants/db_constants.dart';
 import '../../../../core/database/database_helper.dart';
 
@@ -48,7 +50,7 @@ class Achievement {
 }
 
 class CheckinRepository {
-  Future<dynamic> get _db async => DatabaseHelper.instance.database;
+  Future<Database> get _db async => DatabaseHelper.instance.database;
 
   /// Check if user has already checked in today
   Future<bool> hasCheckedInToday() async {

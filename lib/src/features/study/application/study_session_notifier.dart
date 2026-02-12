@@ -136,10 +136,10 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     return const StudySessionState();
   }
 
-  late FsrsService _fsrsService;
-  late ProgressRepository _progressRepo;
-  late SessionRepository _sessionRepo;
-  late WordRepository _wordRepo;
+  FsrsService? _fsrsService;
+  ProgressRepository? _progressRepo;
+  SessionRepository? _sessionRepo;
+  WordRepository? _wordRepo;
 
   /// Initialize and start a study session
   Future<void> startSession(StudySettings settings) async {
@@ -154,8 +154,8 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     );
 
     // Get due review words and new words
-    final dueWordIds = await _progressRepo.getDueWordIds(settings.wordListId);
-    final newWordIds = await _progressRepo.getNewWordIds(
+    final dueWordIds = await _progressRepo!.getDueWordIds(settings.wordListId);
+    final newWordIds = await _progressRepo!.getNewWordIds(
       settings.wordListId,
       limit: settings.newWordsLimit,
     );
@@ -173,10 +173,10 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     while (reviewIdx < reviewIds.length || newIdx < newWordIds.length) {
       // Add up to 5 review words
       for (int i = 0; i < 5 && reviewIdx < reviewIds.length; i++) {
-        final word = await _wordRepo.getWordById(reviewIds[reviewIdx]);
+        final word = await _wordRepo!.getWordById(reviewIds[reviewIdx]);
         if (word != null) {
           final progress =
-              await _progressRepo.getOrCreateProgress(word.id!);
+              await _progressRepo!.getOrCreateProgress(word.id!);
           queue.add(StudyItem(
               word: word, progress: progress, isNewWord: false));
         }
@@ -185,10 +185,10 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
 
       // Add 1 new word
       if (newIdx < newWordIds.length) {
-        final word = await _wordRepo.getWordById(newWordIds[newIdx]);
+        final word = await _wordRepo!.getWordById(newWordIds[newIdx]);
         if (word != null) {
           final progress =
-              await _progressRepo.getOrCreateProgress(word.id!);
+              await _progressRepo!.getOrCreateProgress(word.id!);
           queue.add(
               StudyItem(word: word, progress: progress, isNewWord: true));
         }
@@ -202,7 +202,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     }
 
     // Create session in DB
-    final sessionId = await _sessionRepo.createSession(
+    final sessionId = await _sessionRepo!.createSession(
       sessionType: 'flashcard',
       wordListId: settings.wordListId,
     );
@@ -229,7 +229,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
 
     final ratingEnum = FsrsService.intToRating(rating);
     final card = FsrsService.cardFromJson(item.progress.fsrsCardJson);
-    final result = _fsrsService.review(card, ratingEnum);
+    final result = _fsrsService!.review(card, ratingEnum);
 
     // Update progress in DB
     final isCorrect = rating >= 3;
@@ -247,10 +247,10 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
       lastReviewedAt: DateTime.now(),
       isNew: false,
     );
-    await _progressRepo.updateProgress(updatedProgress);
+    await _progressRepo!.updateProgress(updatedProgress);
 
     // Log the review
-    await _sessionRepo.logReview(
+    await _sessionRepo!.logReview(
       sessionId: state.sessionId,
       wordId: item.word.id!,
       rating: rating,
@@ -272,7 +272,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     final nextIndex = state.currentIndex + 1;
     if (nextIndex >= queue.length) {
       // Session complete
-      await _sessionRepo.completeSession(
+      await _sessionRepo!.completeSession(
         sessionId: state.sessionId,
         totalWords: state.totalWords,
         newWords: state.newWordsCount,
@@ -304,7 +304,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     final item = state.currentItem;
     if (item == null) return;
 
-    await _progressRepo.toggleStar(item.word.id!);
+    await _progressRepo!.toggleStar(item.word.id!);
     final wasStarred = item.progress.isStarred;
     final starredDelta = wasStarred ? -1 : 1;
 

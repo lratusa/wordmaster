@@ -4,7 +4,7 @@ import '../../../../core/constants/db_constants.dart';
 import '../../../../core/database/database_helper.dart';
 
 class SettingsRepository {
-  Future<dynamic> get _db async => DatabaseHelper.instance.database;
+  Future<Database> get _db async => DatabaseHelper.instance.database;
 
   /// Get a setting value by key, returns null if not found.
   Future<String?> get(String key) async {

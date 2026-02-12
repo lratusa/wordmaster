@@ -24,8 +24,10 @@ dependencies:
   # Navigation
   go_router: any
 
-  # Text-to-Speech
-  flutter_tts: any
+  # Text-to-Speech (sherpa-onnx for offline TTS)
+  sherpa_onnx: ^1.12.24
+  audioplayers: ^6.1.0
+  path_provider: ^2.1.0
 
   # HTTP Client
   dio: any

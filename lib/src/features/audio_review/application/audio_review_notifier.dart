@@ -107,11 +107,11 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
     return const AudioReviewState();
   }
 
-  late FsrsService _fsrsService;
-  late ProgressRepository _progressRepo;
-  late SessionRepository _sessionRepo;
-  late WordRepository _wordRepo;
-  late TtsService _ttsService;
+  FsrsService? _fsrsService;
+  ProgressRepository? _progressRepo;
+  SessionRepository? _sessionRepo;
+  WordRepository? _wordRepo;
+  TtsService? _ttsService;
 
   /// Start an audio review session
   Future<void> startSession(AudioReviewSettings settings) async {
@@ -129,11 +129,11 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
 
     try {
       // First try to get due review words
-      var wordIds = await _progressRepo.getDueWordIds(settings.wordListId);
+      var wordIds = await _progressRepo!.getDueWordIds(settings.wordListId);
 
       // If no due words, get any learned words
       if (wordIds.isEmpty) {
-        wordIds = await _progressRepo.getLearnedWordIds(
+        wordIds = await _progressRepo!.getLearnedWordIds(
           settings.wordListId,
           limit: settings.wordLimit,
         );
@@ -143,9 +143,9 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
 
       final queue = <StudyItem>[];
       for (final wordId in wordIds) {
-        final word = await _wordRepo.getWordById(wordId);
+        final word = await _wordRepo!.getWordById(wordId);
         if (word != null) {
-          final progress = await _progressRepo.getOrCreateProgress(word.id!);
+          final progress = await _progressRepo!.getOrCreateProgress(word.id!);
           queue.add(StudyItem(word: word, progress: progress, isNewWord: false));
         }
       }
@@ -155,7 +155,7 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
         return;
       }
 
-      final sessionId = await _sessionRepo.createSession(
+      final sessionId = await _sessionRepo!.createSession(
         sessionType: 'audio',
         wordListId: settings.wordListId,
       );
@@ -180,7 +180,7 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
     if (item == null) return;
 
     state = state.copyWith(isPlaying: true);
-    await _ttsService.speak(item.word.word, language: item.word.language.code);
+    await _ttsService?.speak(item.word.word, language: item.word.language.code);
     state = state.copyWith(isPlaying: false);
 
     // In auto mode, schedule answer reveal
@@ -210,7 +210,7 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
   Future<void> replay() async {
     final item = state.currentItem;
     if (item == null) return;
-    await _ttsService.speak(item.word.word, language: item.word.language.code);
+    await _ttsService?.speak(item.word.word, language: item.word.language.code);
   }
 
   /// Rate the current word (simplified 2-level: correct/incorrect)
@@ -223,7 +223,7 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
     final rating = isCorrect ? 3 : 1;
     final ratingEnum = FsrsService.intToRating(rating);
     final card = FsrsService.cardFromJson(item.progress.fsrsCardJson);
-    final result = _fsrsService.review(card, ratingEnum);
+    final result = _fsrsService!.review(card, ratingEnum);
 
     // Update progress
     final updatedProgress = item.progress.copyWith(
@@ -239,10 +239,10 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
       lastReviewedAt: DateTime.now(),
       isNew: false,
     );
-    await _progressRepo.updateProgress(updatedProgress);
+    await _progressRepo!.updateProgress(updatedProgress);
 
     // Log review
-    await _sessionRepo.logReview(
+    await _sessionRepo!.logReview(
       sessionId: state.sessionId,
       wordId: item.word.id!,
       rating: rating,
@@ -261,7 +261,7 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
     final nextIndex = state.currentIndex + 1;
     if (nextIndex >= queue.length) {
       // Session complete
-      await _sessionRepo.completeSession(
+      await _sessionRepo!.completeSession(
         sessionId: state.sessionId,
         totalWords: state.totalWords,
         newWords: 0,
@@ -271,7 +271,7 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
         starredCount: 0,
         durationSeconds: state.durationSeconds,
       );
-      await _ttsService.stop();
+      await _ttsService?.stop();
       state = state.copyWith(
         isCompleted: true,
         correctCount: newCorrect,
@@ -294,7 +294,7 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
   /// Stop session
   void stopSession() {
     _autoTimer?.cancel();
-    _ttsService.stop();
+    _ttsService?.stop();
   }
 }
 

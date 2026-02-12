@@ -130,11 +130,14 @@ class SessionRepository {
   }
 
   /// Get today's session stats.
+  /// Includes both completed sessions and a fallback count from review_logs.
   Future<({int newWords, int reviewWords, int correctCount, int totalMinutes})>
       getTodayStats() async {
     final db = await _db;
     final today = DateTime.now().toIso8601String().substring(0, 10);
-    final results = await db.rawQuery('''
+
+    // First try completed sessions
+    final sessionResults = await db.rawQuery('''
       SELECT
         COALESCE(SUM(new_words), 0) as new_words,
         COALESCE(SUM(review_words), 0) as review_words,
@@ -144,12 +147,35 @@ class SessionRepository {
       WHERE session_date = ? AND completed_at IS NOT NULL
     ''', [today]);
 
-    final row = results.first;
+    final sessionRow = sessionResults.first;
+    var newWords = sessionRow['new_words'] as int;
+    var reviewWords = sessionRow['review_words'] as int;
+    var correctCount = sessionRow['correct_count'] as int;
+    var totalSeconds = sessionRow['total_seconds'] as int;
+
+    // If no completed sessions, count from review_logs as fallback
+    if (newWords == 0 && reviewWords == 0) {
+      final logResults = await db.rawQuery('''
+        SELECT
+          COUNT(*) as review_count,
+          COALESCE(SUM(CASE WHEN rating >= 3 THEN 1 ELSE 0 END), 0) as correct_count
+        FROM ${DbConstants.tableReviewLogs}
+        WHERE DATE(reviewed_at) = ?
+      ''', [today]);
+
+      final logRow = logResults.first;
+      final reviewCount = logRow['review_count'] as int;
+      correctCount = logRow['correct_count'] as int;
+
+      // Count reviews as "review words" (since we can't tell if they're new)
+      reviewWords = reviewCount;
+    }
+
     return (
-      newWords: row['new_words'] as int,
-      reviewWords: row['review_words'] as int,
-      correctCount: row['correct_count'] as int,
-      totalMinutes: ((row['total_seconds'] as int) / 60).ceil(),
+      newWords: newWords,
+      reviewWords: reviewWords,
+      correctCount: correctCount,
+      totalMinutes: (totalSeconds / 60).ceil(),
     );
   }
 }
