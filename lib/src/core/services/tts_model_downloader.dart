@@ -38,26 +38,27 @@ class TtsModelDownloader {
       'https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models';
 
   /// Available TTS models
+  /// See: https://k2-fsa.github.io/sherpa/onnx/tts/pretrained_models/index.html
   static const List<TtsModel> availableModels = [
     TtsModel(
-      id: 'en-us',
-      name: 'English (US)',
+      id: 'en-us-amy',
+      name: 'English (US) - Amy',
       language: 'en',
-      url: '$_baseUrl/vits-piper-en_US-libritts_r-medium.tar.bz2',
-      sizeBytes: 75 * 1024 * 1024, // ~75 MB
-    ),
-    TtsModel(
-      id: 'en-gb',
-      name: 'English (UK)',
-      language: 'en',
-      url: '$_baseUrl/vits-piper-en_GB-cori-medium.tar.bz2',
+      url: '$_baseUrl/vits-piper-en_US-amy-medium.tar.bz2',
       sizeBytes: 65 * 1024 * 1024, // ~65 MB
     ),
     TtsModel(
-      id: 'ja',
-      name: 'Japanese',
-      language: 'ja',
-      url: '$_baseUrl/vits-piper-ja_JP-tohoku-medium.tar.bz2',
+      id: 'en-us-lessac',
+      name: 'English (US) - Lessac',
+      language: 'en',
+      url: '$_baseUrl/vits-piper-en_US-lessac-medium.tar.bz2',
+      sizeBytes: 65 * 1024 * 1024, // ~65 MB
+    ),
+    TtsModel(
+      id: 'en-gb-alba',
+      name: 'English (UK) - Alba',
+      language: 'en',
+      url: '$_baseUrl/vits-piper-en_GB-alba-medium.tar.bz2',
       sizeBytes: 55 * 1024 * 1024, // ~55 MB
     ),
     TtsModel(

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/services/tts_model_downloader.dart';
 import '../../../../core/theme/app_colors.dart';
+import '../../../study/application/study_session_notifier.dart';
 import '../../application/settings_notifier.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -356,14 +357,14 @@ class SettingsScreen extends ConsumerWidget {
 }
 
 /// TTS Model download screen
-class TtsModelScreen extends StatefulWidget {
+class TtsModelScreen extends ConsumerStatefulWidget {
   const TtsModelScreen({super.key});
 
   @override
-  State<TtsModelScreen> createState() => _TtsModelScreenState();
+  ConsumerState<TtsModelScreen> createState() => _TtsModelScreenState();
 }
 
-class _TtsModelScreenState extends State<TtsModelScreen> {
+class _TtsModelScreenState extends ConsumerState<TtsModelScreen> {
   final TtsModelDownloader _downloader = TtsModelDownloader();
   final Map<String, bool> _downloadedModels = {};
   final Map<String, double> _downloadProgress = {};
@@ -421,11 +422,9 @@ class _TtsModelScreenState extends State<TtsModelScreen> {
       // Auto-activate if no model is active
       if (_activeModelId == null) {
         await _activateModel(model.id);
-      }
-
-      if (mounted) {
+      } else if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${model.name} 下载完成')),
+          SnackBar(content: Text('${model.name} 下载完成，点击菜单选择"使用此语音"来激活')),
         );
       }
     } catch (e) {
@@ -447,6 +446,28 @@ class _TtsModelScreenState extends State<TtsModelScreen> {
     setState(() {
       _activeModelId = modelId;
     });
+
+    // Reset TTS service to pick up the new model
+    final ttsService = ref.read(ttsServiceProvider);
+    ttsService.reset();
+    await ttsService.initialize();
+
+    if (mounted) {
+      if (ttsService.isReady) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('语音模型已激活，可以正常使用')),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('语音模型激活失败: ${ttsService.lastError ?? "未知错误"}'),
+            backgroundColor: Colors.orange,
+          ),
+        );
+      }
+      // Refresh UI to show updated status
+      setState(() {});
+    }
   }
 
   Future<void> _deleteModel(TtsModel model) async {
@@ -478,6 +499,95 @@ class _TtsModelScreenState extends State<TtsModelScreen> {
         }
       });
     }
+  }
+
+  Widget _buildTtsStatusCard() {
+    final ttsService = ref.read(ttsServiceProvider);
+    final isReady = ttsService.isReady;
+    final status = ttsService.status;
+
+    return Card(
+      color: isReady
+          ? AppColors.success.withValues(alpha: 0.1)
+          : _activeModelId != null
+              ? AppColors.warning.withValues(alpha: 0.1)
+              : Colors.grey.withValues(alpha: 0.1),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(
+                  isReady
+                      ? Icons.check_circle
+                      : _activeModelId != null
+                          ? Icons.warning
+                          : Icons.info_outline,
+                  color: isReady
+                      ? AppColors.success
+                      : _activeModelId != null
+                          ? AppColors.warning
+                          : Colors.grey,
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  isReady ? '语音已就绪' : '语音状态',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(
+              isReady
+                  ? '离线语音功能正常工作'
+                  : _activeModelId == null
+                      ? '请下载并激活一个语音包'
+                      : '状态: $status',
+              style: const TextStyle(fontSize: 13),
+            ),
+            const SizedBox(height: 12),
+            Row(
+              children: [
+                if (_activeModelId != null && !isReady)
+                  TextButton.icon(
+                    onPressed: () async {
+                      ttsService.reset();
+                      await ttsService.initialize();
+                      setState(() {});
+                      if (mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(ttsService.isReady
+                                ? '语音初始化成功'
+                                : '语音初始化失败: ${ttsService.lastError ?? "未知错误"}'),
+                          ),
+                        );
+                      }
+                    },
+                    icon: const Icon(Icons.refresh, size: 18),
+                    label: const Text('重新初始化'),
+                  ),
+                if (isReady)
+                  TextButton.icon(
+                    onPressed: () async {
+                      await ttsService.speak('Hello, this is a test of the text to speech system.');
+                      if (mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('正在播放测试语音...')),
+                        );
+                      }
+                    },
+                    icon: const Icon(Icons.play_arrow, size: 18),
+                    label: const Text('测试语音'),
+                  ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   @override
@@ -517,6 +627,10 @@ class _TtsModelScreenState extends State<TtsModelScreen> {
                     ),
                   ),
                 ),
+                const SizedBox(height: 16),
+
+                // TTS Status card
+                _buildTtsStatusCard(),
                 const SizedBox(height: 16),
 
                 // Model list

@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../core/services/tts_service.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../common_widgets/furigana_text.dart';
 import '../../../word_lists/domain/enums/language.dart';
 import '../../application/study_session_notifier.dart';
 
-typedef SpeakCallback = void Function(String text, String language);
+typedef SpeakCallback = Future<void> Function(String text, String language);
 
 class StudySessionScreen extends ConsumerWidget {
   const StudySessionScreen({super.key});
@@ -54,9 +55,17 @@ class StudySessionScreen extends ConsumerWidget {
           // TTS button
           IconButton(
             icon: const Icon(Icons.volume_up),
-            onPressed: () {
+            onPressed: () async {
               final tts = ref.read(ttsServiceProvider);
-              tts.speak(item.word.word, language: item.word.language.code);
+              final result = await tts.speak(item.word.word, language: item.word.language.code);
+              if (result == TtsSpeakResult.languageNotSupported && context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(tts.getUnsupportedLanguageMessage(item.word.language.code)),
+                    duration: const Duration(seconds: 2),
+                  ),
+                );
+              }
             },
           ),
           // Star button
@@ -90,8 +99,17 @@ class StudySessionScreen extends ConsumerWidget {
                   ref.read(studySessionProvider.notifier).showAnswer();
                 }
               },
-              onSpeak: (text, language) {
-                ref.read(ttsServiceProvider).speak(text, language: language);
+              onSpeak: (text, language) async {
+                final tts = ref.read(ttsServiceProvider);
+                final result = await tts.speak(text, language: language);
+                if (result == TtsSpeakResult.languageNotSupported && context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(tts.getUnsupportedLanguageMessage(language)),
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                }
               },
             ),
           ),

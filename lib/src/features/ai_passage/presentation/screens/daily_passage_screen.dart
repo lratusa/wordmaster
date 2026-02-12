@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../core/services/tts_service.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../study/application/study_session_notifier.dart';
 import '../../application/ai_passage_notifier.dart';
@@ -37,9 +38,18 @@ class _DailyPassageScreenState extends ConsumerState<DailyPassageScreen> {
           if (state.passage != null)
             IconButton(
               icon: const Icon(Icons.volume_up),
-              onPressed: () {
+              onPressed: () async {
                 final tts = ref.read(ttsServiceProvider);
-                tts.speak(state.passage!.passage, language: state.language);
+                final lang = state.language;
+                final result = await tts.speak(state.passage!.passage, language: lang);
+                if (result == TtsSpeakResult.languageNotSupported && context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(tts.getUnsupportedLanguageMessage(lang)),
+                      duration: const Duration(seconds: 2),
+                    ),
+                  );
+                }
               },
             ),
         ],

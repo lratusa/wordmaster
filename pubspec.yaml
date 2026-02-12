@@ -44,6 +44,7 @@ dependencies:
   # Screenshot & Share
   screenshot: any
   share_plus: any
+  super_clipboard: any
 
   # File Picking (CSV import)
   file_picker: any

@@ -19,6 +19,38 @@ class AudioReviewScreen extends ConsumerWidget {
     }
 
     if (state.isCompleted) {
+      // Check if there's an error message (e.g., unsupported language)
+      if (state.errorMessage != null) {
+        return Scaffold(
+          appBar: AppBar(title: const Text('听力练习')),
+          body: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(32),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.volume_off,
+                    size: 64,
+                    color: AppColors.warning,
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    state.errorMessage!,
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  const SizedBox(height: 24),
+                  FilledButton(
+                    onPressed: () => context.go('/'),
+                    child: const Text('返回首页'),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      }
       WidgetsBinding.instance.addPostFrameCallback((_) {
         context.go('/study/summary');
       });
@@ -98,12 +130,26 @@ class AudioReviewScreen extends ConsumerWidget {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    Text(
-                      '点击重新播放',
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: AppColors.textSecondary,
+                    // Show playback phase
+                    if (state.isPlaying)
+                      Text(
+                        state.playbackPhase == PlaybackPhase.playingWord
+                            ? '正在播放单词...'
+                            : state.playbackPhase == PlaybackPhase.playingSentence
+                                ? '正在播放例句...'
+                                : '播放中...',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: AppColors.primary,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      )
+                    else
+                      Text(
+                        '点击重新播放',
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: AppColors.textSecondary,
+                        ),
                       ),
-                    ),
                     const SizedBox(height: 32),
 
                     // Answer area

@@ -18,6 +18,16 @@ enum AudioMode {
   auto,
 }
 
+/// Playback phase - what's currently being played
+enum PlaybackPhase {
+  /// Not playing anything
+  idle,
+  /// Playing the word
+  playingWord,
+  /// Playing the example sentence
+  playingSentence,
+}
+
 /// Audio review session state
 class AudioReviewState {
   final bool isLoading;
@@ -31,6 +41,8 @@ class AudioReviewState {
   final int incorrectCount;
   final DateTime? startedAt;
   final bool isPlaying;
+  final PlaybackPhase playbackPhase;  // Current playback phase
+  final String? errorMessage;  // Error message for unsupported features
 
   const AudioReviewState({
     this.isLoading = true,
@@ -44,6 +56,8 @@ class AudioReviewState {
     this.incorrectCount = 0,
     this.startedAt,
     this.isPlaying = false,
+    this.playbackPhase = PlaybackPhase.idle,
+    this.errorMessage,
   });
 
   AudioReviewState copyWith({
@@ -58,6 +72,8 @@ class AudioReviewState {
     int? incorrectCount,
     DateTime? startedAt,
     bool? isPlaying,
+    PlaybackPhase? playbackPhase,
+    String? errorMessage,
   }) {
     return AudioReviewState(
       isLoading: isLoading ?? this.isLoading,
@@ -71,6 +87,8 @@ class AudioReviewState {
       incorrectCount: incorrectCount ?? this.incorrectCount,
       startedAt: startedAt ?? this.startedAt,
       isPlaying: isPlaying ?? this.isPlaying,
+      playbackPhase: playbackPhase ?? this.playbackPhase,
+      errorMessage: errorMessage ?? this.errorMessage,
     );
   }
 
@@ -145,13 +163,27 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
       for (final wordId in wordIds) {
         final word = await _wordRepo!.getWordById(wordId);
         if (word != null) {
+          // Check if the language is supported by TTS
+          if (!_ttsService!.isLanguageSupported(word.language.code)) {
+            // Skip words with unsupported languages, but track that we encountered them
+            continue;
+          }
           final progress = await _progressRepo!.getOrCreateProgress(word.id!);
           queue.add(StudyItem(word: word, progress: progress, isNewWord: false));
         }
       }
 
       if (queue.isEmpty) {
-        state = state.copyWith(isLoading: false, isCompleted: true);
+        // Check if we had words but they were all filtered out due to language
+        if (wordIds.isNotEmpty) {
+          state = state.copyWith(
+            isLoading: false,
+            isCompleted: true,
+            errorMessage: '听力练习暂不支持日语，敬请期待',  // Audio review doesn't support Japanese yet
+          );
+        } else {
+          state = state.copyWith(isLoading: false, isCompleted: true);
+        }
         return;
       }
 
@@ -174,19 +206,32 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
     }
   }
 
-  /// Play the current word via TTS
+  /// Play the current word and example sentence via TTS
+  /// Flow: word → pause → example sentence → done
   Future<void> _playCurrentWord() async {
     final item = state.currentItem;
     if (item == null) return;
 
-    state = state.copyWith(isPlaying: true);
+    // Play the word first
+    state = state.copyWith(isPlaying: true, playbackPhase: PlaybackPhase.playingWord);
     await _ttsService?.speak(item.word.word, language: item.word.language.code);
-    state = state.copyWith(isPlaying: false);
+
+    // Short pause between word and sentence
+    await Future.delayed(const Duration(milliseconds: 800));
+
+    // Play the first example sentence if available
+    if (item.word.exampleSentences.isNotEmpty) {
+      state = state.copyWith(playbackPhase: PlaybackPhase.playingSentence);
+      final sentence = item.word.exampleSentences.first.sentence;
+      await _ttsService?.speak(sentence, language: item.word.language.code);
+    }
+
+    state = state.copyWith(isPlaying: false, playbackPhase: PlaybackPhase.idle);
 
     // In auto mode, schedule answer reveal
     if (state.mode == AudioMode.auto) {
       _autoTimer?.cancel();
-      _autoTimer = Timer(const Duration(seconds: 5), () {
+      _autoTimer = Timer(const Duration(seconds: 3), () {
         revealAnswer();
       });
     }
@@ -206,11 +251,26 @@ class AudioReviewNotifier extends Notifier<AudioReviewState> {
     }
   }
 
-  /// Replay the current word
+  /// Replay the current word and example sentence
   Future<void> replay() async {
     final item = state.currentItem;
     if (item == null) return;
+
+    // Play the word first
+    state = state.copyWith(isPlaying: true, playbackPhase: PlaybackPhase.playingWord);
     await _ttsService?.speak(item.word.word, language: item.word.language.code);
+
+    // Short pause between word and sentence
+    await Future.delayed(const Duration(milliseconds: 800));
+
+    // Play the first example sentence if available
+    if (item.word.exampleSentences.isNotEmpty) {
+      state = state.copyWith(playbackPhase: PlaybackPhase.playingSentence);
+      final sentence = item.word.exampleSentences.first.sentence;
+      await _ttsService?.speak(sentence, language: item.word.language.code);
+    }
+
+    state = state.copyWith(isPlaying: false, playbackPhase: PlaybackPhase.idle);
   }
 
   /// Rate the current word (simplified 2-level: correct/incorrect)

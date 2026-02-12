@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:screenshot/screenshot.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:super_clipboard/super_clipboard.dart';
 import 'package:path/path.dart' as p;
 
 import '../../../../core/theme/app_colors.dart';
@@ -306,24 +307,145 @@ class _CheckinScreenState extends ConsumerState<CheckinScreen> {
 
     if (imageBytes == null) return;
 
-    // Save to temp file
+    // Save to temp file for sharing
     final tempDir = Directory.systemTemp;
     final file = File(p.join(tempDir.path, 'wordmaster_checkin.png'));
     await file.writeAsBytes(imageBytes);
 
-    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-      // Desktop: show save dialog hint
+    // Show dialog with image preview
+    if (mounted) {
+      await _showShareDialog(imageBytes, file, state.record!.streakDays);
+    }
+  }
+
+  Future<void> _showShareDialog(Uint8List imageBytes, File file, int streakDays) async {
+    await showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 500, maxHeight: 700),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Header
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: AppColors.primary,
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+                ),
+                child: Row(
+                  children: [
+                    const Icon(Icons.share, color: Colors.white),
+                    const SizedBox(width: 8),
+                    const Text(
+                      '分享打卡',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Spacer(),
+                    IconButton(
+                      icon: const Icon(Icons.close, color: Colors.white),
+                      onPressed: () => Navigator.of(ctx).pop(),
+                    ),
+                  ],
+                ),
+              ),
+              // Image preview
+              Flexible(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Image.memory(
+                      imageBytes,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              ),
+              // Action buttons
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        onPressed: () async {
+                          await _copyToClipboard(imageBytes);
+                          if (ctx.mounted) {
+                            Navigator.of(ctx).pop();
+                          }
+                        },
+                        icon: const Icon(Icons.copy),
+                        label: const Text('复制图片'),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: FilledButton.icon(
+                        onPressed: () async {
+                          await _shareFile(file, streakDays);
+                          if (ctx.mounted) {
+                            Navigator.of(ctx).pop();
+                          }
+                        },
+                        icon: const Icon(Icons.share),
+                        label: const Text('分享'),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Future<void> _copyToClipboard(Uint8List imageBytes) async {
+    final clipboard = SystemClipboard.instance;
+    if (clipboard == null) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('截图已保存到: ${file.path}')),
+          const SnackBar(content: Text('此平台不支持复制图片到剪贴板')),
+        );
+      }
+      return;
+    }
+
+    final item = DataWriterItem();
+    item.add(Formats.png(imageBytes));
+    await clipboard.write([item]);
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('图片已复制到剪贴板，可直接粘贴'),
+          backgroundColor: AppColors.success,
+        ),
+      );
+    }
+  }
+
+  Future<void> _shareFile(File file, int streakDays) async {
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      // Desktop: show file path
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('图片已保存到: ${file.path}')),
         );
       }
     } else {
-      // Mobile: share
+      // Mobile: share via system share sheet
       await SharePlus.instance.share(
         ShareParams(
           files: [XFile(file.path)],
-          text: 'WordMaster 打卡 - 连续${state.record!.streakDays}天！',
+          text: 'WordMaster 打卡 - 连续$streakDays天！',
         ),
       );
     }
