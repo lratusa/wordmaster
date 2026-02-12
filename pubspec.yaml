@@ -28,6 +28,7 @@ dependencies:
   sherpa_onnx: ^1.12.24
   audioplayers: ^6.1.0
   path_provider: ^2.1.0
+  archive: ^3.6.1
 
   # HTTP Client
   dio: any

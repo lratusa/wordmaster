@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../../core/services/tts_model_downloader.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../application/settings_notifier.dart';
 
@@ -93,6 +94,16 @@ class SettingsScreen extends ConsumerWidget {
                   fontWeight: FontWeight.bold,
                   color: AppColors.primary,
                 ),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.record_voice_over),
+              title: const Text('TTS 语音模型'),
+              subtitle: const Text('下载离线语音包'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const TtsModelScreen()),
               ),
             ),
           ]),
@@ -340,6 +351,290 @@ class SettingsScreen extends ConsumerWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// TTS Model download screen
+class TtsModelScreen extends StatefulWidget {
+  const TtsModelScreen({super.key});
+
+  @override
+  State<TtsModelScreen> createState() => _TtsModelScreenState();
+}
+
+class _TtsModelScreenState extends State<TtsModelScreen> {
+  final TtsModelDownloader _downloader = TtsModelDownloader();
+  final Map<String, bool> _downloadedModels = {};
+  final Map<String, double> _downloadProgress = {};
+  final Map<String, bool> _isDownloading = {};
+  final Map<String, bool> _isExtracting = {};
+  String? _activeModelId;
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadModels();
+  }
+
+  Future<void> _loadModels() async {
+    setState(() => _isLoading = true);
+
+    for (final model in TtsModelDownloader.availableModels) {
+      _downloadedModels[model.id] = await _downloader.isModelDownloaded(model.id);
+      _isDownloading[model.id] = false;
+      _isExtracting[model.id] = false;
+    }
+    _activeModelId = await _downloader.getActiveModelId();
+
+    setState(() => _isLoading = false);
+  }
+
+  Future<void> _downloadModel(TtsModel model) async {
+    setState(() {
+      _isDownloading[model.id] = true;
+      _downloadProgress[model.id] = 0;
+    });
+
+    try {
+      await _downloader.downloadModel(
+        model,
+        onProgress: (received, total) {
+          setState(() {
+            _downloadProgress[model.id] = received / total;
+          });
+        },
+        onExtracting: () {
+          setState(() {
+            _isExtracting[model.id] = true;
+          });
+        },
+      );
+
+      setState(() {
+        _downloadedModels[model.id] = true;
+        _isDownloading[model.id] = false;
+        _isExtracting[model.id] = false;
+      });
+
+      // Auto-activate if no model is active
+      if (_activeModelId == null) {
+        await _activateModel(model.id);
+      }
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('${model.name} 下载完成')),
+        );
+      }
+    } catch (e) {
+      setState(() {
+        _isDownloading[model.id] = false;
+        _isExtracting[model.id] = false;
+      });
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('下载失败: $e')),
+        );
+      }
+    }
+  }
+
+  Future<void> _activateModel(String modelId) async {
+    await _downloader.setActiveModel(modelId);
+    setState(() {
+      _activeModelId = modelId;
+    });
+  }
+
+  Future<void> _deleteModel(TtsModel model) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('删除语音包'),
+        content: Text('确定要删除 ${model.name} 吗？'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: const Text('取消'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            style: FilledButton.styleFrom(backgroundColor: Colors.red),
+            child: const Text('删除'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed == true) {
+      await _downloader.deleteModel(model.id);
+      setState(() {
+        _downloadedModels[model.id] = false;
+        if (_activeModelId == model.id) {
+          _activeModelId = null;
+        }
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('TTS 语音模型')),
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                // Info card
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.info_outline,
+                                color: Theme.of(context).colorScheme.primary),
+                            const SizedBox(width: 8),
+                            const Text(
+                              '离线语音',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 8),
+                        const Text(
+                          '下载语音包后可离线朗读单词，无需联网。\n'
+                          '选择适合您学习语言的语音包。',
+                          style: TextStyle(fontSize: 13),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 16),
+
+                // Model list
+                ...TtsModelDownloader.availableModels.map((model) {
+                  final isDownloaded = _downloadedModels[model.id] ?? false;
+                  final isDownloading = _isDownloading[model.id] ?? false;
+                  final isExtracting = _isExtracting[model.id] ?? false;
+                  final progress = _downloadProgress[model.id] ?? 0;
+                  final isActive = _activeModelId == model.id;
+
+                  return Card(
+                    margin: const EdgeInsets.only(bottom: 12),
+                    child: ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: isActive
+                            ? AppColors.success
+                            : isDownloaded
+                                ? AppColors.primary
+                                : Colors.grey[300],
+                        child: Icon(
+                          isActive
+                              ? Icons.check
+                              : isDownloaded
+                                  ? Icons.volume_up
+                                  : Icons.download,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Row(
+                        children: [
+                          Text(model.name),
+                          if (isActive) ...[
+                            const SizedBox(width: 8),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 6, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: AppColors.success,
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: const Text(
+                                '使用中',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 10),
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                      subtitle: isDownloading
+                          ? Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const SizedBox(height: 8),
+                                LinearProgressIndicator(value: progress),
+                                const SizedBox(height: 4),
+                                Text(
+                                  isExtracting
+                                      ? '解压中...'
+                                      : '下载中 ${(progress * 100).toStringAsFixed(0)}%',
+                                  style: const TextStyle(fontSize: 12),
+                                ),
+                              ],
+                            )
+                          : Text(
+                              isDownloaded ? '已下载' : '约 ${model.sizeDisplay}',
+                            ),
+                      trailing: isDownloading
+                          ? const SizedBox(
+                              width: 24,
+                              height: 24,
+                              child: CircularProgressIndicator(strokeWidth: 2),
+                            )
+                          : isDownloaded
+                              ? PopupMenuButton<String>(
+                                  onSelected: (value) {
+                                    if (value == 'activate') {
+                                      _activateModel(model.id);
+                                    } else if (value == 'delete') {
+                                      _deleteModel(model);
+                                    }
+                                  },
+                                  itemBuilder: (ctx) => [
+                                    if (!isActive)
+                                      const PopupMenuItem(
+                                        value: 'activate',
+                                        child: Row(
+                                          children: [
+                                            Icon(Icons.check_circle_outline),
+                                            SizedBox(width: 8),
+                                            Text('使用此语音'),
+                                          ],
+                                        ),
+                                      ),
+                                    const PopupMenuItem(
+                                      value: 'delete',
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.delete_outline,
+                                              color: Colors.red),
+                                          SizedBox(width: 8),
+                                          Text('删除',
+                                              style:
+                                                  TextStyle(color: Colors.red)),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              : IconButton(
+                                  icon: const Icon(Icons.download),
+                                  onPressed: () => _downloadModel(model),
+                                ),
+                    ),
+                  );
+                }),
+              ],
+            ),
     );
   }
 }
