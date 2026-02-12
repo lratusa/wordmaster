@@ -217,7 +217,6 @@ class StatisticsScreen extends ConsumerWidget {
         barTouchData: BarTouchData(
           touchTooltipData: BarTouchTooltipData(
             getTooltipItem: (group, groupIndex, rod, rodIndex) {
-              final slot = slots[group.x.toInt()];
               final label = rodIndex == 0 ? '新词' : '复习';
               return BarTooltipItem(
                 '$label: ${rod.toY.toInt()}',

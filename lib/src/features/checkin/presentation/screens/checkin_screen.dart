@@ -9,7 +9,6 @@ import 'package:path/path.dart' as p;
 
 import '../../../../core/theme/app_colors.dart';
 import '../../application/checkin_notifier.dart';
-import '../../data/repositories/checkin_repository.dart';
 import '../widgets/checkin_card.dart';
 
 class CheckinScreen extends ConsumerStatefulWidget {

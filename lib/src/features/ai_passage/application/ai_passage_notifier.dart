@@ -10,7 +10,6 @@ import '../../../core/services/ai/ollama_service.dart';
 import '../../../core/services/ai/openai_service.dart';
 import '../../study/application/study_session_notifier.dart'
     show progressRepositoryProvider;
-import '../../study/data/repositories/progress_repository.dart';
 import '../../word_lists/data/repositories/word_repository.dart';
 import '../../word_lists/domain/models/word.dart';
 

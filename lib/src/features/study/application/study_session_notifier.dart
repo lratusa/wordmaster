@@ -1,5 +1,4 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:fsrs/fsrs.dart' as fsrs;
 
 import '../../../core/services/tts_service.dart';
 import '../../word_lists/data/repositories/word_repository.dart';

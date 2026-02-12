@@ -6,10 +6,8 @@ import '../../../core/services/tts_service.dart';
 import '../../study/application/study_session_notifier.dart';
 import '../../study/data/repositories/progress_repository.dart';
 import '../../study/data/repositories/session_repository.dart';
-import '../../study/domain/models/user_progress.dart';
 import '../../study/domain/services/fsrs_service.dart';
 import '../../word_lists/data/repositories/word_repository.dart';
-import '../../word_lists/domain/models/word.dart';
 
 /// Audio review modes
 enum AudioMode {
