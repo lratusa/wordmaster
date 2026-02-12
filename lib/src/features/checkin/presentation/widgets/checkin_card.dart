@@ -9,6 +9,8 @@ class CheckinCard extends StatelessWidget {
   final List<Achievement> achievements;
   final int totalWordsLearned;
   final int totalStudyDays;
+  final String? nickname;
+  final String? studyMotivation;
 
   const CheckinCard({
     super.key,
@@ -16,6 +18,8 @@ class CheckinCard extends StatelessWidget {
     required this.achievements,
     required this.totalWordsLearned,
     required this.totalStudyDays,
+    this.nickname,
+    this.studyMotivation,
   });
 
   @override
@@ -36,22 +40,47 @@ class CheckinCard extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // App branding
-          const Icon(Icons.school, size: 40, color: Colors.white),
-          const SizedBox(height: 8),
-          const Text(
-            'WordMaster',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
+          // User info or App branding
+          if (nickname != null && nickname!.isNotEmpty) ...[
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.2),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.person, size: 32, color: Colors.white),
             ),
-          ),
-          const SizedBox(height: 4),
-          const Text(
-            '智能背单词',
-            style: TextStyle(color: Colors.white70, fontSize: 14),
-          ),
+            const SizedBox(height: 8),
+            Text(
+              nickname!,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            if (studyMotivation != null && studyMotivation!.isNotEmpty)
+              Text(
+                '目标: $studyMotivation',
+                style: const TextStyle(color: Colors.white70, fontSize: 13),
+              ),
+          ] else ...[
+            const Icon(Icons.school, size: 40, color: Colors.white),
+            const SizedBox(height: 8),
+            const Text(
+              'WordMaster',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 4),
+            const Text(
+              '智能背单词',
+              style: TextStyle(color: Colors.white70, fontSize: 14),
+            ),
+          ],
           const SizedBox(height: 24),
 
           // Divider

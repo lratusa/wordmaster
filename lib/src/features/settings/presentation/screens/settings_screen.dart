@@ -151,6 +151,39 @@ class SettingsScreen extends ConsumerWidget {
             ),
           ]),
 
+          // Personalization
+          _buildSection(context, '个性化', [
+            ListTile(
+              leading: _buildAvatarIcon(settings.avatarIndex),
+              title: const Text('头像'),
+              subtitle: const Text('选择你的头像'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _showAvatarDialog(context, notifier, settings.avatarIndex),
+            ),
+            ListTile(
+              leading: const Icon(Icons.person),
+              title: const Text('昵称'),
+              subtitle: Text(settings.nickname.isEmpty ? '未设置' : settings.nickname),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _showTextInputDialog(
+                context,
+                title: '设置昵称',
+                currentValue: settings.nickname,
+                hint: '输入你的昵称',
+                onSave: notifier.setNickname,
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.flag),
+              title: const Text('学习目标'),
+              subtitle: Text(settings.studyMotivation.isEmpty
+                  ? '未设置'
+                  : settings.studyMotivation),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _showMotivationDialog(context, notifier, settings.studyMotivation),
+            ),
+          ]),
+
           // Appearance
           _buildSection(context, '外观', [
             ListTile(
@@ -313,6 +346,146 @@ class SettingsScreen extends ConsumerWidget {
                 notifier.setThemeMode(v);
                 Navigator.of(ctx).pop();
               }
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Available avatars for user selection
+  static const List<IconData> _avatarIcons = [
+    Icons.face,
+    Icons.face_2,
+    Icons.face_3,
+    Icons.face_4,
+    Icons.face_5,
+    Icons.face_6,
+    Icons.school,
+    Icons.auto_stories,
+    Icons.psychology,
+    Icons.lightbulb,
+    Icons.rocket_launch,
+    Icons.star,
+  ];
+
+  /// Available study motivations
+  static const List<String> _motivations = [
+    '考研',
+    '四六级',
+    '托福/雅思',
+    'GRE/GMAT',
+    '工作需要',
+    '出国留学',
+    '日常交流',
+    '兴趣爱好',
+    '自我提升',
+  ];
+
+  Widget _buildAvatarIcon(int index) {
+    final iconData = index >= 0 && index < _avatarIcons.length
+        ? _avatarIcons[index]
+        : _avatarIcons[0];
+    return CircleAvatar(
+      backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+      child: Icon(iconData, color: AppColors.primary),
+    );
+  }
+
+  void _showAvatarDialog(
+    BuildContext context,
+    SettingsNotifier notifier,
+    int currentIndex,
+  ) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('选择头像'),
+        content: SizedBox(
+          width: 300,
+          child: GridView.builder(
+            shrinkWrap: true,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 4,
+              mainAxisSpacing: 12,
+              crossAxisSpacing: 12,
+            ),
+            itemCount: _avatarIcons.length,
+            itemBuilder: (context, index) {
+              final isSelected = index == currentIndex;
+              return InkWell(
+                onTap: () {
+                  notifier.setAvatarIndex(index);
+                  Navigator.of(ctx).pop();
+                },
+                borderRadius: BorderRadius.circular(32),
+                child: Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: isSelected
+                        ? AppColors.primary
+                        : AppColors.primary.withValues(alpha: 0.1),
+                    border: isSelected
+                        ? Border.all(color: AppColors.primary, width: 2)
+                        : null,
+                  ),
+                  child: Icon(
+                    _avatarIcons[index],
+                    color: isSelected ? Colors.white : AppColors.primary,
+                    size: 28,
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text('取消'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showMotivationDialog(
+    BuildContext context,
+    SettingsNotifier notifier,
+    String currentMotivation,
+  ) {
+    showDialog(
+      context: context,
+      builder: (ctx) => SimpleDialog(
+        title: const Text('学习目标'),
+        children: [
+          ..._motivations.map((motivation) {
+            final isSelected = motivation == currentMotivation;
+            return ListTile(
+              leading: Icon(
+                isSelected ? Icons.check_circle : Icons.circle_outlined,
+                color: isSelected ? AppColors.success : null,
+              ),
+              title: Text(motivation),
+              onTap: () {
+                notifier.setStudyMotivation(motivation);
+                Navigator.of(ctx).pop();
+              },
+            );
+          }),
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.edit),
+            title: const Text('自定义'),
+            onTap: () {
+              Navigator.of(ctx).pop();
+              _showTextInputDialog(
+                context,
+                title: '自定义学习目标',
+                currentValue: currentMotivation,
+                hint: '输入你的学习目标',
+                onSave: notifier.setStudyMotivation,
+              );
             },
           ),
         ],

@@ -9,7 +9,12 @@ import '../../domain/models/word_list.dart';
 /// Loads word list data from bundled JSON assets
 class WordListAssetDatasource {
   static const _assetPaths = {
+    // English - CEFR levels
+    'cefr_a1': 'assets/wordlists/english/cefr_a1.json',
+    'cefr_a2': 'assets/wordlists/english/cefr_a2.json',
+    // English - CET
     'cet4': 'assets/wordlists/english/cet4.json',
+    // Japanese - JLPT
     'jlpt_n5': 'assets/wordlists/japanese/jlpt_n5.json',
   };
 

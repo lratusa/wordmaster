@@ -9,6 +9,7 @@ import 'package:super_clipboard/super_clipboard.dart';
 import 'package:path/path.dart' as p;
 
 import '../../../../core/theme/app_colors.dart';
+import '../../../settings/application/settings_notifier.dart';
 import '../../application/checkin_notifier.dart';
 import '../widgets/checkin_card.dart';
 
@@ -290,6 +291,7 @@ class _CheckinScreenState extends ConsumerState<CheckinScreen> {
 
   Future<void> _shareCheckin() async {
     final state = ref.read(checkinProvider);
+    final settings = ref.read(settingsProvider);
     if (!state.hasCheckedIn || state.record == null) return;
 
     // Generate screenshot from the CheckinCard widget
@@ -301,6 +303,8 @@ class _CheckinScreenState extends ConsumerState<CheckinScreen> {
             state.achievements.where((a) => a.isUnlocked).toList(),
         totalWordsLearned: state.totalWordsLearned,
         totalStudyDays: state.totalStudyDays,
+        nickname: settings.nickname,
+        studyMotivation: settings.studyMotivation,
       ),
       delay: const Duration(milliseconds: 100),
     );

@@ -10,6 +10,7 @@ import 'package:super_clipboard/super_clipboard.dart';
 import 'package:path/path.dart' as p;
 
 import '../../../../core/theme/app_colors.dart';
+import '../../../settings/application/settings_notifier.dart';
 import '../../application/study_session_notifier.dart';
 import '../widgets/session_summary_card.dart';
 
@@ -206,6 +207,8 @@ extension _SessionSummaryScreenStateShare on _SessionSummaryScreenState {
     required int correctRate,
     required int minutes,
   }) async {
+    final settings = ref.read(settingsProvider);
+
     // Generate screenshot from the SessionSummaryCard widget
     final Uint8List? imageBytes =
         await _screenshotController.captureFromLongWidget(
@@ -214,6 +217,8 @@ extension _SessionSummaryScreenStateShare on _SessionSummaryScreenState {
         newWords: newWords,
         correctRate: correctRate,
         minutes: minutes,
+        nickname: settings.nickname,
+        studyMotivation: settings.studyMotivation,
       ),
       delay: const Duration(milliseconds: 100),
     );

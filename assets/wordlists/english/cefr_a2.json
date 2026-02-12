@@ -1,0 +1,2395 @@
+{
+  "name": "CEFR A2 初级",
+  "language": "en",
+  "description": "欧洲语言共同参考框架 A2 级别基础词汇",
+  "icon_name": "menu_book",
+  "words": [
+    {
+      "word": "abroad",
+      "translation_cn": "在国外；到国外",
+      "part_of_speech": "adv.",
+      "phonetic": "/əˈbrɔːd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I want to travel abroad.", "translation_cn": "我想出国旅行。"},
+        {"sentence": "She studied abroad for two years.", "translation_cn": "她在国外学习了两年。"}
+      ]
+    },
+    {
+      "word": "accept",
+      "translation_cn": "接受；同意",
+      "part_of_speech": "v.",
+      "phonetic": "/əkˈsept/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please accept my apology.", "translation_cn": "请接受我的道歉。"},
+        {"sentence": "I accept your invitation.", "translation_cn": "我接受你的邀请。"}
+      ]
+    },
+    {
+      "word": "accident",
+      "translation_cn": "事故；意外",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈæksɪdənt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "There was a car accident.", "translation_cn": "发生了一起车祸。"},
+        {"sentence": "It was an accident.", "translation_cn": "那是个意外。"}
+      ]
+    },
+    {
+      "word": "achieve",
+      "translation_cn": "达到；实现",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈtʃiːv/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "She achieved her goal.", "translation_cn": "她实现了她的目标。"},
+        {"sentence": "You can achieve anything.", "translation_cn": "你可以实现任何事。"}
+      ]
+    },
+    {
+      "word": "active",
+      "translation_cn": "积极的；活跃的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈæktɪv/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "He is very active in sports.", "translation_cn": "他在运动方面很活跃。"},
+        {"sentence": "Stay active and healthy.", "translation_cn": "保持活跃和健康。"}
+      ]
+    },
+    {
+      "word": "actually",
+      "translation_cn": "实际上；事实上",
+      "part_of_speech": "adv.",
+      "phonetic": "/ˈæktʃuəli/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Actually, I prefer tea.", "translation_cn": "实际上，我更喜欢茶。"},
+        {"sentence": "What actually happened?", "translation_cn": "到底发生了什么？"}
+      ]
+    },
+    {
+      "word": "adventure",
+      "translation_cn": "冒险；奇遇",
+      "part_of_speech": "n.",
+      "phonetic": "/ədˈventʃə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Life is an adventure.", "translation_cn": "生活是一场冒险。"},
+        {"sentence": "We had a great adventure.", "translation_cn": "我们经历了一次伟大的冒险。"}
+      ]
+    },
+    {
+      "word": "advice",
+      "translation_cn": "建议；忠告",
+      "part_of_speech": "n.",
+      "phonetic": "/ədˈvaɪs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Thank you for your advice.", "translation_cn": "谢谢你的建议。"},
+        {"sentence": "I need some advice.", "translation_cn": "我需要一些建议。"}
+      ]
+    },
+    {
+      "word": "afford",
+      "translation_cn": "负担得起；买得起",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈfɔːd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I can't afford this car.", "translation_cn": "我买不起这辆车。"},
+        {"sentence": "Can you afford the rent?", "translation_cn": "你负担得起租金吗？"}
+      ]
+    },
+    {
+      "word": "afraid",
+      "translation_cn": "害怕的",
+      "part_of_speech": "adj.",
+      "phonetic": "/əˈfreɪd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I am afraid of the dark.", "translation_cn": "我害怕黑暗。"},
+        {"sentence": "Don't be afraid.", "translation_cn": "别害怕。"}
+      ]
+    },
+    {
+      "word": "agree",
+      "translation_cn": "同意",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈɡriː/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I agree with you.", "translation_cn": "我同意你的看法。"},
+        {"sentence": "Do you agree?", "translation_cn": "你同意吗？"}
+      ]
+    },
+    {
+      "word": "airport",
+      "translation_cn": "机场",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈeəpɔːt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I will pick you up at the airport.", "translation_cn": "我会到机场接你。"},
+        {"sentence": "The airport is very busy.", "translation_cn": "机场很繁忙。"}
+      ]
+    },
+    {
+      "word": "allow",
+      "translation_cn": "允许；准许",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈlaʊ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Smoking is not allowed here.", "translation_cn": "这里不允许吸烟。"},
+        {"sentence": "Please allow me to explain.", "translation_cn": "请允许我解释。"}
+      ]
+    },
+    {
+      "word": "almost",
+      "translation_cn": "几乎；差不多",
+      "part_of_speech": "adv.",
+      "phonetic": "/ˈɔːlməʊst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I'm almost done.", "translation_cn": "我快完成了。"},
+        {"sentence": "It's almost midnight.", "translation_cn": "快到午夜了。"}
+      ]
+    },
+    {
+      "word": "alone",
+      "translation_cn": "独自的；单独的",
+      "part_of_speech": "adj./adv.",
+      "phonetic": "/əˈləʊn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I live alone.", "translation_cn": "我一个人住。"},
+        {"sentence": "Leave me alone.", "translation_cn": "让我一个人待着。"}
+      ]
+    },
+    {
+      "word": "already",
+      "translation_cn": "已经",
+      "part_of_speech": "adv.",
+      "phonetic": "/ɔːlˈredi/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I have already finished.", "translation_cn": "我已经完成了。"},
+        {"sentence": "It's already 10 o'clock.", "translation_cn": "已经10点了。"}
+      ]
+    },
+    {
+      "word": "although",
+      "translation_cn": "虽然；尽管",
+      "part_of_speech": "conj.",
+      "phonetic": "/ɔːlˈðəʊ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Although I was tired, I continued.", "translation_cn": "虽然我很累，但我继续了。"},
+        {"sentence": "Although it rained, we had fun.", "translation_cn": "虽然下雨了，我们还是玩得很开心。"}
+      ]
+    },
+    {
+      "word": "amazing",
+      "translation_cn": "令人惊叹的",
+      "part_of_speech": "adj.",
+      "phonetic": "/əˈmeɪzɪŋ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The view is amazing!", "translation_cn": "景色太令人惊叹了！"},
+        {"sentence": "You did an amazing job.", "translation_cn": "你做得太棒了。"}
+      ]
+    },
+    {
+      "word": "ancient",
+      "translation_cn": "古老的；古代的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈeɪnʃənt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This is an ancient temple.", "translation_cn": "这是一座古老的寺庙。"},
+        {"sentence": "Ancient history is interesting.", "translation_cn": "古代历史很有趣。"}
+      ]
+    },
+    {
+      "word": "angry",
+      "translation_cn": "生气的；愤怒的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈæŋɡri/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Don't be angry with me.", "translation_cn": "不要对我生气。"},
+        {"sentence": "He looks angry.", "translation_cn": "他看起来很生气。"}
+      ]
+    },
+    {
+      "word": "animal",
+      "translation_cn": "动物",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈænɪml/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I love animals.", "translation_cn": "我喜欢动物。"},
+        {"sentence": "What's your favorite animal?", "translation_cn": "你最喜欢什么动物？"}
+      ]
+    },
+    {
+      "word": "announce",
+      "translation_cn": "宣布；公布",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈnaʊns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "They announced the winner.", "translation_cn": "他们宣布了获胜者。"},
+        {"sentence": "I have something to announce.", "translation_cn": "我有事要宣布。"}
+      ]
+    },
+    {
+      "word": "appear",
+      "translation_cn": "出现；似乎",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈpɪə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "A rainbow appeared.", "translation_cn": "彩虹出现了。"},
+        {"sentence": "She appears to be happy.", "translation_cn": "她看起来很开心。"}
+      ]
+    },
+    {
+      "word": "appointment",
+      "translation_cn": "约会；预约",
+      "part_of_speech": "n.",
+      "phonetic": "/əˈpɔɪntmənt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I have a doctor's appointment.", "translation_cn": "我有医生的预约。"},
+        {"sentence": "Please make an appointment.", "translation_cn": "请预约。"}
+      ]
+    },
+    {
+      "word": "area",
+      "translation_cn": "地区；区域",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈeəriə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This area is very quiet.", "translation_cn": "这个地区很安静。"},
+        {"sentence": "I live in this area.", "translation_cn": "我住在这个区域。"}
+      ]
+    },
+    {
+      "word": "argue",
+      "translation_cn": "争论；争辩",
+      "part_of_speech": "v.",
+      "phonetic": "/ˈɑːɡjuː/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Don't argue with me.", "translation_cn": "不要和我争论。"},
+        {"sentence": "They always argue about money.", "translation_cn": "他们总是为钱争吵。"}
+      ]
+    },
+    {
+      "word": "arm",
+      "translation_cn": "手臂",
+      "part_of_speech": "n.",
+      "phonetic": "/ɑːm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I hurt my arm.", "translation_cn": "我伤了手臂。"},
+        {"sentence": "She has long arms.", "translation_cn": "她的手臂很长。"}
+      ]
+    },
+    {
+      "word": "arrange",
+      "translation_cn": "安排；整理",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈreɪndʒ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I will arrange the meeting.", "translation_cn": "我会安排会议。"},
+        {"sentence": "Let me arrange the flowers.", "translation_cn": "让我来整理花。"}
+      ]
+    },
+    {
+      "word": "arrive",
+      "translation_cn": "到达",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈraɪv/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What time will you arrive?", "translation_cn": "你什么时候到达？"},
+        {"sentence": "The train arrived late.", "translation_cn": "火车晚点了。"}
+      ]
+    },
+    {
+      "word": "art",
+      "translation_cn": "艺术",
+      "part_of_speech": "n.",
+      "phonetic": "/ɑːt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I love modern art.", "translation_cn": "我喜欢现代艺术。"},
+        {"sentence": "She studies art.", "translation_cn": "她学习艺术。"}
+      ]
+    },
+    {
+      "word": "article",
+      "translation_cn": "文章；物品",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈɑːtɪkl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I read an interesting article.", "translation_cn": "我读了一篇有趣的文章。"},
+        {"sentence": "This is a useful article.", "translation_cn": "这是一篇有用的文章。"}
+      ]
+    },
+    {
+      "word": "artist",
+      "translation_cn": "艺术家",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈɑːtɪst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "He is a famous artist.", "translation_cn": "他是一位著名的艺术家。"},
+        {"sentence": "The artist painted this.", "translation_cn": "艺术家画了这幅画。"}
+      ]
+    },
+    {
+      "word": "attention",
+      "translation_cn": "注意；关注",
+      "part_of_speech": "n.",
+      "phonetic": "/əˈtenʃn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Pay attention to the teacher.", "translation_cn": "注意听老师讲课。"},
+        {"sentence": "She needs your attention.", "translation_cn": "她需要你的关注。"}
+      ]
+    },
+    {
+      "word": "aunt",
+      "translation_cn": "姑妈；阿姨",
+      "part_of_speech": "n.",
+      "phonetic": "/ɑːnt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "My aunt lives in London.", "translation_cn": "我姑妈住在伦敦。"},
+        {"sentence": "I visited my aunt yesterday.", "translation_cn": "我昨天拜访了我阿姨。"}
+      ]
+    },
+    {
+      "word": "autumn",
+      "translation_cn": "秋天",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈɔːtəm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Autumn is my favorite season.", "translation_cn": "秋天是我最喜欢的季节。"},
+        {"sentence": "The leaves fall in autumn.", "translation_cn": "秋天树叶会落下。"}
+      ]
+    },
+    {
+      "word": "average",
+      "translation_cn": "平均的；普通的",
+      "part_of_speech": "adj./n.",
+      "phonetic": "/ˈævərɪdʒ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The average score is 80.", "translation_cn": "平均分是80分。"},
+        {"sentence": "On average, I sleep 7 hours.", "translation_cn": "平均来说，我睡7个小时。"}
+      ]
+    },
+    {
+      "word": "avoid",
+      "translation_cn": "避免；躲避",
+      "part_of_speech": "v.",
+      "phonetic": "/əˈvɔɪd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Try to avoid mistakes.", "translation_cn": "尽量避免错误。"},
+        {"sentence": "I avoid eating junk food.", "translation_cn": "我避免吃垃圾食品。"}
+      ]
+    },
+    {
+      "word": "background",
+      "translation_cn": "背景",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbækɡraʊnd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Tell me about your background.", "translation_cn": "告诉我你的背景。"},
+        {"sentence": "The background is beautiful.", "translation_cn": "背景很漂亮。"}
+      ]
+    },
+    {
+      "word": "ball",
+      "translation_cn": "球",
+      "part_of_speech": "n.",
+      "phonetic": "/bɔːl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Kick the ball.", "translation_cn": "踢球。"},
+        {"sentence": "The ball is round.", "translation_cn": "球是圆的。"}
+      ]
+    },
+    {
+      "word": "bank",
+      "translation_cn": "银行；河岸",
+      "part_of_speech": "n.",
+      "phonetic": "/bæŋk/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I need to go to the bank.", "translation_cn": "我需要去银行。"},
+        {"sentence": "The bank is closed today.", "translation_cn": "银行今天不营业。"}
+      ]
+    },
+    {
+      "word": "bathroom",
+      "translation_cn": "浴室；洗手间",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbɑːθruːm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Where is the bathroom?", "translation_cn": "洗手间在哪里？"},
+        {"sentence": "The bathroom is upstairs.", "translation_cn": "浴室在楼上。"}
+      ]
+    },
+    {
+      "word": "beach",
+      "translation_cn": "海滩",
+      "part_of_speech": "n.",
+      "phonetic": "/biːtʃ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Let's go to the beach.", "translation_cn": "我们去海滩吧。"},
+        {"sentence": "The beach is beautiful.", "translation_cn": "海滩很美。"}
+      ]
+    },
+    {
+      "word": "bear",
+      "translation_cn": "熊；忍受",
+      "part_of_speech": "n./v.",
+      "phonetic": "/beə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I saw a bear in the forest.", "translation_cn": "我在森林里看到了一只熊。"},
+        {"sentence": "I can't bear the pain.", "translation_cn": "我无法忍受这种痛苦。"}
+      ]
+    },
+    {
+      "word": "beat",
+      "translation_cn": "打败；心跳",
+      "part_of_speech": "v./n.",
+      "phonetic": "/biːt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We beat the other team.", "translation_cn": "我们打败了对方队伍。"},
+        {"sentence": "My heart is beating fast.", "translation_cn": "我的心跳得很快。"}
+      ]
+    },
+    {
+      "word": "become",
+      "translation_cn": "变成",
+      "part_of_speech": "v.",
+      "phonetic": "/bɪˈkʌm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I want to become a doctor.", "translation_cn": "我想成为一名医生。"},
+        {"sentence": "It became cold.", "translation_cn": "天气变冷了。"}
+      ]
+    },
+    {
+      "word": "begin",
+      "translation_cn": "开始",
+      "part_of_speech": "v.",
+      "phonetic": "/bɪˈɡɪn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Let's begin the meeting.", "translation_cn": "让我们开始会议。"},
+        {"sentence": "The movie will begin soon.", "translation_cn": "电影很快就要开始了。"}
+      ]
+    },
+    {
+      "word": "behavior",
+      "translation_cn": "行为；举止",
+      "part_of_speech": "n.",
+      "phonetic": "/bɪˈheɪvjə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "His behavior is strange.", "translation_cn": "他的行为很奇怪。"},
+        {"sentence": "Good behavior is important.", "translation_cn": "良好的行为很重要。"}
+      ]
+    },
+    {
+      "word": "behind",
+      "translation_cn": "在…后面",
+      "part_of_speech": "prep.",
+      "phonetic": "/bɪˈhaɪnd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The car is behind the house.", "translation_cn": "车在房子后面。"},
+        {"sentence": "Who is behind you?", "translation_cn": "谁在你后面？"}
+      ]
+    },
+    {
+      "word": "believe",
+      "translation_cn": "相信",
+      "part_of_speech": "v.",
+      "phonetic": "/bɪˈliːv/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I believe you.", "translation_cn": "我相信你。"},
+        {"sentence": "Do you believe in ghosts?", "translation_cn": "你相信鬼吗？"}
+      ]
+    },
+    {
+      "word": "belong",
+      "translation_cn": "属于",
+      "part_of_speech": "v.",
+      "phonetic": "/bɪˈlɒŋ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This book belongs to me.", "translation_cn": "这本书是我的。"},
+        {"sentence": "Where does this belong?", "translation_cn": "这个该放在哪里？"}
+      ]
+    },
+    {
+      "word": "below",
+      "translation_cn": "在…下面",
+      "part_of_speech": "prep./adv.",
+      "phonetic": "/bɪˈləʊ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The temperature is below zero.", "translation_cn": "温度在零度以下。"},
+        {"sentence": "See the example below.", "translation_cn": "见下面的例子。"}
+      ]
+    },
+    {
+      "word": "beside",
+      "translation_cn": "在…旁边",
+      "part_of_speech": "prep.",
+      "phonetic": "/bɪˈsaɪd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Sit beside me.", "translation_cn": "坐在我旁边。"},
+        {"sentence": "The dog is beside the table.", "translation_cn": "狗在桌子旁边。"}
+      ]
+    },
+    {
+      "word": "besides",
+      "translation_cn": "除了；而且",
+      "part_of_speech": "prep./adv.",
+      "phonetic": "/bɪˈsaɪdz/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Besides English, I speak French.", "translation_cn": "除了英语，我还说法语。"},
+        {"sentence": "Besides, it's too expensive.", "translation_cn": "而且，它太贵了。"}
+      ]
+    },
+    {
+      "word": "best",
+      "translation_cn": "最好的",
+      "part_of_speech": "adj./adv.",
+      "phonetic": "/best/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This is the best movie.", "translation_cn": "这是最好的电影。"},
+        {"sentence": "I did my best.", "translation_cn": "我尽力了。"}
+      ]
+    },
+    {
+      "word": "better",
+      "translation_cn": "更好的",
+      "part_of_speech": "adj./adv.",
+      "phonetic": "/ˈbetə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I feel better today.", "translation_cn": "我今天感觉好多了。"},
+        {"sentence": "This is better than that.", "translation_cn": "这个比那个好。"}
+      ]
+    },
+    {
+      "word": "between",
+      "translation_cn": "在…之间",
+      "part_of_speech": "prep.",
+      "phonetic": "/bɪˈtwiːn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I sit between Tom and Mary.", "translation_cn": "我坐在汤姆和玛丽之间。"},
+        {"sentence": "The meeting is between 2 and 4.", "translation_cn": "会议在2点到4点之间。"}
+      ]
+    },
+    {
+      "word": "bill",
+      "translation_cn": "账单；纸币",
+      "part_of_speech": "n.",
+      "phonetic": "/bɪl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Can I have the bill, please?", "translation_cn": "请给我账单好吗？"},
+        {"sentence": "I need to pay the bill.", "translation_cn": "我需要付账。"}
+      ]
+    },
+    {
+      "word": "bird",
+      "translation_cn": "鸟",
+      "part_of_speech": "n.",
+      "phonetic": "/bɜːd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "A bird is singing.", "translation_cn": "一只鸟在唱歌。"},
+        {"sentence": "I saw a beautiful bird.", "translation_cn": "我看到了一只漂亮的鸟。"}
+      ]
+    },
+    {
+      "word": "birthday",
+      "translation_cn": "生日",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbɜːθdeɪ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Happy birthday!", "translation_cn": "生日快乐！"},
+        {"sentence": "When is your birthday?", "translation_cn": "你的生日是什么时候？"}
+      ]
+    },
+    {
+      "word": "boat",
+      "translation_cn": "船",
+      "part_of_speech": "n.",
+      "phonetic": "/bəʊt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We went on a boat.", "translation_cn": "我们坐船去了。"},
+        {"sentence": "The boat is on the lake.", "translation_cn": "船在湖上。"}
+      ]
+    },
+    {
+      "word": "body",
+      "translation_cn": "身体",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbɒdi/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Exercise is good for the body.", "translation_cn": "锻炼对身体有益。"},
+        {"sentence": "My body hurts.", "translation_cn": "我身体疼。"}
+      ]
+    },
+    {
+      "word": "borrow",
+      "translation_cn": "借入",
+      "part_of_speech": "v.",
+      "phonetic": "/ˈbɒrəʊ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Can I borrow your pen?", "translation_cn": "我能借你的笔吗？"},
+        {"sentence": "I borrowed a book from the library.", "translation_cn": "我从图书馆借了一本书。"}
+      ]
+    },
+    {
+      "word": "boss",
+      "translation_cn": "老板",
+      "part_of_speech": "n.",
+      "phonetic": "/bɒs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "My boss is very nice.", "translation_cn": "我的老板很好。"},
+        {"sentence": "I need to talk to my boss.", "translation_cn": "我需要和老板谈谈。"}
+      ]
+    },
+    {
+      "word": "both",
+      "translation_cn": "两个都",
+      "part_of_speech": "adj./pron.",
+      "phonetic": "/bəʊθ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I like both of them.", "translation_cn": "我两个都喜欢。"},
+        {"sentence": "Both answers are correct.", "translation_cn": "两个答案都正确。"}
+      ]
+    },
+    {
+      "word": "bottom",
+      "translation_cn": "底部",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbɒtəm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Look at the bottom of the page.", "translation_cn": "看页面底部。"},
+        {"sentence": "The key is at the bottom.", "translation_cn": "钥匙在底部。"}
+      ]
+    },
+    {
+      "word": "bowl",
+      "translation_cn": "碗",
+      "part_of_speech": "n.",
+      "phonetic": "/bəʊl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I had a bowl of rice.", "translation_cn": "我吃了一碗饭。"},
+        {"sentence": "Put the fruit in the bowl.", "translation_cn": "把水果放在碗里。"}
+      ]
+    },
+    {
+      "word": "box",
+      "translation_cn": "盒子；箱子",
+      "part_of_speech": "n.",
+      "phonetic": "/bɒks/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Open the box.", "translation_cn": "打开盒子。"},
+        {"sentence": "The box is heavy.", "translation_cn": "箱子很重。"}
+      ]
+    },
+    {
+      "word": "brain",
+      "translation_cn": "大脑",
+      "part_of_speech": "n.",
+      "phonetic": "/breɪn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Use your brain.", "translation_cn": "动动脑子。"},
+        {"sentence": "The brain is amazing.", "translation_cn": "大脑很神奇。"}
+      ]
+    },
+    {
+      "word": "break",
+      "translation_cn": "打破；休息",
+      "part_of_speech": "v./n.",
+      "phonetic": "/breɪk/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Don't break the glass.", "translation_cn": "不要打破玻璃。"},
+        {"sentence": "Let's take a break.", "translation_cn": "让我们休息一下。"}
+      ]
+    },
+    {
+      "word": "breakfast",
+      "translation_cn": "早餐",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbrekfəst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What did you have for breakfast?", "translation_cn": "你早餐吃了什么？"},
+        {"sentence": "Breakfast is ready.", "translation_cn": "早餐准备好了。"}
+      ]
+    },
+    {
+      "word": "bridge",
+      "translation_cn": "桥",
+      "part_of_speech": "n.",
+      "phonetic": "/brɪdʒ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We crossed the bridge.", "translation_cn": "我们过了桥。"},
+        {"sentence": "The bridge is very old.", "translation_cn": "这座桥很古老。"}
+      ]
+    },
+    {
+      "word": "bright",
+      "translation_cn": "明亮的；聪明的",
+      "part_of_speech": "adj.",
+      "phonetic": "/braɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The sun is bright.", "translation_cn": "太阳很明亮。"},
+        {"sentence": "She is a bright student.", "translation_cn": "她是个聪明的学生。"}
+      ]
+    },
+    {
+      "word": "bring",
+      "translation_cn": "带来",
+      "part_of_speech": "v.",
+      "phonetic": "/brɪŋ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please bring your book.", "translation_cn": "请带上你的书。"},
+        {"sentence": "I brought you a gift.", "translation_cn": "我给你带了礼物。"}
+      ]
+    },
+    {
+      "word": "build",
+      "translation_cn": "建造",
+      "part_of_speech": "v.",
+      "phonetic": "/bɪld/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "They built a new house.", "translation_cn": "他们建了一座新房子。"},
+        {"sentence": "Let's build something together.", "translation_cn": "让我们一起建造些什么。"}
+      ]
+    },
+    {
+      "word": "building",
+      "translation_cn": "建筑物",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbɪldɪŋ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This building is very tall.", "translation_cn": "这座建筑很高。"},
+        {"sentence": "I work in that building.", "translation_cn": "我在那栋建筑里工作。"}
+      ]
+    },
+    {
+      "word": "burn",
+      "translation_cn": "燃烧；烧伤",
+      "part_of_speech": "v.",
+      "phonetic": "/bɜːn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Don't burn yourself.", "translation_cn": "别烫到自己。"},
+        {"sentence": "The fire is burning.", "translation_cn": "火在燃烧。"}
+      ]
+    },
+    {
+      "word": "business",
+      "translation_cn": "生意；商业",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbɪznəs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I'm here on business.", "translation_cn": "我来这里出差。"},
+        {"sentence": "Business is good.", "translation_cn": "生意很好。"}
+      ]
+    },
+    {
+      "word": "busy",
+      "translation_cn": "忙碌的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈbɪzi/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I'm very busy today.", "translation_cn": "我今天很忙。"},
+        {"sentence": "The street is busy.", "translation_cn": "街道很繁忙。"}
+      ]
+    },
+    {
+      "word": "butter",
+      "translation_cn": "黄油",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbʌtə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I like bread with butter.", "translation_cn": "我喜欢涂黄油的面包。"},
+        {"sentence": "Please pass the butter.", "translation_cn": "请把黄油递给我。"}
+      ]
+    },
+    {
+      "word": "button",
+      "translation_cn": "按钮；纽扣",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈbʌtn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Press the button.", "translation_cn": "按下按钮。"},
+        {"sentence": "I lost a button.", "translation_cn": "我丢了一颗纽扣。"}
+      ]
+    },
+    {
+      "word": "cake",
+      "translation_cn": "蛋糕",
+      "part_of_speech": "n.",
+      "phonetic": "/keɪk/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I made a cake.", "translation_cn": "我做了一个蛋糕。"},
+        {"sentence": "The cake is delicious.", "translation_cn": "蛋糕很好吃。"}
+      ]
+    },
+    {
+      "word": "camera",
+      "translation_cn": "相机",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkæmərə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I bought a new camera.", "translation_cn": "我买了一部新相机。"},
+        {"sentence": "The camera takes good photos.", "translation_cn": "这相机拍照效果很好。"}
+      ]
+    },
+    {
+      "word": "camp",
+      "translation_cn": "露营；营地",
+      "part_of_speech": "n./v.",
+      "phonetic": "/kæmp/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We went camping last weekend.", "translation_cn": "我们上周末去露营了。"},
+        {"sentence": "The camp is near the lake.", "translation_cn": "营地在湖边。"}
+      ]
+    },
+    {
+      "word": "cancel",
+      "translation_cn": "取消",
+      "part_of_speech": "v.",
+      "phonetic": "/ˈkænsl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I need to cancel my appointment.", "translation_cn": "我需要取消我的预约。"},
+        {"sentence": "The flight was cancelled.", "translation_cn": "航班被取消了。"}
+      ]
+    },
+    {
+      "word": "capital",
+      "translation_cn": "首都；资本",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkæpɪtl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Beijing is the capital of China.", "translation_cn": "北京是中国的首都。"},
+        {"sentence": "Write your name in capital letters.", "translation_cn": "用大写字母写你的名字。"}
+      ]
+    },
+    {
+      "word": "card",
+      "translation_cn": "卡片；名片",
+      "part_of_speech": "n.",
+      "phonetic": "/kɑːd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I sent her a birthday card.", "translation_cn": "我给她寄了生日卡片。"},
+        {"sentence": "Do you have a business card?", "translation_cn": "你有名片吗？"}
+      ]
+    },
+    {
+      "word": "care",
+      "translation_cn": "关心；照顾",
+      "part_of_speech": "v./n.",
+      "phonetic": "/keə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I don't care.", "translation_cn": "我不在乎。"},
+        {"sentence": "Take care of yourself.", "translation_cn": "照顾好自己。"}
+      ]
+    },
+    {
+      "word": "careful",
+      "translation_cn": "小心的；仔细的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈkeəfl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Be careful!", "translation_cn": "小心！"},
+        {"sentence": "She is very careful.", "translation_cn": "她非常仔细。"}
+      ]
+    },
+    {
+      "word": "carry",
+      "translation_cn": "携带；搬运",
+      "part_of_speech": "v.",
+      "phonetic": "/ˈkæri/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Can you carry this bag?", "translation_cn": "你能拎这个包吗？"},
+        {"sentence": "I always carry my phone.", "translation_cn": "我总是随身携带手机。"}
+      ]
+    },
+    {
+      "word": "case",
+      "translation_cn": "情况；案例",
+      "part_of_speech": "n.",
+      "phonetic": "/keɪs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "In that case, I'll stay.", "translation_cn": "既然如此，我就留下。"},
+        {"sentence": "This is a special case.", "translation_cn": "这是一个特殊情况。"}
+      ]
+    },
+    {
+      "word": "catch",
+      "translation_cn": "抓住；赶上",
+      "part_of_speech": "v.",
+      "phonetic": "/kætʃ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Catch the ball!", "translation_cn": "接住球！"},
+        {"sentence": "I need to catch the train.", "translation_cn": "我需要赶火车。"}
+      ]
+    },
+    {
+      "word": "cause",
+      "translation_cn": "原因；引起",
+      "part_of_speech": "n./v.",
+      "phonetic": "/kɔːz/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What caused the problem?", "translation_cn": "是什么引起了这个问题？"},
+        {"sentence": "The cause is unknown.", "translation_cn": "原因不明。"}
+      ]
+    },
+    {
+      "word": "celebrate",
+      "translation_cn": "庆祝",
+      "part_of_speech": "v.",
+      "phonetic": "/ˈselɪbreɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Let's celebrate your success.", "translation_cn": "让我们庆祝你的成功。"},
+        {"sentence": "We celebrate Christmas.", "translation_cn": "我们庆祝圣诞节。"}
+      ]
+    },
+    {
+      "word": "center",
+      "translation_cn": "中心；中央",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈsentə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The park is in the city center.", "translation_cn": "公园在市中心。"},
+        {"sentence": "Put it in the center.", "translation_cn": "把它放在中间。"}
+      ]
+    },
+    {
+      "word": "century",
+      "translation_cn": "世纪",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈsentʃəri/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We live in the 21st century.", "translation_cn": "我们生活在21世纪。"},
+        {"sentence": "This castle is centuries old.", "translation_cn": "这座城堡有几个世纪的历史了。"}
+      ]
+    },
+    {
+      "word": "certain",
+      "translation_cn": "确定的；某些",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈsɜːtn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I'm certain about this.", "translation_cn": "我对此很确定。"},
+        {"sentence": "Certain people don't agree.", "translation_cn": "某些人不同意。"}
+      ]
+    },
+    {
+      "word": "chance",
+      "translation_cn": "机会；可能性",
+      "part_of_speech": "n.",
+      "phonetic": "/tʃɑːns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Give me a chance.", "translation_cn": "给我一个机会。"},
+        {"sentence": "There's a good chance of rain.", "translation_cn": "很有可能下雨。"}
+      ]
+    },
+    {
+      "word": "change",
+      "translation_cn": "改变；零钱",
+      "part_of_speech": "v./n.",
+      "phonetic": "/tʃeɪndʒ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Things will change.", "translation_cn": "事情会改变的。"},
+        {"sentence": "Do you have any change?", "translation_cn": "你有零钱吗？"}
+      ]
+    },
+    {
+      "word": "character",
+      "translation_cn": "性格；角色",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkærəktə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "He has a good character.", "translation_cn": "他性格很好。"},
+        {"sentence": "Who is your favorite character?", "translation_cn": "你最喜欢的角色是谁？"}
+      ]
+    },
+    {
+      "word": "cheap",
+      "translation_cn": "便宜的",
+      "part_of_speech": "adj.",
+      "phonetic": "/tʃiːp/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This bag is cheap.", "translation_cn": "这个包很便宜。"},
+        {"sentence": "I want something cheap.", "translation_cn": "我想要便宜点的东西。"}
+      ]
+    },
+    {
+      "word": "check",
+      "translation_cn": "检查；核对",
+      "part_of_speech": "v./n.",
+      "phonetic": "/tʃek/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please check your email.", "translation_cn": "请查看你的邮件。"},
+        {"sentence": "I need to check the time.", "translation_cn": "我需要看一下时间。"}
+      ]
+    },
+    {
+      "word": "cheese",
+      "translation_cn": "奶酪",
+      "part_of_speech": "n.",
+      "phonetic": "/tʃiːz/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I like cheese.", "translation_cn": "我喜欢奶酪。"},
+        {"sentence": "Say cheese!", "translation_cn": "说茄子！（拍照时）"}
+      ]
+    },
+    {
+      "word": "chicken",
+      "translation_cn": "鸡；鸡肉",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈtʃɪkɪn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I had chicken for dinner.", "translation_cn": "我晚餐吃了鸡肉。"},
+        {"sentence": "The chicken is delicious.", "translation_cn": "鸡肉很好吃。"}
+      ]
+    },
+    {
+      "word": "choice",
+      "translation_cn": "选择",
+      "part_of_speech": "n.",
+      "phonetic": "/tʃɔɪs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's your choice.", "translation_cn": "这是你的选择。"},
+        {"sentence": "I have no choice.", "translation_cn": "我别无选择。"}
+      ]
+    },
+    {
+      "word": "choose",
+      "translation_cn": "选择",
+      "part_of_speech": "v.",
+      "phonetic": "/tʃuːz/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Choose one.", "translation_cn": "选一个。"},
+        {"sentence": "I can't choose.", "translation_cn": "我无法选择。"}
+      ]
+    },
+    {
+      "word": "church",
+      "translation_cn": "教堂",
+      "part_of_speech": "n.",
+      "phonetic": "/tʃɜːtʃ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We go to church on Sunday.", "translation_cn": "我们周日去教堂。"},
+        {"sentence": "The church is very old.", "translation_cn": "这座教堂非常古老。"}
+      ]
+    },
+    {
+      "word": "cinema",
+      "translation_cn": "电影院",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈsɪnəmə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Let's go to the cinema.", "translation_cn": "我们去电影院吧。"},
+        {"sentence": "The cinema is nearby.", "translation_cn": "电影院就在附近。"}
+      ]
+    },
+    {
+      "word": "clean",
+      "translation_cn": "干净的；清洁",
+      "part_of_speech": "adj./v.",
+      "phonetic": "/kliːn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The room is clean.", "translation_cn": "房间很干净。"},
+        {"sentence": "I need to clean my room.", "translation_cn": "我需要打扫房间。"}
+      ]
+    },
+    {
+      "word": "clear",
+      "translation_cn": "清楚的；晴朗的",
+      "part_of_speech": "adj.",
+      "phonetic": "/klɪə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The instructions are clear.", "translation_cn": "说明很清楚。"},
+        {"sentence": "The sky is clear today.", "translation_cn": "今天天空很晴朗。"}
+      ]
+    },
+    {
+      "word": "clever",
+      "translation_cn": "聪明的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈklevə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "She is very clever.", "translation_cn": "她非常聪明。"},
+        {"sentence": "That's a clever idea.", "translation_cn": "这是个聪明的想法。"}
+      ]
+    },
+    {
+      "word": "climb",
+      "translation_cn": "爬；攀登",
+      "part_of_speech": "v.",
+      "phonetic": "/klaɪm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We climbed the mountain.", "translation_cn": "我们爬了山。"},
+        {"sentence": "I can't climb that high.", "translation_cn": "我爬不了那么高。"}
+      ]
+    },
+    {
+      "word": "clock",
+      "translation_cn": "时钟",
+      "part_of_speech": "n.",
+      "phonetic": "/klɒk/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Look at the clock.", "translation_cn": "看看时钟。"},
+        {"sentence": "The clock is on the wall.", "translation_cn": "时钟在墙上。"}
+      ]
+    },
+    {
+      "word": "clothes",
+      "translation_cn": "衣服",
+      "part_of_speech": "n.",
+      "phonetic": "/kləʊðz/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I need new clothes.", "translation_cn": "我需要新衣服。"},
+        {"sentence": "Put on your clothes.", "translation_cn": "穿上你的衣服。"}
+      ]
+    },
+    {
+      "word": "cloud",
+      "translation_cn": "云",
+      "part_of_speech": "n.",
+      "phonetic": "/klaʊd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Look at the clouds.", "translation_cn": "看看那些云。"},
+        {"sentence": "There are no clouds today.", "translation_cn": "今天没有云。"}
+      ]
+    },
+    {
+      "word": "club",
+      "translation_cn": "俱乐部",
+      "part_of_speech": "n.",
+      "phonetic": "/klʌb/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I joined a sports club.", "translation_cn": "我加入了一个体育俱乐部。"},
+        {"sentence": "The club meets every Friday.", "translation_cn": "俱乐部每周五聚会。"}
+      ]
+    },
+    {
+      "word": "coast",
+      "translation_cn": "海岸",
+      "part_of_speech": "n.",
+      "phonetic": "/kəʊst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We drove along the coast.", "translation_cn": "我们沿着海岸开车。"},
+        {"sentence": "The coast is beautiful.", "translation_cn": "海岸很美。"}
+      ]
+    },
+    {
+      "word": "coat",
+      "translation_cn": "外套",
+      "part_of_speech": "n.",
+      "phonetic": "/kəʊt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Put on your coat.", "translation_cn": "穿上你的外套。"},
+        {"sentence": "I bought a new coat.", "translation_cn": "我买了一件新外套。"}
+      ]
+    },
+    {
+      "word": "collect",
+      "translation_cn": "收集",
+      "part_of_speech": "v.",
+      "phonetic": "/kəˈlekt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I collect stamps.", "translation_cn": "我收集邮票。"},
+        {"sentence": "Please collect your things.", "translation_cn": "请收拾好你的东西。"}
+      ]
+    },
+    {
+      "word": "college",
+      "translation_cn": "大学；学院",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkɒlɪdʒ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I'm going to college next year.", "translation_cn": "我明年要上大学。"},
+        {"sentence": "She studies at college.", "translation_cn": "她在大学读书。"}
+      ]
+    },
+    {
+      "word": "comfortable",
+      "translation_cn": "舒适的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈkʌmftəbl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This chair is comfortable.", "translation_cn": "这把椅子很舒服。"},
+        {"sentence": "I feel comfortable here.", "translation_cn": "我在这里感觉很舒适。"}
+      ]
+    },
+    {
+      "word": "common",
+      "translation_cn": "常见的；普通的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈkɒmən/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This is a common problem.", "translation_cn": "这是一个常见的问题。"},
+        {"sentence": "It's a common name.", "translation_cn": "这是一个普通的名字。"}
+      ]
+    },
+    {
+      "word": "communicate",
+      "translation_cn": "交流；沟通",
+      "part_of_speech": "v.",
+      "phonetic": "/kəˈmjuːnɪkeɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We need to communicate better.", "translation_cn": "我们需要更好地沟通。"},
+        {"sentence": "How do you communicate with them?", "translation_cn": "你是如何与他们沟通的？"}
+      ]
+    },
+    {
+      "word": "company",
+      "translation_cn": "公司；陪伴",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkʌmpəni/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I work for a big company.", "translation_cn": "我在一家大公司工作。"},
+        {"sentence": "I enjoy your company.", "translation_cn": "我喜欢和你在一起。"}
+      ]
+    },
+    {
+      "word": "compare",
+      "translation_cn": "比较",
+      "part_of_speech": "v.",
+      "phonetic": "/kəmˈpeə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Let's compare prices.", "translation_cn": "让我们比较一下价格。"},
+        {"sentence": "Don't compare yourself to others.", "translation_cn": "不要拿自己和别人比较。"}
+      ]
+    },
+    {
+      "word": "competition",
+      "translation_cn": "竞争；比赛",
+      "part_of_speech": "n.",
+      "phonetic": "/ˌkɒmpəˈtɪʃn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I won the competition.", "translation_cn": "我赢得了比赛。"},
+        {"sentence": "There's a lot of competition.", "translation_cn": "竞争很激烈。"}
+      ]
+    },
+    {
+      "word": "complete",
+      "translation_cn": "完成；完整的",
+      "part_of_speech": "v./adj.",
+      "phonetic": "/kəmˈpliːt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please complete the form.", "translation_cn": "请填写表格。"},
+        {"sentence": "The work is complete.", "translation_cn": "工作完成了。"}
+      ]
+    },
+    {
+      "word": "computer",
+      "translation_cn": "电脑",
+      "part_of_speech": "n.",
+      "phonetic": "/kəmˈpjuːtə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I use a computer every day.", "translation_cn": "我每天都用电脑。"},
+        {"sentence": "The computer is broken.", "translation_cn": "电脑坏了。"}
+      ]
+    },
+    {
+      "word": "concentrate",
+      "translation_cn": "集中；专注",
+      "part_of_speech": "v.",
+      "phonetic": "/ˈkɒnsntreɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I can't concentrate.", "translation_cn": "我无法集中注意力。"},
+        {"sentence": "Concentrate on your work.", "translation_cn": "专注于你的工作。"}
+      ]
+    },
+    {
+      "word": "condition",
+      "translation_cn": "条件；状况",
+      "part_of_speech": "n.",
+      "phonetic": "/kənˈdɪʃn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The car is in good condition.", "translation_cn": "这辆车状况良好。"},
+        {"sentence": "I agree on one condition.", "translation_cn": "我有一个条件才同意。"}
+      ]
+    },
+    {
+      "word": "confident",
+      "translation_cn": "自信的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈkɒnfɪdənt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "She is very confident.", "translation_cn": "她非常自信。"},
+        {"sentence": "I feel confident about the exam.", "translation_cn": "我对考试很有信心。"}
+      ]
+    },
+    {
+      "word": "confirm",
+      "translation_cn": "确认",
+      "part_of_speech": "v.",
+      "phonetic": "/kənˈfɜːm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please confirm your booking.", "translation_cn": "请确认您的预订。"},
+        {"sentence": "I can confirm that.", "translation_cn": "我可以确认那件事。"}
+      ]
+    },
+    {
+      "word": "confuse",
+      "translation_cn": "使困惑",
+      "part_of_speech": "v.",
+      "phonetic": "/kənˈfjuːz/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Don't confuse me.", "translation_cn": "别让我困惑。"},
+        {"sentence": "I'm confused.", "translation_cn": "我很困惑。"}
+      ]
+    },
+    {
+      "word": "connect",
+      "translation_cn": "连接",
+      "part_of_speech": "v.",
+      "phonetic": "/kəˈnekt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Connect the wires.", "translation_cn": "连接电线。"},
+        {"sentence": "I can't connect to the internet.", "translation_cn": "我无法连接到互联网。"}
+      ]
+    },
+    {
+      "word": "consider",
+      "translation_cn": "考虑",
+      "part_of_speech": "v.",
+      "phonetic": "/kənˈsɪdə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I will consider your offer.", "translation_cn": "我会考虑你的提议。"},
+        {"sentence": "Please consider my request.", "translation_cn": "请考虑我的请求。"}
+      ]
+    },
+    {
+      "word": "contact",
+      "translation_cn": "联系",
+      "part_of_speech": "v./n.",
+      "phonetic": "/ˈkɒntækt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please contact me later.", "translation_cn": "请稍后联系我。"},
+        {"sentence": "I lost contact with him.", "translation_cn": "我和他失去了联系。"}
+      ]
+    },
+    {
+      "word": "contain",
+      "translation_cn": "包含",
+      "part_of_speech": "v.",
+      "phonetic": "/kənˈteɪn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The box contains books.", "translation_cn": "盒子里装着书。"},
+        {"sentence": "This drink contains sugar.", "translation_cn": "这种饮料含有糖。"}
+      ]
+    },
+    {
+      "word": "continue",
+      "translation_cn": "继续",
+      "part_of_speech": "v.",
+      "phonetic": "/kənˈtɪnjuː/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please continue.", "translation_cn": "请继续。"},
+        {"sentence": "I will continue studying.", "translation_cn": "我将继续学习。"}
+      ]
+    },
+    {
+      "word": "control",
+      "translation_cn": "控制",
+      "part_of_speech": "v./n.",
+      "phonetic": "/kənˈtrəʊl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I can't control my emotions.", "translation_cn": "我无法控制自己的情绪。"},
+        {"sentence": "Everything is under control.", "translation_cn": "一切都在控制之中。"}
+      ]
+    },
+    {
+      "word": "conversation",
+      "translation_cn": "对话；谈话",
+      "part_of_speech": "n.",
+      "phonetic": "/ˌkɒnvəˈseɪʃn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We had a good conversation.", "translation_cn": "我们进行了一次愉快的谈话。"},
+        {"sentence": "Let's start a conversation.", "translation_cn": "让我们开始对话。"}
+      ]
+    },
+    {
+      "word": "cook",
+      "translation_cn": "烹饪；厨师",
+      "part_of_speech": "v./n.",
+      "phonetic": "/kʊk/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I love to cook.", "translation_cn": "我喜欢做饭。"},
+        {"sentence": "She is a good cook.", "translation_cn": "她是个好厨师。"}
+      ]
+    },
+    {
+      "word": "cool",
+      "translation_cn": "凉爽的；酷的",
+      "part_of_speech": "adj.",
+      "phonetic": "/kuːl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's cool outside.", "translation_cn": "外面很凉爽。"},
+        {"sentence": "That's really cool!", "translation_cn": "那真的很酷！"}
+      ]
+    },
+    {
+      "word": "copy",
+      "translation_cn": "复制；副本",
+      "part_of_speech": "v./n.",
+      "phonetic": "/ˈkɒpi/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Can I copy this?", "translation_cn": "我可以复制这个吗？"},
+        {"sentence": "Please make a copy.", "translation_cn": "请复印一份。"}
+      ]
+    },
+    {
+      "word": "corner",
+      "translation_cn": "角落；拐角",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkɔːnə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The shop is on the corner.", "translation_cn": "商店在拐角处。"},
+        {"sentence": "I'll wait in the corner.", "translation_cn": "我在角落等你。"}
+      ]
+    },
+    {
+      "word": "correct",
+      "translation_cn": "正确的；改正",
+      "part_of_speech": "adj./v.",
+      "phonetic": "/kəˈrekt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Your answer is correct.", "translation_cn": "你的答案是正确的。"},
+        {"sentence": "Please correct my mistakes.", "translation_cn": "请纠正我的错误。"}
+      ]
+    },
+    {
+      "word": "cost",
+      "translation_cn": "花费；费用",
+      "part_of_speech": "v./n.",
+      "phonetic": "/kɒst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "How much does it cost?", "translation_cn": "这个多少钱？"},
+        {"sentence": "The cost is too high.", "translation_cn": "费用太高了。"}
+      ]
+    },
+    {
+      "word": "count",
+      "translation_cn": "数；计算",
+      "part_of_speech": "v.",
+      "phonetic": "/kaʊnt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Can you count to ten?", "translation_cn": "你能数到十吗？"},
+        {"sentence": "I'm counting on you.", "translation_cn": "我指望你了。"}
+      ]
+    },
+    {
+      "word": "couple",
+      "translation_cn": "一对；夫妇",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkʌpl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "They are a lovely couple.", "translation_cn": "他们是一对可爱的夫妇。"},
+        {"sentence": "I need a couple of minutes.", "translation_cn": "我需要几分钟。"}
+      ]
+    },
+    {
+      "word": "course",
+      "translation_cn": "课程；过程",
+      "part_of_speech": "n.",
+      "phonetic": "/kɔːs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I'm taking an English course.", "translation_cn": "我在上英语课程。"},
+        {"sentence": "Of course!", "translation_cn": "当然！"}
+      ]
+    },
+    {
+      "word": "cover",
+      "translation_cn": "覆盖；封面",
+      "part_of_speech": "v./n.",
+      "phonetic": "/ˈkʌvə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Cover your mouth.", "translation_cn": "捂住你的嘴。"},
+        {"sentence": "I like the cover of this book.", "translation_cn": "我喜欢这本书的封面。"}
+      ]
+    },
+    {
+      "word": "crazy",
+      "translation_cn": "疯狂的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈkreɪzi/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "That's crazy!", "translation_cn": "太疯狂了！"},
+        {"sentence": "I'm crazy about music.", "translation_cn": "我对音乐非常着迷。"}
+      ]
+    },
+    {
+      "word": "create",
+      "translation_cn": "创造；创建",
+      "part_of_speech": "v.",
+      "phonetic": "/kriˈeɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I want to create something new.", "translation_cn": "我想创造一些新的东西。"},
+        {"sentence": "He created this app.", "translation_cn": "他创建了这个应用。"}
+      ]
+    },
+    {
+      "word": "cross",
+      "translation_cn": "穿过；交叉",
+      "part_of_speech": "v./n.",
+      "phonetic": "/krɒs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Cross the street carefully.", "translation_cn": "小心过马路。"},
+        {"sentence": "Draw a cross here.", "translation_cn": "在这里画个叉。"}
+      ]
+    },
+    {
+      "word": "crowd",
+      "translation_cn": "人群",
+      "part_of_speech": "n.",
+      "phonetic": "/kraʊd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "There is a large crowd.", "translation_cn": "有一大群人。"},
+        {"sentence": "I don't like crowds.", "translation_cn": "我不喜欢人群。"}
+      ]
+    },
+    {
+      "word": "cry",
+      "translation_cn": "哭；喊叫",
+      "part_of_speech": "v.",
+      "phonetic": "/kraɪ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Don't cry.", "translation_cn": "别哭。"},
+        {"sentence": "The baby is crying.", "translation_cn": "宝宝在哭。"}
+      ]
+    },
+    {
+      "word": "culture",
+      "translation_cn": "文化",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkʌltʃə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I love Chinese culture.", "translation_cn": "我喜欢中国文化。"},
+        {"sentence": "Culture is important.", "translation_cn": "文化很重要。"}
+      ]
+    },
+    {
+      "word": "cup",
+      "translation_cn": "杯子",
+      "part_of_speech": "n.",
+      "phonetic": "/kʌp/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Would you like a cup of tea?", "translation_cn": "你想来杯茶吗？"},
+        {"sentence": "I broke the cup.", "translation_cn": "我打破了杯子。"}
+      ]
+    },
+    {
+      "word": "customer",
+      "translation_cn": "顾客",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈkʌstəmə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The customer is always right.", "translation_cn": "顾客永远是对的。"},
+        {"sentence": "We have many customers.", "translation_cn": "我们有很多顾客。"}
+      ]
+    },
+    {
+      "word": "cut",
+      "translation_cn": "切；剪",
+      "part_of_speech": "v.",
+      "phonetic": "/kʌt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Cut the paper.", "translation_cn": "把纸剪开。"},
+        {"sentence": "I cut my finger.", "translation_cn": "我切到手指了。"}
+      ]
+    },
+    {
+      "word": "daily",
+      "translation_cn": "每天的；日常的",
+      "part_of_speech": "adj./adv.",
+      "phonetic": "/ˈdeɪli/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I read the daily news.", "translation_cn": "我阅读每日新闻。"},
+        {"sentence": "Exercise daily.", "translation_cn": "每天锻炼。"}
+      ]
+    },
+    {
+      "word": "damage",
+      "translation_cn": "损害；损坏",
+      "part_of_speech": "n./v.",
+      "phonetic": "/ˈdæmɪdʒ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The storm caused damage.", "translation_cn": "暴风雨造成了损坏。"},
+        {"sentence": "Don't damage the equipment.", "translation_cn": "不要损坏设备。"}
+      ]
+    },
+    {
+      "word": "dance",
+      "translation_cn": "跳舞；舞蹈",
+      "part_of_speech": "v./n.",
+      "phonetic": "/dɑːns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I love to dance.", "translation_cn": "我喜欢跳舞。"},
+        {"sentence": "May I have this dance?", "translation_cn": "我可以请你跳支舞吗？"}
+      ]
+    },
+    {
+      "word": "danger",
+      "translation_cn": "危险",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdeɪndʒə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "There is danger ahead.", "translation_cn": "前方有危险。"},
+        {"sentence": "You are in danger.", "translation_cn": "你处于危险中。"}
+      ]
+    },
+    {
+      "word": "dangerous",
+      "translation_cn": "危险的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈdeɪndʒərəs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's dangerous to swim here.", "translation_cn": "在这里游泳很危险。"},
+        {"sentence": "This road is dangerous.", "translation_cn": "这条路很危险。"}
+      ]
+    },
+    {
+      "word": "dark",
+      "translation_cn": "黑暗的；深色的",
+      "part_of_speech": "adj.",
+      "phonetic": "/dɑːk/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's dark outside.", "translation_cn": "外面很黑。"},
+        {"sentence": "I like dark colors.", "translation_cn": "我喜欢深色。"}
+      ]
+    },
+    {
+      "word": "date",
+      "translation_cn": "日期；约会",
+      "part_of_speech": "n.",
+      "phonetic": "/deɪt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What's the date today?", "translation_cn": "今天几号？"},
+        {"sentence": "I have a date tonight.", "translation_cn": "我今晚有个约会。"}
+      ]
+    },
+    {
+      "word": "daughter",
+      "translation_cn": "女儿",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdɔːtə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This is my daughter.", "translation_cn": "这是我女儿。"},
+        {"sentence": "My daughter is five years old.", "translation_cn": "我女儿五岁了。"}
+      ]
+    },
+    {
+      "word": "dead",
+      "translation_cn": "死的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ded/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The plant is dead.", "translation_cn": "这株植物死了。"},
+        {"sentence": "My phone is dead.", "translation_cn": "我的手机没电了。"}
+      ]
+    },
+    {
+      "word": "deal",
+      "translation_cn": "交易；处理",
+      "part_of_speech": "n./v.",
+      "phonetic": "/diːl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's a deal!", "translation_cn": "一言为定！"},
+        {"sentence": "I can deal with this.", "translation_cn": "我能处理这件事。"}
+      ]
+    },
+    {
+      "word": "death",
+      "translation_cn": "死亡",
+      "part_of_speech": "n.",
+      "phonetic": "/deθ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I fear death.", "translation_cn": "我害怕死亡。"},
+        {"sentence": "His death was unexpected.", "translation_cn": "他的死是意料之外的。"}
+      ]
+    },
+    {
+      "word": "decide",
+      "translation_cn": "决定",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈsaɪd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I can't decide.", "translation_cn": "我无法决定。"},
+        {"sentence": "We decided to go.", "translation_cn": "我们决定去。"}
+      ]
+    },
+    {
+      "word": "decision",
+      "translation_cn": "决定",
+      "part_of_speech": "n.",
+      "phonetic": "/dɪˈsɪʒn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I made a decision.", "translation_cn": "我做了决定。"},
+        {"sentence": "It was a difficult decision.", "translation_cn": "这是一个艰难的决定。"}
+      ]
+    },
+    {
+      "word": "deep",
+      "translation_cn": "深的",
+      "part_of_speech": "adj.",
+      "phonetic": "/diːp/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The water is deep.", "translation_cn": "水很深。"},
+        {"sentence": "Take a deep breath.", "translation_cn": "深呼吸。"}
+      ]
+    },
+    {
+      "word": "degree",
+      "translation_cn": "度；学位",
+      "part_of_speech": "n.",
+      "phonetic": "/dɪˈɡriː/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's 30 degrees today.", "translation_cn": "今天30度。"},
+        {"sentence": "She has a degree in English.", "translation_cn": "她有英语学位。"}
+      ]
+    },
+    {
+      "word": "delay",
+      "translation_cn": "延迟；耽搁",
+      "part_of_speech": "n./v.",
+      "phonetic": "/dɪˈleɪ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "There was a delay.", "translation_cn": "出现了延误。"},
+        {"sentence": "Don't delay.", "translation_cn": "别耽搁了。"}
+      ]
+    },
+    {
+      "word": "deliver",
+      "translation_cn": "递送；交付",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈlɪvə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "They will deliver the package.", "translation_cn": "他们会送包裹。"},
+        {"sentence": "The pizza was delivered.", "translation_cn": "披萨送到了。"}
+      ]
+    },
+    {
+      "word": "depend",
+      "translation_cn": "依靠；取决于",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈpend/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It depends on the weather.", "translation_cn": "这取决于天气。"},
+        {"sentence": "You can depend on me.", "translation_cn": "你可以依靠我。"}
+      ]
+    },
+    {
+      "word": "describe",
+      "translation_cn": "描述",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈskraɪb/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Please describe what happened.", "translation_cn": "请描述一下发生了什么。"},
+        {"sentence": "I can't describe it.", "translation_cn": "我无法描述它。"}
+      ]
+    },
+    {
+      "word": "design",
+      "translation_cn": "设计",
+      "part_of_speech": "n./v.",
+      "phonetic": "/dɪˈzaɪn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I like the design.", "translation_cn": "我喜欢这个设计。"},
+        {"sentence": "She designed this dress.", "translation_cn": "她设计了这件裙子。"}
+      ]
+    },
+    {
+      "word": "desk",
+      "translation_cn": "书桌",
+      "part_of_speech": "n.",
+      "phonetic": "/desk/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "My desk is messy.", "translation_cn": "我的书桌很乱。"},
+        {"sentence": "Sit at your desk.", "translation_cn": "坐在你的书桌旁。"}
+      ]
+    },
+    {
+      "word": "detail",
+      "translation_cn": "细节",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdiːteɪl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Tell me the details.", "translation_cn": "告诉我细节。"},
+        {"sentence": "Pay attention to details.", "translation_cn": "注意细节。"}
+      ]
+    },
+    {
+      "word": "develop",
+      "translation_cn": "发展；开发",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈveləp/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "We need to develop new skills.", "translation_cn": "我们需要发展新技能。"},
+        {"sentence": "They developed an app.", "translation_cn": "他们开发了一个应用。"}
+      ]
+    },
+    {
+      "word": "die",
+      "translation_cn": "死亡",
+      "part_of_speech": "v.",
+      "phonetic": "/daɪ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I don't want to die.", "translation_cn": "我不想死。"},
+        {"sentence": "The flowers died.", "translation_cn": "花死了。"}
+      ]
+    },
+    {
+      "word": "difference",
+      "translation_cn": "差异；区别",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdɪfrəns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What's the difference?", "translation_cn": "有什么区别？"},
+        {"sentence": "I can't see any difference.", "translation_cn": "我看不出任何区别。"}
+      ]
+    },
+    {
+      "word": "dinner",
+      "translation_cn": "晚餐",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdɪnə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What's for dinner?", "translation_cn": "晚餐吃什么？"},
+        {"sentence": "Dinner is ready.", "translation_cn": "晚餐准备好了。"}
+      ]
+    },
+    {
+      "word": "direct",
+      "translation_cn": "直接的；指导",
+      "part_of_speech": "adj./v.",
+      "phonetic": "/daɪˈrekt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Is this the direct route?", "translation_cn": "这是直达路线吗？"},
+        {"sentence": "He directed the movie.", "translation_cn": "他导演了这部电影。"}
+      ]
+    },
+    {
+      "word": "direction",
+      "translation_cn": "方向",
+      "part_of_speech": "n.",
+      "phonetic": "/daɪˈrekʃn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What direction should I go?", "translation_cn": "我应该往哪个方向走？"},
+        {"sentence": "Follow the directions.", "translation_cn": "按照指示走。"}
+      ]
+    },
+    {
+      "word": "dirty",
+      "translation_cn": "脏的",
+      "part_of_speech": "adj.",
+      "phonetic": "/ˈdɜːti/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "My hands are dirty.", "translation_cn": "我的手很脏。"},
+        {"sentence": "Don't get your clothes dirty.", "translation_cn": "别把衣服弄脏了。"}
+      ]
+    },
+    {
+      "word": "disappear",
+      "translation_cn": "消失",
+      "part_of_speech": "v.",
+      "phonetic": "/ˌdɪsəˈpɪə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The cat disappeared.", "translation_cn": "猫消失了。"},
+        {"sentence": "My keys disappeared.", "translation_cn": "我的钥匙不见了。"}
+      ]
+    },
+    {
+      "word": "discover",
+      "translation_cn": "发现",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈskʌvə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I discovered a new restaurant.", "translation_cn": "我发现了一家新餐厅。"},
+        {"sentence": "Scientists discovered a new planet.", "translation_cn": "科学家发现了一颗新行星。"}
+      ]
+    },
+    {
+      "word": "discuss",
+      "translation_cn": "讨论",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈskʌs/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Let's discuss this later.", "translation_cn": "我们待会儿讨论这个。"},
+        {"sentence": "We need to discuss the problem.", "translation_cn": "我们需要讨论这个问题。"}
+      ]
+    },
+    {
+      "word": "disease",
+      "translation_cn": "疾病",
+      "part_of_speech": "n.",
+      "phonetic": "/dɪˈziːz/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "He has a heart disease.", "translation_cn": "他有心脏病。"},
+        {"sentence": "This disease is rare.", "translation_cn": "这种疾病很罕见。"}
+      ]
+    },
+    {
+      "word": "dish",
+      "translation_cn": "盘子；菜肴",
+      "part_of_speech": "n.",
+      "phonetic": "/dɪʃ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This is my favorite dish.", "translation_cn": "这是我最喜欢的菜。"},
+        {"sentence": "Please wash the dishes.", "translation_cn": "请洗碗。"}
+      ]
+    },
+    {
+      "word": "distance",
+      "translation_cn": "距离",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdɪstəns/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "What's the distance to the city?", "translation_cn": "到城市有多远？"},
+        {"sentence": "I can see it in the distance.", "translation_cn": "我能看到远处的它。"}
+      ]
+    },
+    {
+      "word": "divide",
+      "translation_cn": "分开；划分",
+      "part_of_speech": "v.",
+      "phonetic": "/dɪˈvaɪd/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Divide the cake into pieces.", "translation_cn": "把蛋糕分成几块。"},
+        {"sentence": "The river divides the city.", "translation_cn": "这条河把城市分成两部分。"}
+      ]
+    },
+    {
+      "word": "doctor",
+      "translation_cn": "医生",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdɒktə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I need to see a doctor.", "translation_cn": "我需要看医生。"},
+        {"sentence": "The doctor gave me medicine.", "translation_cn": "医生给我开了药。"}
+      ]
+    },
+    {
+      "word": "dog",
+      "translation_cn": "狗",
+      "part_of_speech": "n.",
+      "phonetic": "/dɒɡ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I have a dog.", "translation_cn": "我有一只狗。"},
+        {"sentence": "The dog is barking.", "translation_cn": "狗在叫。"}
+      ]
+    },
+    {
+      "word": "dollar",
+      "translation_cn": "美元",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdɒlə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It costs ten dollars.", "translation_cn": "它要十美元。"},
+        {"sentence": "Do you have a dollar?", "translation_cn": "你有一美元吗？"}
+      ]
+    },
+    {
+      "word": "double",
+      "translation_cn": "双倍的；加倍",
+      "part_of_speech": "adj./v.",
+      "phonetic": "/ˈdʌbl/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I want a double room.", "translation_cn": "我要一个双人房间。"},
+        {"sentence": "The price doubled.", "translation_cn": "价格翻倍了。"}
+      ]
+    },
+    {
+      "word": "doubt",
+      "translation_cn": "怀疑",
+      "part_of_speech": "n./v.",
+      "phonetic": "/daʊt/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I have no doubt.", "translation_cn": "我毫不怀疑。"},
+        {"sentence": "I doubt it.", "translation_cn": "我对此表示怀疑。"}
+      ]
+    },
+    {
+      "word": "down",
+      "translation_cn": "向下；下面",
+      "part_of_speech": "adv./prep.",
+      "phonetic": "/daʊn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Sit down.", "translation_cn": "坐下。"},
+        {"sentence": "Walk down the street.", "translation_cn": "沿着街道走。"}
+      ]
+    },
+    {
+      "word": "draw",
+      "translation_cn": "画；拉",
+      "part_of_speech": "v.",
+      "phonetic": "/drɔː/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I like to draw.", "translation_cn": "我喜欢画画。"},
+        {"sentence": "Draw a picture.", "translation_cn": "画一幅画。"}
+      ]
+    },
+    {
+      "word": "dream",
+      "translation_cn": "梦想；梦",
+      "part_of_speech": "n./v.",
+      "phonetic": "/driːm/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I had a strange dream.", "translation_cn": "我做了一个奇怪的梦。"},
+        {"sentence": "Follow your dreams.", "translation_cn": "追随你的梦想。"}
+      ]
+    },
+    {
+      "word": "dress",
+      "translation_cn": "连衣裙；穿衣",
+      "part_of_speech": "n./v.",
+      "phonetic": "/dres/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "She is wearing a red dress.", "translation_cn": "她穿着一条红裙子。"},
+        {"sentence": "Get dressed quickly.", "translation_cn": "快点穿好衣服。"}
+      ]
+    },
+    {
+      "word": "drive",
+      "translation_cn": "开车；驾驶",
+      "part_of_speech": "v.",
+      "phonetic": "/draɪv/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Can you drive?", "translation_cn": "你会开车吗？"},
+        {"sentence": "I drive to work.", "translation_cn": "我开车去上班。"}
+      ]
+    },
+    {
+      "word": "driver",
+      "translation_cn": "司机",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdraɪvə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The driver is waiting.", "translation_cn": "司机在等着。"},
+        {"sentence": "I'm a taxi driver.", "translation_cn": "我是出租车司机。"}
+      ]
+    },
+    {
+      "word": "drop",
+      "translation_cn": "掉落；落下",
+      "part_of_speech": "v./n.",
+      "phonetic": "/drɒp/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Don't drop it!", "translation_cn": "别摔了！"},
+        {"sentence": "A drop of water.", "translation_cn": "一滴水。"}
+      ]
+    },
+    {
+      "word": "drug",
+      "translation_cn": "药物；毒品",
+      "part_of_speech": "n.",
+      "phonetic": "/drʌɡ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "This drug is effective.", "translation_cn": "这种药很有效。"},
+        {"sentence": "Say no to drugs.", "translation_cn": "对毒品说不。"}
+      ]
+    },
+    {
+      "word": "dry",
+      "translation_cn": "干的；干燥",
+      "part_of_speech": "adj./v.",
+      "phonetic": "/draɪ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The clothes are dry.", "translation_cn": "衣服干了。"},
+        {"sentence": "Dry your hands.", "translation_cn": "把手擦干。"}
+      ]
+    },
+    {
+      "word": "during",
+      "translation_cn": "在…期间",
+      "part_of_speech": "prep.",
+      "phonetic": "/ˈdjʊərɪŋ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "During the meeting, I took notes.", "translation_cn": "会议期间，我做了笔记。"},
+        {"sentence": "I met her during my trip.", "translation_cn": "我在旅途中遇见了她。"}
+      ]
+    },
+    {
+      "word": "dust",
+      "translation_cn": "灰尘",
+      "part_of_speech": "n.",
+      "phonetic": "/dʌst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "There is dust everywhere.", "translation_cn": "到处都是灰尘。"},
+        {"sentence": "Please dust the table.", "translation_cn": "请擦掉桌子上的灰尘。"}
+      ]
+    },
+    {
+      "word": "duty",
+      "translation_cn": "责任；职责",
+      "part_of_speech": "n.",
+      "phonetic": "/ˈdjuːti/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "It's my duty to help.", "translation_cn": "帮助他人是我的责任。"},
+        {"sentence": "I'm off duty today.", "translation_cn": "我今天不当班。"}
+      ]
+    },
+    {
+      "word": "each",
+      "translation_cn": "每个；各自",
+      "part_of_speech": "adj./pron.",
+      "phonetic": "/iːtʃ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "Each student has a book.", "translation_cn": "每个学生都有一本书。"},
+        {"sentence": "We help each other.", "translation_cn": "我们互相帮助。"}
+      ]
+    },
+    {
+      "word": "ear",
+      "translation_cn": "耳朵",
+      "part_of_speech": "n.",
+      "phonetic": "/ɪə/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I have pain in my ear.", "translation_cn": "我耳朵痛。"},
+        {"sentence": "She has small ears.", "translation_cn": "她的耳朵很小。"}
+      ]
+    },
+    {
+      "word": "early",
+      "translation_cn": "早的；提前的",
+      "part_of_speech": "adj./adv.",
+      "phonetic": "/ˈɜːli/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "I woke up early.", "translation_cn": "我起得很早。"},
+        {"sentence": "You are early.", "translation_cn": "你来早了。"}
+      ]
+    },
+    {
+      "word": "earn",
+      "translation_cn": "赚得；挣得",
+      "part_of_speech": "v.",
+      "phonetic": "/ɜːn/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "How much do you earn?", "translation_cn": "你赚多少钱？"},
+        {"sentence": "I earn money by teaching.", "translation_cn": "我通过教书赚钱。"}
+      ]
+    },
+    {
+      "word": "earth",
+      "translation_cn": "地球；土地",
+      "part_of_speech": "n.",
+      "phonetic": "/ɜːθ/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The Earth is round.", "translation_cn": "地球是圆的。"},
+        {"sentence": "We must protect the Earth.", "translation_cn": "我们必须保护地球。"}
+      ]
+    },
+    {
+      "word": "east",
+      "translation_cn": "东方；东部",
+      "part_of_speech": "n./adj.",
+      "phonetic": "/iːst/",
+      "difficulty_level": 2,
+      "examples": [
+        {"sentence": "The sun rises in the east.", "translation_cn": "太阳从东方升起。"},
+        {"sentence": "I live in east London.", "translation_cn": "我住在伦敦东部。"}
+      ]
+    }
+  ]
+}

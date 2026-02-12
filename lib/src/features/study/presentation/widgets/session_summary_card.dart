@@ -8,6 +8,8 @@ class SessionSummaryCard extends StatelessWidget {
   final int newWords;
   final int correctRate;
   final int minutes;
+  final String? nickname;
+  final String? studyMotivation;
 
   const SessionSummaryCard({
     super.key,
@@ -15,6 +17,8 @@ class SessionSummaryCard extends StatelessWidget {
     required this.newWords,
     required this.correctRate,
     required this.minutes,
+    this.nickname,
+    this.studyMotivation,
   });
 
   @override
@@ -35,7 +39,7 @@ class SessionSummaryCard extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // App logo and date
+          // User info and date
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -47,20 +51,37 @@ class SessionSummaryCard extends StatelessWidget {
                       color: Colors.white.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Icon(
-                      Icons.school,
+                    child: Icon(
+                      nickname != null && nickname!.isNotEmpty
+                          ? Icons.person
+                          : Icons.school,
                       color: Colors.white,
                       size: 24,
                     ),
                   ),
                   const SizedBox(width: 12),
-                  const Text(
-                    'WordMaster',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        nickname != null && nickname!.isNotEmpty
+                            ? nickname!
+                            : 'WordMaster',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      if (studyMotivation != null && studyMotivation!.isNotEmpty)
+                        Text(
+                          studyMotivation!,
+                          style: TextStyle(
+                            color: Colors.white.withValues(alpha: 0.7),
+                            fontSize: 12,
+                          ),
+                        ),
+                    ],
                   ),
                 ],
               ),

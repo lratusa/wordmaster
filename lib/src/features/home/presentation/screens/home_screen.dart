@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../checkin/data/repositories/checkin_repository.dart';
+import '../../../settings/application/settings_notifier.dart';
 import '../../../study/data/repositories/session_repository.dart';
 
 /// Providers for home screen data
@@ -23,15 +24,47 @@ final _homeTotalWordsProvider = FutureProvider.autoDispose((ref) async {
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
+  String _getGreeting() {
+    final hour = DateTime.now().hour;
+    if (hour < 6) return '夜深了';
+    if (hour < 12) return '早上好';
+    if (hour < 14) return '中午好';
+    if (hour < 18) return '下午好';
+    return '晚上好';
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final todayStats = ref.watch(_homeTodayStatsProvider);
     final streak = ref.watch(_homeStreakProvider);
     final totalWords = ref.watch(_homeTotalWordsProvider);
+    final settings = ref.watch(settingsProvider);
+    final nickname = settings.nickname;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(AppConstants.appName),
+        title: nickname.isNotEmpty
+            ? Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '${_getGreeting()}，$nickname',
+                    style: const TextStyle(fontSize: 18),
+                  ),
+                  if (settings.studyMotivation.isNotEmpty)
+                    Text(
+                      settings.studyMotivation,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface
+                            .withValues(alpha: 0.7),
+                      ),
+                    ),
+                ],
+              )
+            : const Text(AppConstants.appName),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),

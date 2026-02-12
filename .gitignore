@@ -46,3 +46,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Word list generator
+scripts/wordlist_generator/.env
+scripts/wordlist_generator/*_progress.jsonl

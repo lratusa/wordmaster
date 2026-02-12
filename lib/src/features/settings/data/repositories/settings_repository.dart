@@ -62,4 +62,9 @@ class SettingKeys {
   static const String themeMode = 'theme_mode'; // system, light, dark
   static const String dailyNewWordsGoal = 'daily_new_words_goal';
   static const String dailyReviewLimit = 'daily_review_limit';
+
+  // Personalization settings
+  static const String nickname = 'nickname';
+  static const String avatarIndex = 'avatar_index'; // Index of selected avatar
+  static const String studyMotivation = 'study_motivation'; // e.g., "考试", "工作", "兴趣"
 }

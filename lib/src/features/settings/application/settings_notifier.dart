@@ -15,6 +15,11 @@ class AppSettings {
   final int dailyNewWordsGoal;
   final int dailyReviewLimit;
 
+  // Personalization
+  final String nickname;
+  final int avatarIndex;
+  final String studyMotivation;
+
   const AppSettings({
     this.aiBackend = 'manual',
     this.apiKey = '',
@@ -24,6 +29,9 @@ class AppSettings {
     this.themeMode = ThemeMode.system,
     this.dailyNewWordsGoal = AppConstants.defaultNewWordsPerDay,
     this.dailyReviewLimit = AppConstants.defaultReviewLimitPerDay,
+    this.nickname = '',
+    this.avatarIndex = 0,
+    this.studyMotivation = '',
   });
 
   AppSettings copyWith({
@@ -35,6 +43,9 @@ class AppSettings {
     ThemeMode? themeMode,
     int? dailyNewWordsGoal,
     int? dailyReviewLimit,
+    String? nickname,
+    int? avatarIndex,
+    String? studyMotivation,
   }) {
     return AppSettings(
       aiBackend: aiBackend ?? this.aiBackend,
@@ -45,6 +56,9 @@ class AppSettings {
       themeMode: themeMode ?? this.themeMode,
       dailyNewWordsGoal: dailyNewWordsGoal ?? this.dailyNewWordsGoal,
       dailyReviewLimit: dailyReviewLimit ?? this.dailyReviewLimit,
+      nickname: nickname ?? this.nickname,
+      avatarIndex: avatarIndex ?? this.avatarIndex,
+      studyMotivation: studyMotivation ?? this.studyMotivation,
     );
   }
 }
@@ -72,6 +86,9 @@ class SettingsNotifier extends Notifier<AppSettings> {
           AppConstants.defaultNewWordsPerDay,
       dailyReviewLimit: int.tryParse(all[SettingKeys.dailyReviewLimit] ?? '') ??
           AppConstants.defaultReviewLimitPerDay,
+      nickname: all[SettingKeys.nickname] ?? '',
+      avatarIndex: int.tryParse(all[SettingKeys.avatarIndex] ?? '') ?? 0,
+      studyMotivation: all[SettingKeys.studyMotivation] ?? '',
     );
   }
 
@@ -135,6 +152,21 @@ class SettingsNotifier extends Notifier<AppSettings> {
   Future<void> setDailyReviewLimit(int limit) async {
     await _repo.set(SettingKeys.dailyReviewLimit, limit.toString());
     state = state.copyWith(dailyReviewLimit: limit);
+  }
+
+  Future<void> setNickname(String nickname) async {
+    await _repo.set(SettingKeys.nickname, nickname);
+    state = state.copyWith(nickname: nickname);
+  }
+
+  Future<void> setAvatarIndex(int index) async {
+    await _repo.set(SettingKeys.avatarIndex, index.toString());
+    state = state.copyWith(avatarIndex: index);
+  }
+
+  Future<void> setStudyMotivation(String motivation) async {
+    await _repo.set(SettingKeys.studyMotivation, motivation);
+    state = state.copyWith(studyMotivation: motivation);
   }
 }
 
