@@ -18,8 +18,9 @@ void main() async {
   // Initialize database
   await DatabaseHelper.instance.database;
 
-  // Import built-in word lists on first launch
+  // Clean up any duplicate word lists and import built-in ones
   final wordListRepo = WordListRepository();
+  await wordListRepo.removeDuplicateWordLists();
   await wordListRepo.importBuiltInWordLists();
 
   // Configure desktop window

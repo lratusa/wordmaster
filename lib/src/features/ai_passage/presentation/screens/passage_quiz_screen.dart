@@ -5,11 +5,18 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../application/ai_passage_notifier.dart';
 
-class PassageQuizScreen extends ConsumerWidget {
+class PassageQuizScreen extends ConsumerStatefulWidget {
   const PassageQuizScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PassageQuizScreen> createState() => _PassageQuizScreenState();
+}
+
+class _PassageQuizScreenState extends ConsumerState<PassageQuizScreen> {
+  bool _scoreSaved = false;
+
+  @override
+  Widget build(BuildContext context) {
     final state = ref.watch(aiPassageProvider);
     final theme = Theme.of(context);
 
@@ -20,11 +27,20 @@ class PassageQuizScreen extends ConsumerWidget {
       );
     }
 
+    // Save score when quiz is complete
+    if (state.isQuizComplete && !_scoreSaved) {
+      _scoreSaved = true;
+      // Schedule the save for after the build
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        ref.read(aiPassageProvider.notifier).saveQuizScore();
+      });
+    }
+
     final questions = state.passage!.questions;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('阅读理解'),
+        title: Text(state.isReviewMode ? '重做测验' : '阅读理解'),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () => context.go('/ai-passage'),
@@ -202,6 +218,26 @@ class PassageQuizScreen extends ConsumerWidget {
                       ? '不错！继续加油！'
                       : '再多读几遍短文吧！',
               style: theme.textTheme.bodyLarge,
+            ),
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                OutlinedButton.icon(
+                  onPressed: () => context.go('/ai-passage/history'),
+                  icon: const Icon(Icons.history),
+                  label: const Text('查看历史'),
+                ),
+                const SizedBox(width: 12),
+                FilledButton.icon(
+                  onPressed: () {
+                    ref.read(aiPassageProvider.notifier).reset();
+                    context.go('/ai-passage');
+                  },
+                  icon: const Icon(Icons.home),
+                  label: const Text('返回'),
+                ),
+              ],
             ),
           ],
         ),

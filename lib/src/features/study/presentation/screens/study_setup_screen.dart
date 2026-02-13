@@ -20,6 +20,8 @@ class _StudySetupScreenState extends ConsumerState<StudySetupScreen> {
   int? _selectedWordListId;
   int _newWordsLimit = AppConstants.defaultNewWordsPerDay;
   int _reviewLimit = AppConstants.defaultReviewLimitPerDay;
+  StudyMode _studyMode = StudyMode.mixed;
+  StudyOrder _studyOrder = StudyOrder.random;
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +55,75 @@ class _StudySetupScreenState extends ConsumerState<StudySetupScreen> {
                 ),
                 const SizedBox(height: 12),
                 ...wordLists.map((wl) => _buildWordListTile(wl)),
+
+                const SizedBox(height: 24),
+
+                // Study mode selector
+                Text(
+                  '学习模式',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                SizedBox(
+                  width: double.infinity,
+                  child: SegmentedButton<StudyMode>(
+                    segments: const [
+                      ButtonSegment<StudyMode>(
+                        value: StudyMode.mixed,
+                        label: Text('混合'),
+                        icon: Icon(Icons.shuffle),
+                      ),
+                      ButtonSegment<StudyMode>(
+                        value: StudyMode.newOnly,
+                        label: Text('仅新词'),
+                        icon: Icon(Icons.fiber_new),
+                      ),
+                      ButtonSegment<StudyMode>(
+                        value: StudyMode.reviewOnly,
+                        label: Text('仅复习'),
+                        icon: Icon(Icons.replay),
+                      ),
+                    ],
+                    selected: {_studyMode},
+                    onSelectionChanged: (selected) {
+                      setState(() => _studyMode = selected.first);
+                    },
+                  ),
+                ),
+
+                const SizedBox(height: 24),
+
+                // Study order selector
+                Text(
+                  '学习顺序',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                SizedBox(
+                  width: double.infinity,
+                  child: SegmentedButton<StudyOrder>(
+                    segments: const [
+                      ButtonSegment<StudyOrder>(
+                        value: StudyOrder.sequential,
+                        label: Text('顺序学习'),
+                        icon: Icon(Icons.format_list_numbered),
+                      ),
+                      ButtonSegment<StudyOrder>(
+                        value: StudyOrder.random,
+                        label: Text('乱序学习'),
+                        icon: Icon(Icons.shuffle),
+                      ),
+                    ],
+                    selected: {_studyOrder},
+                    onSelectionChanged: (selected) {
+                      setState(() => _studyOrder = selected.first);
+                    },
+                  ),
+                ),
 
                 const SizedBox(height: 24),
 
@@ -193,6 +264,8 @@ class _StudySetupScreenState extends ConsumerState<StudySetupScreen> {
       wordListId: _selectedWordListId!,
       newWordsLimit: _newWordsLimit,
       reviewLimit: _reviewLimit,
+      studyMode: _studyMode,
+      studyOrder: _studyOrder,
     );
 
     ref.read(studySessionProvider.notifier).startSession(settings);

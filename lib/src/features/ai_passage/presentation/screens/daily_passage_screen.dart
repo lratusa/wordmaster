@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../core/services/tts_service.dart';
 import '../../../../core/theme/app_colors.dart';
-import '../../../study/application/study_session_notifier.dart';
+import '../../../study/application/study_session_notifier.dart' show ttsServiceProvider;
 import '../../application/ai_passage_notifier.dart';
 
 class DailyPassageScreen extends ConsumerStatefulWidget {
@@ -33,8 +33,23 @@ class _DailyPassageScreenState extends ConsumerState<DailyPassageScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AI 短文'),
+        title: Text(state.isReviewMode ? '复习短文' : 'AI 短文'),
+        leading: (state.passage != null || state.isManualMode || state.error != null)
+            ? IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  ref.read(aiPassageProvider.notifier).reset();
+                },
+                tooltip: '重新选择语言',
+              )
+            : null,
         actions: [
+          // History button - always visible
+          IconButton(
+            icon: const Icon(Icons.history),
+            onPressed: () => context.go('/ai-passage/history'),
+            tooltip: '历史记录',
+          ),
           if (state.passage != null)
             IconButton(
               icon: const Icon(Icons.volume_up),
@@ -325,6 +340,30 @@ class _DailyPassageScreenState extends ConsumerState<DailyPassageScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Review mode indicator
+          if (state.isReviewMode)
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(12),
+              margin: const EdgeInsets.only(bottom: 16),
+              decoration: BoxDecoration(
+                color: AppColors.info.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.replay, size: 18, color: AppColors.info),
+                  const SizedBox(width: 8),
+                  Text(
+                    '复习模式 - 重做历史短文',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: AppColors.info,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
           // Passage card
           Card(
             child: Padding(
@@ -354,19 +393,43 @@ class _DailyPassageScreenState extends ConsumerState<DailyPassageScreen> {
 
           const SizedBox(height: 24),
 
-          // Quiz button
+          // Buttons row
           if (passage.questions.isNotEmpty)
-            SizedBox(
-              width: double.infinity,
-              height: 48,
-              child: FilledButton.icon(
-                onPressed: () => context.go('/ai-passage/quiz'),
-                icon: const Icon(Icons.quiz),
-                label: Text(
-                  '开始理解测验（${passage.questions.length} 题）',
-                  style: const TextStyle(fontSize: 16),
+            Row(
+              children: [
+                // Generate new passage button (not in review mode)
+                if (!state.isReviewMode)
+                  Expanded(
+                    child: SizedBox(
+                      height: 48,
+                      child: OutlinedButton.icon(
+                        onPressed: () => ref
+                            .read(aiPassageProvider.notifier)
+                            .generatePassage(state.language, forceNew: true),
+                        icon: const Icon(Icons.refresh),
+                        label: const Text('换一篇'),
+                      ),
+                    ),
+                  ),
+                if (!state.isReviewMode) const SizedBox(width: 12),
+                // Quiz button
+                Expanded(
+                  flex: state.isReviewMode ? 1 : 2,
+                  child: SizedBox(
+                    height: 48,
+                    child: FilledButton.icon(
+                      onPressed: () => context.go('/ai-passage/quiz'),
+                      icon: const Icon(Icons.quiz),
+                      label: Text(
+                        state.isReviewMode
+                            ? '重做测验（${passage.questions.length} 题）'
+                            : '开始测验（${passage.questions.length} 题）',
+                        style: const TextStyle(fontSize: 14),
+                      ),
+                    ),
+                  ),
                 ),
-              ),
+              ],
             ),
         ],
       ),

@@ -10,6 +10,7 @@ import '../../features/study/presentation/screens/session_summary_screen.dart';
 import '../../features/audio_review/presentation/screens/audio_review_setup_screen.dart';
 import '../../features/audio_review/presentation/screens/audio_review_screen.dart';
 import '../../features/ai_passage/presentation/screens/daily_passage_screen.dart';
+import '../../features/ai_passage/presentation/screens/passage_history_screen.dart';
 import '../../features/ai_passage/presentation/screens/passage_quiz_screen.dart';
 import '../../features/checkin/presentation/screens/checkin_screen.dart';
 import '../../features/statistics/presentation/screens/statistics_screen.dart';
@@ -85,6 +86,11 @@ class AppRouter {
             path: '/ai-passage/quiz',
             name: 'passageQuiz',
             builder: (context, state) => const PassageQuizScreen(),
+          ),
+          GoRoute(
+            path: '/ai-passage/history',
+            name: 'passageHistory',
+            builder: (context, state) => const PassageHistoryScreen(),
           ),
           GoRoute(
             path: '/checkin',

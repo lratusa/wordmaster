@@ -7,6 +7,7 @@ import '../../application/word_list_providers.dart';
 import '../../domain/enums/language.dart';
 import '../../domain/models/word.dart';
 import '../../domain/models/word_list.dart';
+import 'word_list_download_screen.dart';
 
 class WordListBrowserScreen extends ConsumerStatefulWidget {
   const WordListBrowserScreen({super.key});
@@ -59,6 +60,19 @@ class _WordListBrowserScreenState
                 });
               },
             ),
+            if (!_isSearching)
+              IconButton(
+                icon: const Icon(Icons.download),
+                tooltip: '下载更多词库',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const WordListDownloadScreen(),
+                    ),
+                  );
+                },
+              ),
           ],
           bottom: _isSearching
               ? null

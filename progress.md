@@ -1,5 +1,113 @@
 # Progress Log
 
+## Session 5: 2026-02-12 - Word List Generation & Bug Fixes
+
+### Completed Tasks
+
+#### 1. TOEFL Word List Generation
+- [x] Created `generate_toefl.py` - generates TOEFL core + full word lists
+- [x] Generated `toefl_core.json` (4,978 words - overlap with CET4/6)
+- [x] Generated `toefl_full.json` (10,367 words - complete vocabulary)
+- [x] API call via Gemini Flash for phonetics and examples
+- [x] 99.9% coverage for phonetics and examples
+
+#### 2. GitHub Wordlist Repository
+- [x] Created `lratusa/wordmaster-wordlists` repository
+- [x] Uploaded: toefl-core.json, toefl-full.json, cet4-full.json, cefr-a1.json, cefr-a2.json
+- [x] Created `sync_to_github.py` for future syncs
+
+#### 3. Download Error Handling
+- [x] 404 errors now show: "该词库暂未上线，敬请期待" (friendly message)
+- [x] Network errors show appropriate messages
+- [x] Uses warning color for 404, error color for other failures
+
+#### 4. Word List Refresh Fix
+- [x] Added `ref.invalidate(allWordListsProvider)` after download
+- [x] Added `ref.invalidate(wordListsByLanguageProvider)` for language-specific refresh
+- [x] Word lists now update immediately after download
+
+#### 5. Batch Word List Generator
+- [x] Created `generate_all.py` - batch generation script
+- [x] Supports: CET-4, CET-6, 考研, TOEFL, SAT, 中考, 高考
+- [x] Progress checkpoints for resume capability
+- [x] Core/Full split based on CET4/6 overlap
+
+### In Progress
+- [ ] CET-6 generation (855/3,991 words - 21%)
+- [ ] 考研, SAT, 中考, 高考 generation (queued)
+
+### Files Modified/Created
+| File | Action |
+|------|--------|
+| `scripts/wordlist_generator/generate_toefl.py` | CREATE |
+| `scripts/wordlist_generator/generate_all.py` | CREATE |
+| `scripts/wordlist_generator/sync_to_github.py` | CREATE |
+| `assets/wordlists/english/toefl_core.json` | CREATE |
+| `assets/wordlists/english/toefl_full.json` | CREATE |
+| `lib/src/features/word_lists/presentation/screens/word_list_download_screen.dart` | MODIFY |
+
+### Pending
+- [ ] Complete CET-6, 考研, SAT, 中考, 高考 generation
+- [ ] Sync to GitHub and update downloads
+- [ ] IELTS, GRE, GMAT have no source data (KyleBing repo doesn't include them)
+
+---
+
+## Session 4: 2026-02-12 - UI Enhancements & Bug Fixes
+
+### Completed Tasks
+
+#### 1. Enhanced Greeting Section (首页问候语)
+- [x] Created `greeting_provider.dart` - diversified greeting messages by time period
+- [x] Created `greeting_card.dart` - beautiful card design with gradient background
+- [x] Simplified AppBar to just show app name
+- [x] Time-based icons (🌙☀️🌤️🌅🌆)
+- [x] Daily variation using day-of-year as seed
+- [x] Dynamic encouragement messages (goal pending/achieved)
+- [x] Short motivation shown as tag, long as quote box
+
+#### 2. Fixed Word List Duplication Bug
+- [x] Root cause: `_getNameForKey()` didn't handle CEFR keys properly
+- [x] Fix: Now loads actual name from JSON before checking duplicates
+- [x] Added `removeDuplicateWordLists()` function - auto-runs at startup
+- [x] Added "Reset Word Lists" option in Settings → Data Management
+
+#### 3. Added More Word List Categories
+- [x] Added 中考, 高考, 考研, SAT, GMAT categories to downloader
+- [x] Updated category list order (by learning stage)
+- [x] Updated category icons and names
+
+#### 4. Created Word List Download Screen
+- [x] New `word_list_download_screen.dart` - browse and download word packages
+- [x] Category filter chips
+- [x] Download progress indicator
+- [x] Added download button to word list browser AppBar
+
+#### 5. Added More Greeting Messages
+- [x] 8-10 messages per time period
+- [x] 18 general encouragement templates
+- [x] 8 goal-pending templates
+- [x] 12 goal-achieved templates
+
+### Files Modified/Created
+| File | Action |
+|------|--------|
+| `lib/src/features/home/application/greeting_provider.dart` | CREATE |
+| `lib/src/features/home/presentation/widgets/greeting_card.dart` | CREATE |
+| `lib/src/features/home/presentation/screens/home_screen.dart` | MODIFY |
+| `lib/src/features/word_lists/data/repositories/word_list_repository.dart` | MODIFY |
+| `lib/src/features/word_lists/presentation/screens/word_list_download_screen.dart` | CREATE |
+| `lib/src/features/word_lists/presentation/screens/word_list_browser_screen.dart` | MODIFY |
+| `lib/src/features/settings/presentation/screens/settings_screen.dart` | MODIFY |
+| `lib/src/core/services/wordlist_downloader.dart` | MODIFY |
+| `lib/main.dart` | MODIFY |
+
+### Pending
+- [ ] Word list download requires actual GitHub repository with JSON data
+- [ ] User requested: Download TOEFL and CET-6 complete word lists
+
+---
+
 ## Session 3: 2026-02-12 - Phase 9: Testing & Release
 
 ### Plan

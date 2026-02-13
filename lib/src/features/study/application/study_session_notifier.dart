@@ -92,16 +92,33 @@ class StudyItem {
   });
 }
 
+// Study order enum
+enum StudyOrder {
+  sequential, // 顺序学习
+  random,     // 乱序学习
+}
+
+// Study mode enum
+enum StudyMode {
+  mixed,      // 混合 - interleave new + review words
+  newOnly,    // 仅新词 - only learn new words
+  reviewOnly, // 仅复习 - only review due words
+}
+
 // Settings for a study session
 class StudySettings {
   final int wordListId;
   final int newWordsLimit;
   final int reviewLimit;
+  final StudyOrder studyOrder;
+  final StudyMode studyMode;
 
   const StudySettings({
     required this.wordListId,
     this.newWordsLimit = 10,
     this.reviewLimit = 200,
+    this.studyOrder = StudyOrder.random,
+    this.studyMode = StudyMode.mixed,
   });
 }
 
@@ -153,46 +170,73 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
       startedAt: DateTime.now(),
     );
 
-    // Get due review words and new words
-    final dueWordIds = await _progressRepo!.getDueWordIds(settings.wordListId);
-    final newWordIds = await _progressRepo!.getNewWordIds(
-      settings.wordListId,
-      limit: settings.newWordsLimit,
-    );
+    // Get due review words and new words based on study mode
+    List<int> dueWordIds = [];
+    List<int> newWordIds = [];
 
-    // Build the study queue: interleave review and new words (1:5 ratio)
+    if (settings.studyMode != StudyMode.newOnly) {
+      dueWordIds = await _progressRepo!.getDueWordIds(settings.wordListId);
+    }
+    if (settings.studyMode != StudyMode.reviewOnly) {
+      newWordIds = await _progressRepo!.getNewWordIds(
+        settings.wordListId,
+        limit: settings.newWordsLimit,
+      );
+    }
+
+    // Build the study queue based on study mode
     final queue = <StudyItem>[];
 
     // Load review words
-    final reviewIds =
-        dueWordIds.take(settings.reviewLimit).toList();
-    int newIdx = 0;
-    int reviewIdx = 0;
+    final reviewIds = dueWordIds.take(settings.reviewLimit).toList();
 
-    // Interleave: every 5 review words, insert 1 new word
-    while (reviewIdx < reviewIds.length || newIdx < newWordIds.length) {
-      // Add up to 5 review words
-      for (int i = 0; i < 5 && reviewIdx < reviewIds.length; i++) {
-        final word = await _wordRepo!.getWordById(reviewIds[reviewIdx]);
+    if (settings.studyMode == StudyMode.newOnly) {
+      // New words only mode
+      for (final wordId in newWordIds) {
+        final word = await _wordRepo!.getWordById(wordId);
         if (word != null) {
-          final progress =
-              await _progressRepo!.getOrCreateProgress(word.id!);
-          queue.add(StudyItem(
-              word: word, progress: progress, isNewWord: false));
+          final progress = await _progressRepo!.getOrCreateProgress(word.id!);
+          queue.add(StudyItem(word: word, progress: progress, isNewWord: true));
         }
-        reviewIdx++;
       }
-
-      // Add 1 new word
-      if (newIdx < newWordIds.length) {
-        final word = await _wordRepo!.getWordById(newWordIds[newIdx]);
+    } else if (settings.studyMode == StudyMode.reviewOnly) {
+      // Review only mode
+      for (final wordId in reviewIds) {
+        final word = await _wordRepo!.getWordById(wordId);
         if (word != null) {
-          final progress =
-              await _progressRepo!.getOrCreateProgress(word.id!);
-          queue.add(
-              StudyItem(word: word, progress: progress, isNewWord: true));
+          final progress = await _progressRepo!.getOrCreateProgress(word.id!);
+          queue.add(StudyItem(word: word, progress: progress, isNewWord: false));
         }
-        newIdx++;
+      }
+    } else {
+      // Mixed mode - interleave review and new words (1:5 ratio)
+      int newIdx = 0;
+      int reviewIdx = 0;
+
+      while (reviewIdx < reviewIds.length || newIdx < newWordIds.length) {
+        // Add up to 5 review words
+        for (int i = 0; i < 5 && reviewIdx < reviewIds.length; i++) {
+          final word = await _wordRepo!.getWordById(reviewIds[reviewIdx]);
+          if (word != null) {
+            final progress =
+                await _progressRepo!.getOrCreateProgress(word.id!);
+            queue.add(StudyItem(
+                word: word, progress: progress, isNewWord: false));
+          }
+          reviewIdx++;
+        }
+
+        // Add 1 new word
+        if (newIdx < newWordIds.length) {
+          final word = await _wordRepo!.getWordById(newWordIds[newIdx]);
+          if (word != null) {
+            final progress =
+                await _progressRepo!.getOrCreateProgress(word.id!);
+            queue.add(
+                StudyItem(word: word, progress: progress, isNewWord: true));
+          }
+          newIdx++;
+        }
       }
     }
 
@@ -200,6 +244,11 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
       state = state.copyWith(isLoading: false, isCompleted: true);
       return;
     }
+
+    // Apply study order
+    final orderedQueue = settings.studyOrder == StudyOrder.random
+        ? (List<StudyItem>.from(queue)..shuffle())
+        : queue;
 
     // Create session in DB
     final sessionId = await _sessionRepo!.createSession(
@@ -209,7 +258,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
 
     state = state.copyWith(
       isLoading: false,
-      queue: queue,
+      queue: orderedQueue,
       currentIndex: 0,
       sessionId: sessionId,
       newWordsCount: newWordIds.length,

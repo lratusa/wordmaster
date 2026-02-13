@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/services/tts_model_downloader.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../study/application/study_session_notifier.dart';
+import '../../../word_lists/data/repositories/word_list_repository.dart';
 import '../../application/settings_notifier.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -195,6 +196,17 @@ class SettingsScreen extends ConsumerWidget {
             ),
           ]),
 
+          // Data Management
+          _buildSection(context, '数据管理', [
+            ListTile(
+              leading: const Icon(Icons.refresh, color: AppColors.warning),
+              title: const Text('重置词单'),
+              subtitle: const Text('清除所有词单数据并重新导入内置词单'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _showResetWordListsDialog(context),
+            ),
+          ]),
+
           // About
           _buildSection(context, '关于', [
             const ListTile(
@@ -203,6 +215,78 @@ class SettingsScreen extends ConsumerWidget {
               subtitle: Text('v1.0.0 · AI驱动 · 艾宾浩斯记忆 · 英日双语'),
             ),
           ]),
+        ],
+      ),
+    );
+  }
+
+  void _showResetWordListsDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Row(
+          children: [
+            Icon(Icons.warning, color: AppColors.warning),
+            SizedBox(width: 8),
+            Text('重置词单'),
+          ],
+        ),
+        content: const Text(
+          '此操作将删除所有词单数据（包括学习进度），并重新导入内置词单。\n\n'
+          '此操作不可撤销，确定要继续吗？',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text('取消'),
+          ),
+          FilledButton(
+            onPressed: () async {
+              Navigator.of(ctx).pop();
+
+              // Show loading dialog
+              showDialog(
+                context: context,
+                barrierDismissible: false,
+                builder: (_) => const AlertDialog(
+                  content: Row(
+                    children: [
+                      CircularProgressIndicator(),
+                      SizedBox(width: 16),
+                      Text('正在重置词单...'),
+                    ],
+                  ),
+                ),
+              );
+
+              try {
+                final repo = WordListRepository();
+                await repo.resetAllWordLists();
+
+                if (context.mounted) {
+                  Navigator.of(context).pop(); // Close loading dialog
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('词单已重置'),
+                      backgroundColor: AppColors.success,
+                    ),
+                  );
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  Navigator.of(context).pop(); // Close loading dialog
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('重置失败: $e'),
+                      backgroundColor: AppColors.error,
+                    ),
+                  );
+                }
+              }
+            },
+            style: FilledButton.styleFrom(backgroundColor: AppColors.error),
+            child: const Text('确定重置'),
+          ),
         ],
       ),
     );

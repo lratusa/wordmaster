@@ -12,6 +12,7 @@ import '../../study/application/study_session_notifier.dart'
     show progressRepositoryProvider;
 import '../../word_lists/data/repositories/word_repository.dart';
 import '../../word_lists/domain/models/word.dart';
+import '../domain/passage_history.dart';
 
 /// AI backend type
 enum AiBackend { openai, deepseek, ollama }
@@ -26,10 +27,14 @@ class AiPassageState {
   final List<int?> userAnswers;
   final bool isQuizComplete;
   final int? score;
+  final int? passageId;
 
   /// When no API key is set, this holds the prompt for manual copy-paste
   final String? promptText;
   final bool isManualMode;
+
+  /// Whether this is a review/redo of a historical passage
+  final bool isReviewMode;
 
   const AiPassageState({
     this.isLoading = false,
@@ -40,8 +45,10 @@ class AiPassageState {
     this.userAnswers = const [],
     this.isQuizComplete = false,
     this.score,
+    this.passageId,
     this.promptText,
     this.isManualMode = false,
+    this.isReviewMode = false,
   });
 
   AiPassageState copyWith({
@@ -53,8 +60,10 @@ class AiPassageState {
     List<int?>? userAnswers,
     bool? isQuizComplete,
     int? score,
+    int? passageId,
     String? promptText,
     bool? isManualMode,
+    bool? isReviewMode,
   }) {
     return AiPassageState(
       isLoading: isLoading ?? this.isLoading,
@@ -65,8 +74,10 @@ class AiPassageState {
       userAnswers: userAnswers ?? this.userAnswers,
       isQuizComplete: isQuizComplete ?? this.isQuizComplete,
       score: score ?? this.score,
+      passageId: passageId ?? this.passageId,
       promptText: promptText,
       isManualMode: isManualMode ?? this.isManualMode,
+      isReviewMode: isReviewMode ?? this.isReviewMode,
     );
   }
 }
@@ -77,22 +88,30 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
     return const AiPassageState();
   }
 
+  /// Reset to initial state (language selection)
+  void reset() {
+    state = const AiPassageState();
+  }
+
   /// Generate a passage for the given language
-  Future<void> generatePassage(String language) async {
+  Future<void> generatePassage(String language, {bool forceNew = false}) async {
     state = AiPassageState(isLoading: true, language: language);
 
     try {
-      // Check cache first
-      final cached = await _getCachedPassage(language);
-      if (cached != null) {
-        final questions = cached.passage?.questions ?? [];
-        state = AiPassageState(
-          passage: cached.passage,
-          language: language,
-          sourceWordIds: cached.sourceWordIds,
-          userAnswers: List.filled(questions.length, null),
-        );
-        return;
+      // Check cache first (unless forcing new)
+      if (!forceNew) {
+        final cached = await _getCachedPassage(language);
+        if (cached != null) {
+          final questions = cached.passage?.questions ?? [];
+          state = AiPassageState(
+            passage: cached.passage,
+            language: language,
+            sourceWordIds: cached.sourceWordIds,
+            passageId: cached.passageId,
+            userAnswers: List.filled(questions.length, null),
+          );
+          return;
+        }
       }
 
       // Select words for the passage
@@ -128,13 +147,14 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
 
       final sourceWordIds = words.map((w) => w.id!).toList();
 
-      // Cache result
-      await _cachePassage(language, result, sourceWordIds);
+      // Cache result and get the ID
+      final passageId = await _cachePassage(language, result, sourceWordIds);
 
       state = AiPassageState(
         passage: result,
         language: language,
         sourceWordIds: sourceWordIds,
+        passageId: passageId,
         userAnswers: List.filled(result.questions.length, null),
       );
     } catch (e) {
@@ -159,13 +179,14 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
       final json = jsonDecode(jsonStr) as Map<String, dynamic>;
       final result = PassageResult.fromJson(json);
 
-      // Cache it
-      await _cachePassage(state.language, result, state.sourceWordIds);
+      // Cache it and get the ID
+      final passageId = await _cachePassage(state.language, result, state.sourceWordIds);
 
       state = AiPassageState(
         passage: result,
         language: state.language,
         sourceWordIds: state.sourceWordIds,
+        passageId: passageId,
         userAnswers: List.filled(result.questions.length, null),
       );
     } catch (e) {
@@ -198,6 +219,56 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
       isQuizComplete: isComplete,
       score: score,
     );
+  }
+
+  /// Save the quiz score to database
+  Future<void> saveQuizScore() async {
+    if (state.passageId == null || state.score == null) return;
+
+    final userAnswers = state.userAnswers
+        .map((a) => a ?? -1)
+        .toList();
+
+    await DatabaseHelper.instance.savePassageScore(
+      state.passageId!,
+      state.score!,
+      userAnswers,
+    );
+  }
+
+  /// Load a historical passage for review/redo
+  Future<void> loadPassageForReview(int passageId) async {
+    state = const AiPassageState(isLoading: true, isReviewMode: true);
+
+    try {
+      final result = await DatabaseHelper.instance.getPassageById(passageId);
+      if (result == null) {
+        state = const AiPassageState(error: '短文不存在');
+        return;
+      }
+
+      final questions = result.passage.questions;
+      state = AiPassageState(
+        passage: result.passage,
+        language: 'en', // Will be determined from passage
+        sourceWordIds: result.sourceWordIds,
+        passageId: result.id,
+        userAnswers: List.filled(questions.length, null),
+        isReviewMode: true,
+      );
+    } catch (e) {
+      state = AiPassageState(error: '加载失败: $e');
+    }
+  }
+
+  /// Get all passage history
+  Future<List<PassageHistory>> getPassageHistory() async {
+    return DatabaseHelper.instance.getAllPassageHistory();
+  }
+
+  /// Delete a passage from history
+  Future<void> deletePassage(int passageId) async {
+    await DatabaseHelper.instance.deletePassage(passageId);
   }
 
   Future<List<Word>> _selectWords(String language) async {
@@ -263,7 +334,7 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
     }
   }
 
-  Future<({PassageResult? passage, List<int> sourceWordIds})?> _getCachedPassage(
+  Future<({PassageResult? passage, List<int> sourceWordIds, int? passageId})?> _getCachedPassage(
       String language) async {
     final db = await DatabaseHelper.instance.database;
     final today = DateTime.now().toIso8601String().substring(0, 10);
@@ -271,6 +342,7 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
       DbConstants.tableGeneratedPassages,
       where: 'generation_date = ? AND language = ?',
       whereArgs: [today, language],
+      orderBy: 'created_at DESC',
       limit: 1,
     );
 
@@ -289,15 +361,19 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
         .map((id) => id as int)
         .toList();
 
-    return (passage: passage, sourceWordIds: sourceWordIds);
+    return (
+      passage: passage,
+      sourceWordIds: sourceWordIds,
+      passageId: row['id'] as int,
+    );
   }
 
-  Future<void> _cachePassage(
+  Future<int> _cachePassage(
       String language, PassageResult result, List<int> sourceWordIds) async {
     final db = await DatabaseHelper.instance.database;
     final today = DateTime.now().toIso8601String().substring(0, 10);
 
-    await db.insert(DbConstants.tableGeneratedPassages, {
+    final id = await db.insert(DbConstants.tableGeneratedPassages, {
       'generation_date': today,
       'language': language,
       'passage_text': result.passage,
@@ -305,6 +381,8 @@ class AiPassageNotifier extends Notifier<AiPassageState> {
       'questions_json': jsonEncode(result.questions.map((q) => q.toJson()).toList()),
       'source_word_ids': jsonEncode(sourceWordIds),
     });
+
+    return id;
   }
 }
 

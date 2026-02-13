@@ -9,9 +9,14 @@ import 'package:path_provider/path_provider.dart';
 enum WordListCategory {
   cefr,    // CEFR A1-C2
   cet,     // CET-4, CET-6
+  kaoyan,  // 考研
+  gaokao,  // 高考
+  zhongkao, // 中考
   toefl,   // TOEFL
   ielts,   // IELTS
   gre,     // GRE
+  sat,     // SAT
+  gmat,    // GMAT
   jlpt,    // JLPT N5-N1
 }
 
@@ -291,6 +296,148 @@ class WordListDownloader {
       iconName: 'workspace_premium',
     ),
 
+    // ========== SAT ==========
+    WordListPackage(
+      id: 'sat-core',
+      name: 'SAT 核心词汇',
+      nameEn: 'SAT Core Vocabulary',
+      language: 'en',
+      description: 'SAT 考试核心高频词汇',
+      level: 'SAT',
+      category: WordListCategory.sat,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/sat-core.json',
+      wordCount: 2500,
+      iconName: 'school',
+    ),
+    WordListPackage(
+      id: 'sat-full',
+      name: 'SAT 完整词汇',
+      nameEn: 'SAT Full Vocabulary',
+      language: 'en',
+      description: 'SAT 考试完整词汇表',
+      level: 'SAT',
+      category: WordListCategory.sat,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/sat-full.json',
+      wordCount: 5000,
+      iconName: 'menu_book',
+    ),
+
+    // ========== GMAT ==========
+    WordListPackage(
+      id: 'gmat-core',
+      name: 'GMAT 核心词汇',
+      nameEn: 'GMAT Core Vocabulary',
+      language: 'en',
+      description: 'GMAT 考试核心高频词汇',
+      level: 'GMAT',
+      category: WordListCategory.gmat,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gmat-core.json',
+      wordCount: 2000,
+      iconName: 'business',
+    ),
+    WordListPackage(
+      id: 'gmat-full',
+      name: 'GMAT 完整词汇',
+      nameEn: 'GMAT Full Vocabulary',
+      language: 'en',
+      description: 'GMAT 考试完整词汇表',
+      level: 'GMAT',
+      category: WordListCategory.gmat,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gmat-full.json',
+      wordCount: 4500,
+      iconName: 'trending_up',
+    ),
+
+    // ========== 考研 ==========
+    WordListPackage(
+      id: 'kaoyan-core',
+      name: '考研核心词汇',
+      nameEn: 'Graduate Entrance Exam Core',
+      language: 'en',
+      description: '考研英语核心高频词汇',
+      level: '考研',
+      category: WordListCategory.kaoyan,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/kaoyan-core.json',
+      wordCount: 3000,
+      iconName: 'school',
+    ),
+    WordListPackage(
+      id: 'kaoyan-full',
+      name: '考研完整词汇',
+      nameEn: 'Graduate Entrance Exam Full',
+      language: 'en',
+      description: '考研英语大纲完整词汇表',
+      level: '考研',
+      category: WordListCategory.kaoyan,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/kaoyan-full.json',
+      wordCount: 5500,
+      iconName: 'menu_book',
+    ),
+    WordListPackage(
+      id: 'kaoyan-advanced',
+      name: '考研高频难词',
+      nameEn: 'Graduate Entrance Exam Advanced',
+      language: 'en',
+      description: '考研英语高频难词精选',
+      level: '考研',
+      category: WordListCategory.kaoyan,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/kaoyan-advanced.json',
+      wordCount: 1500,
+      iconName: 'workspace_premium',
+    ),
+
+    // ========== 高考 ==========
+    WordListPackage(
+      id: 'gaokao-core',
+      name: '高考核心词汇',
+      nameEn: 'College Entrance Exam Core',
+      language: 'en',
+      description: '高考英语核心高频词汇',
+      level: '高考',
+      category: WordListCategory.gaokao,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gaokao-core.json',
+      wordCount: 2000,
+      iconName: 'school',
+    ),
+    WordListPackage(
+      id: 'gaokao-full',
+      name: '高考完整词汇',
+      nameEn: 'College Entrance Exam Full',
+      language: 'en',
+      description: '高考英语大纲完整词汇表',
+      level: '高考',
+      category: WordListCategory.gaokao,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gaokao-full.json',
+      wordCount: 3500,
+      iconName: 'menu_book',
+    ),
+
+    // ========== 中考 ==========
+    WordListPackage(
+      id: 'zhongkao-core',
+      name: '中考核心词汇',
+      nameEn: 'High School Entrance Exam Core',
+      language: 'en',
+      description: '中考英语核心高频词汇',
+      level: '中考',
+      category: WordListCategory.zhongkao,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/zhongkao-core.json',
+      wordCount: 1200,
+      iconName: 'school',
+    ),
+    WordListPackage(
+      id: 'zhongkao-full',
+      name: '中考完整词汇',
+      nameEn: 'High School Entrance Exam Full',
+      language: 'en',
+      description: '中考英语大纲完整词汇表',
+      level: '中考',
+      category: WordListCategory.zhongkao,
+      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/zhongkao-full.json',
+      wordCount: 1600,
+      iconName: 'menu_book',
+    ),
+
     // ========== JLPT 日语能力考试 ==========
     WordListPackage(
       id: 'jlpt-n5',
@@ -463,10 +610,15 @@ class WordListDownloader {
   /// Get all English exam categories
   static List<WordListCategory> get englishCategories => [
     WordListCategory.cefr,
+    WordListCategory.zhongkao,
+    WordListCategory.gaokao,
     WordListCategory.cet,
+    WordListCategory.kaoyan,
     WordListCategory.toefl,
     WordListCategory.ielts,
     WordListCategory.gre,
+    WordListCategory.sat,
+    WordListCategory.gmat,
   ];
 
   /// Get category display name
@@ -474,14 +626,24 @@ class WordListDownloader {
     switch (category) {
       case WordListCategory.cefr:
         return 'CEFR 欧标';
+      case WordListCategory.zhongkao:
+        return '中考';
+      case WordListCategory.gaokao:
+        return '高考';
       case WordListCategory.cet:
-        return '四六级';
+        return '四六级 CET';
+      case WordListCategory.kaoyan:
+        return '考研';
       case WordListCategory.toefl:
         return '托福 TOEFL';
       case WordListCategory.ielts:
         return '雅思 IELTS';
       case WordListCategory.gre:
         return 'GRE';
+      case WordListCategory.sat:
+        return 'SAT';
+      case WordListCategory.gmat:
+        return 'GMAT';
       case WordListCategory.jlpt:
         return 'JLPT 日语能力考';
     }
@@ -492,14 +654,24 @@ class WordListDownloader {
     switch (category) {
       case WordListCategory.cefr:
         return 'public';
+      case WordListCategory.zhongkao:
+        return 'school';
+      case WordListCategory.gaokao:
+        return 'history_edu';
       case WordListCategory.cet:
         return 'school';
+      case WordListCategory.kaoyan:
+        return 'science';
       case WordListCategory.toefl:
         return 'flight_takeoff';
       case WordListCategory.ielts:
         return 'travel_explore';
       case WordListCategory.gre:
         return 'psychology';
+      case WordListCategory.sat:
+        return 'menu_book';
+      case WordListCategory.gmat:
+        return 'business';
       case WordListCategory.jlpt:
         return 'translate';
     }
