@@ -22,6 +22,7 @@
 - **Smart Spaced Repetition**: Uses the FSRS (Free Spaced Repetition Scheduler) algorithm for optimal memory retention
 - **AI-Generated Reading Passages**: LLM creates contextual short articles using your vocabulary words, reinforcing memory through meaningful context
 - **40,000+ Vocabulary Words**: Comprehensive word lists including CEFR (A1-C2), JLPT (N5-N1), CET-4/6, TOEFL, and more
+- **4,200+ Kanji Characters**: JLPT kanji (N5-N1) and Japanese school curriculum (Grades 1-6, Middle, High School)
 - **Multi-language Support**: Learn English and Japanese vocabulary
 - **Offline TTS**: Text-to-speech using sherpa-onnx (no internet required)
 - **Audio Review Mode**: Listen-based vocabulary practice
@@ -32,14 +33,16 @@
 
 ### Available Word Lists
 
-| Category | Lists | Total Words |
-|----------|-------|-------------|
-| **CEFR English** | A1, A2, B1, B2, C1, C2 | 9,441 |
-| **Chinese Exams** | 中考, 高考, CET-4, CET-6, 考研 | 20,000+ |
-| **Standardized Tests** | TOEFL, SAT | 14,000+ |
-| **JLPT Japanese** | N5, N4, N3, N2, N1 | 20,000+ |
+| Category | Lists | Total |
+|----------|-------|-------|
+| **CEFR English** | A1, A2, B1, B2, C1, C2 | 9,441 words |
+| **Chinese Exams** | 中考, 高考, CET-4, CET-6, 考研 | 20,000+ words |
+| **Standardized Tests** | TOEFL, SAT | 14,000+ words |
+| **JLPT Japanese** | N5, N4, N3, N2, N1 | 20,000+ words |
+| **JLPT Kanji** | N5, N4, N3, N2, N1 | 2,135 kanji |
+| **School Kanji** | 小学1-6年, 中学校, 高等学校 | 2,136 kanji |
 
-Word lists include Chinese translations, IPA phonetics, and example sentences. See [wordmaster-wordlists](https://github.com/lratusa/wordmaster-wordlists) for details.
+Word lists include Chinese translations, IPA phonetics, and example sentences. Kanji lists include onyomi/kunyomi readings and example words. See [wordmaster-wordlists](https://github.com/lratusa/wordmaster-wordlists) for details.
 
 ### Installation
 
@@ -128,6 +131,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **智能间隔重复**: 采用 FSRS（自由间隔重复调度器）算法，优化记忆效果
 - **AI 生成阅读短文**: 大语言模型根据你的生词自动生成情境短文，在上下文中加深记忆
 - **40,000+ 词汇量**: 包含 CEFR (A1-C2)、JLPT (N5-N1)、四六级、托福等完整词库
+- **4,200+ 汉字**: JLPT 汉字 (N5-N1) 及日本学校课程汉字 (小学1-6年、中学、高中)
 - **多语言支持**: 学习英语和日语词汇
 - **离线语音**: 使用 sherpa-onnx 实现文字转语音（无需联网）
 - **听力训练模式**: 基于听力的词汇练习
@@ -216,6 +220,7 @@ flutter build linux      # Linux
 - **スマート間隔反復**: FSRS（自由間隔反復スケジューラ）アルゴリズムによる最適な記憶定着
 - **AI生成リーディング**: LLMが学習中の単語を使って短い文章を自動生成、文脈の中で記憶を強化
 - **40,000+語彙**: CEFR (A1-C2)、JLPT (N5-N1)、TOEFL等の完全な語彙リスト
+- **4,200+漢字**: JLPT漢字 (N5-N1) および日本の学校カリキュラム漢字 (小学1-6年、中学、高校)
 - **多言語対応**: 英語と日本語の語彙学習
 - **オフラインTTS**: sherpa-onnxを使用した音声読み上げ（インターネット不要）
 - **リスニング練習モード**: 聴覚ベースの語彙練習
