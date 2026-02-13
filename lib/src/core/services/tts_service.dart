@@ -2,8 +2,11 @@ import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sherpa_onnx/sherpa_onnx.dart' as sherpa_onnx;
+
+import 'download_mirror.dart';
 
 /// TTS speak result
 enum TtsSpeakResult {
@@ -21,24 +24,48 @@ enum TtsSpeakResult {
   error,
 }
 
-/// Text-to-speech service using sherpa-onnx for offline TTS.
-/// Supports English and Chinese with high-quality neural voices.
-/// Note: Japanese TTS is not yet available in sherpa-onnx.
+/// Text-to-speech service using hybrid approach:
+/// - English/Chinese: sherpa-onnx (Kokoro model, high quality offline)
+/// - Japanese: System TTS via flutter_tts (Windows SAPI, reliable for Japanese)
 class TtsService {
   sherpa_onnx.OfflineTts? _tts;
   AudioPlayer? _player;
+  FlutterTts? _systemTts;  // For Japanese via system TTS
   bool _isInitialized = false;
   bool _initFailed = false;
+  bool _systemTtsAvailable = false;
   String _modelDir = '';
   double _speed = 1.0;
   String? _lastError;
 
-  /// Languages supported by the current TTS models
-  /// Japanese is NOT supported yet - sherpa-onnx doesn't have Japanese TTS models
-  static const Set<String> supportedLanguages = {'en', 'zh'};
+  /// Whether the current model is Kokoro
+  bool _isKokoroModel = false;
 
-  /// Languages that are planned but not yet available
-  static const Set<String> unsupportedLanguages = {'ja'};
+  /// The actual directory containing the active model files
+  String? _activeModelDir;
+
+  /// Languages supported by sherpa-onnx model
+  Set<String> _sherpaLanguages = {'en', 'zh'};
+
+  /// Japanese is handled by system TTS
+  static const String _japaneseLanguage = 'ja';
+
+  /// Speaker ID mapping for Kokoro model (Japanese voices)
+  static const Map<String, int> _kokoroJapaneseSpeakers = {
+    'jf_alpha': 37,    // Female
+    'jf_gongitsune': 38,
+    'jf_nezumi': 39,
+    'jf_tebukuro': 40,
+    'jm_kumo': 41,     // Male
+  };
+
+  /// Default speaker IDs by language for Kokoro model
+  static const Map<String, int> _kokoroDefaultSpeakers = {
+    'en': 0,      // af_heart (American female)
+    'en-gb': 7,   // bf_emma (British female)
+    'ja': 37,     // jf_alpha (Japanese female)
+    'zh': 42,     // Chinese speaker (if available)
+  };
 
   /// Check if TTS is supported on current platform
   bool get isSupported => Platform.isWindows || Platform.isAndroid || Platform.isIOS || Platform.isLinux || Platform.isMacOS;
@@ -52,24 +79,42 @@ class TtsService {
   /// Get the last error message
   String? get lastError => _lastError;
 
+  /// Check if Japanese is supported (via system TTS)
+  bool get supportsJapanese => _systemTtsAvailable;
+
   /// Get TTS status as a string for debugging
   String get status {
-    if (_isInitialized && _tts != null) return 'Ready';
+    final parts = <String>[];
+    if (_isInitialized && _tts != null) {
+      final modelType = _isKokoroModel ? 'Kokoro' : 'VITS';
+      parts.add('$modelType: EN/ZH');
+    }
+    if (_systemTtsAvailable) {
+      parts.add('System: JA');
+    }
+    if (parts.isNotEmpty) {
+      return 'Ready (${parts.join(", ")})';
+    }
     if (_initFailed) return 'Failed: ${_lastError ?? "Unknown error"}';
     return 'Not initialized';
   }
 
   /// Check if a language is supported by TTS
   bool isLanguageSupported(String language) {
-    return supportedLanguages.contains(language);
+    // Japanese is always supported via system TTS
+    if (language == _japaneseLanguage) {
+      return _systemTtsAvailable;
+    }
+    // Other languages use sherpa-onnx
+    return _sherpaLanguages.contains(language);
   }
 
   /// Get a user-friendly message for unsupported language
   String getUnsupportedLanguageMessage(String language) {
-    if (language == 'ja') {
-      return '日语语音暂不支持，敬请期待';  // Japanese TTS not yet supported
+    if (language == 'ja' && !_systemTtsAvailable) {
+      return '系统日语语音不可用，请在Windows设置中安装日语语音包';
     }
-    return '该语言暂不支持语音播放';  // This language doesn't support TTS yet
+    return '该语言暂不支持语音播放';
   }
 
   /// Reset the TTS service to allow re-initialization
@@ -79,6 +124,10 @@ class TtsService {
     _isInitialized = false;
     _initFailed = false;
     _lastError = null;
+    _isKokoroModel = false;
+    _activeModelDir = null;
+    _sherpaLanguages = {'en', 'zh'};
+    // Note: Don't reset _systemTts as it's independent
   }
 
   /// Initialize the TTS engine
@@ -88,6 +137,9 @@ class TtsService {
     // Reset failed state to allow retry
     _initFailed = false;
     _lastError = null;
+
+    // Initialize system TTS for Japanese (flutter_tts)
+    await _initializeSystemTts();
 
     try {
       debugPrint('TTS: Initializing sherpa-onnx...');
@@ -108,7 +160,7 @@ class TtsService {
         return;
       }
 
-      // Create TTS instance with VITS model
+      // Detect model type and create config
       final config = await _createTtsConfig();
       if (config == null) {
         _lastError = 'No valid TTS model found. Please download a TTS model.';
@@ -122,7 +174,11 @@ class TtsService {
 
       _isInitialized = true;
       _lastError = null;
-      debugPrint('TTS: Initialized successfully');
+
+      final modelType = _isKokoroModel ? 'Kokoro' : 'VITS';
+      debugPrint('TTS: Initialized successfully with $modelType model');
+      debugPrint('TTS: Sherpa languages: $_sherpaLanguages');
+      debugPrint('TTS: Japanese (system TTS): ${_systemTtsAvailable ? "available" : "not available"}');
     } catch (e, stack) {
       _lastError = e.toString();
       debugPrint('TTS initialization failed: $e');
@@ -131,134 +187,297 @@ class TtsService {
     }
   }
 
-  /// Find the model file in the model directory (searches recursively)
-  Future<String?> _findModelFile() async {
+  /// Initialize system TTS (flutter_tts) for Japanese
+  Future<void> _initializeSystemTts() async {
+    try {
+      _systemTts = FlutterTts();
+
+      // On Windows, check voices directly (more reliable than getLanguages)
+      if (Platform.isWindows) {
+        final voices = await _systemTts!.getVoices;
+        debugPrint('TTS: System voices count: ${voices.length}');
+
+        // Look for Japanese voice (ja-JP)
+        String? japaneseVoice;
+        for (final voice in voices) {
+          final voiceMap = voice as Map<dynamic, dynamic>?;
+          final locale = voiceMap?['locale']?.toString() ?? '';
+          final name = voiceMap?['name']?.toString() ?? '';
+          debugPrint('TTS: Voice: $name, locale: $locale');
+
+          if (locale.toLowerCase().startsWith('ja')) {
+            japaneseVoice = name;
+            break;
+          }
+        }
+
+        if (japaneseVoice != null) {
+          await _systemTts!.setLanguage('ja-JP');
+          await _systemTts!.setSpeechRate(0.5);  // Slightly slower for clarity
+          await _systemTts!.setVolume(1.0);
+          _systemTtsAvailable = true;
+          debugPrint('TTS: System TTS initialized for Japanese (voice: $japaneseVoice)');
+        } else {
+          debugPrint('TTS: No Japanese voice found in system TTS');
+          _systemTtsAvailable = false;
+        }
+      } else {
+        // For other platforms, use getLanguages
+        final languages = await _systemTts!.getLanguages;
+        final hasJapanese = languages.any((lang) =>
+            lang.toString().toLowerCase().contains('ja') ||
+            lang.toString().toLowerCase().contains('japan'));
+
+        if (hasJapanese) {
+          await _systemTts!.setLanguage('ja-JP');
+          await _systemTts!.setSpeechRate(0.5);
+          await _systemTts!.setVolume(1.0);
+          _systemTtsAvailable = true;
+          debugPrint('TTS: System TTS initialized for Japanese');
+        } else {
+          debugPrint('TTS: Japanese not available in system TTS');
+          _systemTtsAvailable = false;
+        }
+      }
+    } catch (e) {
+      debugPrint('TTS: Failed to initialize system TTS: $e');
+      _systemTtsAvailable = false;
+    }
+  }
+
+  /// Read active model ID from active_model.txt
+  Future<String?> _getActiveModelId() async {
+    final activeFile = File('$_modelDir/active_model.txt');
+    if (activeFile.existsSync()) {
+      return activeFile.readAsStringSync().trim();
+    }
+    return null;
+  }
+
+  /// Detect model type and set _activeModelDir
+  /// Returns true if Kokoro model found (has voices.bin), false for VITS
+  /// Priority: active_model.txt > VITS models (en-us-*, en-gb-*, zh-*) > Kokoro
+  Future<bool> _detectActiveModel() async {
     final dir = Directory(_modelDir);
-    if (!dir.existsSync()) return null;
+    if (!dir.existsSync()) {
+      _activeModelDir = _modelDir;
+      return false;
+    }
 
-    // List all files in directory for debugging
-    debugPrint('TTS: Searching for model in $_modelDir');
-
-    // Look for .onnx files - first check top level
-    await for (final entity in dir.list()) {
-      if (entity is File) {
-        final name = entity.path.split(Platform.pathSeparator).last;
-        debugPrint('TTS: Found file: $name');
-        if (name.endsWith('.onnx') && !name.contains('encoder')) {
-          debugPrint('TTS: Using model file: $name');
-          return entity.path;
+    // Priority 0: Check active_model.txt first
+    final activeModelId = await _getActiveModelId();
+    if (activeModelId != null && activeModelId.isNotEmpty) {
+      final activeDir = Directory('$_modelDir/$activeModelId');
+      if (activeDir.existsSync()) {
+        // Check if it's a Kokoro model (has voices.bin)
+        final voicesFile = File('${activeDir.path}/voices.bin');
+        if (voicesFile.existsSync()) {
+          _activeModelDir = activeDir.path;
+          debugPrint('TTS: Using active Kokoro model: $activeModelId');
+          return true;
+        }
+        // Check if it's a VITS model (has .onnx file)
+        await for (final file in activeDir.list()) {
+          if (file is File && file.path.endsWith('.onnx')) {
+            _activeModelDir = activeDir.path;
+            debugPrint('TTS: Using active VITS model: $activeModelId');
+            return false;
+          }
         }
       }
     }
 
-    // If not found at top level, search in subdirectories
+    // Priority 1: Look for VITS model directories (en-us-*, en-gb-*, zh-*) - fallback auto-detection
     await for (final entity in dir.list()) {
       if (entity is Directory) {
-        final subDirName = entity.path.split(Platform.pathSeparator).last;
-        debugPrint('TTS: Searching subdirectory: $subDirName');
-        await for (final subEntity in entity.list()) {
-          if (subEntity is File) {
-            final name = subEntity.path.split(Platform.pathSeparator).last;
-            if (name.endsWith('.onnx') && !name.contains('encoder')) {
-              debugPrint('TTS: Found model in subdirectory: $name');
-              return subEntity.path;
+        final dirName = entity.path.split(Platform.pathSeparator).last;
+        // Check for VITS Piper models (have .onnx but no voices.bin)
+        if (dirName.startsWith('en-') || dirName.startsWith('zh-')) {
+          // Look for .onnx file
+          await for (final file in entity.list()) {
+            if (file is File && file.path.endsWith('.onnx')) {
+              _activeModelDir = entity.path;
+              debugPrint('TTS: Found VITS model in ${entity.path} (auto-detected)');
+              return false;  // Not Kokoro
             }
           }
         }
       }
     }
 
-    debugPrint('TTS: No .onnx model file found');
+    // Priority 2: Check for Kokoro model (has voices.bin)
+    await for (final entity in dir.list()) {
+      if (entity is Directory) {
+        final voicesFile = File('${entity.path}/voices.bin');
+        final modelFile = File('${entity.path}/model.onnx');
+        if (voicesFile.existsSync() && modelFile.existsSync()) {
+          _activeModelDir = entity.path;
+          debugPrint('TTS: Found Kokoro model in ${entity.path} (auto-detected)');
+          return true;
+        }
+      }
+    }
+
+    // Fallback to model dir
+    _activeModelDir = _modelDir;
+    return false;
+  }
+
+  /// Find voices.bin file for Kokoro model
+  Future<String?> _findVoicesFile() async {
+    // Use _activeModelDir which was set by _detectActiveModel
+    final modelDir = _activeModelDir ?? _modelDir;
+    final voicesFile = File('$modelDir/voices.bin');
+    if (voicesFile.existsSync()) {
+      return voicesFile.path;
+    }
     return null;
   }
 
-  /// Find tokens.txt file (searches recursively)
+  /// Find lexicon files for Kokoro model
+  Future<String> _findLexiconFiles() async {
+    final lexicons = <String>[];
+    final modelDir = _activeModelDir ?? _modelDir;
+
+    // Check for lexicon files in the active model directory
+    final possibleLexicons = ['lexicon-us-en.txt', 'lexicon-zh.txt', 'lexicon.txt'];
+
+    for (final lexiconName in possibleLexicons) {
+      final lexiconFile = File('$modelDir/$lexiconName');
+      if (lexiconFile.existsSync()) {
+        lexicons.add(lexiconFile.path);
+      }
+    }
+
+    return lexicons.join(',');
+  }
+
+  /// Find the model file in the active model directory
+  Future<String?> _findModelFile() async {
+    final modelDir = _activeModelDir ?? _modelDir;
+    final dir = Directory(modelDir);
+    if (!dir.existsSync()) return null;
+
+    debugPrint('TTS: Searching for model in $modelDir');
+
+    // Priority 1: Look for model.onnx (standard name for Kokoro and many models)
+    final standardModel = File('$modelDir/model.onnx');
+    if (standardModel.existsSync()) {
+      debugPrint('TTS: Using model file: model.onnx');
+      return standardModel.path;
+    }
+
+    // Priority 2: Look for any .onnx file (VITS models have different names)
+    await for (final entity in dir.list()) {
+      if (entity is File) {
+        final name = entity.path.split(Platform.pathSeparator).last;
+        if (name.endsWith('.onnx') && !name.contains('encoder') && !name.contains('int8')) {
+          debugPrint('TTS: Using model file: $name');
+          return entity.path;
+        }
+      }
+    }
+
+    debugPrint('TTS: No .onnx model file found in $modelDir');
+    return null;
+  }
+
+  /// Find tokens.txt file in active model directory
   Future<String?> _findTokensFile() async {
-    final dir = Directory(_modelDir);
-    if (!dir.existsSync()) return null;
-
-    // Check top level first
-    final topLevelTokens = File('$_modelDir/tokens.txt');
-    if (topLevelTokens.existsSync()) {
-      return topLevelTokens.path;
+    final modelDir = _activeModelDir ?? _modelDir;
+    final tokensFile = File('$modelDir/tokens.txt');
+    if (tokensFile.existsSync()) {
+      return tokensFile.path;
     }
-
-    // Search in subdirectories
-    await for (final entity in dir.list()) {
-      if (entity is Directory) {
-        final tokensPath = '${entity.path}/tokens.txt';
-        if (File(tokensPath).existsSync()) {
-          debugPrint('TTS: Found tokens.txt in subdirectory');
-          return tokensPath;
-        }
-      }
-    }
-
     return null;
   }
 
-  /// Find espeak-ng-data directory (searches recursively)
+  /// Find espeak-ng-data directory in active model directory
   Future<String?> _findDataDir() async {
-    final dir = Directory(_modelDir);
-    if (!dir.existsSync()) return null;
-
-    // Check top level first
-    final topLevelDataDir = Directory('$_modelDir/espeak-ng-data');
-    if (topLevelDataDir.existsSync()) {
-      return topLevelDataDir.path;
+    final modelDir = _activeModelDir ?? _modelDir;
+    final dataDir = Directory('$modelDir/espeak-ng-data');
+    if (dataDir.existsSync()) {
+      return dataDir.path;
     }
-
-    // Search in subdirectories
-    await for (final entity in dir.list()) {
-      if (entity is Directory) {
-        final dataDirPath = '${entity.path}/espeak-ng-data';
-        if (Directory(dataDirPath).existsSync()) {
-          debugPrint('TTS: Found espeak-ng-data in subdirectory');
-          return dataDirPath;
-        }
-      }
-    }
-
     return null;
   }
 
   /// Create TTS configuration based on available models
   Future<sherpa_onnx.OfflineTtsConfig?> _createTtsConfig() async {
     try {
-      // Find the model file dynamically (searches recursively)
+      // Detect model type (respects active_model.txt)
+      _isKokoroModel = await _detectActiveModel();
+      debugPrint('TTS: Detected model type: ${_isKokoroModel ? "Kokoro" : "VITS"}');
+
+      // Find common files
       final modelPath = await _findModelFile();
       if (modelPath == null) {
         debugPrint('TTS: No .onnx model file found in $_modelDir');
         return null;
       }
 
-      // Find tokens.txt (searches recursively)
       final tokensPath = await _findTokensFile();
       if (tokensPath == null) {
         debugPrint('TTS: tokens.txt not found in $_modelDir');
         return null;
       }
 
-      // Find espeak-ng-data directory (searches recursively)
       final dataDirPath = await _findDataDir();
 
       debugPrint('TTS: Model: $modelPath');
       debugPrint('TTS: Tokens: $tokensPath');
       debugPrint('TTS: Data dir: ${dataDirPath ?? "not found"}');
 
-      final vitsConfig = sherpa_onnx.OfflineTtsVitsModelConfig(
-        model: modelPath,
-        tokens: tokensPath,
-        lexicon: '',
-        dataDir: dataDirPath ?? '',
-      );
+      sherpa_onnx.OfflineTtsModelConfig modelConfig;
 
-      final modelConfig = sherpa_onnx.OfflineTtsModelConfig(
-        vits: vitsConfig,
-        numThreads: 2,
-        debug: true, // Enable debug for troubleshooting
-        provider: 'cpu',
-      );
+      if (_isKokoroModel) {
+        // Kokoro model configuration
+        final voicesPath = await _findVoicesFile();
+        final lexiconPaths = await _findLexiconFiles();
+
+        debugPrint('TTS: Voices: ${voicesPath ?? "not found"}');
+        debugPrint('TTS: Lexicons: $lexiconPaths');
+
+        // Note: lang parameter sets the default language for espeak-ng phonemizer
+        // 'ja' enables Japanese phoneme processing for hiragana/katakana
+        // TODO: Consider language-specific TTS instances for better multi-lang support
+        final kokoroConfig = sherpa_onnx.OfflineTtsKokoroModelConfig(
+          model: modelPath,
+          voices: voicesPath ?? '',
+          tokens: tokensPath,
+          dataDir: dataDirPath ?? '',
+          lexicon: lexiconPaths,
+          lang: 'ja',  // Enable Japanese phoneme processing
+        );
+
+        modelConfig = sherpa_onnx.OfflineTtsModelConfig(
+          kokoro: kokoroConfig,
+          numThreads: 2,
+          debug: true,
+          provider: 'cpu',
+        );
+
+        // Kokoro supports Japanese!
+        _sherpaLanguages = {'en', 'en-gb', 'ja', 'zh'};
+      } else {
+        // VITS model configuration
+        final vitsConfig = sherpa_onnx.OfflineTtsVitsModelConfig(
+          model: modelPath,
+          tokens: tokensPath,
+          lexicon: '',
+          dataDir: dataDirPath ?? '',
+        );
+
+        modelConfig = sherpa_onnx.OfflineTtsModelConfig(
+          vits: vitsConfig,
+          numThreads: 2,
+          debug: true,
+          provider: 'cpu',
+        );
+
+        // VITS models typically support EN and ZH
+        _sherpaLanguages = {'en', 'zh'};
+      }
 
       return sherpa_onnx.OfflineTtsConfig(
         model: modelConfig,
@@ -270,32 +489,47 @@ class TtsService {
     }
   }
 
+  /// Get the speaker ID for a given language (for Kokoro model)
+  int _getSpeakerIdForLanguage(String language) {
+    if (!_isKokoroModel) return 0;
+    return _kokoroDefaultSpeakers[language] ?? 0;
+  }
+
   /// Speak the given text in the specified language.
-  /// [language] should be 'en' or 'zh'. Japanese ('ja') is not yet supported.
   /// Returns a [TtsSpeakResult] indicating success or the type of failure.
   Future<TtsSpeakResult> speak(String text, {String language = 'en'}) async {
     if (text.isEmpty) return TtsSpeakResult.emptyText;
 
-    // Check if language is supported
+    // Try to initialize if not already done
+    if (!_isInitialized && !_initFailed) {
+      await initialize();
+    }
+
+    // Check if language is supported (after initialization)
     if (!isLanguageSupported(language)) {
       debugPrint('TTS: Language "$language" is not supported');
       return TtsSpeakResult.languageNotSupported;
     }
 
+    // Japanese uses system TTS (flutter_tts)
+    if (language == _japaneseLanguage) {
+      return _speakWithSystemTts(text);
+    }
+
+    // Other languages use sherpa-onnx
     try {
-      // Try to initialize if not already done
-      if (!_isInitialized && !_initFailed) {
-        await initialize();
-      }
 
       if (_tts == null || _initFailed) {
-        debugPrint('TTS: Not available, skipping speech');
+        debugPrint('TTS: Sherpa-onnx not available, skipping speech');
         return TtsSpeakResult.notInitialized;
       }
 
-      // Generate audio
-      debugPrint('TTS: Generating speech for: ${text.substring(0, text.length.clamp(0, 50))}...');
-      final audio = _tts!.generate(text: text, sid: 0, speed: _speed);
+      // Get speaker ID based on language
+      final speakerId = _getSpeakerIdForLanguage(language);
+
+      // Generate audio with sherpa-onnx
+      debugPrint('TTS: Generating speech (sherpa-onnx): ${text.substring(0, text.length.clamp(0, 50))}... (lang: $language, sid: $speakerId)');
+      final audio = _tts!.generate(text: text, sid: speakerId, speed: _speed);
 
       if (audio.samples.isEmpty) {
         debugPrint('TTS: No audio generated');
@@ -324,10 +558,32 @@ class TtsService {
     }
   }
 
+  /// Speak Japanese text using system TTS (flutter_tts)
+  Future<TtsSpeakResult> _speakWithSystemTts(String text) async {
+    if (_systemTts == null || !_systemTtsAvailable) {
+      debugPrint('TTS: System TTS not available for Japanese');
+      return TtsSpeakResult.notInitialized;
+    }
+
+    try {
+      // Stop any ongoing speech first
+      await stop();
+
+      debugPrint('TTS: Speaking Japanese (system TTS): ${text.substring(0, text.length.clamp(0, 50))}...');
+      await _systemTts!.speak(text);
+      return TtsSpeakResult.success;
+    } catch (e) {
+      debugPrint('TTS: System TTS speak failed: $e');
+      _lastError = e.toString();
+      return TtsSpeakResult.error;
+    }
+  }
+
   /// Stop any ongoing speech.
   Future<void> stop() async {
     try {
       await _player?.stop();
+      await _systemTts?.stop();
     } catch (e) {
       debugPrint('TTS stop failed: $e');
     }
@@ -339,13 +595,10 @@ class TtsService {
   }
 
   /// Check if a language is available for TTS.
-  /// Returns true only if the language is supported AND TTS is initialized.
   Future<bool> isLanguageAvailable(String language) async {
-    // First check if the language is in the supported list
     if (!isLanguageSupported(language)) {
       return false;
     }
-    // Then check if TTS is initialized
     return _isInitialized && !_initFailed;
   }
 
@@ -353,6 +606,7 @@ class TtsService {
     try {
       _player?.dispose();
       _tts?.free();
+      _systemTts?.stop();
     } catch (e) {
       debugPrint('TTS dispose failed: $e');
     }
@@ -360,23 +614,21 @@ class TtsService {
 }
 
 /// Helper class to download and manage TTS models
-/// Note: Japanese TTS is not available yet in sherpa-onnx
 class TtsModelManager {
-  static const String _modelsBaseUrl = 'https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models';
-
-  /// Available models for download
-  /// Note: Japanese (ja) is NOT available - sherpa-onnx doesn't have Japanese TTS models yet
+  /// Available models for download (filename only, base URL resolved via DownloadMirror)
   static const Map<String, String> availableModels = {
     'en-us': 'vits-piper-en_US-libritts_r-medium.tar.bz2',
     'en-gb': 'vits-piper-en_GB-cori-medium.tar.bz2',
     'zh': 'vits-melo-tts-zh_en.tar.bz2',
+    'kokoro': 'kokoro-multi-lang-v1_0.tar.bz2',
   };
 
   /// Get the download URL for a model
-  static String getModelUrl(String modelKey) {
+  static String getModelUrl(String modelKey, {DownloadRegion region = DownloadRegion.international}) {
     final filename = availableModels[modelKey];
     if (filename == null) return '';
-    return '$_modelsBaseUrl/$filename';
+    final base = DownloadMirror.ttsBaseUrl(region);
+    return '$base/$filename';
   }
 
   /// Check if models are downloaded

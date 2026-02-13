@@ -246,4 +246,16 @@ class WordListRepository {
       whereArgs: [id],
     );
   }
+
+  /// Get a word list by name
+  Future<WordList?> getWordListByName(String name) async {
+    final db = await _db;
+    final result = await db.query(
+      DbConstants.tableWordLists,
+      where: 'name = ?',
+      whereArgs: [name],
+    );
+    if (result.isEmpty) return null;
+    return WordList.fromMap(result.first);
+  }
 }

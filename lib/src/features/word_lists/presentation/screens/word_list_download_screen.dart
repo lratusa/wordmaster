@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/services/wordlist_downloader.dart';
 import '../../../../core/theme/app_colors.dart';
+import '../../../settings/application/settings_notifier.dart';
 import '../../application/word_list_providers.dart';
 import '../../data/repositories/word_list_repository.dart';
 import '../../domain/enums/language.dart';
@@ -54,6 +55,7 @@ class _WordListDownloadScreenState
     });
 
     try {
+      final region = ref.read(settingsProvider).wordlistDownloadRegion;
       final data = await _downloader.downloadPackage(
         package,
         onProgress: (received, total) {
@@ -61,6 +63,7 @@ class _WordListDownloadScreenState
             _downloadProgress[package.id] = received / total;
           });
         },
+        region: region,
       );
 
       // Import to database
@@ -83,7 +86,7 @@ class _WordListDownloadScreenState
           ),
         );
       }
-    } catch (e) {
+    } on Exception catch (e) {
       setState(() {
         _isDownloading[package.id] = false;
       });
@@ -123,6 +126,67 @@ class _WordListDownloadScreenState
     }
   }
 
+  Future<void> _deletePackage(WordListPackage package) async {
+    // Show confirmation dialog
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('删除词库'),
+        content: Text('确定要删除「${package.name}」吗？\n\n所有学习进度将被清除，此操作不可恢复。'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('取消'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: TextButton.styleFrom(foregroundColor: AppColors.error),
+            child: const Text('删除'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    try {
+      // Delete from database by name
+      final wordList = await _repository.getWordListByName(package.name);
+      if (wordList?.id != null) {
+        await _repository.deleteWordList(wordList!.id!);
+      }
+
+      // Delete cache file
+      await _downloader.deletePackage(package.id);
+
+      // Invalidate providers to refresh UI
+      ref.invalidate(allWordListsProvider);
+      ref.invalidate(wordListsByLanguageProvider(Language.fromCode(package.language)));
+
+      setState(() {
+        _downloadedPackages[package.id] = false;
+      });
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('${package.name} 已删除'),
+            backgroundColor: AppColors.success,
+          ),
+        );
+      }
+    } on Exception catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('删除失败: $e'),
+            backgroundColor: AppColors.error,
+          ),
+        );
+      }
+    }
+  }
+
   Future<void> _importPackageToDatabase(
     WordListPackage package,
     Map<String, dynamic> data,
@@ -143,6 +207,11 @@ class _WordListDownloadScreenState
       final wordMap = w as Map<String, dynamic>;
       final examplesJson = wordMap['examples'] as List<dynamic>? ?? [];
 
+      // Get reading field (for vocabulary) or parse onyomi/kunyomi (for kanji)
+      final reading = wordMap['reading'] as String?;
+      final onyomi = wordMap['onyomi'] as String?;
+      final kunyomi = wordMap['kunyomi'] as String?;
+
       return Word(
         wordListId: 0,
         language: language,
@@ -151,14 +220,30 @@ class _WordListDownloadScreenState
         partOfSpeech: wordMap['part_of_speech'] as String?,
         difficultyLevel: wordMap['difficulty_level'] as int? ?? 1,
         phonetic: wordMap['phonetic'] as String?,
-        reading: wordMap['reading'] as String?,
+        reading: reading,
         jlptLevel: wordMap['jlpt_level'] as String?,
+        onyomi: onyomi,
+        kunyomi: kunyomi,
         exampleSentences: examplesJson.map((e) {
           final exMap = e as Map<String, dynamic>;
+          // Handle both formats:
+          // - Regular words: { "sentence": "...", "translation_cn": "..." }
+          // - Kanji: { "word": "人間", "reading": "にんげん", "translation_cn": "..." }
+          String sentence;
+          String? exampleReading;
+          if (exMap.containsKey('sentence')) {
+            sentence = exMap['sentence'] as String;
+          } else if (exMap.containsKey('word')) {
+            sentence = exMap['word'] as String;
+            exampleReading = exMap['reading'] as String?;
+          } else {
+            sentence = '';
+          }
           return ExampleSentence(
             wordId: 0,
-            sentence: exMap['sentence'] as String,
-            translationCn: exMap['translation_cn'] as String,
+            sentence: sentence,
+            translationCn: exMap['translation_cn'] as String? ?? '',
+            reading: exampleReading,
           );
         }).toList(),
       );
@@ -172,7 +257,7 @@ class _WordListDownloadScreenState
     final categories = [
       null, // All
       ...WordListDownloader.englishCategories,
-      WordListCategory.jlpt,
+      ...WordListDownloader.japaneseCategories,
     ];
 
     final filteredPackages = _selectedCategory == null
@@ -265,19 +350,36 @@ class _WordListDownloadScreenState
                                   ?.copyWith(fontWeight: FontWeight.bold),
                             ),
                           ),
-                          if (isDownloaded)
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 8, vertical: 2),
-                              decoration: BoxDecoration(
-                                color: AppColors.success,
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: const Text(
-                                '已下载',
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 11),
-                              ),
+                          if (isDownloaded && !isDownloading)
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8, vertical: 2),
+                                  decoration: BoxDecoration(
+                                    color: AppColors.success,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: const Text(
+                                    '已下载',
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 11),
+                                  ),
+                                ),
+                                const SizedBox(width: 4),
+                                IconButton(
+                                  icon: const Icon(Icons.delete_outline, size: 20),
+                                  color: AppColors.error,
+                                  onPressed: () => _deletePackage(package),
+                                  padding: EdgeInsets.zero,
+                                  constraints: const BoxConstraints(
+                                    minWidth: 32,
+                                    minHeight: 32,
+                                  ),
+                                  tooltip: '删除词库',
+                                ),
+                              ],
                             ),
                         ],
                       ),
@@ -367,16 +469,14 @@ class _WordListDownloadScreenState
         return Icons.science;
       case WordListCategory.toefl:
         return Icons.flight_takeoff;
-      case WordListCategory.ielts:
-        return Icons.travel_explore;
-      case WordListCategory.gre:
-        return Icons.psychology;
       case WordListCategory.sat:
         return Icons.menu_book;
-      case WordListCategory.gmat:
-        return Icons.business;
       case WordListCategory.jlpt:
         return Icons.translate;
+      case WordListCategory.jlptKanji:
+        return Icons.language;
+      case WordListCategory.schoolKanji:
+        return Icons.child_care;
     }
   }
 }

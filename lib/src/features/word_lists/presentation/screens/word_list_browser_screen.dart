@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../core/services/wordlist_downloader.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../application/word_list_providers.dart';
+import '../../data/repositories/word_list_repository.dart';
 import '../../domain/enums/language.dart';
 import '../../domain/models/word.dart';
 import '../../domain/models/word_list.dart';
@@ -183,13 +185,74 @@ class _WordListTab extends ConsumerWidget {
   }
 }
 
-class _WordListCard extends StatelessWidget {
+class _WordListCard extends ConsumerWidget {
   final WordList wordList;
 
   const _WordListCard({required this.wordList});
 
+  Future<void> _deleteWordList(BuildContext context, WidgetRef ref) async {
+    // Show confirmation dialog
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('删除词库'),
+        content: Text('确定要删除「${wordList.name}」吗？\n\n所有学习进度将被清除，此操作不可恢复。'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, false),
+            child: const Text('取消'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            style: TextButton.styleFrom(foregroundColor: AppColors.error),
+            child: const Text('删除'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
+    try {
+      // Delete from database
+      final repository = WordListRepository();
+      if (wordList.id != null) {
+        await repository.deleteWordList(wordList.id!);
+      }
+
+      // Delete cache if exists
+      final package = WordListDownloader.getPackageByName(wordList.name);
+      if (package != null) {
+        final downloader = WordListDownloader();
+        await downloader.deletePackage(package.id);
+      }
+
+      // Refresh UI
+      ref.invalidate(allWordListsProvider);
+      ref.invalidate(wordListsByLanguageProvider(wordList.language));
+
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('${wordList.name} 已删除'),
+            backgroundColor: AppColors.success,
+          ),
+        );
+      }
+    } on Exception catch (e) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('删除失败: $e'),
+            backgroundColor: AppColors.error,
+          ),
+        );
+      }
+    }
+  }
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final progress = wordList.progress;
     final badgeColor = wordList.language == Language.en
@@ -238,33 +301,63 @@ class _WordListCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 8,
-                          vertical: 2,
-                        ),
-                        decoration: BoxDecoration(
-                          color: badgeColor.withValues(alpha: 0.1),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Text(
-                          wordList.language.chineseName,
-                          style: TextStyle(
-                            fontSize: 11,
-                            color: badgeColor,
-                            fontWeight: FontWeight.w600,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8,
+                              vertical: 2,
+                            ),
+                            decoration: BoxDecoration(
+                              color: badgeColor.withValues(alpha: 0.1),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Text(
+                              wordList.language.chineseName,
+                              style: TextStyle(
+                                fontSize: 11,
+                                color: badgeColor,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
                           ),
-                        ),
+                          const SizedBox(height: 4),
+                          Text(
+                            '${wordList.wordCount} 词',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: AppColors.textSecondary,
+                            ),
+                          ),
+                        ],
                       ),
-                      const SizedBox(height: 4),
-                      Text(
-                        '${wordList.wordCount} 词',
-                        style: theme.textTheme.bodySmall?.copyWith(
+                      PopupMenuButton<String>(
+                        icon: Icon(
+                          Icons.more_vert,
+                          size: 20,
                           color: AppColors.textSecondary,
                         ),
+                        padding: EdgeInsets.zero,
+                        onSelected: (value) {
+                          if (value == 'delete') {
+                            _deleteWordList(context, ref);
+                          }
+                        },
+                        itemBuilder: (ctx) => [
+                          const PopupMenuItem(
+                            value: 'delete',
+                            child: Row(
+                              children: [
+                                Icon(Icons.delete_outline, color: AppColors.error, size: 20),
+                                SizedBox(width: 8),
+                                Text('删除词库', style: TextStyle(color: AppColors.error)),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

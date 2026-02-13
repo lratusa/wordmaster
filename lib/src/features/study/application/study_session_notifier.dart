@@ -105,6 +105,14 @@ enum StudyMode {
   reviewOnly, // 仅复习 - only review due words
 }
 
+// Quiz format enum
+enum QuizFormat {
+  flashcard,       // 经典卡片
+  quiz,            // 选择题 (词义)
+  kanjiReading,    // 汉字读音测试
+  kanjiSelection,  // 汉字选择
+}
+
 // Settings for a study session
 class StudySettings {
   final int wordListId;
@@ -112,6 +120,7 @@ class StudySettings {
   final int reviewLimit;
   final StudyOrder studyOrder;
   final StudyMode studyMode;
+  final QuizFormat quizFormat;
 
   const StudySettings({
     required this.wordListId,
@@ -119,6 +128,7 @@ class StudySettings {
     this.reviewLimit = 200,
     this.studyOrder = StudyOrder.random,
     this.studyMode = StudyMode.mixed,
+    this.quizFormat = QuizFormat.flashcard,
   });
 }
 
@@ -157,6 +167,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
   ProgressRepository? _progressRepo;
   SessionRepository? _sessionRepo;
   WordRepository? _wordRepo;
+  final Map<int, int> _againRetryCount = {};
 
   /// Initialize and start a study session
   Future<void> startSession(StudySettings settings) async {
@@ -164,6 +175,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     _progressRepo = ref.read(progressRepositoryProvider);
     _sessionRepo = ref.read(sessionRepositoryProvider);
     _wordRepo = WordRepository();
+    _againRetryCount.clear();
 
     state = StudySessionState(
       isLoading: true,
@@ -293,7 +305,7 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
       reviewCount: item.progress.reviewCount + 1,
       correctCount:
           item.progress.correctCount + (isCorrect ? 1 : 0),
-      lastReviewedAt: DateTime.now(),
+      lastReviewedAt: DateTime.now().toUtc(),
       isNew: false,
     );
     await _progressRepo!.updateProgress(updatedProgress);
@@ -312,10 +324,22 @@ class StudySessionNotifier extends Notifier<StudySessionState> {
     final newIncorrect =
         state.incorrectCount + (isCorrect ? 0 : 1);
 
-    // If rated "Again" (1), re-add to end of queue
+    // If rated "Again" (1), re-add to end of queue (max 3 times per word)
     var queue = state.queue;
     if (rating == 1) {
-      queue = [...queue, item];
+      final wordId = item.word.id!;
+      final retryCount = _againRetryCount[wordId] ?? 0;
+      if (retryCount < 3) {
+        _againRetryCount[wordId] = retryCount + 1;
+        queue = [
+          ...queue,
+          StudyItem(
+            word: item.word,
+            progress: updatedProgress,
+            isNewWord: item.isNewWord,
+          ),
+        ];
+      }
     }
 
     final nextIndex = state.currentIndex + 1;

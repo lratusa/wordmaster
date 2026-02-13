@@ -130,7 +130,7 @@ class HomeScreen extends ConsumerWidget {
           value,
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
-                color: AppColors.primary,
+                color: AppColors.primaryDark,
               ),
         ),
         const SizedBox(height: 4),
@@ -267,7 +267,7 @@ class HomeScreen extends ConsumerWidget {
                             .headlineMedium
                             ?.copyWith(
                               fontWeight: FontWeight.bold,
-                              color: AppColors.primary,
+                              color: AppColors.primaryDark,
                             ),
                       )
                     : const Text(

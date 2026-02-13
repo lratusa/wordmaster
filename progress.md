@@ -1,5 +1,185 @@
 # Progress Log
 
+## Session 8: 2026-02-13 - China Mirror Support (国内镜像)
+
+### Completed Tasks
+
+#### 1. Server Setup (47.93.144.50)
+- [x] Created `/var/www/wordmaster/` directory with `wordlists/` and `tts-models/` subdirs
+- [x] Updated nginx config in Docker container with `/wordmaster/` location block
+- [x] Recreated Docker container with volume mounts (ro)
+- [x] CORS headers enabled for app downloads
+- [x] Uploaded 38 word list JSON files (20 English + 18 Japanese)
+- [x] Renamed files to match GitHub naming (cet4-full.json, toefl-core.json, etc.)
+- [x] TTS model downloads running in background on server
+- [x] SSH key auth configured for passwordless access
+- [x] Verified all word list endpoints return HTTP 200
+
+#### 2. Code: DownloadMirror Service
+- [x] Created `lib/src/core/services/download_mirror.dart`
+- [x] `DownloadRegion` enum: `international`, `china`
+- [x] URL resolver for wordlists and TTS models
+- [x] Parse/serialize methods for settings storage
+
+#### 3. Code: Two Independent Settings
+- [x] Added `wordlist_download_region` and `tts_download_region` to `SettingKeys`
+- [x] Added `wordlistDownloadRegion` and `ttsDownloadRegion` to `AppSettings`
+- [x] Added setters in `SettingsNotifier`
+- [x] Settings loaded from DB on startup
+
+#### 4. Code: Refactored Downloaders
+- [x] `WordlistDownloader` — URLs changed to relative paths, `resolveUrl()` method added
+- [x] `downloadPackage()` accepts `region` parameter
+- [x] `TtsModelDownloader` — URLs changed to filenames, `resolveUrl()` method added
+- [x] `downloadModel()` accepts `region` parameter
+- [x] `TtsModelManager` in `tts_service.dart` — `getModelUrl()` accepts `region` parameter
+
+#### 5. Code: Settings UI
+- [x] Added "下载源" section with two independent toggles
+- [x] "词书下载源" — 国际 (GitHub) / 国内镜像
+- [x] "语音包下载源" — 国际 (GitHub) / 国内镜像
+- [x] Hint for China users: recommend switching AI to DeepSeek
+- [x] Download screen reads region from settings
+
+#### 6. Build Verification
+- [x] `flutter analyze` — 0 errors, 0 warnings (59 info-only in test files)
+
+### Files to Modify/Create
+| File | Action |
+|------|--------|
+| `lib/src/core/services/download_mirror.dart` | CREATE |
+| `lib/src/features/settings/data/repositories/settings_repository.dart` | MODIFY - add key |
+| `lib/src/features/settings/application/settings_notifier.dart` | MODIFY - add field |
+| `lib/src/core/services/wordlist_downloader.dart` | MODIFY - dynamic URLs |
+| `lib/src/core/services/tts_model_downloader.dart` | MODIFY - dynamic URLs |
+| `lib/src/core/services/tts_service.dart` | MODIFY - TtsModelManager URLs |
+| `lib/src/features/settings/presentation/screens/settings_screen.dart` | MODIFY - add UI |
+| `lib/src/features/word_lists/presentation/screens/word_list_download_screen.dart` | MODIFY - pass region |
+
+---
+
+## Session 7: 2026-02-13 - Kanji Quiz Modes & Bug Fixes
+
+### Bug Fixes
+
+#### Bug: 已学数量不更新 (Learned count not updating)
+- **Issue**: After exiting study session midway, word list "已学" count doesn't update
+- **Root cause**: `allWordListsProvider` not invalidated when navigating away from study screens
+- **Fix**: Added `ref.invalidate(allWordListsProvider)` to all exit points:
+  - `quiz_screen.dart` - exit dialog
+  - `study_session_screen.dart` - exit dialog
+  - `kanji_reading_quiz_screen.dart` - exit dialog
+  - `kanji_selection_quiz_screen.dart` - exit dialog
+  - `session_summary_screen.dart` - "去打卡" and "返回首页" buttons
+
+### Completed Tasks
+
+#### 1. Kanji Data Model Extension
+- [x] Added `onyomi`, `kunyomi` fields to Word model
+- [x] Added `isKanji`, `hasExamples`, `allReadings` computed properties
+- [x] Added `reading` field to ExampleSentence (for compound word readings)
+- [x] Database migration v3→v4 for new fields
+- [x] Updated word_list_asset_datasource.dart to parse onyomi/kunyomi
+
+#### 2. Kanji Quiz Screens
+- [x] Created `kanji_reading_quiz_screen.dart` - 读音测试 mode
+  - Shows large kanji with Chinese meaning
+  - Options are mixed onyomi/kunyomi readings
+  - Quality distractors with similar length filtering
+- [x] Created `kanji_selection_quiz_screen.dart` - 汉字选择 mode
+  - Shows example word with blank (e.g., "大＿＿" for 大雨)
+  - Shows reading hint (e.g., "おおあめ")
+  - Options are kanji characters
+  - Fallback to reading test when no examples available
+
+#### 3. Study Setup Screen Updates
+- [x] Dynamic quiz format selector based on list type
+- [x] Vocabulary lists: 经典卡片, 选择题
+- [x] Kanji lists: 卡片, 读音, 汉字
+
+#### 4. Bug Fixes
+- [x] Fixed word_list_download_screen.dart storing formatted "音:イン 訓:の.む" instead of separate fields
+- [x] Fixed example sentence storing "飲む（のむ）" instead of separate word/reading
+- [x] Fixed distractor query not finding kanji (removed onyomi/kunyomi NULL filter)
+- [x] Fixed English text leak in quiz options (added Chinese character filter)
+
+### Files Modified/Created
+| File | Action |
+|------|--------|
+| `lib/src/features/word_lists/domain/models/word.dart` | MODIFY - onyomi/kunyomi, ExampleSentence.reading |
+| `lib/src/features/word_lists/domain/models/word_list.dart` | MODIFY - isKanjiList |
+| `lib/src/features/study/application/study_session_notifier.dart` | MODIFY - QuizFormat enum |
+| `lib/src/features/word_lists/data/repositories/word_repository.dart` | MODIFY - distractor methods |
+| `lib/src/features/study/presentation/screens/kanji_reading_quiz_screen.dart` | CREATE |
+| `lib/src/features/study/presentation/screens/kanji_selection_quiz_screen.dart` | CREATE |
+| `lib/src/features/study/presentation/screens/study_setup_screen.dart` | MODIFY - dynamic quiz selector |
+| `lib/src/features/study/presentation/screens/quiz_screen.dart` | MODIFY - Chinese filter |
+| `lib/src/features/word_lists/presentation/screens/word_list_download_screen.dart` | MODIFY - proper field storage |
+| `lib/src/core/routing/app_router.dart` | MODIFY - kanji quiz routes |
+| `lib/src/core/database/database_tables.dart` | MODIFY - reading column |
+| `lib/src/core/database/database_helper.dart` | MODIFY - migration v4 |
+| `lib/src/core/constants/db_constants.dart` | MODIFY - version 4 |
+
+### Known Issue
+- Existing downloaded kanji word lists have incorrectly formatted data
+- Users need to delete and re-download kanji lists for proper display
+
+---
+
+## Session 6: 2026-02-13 - TTS Model Selection & Wordlist URL Fixes
+
+### Completed Tasks
+
+#### 0. Final Verification (Session 6b)
+- [x] Verified all 37 wordlist URLs return HTTP 200
+- [x] Flutter analyze passes (no errors, 1 warning about unused field)
+- [x] Phase 10 marked complete
+
+#### 1. TTS Model Selection Bug Fix
+- [x] **Bug**: `_detectKokoroModel()` ignored `active_model.txt`, picked models alphabetically
+- [x] **Fix**: Renamed to `_detectActiveModel()`, added Priority 0 to check `active_model.txt` first
+- [x] Added `_getActiveModelId()` helper method
+- [x] Now respects user's selected voice model
+
+#### 2. TTS Model Download Detection Fix
+- [x] **Bug**: `isModelDownloaded()` checked only for `model.onnx` (Kokoro naming)
+- [x] **Fix**: Now checks for any `.onnx` file (VITS models use names like `en_GB-alba-medium.onnx`)
+
+#### 3. Removed Broken TTS Models
+- [x] Removed `en-us-amy` (URL returns 404)
+- [x] Removed `zh` (Chinese + English) - MeloTTS has limited English vocabulary
+- [x] Removed `kokoro-multi-lang` per user request
+
+#### 4. Wordlist URL Fixes (MAJOR)
+- [x] **Bug**: URLs used hyphens (`-`) but repo files use underscores (`_`)
+- [x] Fixed all 37 URLs to match actual filenames in GitHub repo
+- [x] Removed non-existent wordlists: GRE (3), IELTS (3), GMAT (2), kaoyan-advanced, toefl-academic, cet4-core
+- [x] Added Japanese Kanji wordlists (13 new):
+  - JLPT Kanji N5-N1 (5)
+  - School Kanji Grade 1-6, Middle, High (8)
+
+#### 5. Updated Category System
+- [x] Removed `WordListCategory.ielts`, `gre`, `gmat`
+- [x] Added `WordListCategory.jlptKanji`, `schoolKanji`
+- [x] Updated `englishCategories`, added `japaneseCategories`
+- [x] Updated `getCategoryName()` and `getCategoryIcon()`
+- [x] Updated download screen to show all Japanese categories
+
+### Verified
+- [x] All 37 wordlist URLs return HTTP 200
+- [x] Flutter analyze passes (no errors)
+- [x] TTS uses correct model from `active_model.txt`
+
+### Files Modified
+| File | Action |
+|------|--------|
+| `lib/src/core/services/tts_service.dart` | MODIFY - `_detectActiveModel()` fix |
+| `lib/src/core/services/tts_model_downloader.dart` | MODIFY - Remove broken models |
+| `lib/src/core/services/wordlist_downloader.dart` | MODIFY - Fix URLs, add kanji |
+| `lib/src/features/word_lists/presentation/screens/word_list_download_screen.dart` | MODIFY - Update categories |
+
+---
+
 ## Session 5: 2026-02-12 - Word List Generation & Bug Fixes
 
 ### Completed Tasks

@@ -28,6 +28,8 @@ class DatabaseTables {
       audio_url           TEXT,
       reading             TEXT,
       jlpt_level          TEXT,
+      onyomi              TEXT,
+      kunyomi             TEXT,
       created_at          TEXT NOT NULL DEFAULT (datetime('now')),
       FOREIGN KEY (word_list_id) REFERENCES word_lists(id) ON DELETE CASCADE
     )
@@ -39,6 +41,7 @@ class DatabaseTables {
       word_id         INTEGER NOT NULL,
       sentence        TEXT NOT NULL,
       translation_cn  TEXT NOT NULL,
+      reading         TEXT,
       sort_order      INTEGER NOT NULL DEFAULT 0,
       FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE
     )
@@ -60,6 +63,8 @@ class DatabaseTables {
       last_reviewed_at    TEXT,
       is_starred          INTEGER NOT NULL DEFAULT 0,
       is_new              INTEGER NOT NULL DEFAULT 1,
+      mastery_level       INTEGER NOT NULL DEFAULT 0,
+      last_quiz_type      TEXT,
       created_at          TEXT NOT NULL DEFAULT (datetime('now')),
       updated_at          TEXT NOT NULL DEFAULT (datetime('now')),
       FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE

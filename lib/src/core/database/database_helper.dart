@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'package:meta/meta.dart';
 import 'package:path/path.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
@@ -19,6 +20,13 @@ class DatabaseHelper {
   static DatabaseHelper get instance {
     _instance ??= DatabaseHelper._();
     return _instance!;
+  }
+
+  /// Inject an in-memory database for testing.
+  @visibleForTesting
+  static Future<void> setTestDatabase(Database db) async {
+    _instance ??= DatabaseHelper._();
+    _database = db;
   }
 
   /// Initialize the database factory based on platform
@@ -76,7 +84,28 @@ class DatabaseHelper {
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
     debugPrint('Database upgrade from $oldVersion to $newVersion');
-    // Future migrations go here
+
+    if (oldVersion < 2) {
+      // Add quiz mode support fields
+      await db.execute(
+          'ALTER TABLE ${DbConstants.tableUserProgress} ADD COLUMN mastery_level INTEGER NOT NULL DEFAULT 0');
+      await db.execute(
+          'ALTER TABLE ${DbConstants.tableUserProgress} ADD COLUMN last_quiz_type TEXT');
+    }
+
+    if (oldVersion < 3) {
+      // Add kanji reading fields
+      await db.execute(
+          'ALTER TABLE ${DbConstants.tableWords} ADD COLUMN onyomi TEXT');
+      await db.execute(
+          'ALTER TABLE ${DbConstants.tableWords} ADD COLUMN kunyomi TEXT');
+    }
+
+    if (oldVersion < 4) {
+      // Add reading field for kanji compound word examples
+      await db.execute(
+          'ALTER TABLE ${DbConstants.tableExampleSentences} ADD COLUMN reading TEXT');
+    }
   }
 
   Future<void> _insertDefaultAchievements(Database db) async {

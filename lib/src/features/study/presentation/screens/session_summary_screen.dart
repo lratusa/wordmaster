@@ -11,6 +11,7 @@ import 'package:path/path.dart' as p;
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../settings/application/settings_notifier.dart';
+import '../../../word_lists/application/word_list_providers.dart';
 import '../../application/study_session_notifier.dart';
 import '../widgets/session_summary_card.dart';
 
@@ -119,7 +120,10 @@ class _SessionSummaryScreenState extends ConsumerState<SessionSummaryScreen> {
               width: double.infinity,
               height: 52,
               child: FilledButton.icon(
-                onPressed: () => context.go('/checkin'),
+                onPressed: () {
+                  ref.invalidate(allWordListsProvider);
+                  context.go('/checkin');
+                },
                 icon: const Icon(Icons.emoji_events),
                 label: const Text(
                   '去打卡',
@@ -132,7 +136,10 @@ class _SessionSummaryScreenState extends ConsumerState<SessionSummaryScreen> {
               width: double.infinity,
               height: 52,
               child: OutlinedButton.icon(
-                onPressed: () => context.go('/'),
+                onPressed: () {
+                  ref.invalidate(allWordListsProvider);
+                  context.go('/');
+                },
                 icon: const Icon(Icons.home),
                 label: const Text(
                   '返回首页',

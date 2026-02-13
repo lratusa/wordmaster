@@ -1,0 +1,8148 @@
+{
+  "name": "JLPT N3 漢字",
+  "language": "ja",
+  "description": "日本语能力测试 N3 级别汉字 (370字)",
+  "icon_name": "translate",
+  "words": [
+    {
+      "word": "合",
+      "translation_cn": "适合",
+      "onyomi": "ゴウ、ガッ、カッ",
+      "kunyomi": "あ.う、あ.わす、あ.わせる",
+      "strokes": 6,
+      "frequency": 37,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "場合",
+          "reading": "ばあい",
+          "translation_cn": "场合"
+        },
+        {
+          "word": "合格",
+          "reading": "ごうかく",
+          "translation_cn": "合格"
+        }
+      ]
+    },
+    {
+      "word": "部",
+      "translation_cn": "部分",
+      "onyomi": "ブ",
+      "kunyomi": "",
+      "strokes": 11,
+      "frequency": 46,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "部屋",
+          "reading": "へや",
+          "translation_cn": "房间"
+        },
+        {
+          "word": "全部",
+          "reading": "ぜんぶ",
+          "translation_cn": "全部"
+        }
+      ]
+    },
+    {
+      "word": "彼",
+      "translation_cn": "他",
+      "onyomi": "ヒ",
+      "kunyomi": "かれ、かの",
+      "strokes": 8,
+      "frequency": 53,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "彼",
+          "reading": "かれ",
+          "translation_cn": "他"
+        },
+        {
+          "word": "彼女",
+          "reading": "かのじょ",
+          "translation_cn": "她"
+        }
+      ]
+    },
+    {
+      "word": "内",
+      "translation_cn": "内",
+      "onyomi": "ナイ、ダイ",
+      "kunyomi": "うち",
+      "strokes": 4,
+      "frequency": 61,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "以内",
+          "reading": "いない",
+          "translation_cn": "以内"
+        },
+        {
+          "word": "国内",
+          "reading": "こくない",
+          "translation_cn": "国内"
+        }
+      ]
+    },
+    {
+      "word": "実",
+      "translation_cn": "实",
+      "onyomi": "ジツ",
+      "kunyomi": "み、みの.る、まこと",
+      "strokes": 8,
+      "frequency": 66,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "事実",
+          "reading": "じじつ",
+          "translation_cn": "事实"
+        },
+        {
+          "word": "果実",
+          "reading": "かじつ",
+          "translation_cn": "果实"
+        }
+      ]
+    },
+    {
+      "word": "当",
+      "translation_cn": "当",
+      "onyomi": "トウ",
+      "kunyomi": "あ.たる、あ.たり、まさ.に",
+      "strokes": 6,
+      "frequency": 68,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "当然",
+          "reading": "とうぜん",
+          "translation_cn": "当然"
+        },
+        {
+          "word": "当日",
+          "reading": "とうじつ",
+          "translation_cn": "当日"
+        }
+      ]
+    },
+    {
+      "word": "戦",
+      "translation_cn": "战",
+      "onyomi": "セン",
+      "kunyomi": "いくさ、たたか.う",
+      "strokes": 13,
+      "frequency": 76,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "戦争",
+          "reading": "せんそう",
+          "translation_cn": "战争"
+        },
+        {
+          "word": "戦う",
+          "reading": "たたかう",
+          "translation_cn": "战斗"
+        }
+      ]
+    },
+    {
+      "word": "性",
+      "translation_cn": "性",
+      "onyomi": "セイ、ショウ",
+      "kunyomi": "",
+      "strokes": 8,
+      "frequency": 80,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "性格",
+          "reading": "せいかく",
+          "translation_cn": "性格"
+        },
+        {
+          "word": "女性",
+          "reading": "じょせい",
+          "translation_cn": "女性"
+        }
+      ]
+    },
+    {
+      "word": "対",
+      "translation_cn": "对",
+      "onyomi": "タイ、ツイ",
+      "kunyomi": "あいて",
+      "strokes": 7,
+      "frequency": 81,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "反対",
+          "reading": "はんたい",
+          "translation_cn": "反对"
+        },
+        {
+          "word": "対して",
+          "reading": "たいして",
+          "translation_cn": "对于"
+        }
+      ]
+    },
+    {
+      "word": "関",
+      "translation_cn": "关",
+      "onyomi": "カン",
+      "kunyomi": "せき",
+      "strokes": 14,
+      "frequency": 87,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "関係",
+          "reading": "かんけい",
+          "translation_cn": "关系"
+        },
+        {
+          "word": "関心",
+          "reading": "かんしん",
+          "translation_cn": "关心"
+        }
+      ]
+    },
+    {
+      "word": "感",
+      "translation_cn": "感觉",
+      "onyomi": "カン",
+      "kunyomi": "",
+      "strokes": 13,
+      "frequency": 90,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "感じ",
+          "reading": "かんじ",
+          "translation_cn": "感觉"
+        },
+        {
+          "word": "感動",
+          "reading": "かんどう",
+          "translation_cn": "感动"
+        }
+      ]
+    },
+    {
+      "word": "定",
+      "translation_cn": "决定",
+      "onyomi": "テイ、ジョウ",
+      "kunyomi": "さだ.める、さだ.まる",
+      "strokes": 8,
+      "frequency": 93,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "決定",
+          "reading": "けってい",
+          "translation_cn": "决定"
+        },
+        {
+          "word": "予定",
+          "reading": "よてい",
+          "translation_cn": "预定"
+        }
+      ]
+    },
+    {
+      "word": "政",
+      "translation_cn": "政治",
+      "onyomi": "セイ、ショウ",
+      "kunyomi": "まつりごと",
+      "strokes": 9,
+      "frequency": 94,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "政治",
+          "reading": "せいじ",
+          "translation_cn": "政治"
+        },
+        {
+          "word": "政府",
+          "reading": "せいふ",
+          "translation_cn": "政府"
+        }
+      ]
+    },
+    {
+      "word": "取",
+      "translation_cn": "拿取",
+      "onyomi": "シュ",
+      "kunyomi": "と.る、と.り、と.りあげる",
+      "strokes": 8,
+      "frequency": 98,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "取材",
+          "reading": "しゅざい",
+          "translation_cn": "采访"
+        },
+        {
+          "word": "受け取る",
+          "reading": "うけとる",
+          "translation_cn": "收到"
+        }
+      ]
+    },
+    {
+      "word": "所",
+      "translation_cn": "场所",
+      "onyomi": "ショ",
+      "kunyomi": "ところ",
+      "strokes": 8,
+      "frequency": 99,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "場所",
+          "reading": "ばしょ",
+          "translation_cn": "场所"
+        },
+        {
+          "word": "住所",
+          "reading": "じゅうしょ",
+          "translation_cn": "住址"
+        }
+      ]
+    },
+    {
+      "word": "現",
+      "translation_cn": "现在",
+      "onyomi": "ゲン",
+      "kunyomi": "あらわ.れる、あらわ.す",
+      "strokes": 11,
+      "frequency": 100,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "現在",
+          "reading": "げんざい",
+          "translation_cn": "现在"
+        },
+        {
+          "word": "表現",
+          "reading": "ひょうげん",
+          "translation_cn": "表现"
+        }
+      ]
+    },
+    {
+      "word": "最",
+      "translation_cn": "最",
+      "onyomi": "サイ",
+      "kunyomi": "もっと.も",
+      "strokes": 12,
+      "frequency": 101,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "最後",
+          "reading": "さいご",
+          "translation_cn": "最后"
+        },
+        {
+          "word": "最近",
+          "reading": "さいきん",
+          "translation_cn": "最近"
+        }
+      ]
+    },
+    {
+      "word": "化",
+      "translation_cn": "变化",
+      "onyomi": "カ、ケ",
+      "kunyomi": "ば.ける、か.える",
+      "strokes": 4,
+      "frequency": 102,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "文化",
+          "reading": "ぶんか",
+          "translation_cn": "文化"
+        },
+        {
+          "word": "変化",
+          "reading": "へんか",
+          "translation_cn": "变化"
+        }
+      ]
+    },
+    {
+      "word": "民",
+      "translation_cn": "人民",
+      "onyomi": "ミン",
+      "kunyomi": "たみ",
+      "strokes": 5,
+      "frequency": 105,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "国民",
+          "reading": "こくみん",
+          "translation_cn": "国民"
+        },
+        {
+          "word": "民主",
+          "reading": "みんしゅ",
+          "translation_cn": "民主"
+        }
+      ]
+    },
+    {
+      "word": "相",
+      "translation_cn": "互相",
+      "onyomi": "ソウ、ショウ",
+      "kunyomi": "あい",
+      "strokes": 9,
+      "frequency": 111,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "相談",
+          "reading": "そうだん",
+          "translation_cn": "商量"
+        },
+        {
+          "word": "相手",
+          "reading": "あいて",
+          "translation_cn": "对方"
+        }
+      ]
+    },
+    {
+      "word": "法",
+      "translation_cn": "方法",
+      "onyomi": "ホウ、ハッ、ホッ",
+      "kunyomi": "",
+      "strokes": 8,
+      "frequency": 113,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "方法",
+          "reading": "ほうほう",
+          "translation_cn": "方法"
+        },
+        {
+          "word": "法律",
+          "reading": "ほうりつ",
+          "translation_cn": "法律"
+        }
+      ]
+    },
+    {
+      "word": "全",
+      "translation_cn": "全部",
+      "onyomi": "ゼン",
+      "kunyomi": "すべ.て、まった.く",
+      "strokes": 6,
+      "frequency": 114,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "全部",
+          "reading": "ぜんぶ",
+          "translation_cn": "全部"
+        },
+        {
+          "word": "安全",
+          "reading": "あんぜん",
+          "translation_cn": "安全"
+        }
+      ]
+    },
+    {
+      "word": "情",
+      "translation_cn": "感情",
+      "onyomi": "ジョウ、セイ",
+      "kunyomi": "なさ.け",
+      "strokes": 11,
+      "frequency": 116,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "感情",
+          "reading": "かんじょう",
+          "translation_cn": "感情"
+        },
+        {
+          "word": "情報",
+          "reading": "じょうほう",
+          "translation_cn": "情报"
+        }
+      ]
+    },
+    {
+      "word": "向",
+      "translation_cn": "朝向",
+      "onyomi": "コウ",
+      "kunyomi": "む.く、む.かう、む.ける、さき",
+      "strokes": 6,
+      "frequency": 119,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "方向",
+          "reading": "ほうこう",
+          "translation_cn": "方向"
+        },
+        {
+          "word": "向こう",
+          "reading": "むこう",
+          "translation_cn": "对面"
+        }
+      ]
+    },
+    {
+      "word": "平",
+      "translation_cn": "平坦",
+      "onyomi": "ヘイ、ビョウ",
+      "kunyomi": "たい.ら、ひら",
+      "strokes": 5,
+      "frequency": 120,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "平和",
+          "reading": "へいわ",
+          "translation_cn": "和平"
+        },
+        {
+          "word": "平等",
+          "reading": "びょうどう",
+          "translation_cn": "平等"
+        }
+      ]
+    },
+    {
+      "word": "成",
+      "translation_cn": "成为",
+      "onyomi": "セイ、ジョウ",
+      "kunyomi": "な.る",
+      "strokes": 6,
+      "frequency": 121,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "成功",
+          "reading": "せいこう",
+          "translation_cn": "成功"
+        },
+        {
+          "word": "完成",
+          "reading": "かんせい",
+          "translation_cn": "完成"
+        }
+      ]
+    },
+    {
+      "word": "経",
+      "translation_cn": "经过",
+      "onyomi": "ケイ、キョウ",
+      "kunyomi": "へ.る、た.つ、たていと、はか.る、のり",
+      "strokes": 11,
+      "frequency": 125,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "経験",
+          "reading": "けいけん",
+          "translation_cn": "经验"
+        },
+        {
+          "word": "経済",
+          "reading": "けいざい",
+          "translation_cn": "经济"
+        }
+      ]
+    },
+    {
+      "word": "信",
+      "translation_cn": "相信",
+      "onyomi": "シン",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 126,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "自信",
+          "reading": "じしん",
+          "translation_cn": "自信"
+        },
+        {
+          "word": "信用",
+          "reading": "しんよう",
+          "translation_cn": "信用"
+        }
+      ]
+    },
+    {
+      "word": "面",
+      "translation_cn": "面",
+      "onyomi": "メン",
+      "kunyomi": "おも、おもて、つら",
+      "strokes": 9,
+      "frequency": 130,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "面白い",
+          "reading": "おもしろい",
+          "translation_cn": "有趣"
+        },
+        {
+          "word": "方面",
+          "reading": "ほうめん",
+          "translation_cn": "方面"
+        }
+      ]
+    },
+    {
+      "word": "連",
+      "translation_cn": "连接",
+      "onyomi": "レン",
+      "kunyomi": "つら.なる、つ.れる",
+      "strokes": 10,
+      "frequency": 131,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "連絡",
+          "reading": "れんらく",
+          "translation_cn": "联络"
+        },
+        {
+          "word": "連続",
+          "reading": "れんぞく",
+          "translation_cn": "连续"
+        }
+      ]
+    },
+    {
+      "word": "原",
+      "translation_cn": "原野",
+      "onyomi": "ゲン",
+      "kunyomi": "はら",
+      "strokes": 10,
+      "frequency": 133,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "原因",
+          "reading": "げんいん",
+          "translation_cn": "原因"
+        },
+        {
+          "word": "草原",
+          "reading": "そうげん",
+          "translation_cn": "草原"
+        }
+      ]
+    },
+    {
+      "word": "顔",
+      "translation_cn": "脸",
+      "onyomi": "ガン",
+      "kunyomi": "かお",
+      "strokes": 18,
+      "frequency": 134,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "笑顔",
+          "reading": "えがお",
+          "translation_cn": "笑脸"
+        },
+        {
+          "word": "洗顔",
+          "reading": "せんがん",
+          "translation_cn": "洗脸"
+        }
+      ]
+    },
+    {
+      "word": "機",
+      "translation_cn": "机器",
+      "onyomi": "キ",
+      "kunyomi": "はた",
+      "strokes": 16,
+      "frequency": 136,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "機会",
+          "reading": "きかい",
+          "translation_cn": "机会"
+        },
+        {
+          "word": "飛行機",
+          "reading": "ひこうき",
+          "translation_cn": "飞机"
+        }
+      ]
+    },
+    {
+      "word": "次",
+      "translation_cn": "次",
+      "onyomi": "ジ",
+      "kunyomi": "つぎ",
+      "strokes": 6,
+      "frequency": 138,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "次回",
+          "reading": "じかい",
+          "translation_cn": "下次"
+        },
+        {
+          "word": "目次",
+          "reading": "もくじ",
+          "translation_cn": "目录"
+        }
+      ]
+    },
+    {
+      "word": "数",
+      "translation_cn": "数",
+      "onyomi": "スウ",
+      "kunyomi": "かず、かぞ.える",
+      "strokes": 13,
+      "frequency": 139,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "数字",
+          "reading": "すうじ",
+          "translation_cn": "数字"
+        },
+        {
+          "word": "数学",
+          "reading": "すうがく",
+          "translation_cn": "数学"
+        }
+      ]
+    },
+    {
+      "word": "美",
+      "translation_cn": "美",
+      "onyomi": "ビ",
+      "kunyomi": "うつく.しい",
+      "strokes": 9,
+      "frequency": 140,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "美人",
+          "reading": "びじん",
+          "translation_cn": "美人"
+        },
+        {
+          "word": "美しい",
+          "reading": "うつくしい",
+          "translation_cn": "美丽的"
+        }
+      ]
+    },
+    {
+      "word": "回",
+      "translation_cn": "回",
+      "onyomi": "カイ",
+      "kunyomi": "まわ.る",
+      "strokes": 6,
+      "frequency": 141,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "回る",
+          "reading": "まわる",
+          "translation_cn": "旋转"
+        },
+        {
+          "word": "一回",
+          "reading": "いっかい",
+          "translation_cn": "一次"
+        }
+      ]
+    },
+    {
+      "word": "表",
+      "translation_cn": "表面",
+      "onyomi": "ヒョウ",
+      "kunyomi": "おもて、あらわ.す",
+      "strokes": 8,
+      "frequency": 143,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "発表",
+          "reading": "はっぴょう",
+          "translation_cn": "发表"
+        },
+        {
+          "word": "表面",
+          "reading": "ひょうめん",
+          "translation_cn": "表面"
+        }
+      ]
+    },
+    {
+      "word": "声",
+      "translation_cn": "声音",
+      "onyomi": "セイ",
+      "kunyomi": "こえ",
+      "strokes": 7,
+      "frequency": 145,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "声優",
+          "reading": "せいゆう",
+          "translation_cn": "声优"
+        },
+        {
+          "word": "大声",
+          "reading": "おおごえ",
+          "translation_cn": "大声"
+        }
+      ]
+    },
+    {
+      "word": "報",
+      "translation_cn": "报告",
+      "onyomi": "ホウ",
+      "kunyomi": "むく.いる",
+      "strokes": 12,
+      "frequency": 147,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "報告",
+          "reading": "ほうこく",
+          "translation_cn": "报告"
+        },
+        {
+          "word": "情報",
+          "reading": "じょうほう",
+          "translation_cn": "情报"
+        }
+      ]
+    },
+    {
+      "word": "要",
+      "translation_cn": "需要",
+      "onyomi": "ヨウ",
+      "kunyomi": "い.る",
+      "strokes": 9,
+      "frequency": 153,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "重要",
+          "reading": "じゅうよう",
+          "translation_cn": "重要"
+        },
+        {
+          "word": "必要",
+          "reading": "ひつよう",
+          "translation_cn": "必要"
+        }
+      ]
+    },
+    {
+      "word": "変",
+      "translation_cn": "变化",
+      "onyomi": "ヘン",
+      "kunyomi": "か.わる",
+      "strokes": 9,
+      "frequency": 155,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "大変",
+          "reading": "たいへん",
+          "translation_cn": "非常"
+        },
+        {
+          "word": "変更",
+          "reading": "へんこう",
+          "translation_cn": "变更"
+        }
+      ]
+    },
+    {
+      "word": "神",
+      "translation_cn": "神",
+      "onyomi": "シン、ジン",
+      "kunyomi": "かみ",
+      "strokes": 9,
+      "frequency": 160,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "神社",
+          "reading": "じんじゃ",
+          "translation_cn": "神社"
+        },
+        {
+          "word": "神様",
+          "reading": "かみさま",
+          "translation_cn": "神"
+        }
+      ]
+    },
+    {
+      "word": "記",
+      "translation_cn": "记录",
+      "onyomi": "キ",
+      "kunyomi": "しる.す",
+      "strokes": 10,
+      "frequency": 161,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "記事",
+          "reading": "きじ",
+          "translation_cn": "报道"
+        },
+        {
+          "word": "記入",
+          "reading": "きにゅう",
+          "translation_cn": "填写"
+        }
+      ]
+    },
+    {
+      "word": "和",
+      "translation_cn": "和",
+      "onyomi": "ワ",
+      "kunyomi": "やわ.らぐ、なご.む",
+      "strokes": 8,
+      "frequency": 164,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "平和",
+          "reading": "へいわ",
+          "translation_cn": "和平"
+        },
+        {
+          "word": "和食",
+          "reading": "わしょく",
+          "translation_cn": "日餐"
+        }
+      ]
+    },
+    {
+      "word": "引",
+      "translation_cn": "拉",
+      "onyomi": "イン",
+      "kunyomi": "ひ.く",
+      "strokes": 4,
+      "frequency": 166,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "引用",
+          "reading": "いんよう",
+          "translation_cn": "引用"
+        },
+        {
+          "word": "引く",
+          "reading": "ひく",
+          "translation_cn": "拉"
+        }
+      ]
+    },
+    {
+      "word": "治",
+      "translation_cn": "治理",
+      "onyomi": "ジ、チ",
+      "kunyomi": "おさ.める、なお.る",
+      "strokes": 8,
+      "frequency": 174,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "政治",
+          "reading": "せいじ",
+          "translation_cn": "政治"
+        },
+        {
+          "word": "治療",
+          "reading": "ちりょう",
+          "translation_cn": "治疗"
+        }
+      ]
+    },
+    {
+      "word": "決",
+      "translation_cn": "决定",
+      "onyomi": "ケツ",
+      "kunyomi": "き.める、き.まる",
+      "strokes": 7,
+      "frequency": 175,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "決定",
+          "reading": "けってい",
+          "translation_cn": "决定"
+        },
+        {
+          "word": "決める",
+          "reading": "きめる",
+          "translation_cn": "决定"
+        }
+      ]
+    },
+    {
+      "word": "太",
+      "translation_cn": "太",
+      "onyomi": "タ、タイ",
+      "kunyomi": "ふと.い",
+      "strokes": 4,
+      "frequency": 176,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "太陽",
+          "reading": "たいよう",
+          "translation_cn": "太阳"
+        },
+        {
+          "word": "太い",
+          "reading": "ふとい",
+          "translation_cn": "粗的"
+        }
+      ]
+    },
+    {
+      "word": "込",
+      "translation_cn": "拥挤",
+      "onyomi": "",
+      "kunyomi": "こ.む",
+      "strokes": 5,
+      "frequency": 181,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "申し込む",
+          "reading": "もうしこむ",
+          "translation_cn": "申请"
+        },
+        {
+          "word": "税込み",
+          "reading": "ぜいこみ",
+          "translation_cn": "含税"
+        }
+      ]
+    },
+    {
+      "word": "受",
+      "translation_cn": "接受",
+      "onyomi": "ジュ",
+      "kunyomi": "う.ける、う.かる",
+      "strokes": 8,
+      "frequency": 183,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "受験",
+          "reading": "じゅけん",
+          "translation_cn": "应考"
+        },
+        {
+          "word": "受付",
+          "reading": "うけつけ",
+          "translation_cn": "接待处"
+        }
+      ]
+    },
+    {
+      "word": "解",
+      "translation_cn": "解开",
+      "onyomi": "カイ、ゲ",
+      "kunyomi": "と.く、と.ける、わか.る",
+      "strokes": 13,
+      "frequency": 185,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "解決",
+          "reading": "かいけつ",
+          "translation_cn": "解决"
+        },
+        {
+          "word": "理解",
+          "reading": "りかい",
+          "translation_cn": "理解"
+        }
+      ]
+    },
+    {
+      "word": "市",
+      "translation_cn": "市场",
+      "onyomi": "シ",
+      "kunyomi": "いち",
+      "strokes": 5,
+      "frequency": 186,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "市場",
+          "reading": "いちば",
+          "translation_cn": "市场"
+        },
+        {
+          "word": "市民",
+          "reading": "しみん",
+          "translation_cn": "市民"
+        }
+      ]
+    },
+    {
+      "word": "期",
+      "translation_cn": "时期",
+      "onyomi": "キ、ゴ",
+      "kunyomi": "",
+      "strokes": 12,
+      "frequency": 187,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "期間",
+          "reading": "きかん",
+          "translation_cn": "期间"
+        },
+        {
+          "word": "期待",
+          "reading": "きたい",
+          "translation_cn": "期待"
+        }
+      ]
+    },
+    {
+      "word": "様",
+      "translation_cn": "样子",
+      "onyomi": "ヨウ",
+      "kunyomi": "さま",
+      "strokes": 14,
+      "frequency": 188,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "お客様",
+          "reading": "おきゃくさま",
+          "translation_cn": "顾客"
+        },
+        {
+          "word": "様子",
+          "reading": "ようす",
+          "translation_cn": "样子"
+        }
+      ]
+    },
+    {
+      "word": "活",
+      "translation_cn": "活动",
+      "onyomi": "カツ",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 190,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "生活",
+          "reading": "せいかつ",
+          "translation_cn": "生活"
+        },
+        {
+          "word": "活動",
+          "reading": "かつどう",
+          "translation_cn": "活动"
+        }
+      ]
+    },
+    {
+      "word": "頭",
+      "translation_cn": "头",
+      "onyomi": "ト、ズ、トウ",
+      "kunyomi": "あたま、かしら",
+      "strokes": 16,
+      "frequency": 191,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "頭痛",
+          "reading": "ずつう",
+          "translation_cn": "头痛"
+        },
+        {
+          "word": "頭",
+          "reading": "あたま",
+          "translation_cn": "头"
+        }
+      ]
+    },
+    {
+      "word": "組",
+      "translation_cn": "组",
+      "onyomi": "ソ",
+      "kunyomi": "く.む、くみ",
+      "strokes": 11,
+      "frequency": 194,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "組織",
+          "reading": "そしき",
+          "translation_cn": "组织"
+        },
+        {
+          "word": "番組",
+          "reading": "ばんぐみ",
+          "translation_cn": "节目"
+        }
+      ]
+    },
+    {
+      "word": "指",
+      "translation_cn": "手指",
+      "onyomi": "シ",
+      "kunyomi": "ゆび、さ.す",
+      "strokes": 9,
+      "frequency": 197,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "指定",
+          "reading": "してい",
+          "translation_cn": "指定"
+        },
+        {
+          "word": "指",
+          "reading": "ゆび",
+          "translation_cn": "手指"
+        }
+      ]
+    },
+    {
+      "word": "説",
+      "translation_cn": "说明",
+      "onyomi": "セツ、ゼイ",
+      "kunyomi": "と.く",
+      "strokes": 14,
+      "frequency": 198,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "説明",
+          "reading": "せつめい",
+          "translation_cn": "说明"
+        },
+        {
+          "word": "学説",
+          "reading": "がくせつ",
+          "translation_cn": "学说"
+        }
+      ]
+    },
+    {
+      "word": "能",
+      "translation_cn": "能力",
+      "onyomi": "ノウ",
+      "kunyomi": "",
+      "strokes": 10,
+      "frequency": 200,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "能力",
+          "reading": "のうりょく",
+          "translation_cn": "能力"
+        },
+        {
+          "word": "芸能",
+          "reading": "げいのう",
+          "translation_cn": "文艺"
+        }
+      ]
+    },
+    {
+      "word": "葉",
+      "translation_cn": "叶",
+      "onyomi": "ヨウ",
+      "kunyomi": "は",
+      "strokes": 12,
+      "frequency": 202,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "葉書",
+          "reading": "はがき",
+          "translation_cn": "明信片"
+        },
+        {
+          "word": "紅葉",
+          "reading": "こうよう",
+          "translation_cn": "红叶"
+        }
+      ]
+    },
+    {
+      "word": "流",
+      "translation_cn": "流",
+      "onyomi": "リュウ、ル",
+      "kunyomi": "なが.れる、なが.す",
+      "strokes": 10,
+      "frequency": 204,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "流行",
+          "reading": "りゅうこう",
+          "translation_cn": "流行"
+        },
+        {
+          "word": "流れる",
+          "reading": "ながれる",
+          "translation_cn": "流动"
+        }
+      ]
+    },
+    {
+      "word": "然",
+      "translation_cn": "然",
+      "onyomi": "ゼン、ネン",
+      "kunyomi": "しか.り",
+      "strokes": 12,
+      "frequency": 205,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "自然",
+          "reading": "しぜん",
+          "translation_cn": "自然"
+        },
+        {
+          "word": "当然",
+          "reading": "とうぜん",
+          "translation_cn": "当然"
+        }
+      ]
+    },
+    {
+      "word": "初",
+      "translation_cn": "初",
+      "onyomi": "ショ",
+      "kunyomi": "はじ.め、はじ.めて、はつ",
+      "strokes": 7,
+      "frequency": 206,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "初めて",
+          "reading": "はじめて",
+          "translation_cn": "初次"
+        },
+        {
+          "word": "最初",
+          "reading": "さいしょ",
+          "translation_cn": "最初"
+        }
+      ]
+    },
+    {
+      "word": "在",
+      "translation_cn": "在",
+      "onyomi": "ザイ",
+      "kunyomi": "あ.る",
+      "strokes": 6,
+      "frequency": 209,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "現在",
+          "reading": "げんざい",
+          "translation_cn": "现在"
+        },
+        {
+          "word": "存在",
+          "reading": "そんざい",
+          "translation_cn": "存在"
+        }
+      ]
+    },
+    {
+      "word": "調",
+      "translation_cn": "调查",
+      "onyomi": "チョウ",
+      "kunyomi": "しら.べる、ととの.う",
+      "strokes": 15,
+      "frequency": 211,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "調査",
+          "reading": "ちょうさ",
+          "translation_cn": "调查"
+        },
+        {
+          "word": "調べる",
+          "reading": "しらべる",
+          "translation_cn": "调查"
+        }
+      ]
+    },
+    {
+      "word": "笑",
+      "translation_cn": "笑",
+      "onyomi": "ショウ",
+      "kunyomi": "わら.う、え.む",
+      "strokes": 10,
+      "frequency": 212,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "笑顔",
+          "reading": "えがお",
+          "translation_cn": "笑脸"
+        },
+        {
+          "word": "笑う",
+          "reading": "わらう",
+          "translation_cn": "笑"
+        }
+      ]
+    },
+    {
+      "word": "議",
+      "translation_cn": "议",
+      "onyomi": "ギ",
+      "kunyomi": "",
+      "strokes": 20,
+      "frequency": 215,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "議論",
+          "reading": "ぎろん",
+          "translation_cn": "议论"
+        },
+        {
+          "word": "会議",
+          "reading": "かいぎ",
+          "translation_cn": "会议"
+        }
+      ]
+    },
+    {
+      "word": "直",
+      "translation_cn": "直",
+      "onyomi": "チョク、ジキ",
+      "kunyomi": "ただ.ちに、なお.す",
+      "strokes": 8,
+      "frequency": 216,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "正直",
+          "reading": "しょうじき",
+          "translation_cn": "诚实"
+        },
+        {
+          "word": "直ぐ",
+          "reading": "すぐ",
+          "translation_cn": "立刻"
+        }
+      ]
+    },
+    {
+      "word": "夫",
+      "translation_cn": "丈夫",
+      "onyomi": "フ、フウ",
+      "kunyomi": "おっと",
+      "strokes": 4,
+      "frequency": 220,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "夫婦",
+          "reading": "ふうふ",
+          "translation_cn": "夫妇"
+        },
+        {
+          "word": "夫人",
+          "reading": "ふじん",
+          "translation_cn": "夫人"
+        }
+      ]
+    },
+    {
+      "word": "選",
+      "translation_cn": "选择",
+      "onyomi": "セン",
+      "kunyomi": "えらぶ",
+      "strokes": 15,
+      "frequency": 222,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "選択",
+          "reading": "せんたく",
+          "translation_cn": "选择"
+        },
+        {
+          "word": "選手",
+          "reading": "せんしゅ",
+          "translation_cn": "选手"
+        }
+      ]
+    },
+    {
+      "word": "権",
+      "translation_cn": "权利",
+      "onyomi": "ケン、ゴン",
+      "kunyomi": "",
+      "strokes": 15,
+      "frequency": 224,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "権利",
+          "reading": "けんり",
+          "translation_cn": "权利"
+        },
+        {
+          "word": "権力",
+          "reading": "けんりょく",
+          "translation_cn": "权力"
+        }
+      ]
+    },
+    {
+      "word": "利",
+      "translation_cn": "利益",
+      "onyomi": "リ",
+      "kunyomi": "きく",
+      "strokes": 7,
+      "frequency": 228,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "利用",
+          "reading": "りよう",
+          "translation_cn": "利用"
+        },
+        {
+          "word": "有利",
+          "reading": "ゆうり",
+          "translation_cn": "有利"
+        }
+      ]
+    },
+    {
+      "word": "制",
+      "translation_cn": "制度",
+      "onyomi": "セイ",
+      "kunyomi": "",
+      "strokes": 8,
+      "frequency": 229,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "制度",
+          "reading": "せいど",
+          "translation_cn": "制度"
+        },
+        {
+          "word": "制限",
+          "reading": "せいげん",
+          "translation_cn": "限制"
+        }
+      ]
+    },
+    {
+      "word": "続",
+      "translation_cn": "继续",
+      "onyomi": "ゾク",
+      "kunyomi": "つづく、つづける",
+      "strokes": 13,
+      "frequency": 230,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "続く",
+          "reading": "つづく",
+          "translation_cn": "继续"
+        },
+        {
+          "word": "連続",
+          "reading": "れんぞく",
+          "translation_cn": "连续"
+        }
+      ]
+    },
+    {
+      "word": "石",
+      "translation_cn": "石头",
+      "onyomi": "セキ、コク",
+      "kunyomi": "いし",
+      "strokes": 5,
+      "frequency": 233,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "石鹸",
+          "reading": "せっけん",
+          "translation_cn": "肥皂"
+        },
+        {
+          "word": "磁石",
+          "reading": "じしゃく",
+          "translation_cn": "磁石"
+        }
+      ]
+    },
+    {
+      "word": "進",
+      "translation_cn": "前进",
+      "onyomi": "シン",
+      "kunyomi": "すすむ、すすめる",
+      "strokes": 11,
+      "frequency": 235,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "進む",
+          "reading": "すすむ",
+          "translation_cn": "前进"
+        },
+        {
+          "word": "進歩",
+          "reading": "しんぽ",
+          "translation_cn": "进步"
+        }
+      ]
+    },
+    {
+      "word": "伝",
+      "translation_cn": "传",
+      "onyomi": "デン",
+      "kunyomi": "つたえる、つたわる",
+      "strokes": 6,
+      "frequency": 237,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "伝える",
+          "reading": "つたえる",
+          "translation_cn": "传达"
+        },
+        {
+          "word": "伝言",
+          "reading": "でんごん",
+          "translation_cn": "留言"
+        }
+      ]
+    },
+    {
+      "word": "加",
+      "translation_cn": "加",
+      "onyomi": "カ",
+      "kunyomi": "くわえる、くわわる",
+      "strokes": 5,
+      "frequency": 239,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "参加",
+          "reading": "さんか",
+          "translation_cn": "参加"
+        },
+        {
+          "word": "加える",
+          "reading": "くわえる",
+          "translation_cn": "添加"
+        }
+      ]
+    },
+    {
+      "word": "助",
+      "translation_cn": "帮助",
+      "onyomi": "ジョ",
+      "kunyomi": "たす.ける、たす.かる",
+      "strokes": 7,
+      "frequency": 240,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "助言",
+          "reading": "じょげん",
+          "translation_cn": "建议"
+        },
+        {
+          "word": "救助",
+          "reading": "きゅうじょ",
+          "translation_cn": "救助"
+        }
+      ]
+    },
+    {
+      "word": "点",
+      "translation_cn": "点",
+      "onyomi": "テン",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 241,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "点数",
+          "reading": "てんすう",
+          "translation_cn": "分数"
+        },
+        {
+          "word": "弱点",
+          "reading": "じゃくてん",
+          "translation_cn": "弱点"
+        }
+      ]
+    },
+    {
+      "word": "産",
+      "translation_cn": "生产",
+      "onyomi": "サン",
+      "kunyomi": "う.む、う.まれる",
+      "strokes": 11,
+      "frequency": 242,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "生産",
+          "reading": "せいさん",
+          "translation_cn": "生产"
+        },
+        {
+          "word": "産地",
+          "reading": "さんち",
+          "translation_cn": "产地"
+        }
+      ]
+    },
+    {
+      "word": "務",
+      "translation_cn": "职务",
+      "onyomi": "ム",
+      "kunyomi": "つと.める",
+      "strokes": 11,
+      "frequency": 243,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "事務所",
+          "reading": "じむしょ",
+          "translation_cn": "事务所"
+        },
+        {
+          "word": "義務",
+          "reading": "ぎむ",
+          "translation_cn": "义务"
+        }
+      ]
+    },
+    {
+      "word": "件",
+      "translation_cn": "事件",
+      "onyomi": "ケン",
+      "kunyomi": "",
+      "strokes": 6,
+      "frequency": 244,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "事件",
+          "reading": "じけん",
+          "translation_cn": "事件"
+        },
+        {
+          "word": "条件",
+          "reading": "じょうけん",
+          "translation_cn": "条件"
+        }
+      ]
+    },
+    {
+      "word": "命",
+      "translation_cn": "生命",
+      "onyomi": "メイ、ミョウ",
+      "kunyomi": "いのち",
+      "strokes": 8,
+      "frequency": 245,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "生命",
+          "reading": "せいめい",
+          "translation_cn": "生命"
+        },
+        {
+          "word": "運命",
+          "reading": "うんめい",
+          "translation_cn": "命运"
+        }
+      ]
+    },
+    {
+      "word": "番",
+      "translation_cn": "号码",
+      "onyomi": "バン",
+      "kunyomi": "",
+      "strokes": 12,
+      "frequency": 246,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "番組",
+          "reading": "ばんぐみ",
+          "translation_cn": "节目"
+        },
+        {
+          "word": "一番",
+          "reading": "いちばん",
+          "translation_cn": "第一"
+        }
+      ]
+    },
+    {
+      "word": "落",
+      "translation_cn": "落下",
+      "onyomi": "ラク",
+      "kunyomi": "お.ちる、お.とす",
+      "strokes": 12,
+      "frequency": 247,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "落下",
+          "reading": "らっか",
+          "translation_cn": "落下"
+        },
+        {
+          "word": "落第",
+          "reading": "らくだい",
+          "translation_cn": "落榜"
+        }
+      ]
+    },
+    {
+      "word": "付",
+      "translation_cn": "附加",
+      "onyomi": "フ",
+      "kunyomi": "つ.ける、つ.く",
+      "strokes": 5,
+      "frequency": 248,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "日付",
+          "reading": "ひづけ",
+          "translation_cn": "日期"
+        },
+        {
+          "word": "付近",
+          "reading": "ふきん",
+          "translation_cn": "附近"
+        }
+      ]
+    },
+    {
+      "word": "得",
+      "translation_cn": "得到",
+      "onyomi": "トク",
+      "kunyomi": "え.る",
+      "strokes": 11,
+      "frequency": 249,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "得点",
+          "reading": "とくてん",
+          "translation_cn": "得分"
+        },
+        {
+          "word": "納得",
+          "reading": "なっとく",
+          "translation_cn": "理解"
+        }
+      ]
+    },
+    {
+      "word": "好",
+      "translation_cn": "喜欢",
+      "onyomi": "コウ",
+      "kunyomi": "す.き、この.む",
+      "strokes": 6,
+      "frequency": 252,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "好き",
+          "reading": "すき",
+          "translation_cn": "喜欢"
+        },
+        {
+          "word": "好物",
+          "reading": "こうぶつ",
+          "translation_cn": "喜爱之物"
+        }
+      ]
+    },
+    {
+      "word": "違",
+      "translation_cn": "不同",
+      "onyomi": "イ",
+      "kunyomi": "ちが.う、たが.う",
+      "strokes": 13,
+      "frequency": 255,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "間違い",
+          "reading": "まちがい",
+          "translation_cn": "错误"
+        },
+        {
+          "word": "違反",
+          "reading": "いはん",
+          "translation_cn": "违反"
+        }
+      ]
+    },
+    {
+      "word": "殺",
+      "translation_cn": "杀",
+      "onyomi": "サツ、サイ、セツ",
+      "kunyomi": "ころ.す、そ.ぐ",
+      "strokes": 10,
+      "frequency": 257,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "殺人",
+          "reading": "さつじん",
+          "translation_cn": "杀人"
+        },
+        {
+          "word": "殺す",
+          "reading": "ころす",
+          "translation_cn": "杀死"
+        }
+      ]
+    },
+    {
+      "word": "置",
+      "translation_cn": "放置",
+      "onyomi": "チ",
+      "kunyomi": "お.く",
+      "strokes": 13,
+      "frequency": 260,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "位置",
+          "reading": "いち",
+          "translation_cn": "位置"
+        },
+        {
+          "word": "置く",
+          "reading": "おく",
+          "translation_cn": "放置"
+        }
+      ]
+    },
+    {
+      "word": "返",
+      "translation_cn": "返回",
+      "onyomi": "ヘン",
+      "kunyomi": "かえ.す、かえ.る",
+      "strokes": 7,
+      "frequency": 263,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "返事",
+          "reading": "へんじ",
+          "translation_cn": "回复"
+        },
+        {
+          "word": "返す",
+          "reading": "かえす",
+          "translation_cn": "归还"
+        }
+      ]
+    },
+    {
+      "word": "論",
+      "translation_cn": "论",
+      "onyomi": "ロン",
+      "kunyomi": "",
+      "strokes": 15,
+      "frequency": 265,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "議論",
+          "reading": "ぎろん",
+          "translation_cn": "议论"
+        },
+        {
+          "word": "結論",
+          "reading": "けつろん",
+          "translation_cn": "结论"
+        }
+      ]
+    },
+    {
+      "word": "際",
+      "translation_cn": "之际",
+      "onyomi": "サイ",
+      "kunyomi": "きわ",
+      "strokes": 14,
+      "frequency": 267,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "国際",
+          "reading": "こくさい",
+          "translation_cn": "国际"
+        },
+        {
+          "word": "実際",
+          "reading": "じっさい",
+          "translation_cn": "实际"
+        }
+      ]
+    },
+    {
+      "word": "歳",
+      "translation_cn": "岁",
+      "onyomi": "サイ",
+      "kunyomi": "",
+      "strokes": 13,
+      "frequency": 268,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "歳",
+          "reading": "さい",
+          "translation_cn": "岁"
+        },
+        {
+          "word": "二十歳",
+          "reading": "はたち",
+          "translation_cn": "二十岁"
+        }
+      ]
+    },
+    {
+      "word": "反",
+      "translation_cn": "反",
+      "onyomi": "ハン、ホン、タン",
+      "kunyomi": "そ.る、かえ.す、かえ.る",
+      "strokes": 4,
+      "frequency": 276,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "反対",
+          "reading": "はんたい",
+          "translation_cn": "反对"
+        },
+        {
+          "word": "反物",
+          "reading": "たんもの",
+          "translation_cn": "布匹"
+        }
+      ]
+    },
+    {
+      "word": "形",
+      "translation_cn": "形状",
+      "onyomi": "ケイ、ギョウ",
+      "kunyomi": "かたち、かた",
+      "strokes": 7,
+      "frequency": 278,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "人形",
+          "reading": "にんぎょう",
+          "translation_cn": "人偶"
+        },
+        {
+          "word": "形式",
+          "reading": "けいしき",
+          "translation_cn": "形式"
+        }
+      ]
+    },
+    {
+      "word": "光",
+      "translation_cn": "光",
+      "onyomi": "コウ",
+      "kunyomi": "ひかり、ひか-る",
+      "strokes": 6,
+      "frequency": 280,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "日光",
+          "reading": "にっこう",
+          "translation_cn": "日光"
+        },
+        {
+          "word": "光景",
+          "reading": "こうけい",
+          "translation_cn": "光景"
+        }
+      ]
+    },
+    {
+      "word": "首",
+      "translation_cn": "脖子",
+      "onyomi": "シュ",
+      "kunyomi": "くび",
+      "strokes": 9,
+      "frequency": 281,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "首相",
+          "reading": "しゅしょう",
+          "translation_cn": "首相"
+        },
+        {
+          "word": "首",
+          "reading": "くび",
+          "translation_cn": "脖子"
+        }
+      ]
+    },
+    {
+      "word": "勝",
+      "translation_cn": "胜利",
+      "onyomi": "ショウ",
+      "kunyomi": "か-つ、まさ-る",
+      "strokes": 12,
+      "frequency": 282,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "勝利",
+          "reading": "しょうり",
+          "translation_cn": "胜利"
+        },
+        {
+          "word": "勝つ",
+          "reading": "かつ",
+          "translation_cn": "赢"
+        }
+      ]
+    },
+    {
+      "word": "必",
+      "translation_cn": "必须",
+      "onyomi": "ヒツ",
+      "kunyomi": "かなら-ず",
+      "strokes": 5,
+      "frequency": 283,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "必ず",
+          "reading": "かならず",
+          "translation_cn": "一定"
+        },
+        {
+          "word": "必要",
+          "reading": "ひつよう",
+          "translation_cn": "必要"
+        }
+      ]
+    },
+    {
+      "word": "係",
+      "translation_cn": "关系",
+      "onyomi": "ケイ",
+      "kunyomi": "かか-る",
+      "strokes": 9,
+      "frequency": 285,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "関係",
+          "reading": "かんけい",
+          "translation_cn": "关系"
+        },
+        {
+          "word": "係員",
+          "reading": "かかりいん",
+          "translation_cn": "负责人"
+        }
+      ]
+    },
+    {
+      "word": "由",
+      "translation_cn": "理由",
+      "onyomi": "ユ、ユウ",
+      "kunyomi": "よし",
+      "strokes": 5,
+      "frequency": 286,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "理由",
+          "reading": "りゆう",
+          "translation_cn": "理由"
+        },
+        {
+          "word": "経由",
+          "reading": "けいゆ",
+          "translation_cn": "经由"
+        }
+      ]
+    },
+    {
+      "word": "愛",
+      "translation_cn": "爱",
+      "onyomi": "アイ",
+      "kunyomi": "",
+      "strokes": 13,
+      "frequency": 287,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "愛情",
+          "reading": "あいじょう",
+          "translation_cn": "爱情"
+        },
+        {
+          "word": "愛する",
+          "reading": "あいする",
+          "translation_cn": "爱"
+        }
+      ]
+    },
+    {
+      "word": "都",
+      "translation_cn": "都",
+      "onyomi": "ト、ツ",
+      "kunyomi": "みやこ",
+      "strokes": 11,
+      "frequency": 288,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "都市",
+          "reading": "とし",
+          "translation_cn": "都市"
+        },
+        {
+          "word": "都合",
+          "reading": "つごう",
+          "translation_cn": "方便"
+        }
+      ]
+    },
+    {
+      "word": "放",
+      "translation_cn": "放",
+      "onyomi": "ホウ",
+      "kunyomi": "はな-す、はな-つ、はな-れる",
+      "strokes": 8,
+      "frequency": 293,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "放送",
+          "reading": "ほうそう",
+          "translation_cn": "广播"
+        },
+        {
+          "word": "解放",
+          "reading": "かいほう",
+          "translation_cn": "解放"
+        }
+      ]
+    },
+    {
+      "word": "確",
+      "translation_cn": "确实",
+      "onyomi": "カク",
+      "kunyomi": "たし-か、たし-かめる",
+      "strokes": 15,
+      "frequency": 294,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "確認",
+          "reading": "かくにん",
+          "translation_cn": "确认"
+        },
+        {
+          "word": "確実",
+          "reading": "かくじつ",
+          "translation_cn": "确实"
+        }
+      ]
+    },
+    {
+      "word": "過",
+      "translation_cn": "过错",
+      "onyomi": "カ",
+      "kunyomi": "す.ぎる、-す.ぎる、-すぎ、あやま.つ",
+      "strokes": 12,
+      "frequency": 295,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "過去",
+          "reading": "かこ",
+          "translation_cn": "过去"
+        },
+        {
+          "word": "通過",
+          "reading": "つうか",
+          "translation_cn": "通过"
+        }
+      ]
+    },
+    {
+      "word": "約",
+      "translation_cn": "约定",
+      "onyomi": "ヤク",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 297,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "予約",
+          "reading": "よやく",
+          "translation_cn": "预约"
+        },
+        {
+          "word": "約束",
+          "reading": "やくそく",
+          "translation_cn": "约定"
+        }
+      ]
+    },
+    {
+      "word": "馬",
+      "translation_cn": "马",
+      "onyomi": "バ",
+      "kunyomi": "うま、ま",
+      "strokes": 10,
+      "frequency": 298,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "競馬",
+          "reading": "けいば",
+          "translation_cn": "赛马"
+        },
+        {
+          "word": "馬力",
+          "reading": "ばりき",
+          "translation_cn": "马力"
+        }
+      ]
+    },
+    {
+      "word": "状",
+      "translation_cn": "状态",
+      "onyomi": "ジョウ",
+      "kunyomi": "",
+      "strokes": 7,
+      "frequency": 299,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "状態",
+          "reading": "じょうたい",
+          "translation_cn": "状态"
+        },
+        {
+          "word": "現状",
+          "reading": "げんじょう",
+          "translation_cn": "现状"
+        }
+      ]
+    },
+    {
+      "word": "想",
+      "translation_cn": "想法",
+      "onyomi": "ソウ、ソ",
+      "kunyomi": "おも.う",
+      "strokes": 13,
+      "frequency": 302,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "想像",
+          "reading": "そうぞう",
+          "translation_cn": "想象"
+        },
+        {
+          "word": "感想",
+          "reading": "かんそう",
+          "translation_cn": "感想"
+        }
+      ]
+    },
+    {
+      "word": "官",
+      "translation_cn": "官",
+      "onyomi": "カン",
+      "kunyomi": "",
+      "strokes": 8,
+      "frequency": 304,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "官庁",
+          "reading": "かんちょう",
+          "translation_cn": "政府机关"
+        },
+        {
+          "word": "警官",
+          "reading": "けいかん",
+          "translation_cn": "警察"
+        }
+      ]
+    },
+    {
+      "word": "交",
+      "translation_cn": "交",
+      "onyomi": "コウ",
+      "kunyomi": "まじ.わる、まじ.える、ま.じる、まじ.る、か.う、か.わす、かわ.す、-か.う",
+      "strokes": 6,
+      "frequency": 305,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "交通",
+          "reading": "こうつう",
+          "translation_cn": "交通"
+        },
+        {
+          "word": "交換",
+          "reading": "こうかん",
+          "translation_cn": "交换"
+        }
+      ]
+    },
+    {
+      "word": "米",
+      "translation_cn": "米",
+      "onyomi": "ベイ、マイ",
+      "kunyomi": "こめ",
+      "strokes": 6,
+      "frequency": 308,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "米",
+          "reading": "こめ",
+          "translation_cn": "米"
+        },
+        {
+          "word": "米国",
+          "reading": "べいこく",
+          "translation_cn": "美国"
+        }
+      ]
+    },
+    {
+      "word": "配",
+      "translation_cn": "分配",
+      "onyomi": "ハイ",
+      "kunyomi": "くば.る",
+      "strokes": 10,
+      "frequency": 309,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "心配",
+          "reading": "しんぱい",
+          "translation_cn": "担心"
+        },
+        {
+          "word": "配達",
+          "reading": "はいたつ",
+          "translation_cn": "送货"
+        }
+      ]
+    },
+    {
+      "word": "若",
+      "translation_cn": "年轻",
+      "onyomi": "ジャク、ニャク",
+      "kunyomi": "わか.い、も.しくわ、も.し",
+      "strokes": 8,
+      "frequency": 310,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "若い",
+          "reading": "わかい",
+          "translation_cn": "年轻的"
+        },
+        {
+          "word": "若干",
+          "reading": "じゃっかん",
+          "translation_cn": "少量"
+        }
+      ]
+    },
+    {
+      "word": "資",
+      "translation_cn": "资产",
+      "onyomi": "シ",
+      "kunyomi": "",
+      "strokes": 13,
+      "frequency": 312,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "資料",
+          "reading": "しりょう",
+          "translation_cn": "资料"
+        },
+        {
+          "word": "投資",
+          "reading": "とうし",
+          "translation_cn": "投资"
+        }
+      ]
+    },
+    {
+      "word": "常",
+      "translation_cn": "通常",
+      "onyomi": "ジョウ",
+      "kunyomi": "つね、とこ",
+      "strokes": 11,
+      "frequency": 313,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "日常",
+          "reading": "にちじょう",
+          "translation_cn": "日常"
+        },
+        {
+          "word": "常に",
+          "reading": "つねに",
+          "translation_cn": "经常"
+        }
+      ]
+    },
+    {
+      "word": "果",
+      "translation_cn": "结果；水果",
+      "onyomi": "カ",
+      "kunyomi": "は.たす、は.てる、は.て",
+      "strokes": 8,
+      "frequency": 314,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "結果",
+          "reading": "けっか",
+          "translation_cn": "结果"
+        },
+        {
+          "word": "果物",
+          "reading": "くだもの",
+          "translation_cn": "水果"
+        }
+      ]
+    },
+    {
+      "word": "呼",
+      "translation_cn": "呼叫",
+      "onyomi": "コ",
+      "kunyomi": "よ.ぶ",
+      "strokes": 8,
+      "frequency": 315,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "呼吸",
+          "reading": "こきゅう",
+          "translation_cn": "呼吸"
+        },
+        {
+          "word": "呼ぶ",
+          "reading": "よぶ",
+          "translation_cn": "呼叫"
+        }
+      ]
+    },
+    {
+      "word": "共",
+      "translation_cn": "共同",
+      "onyomi": "キョウ",
+      "kunyomi": "とも",
+      "strokes": 6,
+      "frequency": 318,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "共同",
+          "reading": "きょうどう",
+          "translation_cn": "共同"
+        },
+        {
+          "word": "共通",
+          "reading": "きょうつう",
+          "translation_cn": "共通"
+        }
+      ]
+    },
+    {
+      "word": "残",
+      "translation_cn": "剩余",
+      "onyomi": "ザン",
+      "kunyomi": "のこ.る、のこ.す",
+      "strokes": 10,
+      "frequency": 320,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "残業",
+          "reading": "ざんぎょう",
+          "translation_cn": "加班"
+        },
+        {
+          "word": "残る",
+          "reading": "のこる",
+          "translation_cn": "留下"
+        }
+      ]
+    },
+    {
+      "word": "判",
+      "translation_cn": "判断；印章",
+      "onyomi": "ハン、バン",
+      "kunyomi": "",
+      "strokes": 7,
+      "frequency": 321,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "判断",
+          "reading": "はんだん",
+          "translation_cn": "判断"
+        },
+        {
+          "word": "裁判",
+          "reading": "さいばん",
+          "translation_cn": "裁判"
+        }
+      ]
+    },
+    {
+      "word": "役",
+      "translation_cn": "职务",
+      "onyomi": "ヤク、エキ",
+      "kunyomi": "",
+      "strokes": 7,
+      "frequency": 322,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "役割",
+          "reading": "やくわり",
+          "translation_cn": "作用"
+        },
+        {
+          "word": "役所",
+          "reading": "やくしょ",
+          "translation_cn": "政府机关"
+        }
+      ]
+    },
+    {
+      "word": "他",
+      "translation_cn": "其他",
+      "onyomi": "タ",
+      "kunyomi": "ほか",
+      "strokes": 5,
+      "frequency": 325,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "他",
+          "reading": "ほか",
+          "translation_cn": "其他"
+        },
+        {
+          "word": "他人",
+          "reading": "たにん",
+          "translation_cn": "他人"
+        }
+      ]
+    },
+    {
+      "word": "術",
+      "translation_cn": "技术",
+      "onyomi": "ジュツ",
+      "kunyomi": "",
+      "strokes": 11,
+      "frequency": 327,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "技術",
+          "reading": "ぎじゅつ",
+          "translation_cn": "技术"
+        },
+        {
+          "word": "美術",
+          "reading": "びじゅつ",
+          "translation_cn": "美术"
+        }
+      ]
+    },
+    {
+      "word": "支",
+      "translation_cn": "支持",
+      "onyomi": "シ",
+      "kunyomi": "ささ.える",
+      "strokes": 4,
+      "frequency": 328,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "支店",
+          "reading": "してん",
+          "translation_cn": "分店"
+        },
+        {
+          "word": "支持",
+          "reading": "しじ",
+          "translation_cn": "支持"
+        }
+      ]
+    },
+    {
+      "word": "両",
+      "translation_cn": "双方",
+      "onyomi": "リョウ",
+      "kunyomi": "",
+      "strokes": 6,
+      "frequency": 331,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "両方",
+          "reading": "りょうほう",
+          "translation_cn": "双方"
+        },
+        {
+          "word": "両親",
+          "reading": "りょうしん",
+          "translation_cn": "父母"
+        }
+      ]
+    },
+    {
+      "word": "乗",
+      "translation_cn": "乘坐",
+      "onyomi": "ジョウ",
+      "kunyomi": "の.る",
+      "strokes": 9,
+      "frequency": 332,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "乗客",
+          "reading": "じょうきゃく",
+          "translation_cn": "乘客"
+        },
+        {
+          "word": "乗る",
+          "reading": "のる",
+          "translation_cn": "乘坐"
+        }
+      ]
+    },
+    {
+      "word": "済",
+      "translation_cn": "完成",
+      "onyomi": "サイ",
+      "kunyomi": "す.む、す.ます",
+      "strokes": 11,
+      "frequency": 337,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "経済",
+          "reading": "けいざい",
+          "translation_cn": "经济"
+        },
+        {
+          "word": "返済",
+          "reading": "へんさい",
+          "translation_cn": "偿还"
+        }
+      ]
+    },
+    {
+      "word": "供",
+      "translation_cn": "提供",
+      "onyomi": "キョウ、ク",
+      "kunyomi": "そな.える、とも",
+      "strokes": 8,
+      "frequency": 342,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "子供",
+          "reading": "こども",
+          "translation_cn": "孩子"
+        },
+        {
+          "word": "提供",
+          "reading": "ていきょう",
+          "translation_cn": "提供"
+        }
+      ]
+    },
+    {
+      "word": "格",
+      "translation_cn": "资格",
+      "onyomi": "カク、コウ",
+      "kunyomi": "",
+      "strokes": 10,
+      "frequency": 343,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "合格",
+          "reading": "ごうかく",
+          "translation_cn": "合格"
+        },
+        {
+          "word": "性格",
+          "reading": "せいかく",
+          "translation_cn": "性格"
+        }
+      ]
+    },
+    {
+      "word": "打",
+      "translation_cn": "打",
+      "onyomi": "ダ",
+      "kunyomi": "う.つ",
+      "strokes": 5,
+      "frequency": 345,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "打つ",
+          "reading": "うつ",
+          "translation_cn": "打"
+        },
+        {
+          "word": "打ち合わせ",
+          "reading": "うちあわせ",
+          "translation_cn": "商量"
+        }
+      ]
+    },
+    {
+      "word": "御",
+      "translation_cn": "尊敬",
+      "onyomi": "ギョ、ゴ",
+      "kunyomi": "おん-、お-",
+      "strokes": 12,
+      "frequency": 349,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "御飯",
+          "reading": "ごはん",
+          "translation_cn": "饭"
+        },
+        {
+          "word": "御社",
+          "reading": "おんしゃ",
+          "translation_cn": "贵公司"
+        }
+      ]
+    },
+    {
+      "word": "断",
+      "translation_cn": "断绝",
+      "onyomi": "ダン",
+      "kunyomi": "ことわ.る",
+      "strokes": 11,
+      "frequency": 350,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "断る",
+          "reading": "ことわる",
+          "translation_cn": "拒绝"
+        },
+        {
+          "word": "判断",
+          "reading": "はんだん",
+          "translation_cn": "判断"
+        }
+      ]
+    },
+    {
+      "word": "式",
+      "translation_cn": "仪式",
+      "onyomi": "シキ",
+      "kunyomi": "",
+      "strokes": 6,
+      "frequency": 351,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "結婚式",
+          "reading": "けっこんしき",
+          "translation_cn": "婚礼"
+        },
+        {
+          "word": "形式",
+          "reading": "けいしき",
+          "translation_cn": "形式"
+        }
+      ]
+    },
+    {
+      "word": "師",
+      "translation_cn": "老师",
+      "onyomi": "シ",
+      "kunyomi": "",
+      "strokes": 10,
+      "frequency": 353,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "教師",
+          "reading": "きょうし",
+          "translation_cn": "教师"
+        },
+        {
+          "word": "医師",
+          "reading": "いし",
+          "translation_cn": "医生"
+        }
+      ]
+    },
+    {
+      "word": "告",
+      "translation_cn": "宣告",
+      "onyomi": "コク",
+      "kunyomi": "つげる",
+      "strokes": 7,
+      "frequency": 356,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "報告",
+          "reading": "ほうこく",
+          "translation_cn": "报告"
+        },
+        {
+          "word": "広告",
+          "reading": "こうこく",
+          "translation_cn": "广告"
+        }
+      ]
+    },
+    {
+      "word": "深",
+      "translation_cn": "深",
+      "onyomi": "シン",
+      "kunyomi": "ふかい、ふかまる",
+      "strokes": 11,
+      "frequency": 357,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "深刻",
+          "reading": "しんこく",
+          "translation_cn": "深刻"
+        },
+        {
+          "word": "深海",
+          "reading": "しんかい",
+          "translation_cn": "深海"
+        }
+      ]
+    },
+    {
+      "word": "存",
+      "translation_cn": "存在",
+      "onyomi": "ソン、ゾン",
+      "kunyomi": "",
+      "strokes": 6,
+      "frequency": 358,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "存在",
+          "reading": "そんざい",
+          "translation_cn": "存在"
+        },
+        {
+          "word": "ご存じ",
+          "reading": "ごぞんじ",
+          "translation_cn": "知道 (尊敬语)"
+        }
+      ]
+    },
+    {
+      "word": "争",
+      "translation_cn": "争",
+      "onyomi": "ソウ",
+      "kunyomi": "あらそう",
+      "strokes": 6,
+      "frequency": 359,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "戦争",
+          "reading": "せんそう",
+          "translation_cn": "战争"
+        },
+        {
+          "word": "競争",
+          "reading": "きょうそう",
+          "translation_cn": "竞争"
+        }
+      ]
+    },
+    {
+      "word": "覚",
+      "translation_cn": "觉",
+      "onyomi": "カク",
+      "kunyomi": "おぼえる、さます、さめる",
+      "strokes": 12,
+      "frequency": 361,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "感覚",
+          "reading": "かんかく",
+          "translation_cn": "感觉"
+        },
+        {
+          "word": "覚える",
+          "reading": "おぼえる",
+          "translation_cn": "记住"
+        }
+      ]
+    },
+    {
+      "word": "側",
+      "translation_cn": "侧",
+      "onyomi": "ソク",
+      "kunyomi": "かわ、そば",
+      "strokes": 11,
+      "frequency": 363,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "側面",
+          "reading": "そくめん",
+          "translation_cn": "侧面"
+        },
+        {
+          "word": "右側",
+          "reading": "みぎがわ",
+          "translation_cn": "右侧"
+        }
+      ]
+    },
+    {
+      "word": "飛",
+      "translation_cn": "飞",
+      "onyomi": "ヒ",
+      "kunyomi": "とぶ、とばす",
+      "strokes": 9,
+      "frequency": 364,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "飛行機",
+          "reading": "ひこうき",
+          "translation_cn": "飞机"
+        },
+        {
+          "word": "飛び出す",
+          "reading": "とびだす",
+          "translation_cn": "飞出"
+        }
+      ]
+    },
+    {
+      "word": "参",
+      "translation_cn": "参加",
+      "onyomi": "サン、シン",
+      "kunyomi": "まいる",
+      "strokes": 8,
+      "frequency": 365,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "参加",
+          "reading": "さんか",
+          "translation_cn": "参加"
+        },
+        {
+          "word": "参考",
+          "reading": "さんこう",
+          "translation_cn": "参考"
+        }
+      ]
+    },
+    {
+      "word": "突",
+      "translation_cn": "突",
+      "onyomi": "トツ",
+      "kunyomi": "つく",
+      "strokes": 8,
+      "frequency": 370,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "突然",
+          "reading": "とつぜん",
+          "translation_cn": "突然"
+        },
+        {
+          "word": "突き当たる",
+          "reading": "つきあたる",
+          "translation_cn": "碰上"
+        }
+      ]
+    },
+    {
+      "word": "容",
+      "translation_cn": "内容",
+      "onyomi": "ヨウ",
+      "kunyomi": "",
+      "strokes": 10,
+      "frequency": 372,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "内容",
+          "reading": "ないよう",
+          "translation_cn": "内容"
+        },
+        {
+          "word": "美容",
+          "reading": "びよう",
+          "translation_cn": "美容"
+        }
+      ]
+    },
+    {
+      "word": "育",
+      "translation_cn": "养育",
+      "onyomi": "イク",
+      "kunyomi": "そだ.つ、そだ.てる",
+      "strokes": 8,
+      "frequency": 374,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "教育",
+          "reading": "きょういく",
+          "translation_cn": "教育"
+        },
+        {
+          "word": "体育",
+          "reading": "たいいく",
+          "translation_cn": "体育"
+        }
+      ]
+    },
+    {
+      "word": "構",
+      "translation_cn": "结构",
+      "onyomi": "コウ",
+      "kunyomi": "かま.える",
+      "strokes": 14,
+      "frequency": 379,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "構成",
+          "reading": "こうせい",
+          "translation_cn": "构成"
+        },
+        {
+          "word": "構う",
+          "reading": "かまう",
+          "translation_cn": "介意"
+        }
+      ]
+    },
+    {
+      "word": "認",
+      "translation_cn": "承认",
+      "onyomi": "ニン",
+      "kunyomi": "みと.める",
+      "strokes": 14,
+      "frequency": 380,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "認める",
+          "reading": "みとめる",
+          "translation_cn": "承认"
+        },
+        {
+          "word": "確認",
+          "reading": "かくにん",
+          "translation_cn": "确认"
+        }
+      ]
+    },
+    {
+      "word": "位",
+      "translation_cn": "位",
+      "onyomi": "イ",
+      "kunyomi": "くらい",
+      "strokes": 7,
+      "frequency": 381,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "一位",
+          "reading": "いちい",
+          "translation_cn": "第一位"
+        },
+        {
+          "word": "位置",
+          "reading": "いち",
+          "translation_cn": "位置"
+        }
+      ]
+    },
+    {
+      "word": "達",
+      "translation_cn": "到达",
+      "onyomi": "タツ",
+      "kunyomi": "たち",
+      "strokes": 12,
+      "frequency": 382,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "友達",
+          "reading": "ともだち",
+          "translation_cn": "朋友"
+        },
+        {
+          "word": "達成",
+          "reading": "たっせい",
+          "translation_cn": "达成"
+        }
+      ]
+    },
+    {
+      "word": "守",
+      "translation_cn": "守护",
+      "onyomi": "シュ、ス",
+      "kunyomi": "まも.る",
+      "strokes": 6,
+      "frequency": 387,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "守る",
+          "reading": "まもる",
+          "translation_cn": "守护"
+        },
+        {
+          "word": "留守",
+          "reading": "るす",
+          "translation_cn": "看家"
+        }
+      ]
+    },
+    {
+      "word": "満",
+      "translation_cn": "满",
+      "onyomi": "マン",
+      "kunyomi": "み.たす、み.つ",
+      "strokes": 12,
+      "frequency": 388,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "満足",
+          "reading": "まんぞく",
+          "translation_cn": "满足"
+        },
+        {
+          "word": "満員",
+          "reading": "まんいん",
+          "translation_cn": "满员"
+        }
+      ]
+    },
+    {
+      "word": "消",
+      "translation_cn": "消除",
+      "onyomi": "ショウ",
+      "kunyomi": "き.える、け.す",
+      "strokes": 10,
+      "frequency": 389,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "消える",
+          "reading": "きえる",
+          "translation_cn": "消失"
+        },
+        {
+          "word": "消防",
+          "reading": "しょうぼう",
+          "translation_cn": "消防"
+        }
+      ]
+    },
+    {
+      "word": "任",
+      "translation_cn": "任务",
+      "onyomi": "ニン",
+      "kunyomi": "まか.せる",
+      "strokes": 6,
+      "frequency": 390,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "任せる",
+          "reading": "まかせる",
+          "translation_cn": "委托"
+        },
+        {
+          "word": "責任",
+          "reading": "せきにん",
+          "translation_cn": "责任"
+        }
+      ]
+    },
+    {
+      "word": "居",
+      "translation_cn": "存在",
+      "onyomi": "キョ",
+      "kunyomi": "い.る、お.る",
+      "strokes": 8,
+      "frequency": 395,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "居間",
+          "reading": "いま",
+          "translation_cn": "起居室"
+        },
+        {
+          "word": "住居",
+          "reading": "じゅうきょ",
+          "translation_cn": "住处"
+        }
+      ]
+    },
+    {
+      "word": "予",
+      "translation_cn": "预先",
+      "onyomi": "ヨ",
+      "kunyomi": "あらかじ.め",
+      "strokes": 4,
+      "frequency": 398,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "予定",
+          "reading": "よてい",
+          "translation_cn": "预定"
+        },
+        {
+          "word": "予約",
+          "reading": "よやく",
+          "translation_cn": "预约"
+        }
+      ]
+    },
+    {
+      "word": "路",
+      "translation_cn": "道路",
+      "onyomi": "ロ",
+      "kunyomi": "じ、みち",
+      "strokes": 13,
+      "frequency": 399,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "道路",
+          "reading": "どうろ",
+          "translation_cn": "道路"
+        },
+        {
+          "word": "線路",
+          "reading": "せんろ",
+          "translation_cn": "铁路"
+        }
+      ]
+    },
+    {
+      "word": "座",
+      "translation_cn": "坐",
+      "onyomi": "ザ",
+      "kunyomi": "すわ.る",
+      "strokes": 10,
+      "frequency": 401,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "座席",
+          "reading": "ざせき",
+          "translation_cn": "座位"
+        },
+        {
+          "word": "正座",
+          "reading": "せいざ",
+          "translation_cn": "正坐"
+        }
+      ]
+    },
+    {
+      "word": "客",
+      "translation_cn": "客人",
+      "onyomi": "キャク、カク",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 405,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "客",
+          "reading": "きゃく",
+          "translation_cn": "客人"
+        },
+        {
+          "word": "乗客",
+          "reading": "じょうきゃく",
+          "translation_cn": "乘客"
+        }
+      ]
+    },
+    {
+      "word": "船",
+      "translation_cn": "船",
+      "onyomi": "セン",
+      "kunyomi": "ふね、ふな-",
+      "strokes": 11,
+      "frequency": 407,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "船",
+          "reading": "ふね",
+          "translation_cn": "船"
+        },
+        {
+          "word": "船便",
+          "reading": "ふなびん",
+          "translation_cn": "海运"
+        }
+      ]
+    },
+    {
+      "word": "追",
+      "translation_cn": "追赶",
+      "onyomi": "ツイ",
+      "kunyomi": "お.う",
+      "strokes": 9,
+      "frequency": 409,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "追加",
+          "reading": "ついか",
+          "translation_cn": "追加"
+        },
+        {
+          "word": "追いかける",
+          "reading": "おいかける",
+          "translation_cn": "追赶"
+        }
+      ]
+    },
+    {
+      "word": "背",
+      "translation_cn": "背",
+      "onyomi": "ハイ",
+      "kunyomi": "せ、せい、そむ.く",
+      "strokes": 9,
+      "frequency": 412,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "背",
+          "reading": "せ",
+          "translation_cn": "背"
+        },
+        {
+          "word": "背景",
+          "reading": "はいけい",
+          "translation_cn": "背景"
+        }
+      ]
+    },
+    {
+      "word": "観",
+      "translation_cn": "观看",
+      "onyomi": "カン",
+      "kunyomi": "",
+      "strokes": 18,
+      "frequency": 413,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "観光",
+          "reading": "かんこう",
+          "translation_cn": "观光"
+        },
+        {
+          "word": "観察",
+          "reading": "かんさつ",
+          "translation_cn": "观察"
+        }
+      ]
+    },
+    {
+      "word": "誰",
+      "translation_cn": "谁",
+      "onyomi": "",
+      "kunyomi": "だれ、たれ",
+      "strokes": 15,
+      "frequency": 414,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "誰",
+          "reading": "だれ",
+          "translation_cn": "谁"
+        },
+        {
+          "word": "誰か",
+          "reading": "だれか",
+          "translation_cn": "某人"
+        }
+      ]
+    },
+    {
+      "word": "息",
+      "translation_cn": "呼吸",
+      "onyomi": "ソク",
+      "kunyomi": "いき",
+      "strokes": 10,
+      "frequency": 417,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "休息",
+          "reading": "きゅうそく",
+          "translation_cn": "休息"
+        },
+        {
+          "word": "ため息",
+          "reading": "ためいき",
+          "translation_cn": "叹息"
+        }
+      ]
+    },
+    {
+      "word": "失",
+      "translation_cn": "失去",
+      "onyomi": "シツ",
+      "kunyomi": "うしなう",
+      "strokes": 5,
+      "frequency": 424,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "失敗",
+          "reading": "しっぱい",
+          "translation_cn": "失败"
+        },
+        {
+          "word": "失礼",
+          "reading": "しつれい",
+          "translation_cn": "失礼"
+        }
+      ]
+    },
+    {
+      "word": "老",
+      "translation_cn": "老",
+      "onyomi": "ロウ",
+      "kunyomi": "おいる",
+      "strokes": 6,
+      "frequency": 426,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "老人",
+          "reading": "ろうじん",
+          "translation_cn": "老人"
+        },
+        {
+          "word": "老後",
+          "reading": "ろうご",
+          "translation_cn": "晚年"
+        }
+      ]
+    },
+    {
+      "word": "良",
+      "translation_cn": "良好",
+      "onyomi": "リョウ",
+      "kunyomi": "よい",
+      "strokes": 7,
+      "frequency": 427,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "不良",
+          "reading": "ふりょう",
+          "translation_cn": "不良"
+        },
+        {
+          "word": "改良",
+          "reading": "かいりょう",
+          "translation_cn": "改良"
+        }
+      ]
+    },
+    {
+      "word": "示",
+      "translation_cn": "表示",
+      "onyomi": "ジ、シ",
+      "kunyomi": "しめす",
+      "strokes": 5,
+      "frequency": 428,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "指示",
+          "reading": "しじ",
+          "translation_cn": "指示"
+        },
+        {
+          "word": "表示",
+          "reading": "ひょうじ",
+          "translation_cn": "表示"
+        }
+      ]
+    },
+    {
+      "word": "号",
+      "translation_cn": "号",
+      "onyomi": "ゴウ",
+      "kunyomi": "",
+      "strokes": 5,
+      "frequency": 430,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "信号",
+          "reading": "しんごう",
+          "translation_cn": "信号"
+        },
+        {
+          "word": "番号",
+          "reading": "ばんごう",
+          "translation_cn": "号码"
+        }
+      ]
+    },
+    {
+      "word": "職",
+      "translation_cn": "职业",
+      "onyomi": "ショク",
+      "kunyomi": "",
+      "strokes": 18,
+      "frequency": 432,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "職業",
+          "reading": "しょくぎょう",
+          "translation_cn": "职业"
+        },
+        {
+          "word": "職場",
+          "reading": "しょくば",
+          "translation_cn": "工作场所"
+        }
+      ]
+    },
+    {
+      "word": "王",
+      "translation_cn": "王",
+      "onyomi": "オウ",
+      "kunyomi": "",
+      "strokes": 4,
+      "frequency": 433,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "王子",
+          "reading": "おうじ",
+          "translation_cn": "王子"
+        },
+        {
+          "word": "女王",
+          "reading": "じょおう",
+          "translation_cn": "女王"
+        }
+      ]
+    },
+    {
+      "word": "識",
+      "translation_cn": "知识",
+      "onyomi": "シキ",
+      "kunyomi": "",
+      "strokes": 19,
+      "frequency": 434,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "知識",
+          "reading": "ちしき",
+          "translation_cn": "知识"
+        },
+        {
+          "word": "意識",
+          "reading": "いしき",
+          "translation_cn": "意识"
+        }
+      ]
+    },
+    {
+      "word": "警",
+      "translation_cn": "警告",
+      "onyomi": "ケイ",
+      "kunyomi": "",
+      "strokes": 19,
+      "frequency": 435,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "警察",
+          "reading": "けいさつ",
+          "translation_cn": "警察"
+        },
+        {
+          "word": "警告",
+          "reading": "けいこく",
+          "translation_cn": "警告"
+        }
+      ]
+    },
+    {
+      "word": "優",
+      "translation_cn": "优秀",
+      "onyomi": "ユウ",
+      "kunyomi": "やさ.しい、すぐ.れる",
+      "strokes": 17,
+      "frequency": 437,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "優しい",
+          "reading": "やさしい",
+          "translation_cn": "温柔的"
+        },
+        {
+          "word": "優れる",
+          "reading": "すぐれる",
+          "translation_cn": "优秀"
+        }
+      ]
+    },
+    {
+      "word": "投",
+      "translation_cn": "投",
+      "onyomi": "トウ",
+      "kunyomi": "な.げる",
+      "strokes": 7,
+      "frequency": 438,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "投げる",
+          "reading": "なげる",
+          "translation_cn": "投"
+        },
+        {
+          "word": "投資",
+          "reading": "とうし",
+          "translation_cn": "投资"
+        }
+      ]
+    },
+    {
+      "word": "局",
+      "translation_cn": "局",
+      "onyomi": "キョク",
+      "kunyomi": "つぼね",
+      "strokes": 7,
+      "frequency": 441,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "郵便局",
+          "reading": "ゆうびんきょく",
+          "translation_cn": "邮局"
+        },
+        {
+          "word": "放送局",
+          "reading": "ほうそうきょく",
+          "translation_cn": "电视台"
+        }
+      ]
+    },
+    {
+      "word": "難",
+      "translation_cn": "难",
+      "onyomi": "ナン",
+      "kunyomi": "むずか.しい、-がた.い",
+      "strokes": 18,
+      "frequency": 442,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "難しい",
+          "reading": "むずかしい",
+          "translation_cn": "困难的"
+        },
+        {
+          "word": "非難",
+          "reading": "ひなん",
+          "translation_cn": "指责"
+        }
+      ]
+    },
+    {
+      "word": "種",
+      "translation_cn": "种子",
+      "onyomi": "シュ",
+      "kunyomi": "たね",
+      "strokes": 14,
+      "frequency": 443,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "種類",
+          "reading": "しゅるい",
+          "translation_cn": "种类"
+        },
+        {
+          "word": "人種",
+          "reading": "じんしゅ",
+          "translation_cn": "人种"
+        }
+      ]
+    },
+    {
+      "word": "念",
+      "translation_cn": "念头",
+      "onyomi": "ネン",
+      "kunyomi": "",
+      "strokes": 8,
+      "frequency": 446,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "残念",
+          "reading": "ざんねん",
+          "translation_cn": "遗憾"
+        },
+        {
+          "word": "記念",
+          "reading": "きねん",
+          "translation_cn": "纪念"
+        }
+      ]
+    },
+    {
+      "word": "寄",
+      "translation_cn": "靠近",
+      "onyomi": "キ",
+      "kunyomi": "よ.る、よ.せる",
+      "strokes": 11,
+      "frequency": 447,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "寄る",
+          "reading": "よる",
+          "translation_cn": "靠近"
+        },
+        {
+          "word": "寄付",
+          "reading": "きふ",
+          "translation_cn": "捐赠"
+        }
+      ]
+    },
+    {
+      "word": "商",
+      "translation_cn": "商业",
+      "onyomi": "ショウ",
+      "kunyomi": "あきな.う",
+      "strokes": 11,
+      "frequency": 448,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "商売",
+          "reading": "しょうばい",
+          "translation_cn": "商业"
+        },
+        {
+          "word": "商品",
+          "reading": "しょうひん",
+          "translation_cn": "商品"
+        }
+      ]
+    },
+    {
+      "word": "害",
+      "translation_cn": "损害",
+      "onyomi": "ガイ",
+      "kunyomi": "",
+      "strokes": 10,
+      "frequency": 451,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "公害",
+          "reading": "こうがい",
+          "translation_cn": "公害"
+        },
+        {
+          "word": "被害",
+          "reading": "ひがい",
+          "translation_cn": "受害"
+        }
+      ]
+    },
+    {
+      "word": "頼",
+      "translation_cn": "依赖",
+      "onyomi": "ライ",
+      "kunyomi": "たの.む、たの.もしい",
+      "strokes": 16,
+      "frequency": 456,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "頼む",
+          "reading": "たのむ",
+          "translation_cn": "请求"
+        },
+        {
+          "word": "信頼",
+          "reading": "しんらい",
+          "translation_cn": "信赖"
+        }
+      ]
+    },
+    {
+      "word": "横",
+      "translation_cn": "侧面",
+      "onyomi": "オウ",
+      "kunyomi": "よこ",
+      "strokes": 15,
+      "frequency": 457,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "横断",
+          "reading": "おうだん",
+          "translation_cn": "横穿"
+        },
+        {
+          "word": "横",
+          "reading": "よこ",
+          "translation_cn": "旁边"
+        }
+      ]
+    },
+    {
+      "word": "増",
+      "translation_cn": "增加",
+      "onyomi": "ゾウ",
+      "kunyomi": "ま.す、ふ.える、ふ.やす",
+      "strokes": 14,
+      "frequency": 460,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "増加",
+          "reading": "ぞうか",
+          "translation_cn": "增加"
+        },
+        {
+          "word": "増える",
+          "reading": "ふえる",
+          "translation_cn": "增加"
+        }
+      ]
+    },
+    {
+      "word": "差",
+      "translation_cn": "差异",
+      "onyomi": "サ",
+      "kunyomi": "さ.す",
+      "strokes": 10,
+      "frequency": 464,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "差別",
+          "reading": "さべつ",
+          "translation_cn": "差别"
+        },
+        {
+          "word": "時差",
+          "reading": "じさ",
+          "translation_cn": "时差"
+        }
+      ]
+    },
+    {
+      "word": "苦",
+      "translation_cn": "苦",
+      "onyomi": "ク",
+      "kunyomi": "くる.しい、くる.しむ、くる.い、にが.い、にが.る",
+      "strokes": 8,
+      "frequency": 466,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "苦労",
+          "reading": "くろう",
+          "translation_cn": "辛苦"
+        },
+        {
+          "word": "苦い",
+          "reading": "にがい",
+          "translation_cn": "苦的"
+        }
+      ]
+    },
+    {
+      "word": "収",
+      "translation_cn": "收入",
+      "onyomi": "シュウ",
+      "kunyomi": "おさ.める、おさ.まる",
+      "strokes": 4,
+      "frequency": 468,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "収入",
+          "reading": "しゅうにゅう",
+          "translation_cn": "收入"
+        },
+        {
+          "word": "回収",
+          "reading": "かいしゅう",
+          "translation_cn": "回收"
+        }
+      ]
+    },
+    {
+      "word": "段",
+      "translation_cn": "段",
+      "onyomi": "ダン",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 469,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "階段",
+          "reading": "かいだん",
+          "translation_cn": "楼梯"
+        },
+        {
+          "word": "段々",
+          "reading": "だんだん",
+          "translation_cn": "渐渐地"
+        }
+      ]
+    },
+    {
+      "word": "俺",
+      "translation_cn": "我",
+      "onyomi": "エン",
+      "kunyomi": "おれ",
+      "strokes": 10,
+      "frequency": 474,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "俺",
+          "reading": "おれ",
+          "translation_cn": "我 (男性用语)"
+        },
+        {
+          "word": "俺たち",
+          "reading": "おれたち",
+          "translation_cn": "我们 (男性用语)"
+        }
+      ]
+    },
+    {
+      "word": "渡",
+      "translation_cn": "渡过",
+      "onyomi": "ト",
+      "kunyomi": "わた.る、わた.す",
+      "strokes": 12,
+      "frequency": 476,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "渡る",
+          "reading": "わたる",
+          "translation_cn": "渡过"
+        },
+        {
+          "word": "渡す",
+          "reading": "わたす",
+          "translation_cn": "交给"
+        }
+      ]
+    },
+    {
+      "word": "与",
+      "translation_cn": "给予",
+      "onyomi": "ヨ",
+      "kunyomi": "あた.える",
+      "strokes": 3,
+      "frequency": 477,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "与える",
+          "reading": "あたえる",
+          "translation_cn": "给予"
+        },
+        {
+          "word": "参与",
+          "reading": "さんよ",
+          "translation_cn": "参与"
+        }
+      ]
+    },
+    {
+      "word": "演",
+      "translation_cn": "表演",
+      "onyomi": "エン",
+      "kunyomi": "",
+      "strokes": 14,
+      "frequency": 480,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "演技",
+          "reading": "えんぎ",
+          "translation_cn": "演技"
+        },
+        {
+          "word": "演説",
+          "reading": "えんぜつ",
+          "translation_cn": "演说"
+        }
+      ]
+    },
+    {
+      "word": "備",
+      "translation_cn": "准备",
+      "onyomi": "ビ",
+      "kunyomi": "そな.える、そな.わる",
+      "strokes": 12,
+      "frequency": 483,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "準備",
+          "reading": "じゅんび",
+          "translation_cn": "准备"
+        },
+        {
+          "word": "設備",
+          "reading": "せつび",
+          "translation_cn": "设备"
+        }
+      ]
+    },
+    {
+      "word": "申",
+      "translation_cn": "说",
+      "onyomi": "シン",
+      "kunyomi": "もう.す",
+      "strokes": 5,
+      "frequency": 489,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "申し込む",
+          "reading": "もうしこむ",
+          "translation_cn": "申请"
+        },
+        {
+          "word": "申告",
+          "reading": "しんこく",
+          "translation_cn": "申报"
+        }
+      ]
+    },
+    {
+      "word": "例",
+      "translation_cn": "例子",
+      "onyomi": "レイ",
+      "kunyomi": "たと.える",
+      "strokes": 8,
+      "frequency": 490,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "例えば",
+          "reading": "たとえば",
+          "translation_cn": "例如"
+        },
+        {
+          "word": "例",
+          "reading": "れい",
+          "translation_cn": "例子"
+        }
+      ]
+    },
+    {
+      "word": "働",
+      "translation_cn": "工作",
+      "onyomi": "ドウ",
+      "kunyomi": "はたら.く",
+      "strokes": 13,
+      "frequency": 491,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "働く",
+          "reading": "はたらく",
+          "translation_cn": "工作"
+        },
+        {
+          "word": "労働",
+          "reading": "ろうどう",
+          "translation_cn": "劳动"
+        }
+      ]
+    },
+    {
+      "word": "景",
+      "translation_cn": "景色",
+      "onyomi": "ケイ",
+      "kunyomi": "",
+      "strokes": 12,
+      "frequency": 492,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "景色",
+          "reading": "けしき",
+          "translation_cn": "景色"
+        },
+        {
+          "word": "風景",
+          "reading": "ふうけい",
+          "translation_cn": "风景"
+        }
+      ]
+    },
+    {
+      "word": "抜",
+      "translation_cn": "拔出",
+      "onyomi": "バツ",
+      "kunyomi": "ぬ.く、ぬ.ける",
+      "strokes": 7,
+      "frequency": 495,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "抜き出す",
+          "reading": "ぬきだす",
+          "translation_cn": "抽出"
+        },
+        {
+          "word": "抜群",
+          "reading": "ばつぐん",
+          "translation_cn": "超群"
+        }
+      ]
+    },
+    {
+      "word": "遠",
+      "translation_cn": "远",
+      "onyomi": "エン、オン",
+      "kunyomi": "とお.い",
+      "strokes": 13,
+      "frequency": 496,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "遠い",
+          "reading": "とおい",
+          "translation_cn": "远"
+        },
+        {
+          "word": "遠足",
+          "reading": "えんそく",
+          "translation_cn": "郊游"
+        }
+      ]
+    },
+    {
+      "word": "絶",
+      "translation_cn": "断绝",
+      "onyomi": "ゼツ",
+      "kunyomi": "た.える、た.やす",
+      "strokes": 12,
+      "frequency": 502,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "絶対",
+          "reading": "ぜったい",
+          "translation_cn": "绝对"
+        },
+        {
+          "word": "絶えず",
+          "reading": "たえず",
+          "translation_cn": "不断"
+        }
+      ]
+    },
+    {
+      "word": "負",
+      "translation_cn": "输",
+      "onyomi": "フ",
+      "kunyomi": "ま.ける、お.う",
+      "strokes": 9,
+      "frequency": 506,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "負ける",
+          "reading": "まける",
+          "translation_cn": "输"
+        },
+        {
+          "word": "勝負",
+          "reading": "しょうぶ",
+          "translation_cn": "胜负"
+        }
+      ]
+    },
+    {
+      "word": "福",
+      "translation_cn": "幸福",
+      "onyomi": "フク",
+      "kunyomi": "",
+      "strokes": 13,
+      "frequency": 507,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "幸福",
+          "reading": "こうふく",
+          "translation_cn": "幸福"
+        },
+        {
+          "word": "福祉",
+          "reading": "ふくし",
+          "translation_cn": "福利"
+        }
+      ]
+    },
+    {
+      "word": "球",
+      "translation_cn": "球",
+      "onyomi": "キュウ",
+      "kunyomi": "たま",
+      "strokes": 11,
+      "frequency": 510,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "野球",
+          "reading": "やきゅう",
+          "translation_cn": "棒球"
+        },
+        {
+          "word": "地球",
+          "reading": "ちきゅう",
+          "translation_cn": "地球"
+        }
+      ]
+    },
+    {
+      "word": "酒",
+      "translation_cn": "酒",
+      "onyomi": "シュ",
+      "kunyomi": "さけ",
+      "strokes": 10,
+      "frequency": 511,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "日本酒",
+          "reading": "にほんしゅ",
+          "translation_cn": "日本酒"
+        },
+        {
+          "word": "酒屋",
+          "reading": "さかや",
+          "translation_cn": "酒店"
+        }
+      ]
+    },
+    {
+      "word": "君",
+      "translation_cn": "你",
+      "onyomi": "クン",
+      "kunyomi": "きみ",
+      "strokes": 7,
+      "frequency": 512,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "君",
+          "reading": "きみ",
+          "translation_cn": "你"
+        },
+        {
+          "word": "君主",
+          "reading": "くんしゅ",
+          "translation_cn": "君主"
+        }
+      ]
+    },
+    {
+      "word": "察",
+      "translation_cn": "推测",
+      "onyomi": "サツ",
+      "kunyomi": "",
+      "strokes": 14,
+      "frequency": 515,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "観察",
+          "reading": "かんさつ",
+          "translation_cn": "观察"
+        },
+        {
+          "word": "警察",
+          "reading": "けいさつ",
+          "translation_cn": "警察"
+        }
+      ]
+    },
+    {
+      "word": "望",
+      "translation_cn": "希望",
+      "onyomi": "ボウ、モウ",
+      "kunyomi": "のぞむ",
+      "strokes": 11,
+      "frequency": 517,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "希望",
+          "reading": "きぼう",
+          "translation_cn": "希望"
+        },
+        {
+          "word": "望遠鏡",
+          "reading": "ぼうえんきょう",
+          "translation_cn": "望远镜"
+        }
+      ]
+    },
+    {
+      "word": "婚",
+      "translation_cn": "婚姻",
+      "onyomi": "コン",
+      "kunyomi": "",
+      "strokes": 11,
+      "frequency": 519,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "結婚",
+          "reading": "けっこん",
+          "translation_cn": "结婚"
+        },
+        {
+          "word": "新婚",
+          "reading": "しんこん",
+          "translation_cn": "新婚"
+        }
+      ]
+    },
+    {
+      "word": "単",
+      "translation_cn": "单",
+      "onyomi": "タン",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 520,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "簡単",
+          "reading": "かんたん",
+          "translation_cn": "简单"
+        },
+        {
+          "word": "単位",
+          "reading": "たんい",
+          "translation_cn": "单位"
+        }
+      ]
+    },
+    {
+      "word": "押",
+      "translation_cn": "按",
+      "onyomi": "オウ",
+      "kunyomi": "おす、おさえる",
+      "strokes": 8,
+      "frequency": 521,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "押さえる",
+          "reading": "おさえる",
+          "translation_cn": "按住"
+        },
+        {
+          "word": "押し入れ",
+          "reading": "おしいれ",
+          "translation_cn": "壁橱"
+        }
+      ]
+    },
+    {
+      "word": "割",
+      "translation_cn": "割",
+      "onyomi": "カツ",
+      "kunyomi": "わる、われる、さく",
+      "strokes": 12,
+      "frequency": 522,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "割引",
+          "reading": "わりびき",
+          "translation_cn": "折扣"
+        },
+        {
+          "word": "分割",
+          "reading": "ぶんかつ",
+          "translation_cn": "分割"
+        }
+      ]
+    },
+    {
+      "word": "限",
+      "translation_cn": "限制",
+      "onyomi": "ゲン",
+      "kunyomi": "かぎる",
+      "strokes": 9,
+      "frequency": 523,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "制限",
+          "reading": "せいげん",
+          "translation_cn": "限制"
+        },
+        {
+          "word": "期間限定",
+          "reading": "きかんげんてい",
+          "translation_cn": "期间限定"
+        }
+      ]
+    },
+    {
+      "word": "戻",
+      "translation_cn": "返回",
+      "onyomi": "レイ",
+      "kunyomi": "もど.る、もど.す",
+      "strokes": 7,
+      "frequency": 524,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "払い戻し",
+          "reading": "はらいもどし",
+          "translation_cn": "退款"
+        },
+        {
+          "word": "引き戻す",
+          "reading": "ひきもどす",
+          "translation_cn": "拉回"
+        }
+      ]
+    },
+    {
+      "word": "科",
+      "translation_cn": "科",
+      "onyomi": "カ",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 525,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "科学",
+          "reading": "かがく",
+          "translation_cn": "科学"
+        },
+        {
+          "word": "内科",
+          "reading": "ないか",
+          "translation_cn": "内科"
+        }
+      ]
+    },
+    {
+      "word": "求",
+      "translation_cn": "求",
+      "onyomi": "キュウ",
+      "kunyomi": "もと.める",
+      "strokes": 7,
+      "frequency": 526,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "要求",
+          "reading": "ようきゅう",
+          "translation_cn": "要求"
+        },
+        {
+          "word": "求める",
+          "reading": "もとめる",
+          "translation_cn": "寻求"
+        }
+      ]
+    },
+    {
+      "word": "談",
+      "translation_cn": "谈",
+      "onyomi": "ダン",
+      "kunyomi": "",
+      "strokes": 15,
+      "frequency": 529,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "相談",
+          "reading": "そうだん",
+          "translation_cn": "商量"
+        },
+        {
+          "word": "冗談",
+          "reading": "じょうだん",
+          "translation_cn": "玩笑"
+        }
+      ]
+    },
+    {
+      "word": "降",
+      "translation_cn": "降",
+      "onyomi": "コウ",
+      "kunyomi": "お.りる、お.ろす、ふ.る",
+      "strokes": 10,
+      "frequency": 530,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "降る",
+          "reading": "ふる",
+          "translation_cn": "下（雨、雪）"
+        },
+        {
+          "word": "降りる",
+          "reading": "おりる",
+          "translation_cn": "下车"
+        }
+      ]
+    },
+    {
+      "word": "妻",
+      "translation_cn": "妻",
+      "onyomi": "サイ",
+      "kunyomi": "つま",
+      "strokes": 8,
+      "frequency": 531,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "夫妻",
+          "reading": "ふさい",
+          "translation_cn": "夫妻"
+        },
+        {
+          "word": "妻",
+          "reading": "つま",
+          "translation_cn": "妻子"
+        }
+      ]
+    },
+    {
+      "word": "岡",
+      "translation_cn": "冈",
+      "onyomi": "コウ",
+      "kunyomi": "おか",
+      "strokes": 8,
+      "frequency": 532,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "丘岡",
+          "reading": "きゅうおか",
+          "translation_cn": "丘陵"
+        },
+        {
+          "word": "福岡",
+          "reading": "ふくおか",
+          "translation_cn": "福冈"
+        }
+      ]
+    },
+    {
+      "word": "熱",
+      "translation_cn": "热",
+      "onyomi": "ネツ",
+      "kunyomi": "あつ.い",
+      "strokes": 15,
+      "frequency": 534,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "熱い",
+          "reading": "あつい",
+          "translation_cn": "热的"
+        },
+        {
+          "word": "熱心",
+          "reading": "ねっしん",
+          "translation_cn": "热心"
+        }
+      ]
+    },
+    {
+      "word": "浮",
+      "translation_cn": "浮",
+      "onyomi": "フ",
+      "kunyomi": "う.く、う.かぶ、う.かれる",
+      "strokes": 10,
+      "frequency": 536,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "浮かぶ",
+          "reading": "うかぶ",
+          "translation_cn": "漂浮"
+        },
+        {
+          "word": "浮気",
+          "reading": "うわき",
+          "translation_cn": "出轨"
+        }
+      ]
+    },
+    {
+      "word": "等",
+      "translation_cn": "等",
+      "onyomi": "トウ",
+      "kunyomi": "ひと.しい、など",
+      "strokes": 12,
+      "frequency": 538,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "平等",
+          "reading": "びょうどう",
+          "translation_cn": "平等"
+        },
+        {
+          "word": "等しい",
+          "reading": "ひとしい",
+          "translation_cn": "相等"
+        }
+      ]
+    },
+    {
+      "word": "末",
+      "translation_cn": "末尾",
+      "onyomi": "マツ、バツ",
+      "kunyomi": "すえ",
+      "strokes": 5,
+      "frequency": 539,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "週末",
+          "reading": "しゅうまつ",
+          "translation_cn": "周末"
+        },
+        {
+          "word": "末っ子",
+          "reading": "すえっこ",
+          "translation_cn": "最小的孩子"
+        }
+      ]
+    },
+    {
+      "word": "幸",
+      "translation_cn": "幸福",
+      "onyomi": "コウ",
+      "kunyomi": "さいわい、さち、しあわ.せ",
+      "strokes": 8,
+      "frequency": 545,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "幸福",
+          "reading": "こうふく",
+          "translation_cn": "幸福"
+        },
+        {
+          "word": "幸運",
+          "reading": "こううん",
+          "translation_cn": "幸运"
+        }
+      ]
+    },
+    {
+      "word": "草",
+      "translation_cn": "草",
+      "onyomi": "ソウ",
+      "kunyomi": "くさ",
+      "strokes": 9,
+      "frequency": 551,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "草花",
+          "reading": "くさばな",
+          "translation_cn": "草花"
+        },
+        {
+          "word": "雑草",
+          "reading": "ざっそう",
+          "translation_cn": "杂草"
+        }
+      ]
+    },
+    {
+      "word": "越",
+      "translation_cn": "越过",
+      "onyomi": "エツ",
+      "kunyomi": "こ.す、こ.える",
+      "strokes": 12,
+      "frequency": 554,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "引越し",
+          "reading": "ひっこし",
+          "translation_cn": "搬家"
+        },
+        {
+          "word": "優越感",
+          "reading": "ゆうえつかん",
+          "translation_cn": "优越感"
+        }
+      ]
+    },
+    {
+      "word": "登",
+      "translation_cn": "登上",
+      "onyomi": "トウ、ドウ",
+      "kunyomi": "のぼ.る",
+      "strokes": 12,
+      "frequency": 560,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "登山",
+          "reading": "とざん",
+          "translation_cn": "登山"
+        },
+        {
+          "word": "登録",
+          "reading": "とうろく",
+          "translation_cn": "登录"
+        }
+      ]
+    },
+    {
+      "word": "類",
+      "translation_cn": "种类",
+      "onyomi": "ルイ",
+      "kunyomi": "",
+      "strokes": 18,
+      "frequency": 563,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "種類",
+          "reading": "しゅるい",
+          "translation_cn": "种类"
+        },
+        {
+          "word": "人類",
+          "reading": "じんるい",
+          "translation_cn": "人类"
+        }
+      ]
+    },
+    {
+      "word": "未",
+      "translation_cn": "未",
+      "onyomi": "ミ、ビ",
+      "kunyomi": "いま.だ",
+      "strokes": 5,
+      "frequency": 565,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "未来",
+          "reading": "みらい",
+          "translation_cn": "未来"
+        },
+        {
+          "word": "未定",
+          "reading": "みてい",
+          "translation_cn": "未定"
+        }
+      ]
+    },
+    {
+      "word": "規",
+      "translation_cn": "规则",
+      "onyomi": "キ",
+      "kunyomi": "",
+      "strokes": 11,
+      "frequency": 575,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "規定",
+          "reading": "きてい",
+          "translation_cn": "规定"
+        },
+        {
+          "word": "規則",
+          "reading": "きそく",
+          "translation_cn": "规则"
+        }
+      ]
+    },
+    {
+      "word": "精",
+      "translation_cn": "精神",
+      "onyomi": "セイ、ショウ",
+      "kunyomi": "",
+      "strokes": 14,
+      "frequency": 581,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "精神",
+          "reading": "せいしん",
+          "translation_cn": "精神"
+        },
+        {
+          "word": "精密",
+          "reading": "せいみつ",
+          "translation_cn": "精密"
+        }
+      ]
+    },
+    {
+      "word": "抱",
+      "translation_cn": "拥抱",
+      "onyomi": "ホウ",
+      "kunyomi": "だ.く、いだ.く、かか.える",
+      "strokes": 8,
+      "frequency": 584,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "抱く",
+          "reading": "だく",
+          "translation_cn": "拥抱"
+        },
+        {
+          "word": "抱負",
+          "reading": "ほうふ",
+          "translation_cn": "抱负"
+        }
+      ]
+    },
+    {
+      "word": "労",
+      "translation_cn": "劳动",
+      "onyomi": "ロウ",
+      "kunyomi": "ろう.する、いたわ.る、ねぎら.う",
+      "strokes": 7,
+      "frequency": 598,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "労働",
+          "reading": "ろうどう",
+          "translation_cn": "劳动"
+        },
+        {
+          "word": "苦労",
+          "reading": "くろう",
+          "translation_cn": "辛苦"
+        }
+      ]
+    },
+    {
+      "word": "処",
+      "translation_cn": "处理",
+      "onyomi": "ショ",
+      "kunyomi": "ところ",
+      "strokes": 5,
+      "frequency": 600,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "処分",
+          "reading": "しょぶん",
+          "translation_cn": "处分"
+        },
+        {
+          "word": "対処",
+          "reading": "たいしょ",
+          "translation_cn": "应对"
+        }
+      ]
+    },
+    {
+      "word": "退",
+      "translation_cn": "退",
+      "onyomi": "タイ",
+      "kunyomi": "しりぞ.く、しりぞ.ける、ひ.く",
+      "strokes": 9,
+      "frequency": 601,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "退院",
+          "reading": "たいいん",
+          "translation_cn": "出院"
+        },
+        {
+          "word": "退職",
+          "reading": "たいしょく",
+          "translation_cn": "退休"
+        }
+      ]
+    },
+    {
+      "word": "費",
+      "translation_cn": "费用",
+      "onyomi": "ヒ",
+      "kunyomi": "つい.やす",
+      "strokes": 12,
+      "frequency": 602,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "費用",
+          "reading": "ひよう",
+          "translation_cn": "费用"
+        },
+        {
+          "word": "消費",
+          "reading": "しょうひ",
+          "translation_cn": "消费"
+        }
+      ]
+    },
+    {
+      "word": "非",
+      "translation_cn": "非",
+      "onyomi": "ヒ",
+      "kunyomi": "あら.ず",
+      "strokes": 8,
+      "frequency": 603,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "非常",
+          "reading": "ひじょう",
+          "translation_cn": "非常"
+        },
+        {
+          "word": "是非",
+          "reading": "ぜひ",
+          "translation_cn": "一定"
+        }
+      ]
+    },
+    {
+      "word": "喜",
+      "translation_cn": "喜悦",
+      "onyomi": "キ",
+      "kunyomi": "よろこ.ぶ、よろこ.ばす",
+      "strokes": 12,
+      "frequency": 605,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "喜ぶ",
+          "reading": "よろこぶ",
+          "translation_cn": "高兴"
+        },
+        {
+          "word": "歓迎",
+          "reading": "かんげい",
+          "translation_cn": "欢迎"
+        }
+      ]
+    },
+    {
+      "word": "娘",
+      "translation_cn": "女儿",
+      "onyomi": "ジョウ",
+      "kunyomi": "むすめ",
+      "strokes": 10,
+      "frequency": 612,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "娘",
+          "reading": "むすめ",
+          "translation_cn": "女儿"
+        },
+        {
+          "word": "愛娘",
+          "reading": "まなむすめ",
+          "translation_cn": "爱女"
+        }
+      ]
+    },
+    {
+      "word": "逃",
+      "translation_cn": "逃跑",
+      "onyomi": "トウ",
+      "kunyomi": "に.げる、のが.す",
+      "strokes": 9,
+      "frequency": 614,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "逃げる",
+          "reading": "にげる",
+          "translation_cn": "逃跑"
+        },
+        {
+          "word": "逃走",
+          "reading": "とうそう",
+          "translation_cn": "逃走"
+        }
+      ]
+    },
+    {
+      "word": "探",
+      "translation_cn": "寻找",
+      "onyomi": "タン",
+      "kunyomi": "さぐ.る、さが.す",
+      "strokes": 11,
+      "frequency": 615,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "探す",
+          "reading": "さがす",
+          "translation_cn": "寻找"
+        },
+        {
+          "word": "探偵",
+          "reading": "たんてい",
+          "translation_cn": "侦探"
+        }
+      ]
+    },
+    {
+      "word": "犯",
+      "translation_cn": "犯罪",
+      "onyomi": "ハン",
+      "kunyomi": "おか.す",
+      "strokes": 5,
+      "frequency": 620,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "犯人",
+          "reading": "はんにん",
+          "translation_cn": "犯人"
+        },
+        {
+          "word": "犯罪",
+          "reading": "はんざい",
+          "translation_cn": "犯罪"
+        }
+      ]
+    },
+    {
+      "word": "薬",
+      "translation_cn": "药",
+      "onyomi": "ヤク",
+      "kunyomi": "くすり",
+      "strokes": 16,
+      "frequency": 621,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "薬局",
+          "reading": "やっきょく",
+          "translation_cn": "药店"
+        },
+        {
+          "word": "薬",
+          "reading": "くすり",
+          "translation_cn": "药"
+        }
+      ]
+    },
+    {
+      "word": "園",
+      "translation_cn": "园",
+      "onyomi": "エン",
+      "kunyomi": "その",
+      "strokes": 13,
+      "frequency": 622,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "公園",
+          "reading": "こうえん",
+          "translation_cn": "公园"
+        },
+        {
+          "word": "動物園",
+          "reading": "どうぶつえん",
+          "translation_cn": "动物园"
+        }
+      ]
+    },
+    {
+      "word": "疑",
+      "translation_cn": "怀疑",
+      "onyomi": "ギ",
+      "kunyomi": "うたが.う",
+      "strokes": 14,
+      "frequency": 623,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "疑問",
+          "reading": "ぎもん",
+          "translation_cn": "疑问"
+        },
+        {
+          "word": "疑う",
+          "reading": "うたがう",
+          "translation_cn": "怀疑"
+        }
+      ]
+    },
+    {
+      "word": "緒",
+      "translation_cn": "绪",
+      "onyomi": "ショ",
+      "kunyomi": "お",
+      "strokes": 14,
+      "frequency": 626,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "一緒",
+          "reading": "いっしょ",
+          "translation_cn": "一起"
+        },
+        {
+          "word": "緒",
+          "reading": "お",
+          "translation_cn": "线头"
+        }
+      ]
+    },
+    {
+      "word": "静",
+      "translation_cn": "静",
+      "onyomi": "セイ、ジョウ",
+      "kunyomi": "しず-、しず.か",
+      "strokes": 14,
+      "frequency": 627,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "静か",
+          "reading": "しずか",
+          "translation_cn": "安静"
+        },
+        {
+          "word": "冷静",
+          "reading": "れいせい",
+          "translation_cn": "冷静"
+        }
+      ]
+    },
+    {
+      "word": "具",
+      "translation_cn": "具",
+      "onyomi": "グ",
+      "kunyomi": "そな.える",
+      "strokes": 8,
+      "frequency": 628,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "家具",
+          "reading": "かぐ",
+          "translation_cn": "家具"
+        },
+        {
+          "word": "具体的",
+          "reading": "ぐたいてき",
+          "translation_cn": "具体"
+        }
+      ]
+    },
+    {
+      "word": "席",
+      "translation_cn": "席",
+      "onyomi": "セキ",
+      "kunyomi": "",
+      "strokes": 10,
+      "frequency": 629,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "席",
+          "reading": "せき",
+          "translation_cn": "座位"
+        },
+        {
+          "word": "出席",
+          "reading": "しゅっせき",
+          "translation_cn": "出席"
+        }
+      ]
+    },
+    {
+      "word": "速",
+      "translation_cn": "速",
+      "onyomi": "ソク",
+      "kunyomi": "はや.い",
+      "strokes": 10,
+      "frequency": 631,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "速度",
+          "reading": "そくど",
+          "translation_cn": "速度"
+        },
+        {
+          "word": "速い",
+          "reading": "はやい",
+          "translation_cn": "快"
+        }
+      ]
+    },
+    {
+      "word": "舞",
+      "translation_cn": "舞",
+      "onyomi": "ブ",
+      "kunyomi": "ま.う",
+      "strokes": 15,
+      "frequency": 633,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "舞台",
+          "reading": "ぶたい",
+          "translation_cn": "舞台"
+        },
+        {
+          "word": "舞う",
+          "reading": "まう",
+          "translation_cn": "跳舞"
+        }
+      ]
+    },
+    {
+      "word": "宿",
+      "translation_cn": "宿",
+      "onyomi": "シュク",
+      "kunyomi": "やど",
+      "strokes": 11,
+      "frequency": 634,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "宿題",
+          "reading": "しゅくだい",
+          "translation_cn": "作业"
+        },
+        {
+          "word": "宿泊",
+          "reading": "しゅくはく",
+          "translation_cn": "住宿"
+        }
+      ]
+    },
+    {
+      "word": "程",
+      "translation_cn": "程度",
+      "onyomi": "テイ",
+      "kunyomi": "ほど",
+      "strokes": 12,
+      "frequency": 636,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "程度",
+          "reading": "ていど",
+          "translation_cn": "程度"
+        },
+        {
+          "word": "日程",
+          "reading": "にってい",
+          "translation_cn": "日程"
+        }
+      ]
+    },
+    {
+      "word": "倒",
+      "translation_cn": "倒",
+      "onyomi": "トウ",
+      "kunyomi": "たお.れる、さかさま",
+      "strokes": 10,
+      "frequency": 640,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "倒れる",
+          "reading": "たおれる",
+          "translation_cn": "倒下"
+        },
+        {
+          "word": "面倒",
+          "reading": "めんどう",
+          "translation_cn": "麻烦"
+        }
+      ]
+    },
+    {
+      "word": "寝",
+      "translation_cn": "睡",
+      "onyomi": "シン",
+      "kunyomi": "ね.る",
+      "strokes": 13,
+      "frequency": 641,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "寝る",
+          "reading": "ねる",
+          "translation_cn": "睡觉"
+        },
+        {
+          "word": "寝室",
+          "reading": "しんしつ",
+          "translation_cn": "卧室"
+        }
+      ]
+    },
+    {
+      "word": "宅",
+      "translation_cn": "家",
+      "onyomi": "タク",
+      "kunyomi": "",
+      "strokes": 6,
+      "frequency": 642,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "自宅",
+          "reading": "じたく",
+          "translation_cn": "自家"
+        },
+        {
+          "word": "住宅",
+          "reading": "じゅうたく",
+          "translation_cn": "住宅"
+        }
+      ]
+    },
+    {
+      "word": "絵",
+      "translation_cn": "画",
+      "onyomi": "カイ、エ",
+      "kunyomi": "",
+      "strokes": 12,
+      "frequency": 645,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "絵",
+          "reading": "え",
+          "translation_cn": "画"
+        },
+        {
+          "word": "絵本",
+          "reading": "えほん",
+          "translation_cn": "绘本"
+        }
+      ]
+    },
+    {
+      "word": "破",
+      "translation_cn": "破",
+      "onyomi": "ハ",
+      "kunyomi": "やぶ.る",
+      "strokes": 10,
+      "frequency": 649,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "破る",
+          "reading": "やぶる",
+          "translation_cn": "打破"
+        },
+        {
+          "word": "破産",
+          "reading": "はさん",
+          "translation_cn": "破产"
+        }
+      ]
+    },
+    {
+      "word": "庭",
+      "translation_cn": "庭",
+      "onyomi": "テイ",
+      "kunyomi": "にわ",
+      "strokes": 10,
+      "frequency": 653,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "庭",
+          "reading": "にわ",
+          "translation_cn": "庭院"
+        },
+        {
+          "word": "庭園",
+          "reading": "ていえん",
+          "translation_cn": "庭园"
+        }
+      ]
+    },
+    {
+      "word": "婦",
+      "translation_cn": "妇",
+      "onyomi": "フ",
+      "kunyomi": "",
+      "strokes": 11,
+      "frequency": 655,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "主婦",
+          "reading": "しゅふ",
+          "translation_cn": "主妇"
+        },
+        {
+          "word": "夫婦",
+          "reading": "ふうふ",
+          "translation_cn": "夫妇"
+        }
+      ]
+    },
+    {
+      "word": "余",
+      "translation_cn": "余",
+      "onyomi": "ヨ",
+      "kunyomi": "あま.る",
+      "strokes": 7,
+      "frequency": 658,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "余る",
+          "reading": "あまる",
+          "translation_cn": "剩余"
+        },
+        {
+          "word": "余裕",
+          "reading": "よゆう",
+          "translation_cn": "余裕"
+        }
+      ]
+    },
+    {
+      "word": "訪",
+      "translation_cn": "访",
+      "onyomi": "ホウ",
+      "kunyomi": "おとず.れる、たず.ねる",
+      "strokes": 11,
+      "frequency": 661,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "訪問",
+          "reading": "ほうもん",
+          "translation_cn": "访问"
+        },
+        {
+          "word": "訪ねる",
+          "reading": "たずねる",
+          "translation_cn": "拜访"
+        }
+      ]
+    },
+    {
+      "word": "冷",
+      "translation_cn": "冷",
+      "onyomi": "レイ",
+      "kunyomi": "つめ.たい、ひ.える、ひ.やす、ひ.やかす、さ.める、さ.ます",
+      "strokes": 7,
+      "frequency": 663,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "冷静",
+          "reading": "れいせい",
+          "translation_cn": "冷静"
+        },
+        {
+          "word": "冷房",
+          "reading": "れいぼう",
+          "translation_cn": "冷气"
+        }
+      ]
+    },
+    {
+      "word": "暮",
+      "translation_cn": "傍晚",
+      "onyomi": "ボ",
+      "kunyomi": "く.れる、く.らす",
+      "strokes": 14,
+      "frequency": 665,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "暮らす",
+          "reading": "くらす",
+          "translation_cn": "生活"
+        },
+        {
+          "word": "年末",
+          "reading": "ねんまつ",
+          "translation_cn": "年末"
+        }
+      ]
+    },
+    {
+      "word": "腹",
+      "translation_cn": "腹",
+      "onyomi": "フク",
+      "kunyomi": "はら",
+      "strokes": 13,
+      "frequency": 666,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "お腹",
+          "reading": "おなか",
+          "translation_cn": "肚子"
+        },
+        {
+          "word": "腹痛",
+          "reading": "ふくつう",
+          "translation_cn": "肚子痛"
+        }
+      ]
+    },
+    {
+      "word": "危",
+      "translation_cn": "危险",
+      "onyomi": "キ",
+      "kunyomi": "あぶ.ない、あや.うい、あや.ぶむ",
+      "strokes": 6,
+      "frequency": 668,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "危険",
+          "reading": "きけん",
+          "translation_cn": "危险"
+        },
+        {
+          "word": "危ない",
+          "reading": "あぶない",
+          "translation_cn": "危险的"
+        }
+      ]
+    },
+    {
+      "word": "許",
+      "translation_cn": "允许",
+      "onyomi": "キョ",
+      "kunyomi": "ゆる.す",
+      "strokes": 11,
+      "frequency": 671,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "許可",
+          "reading": "きょか",
+          "translation_cn": "许可"
+        },
+        {
+          "word": "許す",
+          "reading": "ゆるす",
+          "translation_cn": "允许"
+        }
+      ]
+    },
+    {
+      "word": "似",
+      "translation_cn": "相似",
+      "onyomi": "ジ",
+      "kunyomi": "に.る",
+      "strokes": 7,
+      "frequency": 673,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "似合う",
+          "reading": "にあう",
+          "translation_cn": "适合"
+        },
+        {
+          "word": "類似",
+          "reading": "るいじ",
+          "translation_cn": "类似"
+        }
+      ]
+    },
+    {
+      "word": "険",
+      "translation_cn": "险峻",
+      "onyomi": "ケン",
+      "kunyomi": "けわ.しい",
+      "strokes": 11,
+      "frequency": 677,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "保険",
+          "reading": "ほけん",
+          "translation_cn": "保险"
+        },
+        {
+          "word": "冒険",
+          "reading": "ぼうけん",
+          "translation_cn": "冒险"
+        }
+      ]
+    },
+    {
+      "word": "財",
+      "translation_cn": "财产",
+      "onyomi": "ザイ、サイ",
+      "kunyomi": "たから",
+      "strokes": 10,
+      "frequency": 681,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "財産",
+          "reading": "ざいさん",
+          "translation_cn": "财产"
+        },
+        {
+          "word": "財布",
+          "reading": "さいふ",
+          "translation_cn": "钱包"
+        }
+      ]
+    },
+    {
+      "word": "遊",
+      "translation_cn": "玩",
+      "onyomi": "ユウ、ユ",
+      "kunyomi": "あそ.ぶ",
+      "strokes": 12,
+      "frequency": 682,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "遊ぶ",
+          "reading": "あそぶ",
+          "translation_cn": "玩"
+        },
+        {
+          "word": "遊園地",
+          "reading": "ゆうえんち",
+          "translation_cn": "游乐园"
+        }
+      ]
+    },
+    {
+      "word": "雑",
+      "translation_cn": "杂",
+      "onyomi": "ザツ、ゾウ",
+      "kunyomi": "",
+      "strokes": 14,
+      "frequency": 691,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "雑誌",
+          "reading": "ざっし",
+          "translation_cn": "杂志"
+        },
+        {
+          "word": "複雑",
+          "reading": "ふくざつ",
+          "translation_cn": "复杂"
+        }
+      ]
+    },
+    {
+      "word": "恐",
+      "translation_cn": "恐惧",
+      "onyomi": "キョウ",
+      "kunyomi": "おそ.れる、おそ.ろしい",
+      "strokes": 10,
+      "frequency": 697,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "恐縮",
+          "reading": "きょうしゅく",
+          "translation_cn": "惶恐"
+        },
+        {
+          "word": "恐竜",
+          "reading": "きょうりゅう",
+          "translation_cn": "恐龙"
+        }
+      ]
+    },
+    {
+      "word": "値",
+      "translation_cn": "价格",
+      "onyomi": "チ",
+      "kunyomi": "ね、あたい",
+      "strokes": 10,
+      "frequency": 699,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "価値",
+          "reading": "かち",
+          "translation_cn": "价值"
+        },
+        {
+          "word": "値段",
+          "reading": "ねだん",
+          "translation_cn": "价格"
+        }
+      ]
+    },
+    {
+      "word": "暗",
+      "translation_cn": "黑暗",
+      "onyomi": "アン",
+      "kunyomi": "くら.い",
+      "strokes": 13,
+      "frequency": 701,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "暗記",
+          "reading": "あんき",
+          "translation_cn": "暗记"
+        },
+        {
+          "word": "暗示",
+          "reading": "あんじ",
+          "translation_cn": "暗示"
+        }
+      ]
+    },
+    {
+      "word": "積",
+      "translation_cn": "积累",
+      "onyomi": "セキ",
+      "kunyomi": "つ.む、つ.もる",
+      "strokes": 16,
+      "frequency": 705,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "面積",
+          "reading": "めんせき",
+          "translation_cn": "面积"
+        },
+        {
+          "word": "体積",
+          "reading": "たいせき",
+          "translation_cn": "体积"
+        }
+      ]
+    },
+    {
+      "word": "夢",
+      "translation_cn": "梦",
+      "onyomi": "ム",
+      "kunyomi": "ゆめ",
+      "strokes": 13,
+      "frequency": 712,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "夢中",
+          "reading": "むちゅう",
+          "translation_cn": "入迷"
+        },
+        {
+          "word": "悪夢",
+          "reading": "あくむ",
+          "translation_cn": "噩梦"
+        }
+      ]
+    },
+    {
+      "word": "痛",
+      "translation_cn": "疼痛",
+      "onyomi": "ツウ",
+      "kunyomi": "いた.い、いた.む、いた.める",
+      "strokes": 12,
+      "frequency": 721,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "痛感",
+          "reading": "つうかん",
+          "translation_cn": "痛感"
+        },
+        {
+          "word": "頭痛",
+          "reading": "ずつう",
+          "translation_cn": "头痛"
+        }
+      ]
+    },
+    {
+      "word": "富",
+      "translation_cn": "财富",
+      "onyomi": "フ、フウ",
+      "kunyomi": "と.む、とみ",
+      "strokes": 12,
+      "frequency": 722,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "豊富",
+          "reading": "ほうふ",
+          "translation_cn": "丰富"
+        },
+        {
+          "word": "富豪",
+          "reading": "ふごう",
+          "translation_cn": "富豪"
+        }
+      ]
+    },
+    {
+      "word": "刻",
+      "translation_cn": "刻",
+      "onyomi": "コク",
+      "kunyomi": "きざ.む",
+      "strokes": 8,
+      "frequency": 726,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "時刻",
+          "reading": "じこく",
+          "translation_cn": "时刻"
+        },
+        {
+          "word": "深刻",
+          "reading": "しんこく",
+          "translation_cn": "深刻"
+        }
+      ]
+    },
+    {
+      "word": "鳴",
+      "translation_cn": "鸣叫",
+      "onyomi": "メイ",
+      "kunyomi": "な.く、な.る、な.らす",
+      "strokes": 14,
+      "frequency": 727,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "鳴る",
+          "reading": "なる",
+          "translation_cn": "鸣叫"
+        },
+        {
+          "word": "雷鳴",
+          "reading": "らいめい",
+          "translation_cn": "雷鸣"
+        }
+      ]
+    },
+    {
+      "word": "欲",
+      "translation_cn": "欲望",
+      "onyomi": "ヨク",
+      "kunyomi": "ほっ.する",
+      "strokes": 11,
+      "frequency": 732,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "食欲",
+          "reading": "しょくよく",
+          "translation_cn": "食欲"
+        },
+        {
+          "word": "欲張る",
+          "reading": "よくばる",
+          "translation_cn": "贪婪"
+        }
+      ]
+    },
+    {
+      "word": "途",
+      "translation_cn": "道路",
+      "onyomi": "ト",
+      "kunyomi": "みち",
+      "strokes": 10,
+      "frequency": 733,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "途中",
+          "reading": "とちゅう",
+          "translation_cn": "中途"
+        },
+        {
+          "word": "用途",
+          "reading": "ようと",
+          "translation_cn": "用途"
+        }
+      ]
+    },
+    {
+      "word": "曲",
+      "translation_cn": "弯曲；乐曲",
+      "onyomi": "キョク",
+      "kunyomi": "ま.がる、ま.げる",
+      "strokes": 6,
+      "frequency": 734,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "作曲",
+          "reading": "さっきょく",
+          "translation_cn": "作曲"
+        },
+        {
+          "word": "曲線",
+          "reading": "きょくせん",
+          "translation_cn": "曲线"
+        }
+      ]
+    },
+    {
+      "word": "耳",
+      "translation_cn": "耳朵",
+      "onyomi": "ジ",
+      "kunyomi": "みみ",
+      "strokes": 6,
+      "frequency": 735,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "耳鼻科",
+          "reading": "じびか",
+          "translation_cn": "耳鼻喉科"
+        },
+        {
+          "word": "耳",
+          "reading": "みみ",
+          "translation_cn": "耳朵"
+        }
+      ]
+    },
+    {
+      "word": "完",
+      "translation_cn": "完成",
+      "onyomi": "カン",
+      "kunyomi": "",
+      "strokes": 7,
+      "frequency": 736,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "完了",
+          "reading": "かんりょう",
+          "translation_cn": "完成"
+        },
+        {
+          "word": "完全",
+          "reading": "かんぜん",
+          "translation_cn": "完全"
+        }
+      ]
+    },
+    {
+      "word": "願",
+      "translation_cn": "愿望",
+      "onyomi": "ガン",
+      "kunyomi": "ねが.う",
+      "strokes": 19,
+      "frequency": 738,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "願書",
+          "reading": "がんしょ",
+          "translation_cn": "申请书"
+        },
+        {
+          "word": "お願い",
+          "reading": "おねがい",
+          "translation_cn": "请求"
+        }
+      ]
+    },
+    {
+      "word": "罪",
+      "translation_cn": "罪",
+      "onyomi": "ザイ",
+      "kunyomi": "つみ",
+      "strokes": 13,
+      "frequency": 739,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "犯罪",
+          "reading": "はんざい",
+          "translation_cn": "犯罪"
+        },
+        {
+          "word": "罪悪感",
+          "reading": "ざいあくかん",
+          "translation_cn": "罪恶感"
+        }
+      ]
+    },
+    {
+      "word": "陽",
+      "translation_cn": "太阳；阳",
+      "onyomi": "ヨウ",
+      "kunyomi": "",
+      "strokes": 12,
+      "frequency": 745,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "太陽",
+          "reading": "たいよう",
+          "translation_cn": "太阳"
+        },
+        {
+          "word": "陽気",
+          "reading": "ようき",
+          "translation_cn": "开朗"
+        }
+      ]
+    },
+    {
+      "word": "亡",
+      "translation_cn": "死亡",
+      "onyomi": "ボウ、モウ",
+      "kunyomi": "な.い",
+      "strokes": 3,
+      "frequency": 749,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "死亡",
+          "reading": "しぼう",
+          "translation_cn": "死亡"
+        },
+        {
+          "word": "亡くなる",
+          "reading": "なくなる",
+          "translation_cn": "去世"
+        }
+      ]
+    },
+    {
+      "word": "散",
+      "translation_cn": "散开",
+      "onyomi": "サン",
+      "kunyomi": "ち.る、ち.らす",
+      "strokes": 12,
+      "frequency": 750,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "解散",
+          "reading": "かいさん",
+          "translation_cn": "解散"
+        },
+        {
+          "word": "散歩",
+          "reading": "さんぽ",
+          "translation_cn": "散步"
+        }
+      ]
+    },
+    {
+      "word": "掛",
+      "translation_cn": "悬挂",
+      "onyomi": "カ、ケ",
+      "kunyomi": "か.ける、か.かる",
+      "strokes": 11,
+      "frequency": 754,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "掛ける",
+          "reading": "かける",
+          "translation_cn": "悬挂"
+        },
+        {
+          "word": "心配を掛ける",
+          "reading": "しんぱいをかける",
+          "translation_cn": "让人担心"
+        }
+      ]
+    },
+    {
+      "word": "昨",
+      "translation_cn": "昨天",
+      "onyomi": "サク",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 756,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "昨日",
+          "reading": "きのう",
+          "translation_cn": "昨天"
+        },
+        {
+          "word": "昨年",
+          "reading": "さくねん",
+          "translation_cn": "去年"
+        }
+      ]
+    },
+    {
+      "word": "怒",
+      "translation_cn": "生气",
+      "onyomi": "ド",
+      "kunyomi": "いか.る、おこ.る",
+      "strokes": 9,
+      "frequency": 758,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "怒り",
+          "reading": "いかり",
+          "translation_cn": "愤怒"
+        },
+        {
+          "word": "激怒",
+          "reading": "げきど",
+          "translation_cn": "激怒"
+        }
+      ]
+    },
+    {
+      "word": "留",
+      "translation_cn": "停留",
+      "onyomi": "リュウ、ル",
+      "kunyomi": "と.める、と.まる",
+      "strokes": 10,
+      "frequency": 768,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "留学",
+          "reading": "りゅうがく",
+          "translation_cn": "留学"
+        },
+        {
+          "word": "保留",
+          "reading": "ほりゅう",
+          "translation_cn": "保留"
+        }
+      ]
+    },
+    {
+      "word": "礼",
+      "translation_cn": "礼貌",
+      "onyomi": "レイ、ライ",
+      "kunyomi": "",
+      "strokes": 5,
+      "frequency": 769,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "お礼",
+          "reading": "おれい",
+          "translation_cn": "感谢"
+        },
+        {
+          "word": "失礼",
+          "reading": "しつれい",
+          "translation_cn": "失礼"
+        }
+      ]
+    },
+    {
+      "word": "列",
+      "translation_cn": "列",
+      "onyomi": "レツ",
+      "kunyomi": "",
+      "strokes": 6,
+      "frequency": 776,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "列車",
+          "reading": "れっしゃ",
+          "translation_cn": "列车"
+        },
+        {
+          "word": "行列",
+          "reading": "ぎょうれつ",
+          "translation_cn": "队列"
+        }
+      ]
+    },
+    {
+      "word": "雪",
+      "translation_cn": "雪",
+      "onyomi": "セツ",
+      "kunyomi": "ゆき",
+      "strokes": 11,
+      "frequency": 780,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "雪国",
+          "reading": "ゆきぐに",
+          "translation_cn": "雪国"
+        },
+        {
+          "word": "大雪",
+          "reading": "おおゆき",
+          "translation_cn": "大雪"
+        }
+      ]
+    },
+    {
+      "word": "払",
+      "translation_cn": "支付",
+      "onyomi": "フツ",
+      "kunyomi": "はら.う",
+      "strokes": 5,
+      "frequency": 785,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "支払い",
+          "reading": "しはらい",
+          "translation_cn": "支付"
+        },
+        {
+          "word": "前払い",
+          "reading": "まえばらい",
+          "translation_cn": "预付款"
+        }
+      ]
+    },
+    {
+      "word": "給",
+      "translation_cn": "供给",
+      "onyomi": "キュウ",
+      "kunyomi": "",
+      "strokes": 12,
+      "frequency": 788,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "給料",
+          "reading": "きゅうりょう",
+          "translation_cn": "工资"
+        },
+        {
+          "word": "支給",
+          "reading": "しきゅう",
+          "translation_cn": "支付"
+        }
+      ]
+    },
+    {
+      "word": "敗",
+      "translation_cn": "失败",
+      "onyomi": "ハイ",
+      "kunyomi": "やぶ.れる",
+      "strokes": 11,
+      "frequency": 793,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "失敗",
+          "reading": "しっぱい",
+          "translation_cn": "失败"
+        },
+        {
+          "word": "敗北",
+          "reading": "はいぼく",
+          "translation_cn": "失败"
+        }
+      ]
+    },
+    {
+      "word": "捕",
+      "translation_cn": "捕捉",
+      "onyomi": "ホ",
+      "kunyomi": "と.らえる、つか.まえる",
+      "strokes": 10,
+      "frequency": 795,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "逮捕",
+          "reading": "たいほ",
+          "translation_cn": "逮捕"
+        },
+        {
+          "word": "捕まる",
+          "reading": "つかまる",
+          "translation_cn": "被抓住"
+        }
+      ]
+    },
+    {
+      "word": "忘",
+      "translation_cn": "忘记",
+      "onyomi": "ボウ",
+      "kunyomi": "わす.れる",
+      "strokes": 7,
+      "frequency": 802,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "忘年会",
+          "reading": "ぼうねんかい",
+          "translation_cn": "忘年会"
+        },
+        {
+          "word": "忘れ物",
+          "reading": "わすれもの",
+          "translation_cn": "遗忘物"
+        }
+      ]
+    },
+    {
+      "word": "晴",
+      "translation_cn": "晴朗",
+      "onyomi": "セイ",
+      "kunyomi": "は.れる、は.れ",
+      "strokes": 12,
+      "frequency": 819,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "晴天",
+          "reading": "せいてん",
+          "translation_cn": "晴天"
+        },
+        {
+          "word": "快晴",
+          "reading": "かいせい",
+          "translation_cn": "晴朗"
+        }
+      ]
+    },
+    {
+      "word": "因",
+      "translation_cn": "原因",
+      "onyomi": "イン",
+      "kunyomi": "よ.る",
+      "strokes": 6,
+      "frequency": 821,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "原因",
+          "reading": "げんいん",
+          "translation_cn": "原因"
+        },
+        {
+          "word": "因る",
+          "reading": "よる",
+          "translation_cn": "由于"
+        }
+      ]
+    },
+    {
+      "word": "折",
+      "translation_cn": "折断",
+      "onyomi": "セツ",
+      "kunyomi": "お.る、お.れる",
+      "strokes": 7,
+      "frequency": 823,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "折り紙",
+          "reading": "おりがみ",
+          "translation_cn": "折纸"
+        },
+        {
+          "word": "折る",
+          "reading": "おる",
+          "translation_cn": "折断"
+        }
+      ]
+    },
+    {
+      "word": "迎",
+      "translation_cn": "迎接",
+      "onyomi": "ゲイ",
+      "kunyomi": "むか.える",
+      "strokes": 7,
+      "frequency": 827,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "歓迎",
+          "reading": "かんげい",
+          "translation_cn": "欢迎"
+        },
+        {
+          "word": "迎える",
+          "reading": "むかえる",
+          "translation_cn": "迎接"
+        }
+      ]
+    },
+    {
+      "word": "悲",
+      "translation_cn": "悲伤",
+      "onyomi": "ヒ",
+      "kunyomi": "かな.しい",
+      "strokes": 12,
+      "frequency": 829,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "悲劇",
+          "reading": "ひげき",
+          "translation_cn": "悲剧"
+        },
+        {
+          "word": "悲しい",
+          "reading": "かなしい",
+          "translation_cn": "悲伤的"
+        }
+      ]
+    },
+    {
+      "word": "港",
+      "translation_cn": "港口",
+      "onyomi": "コウ",
+      "kunyomi": "みなと",
+      "strokes": 12,
+      "frequency": 831,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "空港",
+          "reading": "くうこう",
+          "translation_cn": "机场"
+        },
+        {
+          "word": "港",
+          "reading": "みなと",
+          "translation_cn": "港口"
+        }
+      ]
+    },
+    {
+      "word": "責",
+      "translation_cn": "责备",
+      "onyomi": "セキ",
+      "kunyomi": "せ.める",
+      "strokes": 11,
+      "frequency": 832,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "責任",
+          "reading": "せきにん",
+          "translation_cn": "责任"
+        },
+        {
+          "word": "責める",
+          "reading": "せめる",
+          "translation_cn": "责备"
+        }
+      ]
+    },
+    {
+      "word": "除",
+      "translation_cn": "排除",
+      "onyomi": "ジョ、ジ",
+      "kunyomi": "のぞ.く",
+      "strokes": 10,
+      "frequency": 835,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "掃除",
+          "reading": "そうじ",
+          "translation_cn": "打扫"
+        },
+        {
+          "word": "除く",
+          "reading": "のぞく",
+          "translation_cn": "除去"
+        }
+      ]
+    },
+    {
+      "word": "困",
+      "translation_cn": "困扰",
+      "onyomi": "コン",
+      "kunyomi": "こま.る",
+      "strokes": 7,
+      "frequency": 845,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "困難",
+          "reading": "こんなん",
+          "translation_cn": "困难"
+        },
+        {
+          "word": "困る",
+          "reading": "こまる",
+          "translation_cn": "困扰"
+        }
+      ]
+    },
+    {
+      "word": "閉",
+      "translation_cn": "关闭",
+      "onyomi": "ヘイ",
+      "kunyomi": "し.める、し.まる、と.じる、と.ざす",
+      "strokes": 11,
+      "frequency": 856,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "閉会",
+          "reading": "へいかい",
+          "translation_cn": "闭幕"
+        },
+        {
+          "word": "閉店",
+          "reading": "へいてん",
+          "translation_cn": "关店"
+        }
+      ]
+    },
+    {
+      "word": "吸",
+      "translation_cn": "吸",
+      "onyomi": "キュウ",
+      "kunyomi": "す.う",
+      "strokes": 6,
+      "frequency": 857,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "呼吸",
+          "reading": "こきゅう",
+          "translation_cn": "呼吸"
+        },
+        {
+          "word": "吸収",
+          "reading": "きゅうしゅう",
+          "translation_cn": "吸收"
+        }
+      ]
+    },
+    {
+      "word": "髪",
+      "translation_cn": "头发",
+      "onyomi": "ハツ",
+      "kunyomi": "かみ",
+      "strokes": 14,
+      "frequency": 867,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "白髪",
+          "reading": "しらが",
+          "translation_cn": "白发"
+        },
+        {
+          "word": "髪型",
+          "reading": "かみがた",
+          "translation_cn": "发型"
+        }
+      ]
+    },
+    {
+      "word": "束",
+      "translation_cn": "束",
+      "onyomi": "ソク",
+      "kunyomi": "たば",
+      "strokes": 7,
+      "frequency": 869,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "約束",
+          "reading": "やくそく",
+          "translation_cn": "约定"
+        },
+        {
+          "word": "花束",
+          "reading": "はなたば",
+          "translation_cn": "花束"
+        }
+      ]
+    },
+    {
+      "word": "眠",
+      "translation_cn": "睡眠",
+      "onyomi": "ミン",
+      "kunyomi": "ねむ.る",
+      "strokes": 10,
+      "frequency": 871,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "睡眠",
+          "reading": "すいみん",
+          "translation_cn": "睡眠"
+        },
+        {
+          "word": "眠い",
+          "reading": "ねむい",
+          "translation_cn": "困倦"
+        }
+      ]
+    },
+    {
+      "word": "易",
+      "translation_cn": "容易",
+      "onyomi": "イ",
+      "kunyomi": "やさ.しい",
+      "strokes": 8,
+      "frequency": 888,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "容易",
+          "reading": "ようい",
+          "translation_cn": "容易"
+        },
+        {
+          "word": "貿易",
+          "reading": "ぼうえき",
+          "translation_cn": "贸易"
+        }
+      ]
+    },
+    {
+      "word": "窓",
+      "translation_cn": "窗",
+      "onyomi": "ソウ",
+      "kunyomi": "まど",
+      "strokes": 11,
+      "frequency": 894,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "窓口",
+          "reading": "まどぐち",
+          "translation_cn": "窗口"
+        },
+        {
+          "word": "窓側",
+          "reading": "まどがわ",
+          "translation_cn": "靠窗"
+        }
+      ]
+    },
+    {
+      "word": "祖",
+      "translation_cn": "祖先",
+      "onyomi": "ソ",
+      "kunyomi": "",
+      "strokes": 9,
+      "frequency": 901,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "祖父",
+          "reading": "そふ",
+          "translation_cn": "祖父"
+        },
+        {
+          "word": "祖母",
+          "reading": "そぼ",
+          "translation_cn": "祖母"
+        }
+      ]
+    },
+    {
+      "word": "勤",
+      "translation_cn": "工作",
+      "onyomi": "キン、ゴン",
+      "kunyomi": "つと.める",
+      "strokes": 12,
+      "frequency": 904,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "通勤",
+          "reading": "つうきん",
+          "translation_cn": "通勤"
+        },
+        {
+          "word": "勤務",
+          "reading": "きんむ",
+          "translation_cn": "工作"
+        }
+      ]
+    },
+    {
+      "word": "昔",
+      "translation_cn": "昔",
+      "onyomi": "セキ、シャク",
+      "kunyomi": "むかし",
+      "strokes": 8,
+      "frequency": 905,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "昔話",
+          "reading": "むかしばなし",
+          "translation_cn": "传说"
+        },
+        {
+          "word": "大昔",
+          "reading": "おおむかし",
+          "translation_cn": "远古"
+        }
+      ]
+    },
+    {
+      "word": "便",
+      "translation_cn": "便利；消息",
+      "onyomi": "ベン、ビン",
+      "kunyomi": "たより",
+      "strokes": 9,
+      "frequency": 907,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "便利",
+          "reading": "べんり",
+          "translation_cn": "方便"
+        },
+        {
+          "word": "郵便",
+          "reading": "ゆうびん",
+          "translation_cn": "邮政"
+        }
+      ]
+    },
+    {
+      "word": "適",
+      "translation_cn": "适合",
+      "onyomi": "テキ",
+      "kunyomi": "",
+      "strokes": 14,
+      "frequency": 908,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "適切",
+          "reading": "てきせつ",
+          "translation_cn": "适当"
+        },
+        {
+          "word": "適当",
+          "reading": "てきとう",
+          "translation_cn": "适当；随便"
+        }
+      ]
+    },
+    {
+      "word": "吹",
+      "translation_cn": "吹",
+      "onyomi": "スイ",
+      "kunyomi": "ふ.く",
+      "strokes": 7,
+      "frequency": 917,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "吹奏楽",
+          "reading": "すいそうがく",
+          "translation_cn": "管乐"
+        },
+        {
+          "word": "吹く",
+          "reading": "ふく",
+          "translation_cn": "吹"
+        }
+      ]
+    },
+    {
+      "word": "候",
+      "translation_cn": "气候",
+      "onyomi": "コウ",
+      "kunyomi": "そうろう",
+      "strokes": 10,
+      "frequency": 929,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "気候",
+          "reading": "きこう",
+          "translation_cn": "气候"
+        },
+        {
+          "word": "候補",
+          "reading": "こうほ",
+          "translation_cn": "候选"
+        }
+      ]
+    },
+    {
+      "word": "怖",
+      "translation_cn": "害怕",
+      "onyomi": "フ",
+      "kunyomi": "こわ.い",
+      "strokes": 8,
+      "frequency": 938,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "恐怖",
+          "reading": "きょうふ",
+          "translation_cn": "恐怖"
+        },
+        {
+          "word": "怖い",
+          "reading": "こわい",
+          "translation_cn": "可怕的"
+        }
+      ]
+    },
+    {
+      "word": "辞",
+      "translation_cn": "辞职",
+      "onyomi": "ジ",
+      "kunyomi": "や.める",
+      "strokes": 13,
+      "frequency": 942,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "辞書",
+          "reading": "じしょ",
+          "translation_cn": "词典"
+        },
+        {
+          "word": "辞める",
+          "reading": "やめる",
+          "translation_cn": "辞职"
+        }
+      ]
+    },
+    {
+      "word": "否",
+      "translation_cn": "否定",
+      "onyomi": "ヒ",
+      "kunyomi": "いな",
+      "strokes": 7,
+      "frequency": 946,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "否定",
+          "reading": "ひてい",
+          "translation_cn": "否定"
+        },
+        {
+          "word": "可否",
+          "reading": "かひ",
+          "translation_cn": "可否"
+        }
+      ]
+    },
+    {
+      "word": "遅",
+      "translation_cn": "迟到",
+      "onyomi": "チ",
+      "kunyomi": "おそ.い、おく.れる",
+      "strokes": 12,
+      "frequency": 994,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "遅刻",
+          "reading": "ちこく",
+          "translation_cn": "迟到"
+        },
+        {
+          "word": "遅い",
+          "reading": "おそい",
+          "translation_cn": "晚的"
+        }
+      ]
+    },
+    {
+      "word": "煙",
+      "translation_cn": "烟",
+      "onyomi": "エン",
+      "kunyomi": "けむり、けむ.る",
+      "strokes": 13,
+      "frequency": 1002,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "煙突",
+          "reading": "えんとつ",
+          "translation_cn": "烟囱"
+        },
+        {
+          "word": "煙",
+          "reading": "けむり",
+          "translation_cn": "烟"
+        }
+      ]
+    },
+    {
+      "word": "徒",
+      "translation_cn": "徒弟",
+      "onyomi": "ト",
+      "kunyomi": "いたずら",
+      "strokes": 10,
+      "frequency": 1006,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "生徒",
+          "reading": "せいと",
+          "translation_cn": "学生"
+        },
+        {
+          "word": "徒歩",
+          "reading": "とほ",
+          "translation_cn": "徒步"
+        }
+      ]
+    },
+    {
+      "word": "欠",
+      "translation_cn": "缺乏",
+      "onyomi": "ケツ",
+      "kunyomi": "か.ける、か.く",
+      "strokes": 4,
+      "frequency": 1021,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "欠席",
+          "reading": "けっせき",
+          "translation_cn": "缺席"
+        },
+        {
+          "word": "欠点",
+          "reading": "けってん",
+          "translation_cn": "缺点"
+        }
+      ]
+    },
+    {
+      "word": "迷",
+      "translation_cn": "迷惑",
+      "onyomi": "メイ",
+      "kunyomi": "まよ.う",
+      "strokes": 9,
+      "frequency": 1024,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "迷子",
+          "reading": "まいご",
+          "translation_cn": "迷路的孩子"
+        },
+        {
+          "word": "迷惑",
+          "reading": "めいわく",
+          "translation_cn": "麻烦"
+        }
+      ]
+    },
+    {
+      "word": "洗",
+      "translation_cn": "洗",
+      "onyomi": "セン",
+      "kunyomi": "あら.う",
+      "strokes": 9,
+      "frequency": 1028,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "洗剤",
+          "reading": "せんざい",
+          "translation_cn": "洗涤剂"
+        },
+        {
+          "word": "洗濯",
+          "reading": "せんたく",
+          "translation_cn": "洗衣"
+        }
+      ]
+    },
+    {
+      "word": "互",
+      "translation_cn": "互相",
+      "onyomi": "ゴ",
+      "kunyomi": "たが.い",
+      "strokes": 4,
+      "frequency": 1029,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "互い",
+          "reading": "たがい",
+          "translation_cn": "互相"
+        },
+        {
+          "word": "相互",
+          "reading": "そうご",
+          "translation_cn": "相互"
+        }
+      ]
+    },
+    {
+      "word": "才",
+      "translation_cn": "才能",
+      "onyomi": "サイ",
+      "kunyomi": "",
+      "strokes": 3,
+      "frequency": 1038,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "才能",
+          "reading": "さいのう",
+          "translation_cn": "才能"
+        },
+        {
+          "word": "天才",
+          "reading": "てんさい",
+          "translation_cn": "天才"
+        }
+      ]
+    },
+    {
+      "word": "更",
+      "translation_cn": "更",
+      "onyomi": "コウ",
+      "kunyomi": "さら.に",
+      "strokes": 7,
+      "frequency": 1052,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "変更",
+          "reading": "へんこう",
+          "translation_cn": "变更"
+        },
+        {
+          "word": "更新",
+          "reading": "こうしん",
+          "translation_cn": "更新"
+        }
+      ]
+    },
+    {
+      "word": "歯",
+      "translation_cn": "牙齿",
+      "onyomi": "シ",
+      "kunyomi": "は",
+      "strokes": 12,
+      "frequency": 1065,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "歯医者",
+          "reading": "はいしゃ",
+          "translation_cn": "牙医"
+        },
+        {
+          "word": "歯磨き",
+          "reading": "はみがき",
+          "translation_cn": "刷牙"
+        }
+      ]
+    },
+    {
+      "word": "盗",
+      "translation_cn": "盗窃",
+      "onyomi": "トウ",
+      "kunyomi": "ぬす.む",
+      "strokes": 11,
+      "frequency": 1070,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "盗む",
+          "reading": "ぬすむ",
+          "translation_cn": "偷"
+        },
+        {
+          "word": "盗難",
+          "reading": "とうなん",
+          "translation_cn": "盗窃"
+        }
+      ]
+    },
+    {
+      "word": "慣",
+      "translation_cn": "习惯",
+      "onyomi": "カン",
+      "kunyomi": "な.れる、な.らす",
+      "strokes": 14,
+      "frequency": 1081,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "習慣",
+          "reading": "しゅうかん",
+          "translation_cn": "习惯"
+        },
+        {
+          "word": "慣れる",
+          "reading": "なれる",
+          "translation_cn": "习惯"
+        }
+      ]
+    },
+    {
+      "word": "晩",
+      "translation_cn": "晚上",
+      "onyomi": "バン",
+      "kunyomi": "",
+      "strokes": 12,
+      "frequency": 1083,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "今晩",
+          "reading": "こんばん",
+          "translation_cn": "今晚"
+        },
+        {
+          "word": "晩御飯",
+          "reading": "ばんごはん",
+          "translation_cn": "晚饭"
+        }
+      ]
+    },
+    {
+      "word": "箱",
+      "translation_cn": "箱子",
+      "onyomi": "ソウ",
+      "kunyomi": "はこ",
+      "strokes": 15,
+      "frequency": 1105,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "箱",
+          "reading": "はこ",
+          "translation_cn": "箱子"
+        },
+        {
+          "word": "ごみ箱",
+          "reading": "ごみばこ",
+          "translation_cn": "垃圾箱"
+        }
+      ]
+    },
+    {
+      "word": "到",
+      "translation_cn": "到达",
+      "onyomi": "トウ",
+      "kunyomi": "いた.る",
+      "strokes": 8,
+      "frequency": 1106,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "到着",
+          "reading": "とうちゃく",
+          "translation_cn": "到达"
+        },
+        {
+          "word": "到着",
+          "reading": "とうちゃく",
+          "translation_cn": "到达"
+        }
+      ]
+    },
+    {
+      "word": "頂",
+      "translation_cn": "顶点",
+      "onyomi": "チョウ",
+      "kunyomi": "いただ.く",
+      "strokes": 11,
+      "frequency": 1119,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "頂上",
+          "reading": "ちょうじょう",
+          "translation_cn": "山顶"
+        },
+        {
+          "word": "頂点",
+          "reading": "ちょうてん",
+          "translation_cn": "顶点"
+        }
+      ]
+    },
+    {
+      "word": "杯",
+      "translation_cn": "杯子",
+      "onyomi": "ハイ",
+      "kunyomi": "さかずき",
+      "strokes": 8,
+      "frequency": 1121,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "一杯",
+          "reading": "いっぱい",
+          "translation_cn": "一杯"
+        },
+        {
+          "word": "乾杯",
+          "reading": "かんぱい",
+          "translation_cn": "干杯"
+        }
+      ]
+    },
+    {
+      "word": "皆",
+      "translation_cn": "大家",
+      "onyomi": "カイ",
+      "kunyomi": "みな",
+      "strokes": 9,
+      "frequency": 1139,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "皆様",
+          "reading": "みなさま",
+          "translation_cn": "各位"
+        },
+        {
+          "word": "皆",
+          "reading": "みんな",
+          "translation_cn": "大家"
+        }
+      ]
+    },
+    {
+      "word": "招",
+      "translation_cn": "招",
+      "onyomi": "ショウ",
+      "kunyomi": "まね.く",
+      "strokes": 8,
+      "frequency": 1162,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "招待",
+          "reading": "しょうたい",
+          "translation_cn": "招待"
+        },
+        {
+          "word": "手招き",
+          "reading": "てまねき",
+          "translation_cn": "招手"
+        }
+      ]
+    },
+    {
+      "word": "寒",
+      "translation_cn": "寒冷",
+      "onyomi": "カン",
+      "kunyomi": "さむ.い",
+      "strokes": 12,
+      "frequency": 1166,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "寒い",
+          "reading": "さむい",
+          "translation_cn": "寒冷的"
+        },
+        {
+          "word": "寒気",
+          "reading": "さむけ",
+          "translation_cn": "寒意"
+        }
+      ]
+    },
+    {
+      "word": "恥",
+      "translation_cn": "羞耻",
+      "onyomi": "チ",
+      "kunyomi": "はじ",
+      "strokes": 10,
+      "frequency": 1173,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "恥ずかしい",
+          "reading": "はずかしい",
+          "translation_cn": "害羞的"
+        },
+        {
+          "word": "恥",
+          "reading": "はじ",
+          "translation_cn": "羞耻"
+        }
+      ]
+    },
+    {
+      "word": "疲",
+      "translation_cn": "疲劳",
+      "onyomi": "ヒ",
+      "kunyomi": "つか.れる",
+      "strokes": 10,
+      "frequency": 1191,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "疲れる",
+          "reading": "つかれる",
+          "translation_cn": "疲劳"
+        },
+        {
+          "word": "疲労",
+          "reading": "ひろう",
+          "translation_cn": "疲劳"
+        }
+      ]
+    },
+    {
+      "word": "貧",
+      "translation_cn": "贫穷",
+      "onyomi": "ヒン、ビン",
+      "kunyomi": "まず.しい",
+      "strokes": 11,
+      "frequency": 1223,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "貧しい",
+          "reading": "まずしい",
+          "translation_cn": "贫穷的"
+        },
+        {
+          "word": "貧乏",
+          "reading": "びんぼう",
+          "translation_cn": "贫穷"
+        }
+      ]
+    },
+    {
+      "word": "猫",
+      "translation_cn": "猫",
+      "onyomi": "ビョウ",
+      "kunyomi": "ねこ",
+      "strokes": 11,
+      "frequency": 1227,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "猫背",
+          "reading": "ねこぜ",
+          "translation_cn": "驼背"
+        },
+        {
+          "word": "子猫",
+          "reading": "こねこ",
+          "translation_cn": "小猫"
+        }
+      ]
+    },
+    {
+      "word": "誤",
+      "translation_cn": "错误",
+      "onyomi": "ゴ",
+      "kunyomi": "あやま-る",
+      "strokes": 14,
+      "frequency": 1264,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "誤解",
+          "reading": "ごかい",
+          "translation_cn": "误解"
+        },
+        {
+          "word": "誤用",
+          "reading": "ごよう",
+          "translation_cn": "误用"
+        }
+      ]
+    },
+    {
+      "word": "努",
+      "translation_cn": "努力",
+      "onyomi": "ド",
+      "kunyomi": "つと-める",
+      "strokes": 7,
+      "frequency": 1284,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "努力",
+          "reading": "どりょく",
+          "translation_cn": "努力"
+        },
+        {
+          "word": "努めて",
+          "reading": "つとめて",
+          "translation_cn": "尽量"
+        }
+      ]
+    },
+    {
+      "word": "幾",
+      "translation_cn": "多少",
+      "onyomi": "キ",
+      "kunyomi": "いく-つ、いく-ら",
+      "strokes": 12,
+      "frequency": 1350,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "幾何学",
+          "reading": "きかがく",
+          "translation_cn": "几何学"
+        },
+        {
+          "word": "幾分",
+          "reading": "いくぶん",
+          "translation_cn": "几分"
+        }
+      ]
+    },
+    {
+      "word": "賛",
+      "translation_cn": "赞成",
+      "onyomi": "サン",
+      "kunyomi": "",
+      "strokes": 15,
+      "frequency": 1378,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "賛成",
+          "reading": "さんせい",
+          "translation_cn": "赞成"
+        },
+        {
+          "word": "賛同",
+          "reading": "さんどう",
+          "translation_cn": "赞同"
+        }
+      ]
+    },
+    {
+      "word": "偶",
+      "translation_cn": "偶然",
+      "onyomi": "グウ",
+      "kunyomi": "たま",
+      "strokes": 11,
+      "frequency": 1464,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "偶然",
+          "reading": "ぐうぜん",
+          "translation_cn": "偶然"
+        },
+        {
+          "word": "偶数",
+          "reading": "ぐうすう",
+          "translation_cn": "偶数"
+        }
+      ]
+    },
+    {
+      "word": "忙",
+      "translation_cn": "忙碌",
+      "onyomi": "ボウ",
+      "kunyomi": "いそが-しい",
+      "strokes": 6,
+      "frequency": 1473,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "多忙",
+          "reading": "たぼう",
+          "translation_cn": "繁忙"
+        },
+        {
+          "word": "忙しい",
+          "reading": "いそがしい",
+          "translation_cn": "忙碌的"
+        }
+      ]
+    },
+    {
+      "word": "泳",
+      "translation_cn": "游泳",
+      "onyomi": "エイ",
+      "kunyomi": "およ-ぐ",
+      "strokes": 8,
+      "frequency": 1548,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "水泳",
+          "reading": "すいえい",
+          "translation_cn": "游泳"
+        },
+        {
+          "word": "遠泳",
+          "reading": "えんえい",
+          "translation_cn": "长距离游泳"
+        }
+      ]
+    },
+    {
+      "word": "靴",
+      "translation_cn": "鞋",
+      "onyomi": "カ",
+      "kunyomi": "くつ",
+      "strokes": 13,
+      "frequency": 1570,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "靴下",
+          "reading": "くつした",
+          "translation_cn": "袜子"
+        },
+        {
+          "word": "靴屋",
+          "reading": "くつや",
+          "translation_cn": "鞋店"
+        }
+      ]
+    },
+    {
+      "word": "偉",
+      "translation_cn": "伟大",
+      "onyomi": "イ",
+      "kunyomi": "えら-い",
+      "strokes": 12,
+      "frequency": 1573,
+      "jlpt_level": "N3",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "偉大",
+          "reading": "いだい",
+          "translation_cn": "伟大"
+        },
+        {
+          "word": "偉い",
+          "reading": "えらい",
+          "translation_cn": "伟大的"
+        }
+      ]
+    }
+  ]
+}

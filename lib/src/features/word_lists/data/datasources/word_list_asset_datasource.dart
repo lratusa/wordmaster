@@ -9,13 +9,8 @@ import '../../domain/models/word_list.dart';
 /// Loads word list data from bundled JSON assets
 class WordListAssetDatasource {
   static const _assetPaths = {
-    // English - CEFR levels
-    'cefr_a1': 'assets/wordlists/english/cefr_a1.json',
-    'cefr_a2': 'assets/wordlists/english/cefr_a2.json',
-    // English - CET
+    // English - CET-4 (only built-in list; others available via download)
     'cet4': 'assets/wordlists/english/cet4.json',
-    // Japanese - JLPT
-    'jlpt_n5': 'assets/wordlists/japanese/jlpt_n5.json',
   };
 
   /// Load all built-in word lists metadata (without words)
@@ -71,6 +66,21 @@ class WordListAssetDatasource {
       final wordMap = w as Map<String, dynamic>;
       final examplesJson = wordMap['examples'] as List<dynamic>? ?? [];
 
+      // Parse examples - kanji examples have "word"+"reading", vocabulary has "sentence"
+      final examples = examplesJson.map((e) {
+        final exMap = e as Map<String, dynamic>;
+        // For kanji: use "word" as sentence if "sentence" doesn't exist
+        final sentence = exMap['sentence'] as String? ??
+            exMap['word'] as String? ??
+            '';
+        return ExampleSentence(
+          wordId: 0, // Will be set after DB insert
+          sentence: sentence,
+          translationCn: exMap['translation_cn'] as String? ?? '',
+          reading: exMap['reading'] as String?, // For kanji compound words
+        );
+      }).toList();
+
       return Word(
         wordListId: 0, // Will be set after DB insert
         language: language,
@@ -81,14 +91,9 @@ class WordListAssetDatasource {
         phonetic: wordMap['phonetic'] as String?,
         reading: wordMap['reading'] as String?,
         jlptLevel: wordMap['jlpt_level'] as String?,
-        exampleSentences: examplesJson.map((e) {
-          final exMap = e as Map<String, dynamic>;
-          return ExampleSentence(
-            wordId: 0, // Will be set after DB insert
-            sentence: exMap['sentence'] as String,
-            translationCn: exMap['translation_cn'] as String,
-          );
-        }).toList(),
+        onyomi: wordMap['onyomi'] as String?,
+        kunyomi: wordMap['kunyomi'] as String?,
+        exampleSentences: examples,
       );
     }).toList();
 

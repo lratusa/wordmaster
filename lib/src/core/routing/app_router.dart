@@ -6,6 +6,9 @@ import '../../features/word_lists/presentation/screens/word_list_browser_screen.
 import '../../features/word_lists/presentation/screens/word_list_detail_screen.dart';
 import '../../features/study/presentation/screens/study_setup_screen.dart';
 import '../../features/study/presentation/screens/study_session_screen.dart';
+import '../../features/study/presentation/screens/quiz_screen.dart';
+import '../../features/study/presentation/screens/kanji_reading_quiz_screen.dart';
+import '../../features/study/presentation/screens/kanji_selection_quiz_screen.dart';
 import '../../features/study/presentation/screens/session_summary_screen.dart';
 import '../../features/audio_review/presentation/screens/audio_review_setup_screen.dart';
 import '../../features/audio_review/presentation/screens/audio_review_screen.dart';
@@ -61,6 +64,21 @@ class AppRouter {
             path: '/study/session',
             name: 'studySession',
             builder: (context, state) => const StudySessionScreen(),
+          ),
+          GoRoute(
+            path: '/study/quiz',
+            name: 'studyQuiz',
+            builder: (context, state) => const QuizScreen(),
+          ),
+          GoRoute(
+            path: '/study/kanji-reading',
+            name: 'kanjiReadingQuiz',
+            builder: (context, state) => const KanjiReadingQuizScreen(),
+          ),
+          GoRoute(
+            path: '/study/kanji-selection',
+            name: 'kanjiSelectionQuiz',
+            builder: (context, state) => const KanjiSelectionQuizScreen(),
           ),
           GoRoute(
             path: '/study/summary',
@@ -155,6 +173,9 @@ class _AppShellState extends State<AppShell> {
 
     // Hide navigation on study/audio/quiz screens
     final hideNav = location.startsWith('/study/session') ||
+        location.startsWith('/study/quiz') ||
+        location.startsWith('/study/kanji-reading') ||
+        location.startsWith('/study/kanji-selection') ||
         location.startsWith('/audio-review/session') ||
         location.startsWith('/ai-passage/quiz');
 

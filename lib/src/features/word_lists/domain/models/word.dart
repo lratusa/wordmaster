@@ -5,6 +5,7 @@ class ExampleSentence {
   final int wordId;
   final String sentence;
   final String translationCn;
+  final String? reading; // For kanji compound words (e.g., "おおあめ" for "大雨")
   final int sortOrder;
 
   const ExampleSentence({
@@ -12,6 +13,7 @@ class ExampleSentence {
     required this.wordId,
     required this.sentence,
     required this.translationCn,
+    this.reading,
     this.sortOrder = 0,
   });
 
@@ -21,6 +23,7 @@ class ExampleSentence {
       'word_id': wordId,
       'sentence': sentence,
       'translation_cn': translationCn,
+      'reading': reading,
       'sort_order': sortOrder,
     };
   }
@@ -31,6 +34,7 @@ class ExampleSentence {
       wordId: map['word_id'] as int,
       sentence: map['sentence'] as String,
       translationCn: map['translation_cn'] as String,
+      reading: map['reading'] as String?,
       sortOrder: map['sort_order'] as int? ?? 0,
     );
   }
@@ -55,6 +59,10 @@ class Word {
   final String? reading;
   final String? jlptLevel;
 
+  // Kanji-specific
+  final String? onyomi;   // 音読み
+  final String? kunyomi;  // 訓読み
+
   // Populated via join
   final List<ExampleSentence> exampleSentences;
 
@@ -70,8 +78,29 @@ class Word {
     this.audioUrl,
     this.reading,
     this.jlptLevel,
+    this.onyomi,
+    this.kunyomi,
     this.exampleSentences = const [],
   });
+
+  /// Check if this word is a kanji with reading info
+  bool get isKanji => onyomi != null || kunyomi != null;
+
+  /// Check if this kanji has examples for kanji selection quiz
+  bool get hasExamples => exampleSentences.isNotEmpty;
+
+  /// Get all readings as a list (onyomi + kunyomi combined)
+  List<String> get allReadings {
+    final readings = <String>[];
+    if (onyomi != null && onyomi!.isNotEmpty) {
+      // Split by Japanese comma (、) or regular comma
+      readings.addAll(onyomi!.split(RegExp(r'[、,]')).map((r) => r.trim()).where((r) => r.isNotEmpty));
+    }
+    if (kunyomi != null && kunyomi!.isNotEmpty) {
+      readings.addAll(kunyomi!.split(RegExp(r'[、,]')).map((r) => r.trim()).where((r) => r.isNotEmpty));
+    }
+    return readings;
+  }
 
   Word copyWith({
     int? id,
@@ -85,6 +114,8 @@ class Word {
     String? audioUrl,
     String? reading,
     String? jlptLevel,
+    String? onyomi,
+    String? kunyomi,
     List<ExampleSentence>? exampleSentences,
   }) {
     return Word(
@@ -99,6 +130,8 @@ class Word {
       audioUrl: audioUrl ?? this.audioUrl,
       reading: reading ?? this.reading,
       jlptLevel: jlptLevel ?? this.jlptLevel,
+      onyomi: onyomi ?? this.onyomi,
+      kunyomi: kunyomi ?? this.kunyomi,
       exampleSentences: exampleSentences ?? this.exampleSentences,
     );
   }
@@ -116,6 +149,8 @@ class Word {
       'audio_url': audioUrl,
       'reading': reading,
       'jlpt_level': jlptLevel,
+      'onyomi': onyomi,
+      'kunyomi': kunyomi,
     };
   }
 
@@ -132,6 +167,8 @@ class Word {
       audioUrl: map['audio_url'] as String?,
       reading: map['reading'] as String?,
       jlptLevel: map['jlpt_level'] as String?,
+      onyomi: map['onyomi'] as String?,
+      kunyomi: map['kunyomi'] as String?,
     );
   }
 

@@ -81,47 +81,57 @@ class StatisticsScreen extends ConsumerWidget {
   ) {
     final stats = allTimeStats.value;
 
-    return GridView.count(
-      crossAxisCount: 2,
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+        maxCrossAxisExtent: 300,
+        mainAxisExtent: 120,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+      ),
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      mainAxisSpacing: 10,
-      crossAxisSpacing: 10,
-      childAspectRatio: 1.6,
-      children: [
-        _buildOverviewCard(
+      itemCount: 4,
+      itemBuilder: (context, index) {
+        final items = [
+          (
+            icon: Icons.local_fire_department,
+            color: AppColors.streakFire,
+            value: '${streak.value ?? 0}',
+            label: '连续打卡',
+            unit: '天',
+          ),
+          (
+            icon: Icons.library_books,
+            color: AppColors.primary,
+            value: '${totalWords.value ?? 0}',
+            label: '已掌握',
+            unit: '词',
+          ),
+          (
+            icon: Icons.timer,
+            color: AppColors.info,
+            value: '${stats?.totalMinutes ?? 0}',
+            label: '总学习时长',
+            unit: '分钟',
+          ),
+          (
+            icon: Icons.check_circle,
+            color: AppColors.success,
+            value: '${((stats?.avgCorrectRate ?? 0) * 100).round()}%',
+            label: '平均正确率',
+            unit: '',
+          ),
+        ];
+        final item = items[index];
+        return _buildOverviewCard(
           context,
-          icon: Icons.local_fire_department,
-          color: AppColors.streakFire,
-          value: '${streak.value ?? 0}',
-          label: '连续打卡',
-          unit: '天',
-        ),
-        _buildOverviewCard(
-          context,
-          icon: Icons.library_books,
-          color: AppColors.primary,
-          value: '${totalWords.value ?? 0}',
-          label: '已掌握',
-          unit: '词',
-        ),
-        _buildOverviewCard(
-          context,
-          icon: Icons.timer,
-          color: AppColors.info,
-          value: '${stats?.totalMinutes ?? 0}',
-          label: '总学习时长',
-          unit: '分钟',
-        ),
-        _buildOverviewCard(
-          context,
-          icon: Icons.check_circle,
-          color: AppColors.success,
-          value: '${((stats?.avgCorrectRate ?? 0) * 100).round()}%',
-          label: '平均正确率',
-          unit: '',
-        ),
-      ],
+          icon: item.icon,
+          color: item.color,
+          value: item.value,
+          label: item.label,
+          unit: item.unit,
+        );
+      },
     );
   }
 
@@ -230,11 +240,18 @@ class StatisticsScreen extends ConsumerWidget {
           bottomTitles: AxisTitles(
             sideTitles: SideTitles(
               showTitles: true,
+              interval: 1,
+              reservedSize: 24,
               getTitlesWidget: (value, meta) {
                 final idx = value.toInt();
-                if (idx < 0 || idx >= slots.length) return const SizedBox.shrink();
+                if (idx < 0 || idx >= slots.length || value != idx.toDouble()) {
+                  return const SizedBox.shrink();
+                }
                 final weekday = _shortWeekday(slots[idx].date);
-                return Text(weekday, style: const TextStyle(fontSize: 11));
+                return Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(weekday, style: const TextStyle(fontSize: 11)),
+                );
               },
             ),
           ),
@@ -325,10 +342,17 @@ class StatisticsScreen extends ConsumerWidget {
           bottomTitles: AxisTitles(
             sideTitles: SideTitles(
               showTitles: true,
+              interval: 1,
+              reservedSize: 24,
               getTitlesWidget: (value, meta) {
                 final idx = value.toInt();
-                if (idx < 0 || idx >= slots.length) return const SizedBox.shrink();
-                return Text(_shortWeekday(slots[idx].date), style: const TextStyle(fontSize: 11));
+                if (idx < 0 || idx >= slots.length || value != idx.toDouble()) {
+                  return const SizedBox.shrink();
+                }
+                return Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(_shortWeekday(slots[idx].date), style: const TextStyle(fontSize: 11)),
+                );
               },
             ),
           ),

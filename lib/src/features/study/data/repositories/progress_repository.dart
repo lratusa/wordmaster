@@ -23,11 +23,10 @@ class ProgressRepository {
 
     // Create new progress with fresh FSRS card
     final card = FsrsService.createNewCard(wordId);
-    final now = DateTime.now();
     final progress = UserProgress(
       wordId: wordId,
       fsrsCardJson: FsrsService.cardToJson(card),
-      dueDate: now,
+      dueDate: card.due,
       stability: card.stability ?? 0,
       difficulty: card.difficulty ?? 0,
       state: card.state.value,
@@ -61,7 +60,7 @@ class ProgressRepository {
   /// Get all words due for review in a word list
   Future<List<int>> getDueWordIds(int wordListId) async {
     final db = await _db;
-    final now = DateTime.now().toIso8601String();
+    final now = DateTime.now().toUtc().toIso8601String();
     final results = await db.rawQuery('''
       SELECT up.word_id FROM ${DbConstants.tableUserProgress} up
       INNER JOIN ${DbConstants.tableWords} w ON up.word_id = w.id

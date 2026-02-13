@@ -13,6 +13,8 @@ class UserProgress {
   final DateTime? lastReviewedAt;
   final bool isStarred;
   final bool isNew;
+  final int masteryLevel;
+  final String? lastQuizType;
 
   const UserProgress({
     this.id,
@@ -29,6 +31,8 @@ class UserProgress {
     this.lastReviewedAt,
     this.isStarred = false,
     this.isNew = true,
+    this.masteryLevel = 0,
+    this.lastQuizType,
   });
 
   UserProgress copyWith({
@@ -46,6 +50,8 @@ class UserProgress {
     DateTime? lastReviewedAt,
     bool? isStarred,
     bool? isNew,
+    int? masteryLevel,
+    String? lastQuizType,
   }) {
     return UserProgress(
       id: id ?? this.id,
@@ -62,6 +68,8 @@ class UserProgress {
       lastReviewedAt: lastReviewedAt ?? this.lastReviewedAt,
       isStarred: isStarred ?? this.isStarred,
       isNew: isNew ?? this.isNew,
+      masteryLevel: masteryLevel ?? this.masteryLevel,
+      lastQuizType: lastQuizType ?? this.lastQuizType,
     );
   }
 
@@ -70,7 +78,7 @@ class UserProgress {
       if (id != null) 'id': id,
       'word_id': wordId,
       'fsrs_card_json': fsrsCardJson,
-      'due_date': dueDate.toIso8601String(),
+      'due_date': dueDate.toUtc().toIso8601String(),
       'stability': stability,
       'difficulty': difficulty,
       'state': state,
@@ -78,9 +86,11 @@ class UserProgress {
       'lapses': lapses,
       'review_count': reviewCount,
       'correct_count': correctCount,
-      'last_reviewed_at': lastReviewedAt?.toIso8601String(),
+      'last_reviewed_at': lastReviewedAt?.toUtc().toIso8601String(),
       'is_starred': isStarred ? 1 : 0,
       'is_new': isNew ? 1 : 0,
+      'mastery_level': masteryLevel,
+      'last_quiz_type': lastQuizType,
     };
   }
 
@@ -102,6 +112,8 @@ class UserProgress {
           : null,
       isStarred: (map['is_starred'] as int? ?? 0) == 1,
       isNew: (map['is_new'] as int? ?? 1) == 1,
+      masteryLevel: map['mastery_level'] as int? ?? 0,
+      lastQuizType: map['last_quiz_type'] as String?,
     );
   }
 }

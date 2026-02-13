@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/services/tts_service.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../common_widgets/furigana_text.dart';
+import '../../../word_lists/application/word_list_providers.dart';
 import '../../../word_lists/domain/enums/language.dart';
 import '../../application/study_session_notifier.dart';
 
@@ -49,7 +50,7 @@ class StudySessionScreen extends ConsumerWidget {
         ),
         leading: IconButton(
           icon: const Icon(Icons.close),
-          onPressed: () => _showExitDialog(context),
+          onPressed: () => _showExitDialog(context, ref),
         ),
         actions: [
           // TTS button
@@ -139,7 +140,7 @@ class StudySessionScreen extends ConsumerWidget {
     );
   }
 
-  void _showExitDialog(BuildContext context) {
+  void _showExitDialog(BuildContext context, WidgetRef ref) {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -153,6 +154,7 @@ class StudySessionScreen extends ConsumerWidget {
           TextButton(
             onPressed: () {
               Navigator.pop(ctx);
+              ref.invalidate(allWordListsProvider);
               context.go('/');
             },
             child: const Text('退出'),

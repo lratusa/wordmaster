@@ -92,4 +92,10 @@ class WordList {
   }
 
   double get progress => wordCount > 0 ? learnedCount / wordCount : 0;
+
+  /// Check if this word list is a kanji list (contains kanji reading info)
+  bool get isKanjiList =>
+      name.contains('漢字') ||
+      name.contains('汉字') ||
+      name.contains('Kanji');
 }

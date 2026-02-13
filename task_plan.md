@@ -4,7 +4,80 @@
 构建一个多平台背单词应用（英语+日语），支持 FSRS 艾宾浩斯复习、TTS发音、听力训练、AI短文生成（可切换 OpenAI/DeepSeek/Ollama + 手动复制粘贴模式）、每日打卡截图分享。
 
 ## Current Phase
-**Phase 9 COMPLETE** - All phases finished. Project ready for distribution.
+**All phases complete.** Ready for new features or maintenance tasks.
+
+### Phase 12: China Mirror Support (国内镜像) (2026-02-13)
+- [x] Create `DownloadMirror` service (`lib/src/core/services/download_mirror.dart`)
+- [x] Add `wordlist_download_region` + `tts_download_region` setting keys (independent)
+- [x] Add `wordlistDownloadRegion` + `ttsDownloadRegion` to `AppSettings` + `SettingsNotifier`
+- [x] Refactor `WordlistDownloader` — relative paths + dynamic base URL via `DownloadMirror`
+- [x] Refactor `TtsModelDownloader` — filename only + dynamic base URL via `DownloadMirror`
+- [x] Refactor `TtsModelManager` in `tts_service.dart` — use dynamic mirror URL
+- [x] Add "下载源" section to `SettingsScreen` with two independent region toggles
+- [x] Add hint text when China region: recommend DeepSeek over OpenAI
+- [x] Server setup: nginx + static files on 47.93.144.50 (Gitee rejected for RAW abuse)
+- [x] Uploaded 38 word lists + TTS models downloading on server
+- [x] `flutter analyze` passes (0 errors)
+- **Status:** complete
+
+#### Architecture Design
+
+**New file: `lib/src/core/services/download_mirror.dart`**
+```
+enum DownloadRegion { international, china }
+
+class DownloadMirror {
+  // Wordlists — two independent settings
+  international: https://raw.githubusercontent.com/lratusa/wordmaster-wordlists/main
+  china:         http://47.93.144.50/wordmaster/wordlists
+
+  // TTS Models — two independent settings
+  international: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models
+  china:         http://47.93.144.50/wordmaster/tts-models
+}
+```
+
+**Two independent settings:**
+- `wordlist_download_region` — controls word list download source
+- `tts_download_region` — controls TTS model download source
+
+**Affected files (8 files):**
+1. `lib/src/core/services/download_mirror.dart` — CREATE
+2. `lib/src/features/settings/data/repositories/settings_repository.dart` — ADD 2 keys
+3. `lib/src/features/settings/application/settings_notifier.dart` — ADD 2 fields + setters
+4. `lib/src/core/services/wordlist_downloader.dart` — REFACTOR URLs
+5. `lib/src/core/services/tts_model_downloader.dart` — REFACTOR URLs
+6. `lib/src/core/services/tts_service.dart` — REFACTOR TtsModelManager URLs
+7. `lib/src/features/settings/presentation/screens/settings_screen.dart` — ADD UI section
+8. `lib/src/features/word_lists/presentation/screens/word_list_download_screen.dart` — PASS region
+
+**Key design decisions:**
+- WordListPackage.url and TtsModel.url become relative paths; base URL resolved at download time
+- DownloadMirror reads region from SettingsRepository (no Riverpod dependency — static + async)
+- China mirror hosted on self-managed cloud server (47.93.144.50) — Gitee rejected for RAW abuse
+- Two independent settings allow mixing sources (e.g., GitHub for wordlists, China for TTS)
+
+### Phase 11: Kanji Quiz Modes (2026-02-13)
+- [x] Added onyomi/kunyomi fields to Word model
+- [x] Database migration v4 for example sentence reading field
+- [x] isKanjiList property for WordList
+- [x] Extended QuizFormat enum (kanjiReading, kanjiSelection)
+- [x] KanjiReadingQuizScreen - show kanji, select reading
+- [x] KanjiSelectionQuizScreen - show example with blank, select kanji
+- [x] Quality distractors with similar length filtering
+- [x] Fallback to reading test when no examples available
+- [x] Fixed word_list_download_screen.dart to store onyomi/kunyomi separately
+- [x] Fixed quiz distractor English text leak (Chinese character filter)
+- **Status:** complete
+
+### Phase 10: Bug Fixes & Maintenance (2026-02-13)
+- [x] TTS model selection respects `active_model.txt`
+- [x] TTS model download detection fixed (any .onnx file)
+- [x] Wordlist URLs fixed to match actual repo filenames
+- [x] Added 13 Japanese Kanji wordlists (JLPT + School)
+- [x] Removed non-existent wordlists (GRE, IELTS, GMAT)
+- [x] Verified all 37 wordlist URLs return HTTP 200
+- **Status:** complete
 
 ## Phases
 

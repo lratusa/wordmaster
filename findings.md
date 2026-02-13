@@ -1,5 +1,60 @@
 # Findings & Decisions
 
+## China Mirror Findings (Phase 12)
+
+### Problem
+The app relies on GitHub for word list and TTS model downloads. GitHub is blocked in mainland China (raw.githubusercontent.com and github.com). OpenAI API is also blocked.
+
+### Services blocked in China
+| Service | URL | Used for |
+|---------|-----|----------|
+| GitHub Raw | raw.githubusercontent.com | 37 word list JSON downloads |
+| GitHub Releases | github.com/k2-fsa/sherpa-onnx/releases | TTS model tar.bz2 downloads |
+| OpenAI | api.openai.com | AI passage generation |
+
+### Services accessible in China
+| Service | URL | Used for |
+|---------|-----|----------|
+| DeepSeek | api.deepseek.com | AI passage generation (Chinese company) |
+| Ollama | localhost | AI passage generation (local) |
+| Manual mode | N/A | AI passage generation (copy-paste) |
+
+### Mirror Strategy: Self-hosted Cloud Server
+- **Gitee rejected** — repos flagged for "外链滥用 (RAW)" when used for file hosting
+- **Solution**: Alibaba Cloud server at `47.93.144.50` running nginx in Docker
+- Nginx serves `/wordmaster/` path from `/var/www/wordmaster/` volume mount
+
+### URL Mapping
+| Resource | International (GitHub) | China (Cloud Server) |
+|----------|----------------------|----------------------|
+| Wordlist base | `https://raw.githubusercontent.com/lratusa/wordmaster-wordlists/main` | `http://47.93.144.50/wordmaster/wordlists` |
+| TTS model base | `https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models` | `http://47.93.144.50/wordmaster/tts-models` |
+
+### Server Setup
+- Docker container `fish-guide` with nginx 1.21.5
+- Volume mount: `/var/www/wordmaster` → `/usr/share/nginx/html/wordmaster` (read-only)
+- Config mount: `/var/www/wordmaster/default.conf` → `/etc/nginx/conf.d/default.conf`
+- CORS headers enabled for app downloads
+- Gzip enabled for JSON
+
+### Server File Sync (Manual Steps)
+1. Upload wordlists: `scp -r assets/wordlists/{english,japanese} root@47.93.144.50:/var/www/wordmaster/wordlists/`
+2. TTS models downloaded server-to-server from GitHub releases
+3. SSH key auth configured for passwordless access
+
+### Current hardcoded URLs in codebase
+| File | Line | URL constant |
+|------|------|-------------|
+| `wordlist_downloader.dart` | 54 | `_githubRaw = 'https://raw.githubusercontent.com'` |
+| `tts_model_downloader.dart` | 52-53 | `_baseUrl = 'https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models'` |
+| `tts_service.dart` | 616 | `_modelsBaseUrl = 'https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models'` |
+
+### Refactoring approach
+- `WordListPackage.url` currently stores full URL including base — will change to store only the relative path (e.g., `english/cefr_a1.json`)
+- `TtsModel.url` currently stores full URL — will change to store only the filename (e.g., `vits-piper-en_US-lessac-medium.tar.bz2`)
+- New `DownloadMirror` class resolves full URL = baseUrl(region, resourceType) + relativePath
+- Region persisted as setting: `download_region` = `'international'` | `'china'`
+
 ## Requirements
 - 多平台: Android/iOS + Windows/macOS/Linux
 - 英语 (CET-4/6) + 日语 (JLPT N5-N3) 词汇学习
@@ -87,3 +142,55 @@
 | NuGet missing for flutter_tts Windows | winget install Microsoft.NuGet + add source |
 | FSRS package API completely different from docs | Explored pub cache source, found actual class names/methods |
 | Riverpod 3.x StateProvider removal | Created Notifier<T> subclass pattern |
+| TTS ignores active_model.txt | Renamed `_detectKokoroModel()` to `_detectActiveModel()`, read active file first |
+| TTS shows downloaded models as "not downloaded" | Changed `isModelDownloaded()` to check for any `.onnx` file |
+| Wordlist download 404 errors | Fixed URLs: used underscores to match actual repo filenames |
+| MeloTTS (zh model) treats English words as OOV | Removed zh model, users should use VITS English models |
+
+## TTS Model Findings
+| Model Type | File Pattern | Detection |
+|------------|--------------|-----------|
+| Kokoro | `model.onnx` + `voices.bin` | Check for voices.bin |
+| VITS/Piper | `en_GB-alba-medium.onnx` (varied names) | Check for any `.onnx` file |
+
+## Wordlist Repository Findings
+- GitHub repo: `lratusa/wordmaster-wordlists`
+- English files: Use mix of hyphens and underscores (inconsistent)
+- Japanese files: All use underscores
+- Missing: GRE, IELTS, GMAT (no source data available)
+
+## Kanji Quiz Mode Findings
+
+### Kanji JSON Structure
+```json
+{
+  "word": "雨",
+  "translation_cn": "雨",
+  "onyomi": "ウ",
+  "kunyomi": "あめ",
+  "examples": [
+    {"word": "大雨", "reading": "おおあめ", "translation_cn": "大雨"}
+  ]
+}
+```
+
+### Quiz Mode Detection
+- `WordList.isKanjiList` checks if name contains "漢字", "汉字", or "Kanji"
+- `Word.isKanji` checks if onyomi or kunyomi is not null
+
+### Distractor Quality
+- Reading distractors sorted by length similarity to correct answer
+- Chinese character filter prevents English text in options:
+  ```dart
+  bool _containsChinese(String text) {
+    return text.runes.any((rune) =>
+        (rune >= 0x4E00 && rune <= 0x9FFF) || // CJK Unified
+        (rune >= 0x3400 && rune <= 0x4DBF) || // CJK Extension A
+        (rune >= 0xF900 && rune <= 0xFAFF));  // CJK Compatibility
+  }
+  ```
+
+### Fallback Logic
+- Kanji selection mode → Reading test (if no examples)
+- Reading test → Use other readings from same kanji (if no distractors)
+- No readings at all → Auto-advance with pass

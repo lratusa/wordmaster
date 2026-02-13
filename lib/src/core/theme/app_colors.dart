@@ -33,7 +33,7 @@ class AppColors {
   static const Color surfaceLight = Colors.white;
   static const Color surfaceDark = Color(0xFF16213E);
   static const Color textPrimary = Color(0xFF2C3E50);
-  static const Color textSecondary = Color(0xFF7F8C8D);
+  static const Color textSecondary = Color(0xFF566573);
 
   // Streak / checkin
   static const Color streakFire = Color(0xFFFF6B35);

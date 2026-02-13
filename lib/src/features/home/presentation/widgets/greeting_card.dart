@@ -165,14 +165,18 @@ class GreetingCard extends ConsumerWidget {
                 Icon(
                   Icons.lightbulb_outline,
                   size: 18,
-                  color: AppColors.accent,
+                  color: isDark
+                      ? Colors.amber.shade300
+                      : AppColors.primaryDark,
                 ),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     encouragement,
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: AppColors.accent,
+                          color: isDark
+                              ? Colors.white.withValues(alpha: 0.85)
+                              : AppColors.primaryDark,
                           fontWeight: FontWeight.w500,
                         ),
                   ),

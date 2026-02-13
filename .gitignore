@@ -49,4 +49,12 @@ app.*.map.json
 
 # Word list generator
 scripts/wordlist_generator/.env
-scripts/wordlist_generator/*_progress.jsonl
+scripts/wordlist_generator/**/*_progress.jsonl
+scripts/wordlist_generator/checkpoints/
+scripts/wordlist_generator/data/
+
+# Temp / dev-only files
+nul
+test_flutter_tts.dart
+test_kokoro_tts.dart
+wordlist_repo/

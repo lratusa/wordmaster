@@ -5,6 +5,16 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'download_mirror.dart';
+
+/// TTS model type
+enum TtsModelType {
+  /// VITS/Piper models
+  vits,
+  /// Kokoro multi-language model (supports Japanese)
+  kokoro,
+}
+
 /// TTS model information
 class TtsModel {
   final String id;
@@ -12,6 +22,9 @@ class TtsModel {
   final String language;
   final String url;
   final int sizeBytes;
+  final TtsModelType modelType;
+  /// Supported languages for this model
+  final List<String> supportedLanguages;
 
   const TtsModel({
     required this.id,
@@ -19,6 +32,8 @@ class TtsModel {
     required this.language,
     required this.url,
     required this.sizeBytes,
+    this.modelType = TtsModelType.vits,
+    this.supportedLanguages = const ['en'],
   });
 
   String get sizeDisplay {
@@ -27,6 +42,8 @@ class TtsModel {
     }
     return '${(sizeBytes / (1024 * 1024)).toStringAsFixed(1)} MB';
   }
+
+  bool get supportsJapanese => supportedLanguages.contains('ja');
 }
 
 /// Download progress callback
@@ -34,41 +51,35 @@ typedef DownloadProgressCallback = void Function(int received, int total);
 
 /// TTS Model Downloader - handles downloading and extracting TTS models
 class TtsModelDownloader {
-  static const String _baseUrl =
-      'https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models';
-
-  /// Available TTS models
+  /// Available TTS models.
+  /// The [url] field stores the filename only; the base URL is resolved
+  /// at download time via [DownloadMirror] based on the user's region setting.
   /// See: https://k2-fsa.github.io/sherpa/onnx/tts/pretrained_models/index.html
   static const List<TtsModel> availableModels = [
-    TtsModel(
-      id: 'en-us-amy',
-      name: 'English (US) - Amy',
-      language: 'en',
-      url: '$_baseUrl/vits-piper-en_US-amy-medium.tar.bz2',
-      sizeBytes: 65 * 1024 * 1024, // ~65 MB
-    ),
+    // VITS/Piper models (English only)
     TtsModel(
       id: 'en-us-lessac',
       name: 'English (US) - Lessac',
       language: 'en',
-      url: '$_baseUrl/vits-piper-en_US-lessac-medium.tar.bz2',
+      url: 'vits-piper-en_US-lessac-medium.tar.bz2',
       sizeBytes: 65 * 1024 * 1024, // ~65 MB
+      supportedLanguages: ['en'],
     ),
     TtsModel(
       id: 'en-gb-alba',
       name: 'English (UK) - Alba',
       language: 'en',
-      url: '$_baseUrl/vits-piper-en_GB-alba-medium.tar.bz2',
+      url: 'vits-piper-en_GB-alba-medium.tar.bz2',
       sizeBytes: 55 * 1024 * 1024, // ~55 MB
-    ),
-    TtsModel(
-      id: 'zh',
-      name: 'Chinese + English',
-      language: 'zh',
-      url: '$_baseUrl/vits-melo-tts-zh_en.tar.bz2',
-      sizeBytes: 150 * 1024 * 1024, // ~150 MB
+      supportedLanguages: ['en'],
     ),
   ];
+
+  /// Resolve the full download URL for a model.
+  static String resolveUrl(TtsModel model, DownloadRegion region) {
+    final base = DownloadMirror.ttsBaseUrl(region);
+    return '$base/${model.url}';
+  }
 
   final Dio _dio = Dio();
 
@@ -85,9 +96,13 @@ class TtsModelDownloader {
       final modelDir = Directory('$modelsDir/$modelId');
       if (!modelDir.existsSync()) return false;
 
-      // Check for the model.onnx file
-      final modelFile = File('$modelsDir/$modelId/model.onnx');
-      return modelFile.existsSync();
+      // Check for any .onnx file (VITS models have names like en_GB-alba-medium.onnx)
+      await for (final entity in modelDir.list()) {
+        if (entity is File && entity.path.endsWith('.onnx')) {
+          return true;
+        }
+      }
+      return false;
     } catch (e) {
       return false;
     }
@@ -108,71 +123,39 @@ class TtsModelDownloader {
   }
 
   /// Set the active model
+  /// Note: TtsService now loads models directly from subdirectories,
+  /// so we no longer copy files to the root directory.
   Future<void> setActiveModel(String modelId) async {
     try {
       final modelsDir = await getModelsDirectory();
       await Directory(modelsDir).create(recursive: true);
       final activeFile = File('$modelsDir/active_model.txt');
       await activeFile.writeAsString(modelId);
-
-      // Copy model files to root for TtsService to find
-      await _activateModel(modelId);
+      debugPrint('TTS: Set active model to: $modelId');
     } catch (e) {
       debugPrint('Failed to set active model: $e');
     }
   }
 
-  /// Copy model files to the root models directory
-  Future<void> _activateModel(String modelId) async {
-    final modelsDir = await getModelsDirectory();
-    final modelDir = Directory('$modelsDir/$modelId');
-
-    if (!modelDir.existsSync()) return;
-
-    // Copy all files from model directory to root
-    await for (final entity in modelDir.list()) {
-      if (entity is File) {
-        final fileName = entity.path.split(Platform.pathSeparator).last;
-        final destFile = File('$modelsDir/$fileName');
-        await entity.copy(destFile.path);
-      } else if (entity is Directory) {
-        final dirName = entity.path.split(Platform.pathSeparator).last;
-        await _copyDirectory(entity, Directory('$modelsDir/$dirName'));
-      }
-    }
-  }
-
-  /// Copy a directory recursively
-  Future<void> _copyDirectory(Directory source, Directory destination) async {
-    await destination.create(recursive: true);
-    await for (final entity in source.list()) {
-      if (entity is File) {
-        final fileName = entity.path.split(Platform.pathSeparator).last;
-        await entity.copy('${destination.path}/$fileName');
-      } else if (entity is Directory) {
-        final dirName = entity.path.split(Platform.pathSeparator).last;
-        await _copyDirectory(
-            entity, Directory('${destination.path}/$dirName'));
-      }
-    }
-  }
-
-  /// Download and extract a TTS model
+  /// Download and extract a TTS model.
+  /// [region] determines which mirror to use for the download URL.
   Future<void> downloadModel(
     TtsModel model, {
     DownloadProgressCallback? onProgress,
     VoidCallback? onExtracting,
+    DownloadRegion region = DownloadRegion.international,
   }) async {
     final modelsDir = await getModelsDirectory();
     await Directory(modelsDir).create(recursive: true);
 
     final archivePath = '$modelsDir/${model.id}.tar.bz2';
+    final downloadUrl = resolveUrl(model, region);
 
     try {
       // Download the archive
-      debugPrint('TTS: Downloading ${model.name}...');
+      debugPrint('TTS: Downloading ${model.name} from $downloadUrl');
       await _dio.download(
-        model.url,
+        downloadUrl,
         archivePath,
         onReceiveProgress: onProgress,
       );

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/constants/app_constants.dart';
+import '../../../core/services/download_mirror.dart';
 import '../data/repositories/settings_repository.dart';
 
 /// App settings state.
@@ -20,6 +21,10 @@ class AppSettings {
   final int avatarIndex;
   final String studyMotivation;
 
+  // Download source (independent settings)
+  final DownloadRegion wordlistDownloadRegion;
+  final DownloadRegion ttsDownloadRegion;
+
   const AppSettings({
     this.aiBackend = 'manual',
     this.apiKey = '',
@@ -32,6 +37,8 @@ class AppSettings {
     this.nickname = '',
     this.avatarIndex = 0,
     this.studyMotivation = '',
+    this.wordlistDownloadRegion = DownloadRegion.international,
+    this.ttsDownloadRegion = DownloadRegion.international,
   });
 
   AppSettings copyWith({
@@ -46,6 +53,8 @@ class AppSettings {
     String? nickname,
     int? avatarIndex,
     String? studyMotivation,
+    DownloadRegion? wordlistDownloadRegion,
+    DownloadRegion? ttsDownloadRegion,
   }) {
     return AppSettings(
       aiBackend: aiBackend ?? this.aiBackend,
@@ -59,6 +68,8 @@ class AppSettings {
       nickname: nickname ?? this.nickname,
       avatarIndex: avatarIndex ?? this.avatarIndex,
       studyMotivation: studyMotivation ?? this.studyMotivation,
+      wordlistDownloadRegion: wordlistDownloadRegion ?? this.wordlistDownloadRegion,
+      ttsDownloadRegion: ttsDownloadRegion ?? this.ttsDownloadRegion,
     );
   }
 }
@@ -89,6 +100,8 @@ class SettingsNotifier extends Notifier<AppSettings> {
       nickname: all[SettingKeys.nickname] ?? '',
       avatarIndex: int.tryParse(all[SettingKeys.avatarIndex] ?? '') ?? 0,
       studyMotivation: all[SettingKeys.studyMotivation] ?? '',
+      wordlistDownloadRegion: DownloadMirror.parseRegion(all[SettingKeys.wordlistDownloadRegion]),
+      ttsDownloadRegion: DownloadMirror.parseRegion(all[SettingKeys.ttsDownloadRegion]),
     );
   }
 
@@ -167,6 +180,16 @@ class SettingsNotifier extends Notifier<AppSettings> {
   Future<void> setStudyMotivation(String motivation) async {
     await _repo.set(SettingKeys.studyMotivation, motivation);
     state = state.copyWith(studyMotivation: motivation);
+  }
+
+  Future<void> setWordlistDownloadRegion(DownloadRegion region) async {
+    await _repo.set(SettingKeys.wordlistDownloadRegion, DownloadMirror.regionToString(region));
+    state = state.copyWith(wordlistDownloadRegion: region);
+  }
+
+  Future<void> setTtsDownloadRegion(DownloadRegion region) async {
+    await _repo.set(SettingKeys.ttsDownloadRegion, DownloadMirror.regionToString(region));
+    state = state.copyWith(ttsDownloadRegion: region);
   }
 }
 

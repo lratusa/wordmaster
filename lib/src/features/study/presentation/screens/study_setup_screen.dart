@@ -22,6 +22,7 @@ class _StudySetupScreenState extends ConsumerState<StudySetupScreen> {
   int _reviewLimit = AppConstants.defaultReviewLimitPerDay;
   StudyMode _studyMode = StudyMode.mixed;
   StudyOrder _studyOrder = StudyOrder.random;
+  QuizFormat _quizFormat = QuizFormat.flashcard;
 
   @override
   Widget build(BuildContext context) {
@@ -92,6 +93,18 @@ class _StudySetupScreenState extends ConsumerState<StudySetupScreen> {
                     },
                   ),
                 ),
+
+                const SizedBox(height: 24),
+
+                // Quiz format selector
+                Text(
+                  '答题形式',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                _buildQuizFormatSelector(wordLists),
 
                 const SizedBox(height: 24),
 
@@ -251,10 +264,94 @@ class _StudySetupScreenState extends ConsumerState<StudySetupScreen> {
             ? const Icon(Icons.check_circle, color: AppColors.primary)
             : null,
         onTap: () {
-          setState(() => _selectedWordListId = wordList.id);
+          setState(() {
+            _selectedWordListId = wordList.id;
+            // Reset quiz format to flashcard when changing word list
+            // This ensures user sees appropriate options for the new list
+            _quizFormat = QuizFormat.flashcard;
+          });
         },
       ),
     );
+  }
+
+  /// Build quiz format selector based on selected word list type
+  Widget _buildQuizFormatSelector(List<WordList> wordLists) {
+    final selectedList = wordLists.where((wl) => wl.id == _selectedWordListId).firstOrNull;
+    final isKanjiList = selectedList?.isKanjiList ?? false;
+
+    if (isKanjiList) {
+      // Kanji list - show kanji-specific options
+      return Column(
+        children: [
+          SizedBox(
+            width: double.infinity,
+            child: SegmentedButton<QuizFormat>(
+              segments: const [
+                ButtonSegment<QuizFormat>(
+                  value: QuizFormat.flashcard,
+                  label: Text('卡片'),
+                  icon: Icon(Icons.style),
+                ),
+                ButtonSegment<QuizFormat>(
+                  value: QuizFormat.kanjiReading,
+                  label: Text('读音'),
+                  icon: Icon(Icons.record_voice_over),
+                ),
+                ButtonSegment<QuizFormat>(
+                  value: QuizFormat.kanjiSelection,
+                  label: Text('汉字'),
+                  icon: Icon(Icons.translate),
+                ),
+              ],
+              selected: {_quizFormat},
+              onSelectionChanged: (selected) {
+                setState(() => _quizFormat = selected.first);
+              },
+            ),
+          ),
+          if (_quizFormat == QuizFormat.kanjiReading)
+            const Padding(
+              padding: EdgeInsets.only(top: 8),
+              child: Text(
+                '显示汉字，选择正确的读音',
+                style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              ),
+            ),
+          if (_quizFormat == QuizFormat.kanjiSelection)
+            const Padding(
+              padding: EdgeInsets.only(top: 8),
+              child: Text(
+                '显示例词中汉字的读音，选择正确的汉字',
+                style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+              ),
+            ),
+        ],
+      );
+    } else {
+      // Vocabulary list - show standard options
+      return SizedBox(
+        width: double.infinity,
+        child: SegmentedButton<QuizFormat>(
+          segments: const [
+            ButtonSegment<QuizFormat>(
+              value: QuizFormat.flashcard,
+              label: Text('经典卡片'),
+              icon: Icon(Icons.style),
+            ),
+            ButtonSegment<QuizFormat>(
+              value: QuizFormat.quiz,
+              label: Text('选择题'),
+              icon: Icon(Icons.quiz),
+            ),
+          ],
+          selected: {_quizFormat},
+          onSelectionChanged: (selected) {
+            setState(() => _quizFormat = selected.first);
+          },
+        ),
+      );
+    }
   }
 
   void _startStudy() {
@@ -266,9 +363,25 @@ class _StudySetupScreenState extends ConsumerState<StudySetupScreen> {
       reviewLimit: _reviewLimit,
       studyMode: _studyMode,
       studyOrder: _studyOrder,
+      quizFormat: _quizFormat,
     );
 
     ref.read(studySessionProvider.notifier).startSession(settings);
-    context.go('/study/session');
+
+    // Navigate based on quiz format
+    switch (_quizFormat) {
+      case QuizFormat.flashcard:
+        context.go('/study/session');
+        break;
+      case QuizFormat.quiz:
+        context.go('/study/quiz');
+        break;
+      case QuizFormat.kanjiReading:
+        context.go('/study/kanji-reading');
+        break;
+      case QuizFormat.kanjiSelection:
+        context.go('/study/kanji-selection');
+        break;
+    }
   }
 }

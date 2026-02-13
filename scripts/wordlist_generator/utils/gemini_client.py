@@ -346,3 +346,121 @@ Requirements:
 - Chinese translations of examples should be natural and accurate
 - Each word MUST have exactly 2 examples
 - Return ONLY the JSON array, no other text'''
+
+    def generate_kanji_data(
+        self,
+        kanji_list: list[dict],
+        jlpt_level: str,
+        max_retries: int = 3,
+        retry_delay: float = 5.0
+    ) -> list[dict]:
+        """
+        Generate readings and example words for Japanese kanji.
+
+        Args:
+            kanji_list: List of kanji dictionaries with keys: kanji, description
+            jlpt_level: JLPT level (N5, N4, N3, N2, N1)
+            max_retries: Maximum retry attempts on failure
+            retry_delay: Delay between retries in seconds
+
+        Returns:
+            List of kanji data dictionaries with structure:
+            {
+                "kanji": str,
+                "translation_cn": str,
+                "onyomi": str,  # 音読み in katakana
+                "kunyomi": str,  # 訓読み in hiragana
+                "examples": [
+                    {"word": str, "reading": str, "translation_cn": str},
+                    {"word": str, "reading": str, "translation_cn": str}
+                ]
+            }
+        """
+        prompt = self._build_kanji_prompt(kanji_list, jlpt_level)
+
+        for attempt in range(max_retries):
+            try:
+                self._rate_limit()
+
+                response = self.model.generate_content(
+                    prompt,
+                    generation_config=genai.GenerationConfig(
+                        response_mime_type="application/json",
+                        temperature=0.3,
+                    )
+                )
+
+                result = repair_json(response.text)
+
+                if not isinstance(result, list):
+                    raise ValueError("Response is not a list")
+
+                result_kanji = {item.get('kanji', '') for item in result}
+                input_kanji = {k['kanji'] for k in kanji_list}
+                missing = input_kanji - result_kanji
+
+                if missing:
+                    print(f"Warning: Missing kanji in response: {missing}")
+
+                return result
+
+            except Exception as e:
+                print(f"Attempt {attempt + 1}/{max_retries} failed: {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(retry_delay * (attempt + 1))
+                else:
+                    raise
+
+        return []
+
+    def _build_kanji_prompt(self, kanji_list: list[dict], jlpt_level: str) -> str:
+        """Build the prompt for kanji data generation."""
+        kanji_info = []
+        for k in kanji_list:
+            kanji_info.append(f"- {k['kanji']}: {k.get('description', '')}")
+        kanji_str = '\n'.join(kanji_info)
+
+        # Adjust complexity based on JLPT level
+        level_guidance = {
+            'N5': 'very common, basic vocabulary words',
+            'N4': 'common, elementary vocabulary words',
+            'N3': 'intermediate vocabulary words',
+            'N2': 'upper-intermediate vocabulary words',
+            'N1': 'advanced vocabulary words',
+        }
+
+        complexity = level_guidance.get(jlpt_level, 'vocabulary words appropriate for the level')
+
+        return f'''For each Japanese kanji below, provide readings and example words.
+
+Kanji to process (JLPT {jlpt_level}):
+{kanji_str}
+
+For each kanji, provide:
+1. translation_cn: Chinese meaning (concise)
+2. onyomi: 音読み in katakana (e.g., ジン, ニン)
+3. kunyomi: 訓読み in hiragana (e.g., ひと)
+4. Two example words using this kanji - use {complexity}
+
+Return a JSON array with this exact structure:
+[
+  {{
+    "kanji": "人",
+    "translation_cn": "人",
+    "onyomi": "ジン、ニン",
+    "kunyomi": "ひと",
+    "examples": [
+      {{"word": "人間", "reading": "にんげん", "translation_cn": "人类；人"}},
+      {{"word": "日本人", "reading": "にほんじん", "translation_cn": "日本人"}}
+    ]
+  }}
+]
+
+Requirements:
+- Chinese translations should be concise
+- Multiple readings should be separated by 、
+- If no onyomi or kunyomi exists, use empty string ""
+- Example words should be common vocabulary containing this kanji
+- Reading should be in hiragana
+- Each kanji MUST have exactly 2 example words
+- Return ONLY the JSON array, no other text'''

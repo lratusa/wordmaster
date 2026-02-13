@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../../core/services/download_mirror.dart';
 import '../../../../core/services/tts_model_downloader.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../study/application/study_session_notifier.dart';
@@ -194,6 +195,57 @@ class SettingsScreen extends ConsumerWidget {
               trailing: const Icon(Icons.chevron_right),
               onTap: () => _showThemeModeDialog(context, notifier, settings.themeMode),
             ),
+          ]),
+
+          // Download Source
+          _buildSection(context, '下载源', [
+            ListTile(
+              leading: const Icon(Icons.cloud_download),
+              title: const Text('词书下载源'),
+              subtitle: Text(settings.wordlistDownloadRegion == DownloadRegion.china
+                  ? '国内镜像'
+                  : '国际 (GitHub)'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _showRegionDialog(
+                context,
+                title: '词书下载源',
+                current: settings.wordlistDownloadRegion,
+                onSelect: notifier.setWordlistDownloadRegion,
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.record_voice_over),
+              title: const Text('语音包下载源'),
+              subtitle: Text(settings.ttsDownloadRegion == DownloadRegion.china
+                  ? '国内镜像'
+                  : '国际 (GitHub)'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _showRegionDialog(
+                context,
+                title: '语音包下载源',
+                current: settings.ttsDownloadRegion,
+                onSelect: notifier.setTtsDownloadRegion,
+              ),
+            ),
+            if (settings.wordlistDownloadRegion == DownloadRegion.china ||
+                settings.ttsDownloadRegion == DownloadRegion.china)
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                child: Text(
+                  '提示：中国大陆用户建议选择"国内镜像"以获得更快的下载速度。',
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+              ),
+            if (settings.aiBackend == 'openai' &&
+                (settings.wordlistDownloadRegion == DownloadRegion.china ||
+                    settings.ttsDownloadRegion == DownloadRegion.china))
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                child: Text(
+                  '注意：OpenAI 在中国大陆无法访问，建议将 AI 服务切换为 DeepSeek 或 Ollama。',
+                  style: TextStyle(fontSize: 12, color: AppColors.warning),
+                ),
+              ),
           ]),
 
           // Data Management
@@ -577,6 +629,46 @@ class SettingsScreen extends ConsumerWidget {
     );
   }
 
+  void _showRegionDialog(
+    BuildContext context, {
+    required String title,
+    required DownloadRegion current,
+    required Future<void> Function(DownloadRegion) onSelect,
+  }) {
+    showDialog(
+      context: context,
+      builder: (ctx) => SimpleDialog(
+        title: Text(title),
+        children: [
+          RadioListTile<DownloadRegion>(
+            value: DownloadRegion.international,
+            groupValue: current,
+            title: const Text('国际 (GitHub)'),
+            subtitle: const Text('适合海外用户', style: TextStyle(fontSize: 12)),
+            onChanged: (v) {
+              if (v != null) {
+                onSelect(v);
+                Navigator.of(ctx).pop();
+              }
+            },
+          ),
+          RadioListTile<DownloadRegion>(
+            value: DownloadRegion.china,
+            groupValue: current,
+            title: const Text('国内镜像'),
+            subtitle: const Text('适合中国大陆用户，下载更快更稳定', style: TextStyle(fontSize: 12)),
+            onChanged: (v) {
+              if (v != null) {
+                onSelect(v);
+                Navigator.of(ctx).pop();
+              }
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
   void _showTextInputDialog(
     BuildContext context, {
     required String title,
@@ -656,6 +748,7 @@ class _TtsModelScreenState extends ConsumerState<TtsModelScreen> {
     });
 
     try {
+      final ttsRegion = ref.read(settingsProvider).ttsDownloadRegion;
       await _downloader.downloadModel(
         model,
         onProgress: (received, total) {
@@ -668,6 +761,7 @@ class _TtsModelScreenState extends ConsumerState<TtsModelScreen> {
             _isExtracting[model.id] = true;
           });
         },
+        region: ttsRegion,
       );
 
       setState(() {
@@ -918,9 +1012,24 @@ class _TtsModelScreenState extends ConsumerState<TtsModelScreen> {
                       ),
                       title: Row(
                         children: [
-                          Text(model.name),
+                          Expanded(child: Text(model.name)),
+                          if (model.supportsJapanese) ...[
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 6, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              child: const Text(
+                                '日语',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 10),
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                          ],
                           if (isActive) ...[
-                            const SizedBox(width: 8),
                             Container(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 6, vertical: 2),

@@ -1,0 +1,3868 @@
+{
+  "name": "小学5年生 漢字",
+  "language": "ja",
+  "description": "小学校5年级汉字 (193字)",
+  "icon_name": "school",
+  "words": [
+    {
+      "word": "圧",
+      "translation_cn": "压",
+      "onyomi": "アツ",
+      "kunyomi": "お.す、お.さえる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "圧力",
+          "reading": "あつりょく",
+          "translation_cn": "压力"
+        },
+        {
+          "word": "圧倒",
+          "reading": "あっとう",
+          "translation_cn": "压倒"
+        }
+      ]
+    },
+    {
+      "word": "囲",
+      "translation_cn": "围",
+      "onyomi": "イ",
+      "kunyomi": "かこ.む、かこ.う",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "範囲",
+          "reading": "はんい",
+          "translation_cn": "范围"
+        },
+        {
+          "word": "周囲",
+          "reading": "しゅうい",
+          "translation_cn": "周围"
+        }
+      ]
+    },
+    {
+      "word": "移",
+      "translation_cn": "移",
+      "onyomi": "イ",
+      "kunyomi": "うつ.る、うつ.す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "移動",
+          "reading": "いどう",
+          "translation_cn": "移动"
+        },
+        {
+          "word": "移転",
+          "reading": "いてん",
+          "translation_cn": "迁移"
+        }
+      ]
+    },
+    {
+      "word": "因",
+      "translation_cn": "因",
+      "onyomi": "イン",
+      "kunyomi": "よ.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "原因",
+          "reading": "げんいん",
+          "translation_cn": "原因"
+        },
+        {
+          "word": "要因",
+          "reading": "よういん",
+          "translation_cn": "要素"
+        }
+      ]
+    },
+    {
+      "word": "永",
+      "translation_cn": "永",
+      "onyomi": "エイ",
+      "kunyomi": "なが.い",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "永久",
+          "reading": "えいきゅう",
+          "translation_cn": "永久"
+        },
+        {
+          "word": "永住",
+          "reading": "えいじゅう",
+          "translation_cn": "永住"
+        }
+      ]
+    },
+    {
+      "word": "営",
+      "translation_cn": "营",
+      "onyomi": "エイ",
+      "kunyomi": "いとな.む",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "営業",
+          "reading": "えいぎょう",
+          "translation_cn": "营业"
+        },
+        {
+          "word": "経営",
+          "reading": "けいえい",
+          "translation_cn": "经营"
+        }
+      ]
+    },
+    {
+      "word": "衛",
+      "translation_cn": "卫",
+      "onyomi": "エイ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "衛生",
+          "reading": "えいせい",
+          "translation_cn": "卫生"
+        },
+        {
+          "word": "警衛",
+          "reading": "けいえい",
+          "translation_cn": "警卫"
+        }
+      ]
+    },
+    {
+      "word": "易",
+      "translation_cn": "易",
+      "onyomi": "イ、エキ",
+      "kunyomi": "やさ.しい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "容易",
+          "reading": "ようい",
+          "translation_cn": "容易"
+        },
+        {
+          "word": "貿易",
+          "reading": "ぼうえき",
+          "translation_cn": "贸易"
+        }
+      ]
+    },
+    {
+      "word": "益",
+      "translation_cn": "益",
+      "onyomi": "エキ、ヤク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "利益",
+          "reading": "りえき",
+          "translation_cn": "利益"
+        },
+        {
+          "word": "有益",
+          "reading": "ゆうえき",
+          "translation_cn": "有益"
+        }
+      ]
+    },
+    {
+      "word": "液",
+      "translation_cn": "液",
+      "onyomi": "エキ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "液体",
+          "reading": "えきたい",
+          "translation_cn": "液体"
+        },
+        {
+          "word": "血液",
+          "reading": "けつえき",
+          "translation_cn": "血液"
+        }
+      ]
+    },
+    {
+      "word": "演",
+      "translation_cn": "表演",
+      "onyomi": "エン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "演技",
+          "reading": "えんぎ",
+          "translation_cn": "演技"
+        },
+        {
+          "word": "講演",
+          "reading": "こうえん",
+          "translation_cn": "演讲"
+        }
+      ]
+    },
+    {
+      "word": "応",
+      "translation_cn": "应",
+      "onyomi": "オウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "応用",
+          "reading": "おうよう",
+          "translation_cn": "应用"
+        },
+        {
+          "word": "反応",
+          "reading": "はんのう",
+          "translation_cn": "反应"
+        }
+      ]
+    },
+    {
+      "word": "往",
+      "translation_cn": "往",
+      "onyomi": "オウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "往復",
+          "reading": "おうふく",
+          "translation_cn": "往返"
+        },
+        {
+          "word": "往年",
+          "reading": "おうねん",
+          "translation_cn": "往年"
+        }
+      ]
+    },
+    {
+      "word": "桜",
+      "translation_cn": "樱",
+      "onyomi": "オウ",
+      "kunyomi": "さくら",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "桜並木",
+          "reading": "さくらなみき",
+          "translation_cn": "樱花树行"
+        },
+        {
+          "word": "桜色",
+          "reading": "さくらいろ",
+          "translation_cn": "樱花色"
+        }
+      ]
+    },
+    {
+      "word": "可",
+      "translation_cn": "可",
+      "onyomi": "カ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "可能",
+          "reading": "かのう",
+          "translation_cn": "可能"
+        },
+        {
+          "word": "許可",
+          "reading": "きょか",
+          "translation_cn": "许可"
+        }
+      ]
+    },
+    {
+      "word": "仮",
+      "translation_cn": "假",
+      "onyomi": "カ、ケ",
+      "kunyomi": "かり",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "仮名",
+          "reading": "かな",
+          "translation_cn": "假名"
+        },
+        {
+          "word": "仮定",
+          "reading": "かてい",
+          "translation_cn": "假定"
+        }
+      ]
+    },
+    {
+      "word": "価",
+      "translation_cn": "价值",
+      "onyomi": "カ",
+      "kunyomi": "あたい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "価格",
+          "reading": "かかく",
+          "translation_cn": "价格"
+        },
+        {
+          "word": "評価",
+          "reading": "ひょうか",
+          "translation_cn": "评价"
+        }
+      ]
+    },
+    {
+      "word": "河",
+      "translation_cn": "河",
+      "onyomi": "カ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "河川",
+          "reading": "かせん",
+          "translation_cn": "河流"
+        },
+        {
+          "word": "河口",
+          "reading": "かこう",
+          "translation_cn": "河口"
+        }
+      ]
+    },
+    {
+      "word": "過",
+      "translation_cn": "过",
+      "onyomi": "カ",
+      "kunyomi": "す.ぎる、-す.ぎ、-す.ぎる、す.ごす、あやま.つ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "過去",
+          "reading": "かこ",
+          "translation_cn": "过去"
+        },
+        {
+          "word": "通過",
+          "reading": "つうか",
+          "translation_cn": "通过"
+        }
+      ]
+    },
+    {
+      "word": "快",
+      "translation_cn": "快",
+      "onyomi": "カイ",
+      "kunyomi": "こころよ.い",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "快速",
+          "reading": "かいそく",
+          "translation_cn": "快速"
+        },
+        {
+          "word": "快晴",
+          "reading": "かいせい",
+          "translation_cn": "晴朗"
+        }
+      ]
+    },
+    {
+      "word": "解",
+      "translation_cn": "解",
+      "onyomi": "カイ、ゲ",
+      "kunyomi": "と.く、と.ける、わか.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "解決",
+          "reading": "かいけつ",
+          "translation_cn": "解决"
+        },
+        {
+          "word": "理解",
+          "reading": "りかい",
+          "translation_cn": "理解"
+        }
+      ]
+    },
+    {
+      "word": "格",
+      "translation_cn": "格",
+      "onyomi": "カク、コウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "合格",
+          "reading": "ごうかく",
+          "translation_cn": "合格"
+        },
+        {
+          "word": "性格",
+          "reading": "せいかく",
+          "translation_cn": "性格"
+        }
+      ]
+    },
+    {
+      "word": "確",
+      "translation_cn": "确",
+      "onyomi": "カク",
+      "kunyomi": "たし.か、たし.かめる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "確認",
+          "reading": "かくにん",
+          "translation_cn": "确认"
+        },
+        {
+          "word": "確実",
+          "reading": "かくじつ",
+          "translation_cn": "确实"
+        }
+      ]
+    },
+    {
+      "word": "額",
+      "translation_cn": "额",
+      "onyomi": "ガク",
+      "kunyomi": "ひたい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "金額",
+          "reading": "きんがく",
+          "translation_cn": "金额"
+        },
+        {
+          "word": "額縁",
+          "reading": "がくぶち",
+          "translation_cn": "画框"
+        }
+      ]
+    },
+    {
+      "word": "刊",
+      "translation_cn": "刊",
+      "onyomi": "カン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "創刊",
+          "reading": "そうかん",
+          "translation_cn": "创刊"
+        },
+        {
+          "word": "週刊",
+          "reading": "しゅうかん",
+          "translation_cn": "周刊"
+        }
+      ]
+    },
+    {
+      "word": "幹",
+      "translation_cn": "干",
+      "onyomi": "カン",
+      "kunyomi": "みき",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "幹部",
+          "reading": "かんぶ",
+          "translation_cn": "干部"
+        },
+        {
+          "word": "新幹線",
+          "reading": "しんかんせん",
+          "translation_cn": "新干线"
+        }
+      ]
+    },
+    {
+      "word": "慣",
+      "translation_cn": "惯",
+      "onyomi": "カン",
+      "kunyomi": "な.れる、な.らす",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "習慣",
+          "reading": "しゅうかん",
+          "translation_cn": "习惯"
+        },
+        {
+          "word": "慣用句",
+          "reading": "かんようく",
+          "translation_cn": "惯用语"
+        }
+      ]
+    },
+    {
+      "word": "眼",
+      "translation_cn": "眼",
+      "onyomi": "ガン",
+      "kunyomi": "まなこ、め",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "眼科",
+          "reading": "がんか",
+          "translation_cn": "眼科"
+        },
+        {
+          "word": "眼鏡",
+          "reading": "めがね",
+          "translation_cn": "眼镜"
+        }
+      ]
+    },
+    {
+      "word": "紀",
+      "translation_cn": "纪",
+      "onyomi": "キ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "世紀",
+          "reading": "せいき",
+          "translation_cn": "世纪"
+        },
+        {
+          "word": "紀元",
+          "reading": "きげん",
+          "translation_cn": "纪元"
+        }
+      ]
+    },
+    {
+      "word": "基",
+      "translation_cn": "基",
+      "onyomi": "キ",
+      "kunyomi": "もと、もとい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "基礎",
+          "reading": "きそ",
+          "translation_cn": "基础"
+        },
+        {
+          "word": "基地",
+          "reading": "きち",
+          "translation_cn": "基地"
+        }
+      ]
+    },
+    {
+      "word": "寄",
+      "translation_cn": "靠近",
+      "onyomi": "キ",
+      "kunyomi": "よ.る、よ.せる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "寄付",
+          "reading": "きふ",
+          "translation_cn": "捐赠"
+        },
+        {
+          "word": "立ち寄る",
+          "reading": "たちよる",
+          "translation_cn": "顺便拜访"
+        }
+      ]
+    },
+    {
+      "word": "規",
+      "translation_cn": "规则",
+      "onyomi": "キ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "規則",
+          "reading": "きそく",
+          "translation_cn": "规则"
+        },
+        {
+          "word": "規定",
+          "reading": "きてい",
+          "translation_cn": "规定"
+        }
+      ]
+    },
+    {
+      "word": "喜",
+      "translation_cn": "喜悦",
+      "onyomi": "キ",
+      "kunyomi": "よろこ.ぶ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "喜劇",
+          "reading": "きげき",
+          "translation_cn": "喜剧"
+        },
+        {
+          "word": "喜ぶ",
+          "reading": "よろこぶ",
+          "translation_cn": "高兴"
+        }
+      ]
+    },
+    {
+      "word": "技",
+      "translation_cn": "技术",
+      "onyomi": "ギ",
+      "kunyomi": "わざ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "技術",
+          "reading": "ぎじゅつ",
+          "translation_cn": "技术"
+        },
+        {
+          "word": "競技",
+          "reading": "きょうぎ",
+          "translation_cn": "竞技"
+        }
+      ]
+    },
+    {
+      "word": "義",
+      "translation_cn": "正义",
+      "onyomi": "ギ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "意義",
+          "reading": "いぎ",
+          "translation_cn": "意义"
+        },
+        {
+          "word": "義務",
+          "reading": "ぎむ",
+          "translation_cn": "义务"
+        }
+      ]
+    },
+    {
+      "word": "逆",
+      "translation_cn": "逆",
+      "onyomi": "ギャク、ゲキ",
+      "kunyomi": "さか.らう",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "逆転",
+          "reading": "ぎゃくてん",
+          "translation_cn": "逆转"
+        },
+        {
+          "word": "逆らう",
+          "reading": "さからう",
+          "translation_cn": "违背"
+        }
+      ]
+    },
+    {
+      "word": "久",
+      "translation_cn": "长久",
+      "onyomi": "キュウ",
+      "kunyomi": "ひさ.しい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "永久",
+          "reading": "えいきゅう",
+          "translation_cn": "永久"
+        },
+        {
+          "word": "久しぶり",
+          "reading": "ひさしぶり",
+          "translation_cn": "好久不见"
+        }
+      ]
+    },
+    {
+      "word": "旧",
+      "translation_cn": "旧",
+      "onyomi": "キュウ",
+      "kunyomi": "ふる.い",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "旧姓",
+          "reading": "きゅうせい",
+          "translation_cn": "旧姓"
+        },
+        {
+          "word": "旧市街",
+          "reading": "きゅうしがい",
+          "translation_cn": "老城区"
+        }
+      ]
+    },
+    {
+      "word": "救",
+      "translation_cn": "救",
+      "onyomi": "キュウ",
+      "kunyomi": "すく.う",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "救急",
+          "reading": "きゅうきゅう",
+          "translation_cn": "急救"
+        },
+        {
+          "word": "救助",
+          "reading": "きゅうじょ",
+          "translation_cn": "救助"
+        }
+      ]
+    },
+    {
+      "word": "居",
+      "translation_cn": "居住",
+      "onyomi": "キョ",
+      "kunyomi": "い.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "居酒屋",
+          "reading": "いざかや",
+          "translation_cn": "居酒屋"
+        },
+        {
+          "word": "住居",
+          "reading": "じゅうきょ",
+          "translation_cn": "住处"
+        }
+      ]
+    },
+    {
+      "word": "許",
+      "translation_cn": "允许",
+      "onyomi": "キョ",
+      "kunyomi": "ゆる.す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "許可",
+          "reading": "きょか",
+          "translation_cn": "许可"
+        },
+        {
+          "word": "免許",
+          "reading": "めんきょ",
+          "translation_cn": "执照"
+        }
+      ]
+    },
+    {
+      "word": "境",
+      "translation_cn": "境界",
+      "onyomi": "キョウ、ケイ",
+      "kunyomi": "さかい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "境界",
+          "reading": "きょうかい",
+          "translation_cn": "境界"
+        },
+        {
+          "word": "環境",
+          "reading": "かんきょう",
+          "translation_cn": "环境"
+        }
+      ]
+    },
+    {
+      "word": "均",
+      "translation_cn": "平均",
+      "onyomi": "キン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "平均",
+          "reading": "へいきん",
+          "translation_cn": "平均"
+        },
+        {
+          "word": "均一",
+          "reading": "きんいつ",
+          "translation_cn": "均匀"
+        }
+      ]
+    },
+    {
+      "word": "禁",
+      "translation_cn": "禁止",
+      "onyomi": "キン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "禁止",
+          "reading": "きんし",
+          "translation_cn": "禁止"
+        },
+        {
+          "word": "禁煙",
+          "reading": "きんえん",
+          "translation_cn": "禁烟"
+        }
+      ]
+    },
+    {
+      "word": "句",
+      "translation_cn": "句",
+      "onyomi": "ク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "文句",
+          "reading": "もんく",
+          "translation_cn": "不满"
+        },
+        {
+          "word": "句読点",
+          "reading": "くとうてん",
+          "translation_cn": "标点符号"
+        }
+      ]
+    },
+    {
+      "word": "型",
+      "translation_cn": "类型",
+      "onyomi": "ケイ",
+      "kunyomi": "かた",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "新型",
+          "reading": "しんがた",
+          "translation_cn": "新型"
+        },
+        {
+          "word": "型",
+          "reading": "かた",
+          "translation_cn": "类型"
+        }
+      ]
+    },
+    {
+      "word": "経",
+      "translation_cn": "经过",
+      "onyomi": "ケイ、キョウ",
+      "kunyomi": "へ.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "経済",
+          "reading": "けいざい",
+          "translation_cn": "经济"
+        },
+        {
+          "word": "経験",
+          "reading": "けいけん",
+          "translation_cn": "经验"
+        }
+      ]
+    },
+    {
+      "word": "潔",
+      "translation_cn": "纯洁",
+      "onyomi": "ケツ",
+      "kunyomi": "いさぎよ.い",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "清潔",
+          "reading": "せいけつ",
+          "translation_cn": "清洁"
+        },
+        {
+          "word": "潔い",
+          "reading": "いさぎよい",
+          "translation_cn": "干脆"
+        }
+      ]
+    },
+    {
+      "word": "件",
+      "translation_cn": "事件",
+      "onyomi": "ケン",
+      "kunyomi": "くだん",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "事件",
+          "reading": "じけん",
+          "translation_cn": "事件"
+        },
+        {
+          "word": "条件",
+          "reading": "じょうけん",
+          "translation_cn": "条件"
+        }
+      ]
+    },
+    {
+      "word": "険",
+      "translation_cn": "危险",
+      "onyomi": "ケン",
+      "kunyomi": "けわ.しい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "危険",
+          "reading": "きけん",
+          "translation_cn": "危险"
+        },
+        {
+          "word": "保険",
+          "reading": "ほけん",
+          "translation_cn": "保险"
+        }
+      ]
+    },
+    {
+      "word": "検",
+      "translation_cn": "检查",
+      "onyomi": "ケン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "検査",
+          "reading": "けんさ",
+          "translation_cn": "检查"
+        },
+        {
+          "word": "検討",
+          "reading": "けんとう",
+          "translation_cn": "讨论"
+        }
+      ]
+    },
+    {
+      "word": "限",
+      "translation_cn": "限制",
+      "onyomi": "ゲン",
+      "kunyomi": "かぎる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "制限",
+          "reading": "せいげん",
+          "translation_cn": "限制"
+        },
+        {
+          "word": "限界",
+          "reading": "げんかい",
+          "translation_cn": "界限"
+        }
+      ]
+    },
+    {
+      "word": "現",
+      "translation_cn": "现在",
+      "onyomi": "ゲン",
+      "kunyomi": "あらわ-れる、あらわ-す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "現在",
+          "reading": "げんざい",
+          "translation_cn": "现在"
+        },
+        {
+          "word": "表現",
+          "reading": "ひょうげん",
+          "translation_cn": "表达"
+        }
+      ]
+    },
+    {
+      "word": "減",
+      "translation_cn": "减少",
+      "onyomi": "ゲン",
+      "kunyomi": "へ-る、へ-らす",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "減少",
+          "reading": "げんしょう",
+          "translation_cn": "减少"
+        },
+        {
+          "word": "軽減",
+          "reading": "けいげん",
+          "translation_cn": "减轻"
+        }
+      ]
+    },
+    {
+      "word": "故",
+      "translation_cn": "事故",
+      "onyomi": "コ",
+      "kunyomi": "ゆえ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "事故",
+          "reading": "じこ",
+          "translation_cn": "事故"
+        },
+        {
+          "word": "故障",
+          "reading": "こしょう",
+          "translation_cn": "故障"
+        }
+      ]
+    },
+    {
+      "word": "個",
+      "translation_cn": "个",
+      "onyomi": "コ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "個人",
+          "reading": "こじん",
+          "translation_cn": "个人"
+        },
+        {
+          "word": "個数",
+          "reading": "こすう",
+          "translation_cn": "个数"
+        }
+      ]
+    },
+    {
+      "word": "護",
+      "translation_cn": "保护",
+      "onyomi": "ゴ",
+      "kunyomi": "まも-る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "保護",
+          "reading": "ほご",
+          "translation_cn": "保护"
+        },
+        {
+          "word": "看護",
+          "reading": "かんご",
+          "translation_cn": "看护"
+        }
+      ]
+    },
+    {
+      "word": "効",
+      "translation_cn": "效果",
+      "onyomi": "コウ",
+      "kunyomi": "き-く",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "効果",
+          "reading": "こうか",
+          "translation_cn": "效果"
+        },
+        {
+          "word": "有効",
+          "reading": "ゆうこう",
+          "translation_cn": "有效"
+        }
+      ]
+    },
+    {
+      "word": "厚",
+      "translation_cn": "厚",
+      "onyomi": "コウ",
+      "kunyomi": "あつ-い",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "厚生",
+          "reading": "こうせい",
+          "translation_cn": "厚生"
+        },
+        {
+          "word": "厚意",
+          "reading": "こうい",
+          "translation_cn": "厚意"
+        }
+      ]
+    },
+    {
+      "word": "耕",
+      "translation_cn": "耕",
+      "onyomi": "コウ",
+      "kunyomi": "たがや-す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "耕地",
+          "reading": "こうち",
+          "translation_cn": "耕地"
+        },
+        {
+          "word": "耕作",
+          "reading": "こうさく",
+          "translation_cn": "耕作"
+        }
+      ]
+    },
+    {
+      "word": "航",
+      "translation_cn": "航行",
+      "onyomi": "コウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "航空",
+          "reading": "こうくう",
+          "translation_cn": "航空"
+        },
+        {
+          "word": "航海",
+          "reading": "こうかい",
+          "translation_cn": "航海"
+        }
+      ]
+    },
+    {
+      "word": "鉱",
+      "translation_cn": "矿",
+      "onyomi": "コウ",
+      "kunyomi": "あらがね",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "鉱物",
+          "reading": "こうぶつ",
+          "translation_cn": "矿物"
+        },
+        {
+          "word": "鉱山",
+          "reading": "こうざん",
+          "translation_cn": "矿山"
+        }
+      ]
+    },
+    {
+      "word": "構",
+      "translation_cn": "结构",
+      "onyomi": "コウ",
+      "kunyomi": "かま.える、かま.う",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "構成",
+          "reading": "こうせい",
+          "translation_cn": "构成"
+        },
+        {
+          "word": "構内",
+          "reading": "こうない",
+          "translation_cn": "院内"
+        }
+      ]
+    },
+    {
+      "word": "興",
+      "translation_cn": "兴",
+      "onyomi": "キョウ、コウ",
+      "kunyomi": "おこ.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "興味",
+          "reading": "きょうみ",
+          "translation_cn": "兴趣"
+        },
+        {
+          "word": "復興",
+          "reading": "ふっこう",
+          "translation_cn": "复兴"
+        }
+      ]
+    },
+    {
+      "word": "講",
+      "translation_cn": "讲",
+      "onyomi": "コウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "講義",
+          "reading": "こうぎ",
+          "translation_cn": "讲义"
+        },
+        {
+          "word": "講演",
+          "reading": "こうえん",
+          "translation_cn": "演讲"
+        }
+      ]
+    },
+    {
+      "word": "告",
+      "translation_cn": "告",
+      "onyomi": "コク",
+      "kunyomi": "つ.げる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "報告",
+          "reading": "ほうこく",
+          "translation_cn": "报告"
+        },
+        {
+          "word": "広告",
+          "reading": "こうこく",
+          "translation_cn": "广告"
+        }
+      ]
+    },
+    {
+      "word": "混",
+      "translation_cn": "混",
+      "onyomi": "コン",
+      "kunyomi": "ま.じる、ま.ぜる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "混雑",
+          "reading": "こんざつ",
+          "translation_cn": "混杂"
+        },
+        {
+          "word": "混合",
+          "reading": "こんごう",
+          "translation_cn": "混合"
+        }
+      ]
+    },
+    {
+      "word": "査",
+      "translation_cn": "检查",
+      "onyomi": "サ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "調査",
+          "reading": "ちょうさ",
+          "translation_cn": "调查"
+        },
+        {
+          "word": "検査",
+          "reading": "けんさ",
+          "translation_cn": "检查"
+        }
+      ]
+    },
+    {
+      "word": "再",
+      "translation_cn": "再",
+      "onyomi": "サイ、サ",
+      "kunyomi": "ふたた.び",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "再開",
+          "reading": "さいかい",
+          "translation_cn": "再开"
+        },
+        {
+          "word": "再利用",
+          "reading": "さいりよう",
+          "translation_cn": "再利用"
+        }
+      ]
+    },
+    {
+      "word": "災",
+      "translation_cn": "灾",
+      "onyomi": "サイ",
+      "kunyomi": "わざわ.い",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "災害",
+          "reading": "さいがい",
+          "translation_cn": "灾害"
+        },
+        {
+          "word": "火災",
+          "reading": "かさい",
+          "translation_cn": "火灾"
+        }
+      ]
+    },
+    {
+      "word": "妻",
+      "translation_cn": "妻子",
+      "onyomi": "サイ",
+      "kunyomi": "つま",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "夫妻",
+          "reading": "ふさい",
+          "translation_cn": "夫妻"
+        },
+        {
+          "word": "妻",
+          "reading": "つま",
+          "translation_cn": "妻子"
+        }
+      ]
+    },
+    {
+      "word": "採",
+      "translation_cn": "采摘；采用",
+      "onyomi": "サイ",
+      "kunyomi": "とる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "採用",
+          "reading": "さいよう",
+          "translation_cn": "采用"
+        },
+        {
+          "word": "採点",
+          "reading": "さいてん",
+          "translation_cn": "评分"
+        }
+      ]
+    },
+    {
+      "word": "際",
+      "translation_cn": "时候；边",
+      "onyomi": "サイ",
+      "kunyomi": "きわ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "国際",
+          "reading": "こくさい",
+          "translation_cn": "国际"
+        },
+        {
+          "word": "実際",
+          "reading": "じっさい",
+          "translation_cn": "实际"
+        }
+      ]
+    },
+    {
+      "word": "在",
+      "translation_cn": "存在；在",
+      "onyomi": "ザイ",
+      "kunyomi": "ある",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "現在",
+          "reading": "げんざい",
+          "translation_cn": "现在"
+        },
+        {
+          "word": "存在",
+          "reading": "そんざい",
+          "translation_cn": "存在"
+        }
+      ]
+    },
+    {
+      "word": "財",
+      "translation_cn": "财产",
+      "onyomi": "ザイ、サイ",
+      "kunyomi": "たから",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "財産",
+          "reading": "ざいさん",
+          "translation_cn": "财产"
+        },
+        {
+          "word": "財政",
+          "reading": "ざいせい",
+          "translation_cn": "财政"
+        }
+      ]
+    },
+    {
+      "word": "罪",
+      "translation_cn": "罪",
+      "onyomi": "ザイ",
+      "kunyomi": "つみ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "犯罪",
+          "reading": "はんざい",
+          "translation_cn": "犯罪"
+        },
+        {
+          "word": "罪",
+          "reading": "つみ",
+          "translation_cn": "罪"
+        }
+      ]
+    },
+    {
+      "word": "殺",
+      "translation_cn": "杀",
+      "onyomi": "サツ、サイ、セツ",
+      "kunyomi": "ころす",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "殺人",
+          "reading": "さつじん",
+          "translation_cn": "杀人"
+        },
+        {
+          "word": "殺す",
+          "reading": "ころす",
+          "translation_cn": "杀"
+        }
+      ]
+    },
+    {
+      "word": "雑",
+      "translation_cn": "杂",
+      "onyomi": "ザツ、ゾウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "雑誌",
+          "reading": "ざっし",
+          "translation_cn": "杂志"
+        },
+        {
+          "word": "複雑",
+          "reading": "ふくざつ",
+          "translation_cn": "复杂"
+        }
+      ]
+    },
+    {
+      "word": "酸",
+      "translation_cn": "酸",
+      "onyomi": "サン",
+      "kunyomi": "すい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "酸性",
+          "reading": "さんせい",
+          "translation_cn": "酸性"
+        },
+        {
+          "word": "酸素",
+          "reading": "さんそ",
+          "translation_cn": "氧气"
+        }
+      ]
+    },
+    {
+      "word": "賛",
+      "translation_cn": "赞同",
+      "onyomi": "サン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "賛成",
+          "reading": "さんせい",
+          "translation_cn": "赞成"
+        },
+        {
+          "word": "賛同",
+          "reading": "さんどう",
+          "translation_cn": "赞同"
+        }
+      ]
+    },
+    {
+      "word": "士",
+      "translation_cn": "武士",
+      "onyomi": "シ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "弁護士",
+          "reading": "べんごし",
+          "translation_cn": "律师"
+        },
+        {
+          "word": "力士",
+          "reading": "りきし",
+          "translation_cn": "相扑力士"
+        }
+      ]
+    },
+    {
+      "word": "支",
+      "translation_cn": "支持",
+      "onyomi": "シ",
+      "kunyomi": "ささ.える",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "支店",
+          "reading": "してん",
+          "translation_cn": "分店"
+        },
+        {
+          "word": "支持",
+          "reading": "しじ",
+          "translation_cn": "支持"
+        }
+      ]
+    },
+    {
+      "word": "史",
+      "translation_cn": "历史",
+      "onyomi": "シ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "歴史",
+          "reading": "れきし",
+          "translation_cn": "历史"
+        },
+        {
+          "word": "史学",
+          "reading": "しがく",
+          "translation_cn": "史学"
+        }
+      ]
+    },
+    {
+      "word": "志",
+      "translation_cn": "意志",
+      "onyomi": "シ",
+      "kunyomi": "こころざ.す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "意志",
+          "reading": "いし",
+          "translation_cn": "意志"
+        },
+        {
+          "word": "志望",
+          "reading": "しぼう",
+          "translation_cn": "志愿"
+        }
+      ]
+    },
+    {
+      "word": "枝",
+      "translation_cn": "树枝",
+      "onyomi": "シ",
+      "kunyomi": "えだ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "枝",
+          "reading": "えだ",
+          "translation_cn": "树枝"
+        },
+        {
+          "word": "枝葉",
+          "reading": "しよう",
+          "translation_cn": "枝叶"
+        }
+      ]
+    },
+    {
+      "word": "師",
+      "translation_cn": "老师",
+      "onyomi": "シ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "教師",
+          "reading": "きょうし",
+          "translation_cn": "教师"
+        },
+        {
+          "word": "医師",
+          "reading": "いし",
+          "translation_cn": "医生"
+        }
+      ]
+    },
+    {
+      "word": "資",
+      "translation_cn": "资本",
+      "onyomi": "シ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "資料",
+          "reading": "しりょう",
+          "translation_cn": "资料"
+        },
+        {
+          "word": "投資",
+          "reading": "とうし",
+          "translation_cn": "投资"
+        }
+      ]
+    },
+    {
+      "word": "飼",
+      "translation_cn": "饲养",
+      "onyomi": "シ",
+      "kunyomi": "か.う",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "飼う",
+          "reading": "かう",
+          "translation_cn": "饲养"
+        },
+        {
+          "word": "飼料",
+          "reading": "しりょう",
+          "translation_cn": "饲料"
+        }
+      ]
+    },
+    {
+      "word": "示",
+      "translation_cn": "表示",
+      "onyomi": "ジ、シ",
+      "kunyomi": "しめ.す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "指示",
+          "reading": "しじ",
+          "translation_cn": "指示"
+        },
+        {
+          "word": "表示",
+          "reading": "ひょうじ",
+          "translation_cn": "表示"
+        }
+      ]
+    },
+    {
+      "word": "似",
+      "translation_cn": "相似",
+      "onyomi": "ジ",
+      "kunyomi": "に.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "似る",
+          "reading": "にる",
+          "translation_cn": "相似"
+        },
+        {
+          "word": "類似",
+          "reading": "るいじ",
+          "translation_cn": "类似"
+        }
+      ]
+    },
+    {
+      "word": "識",
+      "translation_cn": "识别",
+      "onyomi": "シキ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "知識",
+          "reading": "ちしき",
+          "translation_cn": "知识"
+        },
+        {
+          "word": "意識",
+          "reading": "いしき",
+          "translation_cn": "意识"
+        }
+      ]
+    },
+    {
+      "word": "質",
+      "translation_cn": "质",
+      "onyomi": "シツ、チ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "質問",
+          "reading": "しつもん",
+          "translation_cn": "问题"
+        },
+        {
+          "word": "品質",
+          "reading": "ひんしつ",
+          "translation_cn": "品质"
+        }
+      ]
+    },
+    {
+      "word": "舎",
+      "translation_cn": "舍",
+      "onyomi": "シャ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "校舎",
+          "reading": "こうしゃ",
+          "translation_cn": "校舍"
+        },
+        {
+          "word": "田舎",
+          "reading": "いなか",
+          "translation_cn": "乡下"
+        }
+      ]
+    },
+    {
+      "word": "謝",
+      "translation_cn": "谢",
+      "onyomi": "シャ",
+      "kunyomi": "あやま.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "謝る",
+          "reading": "あやまる",
+          "translation_cn": "道歉"
+        },
+        {
+          "word": "感謝",
+          "reading": "かんしゃ",
+          "translation_cn": "感谢"
+        }
+      ]
+    },
+    {
+      "word": "授",
+      "translation_cn": "授予",
+      "onyomi": "ジュ",
+      "kunyomi": "さず.ける",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "授業",
+          "reading": "じゅぎょう",
+          "translation_cn": "授课"
+        },
+        {
+          "word": "教授",
+          "reading": "きょうじゅ",
+          "translation_cn": "教授"
+        }
+      ]
+    },
+    {
+      "word": "修",
+      "translation_cn": "修理",
+      "onyomi": "シュウ、シュ",
+      "kunyomi": "おさ.める",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "修正",
+          "reading": "しゅうせい",
+          "translation_cn": "修正"
+        },
+        {
+          "word": "修理",
+          "reading": "しゅうり",
+          "translation_cn": "修理"
+        }
+      ]
+    },
+    {
+      "word": "述",
+      "translation_cn": "叙述",
+      "onyomi": "ジュツ",
+      "kunyomi": "の.べる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "記述",
+          "reading": "きじゅつ",
+          "translation_cn": "记述"
+        },
+        {
+          "word": "前述",
+          "reading": "ぜんじゅつ",
+          "translation_cn": "前述"
+        }
+      ]
+    },
+    {
+      "word": "術",
+      "translation_cn": "术",
+      "onyomi": "ジュツ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "技術",
+          "reading": "ぎじゅつ",
+          "translation_cn": "技术"
+        },
+        {
+          "word": "美術",
+          "reading": "びじゅつ",
+          "translation_cn": "美术"
+        }
+      ]
+    },
+    {
+      "word": "準",
+      "translation_cn": "准",
+      "onyomi": "ジュン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "準備",
+          "reading": "じゅんび",
+          "translation_cn": "准备"
+        },
+        {
+          "word": "基準",
+          "reading": "きじゅん",
+          "translation_cn": "基准"
+        }
+      ]
+    },
+    {
+      "word": "序",
+      "translation_cn": "序",
+      "onyomi": "ジョ",
+      "kunyomi": "ついで",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "順序",
+          "reading": "じゅんじょ",
+          "translation_cn": "顺序"
+        },
+        {
+          "word": "序論",
+          "reading": "じょろん",
+          "translation_cn": "序论"
+        }
+      ]
+    },
+    {
+      "word": "招",
+      "translation_cn": "招",
+      "onyomi": "ショウ",
+      "kunyomi": "まね.く",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "招待",
+          "reading": "しょうたい",
+          "translation_cn": "招待"
+        },
+        {
+          "word": "手招き",
+          "reading": "てまねき",
+          "translation_cn": "招手"
+        }
+      ]
+    },
+    {
+      "word": "証",
+      "translation_cn": "证",
+      "onyomi": "ショウ",
+      "kunyomi": "あかし",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "証明",
+          "reading": "しょうめい",
+          "translation_cn": "证明"
+        },
+        {
+          "word": "証拠",
+          "reading": "しょうこ",
+          "translation_cn": "证据"
+        }
+      ]
+    },
+    {
+      "word": "象",
+      "translation_cn": "象",
+      "onyomi": "ショウ",
+      "kunyomi": "かたど.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "印象",
+          "reading": "いんしょう",
+          "translation_cn": "印象"
+        },
+        {
+          "word": "対象",
+          "reading": "たいしょう",
+          "translation_cn": "对象"
+        }
+      ]
+    },
+    {
+      "word": "賞",
+      "translation_cn": "赏",
+      "onyomi": "ショウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "賞品",
+          "reading": "しょうひん",
+          "translation_cn": "奖品"
+        },
+        {
+          "word": "賞賛",
+          "reading": "しょうさん",
+          "translation_cn": "赞赏"
+        }
+      ]
+    },
+    {
+      "word": "条",
+      "translation_cn": "条",
+      "onyomi": "ジョウ",
+      "kunyomi": "すじ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "条件",
+          "reading": "じょうけん",
+          "translation_cn": "条件"
+        },
+        {
+          "word": "条約",
+          "reading": "じょうやく",
+          "translation_cn": "条约"
+        }
+      ]
+    },
+    {
+      "word": "状",
+      "translation_cn": "状",
+      "onyomi": "ジョウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "状態",
+          "reading": "じょうたい",
+          "translation_cn": "状态"
+        },
+        {
+          "word": "現状",
+          "reading": "げんじょう",
+          "translation_cn": "现状"
+        }
+      ]
+    },
+    {
+      "word": "常",
+      "translation_cn": "常",
+      "onyomi": "ジョウ",
+      "kunyomi": "つね、とこ-",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "日常",
+          "reading": "にちじょう",
+          "translation_cn": "日常"
+        },
+        {
+          "word": "常識",
+          "reading": "じょうしき",
+          "translation_cn": "常识"
+        }
+      ]
+    },
+    {
+      "word": "情",
+      "translation_cn": "情",
+      "onyomi": "ジョウ、セイ",
+      "kunyomi": "なさ.け",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "感情",
+          "reading": "かんじょう",
+          "translation_cn": "感情"
+        },
+        {
+          "word": "情報",
+          "reading": "じょうほう",
+          "translation_cn": "情报"
+        }
+      ]
+    },
+    {
+      "word": "織",
+      "translation_cn": "织",
+      "onyomi": "ショク、シキ",
+      "kunyomi": "お.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "組織",
+          "reading": "そしき",
+          "translation_cn": "组织"
+        },
+        {
+          "word": "織物",
+          "reading": "おりもの",
+          "translation_cn": "织物"
+        }
+      ]
+    },
+    {
+      "word": "職",
+      "translation_cn": "职",
+      "onyomi": "ショク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "職業",
+          "reading": "しょくぎょう",
+          "translation_cn": "职业"
+        },
+        {
+          "word": "職場",
+          "reading": "しょくば",
+          "translation_cn": "职场"
+        }
+      ]
+    },
+    {
+      "word": "制",
+      "translation_cn": "制度；限制",
+      "onyomi": "セイ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "制度",
+          "reading": "せいど",
+          "translation_cn": "制度"
+        },
+        {
+          "word": "制限",
+          "reading": "せいげん",
+          "translation_cn": "限制"
+        }
+      ]
+    },
+    {
+      "word": "性",
+      "translation_cn": "性质；性别",
+      "onyomi": "セイ、ショウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "性格",
+          "reading": "せいかく",
+          "translation_cn": "性格"
+        },
+        {
+          "word": "女性",
+          "reading": "じょせい",
+          "translation_cn": "女性"
+        }
+      ]
+    },
+    {
+      "word": "政",
+      "translation_cn": "政治",
+      "onyomi": "セイ、ショウ",
+      "kunyomi": "まつりごと",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "政治",
+          "reading": "せいじ",
+          "translation_cn": "政治"
+        },
+        {
+          "word": "政府",
+          "reading": "せいふ",
+          "translation_cn": "政府"
+        }
+      ]
+    },
+    {
+      "word": "勢",
+      "translation_cn": "势力；形势",
+      "onyomi": "セイ",
+      "kunyomi": "いきお",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "勢い",
+          "reading": "いきおい",
+          "translation_cn": "气势；力量"
+        },
+        {
+          "word": "情勢",
+          "reading": "じょうせい",
+          "translation_cn": "形势"
+        }
+      ]
+    },
+    {
+      "word": "精",
+      "translation_cn": "精神；精细",
+      "onyomi": "セイ、ショウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "精神",
+          "reading": "せいしん",
+          "translation_cn": "精神"
+        },
+        {
+          "word": "精密",
+          "reading": "せいみつ",
+          "translation_cn": "精密"
+        }
+      ]
+    },
+    {
+      "word": "製",
+      "translation_cn": "制造",
+      "onyomi": "セイ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "製品",
+          "reading": "せいひん",
+          "translation_cn": "产品"
+        },
+        {
+          "word": "製作",
+          "reading": "せいさく",
+          "translation_cn": "制作"
+        }
+      ]
+    },
+    {
+      "word": "税",
+      "translation_cn": "税",
+      "onyomi": "ゼイ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "税金",
+          "reading": "ぜいきん",
+          "translation_cn": "税金"
+        },
+        {
+          "word": "税関",
+          "reading": "ぜいかん",
+          "translation_cn": "海关"
+        }
+      ]
+    },
+    {
+      "word": "責",
+      "translation_cn": "责任；责备",
+      "onyomi": "セキ",
+      "kunyomi": "せ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "責任",
+          "reading": "せきにん",
+          "translation_cn": "责任"
+        },
+        {
+          "word": "責める",
+          "reading": "せめる",
+          "translation_cn": "责备"
+        }
+      ]
+    },
+    {
+      "word": "績",
+      "translation_cn": "成绩；功绩",
+      "onyomi": "セキ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "成績",
+          "reading": "せいせき",
+          "translation_cn": "成绩"
+        },
+        {
+          "word": "業績",
+          "reading": "ぎょうせき",
+          "translation_cn": "业绩"
+        }
+      ]
+    },
+    {
+      "word": "接",
+      "translation_cn": "接触；连接",
+      "onyomi": "セツ",
+      "kunyomi": "つ.ぐ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "面接",
+          "reading": "めんせつ",
+          "translation_cn": "面试"
+        },
+        {
+          "word": "直接",
+          "reading": "ちょくせつ",
+          "translation_cn": "直接"
+        }
+      ]
+    },
+    {
+      "word": "設",
+      "translation_cn": "设置",
+      "onyomi": "セツ",
+      "kunyomi": "もう.ける",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "設立",
+          "reading": "せつりつ",
+          "translation_cn": "设立"
+        },
+        {
+          "word": "設計",
+          "reading": "せっけい",
+          "translation_cn": "设计"
+        }
+      ]
+    },
+    {
+      "word": "絶",
+      "translation_cn": "断绝",
+      "onyomi": "ゼツ",
+      "kunyomi": "た.える、た.やす",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "絶対",
+          "reading": "ぜったい",
+          "translation_cn": "绝对"
+        },
+        {
+          "word": "絶滅",
+          "reading": "ぜつめつ",
+          "translation_cn": "灭绝"
+        }
+      ]
+    },
+    {
+      "word": "祖",
+      "translation_cn": "祖先",
+      "onyomi": "ソ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "祖父",
+          "reading": "そふ",
+          "translation_cn": "祖父"
+        },
+        {
+          "word": "祖母",
+          "reading": "そぼ",
+          "translation_cn": "祖母"
+        }
+      ]
+    },
+    {
+      "word": "素",
+      "translation_cn": "要素",
+      "onyomi": "ソ、ス",
+      "kunyomi": "もと",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "素直",
+          "reading": "すなお",
+          "translation_cn": "坦率"
+        },
+        {
+          "word": "要素",
+          "reading": "ようそ",
+          "translation_cn": "要素"
+        }
+      ]
+    },
+    {
+      "word": "総",
+      "translation_cn": "总",
+      "onyomi": "ソウ",
+      "kunyomi": "す.べて",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "総理",
+          "reading": "そうり",
+          "translation_cn": "总理"
+        },
+        {
+          "word": "総計",
+          "reading": "そうけい",
+          "translation_cn": "总计"
+        }
+      ]
+    },
+    {
+      "word": "造",
+      "translation_cn": "制造",
+      "onyomi": "ゾウ",
+      "kunyomi": "つく.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "造る",
+          "reading": "つくる",
+          "translation_cn": "制造"
+        },
+        {
+          "word": "構造",
+          "reading": "こうぞう",
+          "translation_cn": "构造"
+        }
+      ]
+    },
+    {
+      "word": "像",
+      "translation_cn": "像",
+      "onyomi": "ゾウ",
+      "kunyomi": "かたち",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "想像",
+          "reading": "そうぞう",
+          "translation_cn": "想象"
+        },
+        {
+          "word": "肖像",
+          "reading": "しょうぞう",
+          "translation_cn": "肖像"
+        }
+      ]
+    },
+    {
+      "word": "増",
+      "translation_cn": "增加",
+      "onyomi": "ゾウ",
+      "kunyomi": "ま.す、ふ.える",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "増加",
+          "reading": "ぞうか",
+          "translation_cn": "增加"
+        },
+        {
+          "word": "増える",
+          "reading": "ふえる",
+          "translation_cn": "增加"
+        }
+      ]
+    },
+    {
+      "word": "則",
+      "translation_cn": "规则",
+      "onyomi": "ソク",
+      "kunyomi": "のっと.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "原則",
+          "reading": "げんそく",
+          "translation_cn": "原则"
+        },
+        {
+          "word": "規則",
+          "reading": "きそく",
+          "translation_cn": "规则"
+        }
+      ]
+    },
+    {
+      "word": "測",
+      "translation_cn": "测量",
+      "onyomi": "ソク",
+      "kunyomi": "はか.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "測定",
+          "reading": "そくてい",
+          "translation_cn": "测定"
+        },
+        {
+          "word": "測る",
+          "reading": "はかる",
+          "translation_cn": "测量"
+        }
+      ]
+    },
+    {
+      "word": "属",
+      "translation_cn": "属于",
+      "onyomi": "ゾク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "所属",
+          "reading": "しょぞく",
+          "translation_cn": "所属"
+        },
+        {
+          "word": "金属",
+          "reading": "きんぞく",
+          "translation_cn": "金属"
+        }
+      ]
+    },
+    {
+      "word": "率",
+      "translation_cn": "率",
+      "onyomi": "ソツ、リツ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "確率",
+          "reading": "かくりつ",
+          "translation_cn": "概率"
+        },
+        {
+          "word": "率直",
+          "reading": "そっちょく",
+          "translation_cn": "坦率"
+        }
+      ]
+    },
+    {
+      "word": "損",
+      "translation_cn": "损失",
+      "onyomi": "ソン",
+      "kunyomi": "そこ.なう、そこ.ねる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "損害",
+          "reading": "そんがい",
+          "translation_cn": "损害"
+        },
+        {
+          "word": "損失",
+          "reading": "そんしつ",
+          "translation_cn": "损失"
+        }
+      ]
+    },
+    {
+      "word": "貸",
+      "translation_cn": "借出",
+      "onyomi": "タイ",
+      "kunyomi": "か.す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "賃貸",
+          "reading": "ちんたい",
+          "translation_cn": "出租"
+        },
+        {
+          "word": "貸出",
+          "reading": "かしだし",
+          "translation_cn": "借出"
+        }
+      ]
+    },
+    {
+      "word": "態",
+      "translation_cn": "状态",
+      "onyomi": "タイ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "態度",
+          "reading": "たいど",
+          "translation_cn": "态度"
+        },
+        {
+          "word": "状態",
+          "reading": "じょうたい",
+          "translation_cn": "状态"
+        }
+      ]
+    },
+    {
+      "word": "団",
+      "translation_cn": "团体",
+      "onyomi": "ダン、トン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "団体",
+          "reading": "だんたい",
+          "translation_cn": "团体"
+        },
+        {
+          "word": "団地",
+          "reading": "だんち",
+          "translation_cn": "住宅区"
+        }
+      ]
+    },
+    {
+      "word": "断",
+      "translation_cn": "断绝",
+      "onyomi": "ダン",
+      "kunyomi": "た.つ、ことわ.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "中断",
+          "reading": "ちゅうだん",
+          "translation_cn": "中断"
+        },
+        {
+          "word": "断る",
+          "reading": "ことわる",
+          "translation_cn": "拒绝"
+        }
+      ]
+    },
+    {
+      "word": "築",
+      "translation_cn": "建筑",
+      "onyomi": "チク",
+      "kunyomi": "きず.く",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "建築",
+          "reading": "けんちく",
+          "translation_cn": "建筑"
+        },
+        {
+          "word": "新築",
+          "reading": "しんちく",
+          "translation_cn": "新建"
+        }
+      ]
+    },
+    {
+      "word": "貯",
+      "translation_cn": "储蓄",
+      "onyomi": "チョ",
+      "kunyomi": "た.める",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "貯金",
+          "reading": "ちょきん",
+          "translation_cn": "存款"
+        },
+        {
+          "word": "貯蔵",
+          "reading": "ちょぞう",
+          "translation_cn": "储藏"
+        }
+      ]
+    },
+    {
+      "word": "張",
+      "translation_cn": "张开",
+      "onyomi": "チョウ",
+      "kunyomi": "は.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "主張",
+          "reading": "しゅちょう",
+          "translation_cn": "主张"
+        },
+        {
+          "word": "頑張る",
+          "reading": "がんばる",
+          "translation_cn": "加油"
+        }
+      ]
+    },
+    {
+      "word": "停",
+      "translation_cn": "停止",
+      "onyomi": "テイ",
+      "kunyomi": "と.まる、と.める",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "停止",
+          "reading": "ていし",
+          "translation_cn": "停止"
+        },
+        {
+          "word": "停車",
+          "reading": "ていしゃ",
+          "translation_cn": "停车"
+        }
+      ]
+    },
+    {
+      "word": "提",
+      "translation_cn": "提出",
+      "onyomi": "テイ",
+      "kunyomi": "さ.げる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "提出",
+          "reading": "ていしゅつ",
+          "translation_cn": "提出"
+        },
+        {
+          "word": "提供",
+          "reading": "ていきょう",
+          "translation_cn": "提供"
+        }
+      ]
+    },
+    {
+      "word": "程",
+      "translation_cn": "程度",
+      "onyomi": "テイ",
+      "kunyomi": "ほど",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "程度",
+          "reading": "ていど",
+          "translation_cn": "程度"
+        },
+        {
+          "word": "日程",
+          "reading": "にってい",
+          "translation_cn": "日程"
+        }
+      ]
+    },
+    {
+      "word": "適",
+      "translation_cn": "适合",
+      "onyomi": "テキ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "適切",
+          "reading": "てきせつ",
+          "translation_cn": "适当"
+        },
+        {
+          "word": "適当",
+          "reading": "てきとう",
+          "translation_cn": "适当"
+        }
+      ]
+    },
+    {
+      "word": "統",
+      "translation_cn": "统治",
+      "onyomi": "トウ",
+      "kunyomi": "す.べる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "統計",
+          "reading": "とうけい",
+          "translation_cn": "统计"
+        },
+        {
+          "word": "統一",
+          "reading": "とういつ",
+          "translation_cn": "统一"
+        }
+      ]
+    },
+    {
+      "word": "堂",
+      "translation_cn": "堂",
+      "onyomi": "ドウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "食堂",
+          "reading": "しょくどう",
+          "translation_cn": "食堂"
+        },
+        {
+          "word": "講堂",
+          "reading": "こうどう",
+          "translation_cn": "讲堂"
+        }
+      ]
+    },
+    {
+      "word": "銅",
+      "translation_cn": "铜",
+      "onyomi": "ドウ",
+      "kunyomi": "あかがね",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "銅貨",
+          "reading": "どうか",
+          "translation_cn": "铜币"
+        },
+        {
+          "word": "青銅",
+          "reading": "せいどう",
+          "translation_cn": "青铜"
+        }
+      ]
+    },
+    {
+      "word": "導",
+      "translation_cn": "引导",
+      "onyomi": "ドウ",
+      "kunyomi": "みちび.く",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "指導",
+          "reading": "しどう",
+          "translation_cn": "指导"
+        },
+        {
+          "word": "導入",
+          "reading": "どうにゅう",
+          "translation_cn": "导入"
+        }
+      ]
+    },
+    {
+      "word": "得",
+      "translation_cn": "得到",
+      "onyomi": "トク",
+      "kunyomi": "え.る、う.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "得る",
+          "reading": "える",
+          "translation_cn": "得到"
+        },
+        {
+          "word": "所得",
+          "reading": "しょとく",
+          "translation_cn": "所得"
+        }
+      ]
+    },
+    {
+      "word": "毒",
+      "translation_cn": "毒",
+      "onyomi": "ドク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "毒",
+          "reading": "どく",
+          "translation_cn": "毒"
+        },
+        {
+          "word": "中毒",
+          "reading": "ちゅうどく",
+          "translation_cn": "中毒"
+        }
+      ]
+    },
+    {
+      "word": "独",
+      "translation_cn": "独自",
+      "onyomi": "ドク",
+      "kunyomi": "ひと-り",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "独立",
+          "reading": "どくりつ",
+          "translation_cn": "独立"
+        },
+        {
+          "word": "独身",
+          "reading": "どくしん",
+          "translation_cn": "单身"
+        }
+      ]
+    },
+    {
+      "word": "任",
+      "translation_cn": "委托",
+      "onyomi": "ニン",
+      "kunyomi": "まか-せる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "担任",
+          "reading": "たんにん",
+          "translation_cn": "担任"
+        },
+        {
+          "word": "責任",
+          "reading": "せきにん",
+          "translation_cn": "责任"
+        }
+      ]
+    },
+    {
+      "word": "燃",
+      "translation_cn": "燃烧",
+      "onyomi": "ネン",
+      "kunyomi": "も-える、も-やす、も-す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "燃料",
+          "reading": "ねんりょう",
+          "translation_cn": "燃料"
+        },
+        {
+          "word": "燃える",
+          "reading": "もえる",
+          "translation_cn": "燃烧"
+        }
+      ]
+    },
+    {
+      "word": "能",
+      "translation_cn": "能力",
+      "onyomi": "ノウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "能力",
+          "reading": "のうりょく",
+          "translation_cn": "能力"
+        },
+        {
+          "word": "可能",
+          "reading": "かのう",
+          "translation_cn": "可能"
+        }
+      ]
+    },
+    {
+      "word": "破",
+      "translation_cn": "打破",
+      "onyomi": "ハ",
+      "kunyomi": "やぶ-る、やぶ-れる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "破る",
+          "reading": "やぶる",
+          "translation_cn": "打破"
+        },
+        {
+          "word": "破産",
+          "reading": "はさん",
+          "translation_cn": "破产"
+        }
+      ]
+    },
+    {
+      "word": "犯",
+      "translation_cn": "犯",
+      "onyomi": "ハン",
+      "kunyomi": "おか-す",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "犯人",
+          "reading": "はんにん",
+          "translation_cn": "犯人"
+        },
+        {
+          "word": "犯罪",
+          "reading": "はんざい",
+          "translation_cn": "犯罪"
+        }
+      ]
+    },
+    {
+      "word": "判",
+      "translation_cn": "判断",
+      "onyomi": "ハン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "判断",
+          "reading": "はんだん",
+          "translation_cn": "判断"
+        },
+        {
+          "word": "裁判",
+          "reading": "さいばん",
+          "translation_cn": "裁判"
+        }
+      ]
+    },
+    {
+      "word": "版",
+      "translation_cn": "版",
+      "onyomi": "ハン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "版画",
+          "reading": "はんが",
+          "translation_cn": "版画"
+        },
+        {
+          "word": "出版",
+          "reading": "しゅっぱん",
+          "translation_cn": "出版"
+        }
+      ]
+    },
+    {
+      "word": "比",
+      "translation_cn": "比较",
+      "onyomi": "ヒ",
+      "kunyomi": "くら-べる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "比較",
+          "reading": "ひかく",
+          "translation_cn": "比较"
+        },
+        {
+          "word": "比べる",
+          "reading": "くらべる",
+          "translation_cn": "比较"
+        }
+      ]
+    },
+    {
+      "word": "肥",
+      "translation_cn": "肥胖",
+      "onyomi": "ヒ",
+      "kunyomi": "こ-える、こえ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "肥満",
+          "reading": "ひまん",
+          "translation_cn": "肥胖"
+        },
+        {
+          "word": "肥料",
+          "reading": "ひりょう",
+          "translation_cn": "肥料"
+        }
+      ]
+    },
+    {
+      "word": "非",
+      "translation_cn": "非",
+      "onyomi": "ヒ",
+      "kunyomi": "あら-ず",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "非常に",
+          "reading": "ひじょうに",
+          "translation_cn": "非常"
+        },
+        {
+          "word": "是非",
+          "reading": "ぜひ",
+          "translation_cn": "务必"
+        }
+      ]
+    },
+    {
+      "word": "費",
+      "translation_cn": "费用",
+      "onyomi": "ヒ",
+      "kunyomi": "つい-やす",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "費用",
+          "reading": "ひよう",
+          "translation_cn": "费用"
+        },
+        {
+          "word": "消費",
+          "reading": "しょうひ",
+          "translation_cn": "消费"
+        }
+      ]
+    },
+    {
+      "word": "備",
+      "translation_cn": "准备",
+      "onyomi": "ビ",
+      "kunyomi": "そな-える",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "準備",
+          "reading": "じゅんび",
+          "translation_cn": "准备"
+        },
+        {
+          "word": "設備",
+          "reading": "せつび",
+          "translation_cn": "设备"
+        }
+      ]
+    },
+    {
+      "word": "評",
+      "translation_cn": "评论",
+      "onyomi": "ヒョウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "評判",
+          "reading": "ひょうばん",
+          "translation_cn": "评价"
+        },
+        {
+          "word": "批評",
+          "reading": "ひひょう",
+          "translation_cn": "批评"
+        }
+      ]
+    },
+    {
+      "word": "貧",
+      "translation_cn": "贫穷",
+      "onyomi": "ビン、ヒン",
+      "kunyomi": "まず-しい",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "貧乏",
+          "reading": "びんぼう",
+          "translation_cn": "贫穷"
+        },
+        {
+          "word": "貧弱",
+          "reading": "ひんじゃく",
+          "translation_cn": "贫弱"
+        }
+      ]
+    },
+    {
+      "word": "布",
+      "translation_cn": "布",
+      "onyomi": "フ",
+      "kunyomi": "ぬの",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "配布",
+          "reading": "はいふ",
+          "translation_cn": "分发"
+        },
+        {
+          "word": "毛布",
+          "reading": "もうふ",
+          "translation_cn": "毛毯"
+        }
+      ]
+    },
+    {
+      "word": "婦",
+      "translation_cn": "妇女",
+      "onyomi": "フ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "主婦",
+          "reading": "しゅふ",
+          "translation_cn": "主妇"
+        },
+        {
+          "word": "婦人",
+          "reading": "ふじん",
+          "translation_cn": "夫人"
+        }
+      ]
+    },
+    {
+      "word": "武",
+      "translation_cn": "武",
+      "onyomi": "ブ、ム",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "武器",
+          "reading": "ぶき",
+          "translation_cn": "武器"
+        },
+        {
+          "word": "武士",
+          "reading": "ぶし",
+          "translation_cn": "武士"
+        }
+      ]
+    },
+    {
+      "word": "復",
+      "translation_cn": "恢复",
+      "onyomi": "フク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "復習",
+          "reading": "ふくしゅう",
+          "translation_cn": "复习"
+        },
+        {
+          "word": "回復",
+          "reading": "かいふく",
+          "translation_cn": "恢复"
+        }
+      ]
+    },
+    {
+      "word": "複",
+      "translation_cn": "复杂",
+      "onyomi": "フク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "複雑",
+          "reading": "ふくざつ",
+          "translation_cn": "复杂"
+        },
+        {
+          "word": "複数",
+          "reading": "ふくすう",
+          "translation_cn": "复数"
+        }
+      ]
+    },
+    {
+      "word": "仏",
+      "translation_cn": "佛",
+      "onyomi": "ブツ",
+      "kunyomi": "ほとけ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "仏教",
+          "reading": "ぶっきょう",
+          "translation_cn": "佛教"
+        },
+        {
+          "word": "仏像",
+          "reading": "ぶつぞう",
+          "translation_cn": "佛像"
+        }
+      ]
+    },
+    {
+      "word": "粉",
+      "translation_cn": "粉",
+      "onyomi": "フン",
+      "kunyomi": "こな",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "小麦粉",
+          "reading": "こむぎこ",
+          "translation_cn": "面粉"
+        },
+        {
+          "word": "粉末",
+          "reading": "ふんまつ",
+          "translation_cn": "粉末"
+        }
+      ]
+    },
+    {
+      "word": "編",
+      "translation_cn": "编",
+      "onyomi": "ヘン",
+      "kunyomi": "あ.む",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "編集",
+          "reading": "へんしゅう",
+          "translation_cn": "编辑"
+        },
+        {
+          "word": "編む",
+          "reading": "あむ",
+          "translation_cn": "编织"
+        }
+      ]
+    },
+    {
+      "word": "弁",
+      "translation_cn": "辩",
+      "onyomi": "ベン",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "弁当",
+          "reading": "べんとう",
+          "translation_cn": "便当"
+        },
+        {
+          "word": "弁護士",
+          "reading": "べんごし",
+          "translation_cn": "律师"
+        }
+      ]
+    },
+    {
+      "word": "保",
+      "translation_cn": "保",
+      "onyomi": "ホ",
+      "kunyomi": "たも.つ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "保険",
+          "reading": "ほけん",
+          "translation_cn": "保险"
+        },
+        {
+          "word": "保存",
+          "reading": "ほぞん",
+          "translation_cn": "保存"
+        }
+      ]
+    },
+    {
+      "word": "墓",
+      "translation_cn": "墓",
+      "onyomi": "ボ",
+      "kunyomi": "はか",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "墓地",
+          "reading": "ぼち",
+          "translation_cn": "墓地"
+        },
+        {
+          "word": "墓参り",
+          "reading": "はかまいり",
+          "translation_cn": "扫墓"
+        }
+      ]
+    },
+    {
+      "word": "報",
+      "translation_cn": "报",
+      "onyomi": "ホウ",
+      "kunyomi": "むく.いる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "報道",
+          "reading": "ほうどう",
+          "translation_cn": "报道"
+        },
+        {
+          "word": "報告",
+          "reading": "ほうこく",
+          "translation_cn": "报告"
+        }
+      ]
+    },
+    {
+      "word": "豊",
+      "translation_cn": "丰",
+      "onyomi": "ホウ",
+      "kunyomi": "ゆた.か",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "豊作",
+          "reading": "ほうさく",
+          "translation_cn": "丰收"
+        },
+        {
+          "word": "豊かな",
+          "reading": "ゆたかな",
+          "translation_cn": "丰富的"
+        }
+      ]
+    },
+    {
+      "word": "防",
+      "translation_cn": "防",
+      "onyomi": "ボウ",
+      "kunyomi": "ふせ.ぐ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "予防",
+          "reading": "よぼう",
+          "translation_cn": "预防"
+        },
+        {
+          "word": "防止",
+          "reading": "ぼうし",
+          "translation_cn": "防止"
+        }
+      ]
+    },
+    {
+      "word": "貿",
+      "translation_cn": "贸",
+      "onyomi": "ボウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "貿易",
+          "reading": "ぼうえき",
+          "translation_cn": "贸易"
+        },
+        {
+          "word": "貿易会社",
+          "reading": "ぼうえきがいしゃ",
+          "translation_cn": "贸易公司"
+        }
+      ]
+    },
+    {
+      "word": "暴",
+      "translation_cn": "暴力",
+      "onyomi": "ボウ",
+      "kunyomi": "あば.く、あば.れる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "暴力",
+          "reading": "ぼうりょく",
+          "translation_cn": "暴力"
+        },
+        {
+          "word": "乱暴",
+          "reading": "らんぼう",
+          "translation_cn": "粗暴"
+        }
+      ]
+    },
+    {
+      "word": "脈",
+      "translation_cn": "脉",
+      "onyomi": "ミャク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "脈拍",
+          "reading": "みゃくはく",
+          "translation_cn": "脉搏"
+        },
+        {
+          "word": "山脈",
+          "reading": "さんみゃく",
+          "translation_cn": "山脉"
+        }
+      ]
+    },
+    {
+      "word": "務",
+      "translation_cn": "义务",
+      "onyomi": "ム",
+      "kunyomi": "つと.める",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "事務所",
+          "reading": "じむしょ",
+          "translation_cn": "事务所"
+        },
+        {
+          "word": "義務",
+          "reading": "ぎむ",
+          "translation_cn": "义务"
+        }
+      ]
+    },
+    {
+      "word": "夢",
+      "translation_cn": "梦",
+      "onyomi": "ム",
+      "kunyomi": "ゆめ",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "夢中",
+          "reading": "むちゅう",
+          "translation_cn": "入迷"
+        },
+        {
+          "word": "悪夢",
+          "reading": "あくむ",
+          "translation_cn": "噩梦"
+        }
+      ]
+    },
+    {
+      "word": "迷",
+      "translation_cn": "迷惑",
+      "onyomi": "メイ",
+      "kunyomi": "まよ.う",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "迷子",
+          "reading": "まいご",
+          "translation_cn": "迷路的孩子"
+        },
+        {
+          "word": "迷惑",
+          "reading": "めいわく",
+          "translation_cn": "麻烦"
+        }
+      ]
+    },
+    {
+      "word": "綿",
+      "translation_cn": "棉",
+      "onyomi": "メン",
+      "kunyomi": "わた",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "綿",
+          "reading": "わた",
+          "translation_cn": "棉花"
+        },
+        {
+          "word": "綿密",
+          "reading": "めんみつ",
+          "translation_cn": "周密"
+        }
+      ]
+    },
+    {
+      "word": "輸",
+      "translation_cn": "输送",
+      "onyomi": "ユ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "輸出",
+          "reading": "ゆしゅつ",
+          "translation_cn": "出口"
+        },
+        {
+          "word": "輸入",
+          "reading": "ゆにゅう",
+          "translation_cn": "进口"
+        }
+      ]
+    },
+    {
+      "word": "余",
+      "translation_cn": "剩余",
+      "onyomi": "ヨ",
+      "kunyomi": "あま.る",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "余裕",
+          "reading": "よゆう",
+          "translation_cn": "余地"
+        },
+        {
+          "word": "余計",
+          "reading": "よけい",
+          "translation_cn": "多余"
+        }
+      ]
+    },
+    {
+      "word": "容",
+      "translation_cn": "容貌",
+      "onyomi": "ヨウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "内容",
+          "reading": "ないよう",
+          "translation_cn": "内容"
+        },
+        {
+          "word": "美容",
+          "reading": "びよう",
+          "translation_cn": "美容"
+        }
+      ]
+    },
+    {
+      "word": "略",
+      "translation_cn": "省略",
+      "onyomi": "リャク",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "略",
+          "reading": "りゃく",
+          "translation_cn": "省略"
+        },
+        {
+          "word": "省略",
+          "reading": "しょうりゃく",
+          "translation_cn": "省略"
+        }
+      ]
+    },
+    {
+      "word": "留",
+      "translation_cn": "停留",
+      "onyomi": "リュウ、ル",
+      "kunyomi": "と.める、と.まる",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "保留",
+          "reading": "ほりゅう",
+          "translation_cn": "保留"
+        },
+        {
+          "word": "留学",
+          "reading": "りゅうがく",
+          "translation_cn": "留学"
+        }
+      ]
+    },
+    {
+      "word": "領",
+      "translation_cn": "领土",
+      "onyomi": "リョウ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "領収書",
+          "reading": "りょうしゅうしょ",
+          "translation_cn": "收据"
+        },
+        {
+          "word": "領土",
+          "reading": "りょうど",
+          "translation_cn": "领土"
+        }
+      ]
+    },
+    {
+      "word": "歴",
+      "translation_cn": "经历",
+      "onyomi": "レキ",
+      "kunyomi": "",
+      "school_level": "小学5年生 漢字",
+      "difficulty_level": 2,
+      "examples": [
+        {
+          "word": "歴史",
+          "reading": "れきし",
+          "translation_cn": "历史"
+        },
+        {
+          "word": "履歴書",
+          "reading": "りれきしょ",
+          "translation_cn": "简历"
+        }
+      ]
+    }
+  ]
+}

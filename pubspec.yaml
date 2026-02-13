@@ -59,6 +59,7 @@ dependencies:
   # Window management for desktop
   window_manager: any
   fsrs: ^2.0.1
+  flutter_tts: ^4.2.5
 
 dev_dependencies:
   flutter_test:

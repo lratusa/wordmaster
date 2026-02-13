@@ -5,6 +5,8 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'download_mirror.dart';
+
 /// Word list category
 enum WordListCategory {
   cefr,    // CEFR A1-C2
@@ -13,11 +15,10 @@ enum WordListCategory {
   gaokao,  // 高考
   zhongkao, // 中考
   toefl,   // TOEFL
-  ielts,   // IELTS
-  gre,     // GRE
   sat,     // SAT
-  gmat,    // GMAT
   jlpt,    // JLPT N5-N1
+  jlptKanji, // JLPT Kanji N5-N1
+  schoolKanji, // School Kanji (Grade 1-6, Middle, High)
 }
 
 /// Word list package information
@@ -52,454 +53,64 @@ typedef DownloadProgressCallback = void Function(int received, int total);
 
 /// Word List Downloader - handles downloading word list packages
 class WordListDownloader {
-  static const String _githubRaw = 'https://raw.githubusercontent.com';
-
-  /// Available word list packages organized by category
-  /// English: CEFR, CET-4/6, TOEFL, IELTS, GRE
-  /// Japanese: JLPT levels
+  /// Available word list packages organized by category.
+  /// The [url] field stores a relative path; the base URL is resolved
+  /// at download time via [DownloadMirror] based on the user's region setting.
   static const List<WordListPackage> availablePackages = [
     // ========== CEFR (欧标) A1-C2 ==========
-    WordListPackage(
-      id: 'cefr-a1',
-      name: 'CEFR A1 入门级',
-      nameEn: 'CEFR A1 (Beginner)',
-      language: 'en',
-      description: '欧洲语言共同参考框架 A1 级别，适合零基础学习者',
-      level: 'A1',
-      category: WordListCategory.cefr,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cefr-a1.json',
-      wordCount: 500,
-      iconName: 'school',
-    ),
-    WordListPackage(
-      id: 'cefr-a2',
-      name: 'CEFR A2 基础级',
-      nameEn: 'CEFR A2 (Elementary)',
-      language: 'en',
-      description: '欧洲语言共同参考框架 A2 级别，掌握基本日常用语',
-      level: 'A2',
-      category: WordListCategory.cefr,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cefr-a2.json',
-      wordCount: 1000,
-      iconName: 'menu_book',
-    ),
-    WordListPackage(
-      id: 'cefr-b1',
-      name: 'CEFR B1 中级',
-      nameEn: 'CEFR B1 (Intermediate)',
-      language: 'en',
-      description: '欧洲语言共同参考框架 B1 级别，能够应对日常交流',
-      level: 'B1',
-      category: WordListCategory.cefr,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cefr-b1.json',
-      wordCount: 1500,
-      iconName: 'auto_stories',
-    ),
-    WordListPackage(
-      id: 'cefr-b2',
-      name: 'CEFR B2 中高级',
-      nameEn: 'CEFR B2 (Upper-Intermediate)',
-      language: 'en',
-      description: '欧洲语言共同参考框架 B2 级别，能够流利表达观点',
-      level: 'B2',
-      category: WordListCategory.cefr,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cefr-b2.json',
-      wordCount: 2000,
-      iconName: 'local_library',
-    ),
-    WordListPackage(
-      id: 'cefr-c1',
-      name: 'CEFR C1 高级',
-      nameEn: 'CEFR C1 (Advanced)',
-      language: 'en',
-      description: '欧洲语言共同参考框架 C1 级别，能够进行复杂学术讨论',
-      level: 'C1',
-      category: WordListCategory.cefr,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cefr-c1.json',
-      wordCount: 2000,
-      iconName: 'psychology',
-    ),
-    WordListPackage(
-      id: 'cefr-c2',
-      name: 'CEFR C2 精通级',
-      nameEn: 'CEFR C2 (Proficiency)',
-      language: 'en',
-      description: '欧洲语言共同参考框架 C2 级别，接近母语水平',
-      level: 'C2',
-      category: WordListCategory.cefr,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cefr-c2.json',
-      wordCount: 1500,
-      iconName: 'workspace_premium',
-    ),
-
+    WordListPackage(id: 'cefr-a1', name: 'CEFR A1 入门级', nameEn: 'CEFR A1 (Beginner)', language: 'en', description: '欧洲语言共同参考框架 A1 级别，适合零基础学习者', level: 'A1', category: WordListCategory.cefr, url: 'english/cefr_a1.json', wordCount: 500, iconName: 'school'),
+    WordListPackage(id: 'cefr-a2', name: 'CEFR A2 基础级', nameEn: 'CEFR A2 (Elementary)', language: 'en', description: '欧洲语言共同参考框架 A2 级别，掌握基本日常用语', level: 'A2', category: WordListCategory.cefr, url: 'english/cefr_a2.json', wordCount: 1000, iconName: 'menu_book'),
+    WordListPackage(id: 'cefr-b1', name: 'CEFR B1 中级', nameEn: 'CEFR B1 (Intermediate)', language: 'en', description: '欧洲语言共同参考框架 B1 级别，能够应对日常交流', level: 'B1', category: WordListCategory.cefr, url: 'english/cefr_b1.json', wordCount: 1500, iconName: 'auto_stories'),
+    WordListPackage(id: 'cefr-b2', name: 'CEFR B2 中高级', nameEn: 'CEFR B2 (Upper-Intermediate)', language: 'en', description: '欧洲语言共同参考框架 B2 级别，能够流利表达观点', level: 'B2', category: WordListCategory.cefr, url: 'english/cefr_b2.json', wordCount: 2000, iconName: 'local_library'),
+    WordListPackage(id: 'cefr-c1', name: 'CEFR C1 高级', nameEn: 'CEFR C1 (Advanced)', language: 'en', description: '欧洲语言共同参考框架 C1 级别，能够进行复杂学术讨论', level: 'C1', category: WordListCategory.cefr, url: 'english/cefr_c1.json', wordCount: 2000, iconName: 'psychology'),
+    WordListPackage(id: 'cefr-c2', name: 'CEFR C2 精通级', nameEn: 'CEFR C2 (Proficiency)', language: 'en', description: '欧洲语言共同参考框架 C2 级别，接近母语水平', level: 'C2', category: WordListCategory.cefr, url: 'english/cefr_c2.json', wordCount: 1500, iconName: 'workspace_premium'),
     // ========== CET 四六级 ==========
-    WordListPackage(
-      id: 'cet4-core',
-      name: '四级核心词汇',
-      nameEn: 'CET-4 Core Vocabulary',
-      language: 'en',
-      description: '大学英语四级考试核心高频词汇',
-      level: 'CET-4',
-      category: WordListCategory.cet,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cet4-core.json',
-      wordCount: 2500,
-      iconName: 'school',
-    ),
-    WordListPackage(
-      id: 'cet4-full',
-      name: '四级完整词汇',
-      nameEn: 'CET-4 Full Vocabulary',
-      language: 'en',
-      description: '大学英语四级考试完整词汇表',
-      level: 'CET-4',
-      category: WordListCategory.cet,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cet4-full.json',
-      wordCount: 4500,
-      iconName: 'menu_book',
-    ),
-    WordListPackage(
-      id: 'cet6-core',
-      name: '六级核心词汇',
-      nameEn: 'CET-6 Core Vocabulary',
-      language: 'en',
-      description: '大学英语六级考试核心高频词汇',
-      level: 'CET-6',
-      category: WordListCategory.cet,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cet6-core.json',
-      wordCount: 2000,
-      iconName: 'auto_stories',
-    ),
-    WordListPackage(
-      id: 'cet6-full',
-      name: '六级完整词汇',
-      nameEn: 'CET-6 Full Vocabulary',
-      language: 'en',
-      description: '大学英语六级考试完整词汇表',
-      level: 'CET-6',
-      category: WordListCategory.cet,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/cet6-full.json',
-      wordCount: 5500,
-      iconName: 'local_library',
-    ),
-
+    WordListPackage(id: 'cet4-full', name: '四级词汇', nameEn: 'CET-4 Vocabulary', language: 'en', description: '大学英语四级考试词汇表', level: 'CET-4', category: WordListCategory.cet, url: 'english/cet4-full.json', wordCount: 4500, iconName: 'school'),
+    WordListPackage(id: 'cet6-core', name: '六级核心词汇', nameEn: 'CET-6 Core Vocabulary', language: 'en', description: '大学英语六级考试核心高频词汇', level: 'CET-6', category: WordListCategory.cet, url: 'english/cet6_core.json', wordCount: 2000, iconName: 'auto_stories'),
+    WordListPackage(id: 'cet6-full', name: '六级完整词汇', nameEn: 'CET-6 Full Vocabulary', language: 'en', description: '大学英语六级考试完整词汇表', level: 'CET-6', category: WordListCategory.cet, url: 'english/cet6_full.json', wordCount: 5500, iconName: 'local_library'),
     // ========== TOEFL 托福 ==========
-    WordListPackage(
-      id: 'toefl-core',
-      name: '托福核心词汇',
-      nameEn: 'TOEFL Core Vocabulary',
-      language: 'en',
-      description: 'TOEFL 考试核心高频词汇',
-      level: 'TOEFL',
-      category: WordListCategory.toefl,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/toefl-core.json',
-      wordCount: 3000,
-      iconName: 'flight_takeoff',
-    ),
-    WordListPackage(
-      id: 'toefl-full',
-      name: '托福完整词汇',
-      nameEn: 'TOEFL Full Vocabulary',
-      language: 'en',
-      description: 'TOEFL 考试完整词汇表',
-      level: 'TOEFL',
-      category: WordListCategory.toefl,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/toefl-full.json',
-      wordCount: 8000,
-      iconName: 'public',
-    ),
-    WordListPackage(
-      id: 'toefl-academic',
-      name: '托福学术词汇',
-      nameEn: 'TOEFL Academic Vocabulary',
-      language: 'en',
-      description: 'TOEFL 学术场景高频词汇',
-      level: 'TOEFL',
-      category: WordListCategory.toefl,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/toefl-academic.json',
-      wordCount: 2000,
-      iconName: 'biotech',
-    ),
-
-    // ========== IELTS 雅思 ==========
-    WordListPackage(
-      id: 'ielts-core',
-      name: '雅思核心词汇',
-      nameEn: 'IELTS Core Vocabulary',
-      language: 'en',
-      description: 'IELTS 考试核心高频词汇',
-      level: 'IELTS',
-      category: WordListCategory.ielts,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/ielts-core.json',
-      wordCount: 3000,
-      iconName: 'travel_explore',
-    ),
-    WordListPackage(
-      id: 'ielts-full',
-      name: '雅思完整词汇',
-      nameEn: 'IELTS Full Vocabulary',
-      language: 'en',
-      description: 'IELTS 考试完整词汇表',
-      level: 'IELTS',
-      category: WordListCategory.ielts,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/ielts-full.json',
-      wordCount: 7000,
-      iconName: 'language',
-    ),
-    WordListPackage(
-      id: 'ielts-academic',
-      name: '雅思学术词汇',
-      nameEn: 'IELTS Academic Vocabulary',
-      language: 'en',
-      description: 'IELTS 学术类考试高频词汇',
-      level: 'IELTS',
-      category: WordListCategory.ielts,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/ielts-academic.json',
-      wordCount: 2500,
-      iconName: 'science',
-    ),
-
-    // ========== GRE ==========
-    WordListPackage(
-      id: 'gre-core',
-      name: 'GRE 核心词汇',
-      nameEn: 'GRE Core Vocabulary',
-      language: 'en',
-      description: 'GRE 考试核心高频词汇',
-      level: 'GRE',
-      category: WordListCategory.gre,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gre-core.json',
-      wordCount: 3000,
-      iconName: 'psychology',
-    ),
-    WordListPackage(
-      id: 'gre-full',
-      name: 'GRE 完整词汇',
-      nameEn: 'GRE Full Vocabulary',
-      language: 'en',
-      description: 'GRE 考试完整词汇表',
-      level: 'GRE',
-      category: WordListCategory.gre,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gre-full.json',
-      wordCount: 8000,
-      iconName: 'menu_book',
-    ),
-    WordListPackage(
-      id: 'gre-advanced',
-      name: 'GRE 高难词汇',
-      nameEn: 'GRE Advanced Vocabulary',
-      language: 'en',
-      description: 'GRE 高难度低频词汇',
-      level: 'GRE',
-      category: WordListCategory.gre,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gre-advanced.json',
-      wordCount: 2000,
-      iconName: 'workspace_premium',
-    ),
-
+    WordListPackage(id: 'toefl-core', name: '托福核心词汇', nameEn: 'TOEFL Core Vocabulary', language: 'en', description: 'TOEFL 考试核心高频词汇', level: 'TOEFL', category: WordListCategory.toefl, url: 'english/toefl-core.json', wordCount: 3000, iconName: 'flight_takeoff'),
+    WordListPackage(id: 'toefl-full', name: '托福完整词汇', nameEn: 'TOEFL Full Vocabulary', language: 'en', description: 'TOEFL 考试完整词汇表', level: 'TOEFL', category: WordListCategory.toefl, url: 'english/toefl-full.json', wordCount: 8000, iconName: 'public'),
     // ========== SAT ==========
-    WordListPackage(
-      id: 'sat-core',
-      name: 'SAT 核心词汇',
-      nameEn: 'SAT Core Vocabulary',
-      language: 'en',
-      description: 'SAT 考试核心高频词汇',
-      level: 'SAT',
-      category: WordListCategory.sat,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/sat-core.json',
-      wordCount: 2500,
-      iconName: 'school',
-    ),
-    WordListPackage(
-      id: 'sat-full',
-      name: 'SAT 完整词汇',
-      nameEn: 'SAT Full Vocabulary',
-      language: 'en',
-      description: 'SAT 考试完整词汇表',
-      level: 'SAT',
-      category: WordListCategory.sat,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/sat-full.json',
-      wordCount: 5000,
-      iconName: 'menu_book',
-    ),
-
-    // ========== GMAT ==========
-    WordListPackage(
-      id: 'gmat-core',
-      name: 'GMAT 核心词汇',
-      nameEn: 'GMAT Core Vocabulary',
-      language: 'en',
-      description: 'GMAT 考试核心高频词汇',
-      level: 'GMAT',
-      category: WordListCategory.gmat,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gmat-core.json',
-      wordCount: 2000,
-      iconName: 'business',
-    ),
-    WordListPackage(
-      id: 'gmat-full',
-      name: 'GMAT 完整词汇',
-      nameEn: 'GMAT Full Vocabulary',
-      language: 'en',
-      description: 'GMAT 考试完整词汇表',
-      level: 'GMAT',
-      category: WordListCategory.gmat,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gmat-full.json',
-      wordCount: 4500,
-      iconName: 'trending_up',
-    ),
-
+    WordListPackage(id: 'sat-core', name: 'SAT 核心词汇', nameEn: 'SAT Core Vocabulary', language: 'en', description: 'SAT 考试核心高频词汇', level: 'SAT', category: WordListCategory.sat, url: 'english/sat_core.json', wordCount: 2500, iconName: 'school'),
+    WordListPackage(id: 'sat-full', name: 'SAT 完整词汇', nameEn: 'SAT Full Vocabulary', language: 'en', description: 'SAT 考试完整词汇表', level: 'SAT', category: WordListCategory.sat, url: 'english/sat_full.json', wordCount: 5000, iconName: 'menu_book'),
     // ========== 考研 ==========
-    WordListPackage(
-      id: 'kaoyan-core',
-      name: '考研核心词汇',
-      nameEn: 'Graduate Entrance Exam Core',
-      language: 'en',
-      description: '考研英语核心高频词汇',
-      level: '考研',
-      category: WordListCategory.kaoyan,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/kaoyan-core.json',
-      wordCount: 3000,
-      iconName: 'school',
-    ),
-    WordListPackage(
-      id: 'kaoyan-full',
-      name: '考研完整词汇',
-      nameEn: 'Graduate Entrance Exam Full',
-      language: 'en',
-      description: '考研英语大纲完整词汇表',
-      level: '考研',
-      category: WordListCategory.kaoyan,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/kaoyan-full.json',
-      wordCount: 5500,
-      iconName: 'menu_book',
-    ),
-    WordListPackage(
-      id: 'kaoyan-advanced',
-      name: '考研高频难词',
-      nameEn: 'Graduate Entrance Exam Advanced',
-      language: 'en',
-      description: '考研英语高频难词精选',
-      level: '考研',
-      category: WordListCategory.kaoyan,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/kaoyan-advanced.json',
-      wordCount: 1500,
-      iconName: 'workspace_premium',
-    ),
-
+    WordListPackage(id: 'kaoyan-core', name: '考研核心词汇', nameEn: 'Graduate Entrance Exam Core', language: 'en', description: '考研英语核心高频词汇', level: '考研', category: WordListCategory.kaoyan, url: 'english/kaoyan_core.json', wordCount: 3000, iconName: 'school'),
+    WordListPackage(id: 'kaoyan-full', name: '考研完整词汇', nameEn: 'Graduate Entrance Exam Full', language: 'en', description: '考研英语大纲完整词汇表', level: '考研', category: WordListCategory.kaoyan, url: 'english/kaoyan_full.json', wordCount: 5500, iconName: 'menu_book'),
     // ========== 高考 ==========
-    WordListPackage(
-      id: 'gaokao-core',
-      name: '高考核心词汇',
-      nameEn: 'College Entrance Exam Core',
-      language: 'en',
-      description: '高考英语核心高频词汇',
-      level: '高考',
-      category: WordListCategory.gaokao,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gaokao-core.json',
-      wordCount: 2000,
-      iconName: 'school',
-    ),
-    WordListPackage(
-      id: 'gaokao-full',
-      name: '高考完整词汇',
-      nameEn: 'College Entrance Exam Full',
-      language: 'en',
-      description: '高考英语大纲完整词汇表',
-      level: '高考',
-      category: WordListCategory.gaokao,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/gaokao-full.json',
-      wordCount: 3500,
-      iconName: 'menu_book',
-    ),
-
+    WordListPackage(id: 'gaokao-core', name: '高考核心词汇', nameEn: 'College Entrance Exam Core', language: 'en', description: '高考英语核心高频词汇', level: '高考', category: WordListCategory.gaokao, url: 'english/gaokao_core.json', wordCount: 2000, iconName: 'school'),
+    WordListPackage(id: 'gaokao-full', name: '高考完整词汇', nameEn: 'College Entrance Exam Full', language: 'en', description: '高考英语大纲完整词汇表', level: '高考', category: WordListCategory.gaokao, url: 'english/gaokao_full.json', wordCount: 3500, iconName: 'menu_book'),
     // ========== 中考 ==========
-    WordListPackage(
-      id: 'zhongkao-core',
-      name: '中考核心词汇',
-      nameEn: 'High School Entrance Exam Core',
-      language: 'en',
-      description: '中考英语核心高频词汇',
-      level: '中考',
-      category: WordListCategory.zhongkao,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/zhongkao-core.json',
-      wordCount: 1200,
-      iconName: 'school',
-    ),
-    WordListPackage(
-      id: 'zhongkao-full',
-      name: '中考完整词汇',
-      nameEn: 'High School Entrance Exam Full',
-      language: 'en',
-      description: '中考英语大纲完整词汇表',
-      level: '中考',
-      category: WordListCategory.zhongkao,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/english/zhongkao-full.json',
-      wordCount: 1600,
-      iconName: 'menu_book',
-    ),
-
-    // ========== JLPT 日语能力考试 ==========
-    WordListPackage(
-      id: 'jlpt-n5',
-      name: 'JLPT N5',
-      nameEn: 'JLPT N5 (Beginner)',
-      language: 'ja',
-      description: '日语能力考试 N5 级别基础词汇',
-      level: 'N5',
-      category: WordListCategory.jlpt,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/japanese/jlpt-n5.json',
-      wordCount: 800,
-      iconName: 'translate',
-    ),
-    WordListPackage(
-      id: 'jlpt-n4',
-      name: 'JLPT N4',
-      nameEn: 'JLPT N4 (Elementary)',
-      language: 'ja',
-      description: '日语能力考试 N4 级别初级词汇',
-      level: 'N4',
-      category: WordListCategory.jlpt,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/japanese/jlpt-n4.json',
-      wordCount: 1500,
-      iconName: 'language',
-    ),
-    WordListPackage(
-      id: 'jlpt-n3',
-      name: 'JLPT N3',
-      nameEn: 'JLPT N3 (Intermediate)',
-      language: 'ja',
-      description: '日语能力考试 N3 级别中级词汇',
-      level: 'N3',
-      category: WordListCategory.jlpt,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/japanese/jlpt-n3.json',
-      wordCount: 3000,
-      iconName: 'g_translate',
-    ),
-    WordListPackage(
-      id: 'jlpt-n2',
-      name: 'JLPT N2',
-      nameEn: 'JLPT N2 (Upper-Intermediate)',
-      language: 'ja',
-      description: '日语能力考试 N2 级别中高级词汇',
-      level: 'N2',
-      category: WordListCategory.jlpt,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/japanese/jlpt-n2.json',
-      wordCount: 5000,
-      iconName: 'history_edu',
-    ),
-    WordListPackage(
-      id: 'jlpt-n1',
-      name: 'JLPT N1',
-      nameEn: 'JLPT N1 (Advanced)',
-      language: 'ja',
-      description: '日语能力考试 N1 级别高级词汇',
-      level: 'N1',
-      category: WordListCategory.jlpt,
-      url: '$_githubRaw/lratusa/wordmaster-wordlists/main/japanese/jlpt-n1.json',
-      wordCount: 8000,
-      iconName: 'workspace_premium',
-    ),
+    WordListPackage(id: 'zhongkao-core', name: '中考核心词汇', nameEn: 'High School Entrance Exam Core', language: 'en', description: '中考英语核心高频词汇', level: '中考', category: WordListCategory.zhongkao, url: 'english/zhongkao_core.json', wordCount: 1200, iconName: 'school'),
+    WordListPackage(id: 'zhongkao-full', name: '中考完整词汇', nameEn: 'High School Entrance Exam Full', language: 'en', description: '中考英语大纲完整词汇表', level: '中考', category: WordListCategory.zhongkao, url: 'english/zhongkao_full.json', wordCount: 1600, iconName: 'menu_book'),
+    // ========== JLPT 日语能力考试 词汇 ==========
+    WordListPackage(id: 'jlpt-n5', name: 'JLPT N5 词汇', nameEn: 'JLPT N5 Vocabulary', language: 'ja', description: '日语能力考试 N5 级别基础词汇', level: 'N5', category: WordListCategory.jlpt, url: 'japanese/jlpt_n5.json', wordCount: 800, iconName: 'translate'),
+    WordListPackage(id: 'jlpt-n4', name: 'JLPT N4 词汇', nameEn: 'JLPT N4 Vocabulary', language: 'ja', description: '日语能力考试 N4 级别初级词汇', level: 'N4', category: WordListCategory.jlpt, url: 'japanese/jlpt_n4.json', wordCount: 1500, iconName: 'language'),
+    WordListPackage(id: 'jlpt-n3', name: 'JLPT N3 词汇', nameEn: 'JLPT N3 Vocabulary', language: 'ja', description: '日语能力考试 N3 级别中级词汇', level: 'N3', category: WordListCategory.jlpt, url: 'japanese/jlpt_n3.json', wordCount: 3000, iconName: 'g_translate'),
+    WordListPackage(id: 'jlpt-n2', name: 'JLPT N2 词汇', nameEn: 'JLPT N2 Vocabulary', language: 'ja', description: '日语能力考试 N2 级别中高级词汇', level: 'N2', category: WordListCategory.jlpt, url: 'japanese/jlpt_n2.json', wordCount: 5000, iconName: 'history_edu'),
+    WordListPackage(id: 'jlpt-n1', name: 'JLPT N1 词汇', nameEn: 'JLPT N1 Vocabulary', language: 'ja', description: '日语能力考试 N1 级别高级词汇', level: 'N1', category: WordListCategory.jlpt, url: 'japanese/jlpt_n1.json', wordCount: 8000, iconName: 'workspace_premium'),
+    // ========== JLPT 日语汉字 ==========
+    WordListPackage(id: 'jlpt-kanji-n5', name: 'JLPT N5 汉字', nameEn: 'JLPT N5 Kanji', language: 'ja', description: '日语能力考试 N5 级别汉字 (约100字)', level: 'N5', category: WordListCategory.jlptKanji, url: 'japanese/jlpt_kanji_n5.json', wordCount: 100, iconName: 'translate'),
+    WordListPackage(id: 'jlpt-kanji-n4', name: 'JLPT N4 汉字', nameEn: 'JLPT N4 Kanji', language: 'ja', description: '日语能力考试 N4 级别汉字 (约300字)', level: 'N4', category: WordListCategory.jlptKanji, url: 'japanese/jlpt_kanji_n4.json', wordCount: 300, iconName: 'language'),
+    WordListPackage(id: 'jlpt-kanji-n3', name: 'JLPT N3 汉字', nameEn: 'JLPT N3 Kanji', language: 'ja', description: '日语能力考试 N3 级别汉字 (约600字)', level: 'N3', category: WordListCategory.jlptKanji, url: 'japanese/jlpt_kanji_n3.json', wordCount: 600, iconName: 'g_translate'),
+    WordListPackage(id: 'jlpt-kanji-n2', name: 'JLPT N2 汉字', nameEn: 'JLPT N2 Kanji', language: 'ja', description: '日语能力考试 N2 级别汉字 (约1000字)', level: 'N2', category: WordListCategory.jlptKanji, url: 'japanese/jlpt_kanji_n2.json', wordCount: 1000, iconName: 'history_edu'),
+    WordListPackage(id: 'jlpt-kanji-n1', name: 'JLPT N1 汉字', nameEn: 'JLPT N1 Kanji', language: 'ja', description: '日语能力考试 N1 级别汉字 (约2000字)', level: 'N1', category: WordListCategory.jlptKanji, url: 'japanese/jlpt_kanji_n1.json', wordCount: 2000, iconName: 'workspace_premium'),
+    // ========== 日本学校汉字 (常用汉字) ==========
+    WordListPackage(id: 'school-kanji-grade1', name: '小学一年级汉字', nameEn: 'Grade 1 Kanji', language: 'ja', description: '日本小学一年级教育汉字 (80字)', level: '小1', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_grade1.json', wordCount: 80, iconName: 'child_care'),
+    WordListPackage(id: 'school-kanji-grade2', name: '小学二年级汉字', nameEn: 'Grade 2 Kanji', language: 'ja', description: '日本小学二年级教育汉字 (160字)', level: '小2', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_grade2.json', wordCount: 160, iconName: 'child_care'),
+    WordListPackage(id: 'school-kanji-grade3', name: '小学三年级汉字', nameEn: 'Grade 3 Kanji', language: 'ja', description: '日本小学三年级教育汉字 (200字)', level: '小3', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_grade3.json', wordCount: 200, iconName: 'school'),
+    WordListPackage(id: 'school-kanji-grade4', name: '小学四年级汉字', nameEn: 'Grade 4 Kanji', language: 'ja', description: '日本小学四年级教育汉字 (202字)', level: '小4', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_grade4.json', wordCount: 202, iconName: 'school'),
+    WordListPackage(id: 'school-kanji-grade5', name: '小学五年级汉字', nameEn: 'Grade 5 Kanji', language: 'ja', description: '日本小学五年级教育汉字 (193字)', level: '小5', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_grade5.json', wordCount: 193, iconName: 'menu_book'),
+    WordListPackage(id: 'school-kanji-grade6', name: '小学六年级汉字', nameEn: 'Grade 6 Kanji', language: 'ja', description: '日本小学六年级教育汉字 (191字)', level: '小6', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_grade6.json', wordCount: 191, iconName: 'menu_book'),
+    WordListPackage(id: 'school-kanji-middle', name: '中学汉字', nameEn: 'Middle School Kanji', language: 'ja', description: '日本中学教育汉字 (常用汉字表追加字)', level: '中学', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_middle.json', wordCount: 1110, iconName: 'history_edu'),
+    WordListPackage(id: 'school-kanji-high', name: '高中汉字', nameEn: 'High School Kanji', language: 'ja', description: '日本高中常用汉字补充', level: '高中', category: WordListCategory.schoolKanji, url: 'japanese/school_kanji_high.json', wordCount: 196, iconName: 'workspace_premium'),
   ];
+
+  /// Resolve the full download URL for a package.
+  static String resolveUrl(WordListPackage package, DownloadRegion region) {
+    final base = DownloadMirror.wordlistBaseUrl(region);
+    return '$base/${package.url}';
+  }
 
   final Dio _dio = Dio();
 
@@ -531,21 +142,24 @@ class WordListDownloader {
     return downloaded;
   }
 
-  /// Download a word list package
+  /// Download a word list package.
+  /// [region] determines which mirror to use for the download URL.
   Future<Map<String, dynamic>> downloadPackage(
     WordListPackage package, {
     DownloadProgressCallback? onProgress,
+    DownloadRegion region = DownloadRegion.international,
   }) async {
     final cacheDir = await getCacheDirectory();
     await Directory(cacheDir).create(recursive: true);
 
     final filePath = '$cacheDir/${package.id}.json';
+    final downloadUrl = resolveUrl(package, region);
 
     try {
-      debugPrint('WordList: Downloading ${package.name}...');
+      debugPrint('WordList: Downloading ${package.name} from $downloadUrl');
 
       final response = await _dio.get(
-        package.url,
+        downloadUrl,
         onReceiveProgress: onProgress,
         options: Options(responseType: ResponseType.plain),
       );
@@ -597,6 +211,11 @@ class WordListDownloader {
     }
   }
 
+  /// Get a package by name
+  static WordListPackage? getPackageByName(String name) {
+    return availablePackages.where((p) => p.name == name).firstOrNull;
+  }
+
   /// Get packages by language
   static List<WordListPackage> getPackagesByLanguage(String language) {
     return availablePackages.where((p) => p.language == language).toList();
@@ -615,10 +234,14 @@ class WordListDownloader {
     WordListCategory.cet,
     WordListCategory.kaoyan,
     WordListCategory.toefl,
-    WordListCategory.ielts,
-    WordListCategory.gre,
     WordListCategory.sat,
-    WordListCategory.gmat,
+  ];
+
+  /// Get all Japanese categories
+  static List<WordListCategory> get japaneseCategories => [
+    WordListCategory.jlpt,
+    WordListCategory.jlptKanji,
+    WordListCategory.schoolKanji,
   ];
 
   /// Get category display name
@@ -636,16 +259,14 @@ class WordListDownloader {
         return '考研';
       case WordListCategory.toefl:
         return '托福 TOEFL';
-      case WordListCategory.ielts:
-        return '雅思 IELTS';
-      case WordListCategory.gre:
-        return 'GRE';
       case WordListCategory.sat:
         return 'SAT';
-      case WordListCategory.gmat:
-        return 'GMAT';
       case WordListCategory.jlpt:
-        return 'JLPT 日语能力考';
+        return 'JLPT 词汇';
+      case WordListCategory.jlptKanji:
+        return 'JLPT 汉字';
+      case WordListCategory.schoolKanji:
+        return '日本学校汉字';
     }
   }
 
@@ -664,16 +285,14 @@ class WordListDownloader {
         return 'science';
       case WordListCategory.toefl:
         return 'flight_takeoff';
-      case WordListCategory.ielts:
-        return 'travel_explore';
-      case WordListCategory.gre:
-        return 'psychology';
       case WordListCategory.sat:
         return 'menu_book';
-      case WordListCategory.gmat:
-        return 'business';
       case WordListCategory.jlpt:
         return 'translate';
+      case WordListCategory.jlptKanji:
+        return 'language';
+      case WordListCategory.schoolKanji:
+        return 'child_care';
     }
   }
 }

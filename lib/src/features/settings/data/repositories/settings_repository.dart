@@ -67,4 +67,8 @@ class SettingKeys {
   static const String nickname = 'nickname';
   static const String avatarIndex = 'avatar_index'; // Index of selected avatar
   static const String studyMotivation = 'study_motivation'; // e.g., "考试", "工作", "兴趣"
+
+  // Download source settings (independent for wordlists and TTS)
+  static const String wordlistDownloadRegion = 'wordlist_download_region'; // international, china
+  static const String ttsDownloadRegion = 'tts_download_region'; // international, china
 }
