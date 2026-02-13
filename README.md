@@ -21,6 +21,7 @@
 
 - **Smart Spaced Repetition**: Uses the FSRS (Free Spaced Repetition Scheduler) algorithm for optimal memory retention
 - **AI-Generated Reading Passages**: LLM creates contextual short articles using your vocabulary words, reinforcing memory through meaningful context
+- **40,000+ Vocabulary Words**: Comprehensive word lists including CEFR (A1-C2), JLPT (N5-N1), CET-4/6, TOEFL, and more
 - **Multi-language Support**: Learn English and Japanese vocabulary
 - **Offline TTS**: Text-to-speech using sherpa-onnx (no internet required)
 - **Audio Review Mode**: Listen-based vocabulary practice
@@ -28,6 +29,17 @@
 - **Statistics Dashboard**: Visualize your learning progress with charts
 - **Cross-platform**: Works on Windows, Android, iOS, macOS, and Linux
 - **Flexible AI Backend**: Supports OpenAI, DeepSeek, Ollama (local), or manual mode
+
+### Available Word Lists
+
+| Category | Lists | Total Words |
+|----------|-------|-------------|
+| **CEFR English** | A1, A2, B1, B2, C1, C2 | 9,441 |
+| **Chinese Exams** | 中考, 高考, CET-4, CET-6, 考研 | 20,000+ |
+| **Standardized Tests** | TOEFL, SAT | 14,000+ |
+| **JLPT Japanese** | N5, N4, N3, N2, N1 | 20,000+ |
+
+Word lists include Chinese translations, IPA phonetics, and example sentences. See [wordmaster-wordlists](https://github.com/lratusa/wordmaster-wordlists) for details.
 
 ### Installation
 
@@ -115,6 +127,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - **智能间隔重复**: 采用 FSRS（自由间隔重复调度器）算法，优化记忆效果
 - **AI 生成阅读短文**: 大语言模型根据你的生词自动生成情境短文，在上下文中加深记忆
+- **40,000+ 词汇量**: 包含 CEFR (A1-C2)、JLPT (N5-N1)、四六级、托福等完整词库
 - **多语言支持**: 学习英语和日语词汇
 - **离线语音**: 使用 sherpa-onnx 实现文字转语音（无需联网）
 - **听力训练模式**: 基于听力的词汇练习
@@ -122,6 +135,17 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **统计仪表盘**: 通过图表可视化学习进度
 - **跨平台**: 支持 Windows、Android、iOS、macOS 和 Linux
 - **灵活的 AI 后端**: 支持 OpenAI、DeepSeek、Ollama（本地）或手动模式
+
+### 词库列表
+
+| 类型 | 词库 | 词汇量 |
+|------|------|--------|
+| **CEFR 欧标** | A1, A2, B1, B2, C1, C2 | 9,441 |
+| **国内考试** | 中考, 高考, 四级, 六级, 考研 | 20,000+ |
+| **留学考试** | 托福, SAT | 14,000+ |
+| **日语 JLPT** | N5, N4, N3, N2, N1 | 20,000+ |
+
+所有词汇包含中文释义、IPA音标和例句。详见 [wordmaster-wordlists](https://github.com/lratusa/wordmaster-wordlists)。
 
 ### 安装说明
 
@@ -191,6 +215,7 @@ flutter build linux      # Linux
 
 - **スマート間隔反復**: FSRS（自由間隔反復スケジューラ）アルゴリズムによる最適な記憶定着
 - **AI生成リーディング**: LLMが学習中の単語を使って短い文章を自動生成、文脈の中で記憶を強化
+- **40,000+語彙**: CEFR (A1-C2)、JLPT (N5-N1)、TOEFL等の完全な語彙リスト
 - **多言語対応**: 英語と日本語の語彙学習
 - **オフラインTTS**: sherpa-onnxを使用した音声読み上げ（インターネット不要）
 - **リスニング練習モード**: 聴覚ベースの語彙練習
@@ -198,6 +223,17 @@ flutter build linux      # Linux
 - **統計ダッシュボード**: グラフで学習進捗を可視化
 - **クロスプラットフォーム**: Windows、Android、iOS、macOS、Linuxに対応
 - **柔軟なAIバックエンド**: OpenAI、DeepSeek、Ollama（ローカル）、または手動モードに対応
+
+### 語彙リスト
+
+| カテゴリ | リスト | 語彙数 |
+|----------|--------|--------|
+| **CEFR 英語** | A1, A2, B1, B2, C1, C2 | 9,441 |
+| **中国試験** | 中考, 高考, CET-4, CET-6, 考研 | 20,000+ |
+| **標準テスト** | TOEFL, SAT | 14,000+ |
+| **JLPT 日本語** | N5, N4, N3, N2, N1 | 20,000+ |
+
+全ての語彙に中国語訳、IPA発音記号、例文が含まれています。詳細は [wordmaster-wordlists](https://github.com/lratusa/wordmaster-wordlists) をご覧ください。
 
 ### インストール
 
