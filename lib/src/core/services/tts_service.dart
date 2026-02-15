@@ -112,7 +112,13 @@ class TtsService {
   /// Get a user-friendly message for unsupported language
   String getUnsupportedLanguageMessage(String language) {
     if (language == 'ja' && !_systemTtsAvailable) {
-      return '系统日语语音不可用，请在Windows设置中安装日语语音包';
+      if (Platform.isAndroid) {
+        return '系统日语语音不可用，请在手机设置 → 语言与输入法 → 文字转语音中安装日语语音';
+      } else if (Platform.isIOS) {
+        return '系统日语语音不可用，请在设置 → 辅助功能 → 朗读内容中下载日语语音';
+      } else {
+        return '系统日语语音不可用，请在系统设置中安装日语语音包';
+      }
     }
     return '该语言暂不支持语音播放';
   }
