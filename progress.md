@@ -1,5 +1,76 @@
 # Progress Log
 
+## Session 10: 2026-02-14 - iOS Build Planning (blocked)
+
+### Status: 等待 Mac mini 环境确认
+
+#### 已知信息
+- 用户有一台 Mac mini（位于中国）
+- 可通过 iMessage / OpenClaw 远程操作
+- 需要确认：macOS 版本、Xcode、Flutter、CocoaPods、磁盘空间
+
+#### 待执行环境检查命令
+```bash
+sw_vers && xcode-select -p && flutter --version && pod --version && brew --version && df -h /
+```
+
+#### 预期工作
+- Dart 代码层面无需改动（平台分支已就绪）
+- 主要工作：Xcode 签名配置 + iOS 权限声明（Info.plist）
+- 验证 sherpa_onnx iOS 原生库支持
+- 中国网络环境需考虑：Flutter 中国镜像、CocoaPods 镜像
+
+---
+
+## Session 9: 2026-02-14 - Android Release Build
+
+### Completed Tasks
+
+#### 1. Android Configuration Fix
+- [x] Added `<uses-permission android:name="android.permission.INTERNET"/>` to main AndroidManifest.xml
+- [x] Fixed `android:label` from "wordmaster" to "WordMaster"
+- [x] No Dart code changes needed — all platform branching already correct
+
+#### 2. Build Verification
+- [x] `flutter analyze` — 0 errors, 1 warning (unused field), 60 info
+- [x] Full APK (3 architectures): 127.1MB
+- [x] arm64-only APK: 92.1MB
+- [x] x86_64-only APK: 93.5MB (for emulator testing)
+
+#### 3. APK Size Analysis
+| Component | Size (per arch) |
+|-----------|----------------|
+| libonnxruntime.so (sherpa-onnx) | 15.2 MB |
+| libflutter.so (Flutter engine) | 10.6 MB |
+| libapp.so (Dart compiled) | 7.3 MB |
+| libsherpa-onnx-*.so | 4.7 MB |
+| Other native libs | 2.7 MB |
+| Assets (wordlist JSONs) | 43.8 MB |
+
+#### 4. Emulator Testing
+- [x] Created x86_64 virtual device (Pixel 7, API 35)
+- [x] Installed APK via `adb install` — Success
+- [x] App launches on emulator
+
+#### 5. GitHub Release
+- [x] Committed AndroidManifest.xml changes
+- [x] Tagged `v1.1.0-android`
+- [x] Published GitHub Release: WordMaster v1.1.0
+- [x] Uploaded: `app-release.apk` (92.1MB, arm64) + `WordMaster-v1.1.0-windows-x64.zip` (29.1MB)
+- [x] Release URL: https://github.com/lratusa/wordmaster/releases/tag/v1.1.0-android
+
+### Files Modified
+| File | Action |
+|------|--------|
+| `android/app/src/main/AndroidManifest.xml` | MODIFY — add INTERNET permission, fix label |
+
+### Known Risks (for future testing)
+- sherpa-onnx TTS on Android: never tested on real device (plugin supports Android but untested in this project)
+- TTS model extraction may OOM on low-RAM devices (reads entire 65-350MB archive into memory)
+- Ollama localhost mode won't work on Android (need remote address)
+
+---
+
 ## Session 8: 2026-02-13 - China Mirror Support (国内镜像)
 
 ### Completed Tasks

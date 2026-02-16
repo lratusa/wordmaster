@@ -4,7 +4,32 @@
 构建一个多平台背单词应用（英语+日语），支持 FSRS 艾宾浩斯复习、TTS发音、听力训练、AI短文生成（可切换 OpenAI/DeepSeek/Ollama + 手动复制粘贴模式）、每日打卡截图分享。
 
 ## Current Phase
-**All phases complete.** Ready for new features or maintenance tasks.
+**Phase 14: iOS Release Build** — 等待 Mac mini 环境确认
+
+### Phase 14: iOS Release Build (pending)
+- [ ] 确认 Mac mini 环境（macOS 版本、Xcode、Flutter、CocoaPods、磁盘空间）
+- [ ] 安装缺失工具（Flutter SDK、Xcode、CocoaPods 等）
+- [ ] 克隆仓库到 Mac mini（`git clone https://github.com/lratusa/wordmaster.git`）
+- [ ] 检查 `ios/` 配置（Podfile、Info.plist 权限、签名）
+- [ ] 添加 iOS 所需权限（网络、麦克风等）
+- [ ] 验证 sherpa_onnx iOS 支持
+- [ ] `flutter build ipa` 构建
+- [ ] 真机测试（连接 iPhone）
+- [ ] 发布（TestFlight 或直接安装）
+- **前置条件:** Mac mini（macOS 13+）+ Xcode + Apple Developer 账号
+- **阻塞原因:** 用户暂时无法操作 Mac mini，后续继续
+- **Status:** blocked — 等待 Mac mini 环境确认
+
+### Phase 13: Android Release Build (2026-02-14)
+- [x] Add `INTERNET` permission to main `AndroidManifest.xml` (was only in debug/profile)
+- [x] Fix app label: `wordmaster` → `WordMaster`
+- [x] `flutter analyze` passes (0 errors, 1 warning, 60 info)
+- [x] Build arm64 release APK (92.1MB)
+- [x] Build x86_64 APK for emulator testing (93.5MB)
+- [x] Test on Android emulator (x86_64, API 35) — app installs and launches
+- [x] Publish to GitHub Release v1.1.0 (APK + Windows zip)
+- **Zero Dart code changes** — only Android config files modified
+- **Status:** complete
 
 ### Phase 12: China Mirror Support (国内镜像) (2026-02-13)
 - [x] Create `DownloadMirror` service (`lib/src/core/services/download_mirror.dart`)
