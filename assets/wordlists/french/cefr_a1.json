@@ -1,0 +1,7500 @@
+{
+  "name": "CEFR A1 法语入门",
+  "language": "fr",
+  "description": "法语 A1 级别词汇（入门级） (500词)",
+  "category": "cefr",
+  "level": "A1",
+  "words": [
+    {
+      "word": "a",
+      "translation_cn": "有",
+      "phonetic": "[a]",
+      "examples": [
+        {
+          "sentence": "Il a une maison.",
+          "translation_cn": "他有一栋房子。"
+        },
+        {
+          "sentence": "Elle a un vélo.",
+          "translation_cn": "她有一辆自行车。"
+        }
+      ]
+    },
+    {
+      "word": "a",
+      "translation_cn": "有",
+      "phonetic": "[a]",
+      "examples": [
+        {
+          "sentence": "Il a une maison.",
+          "translation_cn": "他有一栋房子。"
+        },
+        {
+          "sentence": "Elle a un vélo.",
+          "translation_cn": "她有一辆自行车。"
+        }
+      ]
+    },
+    {
+      "word": "acheter",
+      "translation_cn": "购买",
+      "phonetic": "[aʃəte]",
+      "examples": [
+        {
+          "sentence": "Je vais acheter du pain.",
+          "translation_cn": "我要购买面包。"
+        },
+        {
+          "sentence": "Il faut acheter des légumes.",
+          "translation_cn": "需要购买蔬菜。"
+        }
+      ]
+    },
+    {
+      "word": "adresse",
+      "translation_cn": "地址",
+      "phonetic": "[adʁɛs]",
+      "examples": [
+        {
+          "sentence": "Quelle est votre adresse ?",
+          "translation_cn": "您的地址是什么？"
+        },
+        {
+          "sentence": "Mon adresse est rue de Paris.",
+          "translation_cn": "我的地址是巴黎街。"
+        }
+      ]
+    },
+    {
+      "word": "ai",
+      "translation_cn": "有",
+      "phonetic": "[e]",
+      "examples": [
+        {
+          "sentence": "J'ai un chat.",
+          "translation_cn": "我有一只猫。"
+        },
+        {
+          "sentence": "J'ai faim.",
+          "translation_cn": "我饿了。"
+        }
+      ]
+    },
+    {
+      "word": "aimer",
+      "translation_cn": "喜欢；爱",
+      "phonetic": "[eme]",
+      "examples": [
+        {
+          "sentence": "J'aime le chocolat.",
+          "translation_cn": "我喜欢巧克力。"
+        },
+        {
+          "sentence": "Je t'aime.",
+          "translation_cn": "我爱你。"
+        }
+      ]
+    },
+    {
+      "word": "aller",
+      "translation_cn": "去",
+      "phonetic": "[ale]",
+      "examples": [
+        {
+          "sentence": "Je vais au cinéma.",
+          "translation_cn": "我去电影院。"
+        },
+        {
+          "sentence": "Il va à Paris.",
+          "translation_cn": "他去巴黎。"
+        }
+      ]
+    },
+    {
+      "word": "allez",
+      "translation_cn": "去；走",
+      "phonetic": "[ale]",
+      "examples": [
+        {
+          "sentence": "Vous allez bien ?",
+          "translation_cn": "你们好吗？"
+        },
+        {
+          "sentence": "Allez tout droit.",
+          "translation_cn": "直走。"
+        }
+      ]
+    },
+    {
+      "word": "allons",
+      "translation_cn": "去吧；走吧",
+      "phonetic": "[alɔ̃]",
+      "examples": [
+        {
+          "sentence": "Nous allons au restaurant.",
+          "translation_cn": "我们去餐馆。"
+        },
+        {
+          "sentence": "Allons-y !",
+          "translation_cn": "我们走吧！"
+        }
+      ]
+    },
+    {
+      "word": "alors",
+      "translation_cn": "那么；所以",
+      "phonetic": "[alɔʁ]",
+      "examples": [
+        {
+          "sentence": "Alors, qu'est-ce que tu fais ?",
+          "translation_cn": "那么，你在做什么？"
+        },
+        {
+          "sentence": "Il pleut, alors je reste à la maison.",
+          "translation_cn": "下雨了，所以我待在家里。"
+        }
+      ]
+    },
+    {
+      "word": "ami",
+      "translation_cn": "朋友 (男)",
+      "phonetic": "[ami]",
+      "examples": [
+        {
+          "sentence": "C'est mon ami.",
+          "translation_cn": "这是我的朋友。"
+        },
+        {
+          "sentence": "Mon ami est sympa.",
+          "translation_cn": "我的朋友很友善。"
+        }
+      ]
+    },
+    {
+      "word": "amie",
+      "translation_cn": "朋友 (女)",
+      "phonetic": "[ami]",
+      "examples": [
+        {
+          "sentence": "C'est mon amie.",
+          "translation_cn": "这是我的朋友。"
+        },
+        {
+          "sentence": "Mon amie est intelligente.",
+          "translation_cn": "我的朋友很聪明。"
+        }
+      ]
+    },
+    {
+      "word": "amour",
+      "translation_cn": "爱",
+      "phonetic": "[amuʁ]",
+      "examples": [
+        {
+          "sentence": "C'est l'amour.",
+          "translation_cn": "这是爱。"
+        },
+        {
+          "sentence": "J'ai de l'amour.",
+          "translation_cn": "我有爱。"
+        }
+      ]
+    },
+    {
+      "word": "animal",
+      "translation_cn": "动物",
+      "phonetic": "[animal]",
+      "examples": [
+        {
+          "sentence": "C'est un animal.",
+          "translation_cn": "这是一个动物。"
+        },
+        {
+          "sentence": "J'aime les animaux.",
+          "translation_cn": "我喜欢动物。"
+        }
+      ]
+    },
+    {
+      "word": "année",
+      "translation_cn": "年",
+      "phonetic": "[ane]",
+      "examples": [
+        {
+          "sentence": "Une année.",
+          "translation_cn": "一年。"
+        },
+        {
+          "sentence": "Bonne année !",
+          "translation_cn": "新年好！"
+        }
+      ]
+    },
+    {
+      "word": "août",
+      "translation_cn": "八月",
+      "phonetic": "[u]",
+      "examples": [
+        {
+          "sentence": "Août est avant septembre.",
+          "translation_cn": "八月在九月之前。"
+        },
+        {
+          "sentence": "Il y a des vacances en août.",
+          "translation_cn": "八月有假期。"
+        }
+      ]
+    },
+    {
+      "word": "apprendre",
+      "translation_cn": "学习",
+      "phonetic": "[a.pʁɑ̃.dʁə]",
+      "examples": [
+        {
+          "sentence": "J'apprends le français.",
+          "translation_cn": "我学习法语。"
+        },
+        {
+          "sentence": "Il apprend vite.",
+          "translation_cn": "他学得很快。"
+        }
+      ]
+    },
+    {
+      "word": "arbre",
+      "translation_cn": "树",
+      "phonetic": "[aʁbʁ]",
+      "examples": [
+        {
+          "sentence": "C'est un arbre.",
+          "translation_cn": "这是一棵树。"
+        },
+        {
+          "sentence": "L'arbre est grand.",
+          "translation_cn": "树很大。"
+        }
+      ]
+    },
+    {
+      "word": "argent",
+      "translation_cn": "钱",
+      "phonetic": "[aʁʒɑ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai de l'argent.",
+          "translation_cn": "我有钱。"
+        },
+        {
+          "sentence": "C'est beaucoup d'argent.",
+          "translation_cn": "这是很多钱。"
+        }
+      ]
+    },
+    {
+      "word": "argent",
+      "translation_cn": "钱",
+      "phonetic": "[aʁʒɑ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai de l'argent.",
+          "translation_cn": "我有钱。"
+        },
+        {
+          "sentence": "C'est beaucoup d'argent.",
+          "translation_cn": "这是很多钱。"
+        }
+      ]
+    },
+    {
+      "word": "armoire",
+      "translation_cn": "衣柜",
+      "phonetic": "[aʁmwaʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai une armoire.",
+          "translation_cn": "我有一个衣柜。"
+        },
+        {
+          "sentence": "L'armoire est grande.",
+          "translation_cn": "衣柜很大。"
+        }
+      ]
+    },
+    {
+      "word": "arriver",
+      "translation_cn": "到达",
+      "phonetic": "[aʁive]",
+      "examples": [
+        {
+          "sentence": "J'arrive.",
+          "translation_cn": "我到了。"
+        },
+        {
+          "sentence": "Il arrive à Paris.",
+          "translation_cn": "他到达巴黎。"
+        }
+      ]
+    },
+    {
+      "word": "art",
+      "translation_cn": "艺术",
+      "phonetic": "[aʁ]",
+      "examples": [
+        {
+          "sentence": "J'aime l'art.",
+          "translation_cn": "我喜欢艺术。"
+        },
+        {
+          "sentence": "C'est un art.",
+          "translation_cn": "这是一门艺术。"
+        }
+      ]
+    },
+    {
+      "word": "as",
+      "translation_cn": "有",
+      "phonetic": "[a]",
+      "examples": [
+        {
+          "sentence": "Tu as un chien.",
+          "translation_cn": "你有一只狗。"
+        },
+        {
+          "sentence": "Tu as soif ?",
+          "translation_cn": "你渴吗？"
+        }
+      ]
+    },
+    {
+      "word": "assez",
+      "translation_cn": "足够",
+      "phonetic": "[asɛ]",
+      "examples": [
+        {
+          "sentence": "J'ai assez de temps.",
+          "translation_cn": "我有足够的时间。"
+        },
+        {
+          "sentence": "C'est assez bien.",
+          "translation_cn": "这足够好了。"
+        }
+      ]
+    },
+    {
+      "word": "attendre",
+      "translation_cn": "等待",
+      "phonetic": "[atɑ̃dʁ]",
+      "examples": [
+        {
+          "sentence": "Je vais attendre ici.",
+          "translation_cn": "我将在这里等待。"
+        },
+        {
+          "sentence": "Il faut attendre le bus.",
+          "translation_cn": "需要等公共汽车。"
+        }
+      ]
+    },
+    {
+      "word": "aucun",
+      "translation_cn": "没有一个",
+      "phonetic": "[okœ̃]",
+      "examples": [
+        {
+          "sentence": "Je n'ai aucun problème.",
+          "translation_cn": "我没有任何问题。"
+        },
+        {
+          "sentence": "Il n'y a aucun chat.",
+          "translation_cn": "没有猫。"
+        }
+      ]
+    },
+    {
+      "word": "aucune",
+      "translation_cn": "没有一个",
+      "phonetic": "[okyn]",
+      "examples": [
+        {
+          "sentence": "Je n'ai aucune idée.",
+          "translation_cn": "我没有任何想法。"
+        },
+        {
+          "sentence": "Il n'y a aucune pomme.",
+          "translation_cn": "这里没有苹果。"
+        }
+      ]
+    },
+    {
+      "word": "aujourd'hui",
+      "translation_cn": "今天",
+      "phonetic": "[oʒurdɥi]",
+      "examples": [
+        {
+          "sentence": "Je suis libre aujourd'hui.",
+          "translation_cn": "我今天有空。"
+        },
+        {
+          "sentence": "Aujourd'hui, il fait beau.",
+          "translation_cn": "今天天气很好。"
+        }
+      ]
+    },
+    {
+      "word": "aussi",
+      "translation_cn": "也；同样",
+      "phonetic": "[osi]",
+      "examples": [
+        {
+          "sentence": "Je suis étudiant aussi.",
+          "translation_cn": "我也是学生。"
+        },
+        {
+          "sentence": "Elle est aussi française.",
+          "translation_cn": "她也是法国人。"
+        }
+      ]
+    },
+    {
+      "word": "automne",
+      "translation_cn": "秋天",
+      "phonetic": "[otɔn]",
+      "examples": [
+        {
+          "sentence": "L'automne est après l'été.",
+          "translation_cn": "秋天在夏天之后。"
+        },
+        {
+          "sentence": "Les feuilles tombent en automne.",
+          "translation_cn": "秋天树叶落下。"
+        }
+      ]
+    },
+    {
+      "word": "autre",
+      "translation_cn": "其他的",
+      "phonetic": "[otʁ]",
+      "examples": [
+        {
+          "sentence": "Un autre café.",
+          "translation_cn": "再来一杯咖啡。"
+        },
+        {
+          "sentence": "Un autre jour.",
+          "translation_cn": "另一天。"
+        }
+      ]
+    },
+    {
+      "word": "avec",
+      "translation_cn": "和；跟",
+      "phonetic": "[avɛk]",
+      "examples": [
+        {
+          "sentence": "Je suis avec Marie.",
+          "translation_cn": "我和玛丽在一起。"
+        },
+        {
+          "sentence": "Il travaille avec son père.",
+          "translation_cn": "他和他的父亲一起工作。"
+        }
+      ]
+    },
+    {
+      "word": "avez",
+      "translation_cn": "有",
+      "phonetic": "[ave]",
+      "examples": [
+        {
+          "sentence": "Vous avez un problème ?",
+          "translation_cn": "你们有问题吗？"
+        },
+        {
+          "sentence": "Vous avez de la chance.",
+          "translation_cn": "你们很幸运。"
+        }
+      ]
+    },
+    {
+      "word": "avion",
+      "translation_cn": "飞机",
+      "phonetic": "[avjɔ̃]",
+      "examples": [
+        {
+          "sentence": "Je voyage en avion.",
+          "translation_cn": "我乘飞机旅行。"
+        },
+        {
+          "sentence": "L'avion est rapide.",
+          "translation_cn": "飞机很快。"
+        }
+      ]
+    },
+    {
+      "word": "avoir",
+      "translation_cn": "有",
+      "phonetic": "[avwaʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai un livre.",
+          "translation_cn": "我有一本书。"
+        },
+        {
+          "sentence": "Il a une voiture.",
+          "translation_cn": "他有一辆车。"
+        }
+      ]
+    },
+    {
+      "word": "avons",
+      "translation_cn": "有",
+      "phonetic": "[avɔ̃]",
+      "examples": [
+        {
+          "sentence": "Nous avons un jardin.",
+          "translation_cn": "我们有一个花园。"
+        },
+        {
+          "sentence": "Nous avons des enfants.",
+          "translation_cn": "我们有孩子。"
+        }
+      ]
+    },
+    {
+      "word": "avril",
+      "translation_cn": "四月",
+      "phonetic": "[avʁil]",
+      "examples": [
+        {
+          "sentence": "Avril est un mois.",
+          "translation_cn": "四月是一个月。"
+        },
+        {
+          "sentence": "Il fait beau en avril.",
+          "translation_cn": "四月天气很好。"
+        }
+      ]
+    },
+    {
+      "word": "balcon",
+      "translation_cn": "阳台",
+      "phonetic": "[balkɔ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai un balcon.",
+          "translation_cn": "我有一个阳台。"
+        },
+        {
+          "sentence": "Le balcon est petit.",
+          "translation_cn": "阳台很小。"
+        }
+      ]
+    },
+    {
+      "word": "banane",
+      "translation_cn": "香蕉",
+      "phonetic": "[banan]",
+      "examples": [
+        {
+          "sentence": "C'est une banane.",
+          "translation_cn": "这是一根香蕉。"
+        },
+        {
+          "sentence": "Elle mange une banane.",
+          "translation_cn": "她吃一根香蕉。"
+        }
+      ]
+    },
+    {
+      "word": "banque",
+      "translation_cn": "银行",
+      "phonetic": "[bɑ̃k]",
+      "examples": [
+        {
+          "sentence": "Je vais à la banque.",
+          "translation_cn": "我去银行。"
+        },
+        {
+          "sentence": "La banque est ouverte.",
+          "translation_cn": "银行开门了。"
+        }
+      ]
+    },
+    {
+      "word": "beau",
+      "translation_cn": "漂亮的；美好的",
+      "phonetic": "[bo]",
+      "examples": [
+        {
+          "sentence": "C'est un beau garçon.",
+          "translation_cn": "这是一个漂亮的男孩。"
+        },
+        {
+          "sentence": "Le ciel est beau.",
+          "translation_cn": "天空很美。"
+        }
+      ]
+    },
+    {
+      "word": "beaucoup",
+      "translation_cn": "很多",
+      "phonetic": "[boku]",
+      "examples": [
+        {
+          "sentence": "J'ai beaucoup d'amis.",
+          "translation_cn": "我有很多朋友。"
+        },
+        {
+          "sentence": "Il travaille beaucoup.",
+          "translation_cn": "他工作很多。"
+        }
+      ]
+    },
+    {
+      "word": "beurre",
+      "translation_cn": "黄油",
+      "phonetic": "[bœʁ]",
+      "examples": [
+        {
+          "sentence": "J'aime le beurre.",
+          "translation_cn": "我喜欢黄油。"
+        },
+        {
+          "sentence": "Il y a du beurre.",
+          "translation_cn": "这里有黄油。"
+        }
+      ]
+    },
+    {
+      "word": "bijou",
+      "translation_cn": "珠宝；首饰",
+      "phonetic": "[biʒu]",
+      "examples": [
+        {
+          "sentence": "C'est un beau bijou.",
+          "translation_cn": "这是一件漂亮的珠宝。"
+        },
+        {
+          "sentence": "Le bijou est en or.",
+          "translation_cn": "这件珠宝是金色的。"
+        }
+      ]
+    },
+    {
+      "word": "bière",
+      "translation_cn": "啤酒",
+      "phonetic": "[bjɛʁ]",
+      "examples": [
+        {
+          "sentence": "Je bois une bière.",
+          "translation_cn": "我喝一杯啤酒。"
+        },
+        {
+          "sentence": "Il aime la bière.",
+          "translation_cn": "他喜欢啤酒。"
+        }
+      ]
+    },
+    {
+      "word": "blanc",
+      "translation_cn": "白色",
+      "phonetic": "[blɑ̃]",
+      "examples": [
+        {
+          "sentence": "C'est blanc.",
+          "translation_cn": "这是白色的。"
+        },
+        {
+          "sentence": "Le papier est blanc.",
+          "translation_cn": "纸是白色的。"
+        }
+      ]
+    },
+    {
+      "word": "blanche",
+      "translation_cn": "白色的",
+      "phonetic": "[blɑ̃ʃ]",
+      "examples": [
+        {
+          "sentence": "La neige est blanche.",
+          "translation_cn": "雪是白色的。"
+        },
+        {
+          "sentence": "J'ai une chemise blanche.",
+          "translation_cn": "我有一件白色的衬衫。"
+        }
+      ]
+    },
+    {
+      "word": "bleu",
+      "translation_cn": "蓝色",
+      "phonetic": "[blø]",
+      "examples": [
+        {
+          "sentence": "C'est bleu.",
+          "translation_cn": "这是蓝色的。"
+        },
+        {
+          "sentence": "Le ciel est bleu.",
+          "translation_cn": "天空是蓝色的。"
+        }
+      ]
+    },
+    {
+      "word": "bleue",
+      "translation_cn": "蓝色的",
+      "phonetic": "[blø]",
+      "examples": [
+        {
+          "sentence": "La mer est bleue.",
+          "translation_cn": "大海是蓝色的。"
+        },
+        {
+          "sentence": "J'ai une voiture bleue.",
+          "translation_cn": "我有一辆蓝色的车。"
+        }
+      ]
+    },
+    {
+      "word": "bon",
+      "translation_cn": "好的；美味的",
+      "phonetic": "[bɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un bon livre.",
+          "translation_cn": "这是一本好书。"
+        },
+        {
+          "sentence": "Le gâteau est bon.",
+          "translation_cn": "蛋糕很好吃。"
+        }
+      ]
+    },
+    {
+      "word": "bonbon",
+      "translation_cn": "糖果",
+      "phonetic": "[bɔ̃bɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un bonbon.",
+          "translation_cn": "这是一个糖果。"
+        },
+        {
+          "sentence": "J'aime les bonbons.",
+          "translation_cn": "我喜欢糖果。"
+        }
+      ]
+    },
+    {
+      "word": "bonjour",
+      "translation_cn": "你好 (早上好/白天好)",
+      "phonetic": "[bɔ̃ʒuʁ]",
+      "examples": [
+        {
+          "sentence": "Bonjour, madame.",
+          "translation_cn": "你好，女士。"
+        },
+        {
+          "sentence": "Bonjour, comment allez-vous ?",
+          "translation_cn": "你好，你怎么样？"
+        }
+      ]
+    },
+    {
+      "word": "bonne",
+      "translation_cn": "好的；美味的",
+      "phonetic": "[bɔn]",
+      "examples": [
+        {
+          "sentence": "C'est une bonne idée.",
+          "translation_cn": "这是一个好主意。"
+        },
+        {
+          "sentence": "La soupe est bonne.",
+          "translation_cn": "汤很好喝。"
+        }
+      ]
+    },
+    {
+      "word": "bonsoir",
+      "translation_cn": "晚上好",
+      "phonetic": "[bɔ̃swaʁ]",
+      "examples": [
+        {
+          "sentence": "Bonsoir, monsieur.",
+          "translation_cn": "晚上好，先生。"
+        },
+        {
+          "sentence": "Bonsoir, tout le monde.",
+          "translation_cn": "晚上好，大家好。"
+        }
+      ]
+    },
+    {
+      "word": "bouche",
+      "translation_cn": "嘴",
+      "phonetic": "[buʃ]",
+      "examples": [
+        {
+          "sentence": "Elle ouvre la bouche.",
+          "translation_cn": "她张开嘴。"
+        },
+        {
+          "sentence": "Je parle avec ma bouche.",
+          "translation_cn": "我用我的嘴说话。"
+        }
+      ]
+    },
+    {
+      "word": "bras",
+      "translation_cn": "胳膊",
+      "phonetic": "[bʁa]",
+      "examples": [
+        {
+          "sentence": "J'ai mal au bras.",
+          "translation_cn": "我的胳膊疼。"
+        },
+        {
+          "sentence": "Il lève le bras.",
+          "translation_cn": "他举起胳膊。"
+        }
+      ]
+    },
+    {
+      "word": "bus",
+      "translation_cn": "公共汽车",
+      "phonetic": "[bys]",
+      "examples": [
+        {
+          "sentence": "C'est un bus.",
+          "translation_cn": "这是一辆公共汽车。"
+        },
+        {
+          "sentence": "Je prends le bus.",
+          "translation_cn": "我乘坐公共汽车。"
+        }
+      ]
+    },
+    {
+      "word": "c'est",
+      "translation_cn": "这是",
+      "phonetic": "[sɛ]",
+      "examples": [
+        {
+          "sentence": "C'est un livre.",
+          "translation_cn": "这是一本书。"
+        },
+        {
+          "sentence": "C'est facile.",
+          "translation_cn": "这很容易。"
+        }
+      ]
+    },
+    {
+      "word": "café",
+      "translation_cn": "咖啡",
+      "phonetic": "[ka.fe]",
+      "examples": [
+        {
+          "sentence": "Je prends un café.",
+          "translation_cn": "我喝一杯咖啡。"
+        },
+        {
+          "sentence": "C'est du café.",
+          "translation_cn": "这是咖啡。"
+        }
+      ]
+    },
+    {
+      "word": "cahier",
+      "translation_cn": "笔记本",
+      "phonetic": "[kaje]",
+      "examples": [
+        {
+          "sentence": "J'écris dans mon cahier.",
+          "translation_cn": "我在笔记本上写字。"
+        },
+        {
+          "sentence": "C'est un cahier bleu.",
+          "translation_cn": "这是一个蓝色的笔记本。"
+        }
+      ]
+    },
+    {
+      "word": "canapé",
+      "translation_cn": "沙发",
+      "phonetic": "[kanape]",
+      "examples": [
+        {
+          "sentence": "Je suis sur le canapé.",
+          "translation_cn": "我在沙发上。"
+        },
+        {
+          "sentence": "Le canapé est confortable.",
+          "translation_cn": "沙发很舒服。"
+        }
+      ]
+    },
+    {
+      "word": "ce",
+      "translation_cn": "这；这个",
+      "phonetic": "[sə]",
+      "examples": [
+        {
+          "sentence": "Ce livre est intéressant.",
+          "translation_cn": "这本书很有趣。"
+        },
+        {
+          "sentence": "Ce garçon est grand.",
+          "translation_cn": "这个男孩很高。"
+        }
+      ]
+    },
+    {
+      "word": "centime",
+      "translation_cn": "分",
+      "phonetic": "[sɑ̃tim]",
+      "examples": [
+        {
+          "sentence": "Un centime, c'est peu.",
+          "translation_cn": "一分钱很少。"
+        },
+        {
+          "sentence": "J'ai des centimes.",
+          "translation_cn": "我有一些分。"
+        }
+      ]
+    },
+    {
+      "word": "cependant",
+      "translation_cn": "然而；不过",
+      "phonetic": "[səpɑ̃dɑ̃]",
+      "examples": [
+        {
+          "sentence": "Il est petit, cependant il est fort.",
+          "translation_cn": "他很矮，然而他很强壮。"
+        },
+        {
+          "sentence": "J'aime le chocolat, cependant je n'en mange pas souvent.",
+          "translation_cn": "我喜欢巧克力，不过我不常吃。"
+        }
+      ]
+    },
+    {
+      "word": "certain",
+      "translation_cn": "某个；确定的",
+      "phonetic": "[sɛʁtɛ̃]",
+      "examples": [
+        {
+          "sentence": "C'est certain.",
+          "translation_cn": "这是确定的。"
+        },
+        {
+          "sentence": "J'ai un certain âge.",
+          "translation_cn": "我有一个确定的年龄。"
+        }
+      ]
+    },
+    {
+      "word": "certaine",
+      "translation_cn": "某个；确定的",
+      "phonetic": "[sɛʁtɛn]",
+      "examples": [
+        {
+          "sentence": "C'est une chose certaine.",
+          "translation_cn": "这是一件确定的事情。"
+        },
+        {
+          "sentence": "J'ai une certaine somme d'argent.",
+          "translation_cn": "我有一笔确定的钱。"
+        }
+      ]
+    },
+    {
+      "word": "ces",
+      "translation_cn": "这些",
+      "phonetic": "[se]",
+      "examples": [
+        {
+          "sentence": "Ces livres sont intéressants.",
+          "translation_cn": "这些书很有趣。"
+        },
+        {
+          "sentence": "Ces enfants sont jeunes.",
+          "translation_cn": "这些孩子很年轻。"
+        }
+      ]
+    },
+    {
+      "word": "cette",
+      "translation_cn": "这；这个 (阴性)",
+      "phonetic": "[sɛt]",
+      "examples": [
+        {
+          "sentence": "Cette fille est belle.",
+          "translation_cn": "这个女孩很漂亮。"
+        },
+        {
+          "sentence": "Cette voiture est rouge.",
+          "translation_cn": "这辆车是红色的。"
+        }
+      ]
+    },
+    {
+      "word": "chaise",
+      "translation_cn": "椅子",
+      "phonetic": "[ʃɛz]",
+      "examples": [
+        {
+          "sentence": "C'est une chaise.",
+          "translation_cn": "这是一把椅子。"
+        },
+        {
+          "sentence": "Je suis assis sur la chaise.",
+          "translation_cn": "我坐在椅子上。"
+        }
+      ]
+    },
+    {
+      "word": "chaise",
+      "translation_cn": "椅子",
+      "phonetic": "[ʃɛz]",
+      "examples": [
+        {
+          "sentence": "C'est une chaise.",
+          "translation_cn": "这是一把椅子。"
+        },
+        {
+          "sentence": "Je suis assis sur la chaise.",
+          "translation_cn": "我坐在椅子上。"
+        }
+      ]
+    },
+    {
+      "word": "chambre",
+      "translation_cn": "房间",
+      "phonetic": "[ʃɑ̃bʁ]",
+      "examples": [
+        {
+          "sentence": "C'est ma chambre.",
+          "translation_cn": "这是我的房间。"
+        },
+        {
+          "sentence": "La chambre est grande.",
+          "translation_cn": "房间很大。"
+        }
+      ]
+    },
+    {
+      "word": "chapeau",
+      "translation_cn": "帽子",
+      "phonetic": "[ʃapo]",
+      "examples": [
+        {
+          "sentence": "Il a un chapeau bleu.",
+          "translation_cn": "他有一顶蓝色的帽子。"
+        },
+        {
+          "sentence": "Le chapeau est sur la table.",
+          "translation_cn": "帽子在桌子上。"
+        }
+      ]
+    },
+    {
+      "word": "chat",
+      "translation_cn": "猫",
+      "phonetic": "[ʃa]",
+      "examples": [
+        {
+          "sentence": "C'est un chat.",
+          "translation_cn": "这是一只猫。"
+        },
+        {
+          "sentence": "Le chat dort.",
+          "translation_cn": "猫在睡觉。"
+        }
+      ]
+    },
+    {
+      "word": "chaud",
+      "translation_cn": "热的",
+      "phonetic": "[ʃo]",
+      "examples": [
+        {
+          "sentence": "Le café est chaud.",
+          "translation_cn": "咖啡是热的。"
+        },
+        {
+          "sentence": "Il fait chaud.",
+          "translation_cn": "天气很热。"
+        }
+      ]
+    },
+    {
+      "word": "chaussures",
+      "translation_cn": "鞋子",
+      "phonetic": "[ʃosyʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai des chaussures noires.",
+          "translation_cn": "我有一双黑色的鞋子。"
+        },
+        {
+          "sentence": "Les chaussures sont neuves.",
+          "translation_cn": "这些鞋子是新的。"
+        }
+      ]
+    },
+    {
+      "word": "chemise",
+      "translation_cn": "衬衫",
+      "phonetic": "[ʃəmiz]",
+      "examples": [
+        {
+          "sentence": "J'ai une chemise bleue.",
+          "translation_cn": "我有一件蓝色的衬衫。"
+        },
+        {
+          "sentence": "La chemise est propre.",
+          "translation_cn": "这件衬衫是干净的。"
+        }
+      ]
+    },
+    {
+      "word": "cher",
+      "translation_cn": "贵的",
+      "phonetic": "[ʃɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est cher.",
+          "translation_cn": "这很贵。"
+        },
+        {
+          "sentence": "Le livre est cher.",
+          "translation_cn": "这本书很贵。"
+        }
+      ]
+    },
+    {
+      "word": "cher",
+      "translation_cn": "贵的",
+      "phonetic": "[ʃɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est cher.",
+          "translation_cn": "这很贵。"
+        },
+        {
+          "sentence": "Le livre est cher.",
+          "translation_cn": "这本书很贵。"
+        }
+      ]
+    },
+    {
+      "word": "chercher",
+      "translation_cn": "寻找",
+      "phonetic": "[ʃɛʁʃe]",
+      "examples": [
+        {
+          "sentence": "Je cherche mon chat.",
+          "translation_cn": "我在找我的猫。"
+        },
+        {
+          "sentence": "Il faut chercher une solution.",
+          "translation_cn": "需要寻找一个解决方案。"
+        }
+      ]
+    },
+    {
+      "word": "cheval",
+      "translation_cn": "马",
+      "phonetic": "[ʃəval]",
+      "examples": [
+        {
+          "sentence": "C'est un cheval.",
+          "translation_cn": "这是一匹马。"
+        },
+        {
+          "sentence": "Le cheval est grand.",
+          "translation_cn": "这马很大。"
+        }
+      ]
+    },
+    {
+      "word": "cheveu",
+      "translation_cn": "头发",
+      "phonetic": "[ʃəvø]",
+      "examples": [
+        {
+          "sentence": "Elle a un long cheveu.",
+          "translation_cn": "她有一根长头发。"
+        },
+        {
+          "sentence": "Il lave ses cheveux.",
+          "translation_cn": "他洗他的头发。"
+        }
+      ]
+    },
+    {
+      "word": "chez",
+      "translation_cn": "在...家；在...处",
+      "phonetic": "[ʃe]",
+      "examples": [
+        {
+          "sentence": "Je vais chez Marie.",
+          "translation_cn": "我去玛丽家。"
+        },
+        {
+          "sentence": "Je suis chez moi.",
+          "translation_cn": "我在我家。"
+        }
+      ]
+    },
+    {
+      "word": "chien",
+      "translation_cn": "狗",
+      "phonetic": "[ʃjɛ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un chien.",
+          "translation_cn": "这是一只狗。"
+        },
+        {
+          "sentence": "Le chien aboie.",
+          "translation_cn": "狗在叫。"
+        }
+      ]
+    },
+    {
+      "word": "chocolat",
+      "translation_cn": "巧克力",
+      "phonetic": "[ʃɔkɔla]",
+      "examples": [
+        {
+          "sentence": "C'est du chocolat.",
+          "translation_cn": "这是巧克力。"
+        },
+        {
+          "sentence": "J'aime le chocolat.",
+          "translation_cn": "我喜欢巧克力。"
+        }
+      ]
+    },
+    {
+      "word": "chère",
+      "translation_cn": "贵的",
+      "phonetic": "[ʃɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est cher.",
+          "translation_cn": "这很贵。"
+        },
+        {
+          "sentence": "La robe est chère.",
+          "translation_cn": "这条裙子很贵。"
+        }
+      ]
+    },
+    {
+      "word": "chère",
+      "translation_cn": "贵的",
+      "phonetic": "[ʃɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est cher.",
+          "translation_cn": "这很贵。"
+        },
+        {
+          "sentence": "La robe est chère.",
+          "translation_cn": "这条裙子很贵。"
+        }
+      ]
+    },
+    {
+      "word": "ciel",
+      "translation_cn": "天空",
+      "phonetic": "[sjɛl]",
+      "examples": [
+        {
+          "sentence": "Le ciel est bleu.",
+          "translation_cn": "天空是蓝色的。"
+        },
+        {
+          "sentence": "Regarde le ciel.",
+          "translation_cn": "看看天空。"
+        }
+      ]
+    },
+    {
+      "word": "cinéma",
+      "translation_cn": "电影院",
+      "phonetic": "[sinema]",
+      "examples": [
+        {
+          "sentence": "Je vais au cinéma.",
+          "translation_cn": "我去电影院。"
+        },
+        {
+          "sentence": "Le cinéma est loin.",
+          "translation_cn": "电影院很远。"
+        }
+      ]
+    },
+    {
+      "word": "clair",
+      "translation_cn": "清楚的；明亮的",
+      "phonetic": "[klɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est clair.",
+          "translation_cn": "这很清楚。"
+        },
+        {
+          "sentence": "Le ciel est clair.",
+          "translation_cn": "天空晴朗。"
+        }
+      ]
+    },
+    {
+      "word": "cochon",
+      "translation_cn": "猪",
+      "phonetic": "[kɔʃɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un cochon.",
+          "translation_cn": "这是一只猪。"
+        },
+        {
+          "sentence": "Le cochon est rose.",
+          "translation_cn": "这猪是粉色的。"
+        }
+      ]
+    },
+    {
+      "word": "combien",
+      "translation_cn": "多少",
+      "phonetic": "[kɔ̃.bjɛ̃]",
+      "examples": [
+        {
+          "sentence": "Combien ça coûte ?",
+          "translation_cn": "多少钱？"
+        },
+        {
+          "sentence": "Combien de frères as-tu ?",
+          "translation_cn": "你有多少个兄弟？"
+        }
+      ]
+    },
+    {
+      "word": "comment",
+      "translation_cn": "怎样；如何",
+      "phonetic": "[kɔ.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "Comment allez-vous ?",
+          "translation_cn": "你好吗？"
+        },
+        {
+          "sentence": "Comment tu t'appelles ?",
+          "translation_cn": "你叫什么名字？"
+        }
+      ]
+    },
+    {
+      "word": "comprendre",
+      "translation_cn": "理解；明白",
+      "phonetic": "[kɔ̃pʁɑ̃dʁ]",
+      "examples": [
+        {
+          "sentence": "Je comprends.",
+          "translation_cn": "我明白了。"
+        },
+        {
+          "sentence": "Tu comprends ?",
+          "translation_cn": "你明白吗？"
+        }
+      ]
+    },
+    {
+      "word": "content",
+      "translation_cn": "高兴的",
+      "phonetic": "[kɔ̃tɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je suis content.",
+          "translation_cn": "我很高兴。"
+        },
+        {
+          "sentence": "Il est content.",
+          "translation_cn": "他很高兴。"
+        }
+      ]
+    },
+    {
+      "word": "contente",
+      "translation_cn": "高兴的",
+      "phonetic": "[kɔ̃tɑ̃t]",
+      "examples": [
+        {
+          "sentence": "Je suis contente.",
+          "translation_cn": "我很高兴。"
+        },
+        {
+          "sentence": "Elle est contente.",
+          "translation_cn": "她很高兴。"
+        }
+      ]
+    },
+    {
+      "word": "corps",
+      "translation_cn": "身体",
+      "phonetic": "[kɔʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai mal au corps.",
+          "translation_cn": "我身体疼。"
+        },
+        {
+          "sentence": "Le corps est fatigué.",
+          "translation_cn": "身体很累。"
+        }
+      ]
+    },
+    {
+      "word": "couleur",
+      "translation_cn": "颜色",
+      "phonetic": "[kulœʁ]",
+      "examples": [
+        {
+          "sentence": "J'aime cette couleur.",
+          "translation_cn": "我喜欢这个颜色。"
+        },
+        {
+          "sentence": "Quelle est ta couleur préférée ?",
+          "translation_cn": "你最喜欢的颜色是什么？"
+        }
+      ]
+    },
+    {
+      "word": "courriel",
+      "translation_cn": "电子邮件",
+      "phonetic": "[kuʁjɛl]",
+      "examples": [
+        {
+          "sentence": "Voici mon courriel.",
+          "translation_cn": "这是我的电子邮件。"
+        },
+        {
+          "sentence": "J'envoie un courriel.",
+          "translation_cn": "我发送一封电子邮件。"
+        }
+      ]
+    },
+    {
+      "word": "court",
+      "translation_cn": "短的",
+      "phonetic": "[kuʁ]",
+      "examples": [
+        {
+          "sentence": "Le chemin est court.",
+          "translation_cn": "这条路很短。"
+        },
+        {
+          "sentence": "Le film est court.",
+          "translation_cn": "这部电影很短。"
+        }
+      ]
+    },
+    {
+      "word": "courte",
+      "translation_cn": "短的",
+      "phonetic": "[kuʁt]",
+      "examples": [
+        {
+          "sentence": "La rue est courte.",
+          "translation_cn": "这条街很短。"
+        },
+        {
+          "sentence": "La jupe est courte.",
+          "translation_cn": "这条裙子很短。"
+        }
+      ]
+    },
+    {
+      "word": "coûter",
+      "translation_cn": "花费",
+      "phonetic": "[ku.te]",
+      "examples": [
+        {
+          "sentence": "Ça coûte cher.",
+          "translation_cn": "这很贵。"
+        },
+        {
+          "sentence": "Combien ça coûte ?",
+          "translation_cn": "这多少钱？"
+        }
+      ]
+    },
+    {
+      "word": "crayon",
+      "translation_cn": "铅笔",
+      "phonetic": "[kʁɛjɔ̃]",
+      "examples": [
+        {
+          "sentence": "J'utilise un crayon.",
+          "translation_cn": "我用铅笔。"
+        },
+        {
+          "sentence": "Le crayon est rouge.",
+          "translation_cn": "铅笔是红色的。"
+        }
+      ]
+    },
+    {
+      "word": "croire",
+      "translation_cn": "相信；认为",
+      "phonetic": "[kʁwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je crois.",
+          "translation_cn": "我相信。"
+        },
+        {
+          "sentence": "Je crois que oui.",
+          "translation_cn": "我认为是。"
+        }
+      ]
+    },
+    {
+      "word": "cuisine",
+      "translation_cn": "厨房",
+      "phonetic": "[kɥizin]",
+      "examples": [
+        {
+          "sentence": "C'est ma cuisine.",
+          "translation_cn": "这是我的厨房。"
+        },
+        {
+          "sentence": "Je suis dans la cuisine.",
+          "translation_cn": "我在厨房里。"
+        }
+      ]
+    },
+    {
+      "word": "cœur",
+      "translation_cn": "心",
+      "phonetic": "[kœʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai mal au cœur.",
+          "translation_cn": "我心痛。"
+        },
+        {
+          "sentence": "Il a un bon cœur.",
+          "translation_cn": "他有一颗善良的心。"
+        }
+      ]
+    },
+    {
+      "word": "dans",
+      "translation_cn": "在...里；在...之内",
+      "phonetic": "[dɑ̃]",
+      "examples": [
+        {
+          "sentence": "Le chat est dans la maison.",
+          "translation_cn": "猫在房子里。"
+        },
+        {
+          "sentence": "Dans deux jours.",
+          "translation_cn": "两天之内。"
+        }
+      ]
+    },
+    {
+      "word": "danse",
+      "translation_cn": "舞蹈",
+      "phonetic": "[dɑ̃s]",
+      "examples": [
+        {
+          "sentence": "Elle aime la danse.",
+          "translation_cn": "她喜欢舞蹈。"
+        },
+        {
+          "sentence": "Je regarde une danse.",
+          "translation_cn": "我在看一个舞蹈。"
+        }
+      ]
+    },
+    {
+      "word": "de",
+      "translation_cn": "的；从",
+      "phonetic": "[də]",
+      "examples": [
+        {
+          "sentence": "C'est le livre de Marie.",
+          "translation_cn": "这是玛丽的书。"
+        },
+        {
+          "sentence": "Je viens de Paris.",
+          "translation_cn": "我来自巴黎。"
+        }
+      ]
+    },
+    {
+      "word": "demain",
+      "translation_cn": "明天",
+      "phonetic": "[dəmɛ̃]",
+      "examples": [
+        {
+          "sentence": "Je pars demain.",
+          "translation_cn": "我明天离开。"
+        },
+        {
+          "sentence": "À demain !",
+          "translation_cn": "明天见！"
+        }
+      ]
+    },
+    {
+      "word": "demander",
+      "translation_cn": "问；请求",
+      "phonetic": "[də.mɑ̃.de]",
+      "examples": [
+        {
+          "sentence": "Je vais demander.",
+          "translation_cn": "我要问。"
+        },
+        {
+          "sentence": "Il va demander de l'aide.",
+          "translation_cn": "他要请求帮助。"
+        }
+      ]
+    },
+    {
+      "word": "dent",
+      "translation_cn": "牙齿",
+      "phonetic": "[dɑ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai mal à la dent.",
+          "translation_cn": "我牙疼。"
+        },
+        {
+          "sentence": "Il a une dent blanche.",
+          "translation_cn": "他有一颗白色的牙齿。"
+        }
+      ]
+    },
+    {
+      "word": "dernier",
+      "translation_cn": "最后",
+      "phonetic": "[dɛʁnje]",
+      "examples": [
+        {
+          "sentence": "C'est le dernier jour.",
+          "translation_cn": "这是最后一天。"
+        },
+        {
+          "sentence": "Il est le dernier.",
+          "translation_cn": "他是最后一名。"
+        }
+      ]
+    },
+    {
+      "word": "dernière",
+      "translation_cn": "最后",
+      "phonetic": "[dɛʁnjɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est la dernière fois.",
+          "translation_cn": "这是最后一次。"
+        },
+        {
+          "sentence": "Elle est la dernière.",
+          "translation_cn": "她是最后一名。"
+        }
+      ]
+    },
+    {
+      "word": "dessin",
+      "translation_cn": "绘画；图画",
+      "phonetic": "[desɛ̃]",
+      "examples": [
+        {
+          "sentence": "Je fais un dessin.",
+          "translation_cn": "我画一幅画。"
+        },
+        {
+          "sentence": "C'est un beau dessin.",
+          "translation_cn": "这是一幅美丽的画。"
+        }
+      ]
+    },
+    {
+      "word": "deuxièmement",
+      "translation_cn": "其次",
+      "phonetic": "[də.zjɛm.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "Deuxièmement, je vais dormir.",
+          "translation_cn": "其次，我要睡觉。"
+        },
+        {
+          "sentence": "Deuxièmement, il faut écrire.",
+          "translation_cn": "其次，要写作。"
+        }
+      ]
+    },
+    {
+      "word": "devoir",
+      "translation_cn": "应该；必须；作业",
+      "phonetic": "[dəvwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je dois partir.",
+          "translation_cn": "我应该走了。"
+        },
+        {
+          "sentence": "Il doit étudier.",
+          "translation_cn": "他必须学习。"
+        }
+      ]
+    },
+    {
+      "word": "devoir",
+      "translation_cn": "应该；必须；作业",
+      "phonetic": "[dəvwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je dois partir.",
+          "translation_cn": "我应该走了。"
+        },
+        {
+          "sentence": "Il doit étudier.",
+          "translation_cn": "他必须学习。"
+        }
+      ]
+    },
+    {
+      "word": "diable",
+      "translation_cn": "魔鬼",
+      "phonetic": "[djabl]",
+      "examples": [
+        {
+          "sentence": "Le diable est mauvais.",
+          "translation_cn": "魔鬼是坏的。"
+        },
+        {
+          "sentence": "Je ne crois pas au diable.",
+          "translation_cn": "我不相信魔鬼。"
+        }
+      ]
+    },
+    {
+      "word": "dieu",
+      "translation_cn": "神",
+      "phonetic": "[djø]",
+      "examples": [
+        {
+          "sentence": "Je crois en Dieu.",
+          "translation_cn": "我相信神。"
+        },
+        {
+          "sentence": "Dieu est bon.",
+          "translation_cn": "神是好的。"
+        }
+      ]
+    },
+    {
+      "word": "difficile",
+      "translation_cn": "困难的；难的",
+      "phonetic": "[difisil]",
+      "examples": [
+        {
+          "sentence": "C'est difficile.",
+          "translation_cn": "这很难。"
+        },
+        {
+          "sentence": "L'examen est difficile.",
+          "translation_cn": "考试很难。"
+        }
+      ]
+    },
+    {
+      "word": "difficilement",
+      "translation_cn": "困难地",
+      "phonetic": "[difisilmɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je comprends difficilement.",
+          "translation_cn": "我很难理解。"
+        },
+        {
+          "sentence": "Il travaille difficilement.",
+          "translation_cn": "他工作得很辛苦。"
+        }
+      ]
+    },
+    {
+      "word": "dimanche",
+      "translation_cn": "星期日；星期天",
+      "phonetic": "[dimɑ̃ʃ]",
+      "examples": [
+        {
+          "sentence": "C'est dimanche.",
+          "translation_cn": "今天是星期日。"
+        },
+        {
+          "sentence": "Je mange dimanche.",
+          "translation_cn": "我星期日吃饭。"
+        }
+      ]
+    },
+    {
+      "word": "doigt",
+      "translation_cn": "手指",
+      "phonetic": "[dwa]",
+      "examples": [
+        {
+          "sentence": "J'ai mal au doigt.",
+          "translation_cn": "我的手指疼。"
+        },
+        {
+          "sentence": "C'est mon doigt.",
+          "translation_cn": "这是我的手指。"
+        }
+      ]
+    },
+    {
+      "word": "donc",
+      "translation_cn": "因此；所以",
+      "phonetic": "[dɔ̃k]",
+      "examples": [
+        {
+          "sentence": "Je suis fatigué, donc je vais dormir.",
+          "translation_cn": "我累了，所以我要睡觉了。"
+        },
+        {
+          "sentence": "Il a étudié, donc il a réussi.",
+          "translation_cn": "他学习了，因此他成功了。"
+        }
+      ]
+    },
+    {
+      "word": "donner",
+      "translation_cn": "给",
+      "phonetic": "[dɔne]",
+      "examples": [
+        {
+          "sentence": "Je donne un livre.",
+          "translation_cn": "我给一本书。"
+        },
+        {
+          "sentence": "Il donne une fleur.",
+          "translation_cn": "他给一朵花。"
+        }
+      ]
+    },
+    {
+      "word": "droit",
+      "translation_cn": "权利；法律",
+      "phonetic": "[dʁwa]",
+      "examples": [
+        {
+          "sentence": "C'est mon droit.",
+          "translation_cn": "这是我的权利。"
+        },
+        {
+          "sentence": "Je connais le droit.",
+          "translation_cn": "我知道法律。"
+        }
+      ]
+    },
+    {
+      "word": "décembre",
+      "translation_cn": "十二月",
+      "phonetic": "[desɑ̃bʁ]",
+      "examples": [
+        {
+          "sentence": "Décembre est le dernier mois.",
+          "translation_cn": "十二月是最后一个月。"
+        },
+        {
+          "sentence": "Il neige en décembre.",
+          "translation_cn": "十二月下雪。"
+        }
+      ]
+    },
+    {
+      "word": "déjà",
+      "translation_cn": "已经",
+      "phonetic": "[deʒa]",
+      "examples": [
+        {
+          "sentence": "J'ai déjà mangé.",
+          "translation_cn": "我已经吃了。"
+        },
+        {
+          "sentence": "Il est déjà tard.",
+          "translation_cn": "已经很晚了。"
+        }
+      ]
+    },
+    {
+      "word": "détester",
+      "translation_cn": "讨厌",
+      "phonetic": "[de.tɛs.te]",
+      "examples": [
+        {
+          "sentence": "Je déteste le froid.",
+          "translation_cn": "我讨厌寒冷。"
+        },
+        {
+          "sentence": "Il déteste les mensonges.",
+          "translation_cn": "他讨厌谎言。"
+        }
+      ]
+    },
+    {
+      "word": "eau",
+      "translation_cn": "水",
+      "phonetic": "[o]",
+      "examples": [
+        {
+          "sentence": "Je bois de l'eau.",
+          "translation_cn": "我喝水。"
+        },
+        {
+          "sentence": "C'est de l'eau.",
+          "translation_cn": "这是水。"
+        }
+      ]
+    },
+    {
+      "word": "elle",
+      "translation_cn": "她",
+      "phonetic": "[ɛl]",
+      "examples": [
+        {
+          "sentence": "Elle est belle.",
+          "translation_cn": "她很漂亮。"
+        },
+        {
+          "sentence": "Elle chante.",
+          "translation_cn": "她唱歌。"
+        }
+      ]
+    },
+    {
+      "word": "elles",
+      "translation_cn": "她们",
+      "phonetic": "[ɛl]",
+      "examples": [
+        {
+          "sentence": "Elles sont belles.",
+          "translation_cn": "她们很漂亮。"
+        },
+        {
+          "sentence": "Elles chantent.",
+          "translation_cn": "她们唱歌。"
+        }
+      ]
+    },
+    {
+      "word": "en",
+      "translation_cn": "在...里；用",
+      "phonetic": "[ɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je suis en France.",
+          "translation_cn": "我在法国。"
+        },
+        {
+          "sentence": "Écrire en français.",
+          "translation_cn": "用法语写。"
+        }
+      ]
+    },
+    {
+      "word": "encore",
+      "translation_cn": "还；再",
+      "phonetic": "[ɑ̃kɔʁ]",
+      "examples": [
+        {
+          "sentence": "Je veux encore du café.",
+          "translation_cn": "我还想喝咖啡。"
+        },
+        {
+          "sentence": "Il travaille encore.",
+          "translation_cn": "他还在工作。"
+        }
+      ]
+    },
+    {
+      "word": "enfant",
+      "translation_cn": "孩子",
+      "phonetic": "[ɑ̃fɑ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un enfant.",
+          "translation_cn": "这是一个孩子。"
+        },
+        {
+          "sentence": "L'enfant joue.",
+          "translation_cn": "孩子在玩。"
+        }
+      ]
+    },
+    {
+      "word": "enfer",
+      "translation_cn": "地狱",
+      "phonetic": "[ɑ̃fɛʁ]",
+      "examples": [
+        {
+          "sentence": "L'enfer est terrible.",
+          "translation_cn": "地狱是可怕的。"
+        },
+        {
+          "sentence": "Il a peur de l'enfer.",
+          "translation_cn": "他害怕地狱。"
+        }
+      ]
+    },
+    {
+      "word": "ensemble",
+      "translation_cn": "一起",
+      "phonetic": "[ɑ̃sɑ̃bl]",
+      "examples": [
+        {
+          "sentence": "Nous sommes ensemble.",
+          "translation_cn": "我们在一起。"
+        },
+        {
+          "sentence": "Travaillons ensemble.",
+          "translation_cn": "我们一起工作吧。"
+        }
+      ]
+    },
+    {
+      "word": "entendre",
+      "translation_cn": "听见",
+      "phonetic": "[ɑ̃.tɑ̃.dʁə]",
+      "examples": [
+        {
+          "sentence": "J'entends la musique.",
+          "translation_cn": "我听见音乐。"
+        },
+        {
+          "sentence": "Il n'entend pas bien.",
+          "translation_cn": "他听不太清楚。"
+        }
+      ]
+    },
+    {
+      "word": "esprit",
+      "translation_cn": "精神；心灵",
+      "phonetic": "[ɛspʁi]",
+      "examples": [
+        {
+          "sentence": "Il a beaucoup d'esprit.",
+          "translation_cn": "他很有精神。"
+        },
+        {
+          "sentence": "L'esprit est important.",
+          "translation_cn": "心灵很重要。"
+        }
+      ]
+    },
+    {
+      "word": "espérer",
+      "translation_cn": "希望",
+      "phonetic": "[ɛspeʁe]",
+      "examples": [
+        {
+          "sentence": "J'espère que oui.",
+          "translation_cn": "我希望是。"
+        },
+        {
+          "sentence": "Nous espérons gagner.",
+          "translation_cn": "我们希望获胜。"
+        }
+      ]
+    },
+    {
+      "word": "est",
+      "translation_cn": "是",
+      "phonetic": "[ɛ]",
+      "examples": [
+        {
+          "sentence": "Il est grand.",
+          "translation_cn": "他很高。"
+        },
+        {
+          "sentence": "Elle est étudiante.",
+          "translation_cn": "她是学生。"
+        }
+      ]
+    },
+    {
+      "word": "et",
+      "translation_cn": "和",
+      "phonetic": "[e]",
+      "examples": [
+        {
+          "sentence": "Pierre et Marie sont amis.",
+          "translation_cn": "皮埃尔和玛丽是朋友。"
+        },
+        {
+          "sentence": "J'aime le café et le thé.",
+          "translation_cn": "我喜欢咖啡和茶。"
+        }
+      ]
+    },
+    {
+      "word": "etc.",
+      "translation_cn": "",
+      "phonetic": "",
+      "examples": []
+    },
+    {
+      "word": "euro",
+      "translation_cn": "欧元",
+      "phonetic": "[øʁo]",
+      "examples": [
+        {
+          "sentence": "Un euro, s'il vous plaît.",
+          "translation_cn": "请给我一欧元。"
+        },
+        {
+          "sentence": "L'euro est une monnaie.",
+          "translation_cn": "欧元是一种货币。"
+        }
+      ]
+    },
+    {
+      "word": "Europe",
+      "translation_cn": "欧洲",
+      "phonetic": "[øʁɔp]",
+      "examples": [
+        {
+          "sentence": "L'Europe est grande.",
+          "translation_cn": "欧洲很大。"
+        },
+        {
+          "sentence": "Je voyage en Europe.",
+          "translation_cn": "我在欧洲旅行。"
+        }
+      ]
+    },
+    {
+      "word": "exactement",
+      "translation_cn": " точно",
+      "phonetic": "[ɛɡ.zak.tə.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "C'est exactement ça.",
+          "translation_cn": "正是这样。"
+        },
+        {
+          "sentence": "Il est arrivé exactement à l'heure.",
+          "translation_cn": "他准时到达。"
+        }
+      ]
+    },
+    {
+      "word": "facile",
+      "translation_cn": "容易的；简单的",
+      "phonetic": "[fasil]",
+      "examples": [
+        {
+          "sentence": "C'est facile.",
+          "translation_cn": "这很容易。"
+        },
+        {
+          "sentence": "L'exercice est facile.",
+          "translation_cn": "这个练习很容易。"
+        }
+      ]
+    },
+    {
+      "word": "facilement",
+      "translation_cn": "容易地",
+      "phonetic": "[fasilmɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je comprends facilement.",
+          "translation_cn": "我很容易理解。"
+        },
+        {
+          "sentence": "Il apprend facilement.",
+          "translation_cn": "他学得很快。"
+        }
+      ]
+    },
+    {
+      "word": "faible",
+      "translation_cn": "弱的",
+      "phonetic": "[fɛbl]",
+      "examples": [
+        {
+          "sentence": "Je suis faible.",
+          "translation_cn": "我很虚弱。"
+        },
+        {
+          "sentence": "La lumière est faible.",
+          "translation_cn": "光线很弱。"
+        }
+      ]
+    },
+    {
+      "word": "faire",
+      "translation_cn": "做；制作",
+      "phonetic": "[fɛʁ]",
+      "examples": [
+        {
+          "sentence": "Je fais du sport.",
+          "translation_cn": "我做运动。"
+        },
+        {
+          "sentence": "Il fait un gâteau.",
+          "translation_cn": "他做一个蛋糕。"
+        }
+      ]
+    },
+    {
+      "word": "fais",
+      "translation_cn": "做",
+      "phonetic": "[fɛ]",
+      "examples": [
+        {
+          "sentence": "Tu fais quoi ?",
+          "translation_cn": "你在做什么？"
+        },
+        {
+          "sentence": "Tu fais du vélo.",
+          "translation_cn": "你骑自行车。"
+        }
+      ]
+    },
+    {
+      "word": "fais",
+      "translation_cn": "做",
+      "phonetic": "[fɛ]",
+      "examples": [
+        {
+          "sentence": "Tu fais quoi ?",
+          "translation_cn": "你在做什么？"
+        },
+        {
+          "sentence": "Tu fais du vélo.",
+          "translation_cn": "你骑自行车。"
+        }
+      ]
+    },
+    {
+      "word": "faisons",
+      "translation_cn": "做",
+      "phonetic": "[fəzɔ̃]",
+      "examples": [
+        {
+          "sentence": "Nous faisons du shopping.",
+          "translation_cn": "我们去购物。"
+        },
+        {
+          "sentence": "Nous faisons un gâteau.",
+          "translation_cn": "我们做一个蛋糕。"
+        }
+      ]
+    },
+    {
+      "word": "fait",
+      "translation_cn": "做；完成",
+      "phonetic": "[fɛ]",
+      "examples": [
+        {
+          "sentence": "Il fait beau.",
+          "translation_cn": "天气很好。"
+        },
+        {
+          "sentence": "Elle fait ses devoirs.",
+          "translation_cn": "她做作业。"
+        }
+      ]
+    },
+    {
+      "word": "faites",
+      "translation_cn": "做",
+      "phonetic": "[fɛt]",
+      "examples": [
+        {
+          "sentence": "Vous faites quoi ?",
+          "translation_cn": "你们在做什么？"
+        },
+        {
+          "sentence": "Faites attention !",
+          "translation_cn": "请注意！"
+        }
+      ]
+    },
+    {
+      "word": "falloir",
+      "translation_cn": "需要；必须",
+      "phonetic": "[fa.lwaʁ]",
+      "examples": [
+        {
+          "sentence": "Il faut travailler.",
+          "translation_cn": "需要工作。/ 必须工作。"
+        },
+        {
+          "sentence": "Il faut manger.",
+          "translation_cn": "需要吃饭。/ 必须吃饭。"
+        }
+      ]
+    },
+    {
+      "word": "famille",
+      "translation_cn": "家庭",
+      "phonetic": "[fami]",
+      "examples": [
+        {
+          "sentence": "J'aime ma famille.",
+          "translation_cn": "我爱我的家庭。"
+        },
+        {
+          "sentence": "Ma famille est grande.",
+          "translation_cn": "我的家庭很大。"
+        }
+      ]
+    },
+    {
+      "word": "fatigué",
+      "translation_cn": "疲劳的；累的",
+      "phonetic": "[fatiɡe]",
+      "examples": [
+        {
+          "sentence": "Je suis fatigué.",
+          "translation_cn": "我很累。"
+        },
+        {
+          "sentence": "Il est fatigué après le travail.",
+          "translation_cn": "他工作后很累。"
+        }
+      ]
+    },
+    {
+      "word": "fatiguée",
+      "translation_cn": "疲劳的；累的",
+      "phonetic": "[fatiɡe]",
+      "examples": [
+        {
+          "sentence": "Je suis fatiguée.",
+          "translation_cn": "我很累。 (女)"
+        },
+        {
+          "sentence": "Elle est fatiguée après l'école.",
+          "translation_cn": "她放学后很累。"
+        }
+      ]
+    },
+    {
+      "word": "femme",
+      "translation_cn": "女人",
+      "phonetic": "[fam]",
+      "examples": [
+        {
+          "sentence": "C'est une femme.",
+          "translation_cn": "这是一个女人。"
+        },
+        {
+          "sentence": "La femme est belle.",
+          "translation_cn": "这个女人很漂亮。"
+        }
+      ]
+    },
+    {
+      "word": "fenêtre",
+      "translation_cn": "窗户",
+      "phonetic": "[fənɛtʁ]",
+      "examples": [
+        {
+          "sentence": "La fenêtre est ouverte.",
+          "translation_cn": "窗户开着。"
+        },
+        {
+          "sentence": "Ferme la fenêtre.",
+          "translation_cn": "关上窗户。"
+        }
+      ]
+    },
+    {
+      "word": "fermer",
+      "translation_cn": "关闭",
+      "phonetic": "[fɛʁme]",
+      "examples": [
+        {
+          "sentence": "Je dois fermer la fenêtre.",
+          "translation_cn": "我必须关上窗户。"
+        },
+        {
+          "sentence": "Il va fermer le magasin.",
+          "translation_cn": "他要关店了。"
+        }
+      ]
+    },
+    {
+      "word": "fille",
+      "translation_cn": "女孩",
+      "phonetic": "[fij]",
+      "examples": [
+        {
+          "sentence": "C'est une fille.",
+          "translation_cn": "这是一个女孩。"
+        },
+        {
+          "sentence": "La fille lit.",
+          "translation_cn": "女孩在读书。"
+        }
+      ]
+    },
+    {
+      "word": "film",
+      "translation_cn": "电影",
+      "phonetic": "[film]",
+      "examples": [
+        {
+          "sentence": "Je regarde un film.",
+          "translation_cn": "我看一部电影。"
+        },
+        {
+          "sentence": "Le film est intéressant.",
+          "translation_cn": "电影很有趣。"
+        }
+      ]
+    },
+    {
+      "word": "finalement",
+      "translation_cn": "最终",
+      "phonetic": "[fi.nal.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "Finalement, il est arrivé.",
+          "translation_cn": "最终，他到了。"
+        },
+        {
+          "sentence": "Finalement, j'ai compris.",
+          "translation_cn": "最终，我明白了。"
+        }
+      ]
+    },
+    {
+      "word": "fleur",
+      "translation_cn": "花",
+      "phonetic": "[flœʁ]",
+      "examples": [
+        {
+          "sentence": "C'est une fleur.",
+          "translation_cn": "这是一朵花。"
+        },
+        {
+          "sentence": "La fleur est rouge.",
+          "translation_cn": "花是红色的。"
+        }
+      ]
+    },
+    {
+      "word": "foncé",
+      "translation_cn": "暗的；深的",
+      "phonetic": "[fɔ̃se]",
+      "examples": [
+        {
+          "sentence": "C'est foncé.",
+          "translation_cn": "这很暗。"
+        },
+        {
+          "sentence": "Le bleu est foncé.",
+          "translation_cn": "蓝色是深色的。"
+        }
+      ]
+    },
+    {
+      "word": "font",
+      "translation_cn": "做",
+      "phonetic": "[fɔ̃]",
+      "examples": [
+        {
+          "sentence": "Ils font du bruit.",
+          "translation_cn": "他们发出噪音。"
+        },
+        {
+          "sentence": "Elles font la fête.",
+          "translation_cn": "她们在开派对。"
+        }
+      ]
+    },
+    {
+      "word": "football",
+      "translation_cn": "足球",
+      "phonetic": "[futbɔl]",
+      "examples": [
+        {
+          "sentence": "J'aime jouer au football.",
+          "translation_cn": "我喜欢踢足球。"
+        },
+        {
+          "sentence": "Le football est un sport populaire.",
+          "translation_cn": "足球是一项受欢迎的运动。"
+        }
+      ]
+    },
+    {
+      "word": "fort",
+      "translation_cn": "强壮的；强的",
+      "phonetic": "[fɔʁ]",
+      "examples": [
+        {
+          "sentence": "Il est fort.",
+          "translation_cn": "他很强壮。"
+        },
+        {
+          "sentence": "Le café est fort.",
+          "translation_cn": "咖啡很浓。"
+        }
+      ]
+    },
+    {
+      "word": "forte",
+      "translation_cn": "强壮的；强的",
+      "phonetic": "[fɔʁt]",
+      "examples": [
+        {
+          "sentence": "Elle est forte.",
+          "translation_cn": "她很强壮。"
+        },
+        {
+          "sentence": "La lumière est forte.",
+          "translation_cn": "光线很强。"
+        }
+      ]
+    },
+    {
+      "word": "fraise",
+      "translation_cn": "草莓",
+      "phonetic": "[fʁɛz]",
+      "examples": [
+        {
+          "sentence": "C'est une fraise.",
+          "translation_cn": "这是一个草莓。"
+        },
+        {
+          "sentence": "J'aime la fraise.",
+          "translation_cn": "我喜欢草莓。"
+        }
+      ]
+    },
+    {
+      "word": "France",
+      "translation_cn": "法国",
+      "phonetic": "[fʁɑ̃s]",
+      "examples": [
+        {
+          "sentence": "J'habite en France.",
+          "translation_cn": "我住在法国。"
+        },
+        {
+          "sentence": "Paris est en France.",
+          "translation_cn": "巴黎在法国。"
+        }
+      ]
+    },
+    {
+      "word": "français",
+      "translation_cn": "法国的；法语",
+      "phonetic": "[fʁɑ̃sɛ]",
+      "examples": [
+        {
+          "sentence": "Je suis français.",
+          "translation_cn": "我是法国人。"
+        },
+        {
+          "sentence": "Il parle français.",
+          "translation_cn": "他说法语。"
+        }
+      ]
+    },
+    {
+      "word": "fraternité",
+      "translation_cn": "博爱；友爱",
+      "phonetic": "[fʁatɛʁnite]",
+      "examples": [
+        {
+          "sentence": "La fraternité est belle.",
+          "translation_cn": "博爱是美好的。"
+        },
+        {
+          "sentence": "Nous partageons la fraternité.",
+          "translation_cn": "我们分享友爱。"
+        }
+      ]
+    },
+    {
+      "word": "froid",
+      "translation_cn": "冷的",
+      "phonetic": "[fʁwa]",
+      "examples": [
+        {
+          "sentence": "L'eau est froide.",
+          "translation_cn": "水是冷的。"
+        },
+        {
+          "sentence": "Il fait froid.",
+          "translation_cn": "天气很冷。"
+        }
+      ]
+    },
+    {
+      "word": "fromage",
+      "translation_cn": "奶酪",
+      "phonetic": "[fʁɔmaʒ]",
+      "examples": [
+        {
+          "sentence": "J'aime le fromage.",
+          "translation_cn": "我喜欢奶酪。"
+        },
+        {
+          "sentence": "C'est du fromage.",
+          "translation_cn": "这是奶酪。"
+        }
+      ]
+    },
+    {
+      "word": "fruit",
+      "translation_cn": "水果",
+      "phonetic": "[fʁɥi]",
+      "examples": [
+        {
+          "sentence": "C'est un fruit.",
+          "translation_cn": "这是一个水果。"
+        },
+        {
+          "sentence": "J'aime les fruits.",
+          "translation_cn": "我喜欢水果。"
+        }
+      ]
+    },
+    {
+      "word": "frère",
+      "translation_cn": "兄弟",
+      "phonetic": "[fʁɛʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai un frère.",
+          "translation_cn": "我有一个兄弟。"
+        },
+        {
+          "sentence": "Mon frère est jeune.",
+          "translation_cn": "我的兄弟很年轻。"
+        }
+      ]
+    },
+    {
+      "word": "février",
+      "translation_cn": "二月",
+      "phonetic": "[fevʁije]",
+      "examples": [
+        {
+          "sentence": "C'est février.",
+          "translation_cn": "现在是二月。"
+        },
+        {
+          "sentence": "Février est court.",
+          "translation_cn": "二月很短。"
+        }
+      ]
+    },
+    {
+      "word": "gagner",
+      "translation_cn": "赢得；挣",
+      "phonetic": "[ɡa.ɲe]",
+      "examples": [
+        {
+          "sentence": "Je veux gagner.",
+          "translation_cn": "我想赢。"
+        },
+        {
+          "sentence": "Il gagne beaucoup d'argent.",
+          "translation_cn": "他挣很多钱。"
+        }
+      ]
+    },
+    {
+      "word": "gants",
+      "translation_cn": "手套",
+      "phonetic": "[ɡɑ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai des gants chauds.",
+          "translation_cn": "我有一副暖和的手套。"
+        },
+        {
+          "sentence": "Les gants sont rouges.",
+          "translation_cn": "这些手套是红色的。"
+        }
+      ]
+    },
+    {
+      "word": "garçon",
+      "translation_cn": "男孩",
+      "phonetic": "[ɡaʁsɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un garçon.",
+          "translation_cn": "这是一个男孩。"
+        },
+        {
+          "sentence": "Le garçon court.",
+          "translation_cn": "男孩在跑。"
+        }
+      ]
+    },
+    {
+      "word": "glace",
+      "translation_cn": "冰淇淋；冰",
+      "phonetic": "[ɡlas]",
+      "examples": [
+        {
+          "sentence": "C'est une glace.",
+          "translation_cn": "这是一个冰淇淋。"
+        },
+        {
+          "sentence": "J'aime la glace.",
+          "translation_cn": "我喜欢冰淇淋。"
+        }
+      ]
+    },
+    {
+      "word": "grand",
+      "translation_cn": "大的",
+      "phonetic": "[ɡʁɑ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un grand arbre.",
+          "translation_cn": "这是一棵大树。"
+        },
+        {
+          "sentence": "Il est grand.",
+          "translation_cn": "他很高。"
+        }
+      ]
+    },
+    {
+      "word": "grand-mère",
+      "translation_cn": "祖母；外祖母",
+      "phonetic": "[ɡʁɑ̃ mɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est ma grand-mère.",
+          "translation_cn": "这是我的祖母。"
+        },
+        {
+          "sentence": "Ma grand-mère est gentille.",
+          "translation_cn": "我的祖母很善良。"
+        }
+      ]
+    },
+    {
+      "word": "grand-père",
+      "translation_cn": "祖父；外祖父",
+      "phonetic": "[ɡʁɑ̃ pɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est mon grand-père.",
+          "translation_cn": "这是我的祖父。"
+        },
+        {
+          "sentence": "Mon grand-père est vieux.",
+          "translation_cn": "我的祖父很老。"
+        }
+      ]
+    },
+    {
+      "word": "gris",
+      "translation_cn": "灰色",
+      "phonetic": "[ɡʁi]",
+      "examples": [
+        {
+          "sentence": "C'est gris.",
+          "translation_cn": "这是灰色的。"
+        },
+        {
+          "sentence": "Le nuage est gris.",
+          "translation_cn": "云是灰色的。"
+        }
+      ]
+    },
+    {
+      "word": "grise",
+      "translation_cn": "灰色的",
+      "phonetic": "[ɡʁiz]",
+      "examples": [
+        {
+          "sentence": "Le ciel est gris.",
+          "translation_cn": "天空是灰色的。"
+        },
+        {
+          "sentence": "J'ai une voiture grise.",
+          "translation_cn": "我有一辆灰色的车。"
+        }
+      ]
+    },
+    {
+      "word": "guerre",
+      "translation_cn": "战争",
+      "phonetic": "[ɡɛʁ]",
+      "examples": [
+        {
+          "sentence": "Je n'aime pas la guerre.",
+          "translation_cn": "我不喜欢战争。"
+        },
+        {
+          "sentence": "La guerre est mauvaise.",
+          "translation_cn": "战争是坏的。"
+        }
+      ]
+    },
+    {
+      "word": "gâteau",
+      "translation_cn": "蛋糕",
+      "phonetic": "[ɡato]",
+      "examples": [
+        {
+          "sentence": "C'est un gâteau.",
+          "translation_cn": "这是一个蛋糕。"
+        },
+        {
+          "sentence": "J'aime le gâteau.",
+          "translation_cn": "我喜欢蛋糕。"
+        }
+      ]
+    },
+    {
+      "word": "haine",
+      "translation_cn": "恨",
+      "phonetic": "[ɛn]",
+      "examples": [
+        {
+          "sentence": "C'est de la haine.",
+          "translation_cn": "这是恨。"
+        },
+        {
+          "sentence": "Je n'ai pas de haine.",
+          "translation_cn": "我没有恨。"
+        }
+      ]
+    },
+    {
+      "word": "heure",
+      "translation_cn": "小时；点钟",
+      "phonetic": "[œʁ]",
+      "examples": [
+        {
+          "sentence": "Quelle heure est-il ?",
+          "translation_cn": "几点了？"
+        },
+        {
+          "sentence": "Il est une heure.",
+          "translation_cn": "一点了。"
+        }
+      ]
+    },
+    {
+      "word": "heureusement",
+      "translation_cn": "幸运地",
+      "phonetic": "[œʁøzmɑ̃]",
+      "examples": [
+        {
+          "sentence": "Heureusement, il est arrivé.",
+          "translation_cn": "幸运的是，他来了。"
+        },
+        {
+          "sentence": "Heureusement, il n'y a pas de problème.",
+          "translation_cn": "幸运的是，没有问题。"
+        }
+      ]
+    },
+    {
+      "word": "hier",
+      "translation_cn": "昨天",
+      "phonetic": "[jɛʁ]",
+      "examples": [
+        {
+          "sentence": "J'étais ici hier.",
+          "translation_cn": "我昨天在这里。"
+        },
+        {
+          "sentence": "Hier, j'ai mangé.",
+          "translation_cn": "昨天，我吃了东西。"
+        }
+      ]
+    },
+    {
+      "word": "histoire",
+      "translation_cn": "故事；历史",
+      "phonetic": "[istwaʁ]",
+      "examples": [
+        {
+          "sentence": "C'est une histoire.",
+          "translation_cn": "这是一个故事。"
+        },
+        {
+          "sentence": "J'aime les histoires.",
+          "translation_cn": "我喜欢故事。"
+        }
+      ]
+    },
+    {
+      "word": "hiver",
+      "translation_cn": "冬天",
+      "phonetic": "[ivɛʁ]",
+      "examples": [
+        {
+          "sentence": "L'hiver est froid.",
+          "translation_cn": "冬天很冷。"
+        },
+        {
+          "sentence": "Il neige en hiver.",
+          "translation_cn": "冬天会下雪。"
+        }
+      ]
+    },
+    {
+      "word": "homme",
+      "translation_cn": "男人",
+      "phonetic": "[ɔm]",
+      "examples": [
+        {
+          "sentence": "C'est un homme.",
+          "translation_cn": "这是一个男人。"
+        },
+        {
+          "sentence": "L'homme est grand.",
+          "translation_cn": "这个男人很高。"
+        }
+      ]
+    },
+    {
+      "word": "hôpital",
+      "translation_cn": "医院",
+      "phonetic": "[ɔpital]",
+      "examples": [
+        {
+          "sentence": "Je vais à l'hôpital.",
+          "translation_cn": "我去医院。"
+        },
+        {
+          "sentence": "L'hôpital est grand.",
+          "translation_cn": "医院很大。"
+        }
+      ]
+    },
+    {
+      "word": "hôtel",
+      "translation_cn": "酒店",
+      "phonetic": "[otɛl]",
+      "examples": [
+        {
+          "sentence": "Je suis à l'hôtel.",
+          "translation_cn": "我在酒店。"
+        },
+        {
+          "sentence": "L'hôtel est cher.",
+          "translation_cn": "酒店很贵。"
+        }
+      ]
+    },
+    {
+      "word": "ici",
+      "translation_cn": "这里",
+      "phonetic": "[isi]",
+      "examples": [
+        {
+          "sentence": "Je suis ici.",
+          "translation_cn": "我在这里。"
+        },
+        {
+          "sentence": "Il habite ici.",
+          "translation_cn": "他住在这里。"
+        }
+      ]
+    },
+    {
+      "word": "idée",
+      "translation_cn": "想法；主意",
+      "phonetic": "[ide]",
+      "examples": [
+        {
+          "sentence": "J'ai une idée.",
+          "translation_cn": "我有一个想法。"
+        },
+        {
+          "sentence": "C'est une bonne idée.",
+          "translation_cn": "这是一个好主意。"
+        }
+      ]
+    },
+    {
+      "word": "il",
+      "translation_cn": "他",
+      "phonetic": "[il]",
+      "examples": [
+        {
+          "sentence": "Il est petit.",
+          "translation_cn": "他很矮。"
+        },
+        {
+          "sentence": "Il travaille.",
+          "translation_cn": "他工作。"
+        }
+      ]
+    },
+    {
+      "word": "ils",
+      "translation_cn": "他们",
+      "phonetic": "[il]",
+      "examples": [
+        {
+          "sentence": "Ils sont grands.",
+          "translation_cn": "他们很高。"
+        },
+        {
+          "sentence": "Ils travaillent.",
+          "translation_cn": "他们工作。"
+        }
+      ]
+    },
+    {
+      "word": "image",
+      "translation_cn": "图像；图片",
+      "phonetic": "[imaʒ]",
+      "examples": [
+        {
+          "sentence": "Je vois une image.",
+          "translation_cn": "我看到一张图片。"
+        },
+        {
+          "sentence": "L'image est colorée.",
+          "translation_cn": "图片是彩色的。"
+        }
+      ]
+    },
+    {
+      "word": "jamais",
+      "translation_cn": "从不；决不",
+      "phonetic": "[ʒamɛ]",
+      "examples": [
+        {
+          "sentence": "Je ne mange jamais de viande.",
+          "translation_cn": "我从不吃肉。"
+        },
+        {
+          "sentence": "Il n'est jamais en retard.",
+          "translation_cn": "他从不迟到。"
+        }
+      ]
+    },
+    {
+      "word": "jambe",
+      "translation_cn": "腿",
+      "phonetic": "[ʒɑ̃b]",
+      "examples": [
+        {
+          "sentence": "Elle a une longue jambe.",
+          "translation_cn": "她有一条长腿。"
+        },
+        {
+          "sentence": "Je marche avec ma jambe.",
+          "translation_cn": "我用我的腿走路。"
+        }
+      ]
+    },
+    {
+      "word": "janvier",
+      "translation_cn": "一月",
+      "phonetic": "[ʒɑ̃vje]",
+      "examples": [
+        {
+          "sentence": "C'est janvier.",
+          "translation_cn": "现在是一月。"
+        },
+        {
+          "sentence": "Janvier est froid.",
+          "translation_cn": "一月很冷。"
+        }
+      ]
+    },
+    {
+      "word": "jardin",
+      "translation_cn": "花园",
+      "phonetic": "[ʒaʁdɛ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un beau jardin.",
+          "translation_cn": "这是一个美丽的花园。"
+        },
+        {
+          "sentence": "J'aime le jardin.",
+          "translation_cn": "我喜欢这个花园。"
+        }
+      ]
+    },
+    {
+      "word": "jaune",
+      "translation_cn": "黄色",
+      "phonetic": "[ʒon]",
+      "examples": [
+        {
+          "sentence": "C'est jaune.",
+          "translation_cn": "这是黄色的。"
+        },
+        {
+          "sentence": "Le soleil est jaune.",
+          "translation_cn": "太阳是黄色的。"
+        }
+      ]
+    },
+    {
+      "word": "je",
+      "translation_cn": "我",
+      "phonetic": "[ʒə]",
+      "examples": [
+        {
+          "sentence": "Je suis ici.",
+          "translation_cn": "我在这里。"
+        },
+        {
+          "sentence": "Je mange.",
+          "translation_cn": "我吃。"
+        }
+      ]
+    },
+    {
+      "word": "jeu",
+      "translation_cn": "游戏",
+      "phonetic": "[ʒø]",
+      "examples": [
+        {
+          "sentence": "J'aime ce jeu.",
+          "translation_cn": "我喜欢这个游戏。"
+        },
+        {
+          "sentence": "C'est un jeu facile.",
+          "translation_cn": "这是一个简单的游戏。"
+        }
+      ]
+    },
+    {
+      "word": "jeudi",
+      "translation_cn": "星期四",
+      "phonetic": "[ʒødi]",
+      "examples": [
+        {
+          "sentence": "C'est jeudi.",
+          "translation_cn": "今天是星期四。"
+        },
+        {
+          "sentence": "Je lis jeudi.",
+          "translation_cn": "我星期四读书。"
+        }
+      ]
+    },
+    {
+      "word": "jour",
+      "translation_cn": "天；白天",
+      "phonetic": "[ʒuʁ]",
+      "examples": [
+        {
+          "sentence": "Bonjour.",
+          "translation_cn": "你好。"
+        },
+        {
+          "sentence": "Quel jour sommes-nous ?",
+          "translation_cn": "今天星期几？"
+        }
+      ]
+    },
+    {
+      "word": "juillet",
+      "translation_cn": "七月",
+      "phonetic": "[ʒɥijɛ]",
+      "examples": [
+        {
+          "sentence": "Juillet est un mois d'été.",
+          "translation_cn": "七月是夏季的一个月。"
+        },
+        {
+          "sentence": "Nous sommes en juillet.",
+          "translation_cn": "现在是七月。"
+        }
+      ]
+    },
+    {
+      "word": "juin",
+      "translation_cn": "六月",
+      "phonetic": "[ʒɥɛ̃]",
+      "examples": [
+        {
+          "sentence": "Juin est en été.",
+          "translation_cn": "六月在夏天。"
+        },
+        {
+          "sentence": "Il fait chaud en juin.",
+          "translation_cn": "六月很热。"
+        }
+      ]
+    },
+    {
+      "word": "jupe",
+      "translation_cn": "裙子",
+      "phonetic": "[ʒyp]",
+      "examples": [
+        {
+          "sentence": "Elle a une jupe rouge.",
+          "translation_cn": "她有一条红色的裙子。"
+        },
+        {
+          "sentence": "La jupe est courte.",
+          "translation_cn": "这条裙子很短。"
+        }
+      ]
+    },
+    {
+      "word": "jus",
+      "translation_cn": "果汁",
+      "phonetic": "[ʒy]",
+      "examples": [
+        {
+          "sentence": "Je bois du jus.",
+          "translation_cn": "我喝果汁。"
+        },
+        {
+          "sentence": "C'est du jus d'orange.",
+          "translation_cn": "这是橙汁。"
+        }
+      ]
+    },
+    {
+      "word": "la",
+      "translation_cn": "这；那 (阴性单数定冠词)",
+      "phonetic": "[la]",
+      "examples": [
+        {
+          "sentence": "La pomme est rouge.",
+          "translation_cn": "苹果是红色的。"
+        },
+        {
+          "sentence": "J'aime la musique.",
+          "translation_cn": "我喜欢音乐。"
+        }
+      ]
+    },
+    {
+      "word": "lait",
+      "translation_cn": "牛奶",
+      "phonetic": "[lɛ]",
+      "examples": [
+        {
+          "sentence": "Je veux du lait.",
+          "translation_cn": "我想要牛奶。"
+        },
+        {
+          "sentence": "Il boit du lait.",
+          "translation_cn": "他喝牛奶。"
+        }
+      ]
+    },
+    {
+      "word": "le",
+      "translation_cn": "这；那 (阳性单数定冠词)",
+      "phonetic": "[lə]",
+      "examples": [
+        {
+          "sentence": "Le livre est sur la table.",
+          "translation_cn": "书在桌子上。"
+        },
+        {
+          "sentence": "Je vois le chat.",
+          "translation_cn": "我看见猫。"
+        }
+      ]
+    },
+    {
+      "word": "lentement",
+      "translation_cn": "缓慢地",
+      "phonetic": "[lɑ̃tmɑ̃]",
+      "examples": [
+        {
+          "sentence": "Parle lentement, s'il te plaît.",
+          "translation_cn": "请慢慢说。"
+        },
+        {
+          "sentence": "Il marche lentement.",
+          "translation_cn": "他走得很慢。"
+        }
+      ]
+    },
+    {
+      "word": "les",
+      "translation_cn": "这些；那些 (复数定冠词)",
+      "phonetic": "[le]",
+      "examples": [
+        {
+          "sentence": "Les enfants jouent.",
+          "translation_cn": "孩子们在玩耍。"
+        },
+        {
+          "sentence": "J'ai les clés.",
+          "translation_cn": "我有钥匙。"
+        }
+      ]
+    },
+    {
+      "word": "leur",
+      "translation_cn": "他们的；她们的 (单数)",
+      "phonetic": "[lœʁ]",
+      "examples": [
+        {
+          "sentence": "C'est leur jardin.",
+          "translation_cn": "这是他们的花园。"
+        },
+        {
+          "sentence": "Leur chien est petit.",
+          "translation_cn": "他们的狗很小。"
+        }
+      ]
+    },
+    {
+      "word": "liberté",
+      "translation_cn": "自由",
+      "phonetic": "[libɛʁte]",
+      "examples": [
+        {
+          "sentence": "Je veux la liberté.",
+          "translation_cn": "我想要自由。"
+        },
+        {
+          "sentence": "La liberté est importante.",
+          "translation_cn": "自由很重要。"
+        }
+      ]
+    },
+    {
+      "word": "libre",
+      "translation_cn": "自由的；空闲的",
+      "phonetic": "[libʁ]",
+      "examples": [
+        {
+          "sentence": "Je suis libre.",
+          "translation_cn": "我有空。"
+        },
+        {
+          "sentence": "Le livre est libre.",
+          "translation_cn": "这本书是免费的。"
+        }
+      ]
+    },
+    {
+      "word": "lit",
+      "translation_cn": "床",
+      "phonetic": "[li]",
+      "examples": [
+        {
+          "sentence": "C'est mon lit.",
+          "translation_cn": "这是我的床。"
+        },
+        {
+          "sentence": "Je dors dans le lit.",
+          "translation_cn": "我在床上睡觉。"
+        }
+      ]
+    },
+    {
+      "word": "livre",
+      "translation_cn": "书",
+      "phonetic": "[livʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai un livre.",
+          "translation_cn": "我有一本书。"
+        },
+        {
+          "sentence": "Le livre est intéressant.",
+          "translation_cn": "这本书很有趣。"
+        }
+      ]
+    },
+    {
+      "word": "livre",
+      "translation_cn": "书",
+      "phonetic": "[livʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai un livre.",
+          "translation_cn": "我有一本书。"
+        },
+        {
+          "sentence": "Le livre est intéressant.",
+          "translation_cn": "这本书很有趣。"
+        }
+      ]
+    },
+    {
+      "word": "long",
+      "translation_cn": "长的",
+      "phonetic": "[lɔ̃]",
+      "examples": [
+        {
+          "sentence": "Le chemin est long.",
+          "translation_cn": "这条路很长。"
+        },
+        {
+          "sentence": "Le film est long.",
+          "translation_cn": "这部电影很长。"
+        }
+      ]
+    },
+    {
+      "word": "longue",
+      "translation_cn": "长的",
+      "phonetic": "[lɔ̃ɡ]",
+      "examples": [
+        {
+          "sentence": "La rue est longue.",
+          "translation_cn": "这条街很长。"
+        },
+        {
+          "sentence": "La jupe est longue.",
+          "translation_cn": "这条裙子很长。"
+        }
+      ]
+    },
+    {
+      "word": "lundi",
+      "translation_cn": "星期一",
+      "phonetic": "[lœ̃di]",
+      "examples": [
+        {
+          "sentence": "C'est lundi.",
+          "translation_cn": "今天是星期一。"
+        },
+        {
+          "sentence": "Je travaille lundi.",
+          "translation_cn": "我星期一工作。"
+        }
+      ]
+    },
+    {
+      "word": "lune",
+      "translation_cn": "月亮",
+      "phonetic": "[lyn]",
+      "examples": [
+        {
+          "sentence": "La lune est belle.",
+          "translation_cn": "月亮很漂亮。"
+        },
+        {
+          "sentence": "Je vois la lune.",
+          "translation_cn": "我看见月亮。"
+        }
+      ]
+    },
+    {
+      "word": "lunettes",
+      "translation_cn": "眼镜",
+      "phonetic": "[lynɛt]",
+      "examples": [
+        {
+          "sentence": "J'ai des lunettes noires.",
+          "translation_cn": "我有一副黑色的眼镜。"
+        },
+        {
+          "sentence": "Les lunettes sont sur mon nez.",
+          "translation_cn": "眼镜在我的鼻子上。"
+        }
+      ]
+    },
+    {
+      "word": "là",
+      "translation_cn": "那里",
+      "phonetic": "[la]",
+      "examples": [
+        {
+          "sentence": "Il est là.",
+          "translation_cn": "他在那里。"
+        },
+        {
+          "sentence": "La maison est là.",
+          "translation_cn": "房子在那里。"
+        }
+      ]
+    },
+    {
+      "word": "légume",
+      "translation_cn": "蔬菜",
+      "phonetic": "[leɡym]",
+      "examples": [
+        {
+          "sentence": "J'aime les légumes.",
+          "translation_cn": "我喜欢蔬菜。"
+        },
+        {
+          "sentence": "C'est un légume.",
+          "translation_cn": "这是一个蔬菜。"
+        }
+      ]
+    },
+    {
+      "word": "ma",
+      "translation_cn": "我的 (阴性)",
+      "phonetic": "[ma]",
+      "examples": [
+        {
+          "sentence": "C'est ma maison.",
+          "translation_cn": "这是我的房子。"
+        },
+        {
+          "sentence": "Ma mère est gentille.",
+          "translation_cn": "我的母亲很友善。"
+        }
+      ]
+    },
+    {
+      "word": "madame",
+      "translation_cn": "女士；夫人",
+      "phonetic": "[ma.dam]",
+      "examples": [
+        {
+          "sentence": "Bonjour, madame.",
+          "translation_cn": "您好，女士。"
+        },
+        {
+          "sentence": "Madame Dupont est ici.",
+          "translation_cn": "杜邦夫人在这里。"
+        }
+      ]
+    },
+    {
+      "word": "mademoiselle",
+      "translation_cn": "小姐",
+      "phonetic": "[mad.mwa.zɛl]",
+      "examples": [
+        {
+          "sentence": "Bonjour, mademoiselle.",
+          "translation_cn": "您好，小姐。"
+        },
+        {
+          "sentence": "Mademoiselle, comment allez-vous ?",
+          "translation_cn": "小姐，你好吗？"
+        }
+      ]
+    },
+    {
+      "word": "magasin",
+      "translation_cn": "商店",
+      "phonetic": "[maɡazɛ̃]",
+      "examples": [
+        {
+          "sentence": "Je vais au magasin.",
+          "translation_cn": "我去商店。"
+        },
+        {
+          "sentence": "Le magasin est fermé.",
+          "translation_cn": "商店关门了。"
+        }
+      ]
+    },
+    {
+      "word": "mai",
+      "translation_cn": "五月",
+      "phonetic": "[mɛ]",
+      "examples": [
+        {
+          "sentence": "Mai est après avril.",
+          "translation_cn": "五月在四月之后。"
+        },
+        {
+          "sentence": "J'aime le mois de mai.",
+          "translation_cn": "我喜欢五月。"
+        }
+      ]
+    },
+    {
+      "word": "main",
+      "translation_cn": "手",
+      "phonetic": "[mɛ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai mal à la main.",
+          "translation_cn": "我的手疼。"
+        },
+        {
+          "sentence": "C'est ma main.",
+          "translation_cn": "这是我的手。"
+        }
+      ]
+    },
+    {
+      "word": "maintenant",
+      "translation_cn": "现在",
+      "phonetic": "[mɛ̃tnɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je travaille maintenant.",
+          "translation_cn": "我现在工作。"
+        },
+        {
+          "sentence": "Maintenant, je mange.",
+          "translation_cn": "现在，我吃饭。"
+        }
+      ]
+    },
+    {
+      "word": "mais",
+      "translation_cn": "但是",
+      "phonetic": "[mɛ]",
+      "examples": [
+        {
+          "sentence": "Je suis fatigué, mais je travaille.",
+          "translation_cn": "我很累，但是我工作。"
+        },
+        {
+          "sentence": "Il est petit, mais il est fort.",
+          "translation_cn": "他很矮，但是他很强壮。"
+        }
+      ]
+    },
+    {
+      "word": "maison",
+      "translation_cn": "房子",
+      "phonetic": "[mɛzɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est ma maison.",
+          "translation_cn": "这是我的房子。"
+        },
+        {
+          "sentence": "J'habite une maison.",
+          "translation_cn": "我住在一栋房子里。"
+        }
+      ]
+    },
+    {
+      "word": "mal",
+      "translation_cn": "坏；疼痛",
+      "phonetic": "[mal]",
+      "examples": [
+        {
+          "sentence": "J'ai mal.",
+          "translation_cn": "我疼。"
+        },
+        {
+          "sentence": "C'est mal.",
+          "translation_cn": "这是坏的。"
+        }
+      ]
+    },
+    {
+      "word": "malade",
+      "translation_cn": "生病的",
+      "phonetic": "[malad]",
+      "examples": [
+        {
+          "sentence": "Je suis malade.",
+          "translation_cn": "我生病了。"
+        },
+        {
+          "sentence": "Il est malade aujourd'hui.",
+          "translation_cn": "他今天生病了。"
+        }
+      ]
+    },
+    {
+      "word": "malheureusement",
+      "translation_cn": "不幸地",
+      "phonetic": "[malœʁøzmɑ̃]",
+      "examples": [
+        {
+          "sentence": "Malheureusement, il est parti.",
+          "translation_cn": "不幸的是，他离开了。"
+        },
+        {
+          "sentence": "Malheureusement, je ne peux pas venir.",
+          "translation_cn": "不幸的是，我不能来。"
+        }
+      ]
+    },
+    {
+      "word": "manteau",
+      "translation_cn": "外套",
+      "phonetic": "[mɑ̃to]",
+      "examples": [
+        {
+          "sentence": "J'ai un manteau chaud.",
+          "translation_cn": "我有一件暖和的外套。"
+        },
+        {
+          "sentence": "Le manteau est gris.",
+          "translation_cn": "这件外套是灰色的。"
+        }
+      ]
+    },
+    {
+      "word": "marché",
+      "translation_cn": "市场",
+      "phonetic": "[maʁʃe]",
+      "examples": [
+        {
+          "sentence": "Je vais au marché.",
+          "translation_cn": "我去市场。"
+        },
+        {
+          "sentence": "Le marché est grand.",
+          "translation_cn": "市场很大。"
+        }
+      ]
+    },
+    {
+      "word": "mardi",
+      "translation_cn": "星期二",
+      "phonetic": "[maʁdi]",
+      "examples": [
+        {
+          "sentence": "C'est mardi.",
+          "translation_cn": "今天是星期二。"
+        },
+        {
+          "sentence": "J'étudie mardi.",
+          "translation_cn": "我星期二学习。"
+        }
+      ]
+    },
+    {
+      "word": "marron",
+      "translation_cn": "棕色",
+      "phonetic": "[maʁɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est marron.",
+          "translation_cn": "这是棕色的。"
+        },
+        {
+          "sentence": "Le chocolat est marron.",
+          "translation_cn": "巧克力是棕色的。"
+        }
+      ]
+    },
+    {
+      "word": "mars",
+      "translation_cn": "三月",
+      "phonetic": "[maʁs]",
+      "examples": [
+        {
+          "sentence": "C'est mars.",
+          "translation_cn": "现在是三月。"
+        },
+        {
+          "sentence": "Mars est joli.",
+          "translation_cn": "三月很漂亮。"
+        }
+      ]
+    },
+    {
+      "word": "matin",
+      "translation_cn": "早上；上午",
+      "phonetic": "[matɛ̃]",
+      "examples": [
+        {
+          "sentence": "Bonjour, matin.",
+          "translation_cn": "早上好。"
+        },
+        {
+          "sentence": "Je travaille le matin.",
+          "translation_cn": "我早上工作。"
+        }
+      ]
+    },
+    {
+      "word": "mauvais",
+      "translation_cn": "坏的；糟糕的",
+      "phonetic": "[movɛ]",
+      "examples": [
+        {
+          "sentence": "C'est un mauvais film.",
+          "translation_cn": "这是一部糟糕的电影。"
+        },
+        {
+          "sentence": "Il est mauvais.",
+          "translation_cn": "他很坏。"
+        }
+      ]
+    },
+    {
+      "word": "mauvais",
+      "translation_cn": "坏的；糟糕的",
+      "phonetic": "[movɛ]",
+      "examples": [
+        {
+          "sentence": "C'est un mauvais film.",
+          "translation_cn": "这是一部糟糕的电影。"
+        },
+        {
+          "sentence": "Il est mauvais.",
+          "translation_cn": "他很坏。"
+        }
+      ]
+    },
+    {
+      "word": "mauvaise",
+      "translation_cn": "坏的；糟糕的",
+      "phonetic": "[movɛz]",
+      "examples": [
+        {
+          "sentence": "C'est une mauvaise nouvelle.",
+          "translation_cn": "这是一个坏消息。"
+        },
+        {
+          "sentence": "Elle est mauvaise.",
+          "translation_cn": "她很坏。"
+        }
+      ]
+    },
+    {
+      "word": "mer",
+      "translation_cn": "海",
+      "phonetic": "[mɛʁ]",
+      "examples": [
+        {
+          "sentence": "J'aime la mer.",
+          "translation_cn": "我喜欢海。"
+        },
+        {
+          "sentence": "La mer est bleue.",
+          "translation_cn": "海是蓝色的。"
+        }
+      ]
+    },
+    {
+      "word": "merci",
+      "translation_cn": "谢谢",
+      "phonetic": "[mɛʁsi]",
+      "examples": [
+        {
+          "sentence": "Merci beaucoup.",
+          "translation_cn": "非常感谢。"
+        },
+        {
+          "sentence": "Merci pour votre aide.",
+          "translation_cn": "谢谢你的帮助。"
+        }
+      ]
+    },
+    {
+      "word": "mercredi",
+      "translation_cn": "星期三",
+      "phonetic": "[mɛʁkʁədi]",
+      "examples": [
+        {
+          "sentence": "C'est mercredi.",
+          "translation_cn": "今天是星期三。"
+        },
+        {
+          "sentence": "Je joue mercredi.",
+          "translation_cn": "我星期三玩。"
+        }
+      ]
+    },
+    {
+      "word": "mes",
+      "translation_cn": "我的 (复数)",
+      "phonetic": "[me]",
+      "examples": [
+        {
+          "sentence": "Ce sont mes livres.",
+          "translation_cn": "这些是我的书。"
+        },
+        {
+          "sentence": "Mes amis sont ici.",
+          "translation_cn": "我的朋友们在这里。"
+        }
+      ]
+    },
+    {
+      "word": "midi",
+      "translation_cn": "中午",
+      "phonetic": "[midi]",
+      "examples": [
+        {
+          "sentence": "Il est midi.",
+          "translation_cn": "现在是中午。"
+        },
+        {
+          "sentence": "Je mange à midi.",
+          "translation_cn": "我中午吃饭。"
+        }
+      ]
+    },
+    {
+      "word": "mieux",
+      "translation_cn": "更好",
+      "phonetic": "[mjø]",
+      "examples": [
+        {
+          "sentence": "Je vais mieux.",
+          "translation_cn": "我感觉好多了。"
+        },
+        {
+          "sentence": "C'est mieux.",
+          "translation_cn": "这样更好。"
+        }
+      ]
+    },
+    {
+      "word": "minuit",
+      "translation_cn": "午夜",
+      "phonetic": "[minɥi]",
+      "examples": [
+        {
+          "sentence": "Il est minuit.",
+          "translation_cn": "现在是午夜。"
+        },
+        {
+          "sentence": "Je dors à minuit.",
+          "translation_cn": "我午夜睡觉。"
+        }
+      ]
+    },
+    {
+      "word": "minute",
+      "translation_cn": "分钟",
+      "phonetic": "[minyt]",
+      "examples": [
+        {
+          "sentence": "Attends une minute.",
+          "translation_cn": "等一下。"
+        },
+        {
+          "sentence": "Il y a soixante minutes dans une heure.",
+          "translation_cn": "一个小时有六十分钟。"
+        }
+      ]
+    },
+    {
+      "word": "moins",
+      "translation_cn": "更少；减",
+      "phonetic": "[mwɛ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai moins de temps.",
+          "translation_cn": "我时间更少。"
+        },
+        {
+          "sentence": "Deux moins un égale un.",
+          "translation_cn": "二减一等于一。"
+        }
+      ]
+    },
+    {
+      "word": "mois",
+      "translation_cn": "月",
+      "phonetic": "[mwa]",
+      "examples": [
+        {
+          "sentence": "Un mois.",
+          "translation_cn": "一个月。"
+        },
+        {
+          "sentence": "Quel mois sommes-nous ?",
+          "translation_cn": "现在是几月？"
+        }
+      ]
+    },
+    {
+      "word": "mon",
+      "translation_cn": "我的 (阳性)",
+      "phonetic": "[mɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est mon livre.",
+          "translation_cn": "这是我的书。"
+        },
+        {
+          "sentence": "Mon père est grand.",
+          "translation_cn": "我的父亲很高。"
+        }
+      ]
+    },
+    {
+      "word": "monde",
+      "translation_cn": "世界",
+      "phonetic": "[mɔ̃d]",
+      "examples": [
+        {
+          "sentence": "Le monde est beau.",
+          "translation_cn": "世界很美。"
+        },
+        {
+          "sentence": "J'aime le monde.",
+          "translation_cn": "我喜欢世界。"
+        }
+      ]
+    },
+    {
+      "word": "monsieur",
+      "translation_cn": "先生",
+      "phonetic": "[mə.sjø]",
+      "examples": [
+        {
+          "sentence": "Bonjour, monsieur.",
+          "translation_cn": "您好，先生。"
+        },
+        {
+          "sentence": "Monsieur Martin est professeur.",
+          "translation_cn": "马丁先生是教授。"
+        }
+      ]
+    },
+    {
+      "word": "montagne",
+      "translation_cn": "山",
+      "phonetic": "[mɔ̃taɲ]",
+      "examples": [
+        {
+          "sentence": "C'est une montagne.",
+          "translation_cn": "这是一座山。"
+        },
+        {
+          "sentence": "La montagne est haute.",
+          "translation_cn": "山很高。"
+        }
+      ]
+    },
+    {
+      "word": "montre",
+      "translation_cn": "手表",
+      "phonetic": "[mɔ̃tʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai une montre nouvelle.",
+          "translation_cn": "我有一块新手表。"
+        },
+        {
+          "sentence": "La montre est chère.",
+          "translation_cn": "这块手表很贵。"
+        }
+      ]
+    },
+    {
+      "word": "mort",
+      "translation_cn": "死亡",
+      "phonetic": "[mɔʁ]",
+      "examples": [
+        {
+          "sentence": "La mort est triste.",
+          "translation_cn": "死亡是悲伤的。"
+        },
+        {
+          "sentence": "Il a peur de la mort.",
+          "translation_cn": "他害怕死亡。"
+        }
+      ]
+    },
+    {
+      "word": "mot",
+      "translation_cn": "词",
+      "phonetic": "[mo]",
+      "examples": [
+        {
+          "sentence": "C'est un mot.",
+          "translation_cn": "这是一个词。"
+        },
+        {
+          "sentence": "Je connais ce mot.",
+          "translation_cn": "我知道这个词。"
+        }
+      ]
+    },
+    {
+      "word": "mouton",
+      "translation_cn": "绵羊",
+      "phonetic": "[mutɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un mouton.",
+          "translation_cn": "这是一只绵羊。"
+        },
+        {
+          "sentence": "Le mouton est blanc.",
+          "translation_cn": "这绵羊是白色的。"
+        }
+      ]
+    },
+    {
+      "word": "musique",
+      "translation_cn": "音乐",
+      "phonetic": "[myzik]",
+      "examples": [
+        {
+          "sentence": "J'écoute de la musique.",
+          "translation_cn": "我听音乐。"
+        },
+        {
+          "sentence": "La musique est belle.",
+          "translation_cn": "音乐很美。"
+        }
+      ]
+    },
+    {
+      "word": "musée",
+      "translation_cn": "博物馆",
+      "phonetic": "[myze]",
+      "examples": [
+        {
+          "sentence": "C'est un musée.",
+          "translation_cn": "这是一个博物馆。"
+        },
+        {
+          "sentence": "J'aime le musée.",
+          "translation_cn": "我喜欢博物馆。"
+        }
+      ]
+    },
+    {
+      "word": "mère",
+      "translation_cn": "母亲",
+      "phonetic": "[mɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est ma mère.",
+          "translation_cn": "这是我的母亲。"
+        },
+        {
+          "sentence": "Ma mère est belle.",
+          "translation_cn": "我的母亲很漂亮。"
+        }
+      ]
+    },
+    {
+      "word": "même",
+      "translation_cn": "相同的；甚至",
+      "phonetic": "[mɛm]",
+      "examples": [
+        {
+          "sentence": "C'est le même.",
+          "translation_cn": "这是一样的。"
+        },
+        {
+          "sentence": "Même moi.",
+          "translation_cn": "甚至我。"
+        }
+      ]
+    },
+    {
+      "word": "natation",
+      "translation_cn": "游泳",
+      "phonetic": "[natasjɔ̃]",
+      "examples": [
+        {
+          "sentence": "J'aime la natation.",
+          "translation_cn": "我喜欢游泳。"
+        },
+        {
+          "sentence": "La natation est un sport.",
+          "translation_cn": "游泳是一项运动。"
+        }
+      ]
+    },
+    {
+      "word": "nature",
+      "translation_cn": "自然",
+      "phonetic": "[natyʁ]",
+      "examples": [
+        {
+          "sentence": "J'aime la nature.",
+          "translation_cn": "我喜欢自然。"
+        },
+        {
+          "sentence": "La nature est belle.",
+          "translation_cn": "自然很美。"
+        }
+      ]
+    },
+    {
+      "word": "neige",
+      "translation_cn": "雪",
+      "phonetic": "[nɛʒ]",
+      "examples": [
+        {
+          "sentence": "Il neige.",
+          "translation_cn": "下雪了。"
+        },
+        {
+          "sentence": "La neige est blanche.",
+          "translation_cn": "雪是白色的。"
+        }
+      ]
+    },
+    {
+      "word": "nez",
+      "translation_cn": "鼻子",
+      "phonetic": "[ne]",
+      "examples": [
+        {
+          "sentence": "J'ai un grand nez.",
+          "translation_cn": "我有一个大鼻子。"
+        },
+        {
+          "sentence": "Il sent avec son nez.",
+          "translation_cn": "他用他的鼻子闻。"
+        }
+      ]
+    },
+    {
+      "word": "noir",
+      "translation_cn": "黑色",
+      "phonetic": "[nwaʁ]",
+      "examples": [
+        {
+          "sentence": "C'est noir.",
+          "translation_cn": "这是黑色的。"
+        },
+        {
+          "sentence": "Le chat est noir.",
+          "translation_cn": "猫是黑色的。"
+        }
+      ]
+    },
+    {
+      "word": "noire",
+      "translation_cn": "黑色的",
+      "phonetic": "[nwaʁ]",
+      "examples": [
+        {
+          "sentence": "La nuit est noire.",
+          "translation_cn": "夜晚是黑色的。"
+        },
+        {
+          "sentence": "J'ai un chat noir.",
+          "translation_cn": "我有一只黑色的猫。"
+        }
+      ]
+    },
+    {
+      "word": "nom",
+      "translation_cn": "名字",
+      "phonetic": "[nɔ̃]",
+      "examples": [
+        {
+          "sentence": "Quel est votre nom ?",
+          "translation_cn": "您叫什么名字？"
+        },
+        {
+          "sentence": "Mon nom est Marie.",
+          "translation_cn": "我的名字是玛丽。"
+        }
+      ]
+    },
+    {
+      "word": "non",
+      "translation_cn": "不",
+      "phonetic": "[nɔ̃]",
+      "examples": [
+        {
+          "sentence": "Non, je ne suis pas fatigué.",
+          "translation_cn": "不，我不累。"
+        },
+        {
+          "sentence": "Est-ce que tu aimes le chocolat ? Non.",
+          "translation_cn": "你喜欢巧克力吗？ 不。"
+        }
+      ]
+    },
+    {
+      "word": "notre",
+      "translation_cn": "我们的 (单数)",
+      "phonetic": "[nɔtʁ]",
+      "examples": [
+        {
+          "sentence": "C'est notre école.",
+          "translation_cn": "这是我们的学校。"
+        },
+        {
+          "sentence": "Notre professeur est gentil.",
+          "translation_cn": "我们的老师很友善。"
+        }
+      ]
+    },
+    {
+      "word": "nous",
+      "translation_cn": "我们",
+      "phonetic": "[nu]",
+      "examples": [
+        {
+          "sentence": "Nous sommes amis.",
+          "translation_cn": "我们是朋友。"
+        },
+        {
+          "sentence": "Nous mangeons.",
+          "translation_cn": "我们吃。"
+        }
+      ]
+    },
+    {
+      "word": "nouveau",
+      "translation_cn": "新的",
+      "phonetic": "[nuvo]",
+      "examples": [
+        {
+          "sentence": "C'est nouveau.",
+          "translation_cn": "这是新的。"
+        },
+        {
+          "sentence": "C'est un nouveau livre.",
+          "translation_cn": "这是一本新书。"
+        }
+      ]
+    },
+    {
+      "word": "nouvelle",
+      "translation_cn": "新的",
+      "phonetic": "[nuvɛl]",
+      "examples": [
+        {
+          "sentence": "C'est nouveau.",
+          "translation_cn": "这是新的。"
+        },
+        {
+          "sentence": "C'est une nouvelle voiture.",
+          "translation_cn": "这是一辆新车。"
+        }
+      ]
+    },
+    {
+      "word": "novembre",
+      "translation_cn": "十一月",
+      "phonetic": "[nɔvɑ̃bʁ]",
+      "examples": [
+        {
+          "sentence": "Novembre est un mois.",
+          "translation_cn": "十一月是一个月。"
+        },
+        {
+          "sentence": "Il pleut en novembre.",
+          "translation_cn": "十一月下雨。"
+        }
+      ]
+    },
+    {
+      "word": "nuage",
+      "translation_cn": "云",
+      "phonetic": "[nɥaʒ]",
+      "examples": [
+        {
+          "sentence": "Il y a un nuage.",
+          "translation_cn": "有一朵云。"
+        },
+        {
+          "sentence": "Le nuage est gris.",
+          "translation_cn": "云是灰色的。"
+        }
+      ]
+    },
+    {
+      "word": "nuit",
+      "translation_cn": "夜晚",
+      "phonetic": "[nɥi]",
+      "examples": [
+        {
+          "sentence": "Bonne nuit.",
+          "translation_cn": "晚安。"
+        },
+        {
+          "sentence": "Il fait nuit.",
+          "translation_cn": "天黑了。"
+        }
+      ]
+    },
+    {
+      "word": "occupé",
+      "translation_cn": "忙",
+      "phonetic": "[ɔkype]",
+      "examples": [
+        {
+          "sentence": "Je suis occupé.",
+          "translation_cn": "我很忙。"
+        },
+        {
+          "sentence": "Il est occupé.",
+          "translation_cn": "他很忙。"
+        }
+      ]
+    },
+    {
+      "word": "occupée",
+      "translation_cn": "忙",
+      "phonetic": "[ɔkype]",
+      "examples": [
+        {
+          "sentence": "Je suis occupée.",
+          "translation_cn": "我很忙。（女性）"
+        },
+        {
+          "sentence": "Elle est occupée.",
+          "translation_cn": "她很忙。"
+        }
+      ]
+    },
+    {
+      "word": "octobre",
+      "translation_cn": "十月",
+      "phonetic": "[ɔktɔbʁ]",
+      "examples": [
+        {
+          "sentence": "Octobre est après septembre.",
+          "translation_cn": "十月在九月之后。"
+        },
+        {
+          "sentence": "Il fait froid en octobre.",
+          "translation_cn": "十月很冷。"
+        }
+      ]
+    },
+    {
+      "word": "oiseau",
+      "translation_cn": "鸟",
+      "phonetic": "[wazo]",
+      "examples": [
+        {
+          "sentence": "C'est un oiseau.",
+          "translation_cn": "这是一只鸟。"
+        },
+        {
+          "sentence": "L'oiseau vole.",
+          "translation_cn": "鸟在飞。"
+        }
+      ]
+    },
+    {
+      "word": "ont",
+      "translation_cn": "有",
+      "phonetic": "[ɔ̃]",
+      "examples": [
+        {
+          "sentence": "Ils ont des amis.",
+          "translation_cn": "他们有朋友。"
+        },
+        {
+          "sentence": "Elles ont des fleurs.",
+          "translation_cn": "她们有花。"
+        }
+      ]
+    },
+    {
+      "word": "orange",
+      "translation_cn": "橙色",
+      "phonetic": "[ɔʁɑ̃ʒ]",
+      "examples": [
+        {
+          "sentence": "C'est orange.",
+          "translation_cn": "这是橙色的。"
+        },
+        {
+          "sentence": "L'orange est un fruit.",
+          "translation_cn": "橙子是一种水果。"
+        }
+      ]
+    },
+    {
+      "word": "orange",
+      "translation_cn": "橙色",
+      "phonetic": "[ɔʁɑ̃ʒ]",
+      "examples": [
+        {
+          "sentence": "C'est orange.",
+          "translation_cn": "这是橙色的。"
+        },
+        {
+          "sentence": "L'orange est un fruit.",
+          "translation_cn": "橙子是一种水果。"
+        }
+      ]
+    },
+    {
+      "word": "ordinateur",
+      "translation_cn": "电脑",
+      "phonetic": "[ɔʁdinatœʁ]",
+      "examples": [
+        {
+          "sentence": "C'est un ordinateur.",
+          "translation_cn": "这是一台电脑。"
+        },
+        {
+          "sentence": "Je travaille sur l'ordinateur.",
+          "translation_cn": "我在电脑上工作。"
+        }
+      ]
+    },
+    {
+      "word": "oreille",
+      "translation_cn": "耳朵",
+      "phonetic": "[ɔʁɛj]",
+      "examples": [
+        {
+          "sentence": "J'écoute avec mon oreille.",
+          "translation_cn": "我用我的耳朵听。"
+        },
+        {
+          "sentence": "Il a mal à l'oreille.",
+          "translation_cn": "他耳朵疼。"
+        }
+      ]
+    },
+    {
+      "word": "os",
+      "translation_cn": "骨头",
+      "phonetic": "[ɔs]",
+      "examples": [
+        {
+          "sentence": "J'ai un os.",
+          "translation_cn": "我有一根骨头。"
+        },
+        {
+          "sentence": "L'os est blanc.",
+          "translation_cn": "骨头是白色的。"
+        }
+      ]
+    },
+    {
+      "word": "ou",
+      "translation_cn": "或者",
+      "phonetic": "[u]",
+      "examples": [
+        {
+          "sentence": "Tu veux du café ou du thé ?",
+          "translation_cn": "你想要咖啡还是茶？"
+        },
+        {
+          "sentence": "Est-ce que tu vas au cinéma ou au restaurant ?",
+          "translation_cn": "你是去电影院还是餐厅？"
+        }
+      ]
+    },
+    {
+      "word": "oui",
+      "translation_cn": "是",
+      "phonetic": "[wi]",
+      "examples": [
+        {
+          "sentence": "Oui, je suis français.",
+          "translation_cn": "是的，我是法国人。"
+        },
+        {
+          "sentence": "Est-ce que tu comprends ? Oui.",
+          "translation_cn": "你明白吗？ 是的。"
+        }
+      ]
+    },
+    {
+      "word": "ouvrir",
+      "translation_cn": "打开",
+      "phonetic": "[uvʁiʁ]",
+      "examples": [
+        {
+          "sentence": "Je vais ouvrir la porte.",
+          "translation_cn": "我要打开门。"
+        },
+        {
+          "sentence": "Il faut ouvrir le livre.",
+          "translation_cn": "需要打开书。"
+        }
+      ]
+    },
+    {
+      "word": "où",
+      "translation_cn": "哪里",
+      "phonetic": "[u]",
+      "examples": [
+        {
+          "sentence": "Où est la gare ?",
+          "translation_cn": "火车站 在 哪里？"
+        },
+        {
+          "sentence": "Où habites-tu ?",
+          "translation_cn": "你住在哪里？"
+        }
+      ]
+    },
+    {
+      "word": "pain",
+      "translation_cn": "面包",
+      "phonetic": "[pɛ̃]",
+      "examples": [
+        {
+          "sentence": "Je mange du pain.",
+          "translation_cn": "我吃面包。"
+        },
+        {
+          "sentence": "Voici du pain.",
+          "translation_cn": "这是面包。"
+        }
+      ]
+    },
+    {
+      "word": "paix",
+      "translation_cn": "和平",
+      "phonetic": "[pɛ]",
+      "examples": [
+        {
+          "sentence": "Je veux la paix.",
+          "translation_cn": "我想要和平。"
+        },
+        {
+          "sentence": "La paix est importante.",
+          "translation_cn": "和平很重要。"
+        }
+      ]
+    },
+    {
+      "word": "pantalon",
+      "translation_cn": "裤子",
+      "phonetic": "[pɑ̃talɔ̃]",
+      "examples": [
+        {
+          "sentence": "Il porte un pantalon noir.",
+          "translation_cn": "他穿着一条黑色的裤子。"
+        },
+        {
+          "sentence": "Le pantalon est long.",
+          "translation_cn": "这条裤子很长。"
+        }
+      ]
+    },
+    {
+      "word": "par",
+      "translation_cn": "通过；被",
+      "phonetic": "[paʁ]",
+      "examples": [
+        {
+          "sentence": "Je voyage par train.",
+          "translation_cn": "我乘火车旅行。"
+        },
+        {
+          "sentence": "Le livre est écrit par Jean.",
+          "translation_cn": "这本书是让写的。"
+        }
+      ]
+    },
+    {
+      "word": "paradis",
+      "translation_cn": "天堂",
+      "phonetic": "[paʁadi]",
+      "examples": [
+        {
+          "sentence": "Le paradis est beau.",
+          "translation_cn": "天堂是美丽的。"
+        },
+        {
+          "sentence": "Je veux aller au paradis.",
+          "translation_cn": "我想去天堂。"
+        }
+      ]
+    },
+    {
+      "word": "parc",
+      "translation_cn": "公园",
+      "phonetic": "[paʁk]",
+      "examples": [
+        {
+          "sentence": "Je vais au parc.",
+          "translation_cn": "我去公园。"
+        },
+        {
+          "sentence": "Le parc est beau.",
+          "translation_cn": "公园很漂亮。"
+        }
+      ]
+    },
+    {
+      "word": "parler",
+      "translation_cn": "说",
+      "phonetic": "[paʁle]",
+      "examples": [
+        {
+          "sentence": "Je parle français.",
+          "translation_cn": "我说法语。"
+        },
+        {
+          "sentence": "Il parle anglais.",
+          "translation_cn": "他说英语。"
+        }
+      ]
+    },
+    {
+      "word": "partir",
+      "translation_cn": "离开；出发",
+      "phonetic": "[paʁtiʁ]",
+      "examples": [
+        {
+          "sentence": "Je pars.",
+          "translation_cn": "我走了。"
+        },
+        {
+          "sentence": "Il part demain.",
+          "translation_cn": "他明天出发。"
+        }
+      ]
+    },
+    {
+      "word": "payer",
+      "translation_cn": "支付",
+      "phonetic": "[peje]",
+      "examples": [
+        {
+          "sentence": "Je vais payer l'addition.",
+          "translation_cn": "我要支付账单。"
+        },
+        {
+          "sentence": "Il faut payer le loyer.",
+          "translation_cn": "需要支付房租。"
+        }
+      ]
+    },
+    {
+      "word": "pays",
+      "translation_cn": "国家",
+      "phonetic": "[pe.i]",
+      "examples": [
+        {
+          "sentence": "La France est un pays.",
+          "translation_cn": "法国是一个国家。"
+        },
+        {
+          "sentence": "Quel pays ?",
+          "translation_cn": "哪个国家？"
+        }
+      ]
+    },
+    {
+      "word": "peau",
+      "translation_cn": "皮肤",
+      "phonetic": "[po]",
+      "examples": [
+        {
+          "sentence": "J'ai une peau sèche.",
+          "translation_cn": "我的皮肤干燥。"
+        },
+        {
+          "sentence": "Il a une peau douce.",
+          "translation_cn": "他的皮肤柔软。"
+        }
+      ]
+    },
+    {
+      "word": "penser",
+      "translation_cn": "想；认为",
+      "phonetic": "[pɑ̃se]",
+      "examples": [
+        {
+          "sentence": "Je pense.",
+          "translation_cn": "我想。"
+        },
+        {
+          "sentence": "Je pense que non.",
+          "translation_cn": "我认为不是。"
+        }
+      ]
+    },
+    {
+      "word": "perdre",
+      "translation_cn": "丢失；输",
+      "phonetic": "[pɛʁdʁ]",
+      "examples": [
+        {
+          "sentence": "Je vais perdre mes clés.",
+          "translation_cn": "我要丢我的钥匙了。"
+        },
+        {
+          "sentence": "Il ne veut pas perdre.",
+          "translation_cn": "他不想输。"
+        }
+      ]
+    },
+    {
+      "word": "personne",
+      "translation_cn": "没有人",
+      "phonetic": "[pɛʁsɔn]",
+      "examples": [
+        {
+          "sentence": "Il n'y a personne.",
+          "translation_cn": "没有人。"
+        },
+        {
+          "sentence": "Je ne connais personne.",
+          "translation_cn": "我不认识任何人。"
+        }
+      ]
+    },
+    {
+      "word": "petit",
+      "translation_cn": "小的",
+      "phonetic": "[pəti]",
+      "examples": [
+        {
+          "sentence": "C'est un petit chat.",
+          "translation_cn": "这是一只小猫。"
+        },
+        {
+          "sentence": "J'ai un petit livre.",
+          "translation_cn": "我有一本小书。"
+        }
+      ]
+    },
+    {
+      "word": "peu",
+      "translation_cn": "少",
+      "phonetic": "[pø]",
+      "examples": [
+        {
+          "sentence": "J'ai peu de temps.",
+          "translation_cn": "我很少时间。"
+        },
+        {
+          "sentence": "Il mange peu.",
+          "translation_cn": "他吃得很少。"
+        }
+      ]
+    },
+    {
+      "word": "peut-être",
+      "translation_cn": "也许；可能",
+      "phonetic": "[pøtɛtʁ]",
+      "examples": [
+        {
+          "sentence": "Peut-être qu'il viendra.",
+          "translation_cn": "也许他会来。"
+        },
+        {
+          "sentence": "Peut-être que oui, peut-être que non.",
+          "translation_cn": "可能，也可能不。"
+        }
+      ]
+    },
+    {
+      "word": "photo",
+      "translation_cn": "照片",
+      "phonetic": "[foto]",
+      "examples": [
+        {
+          "sentence": "Je prends une photo.",
+          "translation_cn": "我拍一张照片。"
+        },
+        {
+          "sentence": "C'est une belle photo.",
+          "translation_cn": "这是一张漂亮的照片。"
+        }
+      ]
+    },
+    {
+      "word": "phrase",
+      "translation_cn": "句子",
+      "phonetic": "[fʁaz]",
+      "examples": [
+        {
+          "sentence": "C'est une phrase.",
+          "translation_cn": "这是一个句子。"
+        },
+        {
+          "sentence": "Écris une phrase.",
+          "translation_cn": "写一个句子。"
+        }
+      ]
+    },
+    {
+      "word": "pied",
+      "translation_cn": "脚",
+      "phonetic": "[pje]",
+      "examples": [
+        {
+          "sentence": "J'ai mal au pied.",
+          "translation_cn": "我的脚疼。"
+        },
+        {
+          "sentence": "Il met son pied dans la chaussure.",
+          "translation_cn": "他把脚放进鞋子里。"
+        }
+      ]
+    },
+    {
+      "word": "plage",
+      "translation_cn": "海滩",
+      "phonetic": "[plaʒ]",
+      "examples": [
+        {
+          "sentence": "J'aime la plage.",
+          "translation_cn": "我喜欢海滩。"
+        },
+        {
+          "sentence": "La plage est grande.",
+          "translation_cn": "海滩很大。"
+        }
+      ]
+    },
+    {
+      "word": "pluie",
+      "translation_cn": "雨",
+      "phonetic": "[plɥi]",
+      "examples": [
+        {
+          "sentence": "Il y a de la pluie.",
+          "translation_cn": "有雨。"
+        },
+        {
+          "sentence": "J'ai un parapluie pour la pluie.",
+          "translation_cn": "我有一把雨伞来挡雨。"
+        }
+      ]
+    },
+    {
+      "word": "plus",
+      "translation_cn": "更多；加",
+      "phonetic": "[plys]",
+      "examples": [
+        {
+          "sentence": "J'ai plus de livres.",
+          "translation_cn": "我有更多的书。"
+        },
+        {
+          "sentence": "Un plus un égale deux.",
+          "translation_cn": "一加一等于二。"
+        }
+      ]
+    },
+    {
+      "word": "plusieurs",
+      "translation_cn": "几个；一些",
+      "phonetic": "[plyzjœʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai plusieurs amis.",
+          "translation_cn": "我有几个朋友。"
+        },
+        {
+          "sentence": "Il y a plusieurs livres.",
+          "translation_cn": "这里有一些书。"
+        }
+      ]
+    },
+    {
+      "word": "poisson",
+      "translation_cn": "鱼",
+      "phonetic": "[pwa.sɔ̃]",
+      "examples": [
+        {
+          "sentence": "Je mange du poisson.",
+          "translation_cn": "我吃鱼。"
+        },
+        {
+          "sentence": "C'est du poisson frais.",
+          "translation_cn": "这是新鲜的鱼。"
+        }
+      ]
+    },
+    {
+      "word": "poisson",
+      "translation_cn": "鱼",
+      "phonetic": "[pwa.sɔ̃]",
+      "examples": [
+        {
+          "sentence": "Je mange du poisson.",
+          "translation_cn": "我吃鱼。"
+        },
+        {
+          "sentence": "C'est du poisson frais.",
+          "translation_cn": "这是新鲜的鱼。"
+        }
+      ]
+    },
+    {
+      "word": "poivre",
+      "translation_cn": "胡椒",
+      "phonetic": "[pwavʁ]",
+      "examples": [
+        {
+          "sentence": "C'est du poivre.",
+          "translation_cn": "这是胡椒。"
+        },
+        {
+          "sentence": "Je mets du poivre sur la viande.",
+          "translation_cn": "我在肉上放胡椒。"
+        }
+      ]
+    },
+    {
+      "word": "pomme",
+      "translation_cn": "苹果",
+      "phonetic": "[pɔm]",
+      "examples": [
+        {
+          "sentence": "C'est une pomme.",
+          "translation_cn": "这是一个苹果。"
+        },
+        {
+          "sentence": "J'ai une pomme.",
+          "translation_cn": "我有一个苹果。"
+        }
+      ]
+    },
+    {
+      "word": "portable",
+      "translation_cn": "手机",
+      "phonetic": "[pɔʁtabl]",
+      "examples": [
+        {
+          "sentence": "J'ai un portable.",
+          "translation_cn": "我有一部手机。"
+        },
+        {
+          "sentence": "C'est mon portable.",
+          "translation_cn": "这是我的手机。"
+        }
+      ]
+    },
+    {
+      "word": "porte",
+      "translation_cn": "门",
+      "phonetic": "[pɔʁt]",
+      "examples": [
+        {
+          "sentence": "Ouvre la porte.",
+          "translation_cn": "打开门。"
+        },
+        {
+          "sentence": "La porte est fermée.",
+          "translation_cn": "门关着。"
+        }
+      ]
+    },
+    {
+      "word": "poste",
+      "translation_cn": "邮局",
+      "phonetic": "[pɔst]",
+      "examples": [
+        {
+          "sentence": "Je vais à la poste.",
+          "translation_cn": "我去邮局。"
+        },
+        {
+          "sentence": "La poste est là.",
+          "translation_cn": "邮局在那里。"
+        }
+      ]
+    },
+    {
+      "word": "poulet",
+      "translation_cn": "鸡肉",
+      "phonetic": "[pu.lɛ]",
+      "examples": [
+        {
+          "sentence": "Je mange du poulet.",
+          "translation_cn": "我吃鸡肉。"
+        },
+        {
+          "sentence": "C'est du poulet rôti.",
+          "translation_cn": "这是烤鸡。"
+        }
+      ]
+    },
+    {
+      "word": "pour",
+      "translation_cn": "为了；给",
+      "phonetic": "[puʁ]",
+      "examples": [
+        {
+          "sentence": "C'est pour toi.",
+          "translation_cn": "这是给你的。"
+        },
+        {
+          "sentence": "Je travaille pour gagner de l'argent.",
+          "translation_cn": "我工作是为了挣钱。"
+        }
+      ]
+    },
+    {
+      "word": "pourquoi",
+      "translation_cn": "为什么",
+      "phonetic": "[puʁ.kwa]",
+      "examples": [
+        {
+          "sentence": "Pourquoi ?",
+          "translation_cn": "为什么？"
+        },
+        {
+          "sentence": "Pourquoi tu pleures ?",
+          "translation_cn": "你为什么哭？"
+        }
+      ]
+    },
+    {
+      "word": "pouvoir",
+      "translation_cn": "能够；可以",
+      "phonetic": "[puvwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je peux parler français.",
+          "translation_cn": "我可以说法语。"
+        },
+        {
+          "sentence": "Il peut venir.",
+          "translation_cn": "他可以来。"
+        }
+      ]
+    },
+    {
+      "word": "premier",
+      "translation_cn": "第一",
+      "phonetic": "[pʁəmje]",
+      "examples": [
+        {
+          "sentence": "C'est le premier jour.",
+          "translation_cn": "这是第一天。"
+        },
+        {
+          "sentence": "Il est le premier.",
+          "translation_cn": "他是第一。"
+        }
+      ]
+    },
+    {
+      "word": "première",
+      "translation_cn": "第一",
+      "phonetic": "[pʁəmjɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est la première fois.",
+          "translation_cn": "这是第一次。"
+        },
+        {
+          "sentence": "Elle est la première.",
+          "translation_cn": "她是第一。"
+        }
+      ]
+    },
+    {
+      "word": "premièrement",
+      "translation_cn": "首先",
+      "phonetic": "[pʁə.mjɛʁ.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "Premièrement, je vais manger.",
+          "translation_cn": "首先，我要吃饭。"
+        },
+        {
+          "sentence": "Premièrement, il faut lire.",
+          "translation_cn": "首先，要阅读。"
+        }
+      ]
+    },
+    {
+      "word": "prendre",
+      "translation_cn": "拿；取；乘坐",
+      "phonetic": "[pʁɑ̃dʁ]",
+      "examples": [
+        {
+          "sentence": "Je prends un café.",
+          "translation_cn": "我喝一杯咖啡。"
+        },
+        {
+          "sentence": "Il prend le bus.",
+          "translation_cn": "他乘坐公共汽车。"
+        }
+      ]
+    },
+    {
+      "word": "printemps",
+      "translation_cn": "春天",
+      "phonetic": "[pʁɛ̃tɑ̃]",
+      "examples": [
+        {
+          "sentence": "Le printemps est une saison.",
+          "translation_cn": "春天是一个季节。"
+        },
+        {
+          "sentence": "J'aime le printemps.",
+          "translation_cn": "我喜欢春天。"
+        }
+      ]
+    },
+    {
+      "word": "problème",
+      "translation_cn": "问题；困难",
+      "phonetic": "[pʁɔblɛm]",
+      "examples": [
+        {
+          "sentence": "J'ai un problème.",
+          "translation_cn": "我有一个问题。"
+        },
+        {
+          "sentence": "C'est un grand problème.",
+          "translation_cn": "这是一个大问题。"
+        }
+      ]
+    },
+    {
+      "word": "professeur",
+      "translation_cn": "老师",
+      "phonetic": "[pʁɔfɛsœʁ]",
+      "examples": [
+        {
+          "sentence": "C'est mon professeur.",
+          "translation_cn": "这是我的老师。"
+        },
+        {
+          "sentence": "Le professeur est gentil.",
+          "translation_cn": "老师很友善。"
+        }
+      ]
+    },
+    {
+      "word": "propre",
+      "translation_cn": "干净的",
+      "phonetic": "[pʁɔpʁ]",
+      "examples": [
+        {
+          "sentence": "C'est propre.",
+          "translation_cn": "这是干净的。"
+        },
+        {
+          "sentence": "La table est propre.",
+          "translation_cn": "桌子是干净的。"
+        }
+      ]
+    },
+    {
+      "word": "prénom",
+      "translation_cn": "名字（名）",
+      "phonetic": "[pʁenɔ̃]",
+      "examples": [
+        {
+          "sentence": "Quel est votre prénom ?",
+          "translation_cn": "您叫什么名字？(名)"
+        },
+        {
+          "sentence": "Mon prénom est Jean.",
+          "translation_cn": "我的名字是让。"
+        }
+      ]
+    },
+    {
+      "word": "pâtes",
+      "translation_cn": "面条；意大利面",
+      "phonetic": "[pɑt]",
+      "examples": [
+        {
+          "sentence": "Ce sont des pâtes.",
+          "translation_cn": "这是面条。"
+        },
+        {
+          "sentence": "J'aime les pâtes.",
+          "translation_cn": "我喜欢面条。"
+        }
+      ]
+    },
+    {
+      "word": "père",
+      "translation_cn": "父亲",
+      "phonetic": "[pɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est mon père.",
+          "translation_cn": "这是我的父亲。"
+        },
+        {
+          "sentence": "Mon père est grand.",
+          "translation_cn": "我的父亲很高。"
+        }
+      ]
+    },
+    {
+      "word": "quand",
+      "translation_cn": "什么时候",
+      "phonetic": "[kɑ̃]",
+      "examples": [
+        {
+          "sentence": "Quand arrives-tu ?",
+          "translation_cn": "你什么时候到达？"
+        },
+        {
+          "sentence": "Quand est-ce que tu pars ?",
+          "translation_cn": "你什么时候离开？"
+        }
+      ]
+    },
+    {
+      "word": "que",
+      "translation_cn": "什么；那",
+      "phonetic": "[kə]",
+      "examples": [
+        {
+          "sentence": "Qu'est-ce que c'est ?",
+          "translation_cn": "这是什么？"
+        },
+        {
+          "sentence": "Je pense que oui.",
+          "translation_cn": "我认为是的。"
+        }
+      ]
+    },
+    {
+      "word": "quel",
+      "translation_cn": "哪个；什么",
+      "phonetic": "[kɛl]",
+      "examples": [
+        {
+          "sentence": "Quel est ton nom ?",
+          "translation_cn": "你叫什么名字？"
+        },
+        {
+          "sentence": "Quel âge as-tu ?",
+          "translation_cn": "你几岁？"
+        }
+      ]
+    },
+    {
+      "word": "quelle",
+      "translation_cn": "哪个；什么",
+      "phonetic": "[kɛl]",
+      "examples": [
+        {
+          "sentence": "Quelle heure est-il ?",
+          "translation_cn": "几点了？"
+        },
+        {
+          "sentence": "Quelle est ta nationalité ?",
+          "translation_cn": "你的国籍是什么？"
+        }
+      ]
+    },
+    {
+      "word": "quelles",
+      "translation_cn": "哪些",
+      "phonetic": "[kɛl]",
+      "examples": [
+        {
+          "sentence": "Quelles couleurs ?",
+          "translation_cn": "哪些颜色？"
+        },
+        {
+          "sentence": "Quelles sont vos adresses ?",
+          "translation_cn": "你们的地址是什么？"
+        }
+      ]
+    },
+    {
+      "word": "quelque chose",
+      "translation_cn": "某事；一些东西",
+      "phonetic": "[kɛlkə ʃoz]",
+      "examples": [
+        {
+          "sentence": "J'ai quelque chose.",
+          "translation_cn": "我有一些东西。"
+        },
+        {
+          "sentence": "Il y a quelque chose.",
+          "translation_cn": "有一些东西。"
+        }
+      ]
+    },
+    {
+      "word": "quelquefois",
+      "translation_cn": "有时",
+      "phonetic": "[kɛlkəfwa]",
+      "examples": [
+        {
+          "sentence": "Je vais quelquefois au café.",
+          "translation_cn": "我有时去咖啡馆。"
+        },
+        {
+          "sentence": "Il pleut quelquefois en été.",
+          "translation_cn": "夏天有时会下雨。"
+        }
+      ]
+    },
+    {
+      "word": "quels",
+      "translation_cn": "哪些",
+      "phonetic": "[kɛl]",
+      "examples": [
+        {
+          "sentence": "Quels livres ?",
+          "translation_cn": "哪些书？"
+        },
+        {
+          "sentence": "Quels sont vos noms ?",
+          "translation_cn": "你们的名字是什么？"
+        }
+      ]
+    },
+    {
+      "word": "question",
+      "translation_cn": "问题",
+      "phonetic": "[kɛstjɔ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai une question.",
+          "translation_cn": "我有一个问题。"
+        },
+        {
+          "sentence": "C'est une question difficile.",
+          "translation_cn": "这是一个难题。"
+        }
+      ]
+    },
+    {
+      "word": "qui",
+      "translation_cn": "谁",
+      "phonetic": "[ki]",
+      "examples": [
+        {
+          "sentence": "Qui est-ce ?",
+          "translation_cn": "这是谁？"
+        },
+        {
+          "sentence": "Qui est là ?",
+          "translation_cn": "谁在那里？"
+        }
+      ]
+    },
+    {
+      "word": "quoi",
+      "translation_cn": "什么",
+      "phonetic": "[kwa]",
+      "examples": [
+        {
+          "sentence": "Quoi ?",
+          "translation_cn": "什么？"
+        },
+        {
+          "sentence": "C'est quoi ?",
+          "translation_cn": "这是什么？"
+        }
+      ]
+    },
+    {
+      "word": "radio",
+      "translation_cn": "收音机",
+      "phonetic": "[ʁadjo]",
+      "examples": [
+        {
+          "sentence": "J'écoute la radio.",
+          "translation_cn": "我听收音机。"
+        },
+        {
+          "sentence": "C'est une radio.",
+          "translation_cn": "这是一台收音机。"
+        }
+      ]
+    },
+    {
+      "word": "recevoir",
+      "translation_cn": "收到；接到",
+      "phonetic": "[ʁəsəvwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je reçois un cadeau.",
+          "translation_cn": "我收到一份礼物。"
+        },
+        {
+          "sentence": "Il reçoit une lettre.",
+          "translation_cn": "他收到一封信。"
+        }
+      ]
+    },
+    {
+      "word": "regarder",
+      "translation_cn": "看",
+      "phonetic": "[ʁəɡaʁde]",
+      "examples": [
+        {
+          "sentence": "Je regarde la télé.",
+          "translation_cn": "我看电视。"
+        },
+        {
+          "sentence": "Regarde le chat.",
+          "translation_cn": "看看那只猫。"
+        }
+      ]
+    },
+    {
+      "word": "restaurant",
+      "translation_cn": "餐厅",
+      "phonetic": "[ʁɛstoʁɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je vais au restaurant.",
+          "translation_cn": "我去餐厅。"
+        },
+        {
+          "sentence": "Le restaurant est bon.",
+          "translation_cn": "餐厅很好。"
+        }
+      ]
+    },
+    {
+      "word": "rester",
+      "translation_cn": "留下；停留",
+      "phonetic": "[ʁɛste]",
+      "examples": [
+        {
+          "sentence": "Je reste ici.",
+          "translation_cn": "我留在这里。"
+        },
+        {
+          "sentence": "Il reste à la maison.",
+          "translation_cn": "他待在家里。"
+        }
+      ]
+    },
+    {
+      "word": "rien",
+      "translation_cn": "没有；什么也没有",
+      "phonetic": "[ʁjɛ̃]",
+      "examples": [
+        {
+          "sentence": "Je ne vois rien.",
+          "translation_cn": "我什么也没看见。"
+        },
+        {
+          "sentence": "Il n'y a rien.",
+          "translation_cn": "什么也没有。"
+        }
+      ]
+    },
+    {
+      "word": "rivière",
+      "translation_cn": "河流",
+      "phonetic": "[ʁivjɛʁ]",
+      "examples": [
+        {
+          "sentence": "La rivière est longue.",
+          "translation_cn": "河流很长。"
+        },
+        {
+          "sentence": "Je vois la rivière.",
+          "translation_cn": "我看到河流。"
+        }
+      ]
+    },
+    {
+      "word": "riz",
+      "translation_cn": "米饭",
+      "phonetic": "[ʁi]",
+      "examples": [
+        {
+          "sentence": "C'est du riz.",
+          "translation_cn": "这是米饭。"
+        },
+        {
+          "sentence": "Je mange du riz.",
+          "translation_cn": "我吃米饭。"
+        }
+      ]
+    },
+    {
+      "word": "robe",
+      "translation_cn": "连衣裙",
+      "phonetic": "[ʁɔb]",
+      "examples": [
+        {
+          "sentence": "C'est une belle robe.",
+          "translation_cn": "这是一条漂亮的连衣裙。"
+        },
+        {
+          "sentence": "La robe est verte.",
+          "translation_cn": "这条连衣裙是绿色的。"
+        }
+      ]
+    },
+    {
+      "word": "rose",
+      "translation_cn": "粉色",
+      "phonetic": "[ʁoz]",
+      "examples": [
+        {
+          "sentence": "C'est rose.",
+          "translation_cn": "这是粉色的。"
+        },
+        {
+          "sentence": "La fleur est rose.",
+          "translation_cn": "花是粉色的。"
+        }
+      ]
+    },
+    {
+      "word": "rouge",
+      "translation_cn": "红色",
+      "phonetic": "[ʁuʒ]",
+      "examples": [
+        {
+          "sentence": "C'est rouge.",
+          "translation_cn": "这是红色的。"
+        },
+        {
+          "sentence": "La pomme est rouge.",
+          "translation_cn": "苹果是红色的。"
+        }
+      ]
+    },
+    {
+      "word": "rue",
+      "translation_cn": "街道",
+      "phonetic": "[ʁy]",
+      "examples": [
+        {
+          "sentence": "J'habite dans cette rue.",
+          "translation_cn": "我住在这条街上。"
+        },
+        {
+          "sentence": "La rue est longue.",
+          "translation_cn": "这条街很长。"
+        }
+      ]
+    },
+    {
+      "word": "répondre",
+      "translation_cn": "回答",
+      "phonetic": "[ʁepɔ̃dʁ]",
+      "examples": [
+        {
+          "sentence": "Je réponds à la question.",
+          "translation_cn": "我回答问题。"
+        },
+        {
+          "sentence": "Il doit répondre.",
+          "translation_cn": "他必须回答。"
+        }
+      ]
+    },
+    {
+      "word": "réponse",
+      "translation_cn": "答案",
+      "phonetic": "[ʁepɔ̃s]",
+      "examples": [
+        {
+          "sentence": "J'ai la réponse.",
+          "translation_cn": "我有答案。"
+        },
+        {
+          "sentence": "La réponse est correcte.",
+          "translation_cn": "答案是正确的。"
+        }
+      ]
+    },
+    {
+      "word": "s'il vous plaît",
+      "translation_cn": "请",
+      "phonetic": "[sil vu ple]",
+      "examples": [
+        {
+          "sentence": "Un café, s'il vous plaît.",
+          "translation_cn": "请来一杯咖啡。"
+        },
+        {
+          "sentence": "Aidez-moi, s'il vous plaît.",
+          "translation_cn": "请帮帮我。"
+        }
+      ]
+    },
+    {
+      "word": "sa",
+      "translation_cn": "她的；它的 (阴性)",
+      "phonetic": "[sa]",
+      "examples": [
+        {
+          "sentence": "C'est sa maison.",
+          "translation_cn": "这是她的房子。"
+        },
+        {
+          "sentence": "Sa voiture est rouge.",
+          "translation_cn": "她的车是红色的。"
+        }
+      ]
+    },
+    {
+      "word": "salade",
+      "translation_cn": "沙拉；生菜",
+      "phonetic": "[salad]",
+      "examples": [
+        {
+          "sentence": "C'est une salade.",
+          "translation_cn": "这是一个沙拉。"
+        },
+        {
+          "sentence": "J'aime la salade.",
+          "translation_cn": "我喜欢沙拉。"
+        }
+      ]
+    },
+    {
+      "word": "sale",
+      "translation_cn": "脏的",
+      "phonetic": "[sal]",
+      "examples": [
+        {
+          "sentence": "Le tableau est sale.",
+          "translation_cn": "黑板是脏的。"
+        },
+        {
+          "sentence": "Mes mains sont sales.",
+          "translation_cn": "我的手是脏的。"
+        }
+      ]
+    },
+    {
+      "word": "salle de bains",
+      "translation_cn": "浴室",
+      "phonetic": "[sal də bɛ̃]",
+      "examples": [
+        {
+          "sentence": "La salle de bains est petite.",
+          "translation_cn": "浴室很小。"
+        },
+        {
+          "sentence": "Il y a une douche dans la salle de bains.",
+          "translation_cn": "浴室里有一个淋浴。"
+        }
+      ]
+    },
+    {
+      "word": "salon",
+      "translation_cn": "客厅",
+      "phonetic": "[salɔ̃]",
+      "examples": [
+        {
+          "sentence": "Le salon est grand.",
+          "translation_cn": "客厅很大。"
+        },
+        {
+          "sentence": "Je regarde la télé dans le salon.",
+          "translation_cn": "我在客厅看电视。"
+        }
+      ]
+    },
+    {
+      "word": "samedi",
+      "translation_cn": "星期六",
+      "phonetic": "[samdi]",
+      "examples": [
+        {
+          "sentence": "C'est samedi.",
+          "translation_cn": "今天是星期六。"
+        },
+        {
+          "sentence": "Je dors samedi.",
+          "translation_cn": "我星期六睡觉。"
+        }
+      ]
+    },
+    {
+      "word": "sang",
+      "translation_cn": "血",
+      "phonetic": "[sɑ̃]",
+      "examples": [
+        {
+          "sentence": "Il y a du sang.",
+          "translation_cn": "有血。"
+        },
+        {
+          "sentence": "Le sang est rouge.",
+          "translation_cn": "血是红色的。"
+        }
+      ]
+    },
+    {
+      "word": "santé",
+      "translation_cn": "健康",
+      "phonetic": "[sɑ̃te]",
+      "examples": [
+        {
+          "sentence": "J'ai une bonne santé.",
+          "translation_cn": "我身体健康。"
+        },
+        {
+          "sentence": "La santé est importante.",
+          "translation_cn": "健康很重要。"
+        }
+      ]
+    },
+    {
+      "word": "savoir",
+      "translation_cn": "知道；会",
+      "phonetic": "[savwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je sais.",
+          "translation_cn": "我知道。"
+        },
+        {
+          "sentence": "Il sait nager.",
+          "translation_cn": "他会游泳。"
+        }
+      ]
+    },
+    {
+      "word": "science",
+      "translation_cn": "科学",
+      "phonetic": "[sjɑ̃s]",
+      "examples": [
+        {
+          "sentence": "La science est intéressante.",
+          "translation_cn": "科学很有趣。"
+        },
+        {
+          "sentence": "Il étudie la science.",
+          "translation_cn": "他学习科学。"
+        }
+      ]
+    },
+    {
+      "word": "seconde",
+      "translation_cn": "秒",
+      "phonetic": "[səɡɔ̃d]",
+      "examples": [
+        {
+          "sentence": "Une minute a soixante secondes.",
+          "translation_cn": "一分钟有六十秒。"
+        },
+        {
+          "sentence": "Attends une seconde.",
+          "translation_cn": "等一下。"
+        }
+      ]
+    },
+    {
+      "word": "sel",
+      "translation_cn": "盐",
+      "phonetic": "[sɛl]",
+      "examples": [
+        {
+          "sentence": "C'est du sel.",
+          "translation_cn": "这是盐。"
+        },
+        {
+          "sentence": "Je mets du sel dans la soupe.",
+          "translation_cn": "我在汤里放盐。"
+        }
+      ]
+    },
+    {
+      "word": "semaine",
+      "translation_cn": "星期；周",
+      "phonetic": "[s(ə)mɛn]",
+      "examples": [
+        {
+          "sentence": "Une semaine.",
+          "translation_cn": "一个星期。"
+        },
+        {
+          "sentence": "Je travaille cette semaine.",
+          "translation_cn": "我这周工作。"
+        }
+      ]
+    },
+    {
+      "word": "septembre",
+      "translation_cn": "九月",
+      "phonetic": "[sɛptɑ̃bʁ]",
+      "examples": [
+        {
+          "sentence": "Septembre est en automne.",
+          "translation_cn": "九月在秋天。"
+        },
+        {
+          "sentence": "L'école commence en septembre.",
+          "translation_cn": "学校在九月开始。"
+        }
+      ]
+    },
+    {
+      "word": "serpent",
+      "translation_cn": "蛇",
+      "phonetic": "[sɛʁpɑ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un serpent.",
+          "translation_cn": "这是一条蛇。"
+        },
+        {
+          "sentence": "Le serpent est long.",
+          "translation_cn": "蛇很长。"
+        }
+      ]
+    },
+    {
+      "word": "ses",
+      "translation_cn": "他的；她的；它的 (复数)",
+      "phonetic": "[se]",
+      "examples": [
+        {
+          "sentence": "Ce sont ses amis.",
+          "translation_cn": "这些是他的朋友。"
+        },
+        {
+          "sentence": "J'aime ses fleurs.",
+          "translation_cn": "我喜欢她的花。"
+        }
+      ]
+    },
+    {
+      "word": "seul",
+      "translation_cn": "单独的；唯一的",
+      "phonetic": "[sœl]",
+      "examples": [
+        {
+          "sentence": "Je suis seul.",
+          "translation_cn": "我是一个人。"
+        },
+        {
+          "sentence": "Il est le seul.",
+          "translation_cn": "他是唯一的。"
+        }
+      ]
+    },
+    {
+      "word": "seul",
+      "translation_cn": "单独的；唯一的",
+      "phonetic": "[sœl]",
+      "examples": [
+        {
+          "sentence": "Je suis seul.",
+          "translation_cn": "我是一个人。"
+        },
+        {
+          "sentence": "Il est le seul.",
+          "translation_cn": "他是唯一的。"
+        }
+      ]
+    },
+    {
+      "word": "seule",
+      "translation_cn": "单独的；唯一的",
+      "phonetic": "[sœl]",
+      "examples": [
+        {
+          "sentence": "Elle est seule.",
+          "translation_cn": "她是一个人。"
+        },
+        {
+          "sentence": "Elle est la seule.",
+          "translation_cn": "她是唯一的。"
+        }
+      ]
+    },
+    {
+      "word": "seule",
+      "translation_cn": "单独的；唯一的",
+      "phonetic": "[sœl]",
+      "examples": [
+        {
+          "sentence": "Elle est seule.",
+          "translation_cn": "她是一个人。"
+        },
+        {
+          "sentence": "Elle est la seule.",
+          "translation_cn": "她是唯一的。"
+        }
+      ]
+    },
+    {
+      "word": "simplement",
+      "translation_cn": "简单地",
+      "phonetic": "[sɛ̃.plə.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je parle simplement.",
+          "translation_cn": "我简单地说。"
+        },
+        {
+          "sentence": "C'est simplement une question.",
+          "translation_cn": "这只是一个问题。"
+        }
+      ]
+    },
+    {
+      "word": "soir",
+      "translation_cn": "晚上；傍晚",
+      "phonetic": "[swaʁ]",
+      "examples": [
+        {
+          "sentence": "Bonsoir.",
+          "translation_cn": "晚上好。"
+        },
+        {
+          "sentence": "Je mange le soir.",
+          "translation_cn": "我晚上吃饭。"
+        }
+      ]
+    },
+    {
+      "word": "soleil",
+      "translation_cn": "太阳",
+      "phonetic": "[sɔlɛj]",
+      "examples": [
+        {
+          "sentence": "Le soleil brille.",
+          "translation_cn": "太阳照耀。"
+        },
+        {
+          "sentence": "J'aime le soleil.",
+          "translation_cn": "我喜欢太阳。"
+        }
+      ]
+    },
+    {
+      "word": "soleil",
+      "translation_cn": "太阳",
+      "phonetic": "[sɔlɛj]",
+      "examples": [
+        {
+          "sentence": "Le soleil brille.",
+          "translation_cn": "太阳照耀。"
+        },
+        {
+          "sentence": "J'aime le soleil.",
+          "translation_cn": "我喜欢太阳。"
+        }
+      ]
+    },
+    {
+      "word": "solution",
+      "translation_cn": "解决方案",
+      "phonetic": "[sɔlysjɔ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai une solution.",
+          "translation_cn": "我有一个解决方案。"
+        },
+        {
+          "sentence": "C'est la solution.",
+          "translation_cn": "这是解决方案。"
+        }
+      ]
+    },
+    {
+      "word": "son",
+      "translation_cn": "他的；它的 (阳性)",
+      "phonetic": "[sɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est son livre.",
+          "translation_cn": "这是他的书。"
+        },
+        {
+          "sentence": "Son chat est noir.",
+          "translation_cn": "他的猫是黑色的。"
+        }
+      ]
+    },
+    {
+      "word": "sont",
+      "translation_cn": "是",
+      "phonetic": "[sɔ̃]",
+      "examples": [
+        {
+          "sentence": "Ils sont français.",
+          "translation_cn": "他们是法国人。"
+        },
+        {
+          "sentence": "Elles sont contentes.",
+          "translation_cn": "她们很高兴。"
+        }
+      ]
+    },
+    {
+      "word": "souris",
+      "translation_cn": "老鼠",
+      "phonetic": "[suʁi]",
+      "examples": [
+        {
+          "sentence": "C'est une souris.",
+          "translation_cn": "这是一只老鼠。"
+        },
+        {
+          "sentence": "La souris est petite.",
+          "translation_cn": "老鼠很小。"
+        }
+      ]
+    },
+    {
+      "word": "souvent",
+      "translation_cn": "经常",
+      "phonetic": "[suvɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je vais souvent au cinéma.",
+          "translation_cn": "我经常去看电影。"
+        },
+        {
+          "sentence": "Elle est souvent fatiguée.",
+          "translation_cn": "她经常感到疲倦。"
+        }
+      ]
+    },
+    {
+      "word": "sport",
+      "translation_cn": "运动",
+      "phonetic": "[spɔʁ]",
+      "examples": [
+        {
+          "sentence": "J'aime le sport.",
+          "translation_cn": "我喜欢运动。"
+        },
+        {
+          "sentence": "Le sport est bon pour la santé.",
+          "translation_cn": "运动对健康有益。"
+        }
+      ]
+    },
+    {
+      "word": "stylo",
+      "translation_cn": "钢笔",
+      "phonetic": "[stilo]",
+      "examples": [
+        {
+          "sentence": "J'ai un stylo.",
+          "translation_cn": "我有一支钢笔。"
+        },
+        {
+          "sentence": "Le stylo est noir.",
+          "translation_cn": "钢笔是黑色的。"
+        }
+      ]
+    },
+    {
+      "word": "sucre",
+      "translation_cn": "糖",
+      "phonetic": "[sykʁ]",
+      "examples": [
+        {
+          "sentence": "C'est du sucre.",
+          "translation_cn": "这是糖。"
+        },
+        {
+          "sentence": "Je mets du sucre dans mon café.",
+          "translation_cn": "我在咖啡里放糖。"
+        }
+      ]
+    },
+    {
+      "word": "suis",
+      "translation_cn": "是",
+      "phonetic": "[sɥi]",
+      "examples": [
+        {
+          "sentence": "Je suis Marie.",
+          "translation_cn": "我是玛丽。"
+        },
+        {
+          "sentence": "Je suis fatigué.",
+          "translation_cn": "我很累。"
+        }
+      ]
+    },
+    {
+      "word": "sur",
+      "translation_cn": "在...上；关于",
+      "phonetic": "[syʁ]",
+      "examples": [
+        {
+          "sentence": "Le livre est sur la table.",
+          "translation_cn": "书在桌子上。"
+        },
+        {
+          "sentence": "Un film sur Paris.",
+          "translation_cn": "一部关于巴黎的电影。"
+        }
+      ]
+    },
+    {
+      "word": "surtout",
+      "translation_cn": "尤其；特别",
+      "phonetic": "[syʁtu]",
+      "examples": [
+        {
+          "sentence": "J'aime les fruits, surtout les pommes.",
+          "translation_cn": "我喜欢水果，尤其是苹果。"
+        },
+        {
+          "sentence": "Il est gentil, surtout avec les enfants.",
+          "translation_cn": "他很友善，特别是对孩子们。"
+        }
+      ]
+    },
+    {
+      "word": "sérieusement",
+      "translation_cn": "认真地",
+      "phonetic": "[se.ʁjøz.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "Il travaille sérieusement.",
+          "translation_cn": "他认真工作。"
+        },
+        {
+          "sentence": "Parlez sérieusement, s'il vous plaît.",
+          "translation_cn": "请认真说话。"
+        }
+      ]
+    },
+    {
+      "word": "sœur",
+      "translation_cn": "姐妹",
+      "phonetic": "[sœʁ]",
+      "examples": [
+        {
+          "sentence": "J'ai une sœur.",
+          "translation_cn": "我有一个姐妹。"
+        },
+        {
+          "sentence": "Ma sœur est petite.",
+          "translation_cn": "我的姐妹很小。"
+        }
+      ]
+    },
+    {
+      "word": "ta",
+      "translation_cn": "你的 (阴性)",
+      "phonetic": "[ta]",
+      "examples": [
+        {
+          "sentence": "C'est ta maison.",
+          "translation_cn": "这是你的房子。"
+        },
+        {
+          "sentence": "Ta sœur est gentille.",
+          "translation_cn": "你的姐妹很友善。"
+        }
+      ]
+    },
+    {
+      "word": "table",
+      "translation_cn": "桌子",
+      "phonetic": "[tabl]",
+      "examples": [
+        {
+          "sentence": "C'est une table.",
+          "translation_cn": "这是一张桌子。"
+        },
+        {
+          "sentence": "Le livre est sur la table.",
+          "translation_cn": "书在桌子上。"
+        }
+      ]
+    },
+    {
+      "word": "table",
+      "translation_cn": "桌子",
+      "phonetic": "[tabl]",
+      "examples": [
+        {
+          "sentence": "C'est une table.",
+          "translation_cn": "这是一张桌子。"
+        },
+        {
+          "sentence": "Le livre est sur la table.",
+          "translation_cn": "书在桌子上。"
+        }
+      ]
+    },
+    {
+      "word": "temps",
+      "translation_cn": "时间；天气",
+      "phonetic": "[tɑ̃]",
+      "examples": [
+        {
+          "sentence": "Quel temps fait-il ?",
+          "translation_cn": "天气怎么样？"
+        },
+        {
+          "sentence": "J'ai du temps.",
+          "translation_cn": "我有时间。"
+        }
+      ]
+    },
+    {
+      "word": "tennis",
+      "translation_cn": "网球",
+      "phonetic": "[tɛnis]",
+      "examples": [
+        {
+          "sentence": "J'aime jouer au tennis.",
+          "translation_cn": "我喜欢打网球。"
+        },
+        {
+          "sentence": "Le tennis est un sport amusant.",
+          "translation_cn": "网球是一项有趣的运动。"
+        }
+      ]
+    },
+    {
+      "word": "tes",
+      "translation_cn": "你的 (复数)",
+      "phonetic": "[te]",
+      "examples": [
+        {
+          "sentence": "Ce sont tes livres.",
+          "translation_cn": "这些是你的书。"
+        },
+        {
+          "sentence": "J'aime tes chaussures.",
+          "translation_cn": "我喜欢你的鞋子。"
+        }
+      ]
+    },
+    {
+      "word": "thé",
+      "translation_cn": "茶",
+      "phonetic": "[te]",
+      "examples": [
+        {
+          "sentence": "Je bois du thé.",
+          "translation_cn": "我喝茶。"
+        },
+        {
+          "sentence": "Il aime le thé.",
+          "translation_cn": "他喜欢茶。"
+        }
+      ]
+    },
+    {
+      "word": "théâtre",
+      "translation_cn": "剧院",
+      "phonetic": "[teatʁ]",
+      "examples": [
+        {
+          "sentence": "Je vais au théâtre.",
+          "translation_cn": "我去剧院。"
+        },
+        {
+          "sentence": "Le théâtre est grand.",
+          "translation_cn": "剧院很大。"
+        }
+      ]
+    },
+    {
+      "word": "toilette",
+      "translation_cn": "厕所",
+      "phonetic": "[twalɛt]",
+      "examples": [
+        {
+          "sentence": "Où sont les toilettes, s'il vous plaît ?",
+          "translation_cn": "请问，厕所在哪里？"
+        },
+        {
+          "sentence": "La toilette est propre.",
+          "translation_cn": "厕所很干净。"
+        }
+      ]
+    },
+    {
+      "word": "tomate",
+      "translation_cn": "番茄；西红柿",
+      "phonetic": "[tɔmat]",
+      "examples": [
+        {
+          "sentence": "C'est une tomate.",
+          "translation_cn": "这是一个番茄。"
+        },
+        {
+          "sentence": "Il mange une tomate.",
+          "translation_cn": "他吃一个番茄。"
+        }
+      ]
+    },
+    {
+      "word": "ton",
+      "translation_cn": "你的 (阳性)",
+      "phonetic": "[tɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est ton livre.",
+          "translation_cn": "这是你的书。"
+        },
+        {
+          "sentence": "Ton frère est grand.",
+          "translation_cn": "你的兄弟很高。"
+        }
+      ]
+    },
+    {
+      "word": "toujours",
+      "translation_cn": "总是；一直",
+      "phonetic": "[tuʒuʁ]",
+      "examples": [
+        {
+          "sentence": "Il est toujours ici.",
+          "translation_cn": "他总是在这里。"
+        },
+        {
+          "sentence": "Je mange toujours à midi.",
+          "translation_cn": "我总是中午吃饭。"
+        }
+      ]
+    },
+    {
+      "word": "tous",
+      "translation_cn": "所有",
+      "phonetic": "[tu]",
+      "examples": [
+        {
+          "sentence": "Tous les jours.",
+          "translation_cn": "每天。"
+        },
+        {
+          "sentence": "Tous les étudiants.",
+          "translation_cn": "所有学生。"
+        }
+      ]
+    },
+    {
+      "word": "tout",
+      "translation_cn": "所有；一切",
+      "phonetic": "[tu]",
+      "examples": [
+        {
+          "sentence": "Tout va bien.",
+          "translation_cn": "一切都好。"
+        },
+        {
+          "sentence": "J'ai tout compris.",
+          "translation_cn": "我全部明白了。"
+        }
+      ]
+    },
+    {
+      "word": "toute",
+      "translation_cn": "所有；一切",
+      "phonetic": "[tut]",
+      "examples": [
+        {
+          "sentence": "Toute la journée.",
+          "translation_cn": "整天。"
+        },
+        {
+          "sentence": "Toute la famille.",
+          "translation_cn": "整个家庭。"
+        }
+      ]
+    },
+    {
+      "word": "toutes",
+      "translation_cn": "所有",
+      "phonetic": "[tut]",
+      "examples": [
+        {
+          "sentence": "Toutes les filles.",
+          "translation_cn": "所有女孩。"
+        },
+        {
+          "sentence": "Toutes les semaines.",
+          "translation_cn": "每星期。"
+        }
+      ]
+    },
+    {
+      "word": "train",
+      "translation_cn": "火车",
+      "phonetic": "[tʁɛ̃]",
+      "examples": [
+        {
+          "sentence": "Je prends le train.",
+          "translation_cn": "我坐火车。"
+        },
+        {
+          "sentence": "Le train est long.",
+          "translation_cn": "火车很长。"
+        }
+      ]
+    },
+    {
+      "word": "travail",
+      "translation_cn": "工作",
+      "phonetic": "[tʁavaj]",
+      "examples": [
+        {
+          "sentence": "Je cherche du travail.",
+          "translation_cn": "我在找工作。"
+        },
+        {
+          "sentence": "C'est mon travail.",
+          "translation_cn": "这是我的工作。"
+        }
+      ]
+    },
+    {
+      "word": "travail",
+      "translation_cn": "工作",
+      "phonetic": "[tʁavaj]",
+      "examples": [
+        {
+          "sentence": "Je cherche du travail.",
+          "translation_cn": "我在找工作。"
+        },
+        {
+          "sentence": "C'est mon travail.",
+          "translation_cn": "这是我的工作。"
+        }
+      ]
+    },
+    {
+      "word": "triste",
+      "translation_cn": "悲伤的",
+      "phonetic": "[tʁist]",
+      "examples": [
+        {
+          "sentence": "Je suis triste.",
+          "translation_cn": "我很悲伤。"
+        },
+        {
+          "sentence": "Il est triste.",
+          "translation_cn": "他很悲伤。"
+        }
+      ]
+    },
+    {
+      "word": "troisièmement",
+      "translation_cn": "第三",
+      "phonetic": "[tʁwa.zjɛm.mɑ̃]",
+      "examples": [
+        {
+          "sentence": "Troisièmement, je vais étudier.",
+          "translation_cn": "第三，我要学习。"
+        },
+        {
+          "sentence": "Troisièmement, il faut parler.",
+          "translation_cn": "第三，要说话。"
+        }
+      ]
+    },
+    {
+      "word": "trop",
+      "translation_cn": "太；过多",
+      "phonetic": "[tʁo]",
+      "examples": [
+        {
+          "sentence": "C'est trop cher.",
+          "translation_cn": "这太贵了。"
+        },
+        {
+          "sentence": "J'ai trop mangé.",
+          "translation_cn": "我吃得太多了。"
+        }
+      ]
+    },
+    {
+      "word": "trouver",
+      "translation_cn": "找到",
+      "phonetic": "[tʁuve]",
+      "examples": [
+        {
+          "sentence": "Je trouve mon livre.",
+          "translation_cn": "我找到了我的书。"
+        },
+        {
+          "sentence": "Elle trouve une solution.",
+          "translation_cn": "她找到了一个解决方案。"
+        }
+      ]
+    },
+    {
+      "word": "très",
+      "translation_cn": "非常",
+      "phonetic": "[tʁɛ]",
+      "examples": [
+        {
+          "sentence": "Je suis très content.",
+          "translation_cn": "我非常高兴。"
+        },
+        {
+          "sentence": "C'est très bon.",
+          "translation_cn": "这非常好。"
+        }
+      ]
+    },
+    {
+      "word": "tu",
+      "translation_cn": "你",
+      "phonetic": "[ty]",
+      "examples": [
+        {
+          "sentence": "Tu es grand.",
+          "translation_cn": "你很高。"
+        },
+        {
+          "sentence": "Tu parles.",
+          "translation_cn": "你说。"
+        }
+      ]
+    },
+    {
+      "word": "téléphone",
+      "translation_cn": "电话",
+      "phonetic": "[telefɔn]",
+      "examples": [
+        {
+          "sentence": "C'est un téléphone.",
+          "translation_cn": "这是一部电话。"
+        },
+        {
+          "sentence": "J'ai un téléphone.",
+          "translation_cn": "我有一部电话。"
+        }
+      ]
+    },
+    {
+      "word": "téléphone",
+      "translation_cn": "电话",
+      "phonetic": "[telefɔn]",
+      "examples": [
+        {
+          "sentence": "C'est un téléphone.",
+          "translation_cn": "这是一部电话。"
+        },
+        {
+          "sentence": "J'ai un téléphone.",
+          "translation_cn": "我有一部电话。"
+        }
+      ]
+    },
+    {
+      "word": "télévision",
+      "translation_cn": "电视",
+      "phonetic": "[televizjɔ̃]",
+      "examples": [
+        {
+          "sentence": "C'est une télévision.",
+          "translation_cn": "这是一台电视。"
+        },
+        {
+          "sentence": "Je regarde la télévision.",
+          "translation_cn": "我看电视。"
+        }
+      ]
+    },
+    {
+      "word": "tête",
+      "translation_cn": "头",
+      "phonetic": "[tɛt]",
+      "examples": [
+        {
+          "sentence": "J'ai mal à la tête.",
+          "translation_cn": "我头疼。"
+        },
+        {
+          "sentence": "Il a une grande tête.",
+          "translation_cn": "他有一个大头。"
+        }
+      ]
+    },
+    {
+      "word": "un",
+      "translation_cn": "一个",
+      "phonetic": "[œ̃]",
+      "examples": [
+        {
+          "sentence": "J'ai un chat.",
+          "translation_cn": "我有一只猫。"
+        },
+        {
+          "sentence": "C'est un livre.",
+          "translation_cn": "这是一本书。"
+        }
+      ]
+    },
+    {
+      "word": "une",
+      "translation_cn": "一个",
+      "phonetic": "[yn]",
+      "examples": [
+        {
+          "sentence": "J'ai une pomme.",
+          "translation_cn": "我有一个苹果。"
+        },
+        {
+          "sentence": "C'est une table.",
+          "translation_cn": "这是一张桌子。"
+        }
+      ]
+    },
+    {
+      "word": "va",
+      "translation_cn": "去",
+      "phonetic": "[va]",
+      "examples": [
+        {
+          "sentence": "Il va à Paris.",
+          "translation_cn": "他去巴黎。"
+        },
+        {
+          "sentence": "Elle va bien.",
+          "translation_cn": "她很好。"
+        }
+      ]
+    },
+    {
+      "word": "vacances",
+      "translation_cn": "假期",
+      "phonetic": "[vakɑ̃s]",
+      "examples": [
+        {
+          "sentence": "Je suis en vacances.",
+          "translation_cn": "我在度假。"
+        },
+        {
+          "sentence": "Les vacances sont courtes.",
+          "translation_cn": "假期很短。"
+        }
+      ]
+    },
+    {
+      "word": "vache",
+      "translation_cn": "奶牛",
+      "phonetic": "[vaʃ]",
+      "examples": [
+        {
+          "sentence": "C'est une vache.",
+          "translation_cn": "这是一头奶牛。"
+        },
+        {
+          "sentence": "La vache mange de l'herbe.",
+          "translation_cn": "奶牛吃草。"
+        }
+      ]
+    },
+    {
+      "word": "vais",
+      "translation_cn": "去",
+      "phonetic": "[vɛ]",
+      "examples": [
+        {
+          "sentence": "Je vais au cinéma.",
+          "translation_cn": "我去电影院。"
+        },
+        {
+          "sentence": "Je vais bien.",
+          "translation_cn": "我很好。"
+        }
+      ]
+    },
+    {
+      "word": "vas",
+      "translation_cn": "去",
+      "phonetic": "[va]",
+      "examples": [
+        {
+          "sentence": "Tu vas bien ?",
+          "translation_cn": "你好吗？"
+        },
+        {
+          "sentence": "Tu vas où ?",
+          "translation_cn": "你去哪里？"
+        }
+      ]
+    },
+    {
+      "word": "vendre",
+      "translation_cn": "卖",
+      "phonetic": "[vɑ̃dʁ]",
+      "examples": [
+        {
+          "sentence": "Je vends des pommes.",
+          "translation_cn": "我卖苹果。"
+        },
+        {
+          "sentence": "Il veut vendre sa voiture.",
+          "translation_cn": "他想卖他的车。"
+        }
+      ]
+    },
+    {
+      "word": "vendredi",
+      "translation_cn": "星期五",
+      "phonetic": "[vɑ̃dʁədi]",
+      "examples": [
+        {
+          "sentence": "C'est vendredi.",
+          "translation_cn": "今天是星期五。"
+        },
+        {
+          "sentence": "Je danse vendredi.",
+          "translation_cn": "我星期五跳舞。"
+        }
+      ]
+    },
+    {
+      "word": "venir",
+      "translation_cn": "来",
+      "phonetic": "[vəniʁ]",
+      "examples": [
+        {
+          "sentence": "Je viens.",
+          "translation_cn": "我来。"
+        },
+        {
+          "sentence": "Il vient ici.",
+          "translation_cn": "他来这里。"
+        }
+      ]
+    },
+    {
+      "word": "vent",
+      "translation_cn": "风",
+      "phonetic": "[vɑ̃]",
+      "examples": [
+        {
+          "sentence": "Il y a du vent.",
+          "translation_cn": "有风。"
+        },
+        {
+          "sentence": "Le vent est fort.",
+          "translation_cn": "风很大。"
+        }
+      ]
+    },
+    {
+      "word": "vert",
+      "translation_cn": "绿色",
+      "phonetic": "[vɛʁ]",
+      "examples": [
+        {
+          "sentence": "C'est vert.",
+          "translation_cn": "这是绿色的。"
+        },
+        {
+          "sentence": "L'herbe est verte.",
+          "translation_cn": "草是绿色的。"
+        }
+      ]
+    },
+    {
+      "word": "verte",
+      "translation_cn": "绿色的",
+      "phonetic": "[vɛʁt]",
+      "examples": [
+        {
+          "sentence": "La pomme est verte.",
+          "translation_cn": "苹果是绿色的。"
+        },
+        {
+          "sentence": "J'aime la couleur verte.",
+          "translation_cn": "我喜欢绿色。"
+        }
+      ]
+    },
+    {
+      "word": "viande",
+      "translation_cn": "肉",
+      "phonetic": "[vjɑ̃d]",
+      "examples": [
+        {
+          "sentence": "Je mange de la viande.",
+          "translation_cn": "我吃肉。"
+        },
+        {
+          "sentence": "C'est de la viande de bœuf.",
+          "translation_cn": "这是牛肉。"
+        }
+      ]
+    },
+    {
+      "word": "vie",
+      "translation_cn": "生命；生活",
+      "phonetic": "[vi]",
+      "examples": [
+        {
+          "sentence": "C'est ma vie.",
+          "translation_cn": "这是我的生活。"
+        },
+        {
+          "sentence": "La vie est belle.",
+          "translation_cn": "生活是美好的。"
+        }
+      ]
+    },
+    {
+      "word": "vieille",
+      "translation_cn": "老的；旧的",
+      "phonetic": "[vjɛj]",
+      "examples": [
+        {
+          "sentence": "C'est vieux.",
+          "translation_cn": "这是旧的。"
+        },
+        {
+          "sentence": "C'est une vieille maison.",
+          "translation_cn": "这是一栋旧房子。"
+        }
+      ]
+    },
+    {
+      "word": "vieux",
+      "translation_cn": "老的；旧的",
+      "phonetic": "[vjø]",
+      "examples": [
+        {
+          "sentence": "C'est vieux.",
+          "translation_cn": "这是旧的。"
+        },
+        {
+          "sentence": "C'est un vieux livre.",
+          "translation_cn": "这是一本旧书。"
+        }
+      ]
+    },
+    {
+      "word": "ville",
+      "translation_cn": "城市",
+      "phonetic": "[vil]",
+      "examples": [
+        {
+          "sentence": "Paris est une ville.",
+          "translation_cn": "巴黎是一个城市。"
+        },
+        {
+          "sentence": "J'aime cette ville.",
+          "translation_cn": "我喜欢这个城市。"
+        }
+      ]
+    },
+    {
+      "word": "vin",
+      "translation_cn": "葡萄酒",
+      "phonetic": "[vɛ̃]",
+      "examples": [
+        {
+          "sentence": "Je bois du vin.",
+          "translation_cn": "我喝葡萄酒。"
+        },
+        {
+          "sentence": "C'est du vin rouge.",
+          "translation_cn": "这是红葡萄酒。"
+        }
+      ]
+    },
+    {
+      "word": "violet",
+      "translation_cn": "紫色",
+      "phonetic": "[vjɔlɛ]",
+      "examples": [
+        {
+          "sentence": "C'est violet.",
+          "translation_cn": "这是紫色的。"
+        },
+        {
+          "sentence": "La fleur est violette.",
+          "translation_cn": "花是紫色的。"
+        }
+      ]
+    },
+    {
+      "word": "vite",
+      "translation_cn": "快",
+      "phonetic": "[vit]",
+      "examples": [
+        {
+          "sentence": "Il court vite.",
+          "translation_cn": "他跑得快。"
+        },
+        {
+          "sentence": "Elle parle vite.",
+          "translation_cn": "她说得快。"
+        }
+      ]
+    },
+    {
+      "word": "voici",
+      "translation_cn": "这是；在这里",
+      "phonetic": "[vwasi]",
+      "examples": [
+        {
+          "sentence": "Voici mon ami.",
+          "translation_cn": "这是我的朋友。"
+        },
+        {
+          "sentence": "Voici le menu.",
+          "translation_cn": "这是菜单。"
+        }
+      ]
+    },
+    {
+      "word": "voilà",
+      "translation_cn": "这就是；看",
+      "phonetic": "[vwala]",
+      "examples": [
+        {
+          "sentence": "Voilà le livre.",
+          "translation_cn": "这就是那本书。"
+        },
+        {
+          "sentence": "Voilà, c'est fini.",
+          "translation_cn": "看，结束了。"
+        }
+      ]
+    },
+    {
+      "word": "voilà",
+      "translation_cn": "这就是；看",
+      "phonetic": "[vwala]",
+      "examples": [
+        {
+          "sentence": "Voilà le livre.",
+          "translation_cn": "这就是那本书。"
+        },
+        {
+          "sentence": "Voilà, c'est fini.",
+          "translation_cn": "看，结束了。"
+        }
+      ]
+    },
+    {
+      "word": "voir",
+      "translation_cn": "看；看见",
+      "phonetic": "[vwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je peux voir la mer.",
+          "translation_cn": "我能看到海。"
+        },
+        {
+          "sentence": "Tu vas voir un film.",
+          "translation_cn": "你要去看电影。"
+        }
+      ]
+    },
+    {
+      "word": "voisin",
+      "translation_cn": "邻居（男）",
+      "phonetic": "[vwazɛ̃]",
+      "examples": [
+        {
+          "sentence": "C'est mon voisin.",
+          "translation_cn": "这是我的邻居。"
+        },
+        {
+          "sentence": "Mon voisin est sympa.",
+          "translation_cn": "我的邻居很友善。"
+        }
+      ]
+    },
+    {
+      "word": "voisine",
+      "translation_cn": "邻居（女）",
+      "phonetic": "[vwazin]",
+      "examples": [
+        {
+          "sentence": "C'est ma voisine.",
+          "translation_cn": "这是我的女邻居。"
+        },
+        {
+          "sentence": "Ma voisine est gentille.",
+          "translation_cn": "我的女邻居很友善。"
+        }
+      ]
+    },
+    {
+      "word": "voiture",
+      "translation_cn": "汽车",
+      "phonetic": "[vwatʏʁ]",
+      "examples": [
+        {
+          "sentence": "C'est une voiture.",
+          "translation_cn": "这是一辆汽车。"
+        },
+        {
+          "sentence": "J'ai une voiture.",
+          "translation_cn": "我有一辆汽车。"
+        }
+      ]
+    },
+    {
+      "word": "vont",
+      "translation_cn": "去",
+      "phonetic": "[vɔ̃]",
+      "examples": [
+        {
+          "sentence": "Ils vont à l'école.",
+          "translation_cn": "他们去学校。"
+        },
+        {
+          "sentence": "Elles vont au marché.",
+          "translation_cn": "她们去市场。"
+        }
+      ]
+    },
+    {
+      "word": "votre",
+      "translation_cn": "你们的；您的 (单数)",
+      "phonetic": "[vɔtʁ]",
+      "examples": [
+        {
+          "sentence": "C'est votre stylo.",
+          "translation_cn": "这是你们的钢笔。"
+        },
+        {
+          "sentence": "Votre maison est grande.",
+          "translation_cn": "你们的房子很大。"
+        }
+      ]
+    },
+    {
+      "word": "vouloir",
+      "translation_cn": "想要",
+      "phonetic": "[vulwaʁ]",
+      "examples": [
+        {
+          "sentence": "Je veux un café.",
+          "translation_cn": "我想要一杯咖啡。"
+        },
+        {
+          "sentence": "Il veut partir.",
+          "translation_cn": "他想离开。"
+        }
+      ]
+    },
+    {
+      "word": "vous",
+      "translation_cn": "您；你们",
+      "phonetic": "[vu]",
+      "examples": [
+        {
+          "sentence": "Vous êtes grand.",
+          "translation_cn": "您很高。"
+        },
+        {
+          "sentence": "Vous parlez français.",
+          "translation_cn": "你们说法语。"
+        }
+      ]
+    },
+    {
+      "word": "voyage",
+      "translation_cn": "旅行",
+      "phonetic": "[vwajaʒ]",
+      "examples": [
+        {
+          "sentence": "Je fais un voyage.",
+          "translation_cn": "我去旅行。"
+        },
+        {
+          "sentence": "Le voyage est long.",
+          "translation_cn": "旅行很长。"
+        }
+      ]
+    },
+    {
+      "word": "vraiment",
+      "translation_cn": "真的",
+      "phonetic": "[vʁɛmɑ̃]",
+      "examples": [
+        {
+          "sentence": "C'est vraiment bien.",
+          "translation_cn": "这真的很好。"
+        },
+        {
+          "sentence": "Je suis vraiment fatigué.",
+          "translation_cn": "我真的累了。"
+        }
+      ]
+    },
+    {
+      "word": "vélo",
+      "translation_cn": "自行车",
+      "phonetic": "[velo]",
+      "examples": [
+        {
+          "sentence": "C'est un vélo.",
+          "translation_cn": "这是一辆自行车。"
+        },
+        {
+          "sentence": "Je vais à l'école à vélo.",
+          "translation_cn": "我骑自行车去学校。"
+        }
+      ]
+    },
+    {
+      "word": "vêtement",
+      "translation_cn": "衣服",
+      "phonetic": "[vɛtmɑ̃]",
+      "examples": [
+        {
+          "sentence": "C'est un vêtement.",
+          "translation_cn": "这是一件衣服。"
+        },
+        {
+          "sentence": "J'achète un vêtement.",
+          "translation_cn": "我买一件衣服。"
+        }
+      ]
+    },
+    {
+      "word": "à",
+      "translation_cn": "到；在",
+      "phonetic": "[a]",
+      "examples": [
+        {
+          "sentence": "Je vais à l'école.",
+          "translation_cn": "我去学校。"
+        },
+        {
+          "sentence": "Il habite à Paris.",
+          "translation_cn": "他住在巴黎。"
+        }
+      ]
+    },
+    {
+      "word": "âme",
+      "translation_cn": "灵魂",
+      "phonetic": "[ɑm]",
+      "examples": [
+        {
+          "sentence": "Il a une belle âme.",
+          "translation_cn": "他有一个美丽的灵魂。"
+        },
+        {
+          "sentence": "L'âme est immortelle.",
+          "translation_cn": "灵魂是不朽的。"
+        }
+      ]
+    },
+    {
+      "word": "ça",
+      "translation_cn": "这；那",
+      "phonetic": "[sa]",
+      "examples": [
+        {
+          "sentence": "Ça va ?",
+          "translation_cn": "你好吗？"
+        },
+        {
+          "sentence": "C'est ça.",
+          "translation_cn": "就是这样。"
+        }
+      ]
+    },
+    {
+      "word": "ça va",
+      "translation_cn": "你好；还好",
+      "phonetic": "[sa va]",
+      "examples": [
+        {
+          "sentence": "Ça va ?",
+          "translation_cn": "你好吗？"
+        },
+        {
+          "sentence": "Ça va bien, merci.",
+          "translation_cn": "我很好，谢谢。"
+        }
+      ]
+    },
+    {
+      "word": "écharpe",
+      "translation_cn": "围巾",
+      "phonetic": "[eʃaʁp]",
+      "examples": [
+        {
+          "sentence": "Elle a une écharpe longue.",
+          "translation_cn": "她有一条长长的围巾。"
+        },
+        {
+          "sentence": "L'écharpe est jaune.",
+          "translation_cn": "这条围巾是黄色的。"
+        }
+      ]
+    },
+    {
+      "word": "école",
+      "translation_cn": "学校",
+      "phonetic": "[ekɔl]",
+      "examples": [
+        {
+          "sentence": "Je vais à l'école.",
+          "translation_cn": "我去学校。"
+        },
+        {
+          "sentence": "L'école est grande.",
+          "translation_cn": "学校很大。"
+        }
+      ]
+    },
+    {
+      "word": "écouter",
+      "translation_cn": "听",
+      "phonetic": "[ekute]",
+      "examples": [
+        {
+          "sentence": "J'écoute de la musique.",
+          "translation_cn": "我听音乐。"
+        },
+        {
+          "sentence": "Écoute le professeur.",
+          "translation_cn": "听老师讲课。"
+        }
+      ]
+    },
+    {
+      "word": "égalité",
+      "translation_cn": "平等",
+      "phonetic": "[eɡalite]",
+      "examples": [
+        {
+          "sentence": "Nous voulons l'égalité.",
+          "translation_cn": "我们想要平等。"
+        },
+        {
+          "sentence": "L'égalité est importante.",
+          "translation_cn": "平等很重要。"
+        }
+      ]
+    },
+    {
+      "word": "église",
+      "translation_cn": "教堂",
+      "phonetic": "[egliz]",
+      "examples": [
+        {
+          "sentence": "L'église est vieille.",
+          "translation_cn": "教堂很老。"
+        },
+        {
+          "sentence": "Je suis devant l'église.",
+          "translation_cn": "我在教堂前面。"
+        }
+      ]
+    },
+    {
+      "word": "étoile",
+      "translation_cn": "星星",
+      "phonetic": "[etwal]",
+      "examples": [
+        {
+          "sentence": "Il y a beaucoup d'étoiles.",
+          "translation_cn": "有很多星星。"
+        },
+        {
+          "sentence": "Je regarde les étoiles.",
+          "translation_cn": "我看着星星。"
+        }
+      ]
+    },
+    {
+      "word": "étudiant",
+      "translation_cn": "学生（男）",
+      "phonetic": "[etydjɑ̃]",
+      "examples": [
+        {
+          "sentence": "Je suis étudiant.",
+          "translation_cn": "我是学生。"
+        },
+        {
+          "sentence": "Il est étudiant en France.",
+          "translation_cn": "他是法国的学生。"
+        }
+      ]
+    },
+    {
+      "word": "étudiante",
+      "translation_cn": "学生（女）",
+      "phonetic": "[etydjɑ̃t]",
+      "examples": [
+        {
+          "sentence": "Je suis étudiante.",
+          "translation_cn": "我是学生。"
+        },
+        {
+          "sentence": "Elle est étudiante.",
+          "translation_cn": "她是学生。"
+        }
+      ]
+    },
+    {
+      "word": "été",
+      "translation_cn": "夏天",
+      "phonetic": "[ete]",
+      "examples": [
+        {
+          "sentence": "L'été est chaud.",
+          "translation_cn": "夏天很热。"
+        },
+        {
+          "sentence": "Je vais à la plage en été.",
+          "translation_cn": "夏天我去海滩。"
+        }
+      ]
+    },
+    {
+      "word": "êtes",
+      "translation_cn": "是",
+      "phonetic": "[ɛt]",
+      "examples": [
+        {
+          "sentence": "Vous êtes anglais.",
+          "translation_cn": "你们是英国人。"
+        },
+        {
+          "sentence": "Vous êtes prêts ?",
+          "translation_cn": "你们准备好了吗？"
+        }
+      ]
+    },
+    {
+      "word": "être",
+      "translation_cn": "是；存在",
+      "phonetic": "[ɛtʁ]",
+      "examples": [
+        {
+          "sentence": "Je suis étudiant.",
+          "translation_cn": "我是学生。"
+        },
+        {
+          "sentence": "Il est français.",
+          "translation_cn": "他是法国人。"
+        }
+      ]
+    },
+    {
+      "word": "œil",
+      "translation_cn": "眼睛",
+      "phonetic": "[œj]",
+      "examples": [
+        {
+          "sentence": "Elle a un bel œil.",
+          "translation_cn": "她有一只漂亮的眼睛。"
+        },
+        {
+          "sentence": "J'ouvre l'œil.",
+          "translation_cn": "我睁开眼睛。"
+        }
+      ]
+    },
+    {
+      "word": "œuf",
+      "translation_cn": "鸡蛋",
+      "phonetic": "[œf]",
+      "examples": [
+        {
+          "sentence": "Je mange un œuf.",
+          "translation_cn": "我吃一个鸡蛋。"
+        },
+        {
+          "sentence": "C'est un œuf.",
+          "translation_cn": "这是一个鸡蛋。"
+        }
+      ]
+    }
+  ]
+}

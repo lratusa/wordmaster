@@ -23,6 +23,13 @@ import sys
 from pathlib import Path
 from typing import Optional
 
+# Fix Windows UTF-8 encoding for French special characters
+if sys.platform == 'win32':
+    import locale
+    # Set console to UTF-8
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
+
 try:
     import jsonlines
 except ImportError:
