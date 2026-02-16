@@ -21,10 +21,10 @@
 
 - **Smart Spaced Repetition**: Uses the FSRS (Free Spaced Repetition Scheduler) algorithm for optimal memory retention
 - **AI-Generated Reading Passages**: LLM creates contextual short articles using your vocabulary words, reinforcing memory through meaningful context
-- **40,000+ Vocabulary Words**: Comprehensive word lists including CEFR (A1-C2), JLPT (N5-N1), CET-4/6, TOEFL, and more
+- **49,500+ Vocabulary Words**: Comprehensive word lists including CEFR (A1-C2) for English/French, JLPT (N5-N1), CET-4/6, TOEFL, and more
 - **4,200+ Kanji Characters**: JLPT kanji (N5-N1) and Japanese school curriculum (Grades 1-6, Middle, High School)
 - **Kanji Quiz Modes**: Reading quiz (select the correct reading) and selection quiz (fill in the kanji from context)
-- **Multi-language Support**: Learn English and Japanese vocabulary
+- **Multi-language Support**: Learn English, Japanese, and French vocabulary
 - **Offline TTS**: Text-to-speech using sherpa-onnx (no internet required)
 - **Audio Review Mode**: Listen-based vocabulary practice
 - **Daily Check-in System**: Track your learning streaks and achievements
@@ -38,6 +38,7 @@
 | Category | Lists | Total |
 |----------|-------|-------|
 | **CEFR English** | A1, A2, B1, B2, C1, C2 | 9,441 words |
+| **CEFR French** | A1, A2, B1, B2, C1, C2 | 9,500 words |
 | **Chinese Exams** | 中考, 高考, CET-4, CET-6, 考研 | 20,000+ words |
 | **Standardized Tests** | TOEFL, SAT | 14,000+ words |
 | **JLPT Japanese** | N5, N4, N3, N2, N1 | 20,000+ words |
@@ -82,6 +83,8 @@ For offline text-to-speech functionality, download voice packs directly in the a
 3. Click the download button for your preferred language:
    - English (US) - ~75 MB
    - English (UK) - ~65 MB
+   - French (Female) - ~65 MB
+   - French (Alternative) - ~55 MB
    - Japanese - ~55 MB
    - Chinese + English - ~150 MB
 
@@ -145,10 +148,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - **智能间隔重复**: 采用 FSRS（自由间隔重复调度器）算法，优化记忆效果
 - **AI 生成阅读短文**: 大语言模型根据你的生词自动生成情境短文，在上下文中加深记忆
-- **40,000+ 词汇量**: 包含 CEFR (A1-C2)、JLPT (N5-N1)、四六级、托福等完整词库
+- **49,500+ 词汇量**: 包含英语/法语 CEFR (A1-C2)、JLPT (N5-N1)、四六级、托福等完整词库
 - **4,200+ 汉字**: JLPT 汉字 (N5-N1) 及日本学校课程汉字 (小学1-6年、中学、高中)
 - **汉字测验模式**: 读音测验（选择正确读音）和选字测验（根据上下文填入汉字）
-- **多语言支持**: 学习英语和日语词汇
+- **多语言支持**: 学习英语、日语和法语词汇
 - **离线语音**: 使用 sherpa-onnx 实现文字转语音（无需联网）
 - **听力训练模式**: 基于听力的词汇练习
 - **每日打卡系统**: 追踪学习连续天数和成就
@@ -161,7 +164,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 | 类型 | 词库 | 词汇量 |
 |------|------|--------|
-| **CEFR 欧标** | A1, A2, B1, B2, C1, C2 | 9,441 |
+| **英语 CEFR** | A1, A2, B1, B2, C1, C2 | 9,441 |
+| **法语 CEFR** | A1, A2, B1, B2, C1, C2 | 9,500 |
 | **国内考试** | 中考, 高考, 四级, 六级, 考研 | 20,000+ |
 | **留学考试** | 托福, SAT | 14,000+ |
 | **日语 JLPT** | N5, N4, N3, N2, N1 | 20,000+ |
@@ -248,10 +252,10 @@ flutter build linux      # Linux
 
 - **スマート間隔反復**: FSRS（自由間隔反復スケジューラ）アルゴリズムによる最適な記憶定着
 - **AI生成リーディング**: LLMが学習中の単語を使って短い文章を自動生成、文脈の中で記憶を強化
-- **40,000+語彙**: CEFR (A1-C2)、JLPT (N5-N1)、TOEFL等の完全な語彙リスト
+- **49,500+語彙**: 英語/フランス語 CEFR (A1-C2)、JLPT (N5-N1)、TOEFL等の完全な語彙リスト
 - **4,200+漢字**: JLPT漢字 (N5-N1) および日本の学校カリキュラム漢字 (小学1-6年、中学、高校)
 - **漢字クイズモード**: 読みクイズ（正しい読みを選択）と選択クイズ（文脈から漢字を埋める）
-- **多言語対応**: 英語と日本語の語彙学習
+- **多言語対応**: 英語、日本語、フランス語の語彙学習
 - **オフラインTTS**: sherpa-onnxを使用した音声読み上げ（インターネット不要）
 - **リスニング練習モード**: 聴覚ベースの語彙練習
 - **毎日チェックインシステム**: 学習連続日数と実績の追跡
@@ -264,7 +268,8 @@ flutter build linux      # Linux
 
 | カテゴリ | リスト | 語彙数 |
 |----------|--------|--------|
-| **CEFR 英語** | A1, A2, B1, B2, C1, C2 | 9,441 |
+| **英語 CEFR** | A1, A2, B1, B2, C1, C2 | 9,441 |
+| **フランス語 CEFR** | A1, A2, B1, B2, C1, C2 | 9,500 |
 | **中国試験** | 中考, 高考, CET-4, CET-6, 考研 | 20,000+ |
 | **標準テスト** | TOEFL, SAT | 14,000+ |
 | **JLPT 日本語** | N5, N4, N3, N2, N1 | 20,000+ |
