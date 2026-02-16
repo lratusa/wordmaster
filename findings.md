@@ -1,5 +1,73 @@
 # Findings & Decisions
 
+## French Language Support Findings (Phase 15)
+
+### TTS Model Availability
+sherpa-onnx provides VITS/Piper models for French:
+- **vits-piper-fr_FR-siwis-medium** (~65 MB) - Female voice, standard French
+- **vits-piper-fr_FR-upmc-medium** (~55 MB) - Alternative voice
+- Model repository: https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models
+
+### Current Language Architecture
+- **Language enum**: `lib/src/features/word_lists/domain/enums/language.dart`
+  - Currently: `Language.en`, `Language.ja`
+  - Need to add: `Language.fr('fr', 'Français', '法语')`
+- **TTS Service**: Hybrid system
+  - sherpa-onnx for English/Chinese (offline neural TTS)
+  - flutter_tts for Japanese (system TTS fallback)
+  - French will use sherpa-onnx (VITS models)
+
+### French Special Characters (UTF-8 Critical)
+French uses diacritical marks that MUST be tested:
+- **Accents**: é, è, ê, ë (like "être", "élève", "français")
+- **Cedilla**: ç (like "garçon", "français")
+- **Ligature**: œ (like "cœur", "œuf")
+- **Grave accent**: ù (like "où")
+
+**Testing Requirements:**
+1. JSON word list must be UTF-8 encoded
+2. SQLite database stores UTF-8 correctly (default for SQLite3)
+3. **CRITICAL**: sherpa-onnx TTS input must handle UTF-8
+   - Test words: "être", "français", "cœur", "élève", "garçon"
+   - Verify pronunciation quality with special characters
+
+### Word List Sources & Sizes
+**CEFR Levels** (using FLE - Français Langue Étrangère official lists):
+- A1 (Beginner) - ~500 words
+- A2 (Elementary) - ~1000 words
+- B1 (Intermediate) - ~1500 words
+- B2 (Upper Intermediate) - ~2000 words
+- C1 (Advanced) - ~2500 words
+- C2 (Proficient) - ~3000 words
+
+**Sources:**
+- CEFR lists: Available from FLE official resources
+- DELF/DALF: May need manual curation (no official public word lists)
+- Thematic lists: Can be derived from CEFR A1-B1 words
+
+### Test Coverage Requirements (Phase 15)
+Building on Phase 13's 231 tests, add:
+1. **Unit Tests:**
+   - `Language.fr` enum parsing/serialization
+   - French TTS model configuration
+2. **Repository Tests:**
+   - French wordlist download (mock HTTP)
+   - French wordlist parsing with special characters
+   - UTF-8 handling in Word model
+3. **Widget Tests:**
+   - French tab in word list browser
+   - French word display with special characters
+
+### Implementation Checklist
+| Component | File | Change Required |
+|-----------|------|-----------------|
+| Language enum | `word_lists/domain/enums/language.dart` | Add `fr` |
+| TTS models | `core/services/tts_model_downloader.dart` | Add French VITS models |
+| TTS service | `core/services/tts_service.dart` | Add 'fr' to `_sherpaLanguages` |
+| Wordlist directory | `assets/wordlists/` | Create `french/` folder |
+| Wordlist categories | `core/services/wordlist_downloader.dart` | Add French categories |
+| Browser UI | `word_lists/presentation/screens/word_list_browser_screen.dart` | Add French tab |
+
 ## China Mirror Findings (Phase 12)
 
 ### Problem

@@ -1,5 +1,37 @@
 # Progress Log
 
+## Session 11: 2026-02-16 - French Language Support Planning
+
+### Status: Planning Phase 15
+
+#### Research Completed
+- [x] Analyzed current language architecture (Language enum, TTS service)
+- [x] Identified French TTS models in sherpa-onnx (vits-piper-fr_FR-siwis, fr_FR-upmc)
+- [x] Designed French word list category structure (CEFR A1-C2, DELF/DALF)
+- [x] Created implementation checklist (7 files to modify)
+
+#### Plan Created
+- [x] Added Phase 15 to task_plan.md (15 tasks)
+- [x] Documented French TTS model findings in findings.md
+- [x] Logged planning session in progress.md
+
+#### Plan Refinement (Based on User Feedback)
+- [x] Added UTF-8 special character testing requirements (ê,ë,ç,œ,ù)
+- [x] Specified test coverage: Language.fr unit tests, TTS config tests, repository tests
+- [x] Clarified word list sources (FLE official CEFR lists)
+- [x] Adjusted implementation order: enum → sample list → TTS → UI
+- [x] Reduced initial sample from 50 to 20 words (focus on special char testing)
+
+#### Next Steps (Implementation Order)
+1. Add `Language.fr` to language enum + unit tests
+2. Create sample French word list (20 words with "être", "français", "cœur")
+3. Test UTF-8 encoding: JSON → SQLite → TTS input
+4. Add French TTS models + configuration tests
+5. Update TTS service for French support
+6. Verify sherpa-onnx pronunciation with special characters
+
+---
+
 ## Session 10: 2026-02-14 - iOS Build Planning (blocked)
 
 ### Status: 等待 Mac mini 环境确认

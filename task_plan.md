@@ -4,7 +4,34 @@
 构建一个多平台背单词应用（英语+日语），支持 FSRS 艾宾浩斯复习、TTS发音、听力训练、AI短文生成（可切换 OpenAI/DeepSeek/Ollama + 手动复制粘贴模式）、每日打卡截图分享。
 
 ## Current Phase
-**Phase 14: iOS Release Build** — 等待 Mac mini 环境确认
+**Phase 15: French Language Support** — Add French as third supported language
+
+### Phase 15: French Language Support (2026-02-16)
+- [ ] Add `Language.fr` to language enum with unit tests
+- [ ] Create sample French word list (20 words with special chars: ê,ë,ç,œ,ù)
+  - Include test words: "être", "français", "cœur", "élève", "garçon"
+  - Verify UTF-8 encoding in JSON and SQLite
+- [ ] Add French TTS models to `tts_model_downloader.dart`
+  - vits-piper-fr_FR-siwis-medium (~65MB)
+  - vits-piper-fr_FR-upmc-medium (~55MB)
+- [ ] Update TTS service to support French (`_sherpaLanguages`)
+- [ ] **Critical: Test sherpa-onnx with French special characters**
+  - Test TTS pronunciation of "être", "français", "cœur"
+  - Verify UTF-8 handling in TTS input
+- [ ] Add French TTS model configuration tests
+- [ ] Add French wordlist download/parsing repository tests
+- [ ] Create `assets/wordlists/french/` directory
+- [ ] Research word list sources:
+  - CEFR A1-C2: FLE (Français Langue Étrangère) official lists
+  - A1: ~500 words, A2: ~1000, B1: ~1500, B2: ~2000, C1: ~2500, C2: ~3000
+  - DELF/DALF: May need manual curation
+- [ ] Add French categories to `wordlist_downloader.dart`
+- [ ] Update word list browser UI to show French tab
+- [ ] `flutter analyze` verification
+- [ ] Upload French TTS models to China mirror (47.93.144.50)
+- **Implementation Order:** Language enum → Sample wordlist (special chars) → TTS config/test → UI
+- **Goal:** Enable French learning with UTF-8 special character support verified
+- **Status:** in_progress
 
 ### Phase 14: iOS Release Build (pending)
 - [ ] 确认 Mac mini 环境（macOS 版本、Xcode、Flutter、CocoaPods、磁盘空间）
