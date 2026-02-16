@@ -1,5 +1,28 @@
 # Progress Log
 
+## Session 12: 2026-02-15 - Japanese TTS Error Message Fix (v1.1.1)
+
+### Bug Fix
+- **Bug:** Japanese TTS error message hardcoded "请在Windows设置中安装日语语音包" — shows incorrect instructions on Android
+- **Root cause:** `getUnsupportedLanguageMessage()` in `tts_service.dart:114` had no platform check
+- **Fix:** Made message platform-aware using `Platform.isAndroid` / `Platform.isIOS`
+  - Android: "请在手机设置 → 语言与输入法 → 文字转语音中安装日语语音"
+  - iOS: "请在设置 → 辅助功能 → 朗读内容中下载日语语音"
+  - Other: "请在系统设置中安装日语语音包"
+
+### Files Modified
+| File | Action |
+|------|--------|
+| `lib/src/core/services/tts_service.dart` | MODIFY — platform-aware error message |
+
+### Release
+- [x] Committed: `e8a9902`
+- [x] Tagged: `v1.1.1`
+- [x] Built arm64 APK (92.1MB)
+- [x] Published GitHub Release: https://github.com/lratusa/wordmaster/releases/tag/v1.1.1
+
+---
+
 ## Session 11: 2026-02-16 - French Language Support Planning
 
 ### Status: Planning Phase 15
@@ -64,6 +87,22 @@
   - Supports checkpoint/resume for interrupted generation
   - Batch processing: 15 words/batch, ~50-60 min for all levels
   - Total capacity: 9500 French words across A1-C2
+- [x] **Step 7:** Fix UTF-8 encoding for Windows
+  - Added sys.stdout/stderr.reconfigure(encoding='utf-8')
+  - Fixes 'gbk' codec error with French ligatures (œ, æ)
+  - All special characters now handled correctly
+- [x] **Step 8:** Generate French A1 word list (500 words)
+  - Generated 500 A1 words with 99.8% quality
+  - Phonetics: [ɛtʁ], [ale], [fʁɑ̃sɛ]
+  - Examples: être, aller, avoir, français, école, cœur
+  - File: assets/wordlists/french/cefr_a1.json
+- [ ] **Step 9:** Generate French A2-C2 (IN PROGRESS)
+  - A2: 1000 words - Running...
+  - B1: 1500 words - Queued
+  - B2: 2000 words - Queued
+  - C1: 2500 words - Queued
+  - C2: 3000 words - Queued
+  - Estimated time: 50-60 minutes
 
 #### Implementation Summary
 **Files Modified (5 files):**

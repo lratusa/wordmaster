@@ -154,9 +154,14 @@ Generate {target_count} words now:"""
 
     # Parse JSON array from response
     try:
-        # Try to extract JSON array from response
+        # Strip markdown code fences if present
         import re
-        json_match = re.search(r'\[.*\]', response, re.DOTALL)
+        response_cleaned = re.sub(r'```json\s*', '', response)
+        response_cleaned = re.sub(r'```\s*$', '', response_cleaned)
+        response_cleaned = response_cleaned.strip()
+
+        # Try to extract JSON array from response
+        json_match = re.search(r'\[.*\]', response_cleaned, re.DOTALL)
         if json_match:
             words = json.loads(json_match.group())
             print(f"Generated {len(words)} French words")
