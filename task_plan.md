@@ -18,20 +18,24 @@
 - [x] Update TTS service to support French (`_sherpaLanguages`)
 - [x] Update word list browser UI to show French tab
 - [x] `flutter analyze` verification (0 errors)
+- [x] **Generate complete French CEFR word lists (A1-C2)**
+  - A1: 500 words (100% quality, 186KB)
+  - A2: 1000 words (100% quality, 394KB)
+  - B1: 1500 words (99.9% quality, 646KB)
+  - B2: 2000 words (100% quality, 1.2MB)
+  - C1: 2500 words (100% quality, 1.4MB)
+  - C2: 3000 words (99.9% quality, 1.7MB)
+  - **Total: 9500 French words with IPA phonetics, Chinese translations, examples**
 - [ ] **Critical: Test sherpa-onnx with French special characters**
   - Test TTS pronunciation of "être", "français", "cœur"
   - Verify UTF-8 handling in TTS input (requires running app)
 - [ ] Add French TTS model configuration tests
 - [ ] Add French wordlist download/parsing repository tests
-- [ ] Research word list sources:
-  - CEFR A1-C2: FLE (Français Langue Étrangère) official lists
-  - A1: ~500 words, A2: ~1000, B1: ~1500, B2: ~2000, C1: ~2500, C2: ~3000
-  - DELF/DALF: May need manual curation
 - [x] Add French categories to `wordlist_downloader.dart` (12 packages: CEFR + DELF/DALF)
 - [ ] Upload French TTS models to China mirror (47.93.144.50)
-- **Implementation Order:** Language enum → Sample wordlist (special chars) → TTS config/test → UI
+- **Implementation Order:** Language enum → Sample wordlist (special chars) → TTS config/test → UI → Word lists
 - **Goal:** Enable French learning with UTF-8 special character support verified
-- **Status:** in_progress — Core implementation complete, testing phase next
+- **Status:** nearly_complete — Core implementation + word lists complete, testing phase next
 
 ### Phase 14: iOS Release Build (pending)
 - [ ] 确认 Mac mini 环境（macOS 版本、Xcode、Flutter、CocoaPods、磁盘空间）

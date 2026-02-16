@@ -119,6 +119,7 @@ def generate_french_vocabulary_list(level: str, target_count: int) -> list[str]:
 
     Uses Gemini API to generate frequency-based vocabulary suitable for each level.
     Returns a list of French words (headwords only).
+    Generates in batches to avoid response truncation.
     """
     client = GeminiClient()
 
@@ -131,7 +132,18 @@ def generate_french_vocabulary_list(level: str, target_count: int) -> list[str]:
         'C2': 'near-native words including idioms, literary terms, specialized vocabulary',
     }
 
-    prompt = f"""Generate a list of exactly {target_count} French words appropriate for CEFR level {level}.
+    # Generate in batches to avoid response truncation
+    VOCAB_BATCH_SIZE = 300
+    all_words = []
+
+    batches_needed = (target_count + VOCAB_BATCH_SIZE - 1) // VOCAB_BATCH_SIZE
+    print(f"Generating {target_count} words in {batches_needed} batches of up to {VOCAB_BATCH_SIZE} words...")
+
+    for batch_num in range(batches_needed):
+        remaining = target_count - len(all_words)
+        batch_size = min(VOCAB_BATCH_SIZE, remaining)
+
+        prompt = f"""Generate a list of exactly {batch_size} French words appropriate for CEFR level {level}.
 
 Level description: {level_descriptions.get(level, 'general French vocabulary')}
 
@@ -140,38 +152,45 @@ Requirements:
 2. Include common words at this level (frequency-based)
 3. Cover diverse topics: daily life, verbs, adjectives, nouns
 4. Include words with French special characters (é, è, ê, ë, ç, œ, ù, â, etc.)
-5. For A1: Include être, avoir, aller, faire, français, cœur, etc.
-6. Format: ["word1", "word2", "word3", ...]
+5. Format: ["word1", "word2", "word3", ...]
+6. AVOID duplicating these already-generated words: {', '.join(all_words[:20])}...
 
 Example format:
 ["être", "avoir", "aller", "faire", "français", "maison", "école", ...]
 
-Generate {target_count} words now:"""
+Generate {batch_size} words now:"""
 
-    print(f"Requesting {target_count} French words for level {level} from Gemini...")
+        print(f"  Batch {batch_num + 1}/{batches_needed}: Requesting {batch_size} words...")
 
-    response = client.generate_response(prompt)
+        response = client.generate_response(prompt)
 
-    # Parse JSON array from response
-    try:
-        # Strip markdown code fences if present
-        import re
-        response_cleaned = re.sub(r'```json\s*', '', response)
-        response_cleaned = re.sub(r'```\s*$', '', response_cleaned)
-        response_cleaned = response_cleaned.strip()
+        # Parse JSON array from response
+        try:
+            # Strip all markdown code fences (both opening and closing)
+            import re
+            response_cleaned = re.sub(r'```(?:json|[a-z]*)\s*\n?', '', response)  # Remove ```json or ```
+            response_cleaned = re.sub(r'```\s*$', '', response_cleaned)  # Remove trailing ```
+            response_cleaned = response_cleaned.strip()
 
-        # Try to extract JSON array from response
-        json_match = re.search(r'\[.*\]', response_cleaned, re.DOTALL)
-        if json_match:
-            words = json.loads(json_match.group())
-            print(f"Generated {len(words)} French words")
-            return words[:target_count]  # Limit to target count
-        else:
-            raise ValueError("No JSON array found in response")
-    except Exception as e:
-        print(f"Error parsing Gemini response: {e}")
-        print(f"Response preview: {response[:200]}...")
-        return []
+            # Find first [ and last ] to extract JSON array
+            start_idx = response_cleaned.find('[')
+            end_idx = response_cleaned.rfind(']')
+
+            if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+                json_str = response_cleaned[start_idx:end_idx + 1]
+                batch_words = json.loads(json_str)
+                print(f"    Got {len(batch_words)} words")
+                all_words.extend(batch_words)
+            else:
+                print(f"    Error: No JSON array found in batch response")
+                print(f"    Response preview: {response[:200]}...")
+                continue  # Skip this batch but continue with others
+        except Exception as e:
+            print(f"    Error parsing batch response: {e}")
+            continue  # Skip this batch but continue with others
+
+    print(f"Generated {len(all_words)} total French words")
+    return all_words[:target_count]  # Limit to target count
 
 
 def load_progress(progress_file: Path) -> dict[str, dict]:

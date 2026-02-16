@@ -96,8 +96,19 @@
   - Phonetics: [ɛtʁ], [ale], [fʁɑ̃sɛ]
   - Examples: être, aller, avoir, français, école, cœur
   - File: assets/wordlists/french/cefr_a1.json
-- [ ] **Step 9:** Generate French A2-C2 (IN PROGRESS)
-  - A2: 1000 words - Running...
+- [x] **Step 9:** Generate French A2 word list (1000 words)
+  - Generated 1000 A2 words with 100.0% quality (all fields complete)
+  - Fixed JSON parsing regex to handle Gemini markdown code fences
+  - File: assets/wordlists/french/cefr_a2.json
+- [x] **Step 10:** Generate French B1-C2 word lists (7000 words)
+  - Modified generator to use batched vocabulary generation (300 words/batch)
+  - Fixed response truncation issue for large word counts (1500+)
+  - **B1:** 1500 words with 99.9% quality ✓ (646KB)
+  - **B2:** 2000 words with 100.0% quality ✓ (1.2MB)
+  - **C1:** 2500 words with 100.0% quality ✓ (1.4MB)
+  - **C2:** 3000 words with 99.9% quality ✓ (1.7MB)
+  - **TOTAL:** 9500 French words across all CEFR levels (A1-C2)
+  - All words include: IPA phonetics, Chinese translations, 2+ example sentences
   - B1: 1500 words - Queued
   - B2: 2000 words - Queued
   - C1: 2500 words - Queued
