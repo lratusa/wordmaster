@@ -16,6 +16,7 @@ enum WordListCategory {
   zhongkao, // 中考
   toefl,   // TOEFL
   sat,     // SAT
+  delf,    // DELF/DALF (French proficiency exams)
   jlpt,    // JLPT N5-N1
   jlptKanji, // JLPT Kanji N5-N1
   schoolKanji, // School Kanji (Grade 1-6, Middle, High)
@@ -64,6 +65,20 @@ class WordListDownloader {
     WordListPackage(id: 'cefr-b2', name: 'CEFR B2 中高级', nameEn: 'CEFR B2 (Upper-Intermediate)', language: 'en', description: '欧洲语言共同参考框架 B2 级别，能够流利表达观点', level: 'B2', category: WordListCategory.cefr, url: 'english/cefr_b2.json', wordCount: 2000, iconName: 'local_library'),
     WordListPackage(id: 'cefr-c1', name: 'CEFR C1 高级', nameEn: 'CEFR C1 (Advanced)', language: 'en', description: '欧洲语言共同参考框架 C1 级别，能够进行复杂学术讨论', level: 'C1', category: WordListCategory.cefr, url: 'english/cefr_c1.json', wordCount: 2000, iconName: 'psychology'),
     WordListPackage(id: 'cefr-c2', name: 'CEFR C2 精通级', nameEn: 'CEFR C2 (Proficiency)', language: 'en', description: '欧洲语言共同参考框架 C2 级别，接近母语水平', level: 'C2', category: WordListCategory.cefr, url: 'english/cefr_c2.json', wordCount: 1500, iconName: 'workspace_premium'),
+    // ========== CEFR 法语 A1-C2 ==========
+    WordListPackage(id: 'cefr-fr-a1', name: 'CEFR A1 法语入门', nameEn: 'CEFR A1 French', language: 'fr', description: '法语 A1 级别，适合零基础学习者', level: 'A1', category: WordListCategory.cefr, url: 'french/cefr_a1.json', wordCount: 500, iconName: 'school'),
+    WordListPackage(id: 'cefr-fr-a2', name: 'CEFR A2 法语基础', nameEn: 'CEFR A2 French', language: 'fr', description: '法语 A2 级别，掌握基本日常用语', level: 'A2', category: WordListCategory.cefr, url: 'french/cefr_a2.json', wordCount: 1000, iconName: 'menu_book'),
+    WordListPackage(id: 'cefr-fr-b1', name: 'CEFR B1 法语中级', nameEn: 'CEFR B1 French', language: 'fr', description: '法语 B1 级别，能够应对日常交流', level: 'B1', category: WordListCategory.cefr, url: 'french/cefr_b1.json', wordCount: 1500, iconName: 'auto_stories'),
+    WordListPackage(id: 'cefr-fr-b2', name: 'CEFR B2 法语中高级', nameEn: 'CEFR B2 French', language: 'fr', description: '法语 B2 级别，能够流利表达观点', level: 'B2', category: WordListCategory.cefr, url: 'french/cefr_b2.json', wordCount: 2000, iconName: 'local_library'),
+    WordListPackage(id: 'cefr-fr-c1', name: 'CEFR C1 法语高级', nameEn: 'CEFR C1 French', language: 'fr', description: '法语 C1 级别，能够进行复杂学术讨论', level: 'C1', category: WordListCategory.cefr, url: 'french/cefr_c1.json', wordCount: 2500, iconName: 'psychology'),
+    WordListPackage(id: 'cefr-fr-c2', name: 'CEFR C2 法语精通', nameEn: 'CEFR C2 French', language: 'fr', description: '法语 C2 级别，接近母语水平', level: 'C2', category: WordListCategory.cefr, url: 'french/cefr_c2.json', wordCount: 3000, iconName: 'workspace_premium'),
+    // ========== DELF/DALF 法语水平考试 ==========
+    WordListPackage(id: 'delf-a1', name: 'DELF A1', nameEn: 'DELF A1', language: 'fr', description: '法语学习证书 A1 级别考试词汇', level: 'A1', category: WordListCategory.delf, url: 'french/delf_a1.json', wordCount: 500, iconName: 'workspace_premium'),
+    WordListPackage(id: 'delf-a2', name: 'DELF A2', nameEn: 'DELF A2', language: 'fr', description: '法语学习证书 A2 级别考试词汇', level: 'A2', category: WordListCategory.delf, url: 'french/delf_a2.json', wordCount: 1000, iconName: 'workspace_premium'),
+    WordListPackage(id: 'delf-b1', name: 'DELF B1', nameEn: 'DELF B1', language: 'fr', description: '法语学习证书 B1 级别考试词汇', level: 'B1', category: WordListCategory.delf, url: 'french/delf_b1.json', wordCount: 1500, iconName: 'workspace_premium'),
+    WordListPackage(id: 'delf-b2', name: 'DELF B2', nameEn: 'DELF B2', language: 'fr', description: '法语学习证书 B2 级别考试词汇', level: 'B2', category: WordListCategory.delf, url: 'french/delf_b2.json', wordCount: 2000, iconName: 'workspace_premium'),
+    WordListPackage(id: 'dalf-c1', name: 'DALF C1', nameEn: 'DALF C1', language: 'fr', description: '法语高级水平证书 C1 级别考试词汇', level: 'C1', category: WordListCategory.delf, url: 'french/dalf_c1.json', wordCount: 2500, iconName: 'workspace_premium'),
+    WordListPackage(id: 'dalf-c2', name: 'DALF C2', nameEn: 'DALF C2', language: 'fr', description: '法语高级水平证书 C2 级别考试词汇', level: 'C2', category: WordListCategory.delf, url: 'french/dalf_c2.json', wordCount: 3000, iconName: 'workspace_premium'),
     // ========== CET 四六级 ==========
     WordListPackage(id: 'cet4-full', name: '四级词汇', nameEn: 'CET-4 Vocabulary', language: 'en', description: '大学英语四级考试词汇表', level: 'CET-4', category: WordListCategory.cet, url: 'english/cet4-full.json', wordCount: 4500, iconName: 'school'),
     WordListPackage(id: 'cet6-core', name: '六级核心词汇', nameEn: 'CET-6 Core Vocabulary', language: 'en', description: '大学英语六级考试核心高频词汇', level: 'CET-6', category: WordListCategory.cet, url: 'english/cet6_core.json', wordCount: 2000, iconName: 'auto_stories'),
@@ -244,6 +259,12 @@ class WordListDownloader {
     WordListCategory.schoolKanji,
   ];
 
+  /// Get all French categories
+  static List<WordListCategory> get frenchCategories => [
+    WordListCategory.cefr,  // French also uses CEFR
+    WordListCategory.delf,  // DELF/DALF exams
+  ];
+
   /// Get category display name
   static String getCategoryName(WordListCategory category) {
     switch (category) {
@@ -261,6 +282,8 @@ class WordListDownloader {
         return '托福 TOEFL';
       case WordListCategory.sat:
         return 'SAT';
+      case WordListCategory.delf:
+        return 'DELF/DALF';
       case WordListCategory.jlpt:
         return 'JLPT 词汇';
       case WordListCategory.jlptKanji:
@@ -287,6 +310,8 @@ class WordListDownloader {
         return 'flight_takeoff';
       case WordListCategory.sat:
         return 'menu_book';
+      case WordListCategory.delf:
+        return 'workspace_premium';
       case WordListCategory.jlpt:
         return 'translate';
       case WordListCategory.jlptKanji:

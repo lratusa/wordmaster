@@ -42,6 +42,15 @@
   - Added '法语' tab to TabBar
   - Added Language.fr tab to TabBarView
   - `flutter analyze` passes with 0 errors ✓
+- [x] **Step 5:** Add French word list categories to downloader
+  - Added DELF/DALF category enum
+  - Added 6 French CEFR packages (A1-C2) to downloader
+  - Added 6 DELF/DALF packages (A1-C2) to downloader
+  - Added frenchCategories getter
+  - Updated getCategoryName() for 'delf'
+  - Updated getCategoryIcon() for 'delf'
+  - Updated download screen to show French categories
+  - Total: 12 French word list packages available for download
 
 #### Implementation Summary
 **Files Modified (5 files):**

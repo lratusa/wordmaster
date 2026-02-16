@@ -257,6 +257,7 @@ class _WordListDownloadScreenState
     final categories = [
       null, // All
       ...WordListDownloader.englishCategories,
+      ...WordListDownloader.frenchCategories,
       ...WordListDownloader.japaneseCategories,
     ];
 
@@ -471,6 +472,8 @@ class _WordListDownloadScreenState
         return Icons.flight_takeoff;
       case WordListCategory.sat:
         return Icons.menu_book;
+      case WordListCategory.delf:
+        return Icons.workspace_premium;
       case WordListCategory.jlpt:
         return Icons.translate;
       case WordListCategory.jlptKanji:

@@ -27,7 +27,7 @@
   - CEFR A1-C2: FLE (Français Langue Étrangère) official lists
   - A1: ~500 words, A2: ~1000, B1: ~1500, B2: ~2000, C1: ~2500, C2: ~3000
   - DELF/DALF: May need manual curation
-- [ ] Add French categories to `wordlist_downloader.dart`
+- [x] Add French categories to `wordlist_downloader.dart` (12 packages: CEFR + DELF/DALF)
 - [ ] Upload French TTS models to China mirror (47.93.144.50)
 - **Implementation Order:** Language enum → Sample wordlist (special chars) → TTS config/test → UI
 - **Goal:** Enable French learning with UTF-8 special character support verified
