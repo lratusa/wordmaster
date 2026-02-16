@@ -51,6 +51,19 @@
   - Updated getCategoryIcon() for 'delf'
   - Updated download screen to show French categories
   - Total: 12 French word list packages available for download
+- [x] **Step 6:** Create French word list generator script
+  - Created `generate_french_cefr.py` - AI-powered French word list generator
+  - Uses Gemini API to generate:
+    - French vocabulary (500-3000 words per level based on CEFR guidelines)
+    - IPA phonetics with special character support (é,è,ê,ë,ç,œ,ù,â)
+    - Chinese translations
+    - Example sentences with translations
+  - Added `generate_french_word_data()` method to GeminiClient
+  - Added `generate_response()` helper method
+  - Created comprehensive README_FRENCH.md with usage guide
+  - Supports checkpoint/resume for interrupted generation
+  - Batch processing: 15 words/batch, ~50-60 min for all levels
+  - Total capacity: 9500 French words across A1-C2
 
 #### Implementation Summary
 **Files Modified (5 files):**

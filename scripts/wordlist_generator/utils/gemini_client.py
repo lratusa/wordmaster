@@ -464,3 +464,153 @@ Requirements:
 - Reading should be in hiragana
 - Each kanji MUST have exactly 2 example words
 - Return ONLY the JSON array, no other text'''
+
+    def generate_response(
+        self,
+        prompt: str,
+        max_retries: int = 3,
+        retry_delay: float = 5.0
+    ) -> str:
+        """
+        Generate a generic text response from Gemini.
+
+        Args:
+            prompt: The prompt to send to Gemini
+            max_retries: Maximum retry attempts on failure
+            retry_delay: Delay between retries in seconds
+
+        Returns:
+            Generated text response
+        """
+        for attempt in range(max_retries):
+            try:
+                self._rate_limit()
+
+                response = self.model.generate_content(
+                    prompt,
+                    generation_config=genai.GenerationConfig(
+                        temperature=0.7,
+                    )
+                )
+
+                return response.text
+
+            except Exception as e:
+                print(f"Attempt {attempt + 1}/{max_retries} failed: {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(retry_delay * (attempt + 1))
+                else:
+                    raise
+
+        return ""
+
+    def generate_french_word_data(
+        self,
+        words: list[str],
+        cefr_level: str,
+        max_retries: int = 3,
+        retry_delay: float = 5.0
+    ) -> list[dict]:
+        """
+        Generate Chinese translations, IPA phonetics, and example sentences for French words.
+
+        Args:
+            words: List of French words (recommended batch size: 10-20)
+            cefr_level: CEFR level (A1, A2, B1, B2, C1, C2)
+            max_retries: Maximum retry attempts on failure
+            retry_delay: Delay between retries in seconds
+
+        Returns:
+            List of word data dictionaries with structure:
+            {
+                "word": str,
+                "translation_cn": str,
+                "phonetic": str,  # IPA format
+                "examples": [
+                    {"sentence": str, "translation_cn": str},
+                    {"sentence": str, "translation_cn": str}
+                ]
+            }
+        """
+        prompt = self._build_french_prompt(words, cefr_level)
+
+        for attempt in range(max_retries):
+            try:
+                self._rate_limit()
+
+                response = self.model.generate_content(
+                    prompt,
+                    generation_config=genai.GenerationConfig(
+                        response_mime_type="application/json",
+                        temperature=0.3,
+                    )
+                )
+
+                result = repair_json(response.text)
+
+                if not isinstance(result, list):
+                    raise ValueError("Response is not a list")
+
+                result_words = {item.get('word', '').lower() for item in result}
+                missing = [w for w in words if w.lower() not in result_words]
+
+                if missing:
+                    print(f"Warning: Missing words in response: {missing}")
+
+                return result
+
+            except Exception as e:
+                print(f"Attempt {attempt + 1}/{max_retries} failed: {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(retry_delay * (attempt + 1))
+                else:
+                    raise
+
+        return []
+
+    def _build_french_prompt(self, words: list[str], cefr_level: str) -> str:
+        """Build the prompt for French word data generation."""
+        words_str = ', '.join(words)
+
+        # Adjust complexity based on CEFR level
+        level_guidance = {
+            'A1': 'très simples, adaptées aux débutants complets',
+            'A2': 'simples, adaptées aux apprenants élémentaires',
+            'B1': 'moyennement complexes, adaptées aux apprenants intermédiaires',
+            'B2': 'complexes, adaptées aux apprenants de niveau intermédiaire avancé',
+            'C1': 'sophistiquées, adaptées aux apprenants avancés',
+            'C2': 'nuancées, adaptées aux locuteurs maîtrisant la langue',
+        }
+
+        complexity = level_guidance.get(cefr_level, 'phrases appropriées au niveau du mot')
+
+        return f'''Génère des traductions chinoises, des transcriptions phonétiques IPA et des phrases d'exemple pour ces mots français de niveau {cefr_level} du CECR : {words_str}
+
+Pour chaque mot, fournis :
+1. Traduction chinoise (translation_cn) - concise et précise
+2. Transcription phonétique IPA (par exemple, /ɛtʁ/ pour "être")
+3. Deux phrases d'exemple avec traductions chinoises - utilise des phrases {complexity}
+
+IMPORTANT : Les mots français contiennent des caractères spéciaux (é, è, ê, ë, ç, œ, ù, â). Assure-toi de les préserver exactement.
+
+Retourne un tableau JSON avec exactement cette structure pour chaque mot :
+[
+  {{
+    "word": "être",
+    "translation_cn": "是；存在",
+    "phonetic": "[ɛtʁ]",
+    "examples": [
+      {{"sentence": "Je suis étudiant.", "translation_cn": "我是学生。"}},
+      {{"sentence": "Il est français.", "translation_cn": "他是法国人。"}}
+    ]
+  }}
+]
+
+Exigences :
+- Les traductions chinoises doivent être concises, listant les significations principales séparées par ；
+- Utilise la notation IPA standard entre crochets [...]
+- Les phrases d'exemple doivent correspondre au niveau de difficulté {cefr_level}
+- Les traductions chinoises des exemples doivent être naturelles et précises
+- Chaque mot DOIT avoir exactement 2 exemples
+- PRÉSERVE TOUS LES CARACTÈRES SPÉCIAUX FRANÇAIS (é, è, ê, ë, ç, œ, ù, â, etc.)
+- Retourne UNIQUEMENT le tableau JSON, sans autre texte'''
