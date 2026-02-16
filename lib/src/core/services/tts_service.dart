@@ -45,7 +45,7 @@ class TtsService {
   String? _activeModelDir;
 
   /// Languages supported by sherpa-onnx model
-  Set<String> _sherpaLanguages = {'en', 'zh'};
+  Set<String> _sherpaLanguages = {'en', 'zh', 'fr'};
 
   /// Japanese is handled by system TTS
   static const String _japaneseLanguage = 'ja';

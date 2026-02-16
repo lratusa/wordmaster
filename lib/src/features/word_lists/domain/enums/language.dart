@@ -1,6 +1,7 @@
 enum Language {
   en('en', 'English', '英语'),
-  ja('ja', '日本語', '日语');
+  ja('ja', '日本語', '日语'),
+  fr('fr', 'Français', '法语');
 
   final String code;
   final String nativeName;

@@ -33,7 +33,7 @@ class _WordListBrowserScreenState
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           title: _isSearching
@@ -82,6 +82,7 @@ class _WordListBrowserScreenState
                   tabs: [
                     Tab(text: '英语'),
                     Tab(text: '日语'),
+                    Tab(text: '法语'),
                   ],
                 ),
         ),
@@ -91,6 +92,7 @@ class _WordListBrowserScreenState
                 children: [
                   _WordListTab(language: Language.en),
                   _WordListTab(language: Language.ja),
+                  _WordListTab(language: Language.fr),
                 ],
               ),
       ),

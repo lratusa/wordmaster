@@ -22,13 +22,48 @@
 - [x] Adjusted implementation order: enum → sample list → TTS → UI
 - [x] Reduced initial sample from 50 to 20 words (focus on special char testing)
 
-#### Next Steps (Implementation Order)
-1. Add `Language.fr` to language enum + unit tests
-2. Create sample French word list (20 words with "être", "français", "cœur")
-3. Test UTF-8 encoding: JSON → SQLite → TTS input
-4. Add French TTS models + configuration tests
-5. Update TTS service for French support
-6. Verify sherpa-onnx pronunciation with special characters
+#### Implementation Progress
+- [x] **Step 1:** Add `Language.fr` to language enum
+  - Added `fr('fr', 'Français', '法语')` to Language enum
+  - Created `test/unit/language_test.dart` with 8 unit tests
+  - All tests passing ✓
+- [x] **Step 2:** Create sample French word list (UTF-8 special characters)
+  - Created `assets/wordlists/french/cefr_a1_sample.json` with 20 words
+  - Includes all critical special characters: é,è,ê,ë,ç,œ,ù,â
+  - Test words included: "être", "français", "cœur", "élève", "garçon", "œuf"
+  - Added to `word_list_asset_datasource.dart` for automatic import
+- [x] **Step 3:** Add French TTS models
+  - Added `fr-fr-siwis` (65MB, female voice) to model downloader
+  - Added `fr-fr-upmc` (55MB, alternative voice) to model downloader
+  - Updated TTS service: added 'fr' to `_sherpaLanguages`
+
+- [x] **Step 4:** Update word list browser UI
+  - Changed TabController length from 2 to 3
+  - Added '法语' tab to TabBar
+  - Added Language.fr tab to TabBarView
+  - `flutter analyze` passes with 0 errors ✓
+
+#### Implementation Summary
+**Files Modified (5 files):**
+1. `lib/src/features/word_lists/domain/enums/language.dart` — Added Language.fr
+2. `lib/src/features/word_lists/data/datasources/word_list_asset_datasource.dart` — Added French sample
+3. `lib/src/core/services/tts_model_downloader.dart` — Added 2 French TTS models
+4. `lib/src/core/services/tts_service.dart` — Added 'fr' to sherpa languages
+5. `lib/src/features/word_lists/presentation/screens/word_list_browser_screen.dart` — Added French tab
+
+**Files Created (2 files):**
+1. `assets/wordlists/french/cefr_a1_sample.json` — 20 French words with UTF-8 special chars
+2. `test/unit/language_test.dart` — 8 unit tests for Language enum
+
+#### Next Steps
+5. Commit Phase 15 core implementation
+6. Build and run app to verify:
+   - French word list appears in browser
+   - UTF-8 special characters display correctly
+   - French TTS pronunciation works (requires downloading model first)
+7. Add French word list repository tests
+8. Add French TTS model configuration tests
+9. Add French word list categories to downloader
 
 ---
 

@@ -11,6 +11,8 @@ class WordListAssetDatasource {
   static const _assetPaths = {
     // English - CET-4 (only built-in list; others available via download)
     'cet4': 'assets/wordlists/english/cet4.json',
+    // French - CEFR A1 sample (UTF-8 testing)
+    'cefr_a1_sample': 'assets/wordlists/french/cefr_a1_sample.json',
   };
 
   /// Load all built-in word lists metadata (without words)

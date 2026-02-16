@@ -56,7 +56,7 @@ class TtsModelDownloader {
   /// at download time via [DownloadMirror] based on the user's region setting.
   /// See: https://k2-fsa.github.io/sherpa/onnx/tts/pretrained_models/index.html
   static const List<TtsModel> availableModels = [
-    // VITS/Piper models (English only)
+    // VITS/Piper models - English
     TtsModel(
       id: 'en-us-lessac',
       name: 'English (US) - Lessac',
@@ -72,6 +72,23 @@ class TtsModelDownloader {
       url: 'vits-piper-en_GB-alba-medium.tar.bz2',
       sizeBytes: 55 * 1024 * 1024, // ~55 MB
       supportedLanguages: ['en'],
+    ),
+    // VITS/Piper models - French
+    TtsModel(
+      id: 'fr-fr-siwis',
+      name: 'French - Siwis (Female)',
+      language: 'fr',
+      url: 'vits-piper-fr_FR-siwis-medium.tar.bz2',
+      sizeBytes: 65 * 1024 * 1024, // ~65 MB
+      supportedLanguages: ['fr'],
+    ),
+    TtsModel(
+      id: 'fr-fr-upmc',
+      name: 'French - UPMC (Alternative)',
+      language: 'fr',
+      url: 'vits-piper-fr_FR-upmc-medium.tar.bz2',
+      sizeBytes: 55 * 1024 * 1024, // ~55 MB
+      supportedLanguages: ['fr'],
     ),
   ];
 

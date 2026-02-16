@@ -1,0 +1,309 @@
+{
+  "name": "French CEFR A1 (Sample)",
+  "language": "fr",
+  "category": "cefr",
+  "level": "A1",
+  "description": "Sample French A1 words with UTF-8 special characters for testing",
+  "words": [
+    {
+      "word": "être",
+      "translation_cn": "是，存在",
+      "phonetic": "[ɛtʁ]",
+      "examples": [
+        {
+          "sentence": "Je suis étudiant.",
+          "translation_cn": "我是学生。"
+        },
+        {
+          "sentence": "Il est français.",
+          "translation_cn": "他是法国人。"
+        }
+      ]
+    },
+    {
+      "word": "français",
+      "translation_cn": "法语；法国的",
+      "phonetic": "[fʁɑ̃sɛ]",
+      "examples": [
+        {
+          "sentence": "J'apprends le français.",
+          "translation_cn": "我在学法语。"
+        },
+        {
+          "sentence": "C'est un livre français.",
+          "translation_cn": "这是一本法语书。"
+        }
+      ]
+    },
+    {
+      "word": "cœur",
+      "translation_cn": "心脏；心",
+      "phonetic": "[kœʁ]",
+      "examples": [
+        {
+          "sentence": "Mon cœur bat vite.",
+          "translation_cn": "我的心跳很快。"
+        },
+        {
+          "sentence": "J'aime de tout mon cœur.",
+          "translation_cn": "我全心全意地爱。"
+        }
+      ]
+    },
+    {
+      "word": "élève",
+      "translation_cn": "学生",
+      "phonetic": "[elɛv]",
+      "examples": [
+        {
+          "sentence": "L'élève étudie beaucoup.",
+          "translation_cn": "这个学生学习很用功。"
+        },
+        {
+          "sentence": "Elle est une bonne élève.",
+          "translation_cn": "她是个好学生。"
+        }
+      ]
+    },
+    {
+      "word": "garçon",
+      "translation_cn": "男孩",
+      "phonetic": "[gaʁsɔ̃]",
+      "examples": [
+        {
+          "sentence": "Le garçon joue au football.",
+          "translation_cn": "男孩在踢足球。"
+        },
+        {
+          "sentence": "C'est un petit garçon.",
+          "translation_cn": "这是一个小男孩。"
+        }
+      ]
+    },
+    {
+      "word": "café",
+      "translation_cn": "咖啡；咖啡馆",
+      "phonetic": "[kafe]",
+      "examples": [
+        {
+          "sentence": "Je bois un café.",
+          "translation_cn": "我喝咖啡。"
+        },
+        {
+          "sentence": "On va au café?",
+          "translation_cn": "我们去咖啡馆吗？"
+        }
+      ]
+    },
+    {
+      "word": "école",
+      "translation_cn": "学校",
+      "phonetic": "[ekɔl]",
+      "examples": [
+        {
+          "sentence": "Je vais à l'école.",
+          "translation_cn": "我去上学。"
+        },
+        {
+          "sentence": "L'école est grande.",
+          "translation_cn": "学校很大。"
+        }
+      ]
+    },
+    {
+      "word": "frère",
+      "translation_cn": "兄弟",
+      "phonetic": "[fʁɛʁ]",
+      "examples": [
+        {
+          "sentence": "Mon frère s'appelle Pierre.",
+          "translation_cn": "我哥哥叫皮埃尔。"
+        },
+        {
+          "sentence": "J'ai un petit frère.",
+          "translation_cn": "我有一个弟弟。"
+        }
+      ]
+    },
+    {
+      "word": "mère",
+      "translation_cn": "母亲",
+      "phonetic": "[mɛʁ]",
+      "examples": [
+        {
+          "sentence": "Ma mère est médecin.",
+          "translation_cn": "我妈妈是医生。"
+        },
+        {
+          "sentence": "J'aime ma mère.",
+          "translation_cn": "我爱我的妈妈。"
+        }
+      ]
+    },
+    {
+      "word": "père",
+      "translation_cn": "父亲",
+      "phonetic": "[pɛʁ]",
+      "examples": [
+        {
+          "sentence": "Mon père travaille.",
+          "translation_cn": "我爸爸在工作。"
+        },
+        {
+          "sentence": "C'est le père de Marie.",
+          "translation_cn": "这是玛丽的爸爸。"
+        }
+      ]
+    },
+    {
+      "word": "où",
+      "translation_cn": "哪里",
+      "phonetic": "[u]",
+      "examples": [
+        {
+          "sentence": "Où es-tu?",
+          "translation_cn": "你在哪里？"
+        },
+        {
+          "sentence": "Où est la gare?",
+          "translation_cn": "火车站在哪里？"
+        }
+      ]
+    },
+    {
+      "word": "fenêtre",
+      "translation_cn": "窗户",
+      "phonetic": "[fənɛtʁ]",
+      "examples": [
+        {
+          "sentence": "Ouvre la fenêtre.",
+          "translation_cn": "打开窗户。"
+        },
+        {
+          "sentence": "La fenêtre est fermée.",
+          "translation_cn": "窗户关着。"
+        }
+      ]
+    },
+    {
+      "word": "tête",
+      "translation_cn": "头",
+      "phonetic": "[tɛt]",
+      "examples": [
+        {
+          "sentence": "J'ai mal à la tête.",
+          "translation_cn": "我头疼。"
+        },
+        {
+          "sentence": "Il hoche la tête.",
+          "translation_cn": "他点头。"
+        }
+      ]
+    },
+    {
+      "word": "même",
+      "translation_cn": "相同的；甚至",
+      "phonetic": "[mɛm]",
+      "examples": [
+        {
+          "sentence": "Nous avons le même livre.",
+          "translation_cn": "我们有同一本书。"
+        },
+        {
+          "sentence": "Même moi, je peux le faire.",
+          "translation_cn": "即使是我也能做到。"
+        }
+      ]
+    },
+    {
+      "word": "très",
+      "translation_cn": "非常",
+      "phonetic": "[tʁɛ]",
+      "examples": [
+        {
+          "sentence": "C'est très bien.",
+          "translation_cn": "非常好。"
+        },
+        {
+          "sentence": "Elle est très gentille.",
+          "translation_cn": "她很温柔。"
+        }
+      ]
+    },
+    {
+      "word": "après",
+      "translation_cn": "之后",
+      "phonetic": "[apʁɛ]",
+      "examples": [
+        {
+          "sentence": "Après le cours, on part.",
+          "translation_cn": "下课后我们走。"
+        },
+        {
+          "sentence": "Je viens après toi.",
+          "translation_cn": "我在你之后来。"
+        }
+      ]
+    },
+    {
+      "word": "déjà",
+      "translation_cn": "已经",
+      "phonetic": "[deʒa]",
+      "examples": [
+        {
+          "sentence": "J'ai déjà mangé.",
+          "translation_cn": "我已经吃过了。"
+        },
+        {
+          "sentence": "Tu es déjà là?",
+          "translation_cn": "你已经在这儿了？"
+        }
+      ]
+    },
+    {
+      "word": "aujourd'hui",
+      "translation_cn": "今天",
+      "phonetic": "[oʒuʁdɥi]",
+      "examples": [
+        {
+          "sentence": "Aujourd'hui, il fait beau.",
+          "translation_cn": "今天天气很好。"
+        },
+        {
+          "sentence": "Qu'est-ce qu'on fait aujourd'hui?",
+          "translation_cn": "我们今天做什么？"
+        }
+      ]
+    },
+    {
+      "word": "château",
+      "translation_cn": "城堡",
+      "phonetic": "[ʃato]",
+      "examples": [
+        {
+          "sentence": "Le château est magnifique.",
+          "translation_cn": "城堡很壮观。"
+        },
+        {
+          "sentence": "Nous visitons un château.",
+          "translation_cn": "我们参观一座城堡。"
+        }
+      ]
+    },
+    {
+      "word": "œuf",
+      "translation_cn": "鸡蛋",
+      "phonetic": "[œf]",
+      "examples": [
+        {
+          "sentence": "Je mange un œuf.",
+          "translation_cn": "我吃一个鸡蛋。"
+        },
+        {
+          "sentence": "L'œuf est frais.",
+          "translation_cn": "鸡蛋很新鲜。"
+        }
+      ]
+    }
+  ]
+}
