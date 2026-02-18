@@ -6,6 +6,17 @@
 ## Current Phase
 **Phase 15: French Language Support** — Add French as third supported language
 
+### Phase 15.1: Windows 启动崩溃修复 (2026-02-18)
+- [x] **Bug 1:** `pubspec.yaml` 未注册 `assets/wordlists/french/` 目录，app 启动加载法语词表崩溃
+- [x] **Bug 2:** 数据库 CHECK 约束 `language IN ('en', 'ja')` 不允许 `'fr'`，插入法语数据报错
+- [x] 修复 pubspec.yaml 添加 french 资源目录
+- [x] 更新 `database_tables.dart` 三处 CHECK 约束加入 `'fr'`
+- [x] 数据库版本 v4 → v5，迁移策略：备份→删表→重建→恢复（因 sqflite 事务内 PRAGMA foreign_keys=OFF 无效）
+- [x] 验证全新安装（v5 onCreate）正常启动
+- [x] 验证 v4→v5 迁移路径，用户数据完整保留
+- [x] 发布 v1.2.1：https://github.com/lratusa/wordmaster/releases/tag/v1.2.1
+- **Status:** complete
+
 ### Phase 15: French Language Support (2026-02-16)
 - [x] Add `Language.fr` to language enum with unit tests (8 tests passing)
 - [x] Create sample French word list (20 words with special chars: ê,ë,ç,œ,ù)
@@ -26,16 +37,15 @@
   - C1: 2500 words (100% quality, 1.4MB)
   - C2: 3000 words (99.9% quality, 1.7MB)
   - **Total: 9500 French words with IPA phonetics, Chinese translations, examples**
-- [ ] **Critical: Test sherpa-onnx with French special characters**
-  - Test TTS pronunciation of "être", "français", "cœur"
-  - Verify UTF-8 handling in TTS input (requires running app)
-- [ ] Add French TTS model configuration tests
-- [ ] Add French wordlist download/parsing repository tests
+- [x] **Critical: pubspec.yaml 注册 french 资源目录 + DB CHECK 约束加 'fr'** (v1.2.1 修复)
+- [ ] Test sherpa-onnx with French special characters (requires running app with TTS model)
+- [x] Add French TTS model configuration tests (13 tests)
+- [x] Add French wordlist download/parsing repository tests (19 tests)
 - [x] Add French categories to `wordlist_downloader.dart` (12 packages: CEFR + DELF/DALF)
 - [ ] Upload French TTS models to China mirror (47.93.144.50)
 - **Implementation Order:** Language enum → Sample wordlist (special chars) → TTS config/test → UI → Word lists
 - **Goal:** Enable French learning with UTF-8 special character support verified
-- **Status:** nearly_complete — Core implementation + word lists complete, testing phase next
+- **Status:** nearly_complete — Core + word lists + crash fix complete, TTS testing phase next
 
 ### Phase 14: iOS Release Build (pending)
 - [ ] 确认 Mac mini 环境（macOS 版本、Xcode、Flutter、CocoaPods、磁盘空间）

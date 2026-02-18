@@ -1,5 +1,45 @@
 # Progress Log
 
+## Session 13: 2026-02-18 - Windows 启动崩溃修复 (v1.2.1)
+
+### Bug Investigation
+- **现象:** v1.2.0 Windows release 无法启动
+- **排查过程:** 运行 release exe 捕获 stderr 输出
+
+### Bug 1: Flutter 资源未注册
+- **错误:** `Unable to load asset: "assets/wordlists/french/cefr_a1_sample.json"`
+- **原因:** Phase 15 添加了 `assets/wordlists/french/` 目录但未在 `pubspec.yaml` 注册
+- **修复:** `pubspec.yaml` assets 段添加 `- assets/wordlists/french/`
+
+### Bug 2: 数据库 CHECK 约束
+- **错误:** `CHECK constraint failed: language IN ('en', 'ja')`
+- **原因:** `word_lists`、`words`、`generated_passages` 三张表的 language 列 CHECK 约束不包含 `'fr'`
+- **修复:** 更新 `database_tables.dart` 三处 CHECK 为 `('en', 'ja', 'fr')`
+- **迁移难点:** SQLite 不支持 ALTER CONSTRAINT，且 sqflite 的 `onUpgrade` 在事务内运行，`PRAGMA foreign_keys=OFF` 无效
+- **迁移方案:** 备份全部数据到 TEMP 表 → DROP 所有表 → CREATE 新 schema → INSERT 恢复数据（按 FK 依赖顺序）
+- **验证:** 全新安装 ✓ + v4→v5 迁移 ✓ + 用户数据完整保留 ✓
+
+### Files Modified
+| File | Action |
+|------|--------|
+| `pubspec.yaml` | MODIFY — 添加 `assets/wordlists/french/` |
+| `lib/src/core/constants/db_constants.dart` | MODIFY — version 4 → 5 |
+| `lib/src/core/database/database_tables.dart` | MODIFY — CHECK 约束加 `'fr'`（3处） |
+| `lib/src/core/database/database_helper.dart` | MODIFY — v5 迁移逻辑 |
+
+### Release
+- [x] Committed: `fb2151c`
+- [x] Tagged: `v1.2.1`
+- [x] Built Windows x64 (31MB)
+- [x] Published GitHub Release: https://github.com/lratusa/wordmaster/releases/tag/v1.2.1
+
+### Lessons Learned
+- 添加新语言时需同步更新：Language enum、pubspec.yaml 资源、DB CHECK 约束、TTS 配置、UI
+- SQLite `PRAGMA foreign_keys=OFF` 在事务内是 no-op，迁移需用 backup-drop-recreate 策略
+- sqflite 的 `onUpgrade` 自动包裹在事务中，无法在其中切换 FK 模式
+
+---
+
 ## Session 12: 2026-02-15 - Japanese TTS Error Message Fix (v1.1.1)
 
 ### Bug Fix
