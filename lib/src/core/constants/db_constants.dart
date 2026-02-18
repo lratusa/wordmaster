@@ -2,7 +2,7 @@ class DbConstants {
   DbConstants._();
 
   static const String databaseName = 'wordmaster.db';
-  static const int databaseVersion = 4;
+  static const int databaseVersion = 5;
 
   // Table names
   static const String tableWordLists = 'word_lists';

@@ -106,6 +106,67 @@ class DatabaseHelper {
       await db.execute(
           'ALTER TABLE ${DbConstants.tableExampleSentences} ADD COLUMN reading TEXT');
     }
+
+    if (oldVersion < 5) {
+      // Add French language support: update CHECK constraints to allow 'fr'
+      // SQLite doesn't support ALTER CONSTRAINT and PRAGMA foreign_keys=OFF
+      // is a no-op inside transactions (sqflite wraps onUpgrade in a txn).
+      // Strategy: backup all data to temp tables, drop all, recreate, restore.
+
+      // 1. Backup all data to temp tables (no FK constraints)
+      await db.execute('CREATE TEMP TABLE _bk_word_lists AS SELECT * FROM word_lists');
+      await db.execute('CREATE TEMP TABLE _bk_words AS SELECT * FROM words');
+      await db.execute('CREATE TEMP TABLE _bk_example_sentences AS SELECT * FROM example_sentences');
+      await db.execute('CREATE TEMP TABLE _bk_user_progress AS SELECT * FROM user_progress');
+      await db.execute('CREATE TEMP TABLE _bk_review_sessions AS SELECT * FROM review_sessions');
+      await db.execute('CREATE TEMP TABLE _bk_review_logs AS SELECT * FROM review_logs');
+      await db.execute('CREATE TEMP TABLE _bk_generated_passages AS SELECT * FROM generated_passages');
+
+      // 2. Drop tables in reverse FK order
+      await db.execute('DROP TABLE IF EXISTS review_logs');
+      await db.execute('DROP TABLE IF EXISTS review_sessions');
+      await db.execute('DROP TABLE IF EXISTS user_progress');
+      await db.execute('DROP TABLE IF EXISTS example_sentences');
+      await db.execute('DROP TABLE IF EXISTS words');
+      await db.execute('DROP TABLE IF EXISTS word_lists');
+      await db.execute('DROP TABLE IF EXISTS generated_passages');
+
+      // 3. Recreate with new CHECK constraints (includes 'fr')
+      await db.execute(DatabaseTables.createWordLists);
+      await db.execute(DatabaseTables.createWords);
+      await db.execute(DatabaseTables.createExampleSentences);
+      await db.execute(DatabaseTables.createUserProgress);
+      await db.execute(DatabaseTables.createReviewSessions);
+      await db.execute(DatabaseTables.createReviewLogs);
+      await db.execute(DatabaseTables.createGeneratedPassages);
+
+      // 4. Restore data in FK-safe order
+      await db.execute('INSERT INTO word_lists SELECT * FROM _bk_word_lists');
+      await db.execute('INSERT INTO words SELECT * FROM _bk_words');
+      await db.execute('INSERT INTO example_sentences SELECT * FROM _bk_example_sentences');
+      await db.execute('INSERT INTO user_progress SELECT * FROM _bk_user_progress');
+      await db.execute('INSERT INTO review_sessions SELECT * FROM _bk_review_sessions');
+      await db.execute('INSERT INTO review_logs SELECT * FROM _bk_review_logs');
+      await db.execute('INSERT INTO generated_passages SELECT * FROM _bk_generated_passages');
+
+      // 5. Cleanup temp tables
+      await db.execute('DROP TABLE _bk_word_lists');
+      await db.execute('DROP TABLE _bk_words');
+      await db.execute('DROP TABLE _bk_example_sentences');
+      await db.execute('DROP TABLE _bk_user_progress');
+      await db.execute('DROP TABLE _bk_review_sessions');
+      await db.execute('DROP TABLE _bk_review_logs');
+      await db.execute('DROP TABLE _bk_generated_passages');
+
+      // 6. Recreate indexes
+      for (final sql in DatabaseTables.createIndexes) {
+        try {
+          await db.execute(sql);
+        } catch (_) {
+          // Index may already exist
+        }
+      }
+    }
   }
 
   Future<void> _insertDefaultAchievements(Database db) async {

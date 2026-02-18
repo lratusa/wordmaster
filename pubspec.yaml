@@ -78,4 +78,5 @@ flutter:
   assets:
     - assets/wordlists/english/
     - assets/wordlists/japanese/
+    - assets/wordlists/french/
     - assets/images/

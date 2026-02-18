@@ -5,7 +5,7 @@ class DatabaseTables {
     CREATE TABLE word_lists (
       id              INTEGER PRIMARY KEY AUTOINCREMENT,
       name            TEXT NOT NULL,
-      language        TEXT NOT NULL CHECK(language IN ('en', 'ja')),
+      language        TEXT NOT NULL CHECK(language IN ('en', 'ja', 'fr')),
       description     TEXT,
       type            TEXT NOT NULL DEFAULT 'built_in' CHECK(type IN ('built_in', 'custom')),
       word_count      INTEGER NOT NULL DEFAULT 0,
@@ -19,7 +19,7 @@ class DatabaseTables {
     CREATE TABLE words (
       id                  INTEGER PRIMARY KEY AUTOINCREMENT,
       word_list_id        INTEGER NOT NULL,
-      language            TEXT NOT NULL CHECK(language IN ('en', 'ja')),
+      language            TEXT NOT NULL CHECK(language IN ('en', 'ja', 'fr')),
       word                TEXT NOT NULL,
       translation_cn      TEXT NOT NULL,
       part_of_speech      TEXT,
@@ -109,7 +109,7 @@ class DatabaseTables {
     CREATE TABLE generated_passages (
       id                  INTEGER PRIMARY KEY AUTOINCREMENT,
       generation_date     TEXT NOT NULL,
-      language            TEXT NOT NULL CHECK(language IN ('en', 'ja')),
+      language            TEXT NOT NULL CHECK(language IN ('en', 'ja', 'fr')),
       passage_text        TEXT NOT NULL,
       passage_translation TEXT,
       questions_json      TEXT NOT NULL,
