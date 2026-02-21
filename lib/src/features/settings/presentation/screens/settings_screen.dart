@@ -109,6 +109,13 @@ class SettingsScreen extends ConsumerWidget {
                 MaterialPageRoute(builder: (_) => const TtsModelScreen()),
               ),
             ),
+            ListTile(
+              leading: const Icon(Icons.cloud_outlined),
+              title: const Text('远程日语TTS'),
+              subtitle: Text(settings.remoteTtsUrl.isEmpty ? '未配置（日语将使用系统TTS）' : settings.remoteTtsUrl),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _showRemoteTtsDialog(context, notifier, settings),
+            ),
           ]),
 
           // Study Settings
@@ -264,7 +271,7 @@ class SettingsScreen extends ConsumerWidget {
             const ListTile(
               leading: Icon(Icons.info_outline),
               title: Text('WordMaster'),
-              subtitle: Text('v1.0.0 · AI驱动 · 艾宾浩斯记忆 · 英日双语'),
+              subtitle: Text('v1.2.2 · AI驱动 · 艾宾浩斯记忆 · 英日法三语'),
             ),
           ]),
         ],
@@ -663,6 +670,72 @@ class SettingsScreen extends ConsumerWidget {
                 Navigator.of(ctx).pop();
               }
             },
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showRemoteTtsDialog(
+    BuildContext context,
+    SettingsNotifier notifier,
+    AppSettings settings,
+  ) {
+    final urlController = TextEditingController(text: settings.remoteTtsUrl);
+    final tokenController = TextEditingController(text: settings.remoteTtsToken);
+
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('远程日语TTS'),
+        content: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                '为没有系统日语语音的设备（如部分安卓手机）提供日语TTS服务。',
+                style: TextStyle(fontSize: 12, color: Colors.grey),
+              ),
+              const SizedBox(height: 12),
+              const Text('服务器地址'),
+              TextField(
+                controller: urlController,
+                decoration: const InputDecoration(
+                  hintText: 'http://example.com/api/tts/',
+                ),
+              ),
+              const SizedBox(height: 8),
+              const Text('API Token'),
+              TextField(
+                controller: tokenController,
+                decoration: const InputDecoration(
+                  hintText: '留空则不需要认证',
+                ),
+              ),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text('取消'),
+          ),
+          TextButton(
+            onPressed: () {
+              notifier.setRemoteTtsUrl('');
+              notifier.setRemoteTtsToken('');
+              Navigator.of(ctx).pop();
+            },
+            child: const Text('清除'),
+          ),
+          FilledButton(
+            onPressed: () {
+              notifier.setRemoteTtsUrl(urlController.text.trim());
+              notifier.setRemoteTtsToken(tokenController.text.trim());
+              Navigator.of(ctx).pop();
+            },
+            child: const Text('保存'),
           ),
         ],
       ),

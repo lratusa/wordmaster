@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/services/tts_service.dart';
+import '../../settings/application/settings_notifier.dart';
 import '../../word_lists/data/repositories/word_repository.dart';
 import '../../word_lists/domain/models/word.dart';
 import '../data/repositories/progress_repository.dart';
@@ -153,6 +154,18 @@ final studySettingsProvider = Provider<StudySettings>((ref) {
 final ttsServiceProvider = Provider<TtsService>((ref) {
   final tts = TtsService();
   ref.onDispose(() => tts.dispose());
+
+  // Sync remote TTS config from settings (for Japanese on devices without system TTS)
+  final settings = ref.read(settingsProvider);
+  tts.setRemoteTts(settings.remoteTtsUrl, settings.remoteTtsToken);
+
+  ref.listen<AppSettings>(settingsProvider, (prev, next) {
+    if (prev?.remoteTtsUrl != next.remoteTtsUrl ||
+        prev?.remoteTtsToken != next.remoteTtsToken) {
+      tts.setRemoteTts(next.remoteTtsUrl, next.remoteTtsToken);
+    }
+  });
+
   return tts;
 });
 

@@ -25,8 +25,9 @@
 - **4,200+ Kanji Characters**: JLPT kanji (N5-N1) and Japanese school curriculum (Grades 1-6, Middle, High School)
 - **Kanji Quiz Modes**: Reading quiz (select the correct reading) and selection quiz (fill in the kanji from context)
 - **Multi-language Support**: Learn English, Japanese, and French vocabulary
-- **Offline TTS**: Text-to-speech using sherpa-onnx (no internet required)
-- **Audio Review Mode**: Listen-based vocabulary practice
+- **Offline TTS**: Text-to-speech using sherpa-onnx for English, French, and Chinese (no internet required)
+- **Japanese TTS**: High-quality Japanese audio via system TTS on Windows/iOS, or remote edge-tts server on Android — works even without a Japanese system voice installed
+- **Audio Review Mode**: Listen-based vocabulary practice for all supported languages
 - **Daily Check-in System**: Track your learning streaks and achievements
 - **Statistics Dashboard**: Visualize your learning progress with charts
 - **Cross-platform**: Works on Windows, Android, iOS, macOS, and Linux
@@ -152,8 +153,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **4,200+ 汉字**: JLPT 汉字 (N5-N1) 及日本学校课程汉字 (小学1-6年、中学、高中)
 - **汉字测验模式**: 读音测验（选择正确读音）和选字测验（根据上下文填入汉字）
 - **多语言支持**: 学习英语、日语和法语词汇
-- **离线语音**: 使用 sherpa-onnx 实现文字转语音（无需联网）
-- **听力训练模式**: 基于听力的词汇练习
+- **离线语音**: 使用 sherpa-onnx 实现英语、法语、中文的文字转语音（无需联网）
+- **日语语音**: 通过系统 TTS（Windows/iOS）或远程 edge-tts 服务器提供高质量日语发音——即使安卓设备未安装日语语音包也可正常使用
+- **听力训练模式**: 支持所有语言的听力词汇练习
 - **每日打卡系统**: 追踪学习连续天数和成就
 - **统计仪表盘**: 通过图表可视化学习进度
 - **跨平台**: 支持 Windows、Android、iOS、macOS 和 Linux
@@ -256,8 +258,9 @@ flutter build linux      # Linux
 - **4,200+漢字**: JLPT漢字 (N5-N1) および日本の学校カリキュラム漢字 (小学1-6年、中学、高校)
 - **漢字クイズモード**: 読みクイズ（正しい読みを選択）と選択クイズ（文脈から漢字を埋める）
 - **多言語対応**: 英語、日本語、フランス語の語彙学習
-- **オフラインTTS**: sherpa-onnxを使用した音声読み上げ（インターネット不要）
-- **リスニング練習モード**: 聴覚ベースの語彙練習
+- **オフラインTTS**: sherpa-onnxを使用した英語・フランス語・中国語の音声読み上げ（インターネット不要）
+- **日本語TTS**: Windows/iOSではシステムTTS、Androidではリモートedge-ttsサーバーで高品質な日本語音声を提供 — 日本語音声パックが未インストールでも利用可能
+- **リスニング練習モード**: 全対応言語でのリスニング語彙練習
 - **毎日チェックインシステム**: 学習連続日数と実績の追跡
 - **統計ダッシュボード**: グラフで学習進捗を可視化
 - **クロスプラットフォーム**: Windows、Android、iOS、macOS、Linuxに対応

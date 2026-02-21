@@ -25,6 +25,10 @@ class AppSettings {
   final DownloadRegion wordlistDownloadRegion;
   final DownloadRegion ttsDownloadRegion;
 
+  // Remote TTS for Japanese (edge-tts server fallback for Android without system Japanese TTS)
+  final String remoteTtsUrl;
+  final String remoteTtsToken;
+
   const AppSettings({
     this.aiBackend = 'manual',
     this.apiKey = '',
@@ -39,6 +43,8 @@ class AppSettings {
     this.studyMotivation = '',
     this.wordlistDownloadRegion = DownloadRegion.international,
     this.ttsDownloadRegion = DownloadRegion.international,
+    this.remoteTtsUrl = 'http://47.93.144.50/api/tts/',
+    this.remoteTtsToken = 'f2fe50be8c4fe33980be508b9cf8f18a',
   });
 
   AppSettings copyWith({
@@ -55,6 +61,8 @@ class AppSettings {
     String? studyMotivation,
     DownloadRegion? wordlistDownloadRegion,
     DownloadRegion? ttsDownloadRegion,
+    String? remoteTtsUrl,
+    String? remoteTtsToken,
   }) {
     return AppSettings(
       aiBackend: aiBackend ?? this.aiBackend,
@@ -70,6 +78,8 @@ class AppSettings {
       studyMotivation: studyMotivation ?? this.studyMotivation,
       wordlistDownloadRegion: wordlistDownloadRegion ?? this.wordlistDownloadRegion,
       ttsDownloadRegion: ttsDownloadRegion ?? this.ttsDownloadRegion,
+      remoteTtsUrl: remoteTtsUrl ?? this.remoteTtsUrl,
+      remoteTtsToken: remoteTtsToken ?? this.remoteTtsToken,
     );
   }
 }
@@ -102,6 +112,8 @@ class SettingsNotifier extends Notifier<AppSettings> {
       studyMotivation: all[SettingKeys.studyMotivation] ?? '',
       wordlistDownloadRegion: DownloadMirror.parseRegion(all[SettingKeys.wordlistDownloadRegion]),
       ttsDownloadRegion: DownloadMirror.parseRegion(all[SettingKeys.ttsDownloadRegion]),
+      remoteTtsUrl: all[SettingKeys.remoteTtsUrl] ?? 'http://47.93.144.50/api/tts/',
+      remoteTtsToken: all[SettingKeys.remoteTtsToken] ?? 'f2fe50be8c4fe33980be508b9cf8f18a',
     );
   }
 
@@ -190,6 +202,16 @@ class SettingsNotifier extends Notifier<AppSettings> {
   Future<void> setTtsDownloadRegion(DownloadRegion region) async {
     await _repo.set(SettingKeys.ttsDownloadRegion, DownloadMirror.regionToString(region));
     state = state.copyWith(ttsDownloadRegion: region);
+  }
+
+  Future<void> setRemoteTtsUrl(String url) async {
+    await _repo.set(SettingKeys.remoteTtsUrl, url);
+    state = state.copyWith(remoteTtsUrl: url);
+  }
+
+  Future<void> setRemoteTtsToken(String token) async {
+    await _repo.set(SettingKeys.remoteTtsToken, token);
+    state = state.copyWith(remoteTtsToken: token);
   }
 }
 

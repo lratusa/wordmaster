@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:path_provider/path_provider.dart';
@@ -37,6 +38,10 @@ class TtsService {
   String _modelDir = '';
   double _speed = 1.0;
   String? _lastError;
+
+  /// Remote TTS server (edge-tts) for Japanese on devices without system Japanese TTS
+  String _remoteTtsUrl = '';
+  String _remoteTtsToken = '';
 
   /// Whether the current model is Kokoro
   bool _isKokoroModel = false;
@@ -80,8 +85,15 @@ class TtsService {
   /// Get the last error message
   String? get lastError => _lastError;
 
-  /// Check if Japanese is supported (system TTS or sherpa-onnx Kokoro model)
-  bool get supportsJapanese => _systemTtsAvailable || _sherpaLanguages.contains('ja');
+  /// Check if Japanese is supported (system TTS, sherpa-onnx Kokoro model, or remote TTS)
+  bool get supportsJapanese =>
+      _systemTtsAvailable || _sherpaLanguages.contains('ja') || _remoteTtsUrl.isNotEmpty;
+
+  /// Configure remote TTS server (called by ttsServiceProvider when settings change)
+  void setRemoteTts(String url, String token) {
+    _remoteTtsUrl = url;
+    _remoteTtsToken = token;
+  }
 
   /// Get TTS status as a string for debugging
   String get status {
@@ -104,17 +116,18 @@ class TtsService {
   /// Check if a language is supported by TTS
   bool isLanguageSupported(String language) {
     if (language == _japaneseLanguage) {
-      // Japanese: system TTS or sherpa-onnx (Kokoro)
-      return _systemTtsAvailable || _sherpaLanguages.contains('ja');
+      // Japanese: system TTS, remote TTS (edge-tts server), or sherpa-onnx
+      return _systemTtsAvailable || _remoteTtsUrl.isNotEmpty || _sherpaLanguages.contains('ja');
     }
     return _sherpaLanguages.contains(language);
   }
 
   /// Get a user-friendly message for unsupported language
   String getUnsupportedLanguageMessage(String language) {
-    if (language == 'ja' && !_systemTtsAvailable && !_sherpaLanguages.contains('ja')) {
+    if (language == 'ja' && !_systemTtsAvailable && _remoteTtsUrl.isEmpty &&
+        !_sherpaLanguages.contains('ja')) {
       if (Platform.isAndroid) {
-        return '系统日语语音不可用。可在"设置 → 语音包"中下载 Kokoro 多语言模型（支持离线日语，约350MB）';
+        return '日语语音不可用。请在"设置 → 语音"中配置远程TTS服务器，或下载 Kokoro 多语言模型（约350MB）';
       } else if (Platform.isIOS) {
         return '系统日语语音不可用，请在设置 → 辅助功能 → 朗读内容中下载日语语音';
       } else {
@@ -446,16 +459,16 @@ class TtsService {
         debugPrint('TTS: Voices: ${voicesPath ?? "not found"}');
         debugPrint('TTS: Lexicons: $lexiconPaths');
 
-        // Note: lang parameter sets the default language for espeak-ng phonemizer
-        // 'ja' enables Japanese phoneme processing for hiragana/katakana
-        // TODO: Consider language-specific TTS instances for better multi-lang support
+        // Note: lang='en' ensures the English espeak-ng phonemizer is used.
+        // Japanese phonemization via sherpa-onnx is not supported (requires Python misaki[ja]).
+        // Japanese is handled by system TTS or remote edge-tts server instead.
         final kokoroConfig = sherpa_onnx.OfflineTtsKokoroModelConfig(
           model: modelPath,
           voices: voicesPath ?? '',
           tokens: tokensPath,
           dataDir: dataDirPath ?? '',
           lexicon: lexiconPaths,
-          lang: 'ja',  // Enable Japanese phoneme processing
+          lang: 'en',
         );
 
         modelConfig = sherpa_onnx.OfflineTtsModelConfig(
@@ -465,8 +478,9 @@ class TtsService {
           provider: 'cpu',
         );
 
-        // Kokoro supports English, Japanese and Chinese
-        _sherpaLanguages = {'en', 'en-gb', 'ja', 'zh'};
+        // Kokoro supports English and Chinese via sherpa-onnx.
+        // Japanese is NOT included here — it routes through system TTS / remote TTS.
+        _sherpaLanguages = {'en', 'en-gb', 'zh'};
       } else {
         // VITS model configuration
         final vitsConfig = sherpa_onnx.OfflineTtsVitsModelConfig(
@@ -528,21 +542,25 @@ class TtsService {
       return TtsSpeakResult.languageNotSupported;
     }
 
-    // Japanese routing: prefer sherpa-onnx (Kokoro) if it supports Japanese,
-    // otherwise fall back to system TTS (flutter_tts).
-    // This fixes Chinese Android phones without a Japanese system TTS engine.
+    // Japanese routing:
+    // 1. System TTS (Windows SAPI, iOS, Android with Japanese installed)
+    // 2. Remote TTS — edge-tts server (for Android without Japanese system TTS)
+    // 3. sherpa-onnx Kokoro (only if 'ja' somehow in _sherpaLanguages, normally not)
     if (language == _japaneseLanguage && !_sherpaLanguages.contains('ja')) {
-      return _speakWithSystemTts(text);
+      if (_systemTtsAvailable) {
+        return _speakWithSystemTts(text);
+      }
+      if (_remoteTtsUrl.isNotEmpty) {
+        return _speakWithRemoteTts(text, language);
+      }
+      return TtsSpeakResult.languageNotSupported;
     }
 
     // All other languages (and Japanese via Kokoro) use sherpa-onnx
     try {
 
       if (_tts == null || _initFailed) {
-        // If sherpa not available but system TTS is, try it for Japanese
-        if (language == _japaneseLanguage && _systemTtsAvailable) {
-          return _speakWithSystemTts(text);
-        }
+        // Sherpa not available — for non-Japanese languages there's no fallback
         debugPrint('TTS: Sherpa-onnx not available, skipping speech');
         return TtsSpeakResult.notInitialized;
       }
@@ -597,6 +615,58 @@ class TtsService {
       return TtsSpeakResult.success;
     } catch (e) {
       debugPrint('TTS: System TTS speak failed: $e');
+      _lastError = e.toString();
+      return TtsSpeakResult.error;
+    }
+  }
+
+  /// Speak text using remote edge-tts server (HTTP API).
+  /// Used for Japanese on Android devices without system Japanese TTS.
+  Future<TtsSpeakResult> _speakWithRemoteTts(String text, String language) async {
+    if (_remoteTtsUrl.isEmpty) {
+      return TtsSpeakResult.notInitialized;
+    }
+
+    try {
+      await stop();
+
+      final dio = Dio();
+      final response = await dio.get<List<int>>(
+        _remoteTtsUrl,
+        queryParameters: {
+          'text': text,
+          'lang': language,
+          'token': _remoteTtsToken,
+        },
+        options: Options(
+          responseType: ResponseType.bytes,
+          receiveTimeout: const Duration(seconds: 30),
+        ),
+      );
+
+      if (response.statusCode != 200) {
+        debugPrint('TTS: Remote TTS failed with status ${response.statusCode}');
+        return TtsSpeakResult.generationFailed;
+      }
+
+      final bytes = response.data;
+      if (bytes == null || bytes.isEmpty) {
+        debugPrint('TTS: Remote TTS returned empty response');
+        return TtsSpeakResult.generationFailed;
+      }
+
+      final tempDir = await getTemporaryDirectory();
+      final mp3Path = '${tempDir.path}/remote_tts.mp3';
+      await File(mp3Path).writeAsBytes(bytes);
+
+      _player ??= AudioPlayer();
+      await _player!.stop();
+      await _player!.play(DeviceFileSource(mp3Path));
+
+      debugPrint('TTS: Remote TTS success (${bytes.length} bytes)');
+      return TtsSpeakResult.success;
+    } catch (e) {
+      debugPrint('TTS: Remote TTS failed: $e');
       _lastError = e.toString();
       return TtsSpeakResult.error;
     }
