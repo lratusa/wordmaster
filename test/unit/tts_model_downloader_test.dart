@@ -51,6 +51,39 @@ void main() {
     });
   });
 
+  group('TtsModelDownloader - Kokoro model configuration', () {
+    test('Kokoro model is available in model list', () {
+      final kokoro = TtsModelDownloader.availableModels
+          .where((m) => m.id == 'kokoro-multi-lang')
+          .toList();
+      expect(kokoro.length, 1);
+    });
+
+    test('Kokoro model has correct type and language support', () {
+      final kokoro = TtsModelDownloader.availableModels
+          .firstWhere((m) => m.id == 'kokoro-multi-lang');
+      expect(kokoro.modelType, TtsModelType.kokoro);
+      expect(kokoro.supportedLanguages, containsAll(['en', 'ja', 'zh']));
+      expect(kokoro.supportsJapanese, true);
+      expect(kokoro.url, 'kokoro-multi-lang-v1_0.tar.bz2');
+    });
+
+    test('Kokoro model size is approximately 350MB', () {
+      final kokoro = TtsModelDownloader.availableModels
+          .firstWhere((m) => m.id == 'kokoro-multi-lang');
+      expect(kokoro.sizeBytes, greaterThan(300 * 1024 * 1024));
+      expect(kokoro.sizeBytes, lessThan(400 * 1024 * 1024));
+    });
+
+    test('only Kokoro model supports Japanese', () {
+      final jaModels = TtsModelDownloader.availableModels
+          .where((m) => m.supportsJapanese)
+          .toList();
+      expect(jaModels.length, 1);
+      expect(jaModels.first.id, 'kokoro-multi-lang');
+    });
+  });
+
   group('TtsModelDownloader - French model configuration', () {
     test('has French TTS models available', () {
       final frenchModels = TtsModelDownloader.availableModels

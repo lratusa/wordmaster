@@ -73,6 +73,16 @@ class TtsModelDownloader {
       sizeBytes: 55 * 1024 * 1024, // ~55 MB
       supportedLanguages: ['en'],
     ),
+    // Kokoro multi-language model (EN/JA/ZH) — best choice for Japanese on Android
+    TtsModel(
+      id: 'kokoro-multi-lang',
+      name: 'Kokoro 多语言 (EN/JA/ZH)',
+      language: 'en',
+      url: 'kokoro-multi-lang-v1_0.tar.bz2',
+      sizeBytes: 350 * 1024 * 1024, // ~350 MB
+      modelType: TtsModelType.kokoro,
+      supportedLanguages: ['en', 'en-gb', 'ja', 'zh'],
+    ),
     // VITS/Piper models - French
     TtsModel(
       id: 'fr-fr-siwis',

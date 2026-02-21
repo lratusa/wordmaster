@@ -44,8 +44,9 @@ class TtsService {
   /// The actual directory containing the active model files
   String? _activeModelDir;
 
-  /// Languages supported by sherpa-onnx model
-  Set<String> _sherpaLanguages = {'en', 'zh', 'fr'};
+  /// Languages supported by the currently loaded sherpa-onnx model.
+  /// Determined after initialization based on the active model type/ID.
+  Set<String> _sherpaLanguages = {};
 
   /// Japanese is handled by system TTS
   static const String _japaneseLanguage = 'ja';
@@ -79,15 +80,16 @@ class TtsService {
   /// Get the last error message
   String? get lastError => _lastError;
 
-  /// Check if Japanese is supported (via system TTS)
-  bool get supportsJapanese => _systemTtsAvailable;
+  /// Check if Japanese is supported (system TTS or sherpa-onnx Kokoro model)
+  bool get supportsJapanese => _systemTtsAvailable || _sherpaLanguages.contains('ja');
 
   /// Get TTS status as a string for debugging
   String get status {
     final parts = <String>[];
     if (_isInitialized && _tts != null) {
       final modelType = _isKokoroModel ? 'Kokoro' : 'VITS';
-      parts.add('$modelType: EN/ZH');
+      final langs = _sherpaLanguages.map((l) => l.toUpperCase()).join('/');
+      parts.add('$modelType: $langs');
     }
     if (_systemTtsAvailable) {
       parts.add('System: JA');
@@ -101,19 +103,18 @@ class TtsService {
 
   /// Check if a language is supported by TTS
   bool isLanguageSupported(String language) {
-    // Japanese is always supported via system TTS
     if (language == _japaneseLanguage) {
-      return _systemTtsAvailable;
+      // Japanese: system TTS or sherpa-onnx (Kokoro)
+      return _systemTtsAvailable || _sherpaLanguages.contains('ja');
     }
-    // Other languages use sherpa-onnx
     return _sherpaLanguages.contains(language);
   }
 
   /// Get a user-friendly message for unsupported language
   String getUnsupportedLanguageMessage(String language) {
-    if (language == 'ja' && !_systemTtsAvailable) {
+    if (language == 'ja' && !_systemTtsAvailable && !_sherpaLanguages.contains('ja')) {
       if (Platform.isAndroid) {
-        return '系统日语语音不可用，请在手机设置 → 语言与输入法 → 文字转语音中安装日语语音';
+        return '系统日语语音不可用。可在"设置 → 语音包"中下载 Kokoro 多语言模型（支持离线日语，约350MB）';
       } else if (Platform.isIOS) {
         return '系统日语语音不可用，请在设置 → 辅助功能 → 朗读内容中下载日语语音';
       } else {
@@ -132,7 +133,7 @@ class TtsService {
     _lastError = null;
     _isKokoroModel = false;
     _activeModelDir = null;
-    _sherpaLanguages = {'en', 'zh'};
+    _sherpaLanguages = {};
     // Note: Don't reset _systemTts as it's independent
   }
 
@@ -298,7 +299,8 @@ class TtsService {
       if (entity is Directory) {
         final dirName = entity.path.split(Platform.pathSeparator).last;
         // Check for VITS Piper models (have .onnx but no voices.bin)
-        if (dirName.startsWith('en-') || dirName.startsWith('zh-')) {
+        if (dirName.startsWith('en-') || dirName.startsWith('zh-') ||
+            dirName.startsWith('fr-') || dirName.startsWith('ja-')) {
           // Look for .onnx file
           await for (final file in entity.list()) {
             if (file is File && file.path.endsWith('.onnx')) {
@@ -463,7 +465,7 @@ class TtsService {
           provider: 'cpu',
         );
 
-        // Kokoro supports Japanese!
+        // Kokoro supports English, Japanese and Chinese
         _sherpaLanguages = {'en', 'en-gb', 'ja', 'zh'};
       } else {
         // VITS model configuration
@@ -481,8 +483,17 @@ class TtsService {
           provider: 'cpu',
         );
 
-        // VITS models typically support EN and ZH
-        _sherpaLanguages = {'en', 'zh'};
+        // Determine VITS model's supported language from its directory name
+        final modelDirName = (_activeModelDir ?? '').split(Platform.pathSeparator).last;
+        if (modelDirName.startsWith('fr-')) {
+          _sherpaLanguages = {'fr'};
+        } else if (modelDirName.startsWith('en-gb-')) {
+          _sherpaLanguages = {'en', 'en-gb'};
+        } else if (modelDirName.startsWith('ja-')) {
+          _sherpaLanguages = {'ja'};
+        } else {
+          _sherpaLanguages = {'en'};
+        }
       }
 
       return sherpa_onnx.OfflineTtsConfig(
@@ -517,15 +528,21 @@ class TtsService {
       return TtsSpeakResult.languageNotSupported;
     }
 
-    // Japanese uses system TTS (flutter_tts)
-    if (language == _japaneseLanguage) {
+    // Japanese routing: prefer sherpa-onnx (Kokoro) if it supports Japanese,
+    // otherwise fall back to system TTS (flutter_tts).
+    // This fixes Chinese Android phones without a Japanese system TTS engine.
+    if (language == _japaneseLanguage && !_sherpaLanguages.contains('ja')) {
       return _speakWithSystemTts(text);
     }
 
-    // Other languages use sherpa-onnx
+    // All other languages (and Japanese via Kokoro) use sherpa-onnx
     try {
 
       if (_tts == null || _initFailed) {
+        // If sherpa not available but system TTS is, try it for Japanese
+        if (language == _japaneseLanguage && _systemTtsAvailable) {
+          return _speakWithSystemTts(text);
+        }
         debugPrint('TTS: Sherpa-onnx not available, skipping speech');
         return TtsSpeakResult.notInitialized;
       }
